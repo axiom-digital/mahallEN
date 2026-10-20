@@ -1,5 +1,5 @@
 """
-AI & LLM Report Synthesis Service (Osman Kalkan - AI & LLM Integration Module).
+AI & LLM Report Synthesis Service (Team Axiom - Agile Cross-Functional Module).
 Uses Google Gemini API when GEMINI_API_KEY is configured, and gracefully falls back
 to a grounded, source-backed synthesis engine when offline or rate-limited (Risk R-02 & R-05 mitigation).
 """

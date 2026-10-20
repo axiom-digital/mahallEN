@@ -8,14 +8,16 @@ MahallEN is an AI-powered web application that answers *"Is this neighborhood a 
 
 ---
 
-## Team Axiom & Architecture Ownership
+## Team Axiom & Agile Cross-Functional Structure
 
-| Student ID | Name | Role | Primary Codebase Modules |
-| :--- | :--- | :--- | :--- |
-| **230717048** | **Osman Kalkan** | Project Manager / AI & LLM Integration | `backend/app/services/ai_service.py`, `backend/app/services/scoring_service.py` |
-| **230717014** | **Şükrü Tan** | Data Engineer / Backend Developer | `backend/app/models/`, `backend/app/api/`, `backend/app/core/database.py`, `docker-compose.yml` |
-| **230717027** | **Irmak Köse** | Frontend Developer / UX Designer | `frontend/src/components/`, `frontend/src/App.jsx`, UI/UX Visualizations |
-| **230717056** | **Ferdi Derebaşı** | QA Engineer / Documentation & Data Analyst | `backend/tests/`, `backend/app/services/seed_service.py`, Data Validation & Docs |
+Team Axiom operates as an **Agile, self-organizing, cross-functional squad**. Rather than rigid silos, every team member contributes across the full stack—**Data Pipeline, Backend API, AI/LLM Integration, Frontend UI/UX, and QA/Testing**—rotating focus areas across sprints while maintaining shared ownership of the entire codebase.
+
+| Student ID | Name | Team Structure & Agile Contribution |
+| :--- | :--- | :--- |
+| **230717048** | **Osman Kalkan** | Cross-Functional Developer (Full-Stack, AI/LLM, Data, QA & Sprint Coordination) |
+| **230717014** | **Şükrü Tan** | Cross-Functional Developer (Full-Stack, Backend/Data, AI/LLM, UI & QA) |
+| **230717027** | **Irmak Köse** | Cross-Functional Developer (Full-Stack, Frontend/UX, Backend, AI/LLM & QA) |
+| **230717056** | **Ferdi Derebaşı** | Cross-Functional Developer (Full-Stack, QA/Testing, Data Analysis, Backend & UI) |
 
 ---
 

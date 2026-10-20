@@ -1,5 +1,5 @@
 """
-Curated Pilot Dataset for Muğla Neighborhoods (Şükrü Tan & Ferdi Derebaşı - Data & QA Module).
+Curated Pilot Dataset for Muğla Neighborhoods (Team Axiom - Agile Cross-Functional Module).
 Covers 5 key neighborhoods in Muğla (Menteşe & Ula) to demonstrate the full MahallEN MVP pipeline.
 """
 

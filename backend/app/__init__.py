@@ -1,0 +1,1 @@
+"""MahallEN Backend Application Package."""

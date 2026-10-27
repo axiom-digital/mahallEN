@@ -1,6 +1,6 @@
 """
 Transparent & Documented Scoring Engine for MahallEN (Risk R-03 Mitigation).
-Calculates overall livability and profile suitability using clear, auditable weights.
+Calculates overall livability; profile scores currently come from the demo dataset.
 """
 
 from typing import Dict
@@ -39,8 +39,8 @@ def get_scoring_methodology() -> dict:
             "Earthquake & Disaster Resilience": "25%",
         },
         "note": (
-            "Scores are normalized between 0 and 100 based on public datasets "
-            "(AFAD hazard parameters, MUTTAŞ transit frequency, regional rent indices, "
-            "and local news/community sentiment)."
+            "M1 demo scores are illustrative values between 0 and 100. Overall livability "
+            "uses equal 25% category weights. Validated source data and survey-derived "
+            "weights are planned project work."
         ),
     }

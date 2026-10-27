@@ -1,8 +1,14 @@
-from typing import List, Optional
-from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy.orm import Session
-from sqlalchemy import or_
+from typing import List, Literal, Optional
+from hmac import compare_digest
+from math import ceil
+from time import monotonic
+import unicodedata
 
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, Security
+from fastapi.security import APIKeyHeader
+from sqlalchemy.orm import Session
+
+from app.core.config import settings
 from app.core.database import get_db
 from app.models.neighborhood import Neighborhood
 from app.schemas.neighborhood import (
@@ -13,30 +19,33 @@ from app.services.ai_service import generate_neighborhood_ai_report
 from app.services.scoring_service import get_scoring_methodology
 
 router = APIRouter(prefix="/neighborhoods", tags=["Neighborhoods & AI Reports"])
+refresh_token_header = APIKeyHeader(name="X-AI-Refresh-Token", auto_error=False)
+
+
+def _search_text(value: str) -> str:
+    """Literal, accent-insensitive search for the small pilot dataset."""
+    decomposed = unicodedata.normalize("NFKD", value.casefold().replace("ı", "i"))
+    return "".join(char for char in decomposed if not unicodedata.combining(char))
 
 
 @router.get("", response_model=List[NeighborhoodSummarySchema])
 def list_neighborhoods(
-    q: Optional[str] = Query(None, description="Search by neighborhood or district name"),
-    profile: Optional[str] = Query(
+    q: Optional[str] = Query(None, max_length=100, description="Search by neighborhood or district name"),
+    profile: Optional[Literal["student", "family", "professional"]] = Query(
         None, description="Sort by suitability profile: student | family | professional"
     ),
     db: Session = Depends(get_db),
 ):
     """Lists or searches Muğla pilot neighborhoods with summary scores."""
-    query = db.query(Neighborhood)
+    results = db.query(Neighborhood).all()
     if q:
-        search_term = f"%{q.strip()}%"
-        query = query.filter(
-            or_(
-                Neighborhood.name.ilike(search_term),
-                Neighborhood.district.ilike(search_term),
-                Neighborhood.slug.ilike(search_term),
-                Neighborhood.tagline.ilike(search_term),
-            )
-        )
-
-    results = query.all()
+        search_term = _search_text(q.strip())
+        results = [
+            item for item in results
+            if any(search_term in _search_text(value) for value in (
+                item.name, item.district, item.slug, item.tagline
+            ))
+        ]
     if profile == "student":
         results.sort(key=lambda x: x.suitability_student, reverse=True)
     elif profile == "family":
@@ -52,12 +61,22 @@ def list_neighborhoods(
 @router.get("/{slug}/report", response_model=NeighborhoodFullReportSchema)
 def get_neighborhood_report(
     slug: str,
+    request: Request,
     refresh_ai: bool = Query(
         False, description="Force live Gemini LLM generation if API key is configured"
     ),
+    refresh_token: Optional[str] = Security(refresh_token_header),
     db: Session = Depends(get_db),
 ):
-    """Returns the complete, source-backed AI livability report for a neighborhood."""
+    """Return a pilot demo report; live regeneration requires operator authorization."""
+    if refresh_ai:
+        expected_token = settings.AI_REFRESH_TOKEN
+        if not expected_token or len(expected_token) < 32:
+            raise HTTPException(status_code=403, detail="Live AI refresh is disabled.")
+        if not refresh_token or not compare_digest(refresh_token.encode(), expected_token.encode()):
+            raise HTTPException(status_code=403, detail="Invalid AI refresh token.")
+        if not settings.GEMINI_API_KEY or not settings.GEMINI_MODEL:
+            raise HTTPException(status_code=503, detail="Live AI provider is not configured.")
     neighborhood = (
         db.query(Neighborhood).filter(Neighborhood.slug == slug.lower().strip()).first()
     )
@@ -66,6 +85,18 @@ def get_neighborhood_report(
             status_code=404,
             detail=f"Neighborhood '{slug}' not found in Muğla pilot dataset.",
         )
+
+    if refresh_ai:
+        with request.app.state.ai_refresh_lock:
+            now = monotonic()
+            remaining = request.app.state.ai_refresh_not_before - now
+            if remaining > 0:
+                raise HTTPException(
+                    status_code=429,
+                    detail="Wait before requesting another live report.",
+                    headers={"Retry-After": str(ceil(remaining))},
+                )
+            request.app.state.ai_refresh_not_before = now + 60
 
     ai_report = generate_neighborhood_ai_report(
         neighborhood, force_live_llm=refresh_ai

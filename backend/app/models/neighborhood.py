@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import Column, Integer, String, Float, Text, DateTime, JSON
 from app.core.database import Base
 
@@ -51,4 +51,8 @@ class Neighborhood(Base):
     ai_pros = Column(JSON, nullable=False, default=list)
     ai_cons = Column(JSON, nullable=False, default=list)
     ai_disclaimer = Column(Text, nullable=True)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    updated_at = Column(
+        DateTime(timezone=True),
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+    )

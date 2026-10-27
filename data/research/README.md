@@ -7,3 +7,5 @@ Bu klasör canlı sağlayıcı denemelerinin kaynak izlerini içerir. Model çı
 - `kotekli_2026-10-28_v3/`: tamamlanan kısa araştırma denemesi. Yalnızca kira, haber ve ulaşım kapsanır; kaynak URL'leri API metadata'sından alınır. Çıktı insan incelemesine adaydır, otomatik doğrulanmış veri sayılmaz.
 
 Anahtarlar yalnızca Git'in dışladığı `backend/.env` dosyasında tutulur. `prompt.txt`, gönderilen gerçek promptun kopyasıdır. Normal API okumaları bu denemeyi çalıştırmaz; script açıkça çağrılmalıdır. Aynı çıktı klasörüyle tekrar çağrı yapılarak kota tüketilmesi engellenir.
+
+Güncel kaynaklar: Kötekli v4; Emirbeyazıt, Orhaniye, Akyaka v5; Muslihittin v6. `integration_smoke_2026-10-28` yeniden kullanılabilir API istemcisinin kısa canlı testidir. Asıl statik teslim `data/neighborhoods/` ve `data/manifest.json` altındadır.

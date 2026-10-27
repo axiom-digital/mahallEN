@@ -22,6 +22,7 @@ wheels/
 *.egg
 venv/
 .venv/
+.venv-grounding/
 env/
 ENV/
 *.db

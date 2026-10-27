@@ -6,7 +6,7 @@
 
 MahallEN aims to answer *"Is this neighborhood a good place to live?"* with a single, source-backed report covering **Safety & News**, **Rent & Cost**, **Transportation Accessibility**, **Earthquake Hazard**, and **Social Life & Daily Amenities**, plus suitability ratings for **University Students**, **Families**, and **Working Professionals**.
 
-**Current stage: M1 project skeleton / prototype.** The five seeded neighborhoods, news, reviews, hazard values and scores are illustrative demo data. Validated static data (#7), survey analysis and weights (#8), live LLM integration (#9), frontend completion (#10), and backend/caching (#11) remain planned or ongoing work. No completed MVP or verified AFAD/news integration is claimed.
+**Current stage: pilot prototype.** The first source-backed static release covers all five neighborhoods (#7), with unknown fields and source-review status retained. Versioned prompts and an explicit Gemini Search API client are available (#9); the general preview uses the team-selected survey weights (#8). The backend seed database is still illustrative. Frontend completion (#10), live report/cache integration (#11), source review and scoring validation remain separate work. No completed MVP or official AFAD integration is claimed.
 
 See [today's M2 roadmap](docs/ROADMAP_M2.md) for the board snapshot, task order and expected evidence. M2 tasks have not been marked complete by these code corrections.
 
@@ -87,4 +87,4 @@ Ordinary report reads and the UI's **Refresh report** button only reload demo sy
 
 The optional `?refresh_ai=true` path is operator-only: configure `GEMINI_API_KEY`, a supported `GEMINI_MODEL`, and an `AI_REFRESH_TOKEN` of at least 32 random characters on the backend, then send that secret in `X-AI-Refresh-Token`. Never place either secret in frontend code or `VITE_*` variables. The endpoint admits at most one live attempt per 60 seconds across neighborhoods **per API process**; failed attempts also consume that interval. Keep the current single-process/local setup; shared limiting must precede multi-worker deployment. Invalid, oversized, HTML-containing or unavailable model output returns the demo fallback.
 
-This guard does not complete #9 or #11: provider/SDK migration, source-grounded output acceptance and persistent caching remain scheduled work.
+The explicit Gemini Search research client, versioned prompts and source acceptance flow are documented in [LLM Integration](docs/LLM_INTEGRATION.md). This separate #9 module does not replace the M1 demo report endpoint. Persistent report/cache integration remains #11.

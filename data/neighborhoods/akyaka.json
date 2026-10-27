@@ -1,0 +1,829 @@
+{
+  "schema_version": "1.0.0",
+  "id": "akyaka",
+  "name": "Akyaka",
+  "district": "Ula",
+  "city": "Muğla",
+  "reference_date": "2026-10-28",
+  "dataset_status": "source_backed_static_v1",
+  "factual_review_status": "source_check_pending",
+  "location": {
+    "lat": 37.0580313,
+    "lon": 28.3271055,
+    "label": "Akyaka, Ula, Muğla, Ege Bölgesi, 48650, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8399373700,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T22:27:03.663325+00:00",
+    "method": "Nominatim representative point; not a building address or neighborhood-wide measurement"
+  },
+  "categories": {
+    "rent_cost": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "ba936d2208f8da",
+          "text": "1+1 | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | Kdm Gayrimenkul Muğla",
+          "source_ids": [
+            "web-0",
+            "web-1"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | Kdm Gayrimenkul Muğla",
+              "source_ids": [
+                "web-0",
+                "web-1"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 26000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "0514a2ac7ad2e4",
+          "text": "1+1 | eşyalı | 27.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | Mengenler Gayrimenkul",
+          "source_ids": [
+            "web-0",
+            "web-1"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | eşyalı | 27.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | Mengenler Gayrimenkul",
+              "source_ids": [
+                "web-0",
+                "web-1"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 27000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "473f1c9549d6bb",
+          "text": "1+1 | eşyalı | 25.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | bilinmiyor",
+          "source_ids": [
+            "web-0"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | eşyalı | 25.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | bilinmiyor",
+              "source_ids": [
+                "web-0"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 25000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "ca9b73a26aed59",
+          "text": "1+1 | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | Thera Emlak İnşaat",
+          "source_ids": [
+            "web-0"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | Thera Emlak İnşaat",
+              "source_ids": [
+                "web-0"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 28000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "a7a366052ef667",
+          "text": "1+1 | eşyalı | 21.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | bilinmiyor",
+          "source_ids": [
+            "web-0"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | eşyalı | 21.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | bilinmiyor",
+              "source_ids": [
+                "web-0"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 21000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "cd9948f9d9e9c1",
+          "text": "3+1 | eşyasız | 50.000 TL/ay | ilan tarihi: 2026-10-23 | uzun dönem | Sahibinden",
+          "source_ids": [
+            "web-2"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **3+1** | eşyasız | 50.000 TL/ay | ilan tarihi: 2026-10-23 | uzun dönem | Sahibinden",
+              "source_ids": [
+                "web-2"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-10-23",
+          "date_status": "reported_by_source_candidate",
+          "rooms": "3+1",
+          "amount_tl_month": 50000,
+          "furnished": false,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": true
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "safety_news": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "dae413c4452884",
+          "text": "2026-07-23 | suç/şiddet | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'nde sokakta kavga eden iki kişi birbirini bıçakla yaraladı. Olay anı güvenlik kamerasına yansıdı.",
+          "source_ids": [
+            "web-3"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Olay anı güvenlik kamerasına yansıdı.",
+              "source_ids": [
+                "web-3"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-07-23",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "suç/şiddet"
+        },
+        {
+          "id": "67a23dadc3a53c",
+          "text": "2026-06-01 | suç/şiddet | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'nde anahtarı üzerinde bırakılan bir motosiklet çalındı. Hırsızın rahat tavırlarla motosiklete binip uzaklaşması güvenlik kamerasına yansıdı.",
+          "source_ids": [
+            "web-4"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Hırsızın rahat tavırlarla motosiklete binip uzaklaşması güvenlik kamerasına yansıdı.",
+              "source_ids": [
+                "web-4"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-06-01",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "suç/şiddet"
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "941c716c1cf135",
+          "text": "12-5 | Menteşe Otogar - Akyaka Garaj | Menteşe Otogar'dan Akyaka Garaj'a ulaşım sağlar. | Sıklık ve son sefer: Hafta sonu ilk kalkış 07:50, son kalkış 23:59. | MUTTAŞ",
+          "source_ids": [
+            "web-10",
+            "web-11",
+            "web-8",
+            "web-9"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Sıklık ve son sefer: Hafta sonu ilk kalkış 07:50, son kalkış 23:59.",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-8",
+                "web-9",
+                "web-10"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-11"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "12-5",
+          "official_source_ids": [
+            "web-10",
+            "web-11"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        },
+        {
+          "id": "b71d0ff800bb08",
+          "text": "12-12 | Ula Otogar - Akyaka Garaj | Ula Otogar'dan Akyaka Garaj'a ulaşım sağlar. | Sıklık ve son sefer: Hafta içi ve hafta sonu ilk kalkış 08:00, ikinci kalkış 11:30. | MUTTAŞ",
+          "source_ids": [
+            "web-10",
+            "web-11",
+            "web-8",
+            "web-9"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-8",
+                "web-9",
+                "web-10"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Hafta içi ve hafta sonu ilk kalkış 08:00, ikinci kalkış 11:30.",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-11"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "12-12",
+          "official_source_ids": [
+            "web-10",
+            "web-11"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        },
+        {
+          "id": "424b5403e0fb54",
+          "text": "1-22 | Menteşe - Akyaka - Akbük/Ören | Menteşe'den Akyaka, Turnalı, Kıran Sahili, Akbük, Kultak, Alatepe ve Ören güzergahlarına toplu taşıma hizmeti sunar. | Sıklık ve son sefer: bilinmiyor | MUTTAŞ",
+          "source_ids": [
+            "web-10",
+            "web-11",
+            "web-12",
+            "web-8",
+            "web-9"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-8",
+                "web-9",
+                "web-10"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-12"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-22",
+          "official_source_ids": [
+            "web-10",
+            "web-11",
+            "web-12"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "6ff7003ee07fea",
+          "text": "Aşkyaka Pilavcısı | kafe | Akyaka Mah., Zeytin 1. Sok., 1A, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-13"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Sok., 1A, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-13"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Aşkyaka Pilavcısı",
+          "type": "cafe",
+          "location_description": "Akyaka Mah., Zeytin 1. Sok., 1A, Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "dc9293c3f75e2f",
+          "text": "West Cafe & Bistro | kafe | Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-14"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **West Cafe & Bistro** | kafe | Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-14"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "West Cafe & Bistro",
+          "type": "cafe",
+          "location_description": "Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "fba9f43a71fc6d",
+          "text": "Devin Akyaka | kafe | Akyaka Mah., Nergiz Sok., Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Devin Akyaka** | kafe | Akyaka Mah., Nergiz Sok., Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Devin Akyaka",
+          "type": "cafe",
+          "location_description": "Akyaka Mah., Nergiz Sok., Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "e0122d2973ae89",
+          "text": "Akyaka Town Market | supermarket | Akyaka, 48640 Ula/Muğla, Türkiye | güncel faaliyet: Çarşamba günleri açık, diğer günler kapalı. | Wanderlog",
+          "source_ids": [
+            "web-16"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Akyaka Town Market** | supermarket | Akyaka, 48640 Ula/Muğla, Türkiye | güncel faaliyet: Çarşamba günleri açık, diğer günler kapalı.",
+              "source_ids": [
+                "web-16"
+              ]
+            },
+            {
+              "text": "| Wanderlog",
+              "source_ids": [
+                "web-16"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Akyaka Town Market",
+          "type": "supermarket",
+          "location_description": "Akyaka, 48640 Ula/Muğla, Türkiye",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "212cd146ae5a5c",
+          "text": "Etpark Tencere Ev Yemekleri | restoran | Akyaka Mah., Azmakboyu Sok., 30, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-17"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Etpark Tencere Ev Yemekleri** | restoran | Akyaka Mah., Azmakboyu Sok., 30, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Etpark Tencere Ev Yemekleri",
+          "type": "restaurant",
+          "location_description": "Akyaka Mah., Azmakboyu Sok., 30, Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "d14107c594d27f",
+          "text": "Akyaka Azmak Restaurant | restoran | Akyaka Mah., İnişdibi Cad., No:46, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-18"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Akyaka Azmak Restaurant** | restoran | Akyaka Mah., İnişdibi Cad., No:46, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Akyaka Azmak Restaurant",
+          "type": "restaurant",
+          "location_description": "Akyaka Mah., İnişdibi Cad., No:46, Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "ab0624ecea456f",
+          "text": "Rahat Meyhane | bar | Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-19"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Rahat Meyhane** | bar | Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-19"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Rahat Meyhane",
+          "type": "bar",
+          "location_description": "Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "d8ae7b05f99b23",
+          "text": "Akyaka Belediye Parkı | park | Akyaka Mah., Cumhuriyet 1. Cad., Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-20"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Cad., Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-20"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Akyaka Belediye Parkı",
+          "type": "park",
+          "location_description": "Akyaka Mah., Cumhuriyet 1. Cad., Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "2b14d584ce3306",
+          "text": "Akyaka Orman Kampı | restoran | Akyaka Mah., Mehmet Yoncalı Küme Evler, 30, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-21"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Akyaka Orman Kampı** | restoran | Akyaka Mah., Mehmet Yoncalı Küme Evler, 30, Ula, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-21"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Akyaka Orman Kampı",
+          "type": "restaurant",
+          "location_description": "Akyaka Mah., Mehmet Yoncalı Küme Evler, 30, Ula, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        }
+      ],
+      "score": null,
+      "missing_reason": null,
+      "osm": {
+        "status": "unavailable",
+        "places": [],
+        "counts": null,
+        "attempts": [
+          {
+            "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+            "status": "failed",
+            "error": "HTTPError",
+            "http_code": 504
+          },
+          {
+            "endpoint": "https://overpass-api.de/api/interpreter",
+            "status": "failed",
+            "error": "HTTPError",
+            "http_code": 502
+          }
+        ],
+        "missing_reason": "No complete response from public Overpass instances; not zero facilities."
+      },
+      "scope_note": "OSM radius is around a representative point, not a neighborhood boundary. Web examples may describe a wider nearby area."
+    },
+    "earthquake_hazard": {
+      "status": "research_estimate",
+      "value": 0.391,
+      "unit": "g",
+      "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+      "method": "nearest published grid point; no interpolation",
+      "nearest_grid_point": {
+        "latitude": 37.06308,
+        "longitude": 28.32229,
+        "pga_g": 0.391
+      },
+      "distance_to_grid_point_km": 0.7055,
+      "maximum_supported_distance_km": 5,
+      "grid_row_count": 201920,
+      "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "source_title": "Jeodezik Deprem Tehlike Haritası",
+      "source_version": "v1, 2025-02-16",
+      "authors": [
+        "Aktuğ, Bahadır",
+        "Şentürk, Murat Doruk",
+        "Özsaraç, Vedat",
+        "KILIÇ, Nazan"
+      ],
+      "license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+      "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+      "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+      "is_official_afad_tdth": false,
+      "limitations": [
+        "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+        "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+        "No soil class, building safety conclusion, risk label or score is derived."
+      ],
+      "score": null
+    }
+  },
+  "sources": [
+    {
+      "id": "web-0",
+      "publisher": "hepsiemlak.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeuYQsrJk_KklypGZ3td9R0eLM5FzGXpANp1RG990WseHa-R6Egp38_Oej3mwuHFwQFStoDVA-RPQP0yqdoHejx6wiDBCepJdhGcOB9aKljs_iQ66pbMUSDoGqAsMg3ITct-0nrsJTtxP4Vg==",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-1",
+      "publisher": "hepsiemlak.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEokfQeKkScYLM8FhESQHz19Dezy-tbKQDl-BKoLBZ2r4R411KtRiEdXomtrUi_RFn1xUekeYlzQRJNuA7rLopNydEHDGMT6ZSs5JgQjeczq9yXyfwuPLx8GHVZD5jJ4TdvpeplonJdJNFQJQ3vlw4=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-2",
+      "publisher": "hepsiemlak.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUTFwmMKWcV3GTPdpW09pD8zWUAgtNwAEj8SItNEwU5nM9nJg5MMtLdftLq8Q5C2JAczDaWgD_H-tgo0Sm12Ek6eeP56tuER3PJenhTPUZQzMPZKFr2HBBExgbeoUfje2dmR0K7lQar4QFVg6S806bVYNw24CXRNqzFsGNIUI=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-3",
+      "publisher": "sabah.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtXqIlJfEgjxykl53HNpbNHq5gKiPQjoc7YMPnSfy2F9XBJf7ULSCQY0ACqmplVvPJHdtwq1m-wVLLCmsoH2DPePF0M4qsb8zUwbeSWjQU2i7S09c6OaU0RC3PxJ_G46Orc-P0shK-95dMVdHhgXtXR-rZl9RVFlk7j94zw83g_6rMCflmBEk9Sx-HudTxCoA7K1ifymlhaUQQIJMS5vZhUfOTLmQ=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-4",
+      "publisher": "sabah.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvkArc2DCrRJIvXB_6jV9mzJNWR8x-xW3JbmncFuoGzwAr0FmOqjA_fK-3PdfuYcFlWAZJXWVDHUH827sXFGjwiGMOsytP0ZvRNXIStJ1a5G04BpmT4QKP2rwIHnPiXmuMeSipfJf678PZpR4mI6xY8P8yG3-xICt0wbHoXWiyb43sSZPuqAYl8PtSV6lsSSduPb6svH7i9bGyTbkHii_GH0-fDVi0D6WkqnQ1-oY_9GBBSpPpi0JLOeX2DHzsfnm_AjqlwGcv9xjODU8sudL98h0CQCTv",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-5",
+      "publisher": "iha.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi-cjDJXSMW-BmHvqYV3idYfDvp0B-MQW8wS6WVOYz2PScxkfO6tzWjAXaWqi7ROFwIiHsOryyQXDFpG7WuX1dU4FsGXv4h-Rkzg63fS2fjpUuDG3y93akgrJJtEODW32uu-wdPO2PVXYyXjJUgkPhsezgIdtcVzl-yVTw9L-HZooYAl0T69nkge_i0BdeGoz8B7vUwHwOnM2UUYYIqple4syyhVC_rw2kRNcOTSq5gMQcqa4k2wYDU6-gcwM=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-6",
+      "publisher": "youtube.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0-XTO09sMY41bScIHsgj7krBYjUu7cDJe9bbyq_RSNsR_ks-g8rj_sYv38yKlmX83ToF02q5BI6bvHygoH_nAsE5Fxs_Gv1CaIHFJN7T2VtVK_VBcwIr48jVW0p9qiAy_nBa7Dw==",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-7",
+      "publisher": "ntv.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZGqeyNDMhVT6GzIMdY7CNNtqXX782gceIEqPTHFaFyVeYPs5O7i2bExng7OFDmDfQ2vUYdnyrIQ3-9dAuIdhUi9IRM6q-q12eRSoWzygLpaskkHYADLnzKW4mGI1iOqiKBFVExY55DlGcEdf0NtPEwNrZR2OE6MHYzOC3ItHUreRtSC9U14EnaSK9h83WlztLhgA1LZGJtW4XXe-ArfcEOPwRvLNY6Q8xenc4",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-8",
+      "publisher": "minibussefersaatleri.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpj_1ndXV9_WS8YYb9MIIYKtEzPwlW7930t-mH-HS01V8R0cRkGfhCj04NWZr_UTWxMdJrgt7YGvNFOoOWG3X2WrCEvktg-646Ezu6wTlHrOBfEz57qpWswVY80VrETYx91yud0lkf31KPy6y98FLXDTVRfTTUJppH",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-9",
+      "publisher": "gercekfethiye.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhs9YCW1uPRW6-aksTT90nzPYNG6F6L8u0oDzQYyemT7wiMSc0yeqZk8d79I5OLp2tICiJVGB7JS7GCbw1BVJZ2pxXaPLGj06CH_-Zp7JstYbJ147nKRcrekohEviVnxkQE7E0pjxJge_QDyuTh90tQ3lj5q2lVKLpoEzL0is3ilUHhxfpCJUVRjAWyaSSzhTLMwcZwcTrr4j2a3YzGobGek3nYU-ZcIvR5jtHW8=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-10",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvkfg9V93Z0SheSEVbqkSFI4y0oskKTqVdn1wNjgLummLfhCoIYqk0cKZqrsJs6PwZwzcJFValnfPyuXg6tIp5PhYGCpif1YaWzxpli4M66rh2CTNAhekD3H566acbEqo-EuRs2D5bMkxPf57SGEcA0jw=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-11",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZeBtyhM3sTlmBjm3yFSbLJBznCIjSPuChyecY63QMpOsJ7Vsz0ix5LT8fsaMcZlndUAQYXZhZXG6b1-03gw7k2iw8eoYHCQX10_G_AFNPJgBqaqIQptgmcXRSFXAjDXlO1FOPVt863No8y7cUumY=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-12",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVKZO_P_SPqs25ozq4qwHSkZAoGkmbyE5qtLgi_1tZQabjYW20vBxbpUW91vGAV_FsI1UPVxiJ7vokY8tbW5j0tVyih3brcXChcn6wsUk2OI3FoDHjhaKAMb1z-jZC2OQS9oKtHNuHuCF4jAdSzB4eNVamUIYdMn4aIKzptBCVOj1jGm4=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-13",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0gpurRtzSq2fAQBkaUKfnhjKU56kFY0_RynWNOCaDuAAM880nGIXSEoPkYfItdrGBRvCkeOERYDzrENqeEI7TU1quir_1D7MZP42pFsdCCF7RZXJpE8wlm8NUMXcR1Ik7NrbO9G2-SAMaAjc_DICLb9jzPCiK-w=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-14",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfK8d88j0_eSZpEvYkE1KY4beouBYz8Lf2Biro8QFZWjsHHgHxRbI7BIYd-arW3qJgp1CeJyM67YHM1BlS6YRWv8hou6xJHv4dgHn3zQLe3tDO7Fqlp8mbo7rRnH_9Vm8qFz-6mU-pN1vmOkaJlCULPCgs89wb",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-15",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWWfi3CdabdBPV4e6uFwoRWyJKlN7AUxNk3RuyHiTLSEVS-1W1ZItSYYFXu6UIM-ATA_JjcqkZyg9Xyzm-nloS0BkHC6utZnqxMs1FFlKuBxnC-TeQslqP-a6DOYQfGZlZWb6qAcRpKG2enaibQ-OSEe8=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-16",
+      "publisher": "wanderlog.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYYf0iSXkZSFq7u5pmTg7VD8q_rmH9-sqlpkIaFose9bRbmbyQ1e6brWb1nGjRYytUrbPs4VyCEWM2VJ26i4Ug84wMoDzu_LMIJ0bTeQcOL4GbIKhsXfJ0H4Fg1Cduhupt1VKCaUzrjls_MbPYAEiX8PxTPm3OWb_V",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-17",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUz2ajPZrb88Q-Aqi6R-THxqL9UZnDUp95EL3Y3amW7FH41dvG1FIqCDSvepdX6brFQcRWR2ejCm4XsgAw9QDhzwpSAWgygbpFb-KbUBdQSOC2H2p2nIfdbmo42X_nCgIkt48s_T146wiHWta_qsQzxjJzbo_4QeWo4Z5KyOZrjNo=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-18",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVJwlD2u2JMPpXkn8YXS6l13RFyqIPA7sB8cYV-m3J1ZRcLKQgum1lmZGJ3O742pIjPeLSHLfYL-3nsDnJhan7PX2kRjZONjL2qbL8-lcpz2YbRv6QJFFJZwRlWWQOhIh4S2GpEMGasIcHoYEXvU_PcaUK2yEEhMaFwB6WQ_4=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-19",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzWVDYwaXeUg7jMTweMVgp2WPnJ1DGqO776UlHN1cBTbWXuduZylzx6R48j0zNbW4oze-oNSqOFrbbxIKR6TqCGW6ebPwacS8sD5qdut3W22NZPzlomrGN2_W4SBiC52XyUuapHhuNKXUv6pnvrCtRbE5ZMA==",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-20",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZleYEV25gDD92JZpps38GL50dmGN4jwBj4Jl_tovVqycwkaWbEd8fliNGpJjApe2rZOZzwAakM-BoUbjJ-ZIxg8AHuc5ksGn4Ls0Xup8BRFpp55HKQ2XqBYBFsbuwZOWhlcI3htm7N6XYsOlhFcKapXX6BlSzz9MeUvl7S2yKeHthcvQ=",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-21",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VE5PBGvM_I7WXU6rUQAUyTMGj8Fsf9MvDMMS6otprX0ePlWceAfPK856p6SGCsjWmyUs9-YXfXcxtRS45tLtlIrAwYhFDPcQ0yNRM_FK02uE4HI6P9p1FWHA_1SIT6Swl2URK0szY6BvTInCFuKy2EH-Kr-YJiAR",
+      "retrieved_at": "2026-10-27T22:25:55.042669+00:00",
+      "method": "google_search_grounding"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "2bdfd0787e9445",
+      "text": "2024-07-13 | trafik | Muğla'nın Ula ilçesi Akyaka Mahallesi girişinde freni patlayan bir tur midibüsü, park halindeki 3 araca çarptıktan sonra bir evin bahçe duvarına çarparak durdu. Kazada 2 kişi hayatını kaybetti, 9'u ağır 35 kişi yaralandı.",
+      "source_ids": [
+        "web-5",
+        "web-6",
+        "web-7"
+      ],
+      "grounding_supports": [
+        {
+          "text": "Kazada 2 kişi hayatını kaybetti, 9'u ağır 35 kişi yaralandı.",
+          "source_ids": [
+            "web-5",
+            "web-6",
+            "web-7"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "safety_news",
+      "reason": "outside_date_window"
+    }
+  ],
+  "provenance": {
+    "grounding_result": "data/research/akyaka_2026-10-28_v5/result.json",
+    "direct_result": "data/pilot/akyaka_direct_sample.json",
+    "model": "gemini-2.5-flash",
+    "research_started_at": "2026-10-27T22:25:43.791219+00:00",
+    "research_finished_at": "2026-10-27T22:25:55.042669+00:00"
+  },
+  "limitations": [
+    "Initial static data release, not a verified complete business/property census.",
+    "Search supports attach only to quoted segments; all narrative claims are not thereby verified.",
+    "Unknown data remains null; academic hazard data is not official AFAD TDTH or building safety.",
+    "Survey weights, live report API and caching are separate tasks."
+  ]
+}

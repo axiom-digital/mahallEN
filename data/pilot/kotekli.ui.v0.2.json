@@ -1,0 +1,832 @@
+{
+  "name": "Kötekli",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "date": "2026-10-28",
+  "location": {
+    "lat": 37.1660283,
+    "lon": 28.3833896,
+    "label": "Kötekli, Menteşe, Muğla, Ege Bölgesi, 48050, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8607003436,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=K%C3%B6tekli%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T21:38:31.945054+00:00",
+    "method": "OSM/Nominatim representative point; not an address or whole-neighborhood measurement"
+  },
+  "rent": [
+    {
+      "text": "2+1 | eşyalı | 27.000 TL/ay | ilan tarihi: 2026-08-27 | uzun dönem | ASYA GAYRİMENKUL",
+      "sources": [
+        {
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "supportedSegments": [
+        "*   2+1 | eşyalı | 27.000 TL/ay | ilan tarihi: 2026-08-27 | uzun dönem | ASYA GAYRİMENKUL"
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-08-27",
+      "rooms": "2+1",
+      "amount": 27000,
+      "furnished": true
+    },
+    {
+      "text": "1+1 | eşyalı | 21.000 TL/ay | ilan tarihi: 2026-09-11 | uzun dönem | MUĞLA KAMPÜS EMLAK",
+      "sources": [
+        {
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "supportedSegments": [
+        "*   1+1 | eşyalı | 21.000 TL/ay | ilan tarihi: 2026-09-11 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-09-11",
+      "rooms": "1+1",
+      "amount": 21000,
+      "furnished": true
+    },
+    {
+      "text": "2+1 | eşyalı | 30.000 TL/ay | ilan tarihi: 2026-09-03 | uzun dönem | MUĞLA KAMPÜS EMLAK",
+      "sources": [
+        {
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "supportedSegments": [
+        "*   2+1 | eşyalı | 30.000 TL/ay | ilan tarihi: 2026-09-03 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-09-03",
+      "rooms": "2+1",
+      "amount": 30000,
+      "furnished": true
+    },
+    {
+      "text": "1+1 | eşyalı | 22.000 TL/ay | ilan tarihi: 2026-08-19 | uzun dönem | MUĞLA KAMPÜS EMLAK",
+      "sources": [
+        {
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "supportedSegments": [
+        "*   1+1 | eşyalı | 22.000 TL/ay | ilan tarihi: 2026-08-19 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-08-19",
+      "rooms": "1+1",
+      "amount": 22000,
+      "furnished": true
+    },
+    {
+      "text": "2+1 | eşyalı | 27.000 TL/ay | ilan tarihi: 2026-08-19 | uzun dönem | MUĞLA KAMPÜS EMLAK",
+      "sources": [
+        {
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "supportedSegments": [
+        "*   2+1 | eşyalı | 27.000 TL/ay | ilan tarihi: 2026-08-19 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-08-19",
+      "rooms": "2+1",
+      "amount": 27000,
+      "furnished": true
+    },
+    {
+      "text": "2+0 | eşyalı | 23.500 TL/ay | ilan tarihi: 2026-08-12 | uzun dönem | MUĞLA KAMPÜS EMLAK",
+      "sources": [
+        {
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "supportedSegments": [
+        "*   2+0 | eşyalı | 23.500 TL/ay | ilan tarihi: 2026-08-12 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-08-12",
+      "rooms": "2+0",
+      "amount": 23500,
+      "furnished": true
+    }
+  ],
+  "transport": [
+    {
+      "text": "1-66 Menteşe Otogar - Yeniköy (Gece Hattı): Menteşe Otogar, Stadyum, Tıp Fakültesi, Turgut Reis Yurdu ve Kötekli'yi Yeniköy'e bağlar. Kötekli sakinlerine otogar, kampüs ve tıp fakültesi bağlantısı sunar.",
+      "sources": [
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH475m-2cr1Ybwfjy-jQq2Uqu1d9rdXRyZ8L32uLozZamZDdiRAOjjB_SK9l78PtxLBMl26CBDnb8e-72dZDvJNn_fhdGxb1VrTFBXibOJxvToO_9Ofw-OvobIRlk4eQt50hvBpplB9IONivK-RxbvfZZ46sd8vPvjeZxJ8gduxTpQ="
+        },
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5dtdc4NjeilC-Hdfus3NkyPaXh0CjDvQuW_ko__iMcq133XekWR-e6us50hGuEY0afzdUii9oEWqX0A7ImA4BZtJuKmaMAHZaO9o-2uNJnRmbbE9ugcPunBpDgBFWbYJ0RO4sppg="
+        }
+      ],
+      "supportedSegments": [
+        "Hafta içi, Cumartesi ve Pazar günleri 00:20'den itibaren seferler mevcuttur."
+      ],
+      "reviewStatus": "source_check_pending",
+      "code": "1-66",
+      "mixedSourceCandidate": true
+    },
+    {
+      "text": "1-65 Menteşe Otogar - Yeniköy: Menteşe Otogar, Tıp Fakültesi, Turgut Reis Yurdu ve Kötekli'yi Yeniköy'e bağlar. Kötekli sakinlerine otogar, kampüs ve tıp fakültesi bağlantısı sağlar.",
+      "sources": [
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5dtdc4NjeilC-Hdfus3NkyPaXh0CjDvQuW_ko__iMcq133XekWR-e6us50hGuEY0afzdUii9oEWqX0A7ImA4BZtJuKmaMAHZaO9o-2uNJnRmbbE9ugcPunBpDgBFWbYJ0RO4sppg="
+        },
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQvqAXopjODJnGoi5Tln3B-XJCCm-4piIE7fCWi3nVUt6HAe3nRhHVAzK1_fA5QiqkuQE75bFc4a_FK9mUZkhc_rMOC8_s3z3bFSdg_75l3I7dyzfuBBYFV4sY1_wIcBP-r__GSwXZn71x03S1aJNBdmmYI6uJCDmwFy0="
+        }
+      ],
+      "supportedSegments": [
+        "Kötekli sakinlerine otogar, kampüs ve tıp fakültesi bağlantısı sağlar."
+      ],
+      "reviewStatus": "source_check_pending",
+      "code": "1-65",
+      "mixedSourceCandidate": true
+    },
+    {
+      "text": "1-62 Menteşe Stadyum - Yeniköy: Menteşe Stadyum, AVM, Kötekli ve Yeniköy arasında ulaşım sağlar. Kötekli sakinlerine şehir merkezi ve alışveriş merkezine erişim imkanı sunar.",
+      "sources": [
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5dtdc4NjeilC-Hdfus3NkyPaXh0CjDvQuW_ko__iMcq133XekWR-e6us50hGuEY0afzdUii9oEWqX0A7ImA4BZtJuKmaMAHZaO9o-2uNJnRmbbE9ugcPunBpDgBFWbYJ0RO4sppg="
+        },
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX8VygQg-oZnAJBhzqL9G8wCfoW49RBO939JRbBUJjq3sghSvg8f7YF6phrxcpexOZFyf8SMX9X-4PvBQeb40aWGkAQ5Xj5c3RPIIMuAEb13MWGXVyV26OvjypiSwOohcltXM3-8acJO_huPVnmOXwv14ivYI7P_adtd8="
+        }
+      ],
+      "supportedSegments": [
+        "Kötekli sakinlerine şehir merkezi ve alışveriş merkezine erişim imkanı sunar."
+      ],
+      "reviewStatus": "source_check_pending",
+      "code": "1-62",
+      "mixedSourceCandidate": false
+    },
+    {
+      "text": "1-48 Yeniköy - Tıp Fakültesi (KYK): Yeniköy, Kötekli, Kampüs, Tıp Fakültesi ve KYK yurtlarını birbirine bağlar. Özellikle öğrenciler için kampüs ve tıp fakültesine doğrudan ulaşım sağlar.",
+      "sources": [
+        {
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUKA9dVfNaVoTYzzcdaZmxkmEbJTseYwRsF2vGR64FwH1LPeoVj8SHKmkRMyRBfbH7Lh9N6KGEB2sbxc71F7ZkEtdJQCnDFQVnoSPGns3Ly1OAVVFJjVOACBtVBrD8udsFZQ5-oTzyQILdiAZ0LXzwEbNDOBreOz4dQ9Gt-Q=="
+        }
+      ],
+      "supportedSegments": [
+        "Özellikle öğrenciler için kampüs ve tıp fakültesine doğrudan ulaşım sağlar."
+      ],
+      "reviewStatus": "source_check_pending",
+      "code": "1-48",
+      "mixedSourceCandidate": true
+    }
+  ],
+  "news": [
+    {
+      "text": "Bir konutta iki kişinin yaşamını yitirmesine ilişkin soruşturma haberi.",
+      "sources": [
+        {
+          "publisher": "anlatilaninotesi.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSopKAgGBYOVWUEVzPmE0dRylccqaoeOeIVt_kYx1sMWlgvobIDBupHx6_yTSVePX6IF1EcyFvJaN35w6ibJlP1S43RFna3crES72XkNcB70w1E9kCPtc-mR2lZoFODem8ofAuWvAM3VbHVkxm938LWvuAcQ-PKPo96NyfK1BwGpRcACEvOTVeqtYWakghnXalWWi8E5gzl6lJRzAGXVhjlVfbuykZ91FwGKcUaaDn"
+        },
+        {
+          "publisher": "sondakika.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdmIGKVNMdS8yzc22iS0QdRnXKTJ95CQZn8z3R9nyatp93PTsCA3DTBUQuufQr-NcWWWeiPD6CMiLA0jPxTRQp7LDvbLMe5IP0h4AJ0tqkYymU99jpzIWURwqAV8FvYIeZT90wAcPyN60F_X2Weuf-7TfyLtcbfGXjfMbFG4E4yvLlQeuC6dJB-_ztWQnPmgcTR0d7Z9QaJ5T7SDmjlA=="
+        },
+        {
+          "publisher": "haberturk.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkn4SRk6HwBIspqQ0q1PgpIDAuXMFgW_8zAkghy5zsL9nwySojFdDvOXiXfJ1b3tCD3uKJvf3nf8I1brO80SHx-KFMSKtpS1zfueY1F8NmBwkhIwBaSVSIW7pPFQy4sNQmhBLgUpgY-jEoOl7M8Tygq2JzK2rtVmc-5cnoU8jXYEgVv9agbikd7R8Qk3Sy2ramxf-G7G5na7Hu3CQJMmqcJ4E7zonymWeypo8RxcqBvOgWrXmg1w=="
+        }
+      ],
+      "supportedSegments": [
+        "Olay yerinde yapılan incelemelerde silah ve diğer deliller muhafaza altına alındı."
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-09-01"
+    },
+    {
+      "text": "Gece havaya ateş açılması üzerine polis incelemesine ilişkin haber.",
+      "sources": [
+        {
+          "publisher": "muglayenigun.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjVCUtnQ534sjxtT3zxMjrMvs2DmTAIZKiADuieIDTLY2V1kvzNaT8Ujdrmgkh4-AenBOLJgLNXRVdL-3ALqBe2q6YIdLaLX3GtSRAzRv04qJ0GGXq51MRNKUmAVuCsp1mRtNMN1cFRse4YAccK-1kNFDHVeA5HuhPay0TjBUNb5e0Ee5PpTM2tDAXhXOx7UuQ"
+        }
+      ],
+      "supportedSegments": [
+        "Olay yerine gelen polis ekipleri inceleme başlattı ve çok sayıda boş kovan tespit etti."
+      ],
+      "reviewStatus": "source_check_pending",
+      "date": "2026-03-31"
+    }
+  ],
+  "scores": {
+    "rent": {
+      "value": 70,
+      "label": "Kira ve maliyet",
+      "confidence": "Sınırlı örneklem",
+      "reason": "2+1 ilanlarının ortanca kirasının seçtiğin bütçeye uyumu. Aidat ve faturalar dahil değil.",
+      "method": "budget"
+    },
+    "transport": {
+      "value": 70,
+      "label": "Ulaşım",
+      "confidence": "Kaynak kontrolünde",
+      "reason": "Kampüs, tıp fakültesi, otogar ve merkez bağlantıları için hat adayları var; sıklık ve son sefer belirsiz.",
+      "method": "gemini"
+    },
+    "social": {
+      "value": 70,
+      "label": "Sosyal yaşam",
+      "confidence": "Kaynak kontrolünde",
+      "reason": "Kafe, market, park, restoran ve pub seçenekleri bir arada. Webden bulunan işletmelerin güncel faaliyeti doğrulanmadı.",
+      "method": "gemini"
+    },
+    "news": {
+      "value": 55,
+      "label": "Güvenlik",
+      "confidence": "Düşük veri güveni",
+      "reason": "Yerel olay haberlerine dayanan Gemini deneme puanı. Resmî suç oranı ve mahalle ölçeğinde güvenlik ölçümü yok.",
+      "method": "gemini"
+    },
+    "hazard": {
+      "value": 23,
+      "label": "Deprem tehlikesi",
+      "confidence": "Araştırma modeli",
+      "reason": "0.351 g için araştırma gridindeki ters yüzdelik sıra. Yüksek puan, modelde daha düşük sarsıntı tehlikesi demek.",
+      "method": "inverse_grid_percentile"
+    }
+  },
+  "social": {
+    "places": [
+      {
+        "id": "node-3476044435",
+        "name": "BİM",
+        "category": "supermarket",
+        "lat": 37.1668381,
+        "lon": 28.3839806,
+        "distance": 104,
+        "url": "https://www.openstreetmap.org/node/3476044435",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/3476044435"
+          }
+        ]
+      },
+      {
+        "id": "node-4255752990",
+        "name": "Migros",
+        "category": "supermarket",
+        "lat": 37.164505,
+        "lon": 28.3862076,
+        "distance": 302,
+        "url": "https://www.openstreetmap.org/node/4255752990",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/4255752990"
+          }
+        ]
+      },
+      {
+        "id": "node-4707015713",
+        "name": "Çağdaş Market",
+        "category": "convenience",
+        "lat": 37.1650146,
+        "lon": 28.3858752,
+        "distance": 247,
+        "url": "https://www.openstreetmap.org/node/4707015713",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/4707015713"
+          }
+        ]
+      },
+      {
+        "id": "node-10751422078",
+        "name": "Başka Kahve",
+        "category": "cafe",
+        "lat": 37.1687555,
+        "lon": 28.3821777,
+        "distance": 322,
+        "url": "https://www.openstreetmap.org/node/10751422078",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/10751422078"
+          }
+        ]
+      },
+      {
+        "id": "node-11049566769",
+        "name": "MSKÜ Türk Evi Restaurant",
+        "category": "restaurant",
+        "lat": 37.1645772,
+        "lon": 28.3725636,
+        "distance": 973,
+        "url": "https://www.openstreetmap.org/node/11049566769",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/11049566769"
+          }
+        ]
+      },
+      {
+        "id": "node-12232207001",
+        "name": "BİM",
+        "category": "convenience",
+        "lat": 37.1716828,
+        "lon": 28.3774598,
+        "distance": 819,
+        "url": "https://www.openstreetmap.org/node/12232207001",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/12232207001"
+          }
+        ]
+      },
+      {
+        "id": "node-12364762414",
+        "name": "Coffy",
+        "category": "cafe",
+        "lat": 37.1697772,
+        "lon": 28.3806986,
+        "distance": 480,
+        "url": "https://www.openstreetmap.org/node/12364762414",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/12364762414"
+          }
+        ]
+      },
+      {
+        "id": "node-12365498236",
+        "name": "Mackbear",
+        "category": "cafe",
+        "lat": 37.1698555,
+        "lon": 28.3805984,
+        "distance": 492,
+        "url": "https://www.openstreetmap.org/node/12365498236",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/12365498236"
+          }
+        ]
+      },
+      {
+        "id": "node-12365498255",
+        "name": "Arabica",
+        "category": "cafe",
+        "lat": 37.1693591,
+        "lon": 28.3811872,
+        "distance": 419,
+        "url": "https://www.openstreetmap.org/node/12365498255",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/12365498255"
+          }
+        ]
+      },
+      {
+        "id": "node-12365498263",
+        "name": "Kaptan Kıraathanesi",
+        "category": "cafe",
+        "lat": 37.1691535,
+        "lon": 28.3815984,
+        "distance": 382,
+        "url": "https://www.openstreetmap.org/node/12365498263",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/12365498263"
+          }
+        ]
+      },
+      {
+        "id": "node-12880590854",
+        "name": "Türkiye Tarım Kredi Kooperatif Market",
+        "category": "supermarket",
+        "lat": 37.1709887,
+        "lon": 28.375199,
+        "distance": 912,
+        "url": "https://www.openstreetmap.org/node/12880590854",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/node/12880590854"
+          }
+        ]
+      },
+      {
+        "id": "way-552392695",
+        "name": "Yoğurtçu Parkı",
+        "category": "park",
+        "lat": 37.1699601,
+        "lon": 28.3799484,
+        "distance": 533,
+        "url": "https://www.openstreetmap.org/way/552392695",
+        "origin": "OSM",
+        "sources": [
+          {
+            "publisher": "OpenStreetMap",
+            "url": "https://www.openstreetmap.org/way/552392695"
+          }
+        ]
+      },
+      {
+        "id": "web-0",
+        "name": "252 Live",
+        "category": "entertainment",
+        "address": "Kötekli Mah., 28. Sok., 8C, Menteşe, Muğla",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhzxen7ngjaD9I-lnQL56ze0-UdlqJOVqoJPviHM9nEy--ibbFixXky3zTZeFZ6yKJO4rmkSKGdYDzK5oheCIk2WGqb056KkF5wvIThPllizU16JP9rQC6p_PJJ9_gskfjZX433iC8M7BGMpHEgE=",
+        "sources": [
+          {
+            "publisher": "yandex.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhzxen7ngjaD9I-lnQL56ze0-UdlqJOVqoJPviHM9nEy--ibbFixXky3zTZeFZ6yKJO4rmkSKGdYDzK5oheCIk2WGqb056KkF5wvIThPllizU16JP9rQC6p_PJJ9_gskfjZX433iC8M7BGMpHEgE="
+          }
+        ],
+        "supportedSegments": [
+          "Sok., 8C, Menteşe, Muğla | güncel faaliyet durumu doğrulandı | Yandex Maps"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-1",
+        "name": "Kukla Pub",
+        "category": "pub",
+        "address": "Kötekli Mh., Sıtkı Koçman Cd., No: 62, Menteşe, Muğla",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg==",
+        "sources": [
+          {
+            "publisher": "yandex.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg=="
+          }
+        ],
+        "supportedSegments": [
+          "*   **Kukla Pub** | bar | Kötekli Mh., Sıtkı Koçman Cd., No: 62, Menteşe, Muğla | güncel faaliyet durumu doğrulandı | Yandex Maps"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-2",
+        "name": "Tosbaa Cafe Pub",
+        "category": "pub",
+        "address": "Kötekli Mahallesi",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg==",
+        "sources": [
+          {
+            "publisher": "yandex.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg=="
+          }
+        ],
+        "supportedSegments": [
+          "*   **Tosbaa Cafe Pub** | bar | Kötekli Mahallesi desteği | güncel faaliyet durumu doğrulandı | Yandex Maps"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-3",
+        "name": "Mazot Kötekli",
+        "category": "pub",
+        "address": "Kötekli Mahallesi",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg==",
+        "sources": [
+          {
+            "publisher": "yandex.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg=="
+          }
+        ],
+        "supportedSegments": [
+          "*   **Mazot Kötekli** | bar | Kötekli Mahallesi desteği | güncel faaliyet durumu doğrulandı | Yandex Maps"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-4",
+        "name": "Friends Pub",
+        "category": "pub",
+        "address": "Kötekli Mah., 299. Sok., Menteşe, Muğla",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmnQk9wRYLC7yhthec-nhQJI9jEKBjvXGM02oGHSAjKrAI4Qu9EyYBMoAeqbDGiXWjrtNBhf4aEt-Q6IO7z397l-Q-W0a29dBggOhUYwBjUYjHcssMYI3hR5-9pfR42xyMrP8BvPHo4hlFNZfWyQjaGXY=",
+        "sources": [
+          {
+            "publisher": "yandex.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmnQk9wRYLC7yhthec-nhQJI9jEKBjvXGM02oGHSAjKrAI4Qu9EyYBMoAeqbDGiXWjrtNBhf4aEt-Q6IO7z397l-Q-W0a29dBggOhUYwBjUYjHcssMYI3hR5-9pfR42xyMrP8BvPHo4hlFNZfWyQjaGXY="
+          }
+        ],
+        "supportedSegments": [
+          "Sok., Menteşe, Muğla | güncel faaliyet durumu doğrulandı | Yandex Maps"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-5",
+        "name": "Kahve Diyarı, Kötekli",
+        "category": "cafe",
+        "address": "Kötekli Mah., Sıtkı Koçman Cad. 274 Sok., Menteşe, Muğla",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1hzX8H1f6uURTUvXkoLlrRctMOdc9A_ctZ07PXZSQGyYCx9d5aOW-_59Z2NuIyFZP9l8P2AYpefq4AZeog_FdeVrK3zDcJ5g58Kn9G0il3I7P9EhPXELxCnmXHH1sa6D1QPG2nSWy",
+        "sources": [
+          {
+            "publisher": "mekan.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1hzX8H1f6uURTUvXkoLlrRctMOdc9A_ctZ07PXZSQGyYCx9d5aOW-_59Z2NuIyFZP9l8P2AYpefq4AZeog_FdeVrK3zDcJ5g58Kn9G0il3I7P9EhPXELxCnmXHH1sa6D1QPG2nSWy"
+          }
+        ],
+        "supportedSegments": [
+          "274 Sok., Menteşe, Muğla | güncel faaliyet durumu doğrulandı | mekan.com"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-6",
+        "name": "Mavi Çatı Cafe",
+        "category": "cafe",
+        "address": "Kötekli Mahallesi",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhn_DZcILw7odir_FxagBzj0CXlDnGlj5l8UUYnqG8vXUPDsOBAfGh8ModJ7v-rCkQleqcfD3b7bkZXZMIzJPxmNl_MRVzPWtdMD6DgH_qw8Gs7xvAt1_w4jLO8vtlkMvigo0-uGCUWW6W6ummTEmB1-MSj1rr83aUUAbh1d-RuxQi",
+        "sources": [
+          {
+            "publisher": "endeksa.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhn_DZcILw7odir_FxagBzj0CXlDnGlj5l8UUYnqG8vXUPDsOBAfGh8ModJ7v-rCkQleqcfD3b7bkZXZMIzJPxmNl_MRVzPWtdMD6DgH_qw8Gs7xvAt1_w4jLO8vtlkMvigo0-uGCUWW6W6ummTEmB1-MSj1rr83aUUAbh1d-RuxQi"
+          }
+        ],
+        "supportedSegments": [
+          "*   **Mavi Çatı Cafe** | kafe | Kötekli Mahallesi desteği | güncel faaliyet durumu doğrulandı | Endeksa"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      },
+      {
+        "id": "web-7",
+        "name": "Taksim Sandviç",
+        "category": "fast_food",
+        "address": "Kötekli Fast Food, Sıtkı Koçman Cad. No:24/14, Menteşe",
+        "lat": null,
+        "lon": null,
+        "distance": null,
+        "origin": "Gemini + Google Search",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1hzX8H1f6uURTUvXkoLlrRctMOdc9A_ctZ07PXZSQGyYCx9d5aOW-_59Z2NuIyFZP9l8P2AYpefq4AZeog_FdeVrK3zDcJ5g58Kn9G0il3I7P9EhPXELxCnmXHH1sa6D1QPG2nSWy",
+        "sources": [
+          {
+            "publisher": "mekan.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1hzX8H1f6uURTUvXkoLlrRctMOdc9A_ctZ07PXZSQGyYCx9d5aOW-_59Z2NuIyFZP9l8P2AYpefq4AZeog_FdeVrK3zDcJ5g58Kn9G0il3I7P9EhPXELxCnmXHH1sa6D1QPG2nSWy"
+          }
+        ],
+        "supportedSegments": [
+          "No:24/14, Menteşe | güncel faaliyet durumu doğrulandı | mekan.com"
+        ],
+        "reviewStatus": "listing_candidate_not_verified_open"
+      }
+    ],
+    "radius": 1000,
+    "sourceUrl": "https://www.openstreetmap.org/copyright",
+    "quarantined": [
+      {
+        "name": "Duray 3",
+        "id": 12365498237,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Duray 2 (18)",
+        "id": 12365498238,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Baydur B",
+        "id": 12365498239,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Baydur A",
+        "id": 12365498240,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Caner Market",
+        "id": 12365498241,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Altaş A",
+        "id": 12365498242,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Altaşlar",
+        "id": 12365498243,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Filli Boya Altaş Tic",
+        "id": 12365498244,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Saadettin Ökten Erkek Yurdu",
+        "id": 12365498247,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Levent Yüksel",
+        "id": 12365498248,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Yenaral",
+        "id": 12365498249,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Toprak",
+        "id": 12365498250,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Zeytin",
+        "id": 12365498251,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Duray 1 (23)",
+        "id": 12365498252,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Papatya (81)",
+        "id": 12365498256,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Ela (10)",
+        "id": 12365498257,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "12",
+        "id": 12365498258,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Hesaplı Tavuk",
+        "id": 12365498259,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Cici Döner",
+        "id": 12365498260,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Moda",
+        "id": 12365498261,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Veli (83)",
+        "id": 12365498262,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Altaş C (85)",
+        "id": 12365498264,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "Waffle inn",
+        "id": 12365498265,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "",
+        "id": 12880590868,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      },
+      {
+        "name": "",
+        "id": 1329578402,
+        "reason": "Unnamed or ambiguous cafe tag; needs review"
+      }
+    ],
+    "counts": {
+      "supermarket": 3,
+      "convenience": 2,
+      "pub": 4,
+      "entertainment": 1,
+      "cafe": 7,
+      "fast_food": 1,
+      "park": 1,
+      "restaurant": 1
+    },
+    "total": 20
+  },
+  "hazard": {
+    "value": 0.351,
+    "unit": "g",
+    "gridDistance": 1.0536,
+    "gridRows": 201920,
+    "sourceTitle": "Jeodezik Deprem Tehlike Haritası",
+    "url": "https://aperta.ulakbim.gov.tr/records/274290",
+    "authors": [
+      "Aktuğ, Bahadır",
+      "Şentürk, Murat Doruk",
+      "Özsaraç, Vedat",
+      "KILIÇ, Nazan"
+    ],
+    "license": "cc-by-sa-4.0",
+    "officialAfad": false,
+    "checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+    "score": 23
+  },
+  "excluded": [
+    {
+      "category": "rent",
+      "reason": "Missing date/support or outside 90-day window",
+      "text": "2+1 | eşyalı | 33.000 TL/ay | ilan tarihi: 2026-07-11 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+    },
+    {
+      "category": "rent",
+      "reason": "Missing date/support or outside 90-day window",
+      "text": "1+1 | eşyalı | 30.000 TL/ay | ilan tarihi: 2026-07-27 | uzun dönem | MUĞLA KAMPÜS EMLAK"
+    },
+    {
+      "category": "rent",
+      "reason": "Missing date/support or outside 90-day window",
+      "text": "3+1 | bilinmiyor | 35.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | MUĞLA SEMT EMLAK"
+    },
+    {
+      "category": "safety",
+      "reason": "Outside 12-month window"
+    },
+    {
+      "category": "safety",
+      "reason": "Outside 12-month window"
+    },
+    {
+      "category": "transport",
+      "reason": "No official publisher attached",
+      "text": "1-40 Menteşe Otogar - Yeniköy - Tıp Fakültesi (Gece Hattı): Menteşe Otogar, Yeniköy ve Tıp Fakültesi arasında gece seferleri sunar. Kötekli sakinlerine gece saatlerinde otogar ve tıp fakültesi bağlantısı sağlar."
+    }
+  ],
+  "scoringStatus": "experimental_not_validated",
+  "research": {
+    "model": "gemini-2.5-flash",
+    "source": "kotekli_2026-10-28_v4",
+    "categories": [
+      "rent_cost",
+      "safety_news",
+      "transportation",
+      "social_life"
+    ]
+  }
+}

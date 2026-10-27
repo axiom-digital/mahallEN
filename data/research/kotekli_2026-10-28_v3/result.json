@@ -1,0 +1,231 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "kotekli",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "started_at": "2026-10-27T21:38:31.389564+00:00",
+  "finished_at": "2026-10-27T21:38:38.911046+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "rent_cost",
+    "safety_news",
+    "transportation"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Kötekli Mahallesi Menteşe Muğla kiralık daire son 90 gün",
+    "Kötekli Mahallesi Menteşe Muğla emlak ilanları son 3 ay",
+    "Kötekli Mahallesi Menteşe Muğla yerel haberler son 12 ay",
+    "Kötekli Mahallesi Menteşe Muğla belediye otobüs hatları",
+    "Muğla Menteşe Kötekli ulaşım resmî"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeEd3OWpf8UyWwi_ygL7r7mI14LhJOiYlr6_VD3th_mClh8XQQlxPUPiJkV80lowaVfwV2Stexr8Rsftnk398ZOsYiB8-n7dA2CXzRihwDOqYUqNwVnEfPMZy27wA3faAxaBvKCHJ817LdAA==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSDcgzNELGYRF68y30rA-5rvhQZCJF4WuSXCFlyzkiSFRzYcDxTdiSvwtkWDPVCI6FUlE4rrIbzuRctn_fjOSjEcbW854llxz-5yT17xgOSAQG_AeJGpViDloYDWhzdCKL0VEDuguZnqb7LBQ9S8INX5nYNvNuFjl_FW8Fpr4yEIwJXNmVkrKG9vug_g==",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR7quAwpQYJkGKkYxX0rhMBdGIvc1BgT_0yUUsM2kb1B50t5j_HYqnRAd67_2BRNaZEdFKHXpqdukQ-XXEZLZEAeKSG15_WCMEFIuUq1ii-_SQJDdGGr1BGa05IrpA5QS4v4GWNyA9tAK2tHNZueG8z4nwjUI07E_6i2xhyJYnw_6DCLiCXPg540KfGFoSRLdcuxKgiIqJ9iPxS2cjK_A=",
+      "title": "haberler.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwXffe3b67Q2XMvCnbm8M7WjLuoRl08dYe_c27n9XYvWbrPxjHDmgjD4X3exAwaOSCkP7NzPpg07KAuOUFOOgPdDEPN6obCydHXsuCRG4Gqa9NzcHirxJzOoynbZyd6zTc_ZC0Vg__c8_A0eVDgrKCMx0pMJc9Vpscwwy1CVXDc92-xEVJEjpFl_SAetSDW-artASPd7ig180PbtQphQ==",
+      "title": "sondakika.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJJZhou4DtTJMWlE45gR3HV5irORFALZs38BKA0iHduDHS09yG_9XyCIzw3foy_YJJIGqHSrhMVPN1vgH0HmGYe29J6m9YYjDNYtL-3tOIRdKh6Y06_zCsTK8OHGA3BDCi63pa8wYwuwYxjxukB74=",
+      "title": "ses15.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVE8kAmdpW3cG810WQbZ9eKlcoCutm-oU63UJB3mJ83fw0cvTdUfGNM6OcxxpCu-Kf_rpE79paPpvHUPXVEWOSN3s-YoskCm39wobsXN2d37DZOrg4hLkuB8_s_M2XPmhz6vkQmqIDAexXa3767mh0HG5TXfIGVILuF3QA3mwlZw0bUamVTr8IdInjx2zV0kFOll99fRDh9ohHqUbX1qi-8KJ4SPv2wAbIgPrRzr_9",
+      "title": "anlatilaninotesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXobPJVvhe4RUqC6-3fSMy8Hwa4N3ZP4WdBYnKzMfWwUD-78aQbL2_GLB1JIJB_kkUpucUXP3tiyHPdgE8qpndUGdPbZR9VNTRZDGbKk6Fb6xZG_-2uauw-AAF04uCHYtURNhaBjl8y5AQ2Or8TN42jAksMcziwvqj4Bc=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgNbKW82LIy1GiYbBP8FuPQ5CX3nWEs11LRBFVGYReBKtcFeB_RvJzhK7sVyHD1gZAjZAAMFNcBQo5n0rgGwafpuE1Donkxoi8Q8Bw7UGidUOI5GUNDAaeZKk_L2PYSpWHRDr-sIY=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZFU8RoQ_D2QbVaWJU09ETqINDItqCqavNL6Ey_eoWuQJ54qC7PDTOsNGIb_lhKwSeeHxyiy_UEXVnRZ7G7tGpq-hLtB_0apaxz-VteytTughv1wY2zzS-Awx-aoUmD8piqqKVU_MuvcYDGGH6yi6ix0Q-aXv-iJkl6313QNtBLpixc6V__XURSvZUeC5EeuLQaeUemoUmAQLxO3H5Qimd7erwgEXjV-45-UN3exbZsqgnT7U=",
+      "title": "moovitapp.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQED4vqHSk5kLY2j8KbDcmNQzUGvgcE6cKwHh17D45hnURhzkzW_DI89469vNgtYrD_vS1KJPCauCoLoaey2avMONA-dFdixYj_Oe8ineZmDZfeeQZUyS5IE66_IctmPUZEjKcPlZq5oFJNpjeNJnm8iCUpleIb2Bw7sxKlOwwuH10o7SLvL4hCuZ7B0RWxhZvADe45gUpPFs5hRv0MoNOT67kvXDkVNtw==",
+      "title": "moovitapp.com"
+    }
+  ],
+  "grounding_support_count": 6,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeEd3OWpf8UyWwi_ygL7r7mI14LhJOiYlr6_VD3th_mClh8XQQlxPUPiJkV80lowaVfwV2Stexr8Rsftnk398ZOsYiB8-n7dA2CXzRihwDOqYUqNwVnEfPMZy27wA3faAxaBvKCHJ817LdAA=="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSDcgzNELGYRF68y30rA-5rvhQZCJF4WuSXCFlyzkiSFRzYcDxTdiSvwtkWDPVCI6FUlE4rrIbzuRctn_fjOSjEcbW854llxz-5yT17xgOSAQG_AeJGpViDloYDWhzdCKL0VEDuguZnqb7LBQ9S8INX5nYNvNuFjl_FW8Fpr4yEIwJXNmVkrKG9vug_g=="
+        }
+      },
+      {
+        "web": {
+          "title": "haberler.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR7quAwpQYJkGKkYxX0rhMBdGIvc1BgT_0yUUsM2kb1B50t5j_HYqnRAd67_2BRNaZEdFKHXpqdukQ-XXEZLZEAeKSG15_WCMEFIuUq1ii-_SQJDdGGr1BGa05IrpA5QS4v4GWNyA9tAK2tHNZueG8z4nwjUI07E_6i2xhyJYnw_6DCLiCXPg540KfGFoSRLdcuxKgiIqJ9iPxS2cjK_A="
+        }
+      },
+      {
+        "web": {
+          "title": "sondakika.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwXffe3b67Q2XMvCnbm8M7WjLuoRl08dYe_c27n9XYvWbrPxjHDmgjD4X3exAwaOSCkP7NzPpg07KAuOUFOOgPdDEPN6obCydHXsuCRG4Gqa9NzcHirxJzOoynbZyd6zTc_ZC0Vg__c8_A0eVDgrKCMx0pMJc9Vpscwwy1CVXDc92-xEVJEjpFl_SAetSDW-artASPd7ig180PbtQphQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "ses15.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJJZhou4DtTJMWlE45gR3HV5irORFALZs38BKA0iHduDHS09yG_9XyCIzw3foy_YJJIGqHSrhMVPN1vgH0HmGYe29J6m9YYjDNYtL-3tOIRdKh6Y06_zCsTK8OHGA3BDCi63pa8wYwuwYxjxukB74="
+        }
+      },
+      {
+        "web": {
+          "title": "anlatilaninotesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVE8kAmdpW3cG810WQbZ9eKlcoCutm-oU63UJB3mJ83fw0cvTdUfGNM6OcxxpCu-Kf_rpE79paPpvHUPXVEWOSN3s-YoskCm39wobsXN2d37DZOrg4hLkuB8_s_M2XPmhz6vkQmqIDAexXa3767mh0HG5TXfIGVILuF3QA3mwlZw0bUamVTr8IdInjx2zV0kFOll99fRDh9ohHqUbX1qi-8KJ4SPv2wAbIgPrRzr_9"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXobPJVvhe4RUqC6-3fSMy8Hwa4N3ZP4WdBYnKzMfWwUD-78aQbL2_GLB1JIJB_kkUpucUXP3tiyHPdgE8qpndUGdPbZR9VNTRZDGbKk6Fb6xZG_-2uauw-AAF04uCHYtURNhaBjl8y5AQ2Or8TN42jAksMcziwvqj4Bc="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgNbKW82LIy1GiYbBP8FuPQ5CX3nWEs11LRBFVGYReBKtcFeB_RvJzhK7sVyHD1gZAjZAAMFNcBQo5n0rgGwafpuE1Donkxoi8Q8Bw7UGidUOI5GUNDAaeZKk_L2PYSpWHRDr-sIY="
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZFU8RoQ_D2QbVaWJU09ETqINDItqCqavNL6Ey_eoWuQJ54qC7PDTOsNGIb_lhKwSeeHxyiy_UEXVnRZ7G7tGpq-hLtB_0apaxz-VteytTughv1wY2zzS-Awx-aoUmD8piqqKVU_MuvcYDGGH6yi6ix0Q-aXv-iJkl6313QNtBLpixc6V__XURSvZUeC5EeuLQaeUemoUmAQLxO3H5Qimd7erwgEXjV-45-UN3exbZsqgnT7U="
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQED4vqHSk5kLY2j8KbDcmNQzUGvgcE6cKwHh17D45hnURhzkzW_DI89469vNgtYrD_vS1KJPCauCoLoaey2avMONA-dFdixYj_Oe8ineZmDZfeeQZUyS5IE66_IctmPUZEjKcPlZq5oFJNpjeNJnm8iCUpleIb2Bw7sxKlOwwuH10o7SLvL4hCuZ7B0RWxhZvADe45gUpPFs5hRv0MoNOT67kvXDkVNtw=="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 243,
+          "end_index": 283,
+          "text": "Tarih ve uzun dönem bilgisi bilinmiyor."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 406,
+          "end_index": 441,
+          "text": "İlan tarihi 19 Ağustos 2026'dır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 693,
+          "end_index": 737,
+          "text": "Haberler.com tarafından yayınlanmıştır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          4,
+          5
+        ],
+        "segment": {
+          "start_index": 1036,
+          "end_index": 1093,
+          "text": "Sputnik Türkiye ve SES15 tarafından yayınlanmıştır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6,
+          7
+        ],
+        "segment": {
+          "start_index": 1243,
+          "end_index": 1370,
+          "text": "18 Eylül 2026 tarihli bilgiye göre, bu güzergahta yol çalışmaları nedeniyle Kısmet Sitesi'ne giriş yapılamamaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 1629,
+          "end_index": 1675,
+          "text": "Güncel saat tablosu bilgisi bulunmamaktadır."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGm39fPZ5ytmP9Xyg_AKJvZiobUb-kezCrrV1qfvKnpo1cfKDRjzI-MxmeNPxBIV8BrVP11FTryHwlfHrEiHRXWCB2NLwX4wwkWzjTE5dw6M1PUv7_r9VXzaWVUcIniO6ZbhSP9d6h3vnafU3zg7qvWqSYGumKt9nOzfoUtx4F16GvW8raf2PyDCnP7OpwnSrAQlLLVTNJviJVQme1JaNPjShUbPETmjHUjJ0p99FsBEd5oGuePIbOBAZYhb5NwHODhuFC8yNaFMYxFQ==\">Kötekli Mahallesi Menteşe Muğla yerel haberler son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEl4XbbS1FhsjUs4seUfOLZe6g9hBrowMX0XQOMvN4NXJtSjpYW7tAipYpaI8Oud-Ye-fD5cGwKHy0N-ohSm_qdQR4US9JcbtdT_HL5r-TVzFdhFHuuGVsP7SkjItsoCwF2HGImOWnLorQDQdpIELiamkXF37sCIIQKmv-sbnqjROC5XS6M5ytYMBIVwKLrlF5knw22IkogAoS0SbNtEJjW-sgsJK0aHSaWUFJ7to1Ve5Jfkpm4WU8-GG_R0oZCS1O3MLD5DMvcGvidrKtYRq3JhXFIfzI=\">Kötekli Mahallesi Menteşe Muğla kiralık daire son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXmwKRBO2_DXJuGljhx4DPHyPyHUE0pfQ9WW2qjPFaFL-h3Awm1_x1ViO9WdlkYi5kRB6b8CaXhoommaZCW88-fW9tqZR0IFZHYf-jiIhCIIfgv5vmcWT3yLd06cd-bCUMKu6jduaqQ3zA2ndz6Q2OAxLTWVrUMSX76JQJmgFjmRHGoJ70yEymPgmzWT7ehjLRniHN892Np2zNG1npg9q-dJH3KmKAJqtvuRr85J3aHs6hbKMZT8uY6jAUKnIvyIWTi2-NSUW5TPta5MNJL3Y=\">Kötekli Mahallesi Menteşe Muğla emlak ilanları son 3 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvE7PTRzRZJdHHcjmdFXaoFnmO6mIV3NTwjANeUarKTjQNpuj3Dy7yvBg8lYkMfGtrN4_SkVg_M2OHD-Ktdm0TDT9rSLFSq_8v-dI-fn3bKH_TrCbQUfowqcV6oozek0C-es0EZ6SFWdh6mNa1Xt5Q1X_sT0TLfEJsxa9zbwEIAjsdvz41H1BP2sBLsCThvA9-_4Gs4Ly0KbRd0EVXyqym1jypoDgXmlzZRG1Xp0IVPTdAHicRmUWeWdQAwUcLnTWM4VPQ\">Muğla Menteşe Kötekli ulaşım resmî</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzHkoQH-eRIhMPaCatQyOt7MqQS4REUiH3yh1d1tDkm5e1O3B0FHBFQoCBPQ66sCfTUxRjdUpkQ82XK_dKN14eSJdKuwCeNzxm3nLIgkkI7iyjG0ln9x4DhY2bO8KQfV4T0BtHHAGOBST6Gf8vr56Ne1T5f59ZgWXgXfPmljtfYVm1IeASiTZVdHICIK5mkNseAkFeeJ4P_yPAJsZxjZmpRR-kPBohvgqcPIzSE8uvD-iSQiab2fnV437UOmTxndCnOMt2dNjM1PlX3lLuZW2Lc00ieA==\">Kötekli Mahallesi Menteşe Muğla belediye otobüs hatları</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Kötekli Mahallesi Menteşe Muğla kiralık daire son 90 gün",
+      "Kötekli Mahallesi Menteşe Muğla emlak ilanları son 3 ay",
+      "Kötekli Mahallesi Menteşe Muğla yerel haberler son 12 ay",
+      "Kötekli Mahallesi Menteşe Muğla belediye otobüs hatları",
+      "Muğla Menteşe Kötekli ulaşım resmî"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 638,
+    "prompt_token_count": 392,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 392
+      }
+    ],
+    "tool_use_prompt_token_count": 503,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 503
+      }
+    ],
+    "total_token_count": 1533
+  },
+  "text": "Kötekli Mahallesi, Menteşe, Muğla için 28 Ekim 2026 referans tarihli ham veri araştırması aşağıdadır:\n\nKİRA:\n*   Muğla / Menteşe / Kötekli Mahallesi'nde 2+1 eşyalı bir dairenin aylık kirası 27.500 TL olarak listelenmiştir. Tarih ve uzun dönem bilgisi bilinmiyor.\n*   Muğla / Menteşe / Kötekli Mahallesi'nde 2+1 eşyalı bir dairenin aylık kirası 27.000 TL olarak listelenmiştir. İlan tarihi 19 Ağustos 2026'dır.\n\nHABER:\n*   26 Ekim 2026 tarihinde Muğla'nın Menteşe ilçesine bağlı Kötekli Mahallesi'nde etkili olan yağış nedeniyle yol çöktü ve seyir halindeki bir otomobil çukura düştü. Araçtaki iki kişi kendi imkanlarıyla dışarı çıktı. Haberler.com tarafından yayınlanmıştır.\n*   1 Eylül 2026 tarihinde Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde bir evde B.Z.K. ve M.A. isimli iki kişi silahla başlarından vurulmuş halde ölü bulundu. Polisin araştırmasında, iki kişinin bir süre ilişki yaşadığı ve yaklaşık 5 ay önce ayrıldıkları belirlendi. Sputnik Türkiye ve SES15 tarafından yayınlanmıştır.\n\nULAŞIM:\n*   MUTTAŞ'ın 1-62 numaralı otobüs hattı, Menteşe Stadyum - Yeniköy güzergahında hizmet vermektedir ve Kötekli'den geçmektedir. 18 Eylül 2026 tarihli bilgiye göre, bu güzergahta yol çalışmaları nedeniyle Kısmet Sitesi'ne giriş yapılamamaktadır.\n*   Moovit uygulamasına göre Kötekli Mahallesi'nden geçen otobüs hatları arasında 1-40 (Menteşe Otogar-Yeniköy-Tıp Fakültesi), 1-48 (Yeniköy-Kötekli-Kampüs-Tıp Fakültesi) ve 1-65 (Menteşe Otogar - Tıp Fakültesi - Yeniköy) bulunmaktadır. Güncel saat tablosu bilgisi bulunmamaktadır."
+}

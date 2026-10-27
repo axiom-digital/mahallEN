@@ -1,0 +1,134 @@
+<style>
+.container {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  font-family: Google Sans, Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+}
+.chip {
+  display: inline-block;
+  border: solid 1px;
+  border-radius: 16px;
+  min-width: 14px;
+  padding: 5px 16px;
+  text-align: center;
+  user-select: none;
+  margin: 0 8px;
+  -webkit-tap-highlight-color: transparent;
+}
+.carousel {
+  overflow: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  margin-right: -12px;
+}
+.headline {
+  display: flex;
+  margin-right: 4px;
+}
+.gradient-container {
+  position: relative;
+}
+.gradient {
+  position: absolute;
+  transform: translate(3px, -9px);
+  height: 36px;
+  width: 9px;
+}
+@media (prefers-color-scheme: light) {
+  .container {
+    background-color: #fafafa;
+    box-shadow: 0 0 0 1px #0000000f;
+  }
+  .headline-label {
+    color: #1f1f1f;
+  }
+  .chip {
+    background-color: #ffffff;
+    border-color: #d2d2d2;
+    color: #5e5e5e;
+    text-decoration: none;
+  }
+  .chip:hover {
+    background-color: #f2f2f2;
+  }
+  .chip:focus {
+    background-color: #f2f2f2;
+  }
+  .chip:active {
+    background-color: #d8d8d8;
+    border-color: #b6b6b6;
+  }
+  .logo-dark {
+    display: none;
+  }
+  .gradient {
+    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #1f1f1f;
+    box-shadow: 0 0 0 1px #ffffff26;
+  }
+  .headline-label {
+    color: #fff;
+  }
+  .chip {
+    background-color: #2c2c2c;
+    border-color: #3c4043;
+    color: #fff;
+    text-decoration: none;
+  }
+  .chip:hover {
+    background-color: #353536;
+  }
+  .chip:focus {
+    background-color: #353536;
+  }
+  .chip:active {
+    background-color: #464849;
+    border-color: #53575b;
+  }
+  .logo-light {
+    display: none;
+  }
+  .gradient {
+    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);
+  }
+}
+</style>
+<div class="container">
+  <div class="headline">
+    <svg class="logo-light" width="18" height="18" viewBox="9 9 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z" fill="#4285F4"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z" fill="#34A853"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z" fill="#FBBC05"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z" fill="#EA4335"/>
+    </svg>
+    <svg class="logo-dark" width="18" height="18" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="23" fill="#FFF" r="22"/>
+      <path d="M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z" fill="#4285F4"/>
+      <path d="M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z" fill="#34A853"/>
+      <path d="M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z" fill="#FBBC05"/>
+      <path d="M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z" fill="#EA4335"/>
+    </svg>
+    <div class="gradient-container"><div class="gradient"></div></div>
+  </div>
+  <div class="carousel">
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXdJ2ier4ix92BwnxHFvSil-9qvLydpt_jI3riHTHknb1lbgATMBtU9fgrOMLtjyTT-oroxRlzTP3gx6ap-hB8b1bep9N4L5Iwx51KLBcjTa4K9gA2IX2EZ-IDesvN4esi9FzpARdlucrQwJUQZiKUY62a_Hp8IiUb-UDAUTJi0kaD2cn7D-_XV1-hvUMOSVUdq2yUOSVtxXuSVqUk_vmvj_cBRbX_R4RrtA==">Akyaka Mahallesi Ula Muğla restoran</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_mZAPddygBW_GsdbJefnTda_7SrLjh-vpLUCSWxSINzUMFOS_I5ccTztQg8K-Wl1QDiNvI4FyO6HE29kL87L37gzm5fidY5FT_rWZ3sRsEkXYwt2meYeZ_p2aDnzngTBe6B7Irc0ACJQBUu3A91aKDvcG0Zuqq6Dvx0HnFGZCl-NbiM7UCF_kRQCNx4yuAQkTIZzD-5R1FfL6wRd2gM0utxQubfJZ1s5WrvhIYUEglVqWOx5d7I2lzVoaV8Fcd1L49501DmQUAQ==">Akyaka Mahallesi Ula Muğla güvenlik olayları son 12 ay</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsPgrA-Gw0reW_Yygs0L_tEZsu1llzZVo3kzDsh0qGeD1h1cIL5Bh19TdTw32i6ZqCkR2m-6G3ciPDmCRbWuKASH9FA-IVoanKg95NnZ6NHCfihPqhU5zEQFM2cxV1HzGBTHusmO3jB7Km6pF0OICMVtNemrPx-A9mNyIz_dp6Jrpw123mSLRTqymySfovAubfKsME1WtD_fWrrw7nBkdO80k424wZr1ZqeCN-3aNP1kB51smajALMz2Ks38fzC7nqyeU66OOjBQTmIze6R2Eol-y5kfP8qeS-g-_fT4Q_9mJ0_KOl3LJF15pP_yw=">Akyaka Mahallesi Ula Muğla uzun dönem kiralık konut 1+0 1+1 2+1 3+1 son 90 gün</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvYhrWDmvgxq7FVUU8j7z13GuzdyNzTyda_bXrUXyKovGIbDe6oVyUObIiZpApiYBF-ez69NfAoRxi3ryDjBltwwSjXcnmn4vrRbv4T67BRsTYT1ac9fI1cFF2zejTXQJg3IPY2rqMrhkAORLsxE0RmsZ3KA82BPjkjdbGNzEeiJ7UTTSyVljuiHE0u3MD8Zg4Q0VEJZHJ1nnzX9N0q_vc7Fgp7r2ZHfc-phBqHvWj1kEWEtA9dDciwbwGxx4lTSRQ">Akyaka Mahallesi Ula Muğla trafik olayları son 12 ay</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnTyqIeSN0zXlPJcsks_zfghqOOEp0aZx0sFc_SXlaNWu5XHRWsAAhnibb5a4DMmjOA1JdZNIve1yYV1gIfHCJfZ6udgTJ7Tj9YFkQbPaUg6rMu2SpGCGM4U0AcBCU4-GcWDD-ssZzaJIUs-QdhPquSrqk16tkmYl0seFooqVoU8ejnV8eX-wNH3ZuZWuJ1xvYuyOyYSAlu04Ie9qMDV8KsQ==">MUTTAŞ Akyaka hatları</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3eSPSihazkgjupsgg4BfXOUN3W7Vj0JUtx_B5yLECVA8nutBlLoK20xCQ1b5fAuLiYhK6Z46kVLa5G2TDf7WPjn0c6tut7PbVeBCvdaBuwI7YYEVfjdDjQ9LTtmXmGABQFb94nA3ZFYjrvhUMwHiR8hDTQz8muPfhBWM9xhUFBOk2HJ-8Swxyo-mSfQg8OeRut5KoXko6xTBqifx0ub9GHz9oZNAKV9uurjrNF5zHRDD-EBY9Ndms_FW1V6XU3ZV2XmcgYh1krQxYCKEbxV7b5y0=">Muğla Büyükşehir Belediyesi Akyaka otobüs hatları</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jwr5MXG35yolu-lIW2OqZix8nS0xiDFR75i79kUUekJR0MwSLIMUqBudl3nOGnRQTdjWE_j0GfnAyKWccwt7TWqdffhCQ561MHNfo72cPLPWjWle49j-Z5a86hAVRzewjTXxz5QEc6056fLKiBDEJ7Re_PYWpw_Yy323hxhGLkQ11V06EHj3ZEd3imPrjoBCXC4ZJWKZvBrKtwPSIBmokgv5X6cVPW1OJc2JJ6b7ixpJxO36C1KWLHSGm7qx4GRU3LAoUaYC">Akyaka Mahallesi Ula Muğla altyapı olayları son 12 ay</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHuttwy7cLbxYcGaTNM9EMCWRpecJ6BeZ7RARfqYYlhm-xHIyBeQ1l3q0hvUAhAnpoVraGf3-YNUtCkE5Ufnxylj-QevWpYSkXs6oWVzBnwmzVstGTuwd_uDmOZ-TjjY-loImUeffldHLObdKgfURBDmCEmXcKJvkEKyogeeG-vP2j0IFyTYIlwF5Zj-o9jQQfQGKGy9iY2U75Ohb_3RchkpJCNBk8=">Akyaka Mahallesi Ula Muğla bar</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3NQB-KfDqxMcdtNN0J4ADidx2AsoHmdvwZzlQhYEdwP8TEQvkyKfs6kDFw9wYL7wzBMPAsjtUK00LEmTWQBC6_wciaF9po1iU6wl9DhoO1MpK1V3AYlVqQPph7aiik6ig34yaEvDe3Pz5zjboAeAYY3Ka0AsKs-AdvcZ60Woy8JncHu1Kd4f_0s7_vS94dRhIvesC2tnuQMErDXkvfwJ7ec1xKMnuJoM=">Akyaka Mahallesi Ula Muğla market</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9m96CdLX_D7bDoO7A-AOxZRINcUT2NVpyTb7tTNa1QNH67NCiE-gOBT87cuxdSXwdwtJgO4bNS5a4ipg-sBMQ6Ocsp6WNb7gqNbIxQyVF17u9ROBrYWZi5kKmOqlAtIvi0uMdeZvUD_n1-vVSR00ZmHxo1a-1rcU0e_LHNiVZPN3prj6Auu7laeMbzJmqQCoceDKG_ahDNRuLbpjDtB_iaFhyigR0">Akyaka Mahallesi Ula Muğla park</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLr--BcoU32cFAR5a8JKyGuIyeYeWUoawzIOcKNqeiJQ5g8QKSW4nEgu7E-lKz-cqIRzmLUy7aEV6BYNZNIGaNVTpqbKComj5HJAJw3PwofTmjUjKXhlACrtejq0x09Mzc3fZ9ztXzFV3u66UYJls2MxnD8i9Rjx4JbPOzwLse1PChmoSDD8Uwy5C-jpdke67EPbBJd_Cnr4_RX9JxktOuBxJG-vDd">Akyaka Mahallesi Ula Muğla kafe</a>
+  </div>
+</div>

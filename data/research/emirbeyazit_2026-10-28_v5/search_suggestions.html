@@ -1,0 +1,130 @@
+<style>
+.container {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  font-family: Google Sans, Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+}
+.chip {
+  display: inline-block;
+  border: solid 1px;
+  border-radius: 16px;
+  min-width: 14px;
+  padding: 5px 16px;
+  text-align: center;
+  user-select: none;
+  margin: 0 8px;
+  -webkit-tap-highlight-color: transparent;
+}
+.carousel {
+  overflow: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  margin-right: -12px;
+}
+.headline {
+  display: flex;
+  margin-right: 4px;
+}
+.gradient-container {
+  position: relative;
+}
+.gradient {
+  position: absolute;
+  transform: translate(3px, -9px);
+  height: 36px;
+  width: 9px;
+}
+@media (prefers-color-scheme: light) {
+  .container {
+    background-color: #fafafa;
+    box-shadow: 0 0 0 1px #0000000f;
+  }
+  .headline-label {
+    color: #1f1f1f;
+  }
+  .chip {
+    background-color: #ffffff;
+    border-color: #d2d2d2;
+    color: #5e5e5e;
+    text-decoration: none;
+  }
+  .chip:hover {
+    background-color: #f2f2f2;
+  }
+  .chip:focus {
+    background-color: #f2f2f2;
+  }
+  .chip:active {
+    background-color: #d8d8d8;
+    border-color: #b6b6b6;
+  }
+  .logo-dark {
+    display: none;
+  }
+  .gradient {
+    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #1f1f1f;
+    box-shadow: 0 0 0 1px #ffffff26;
+  }
+  .headline-label {
+    color: #fff;
+  }
+  .chip {
+    background-color: #2c2c2c;
+    border-color: #3c4043;
+    color: #fff;
+    text-decoration: none;
+  }
+  .chip:hover {
+    background-color: #353536;
+  }
+  .chip:focus {
+    background-color: #353536;
+  }
+  .chip:active {
+    background-color: #464849;
+    border-color: #53575b;
+  }
+  .logo-light {
+    display: none;
+  }
+  .gradient {
+    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);
+  }
+}
+</style>
+<div class="container">
+  <div class="headline">
+    <svg class="logo-light" width="18" height="18" viewBox="9 9 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z" fill="#4285F4"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z" fill="#34A853"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z" fill="#FBBC05"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z" fill="#EA4335"/>
+    </svg>
+    <svg class="logo-dark" width="18" height="18" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="23" fill="#FFF" r="22"/>
+      <path d="M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z" fill="#4285F4"/>
+      <path d="M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z" fill="#34A853"/>
+      <path d="M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z" fill="#FBBC05"/>
+      <path d="M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z" fill="#EA4335"/>
+    </svg>
+    <div class="gradient-container"><div class="gradient"></div></div>
+  </div>
+  <div class="carousel">
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZZZEUaacT891bzk8Kz_JqqP59ShCqcIbel77O4zKYJkTElgAQURoMJRbssbW6Nndwei3GKGFPD1XktmH0_FZWgYvm3fzPllxzmEIhJeaYP08ArSUGjXM9YozsdPs3yOs4LqLKsyY4Z7bMzcK2MMbkUqWmfIh1tv4_7b0xgZlRoB2zeOH_lxtZuY96Z_2hQe_zgLJRpbiD94nERpdXq1rkqiEzNF11PPIecGckNVkB8CY_wyLepsfgNh9EHm2OsLCj0eb7akX6l3Jf5GZTO8uR0xlxdVT067zlXGc=">MUTTAŞ Emirbeyazıt Mahallesi Menteşe Muğla otobüs hatları</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAIG8TDnda__uNyBvyKy99f-apUYJ9bmtSfJx21C_tsYon12O_2CvwnNGaosONSaFKwfdU1WTf1sLJriewnljZinhIyV-HXTQmWMNYvcnvSC51vmfNUVFSsbyIqoUPU3g3kPW___pGhAwOXgGtDEWWYRnCTwevHlR_qWGie_JaaNpWMGEXp01dcnseoLIQnlXDLJlwUlSFPQBN7ad-TayVWjTtNZ7a7xzV1ftRrCvZat1Qtdl1Wex0TppBDxTFL-tVmu4wpCazr6-5UkDL-OXRPQrU9Ladq2Y8pbfD3fZ8XDE4_YlkHgYucjPfLp61iidwfBkSvKeT">Emirbeyazıt Mahallesi Menteşe Muğla suç şiddet trafik altyapı olayları son 12 ay</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvsAkb3JCaMtqvPhpXtc4zGu18q2i_GRgBkXX7kpJHT__TBhr-9ZaWk4nJ4-1gxBWIps4dicehlPJfDV147MbR2sggOqHk5_CUXVEhjQzzHOulylQic6p9UsO_goHbv2igetESH9_je8_7Mmj_mH0NMwMrjn3bl7dfBz2tbcWtKtALfRkmpRd8ceqfPHrDrormCJB8LARkr55CWLuepB_j3xOPo2Yq4xDB_4Lije03ey7877KlNP72e2tFuQZzVfAGPU-x3PoiEkAKpKu41IOD92Ujh16f8KhOLkX19oVW5Z9ZH7SPP7dDLviQBp5gB32NwUVMdko5WVBSKqIkOCHcRQ==">Emirbeyazıt Mahallesi Menteşe Muğla uzun dönem kiralık daire 1+0 1+1 2+1 3+1 son 90 gün</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhsaHCTHXPt1b949RsoruPKSxhKAebBFoDJ5p_qympu-QSyi5lwlnBik3RGxE2sc9bEs_lfGnYcG0d9qMEvqUNZDbdJhoDRB3GOCJRq_K9Sl-lq_mLiFBqw9QGSB5wNX0E1x4GNUbQLhclgl53O2VfkALMLfkxYKGL8aoqEZeBPlT83VXXBZozzQ6O6O-Uir2U9IxStPWh_b72nkWRP-Y-ncfdIB8mHd3Qjr3sP-XnUQZ7TB5wUu2N3vF_tZS5xYGh66DcFHp7Sa5zxrYCyBod9DuvHUqtBvGB2-AR">Emirbeyazıt Mahallesi Menteşe Muğla güvenlik olayları son 12 ay</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6e6cihZMVs41Pi1KnDQqkAg8LativbRQ10U4ElzYCt-7vPGE5CDj5eZJpf95Gv6YlMEAW5-oVWZkZ3WicaUjH50PysIZ7aq_yo3iRfjKkEDxoMtmB8wOx_7Dgx9hHcCypFLidRGgdiEzP3F_KBe4lmicB1OOKktxqBa4RXQlH6HEmEPp1G-d5uQO8NCD0BTCdftj9TR6Pzg9U00_SgGW5KL8i1SbnVRVM5aCrbOVFYQf0-4O2jKVADe6-4QNxULFSFMIfwSZPYh5b91xQ8tPWDZgy26Zp6-kTu7cQchcV">Muğla Büyükşehir Belediyesi Emirbeyazıt Mahallesi ulaşım</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJ1Lj8nSNwcBEHWj1OB9rk6_vFS1Em3ffryGqwPyxGe7aGII9lJpvik7ONQpUFBdHs7gbQQNdS9O476-yVyBv8pmUtrqNPULxpx6Nb4cgA7m-7n4g6GntMrd9AdJj6fK5D-eJ53PYkXrFvaGMhzaMieCKLEmSH4iw2oZJwaSLeCre9CXrmUvosouoiIRVGDjWhInIBvm5bkJQoJK_D5irsj6OdgcqtKsZBD4Z8cJHZR2p-dMigiu2webm-VbZ7u6R0VjDVTbPojouWxCT_zee4LhsZ08_Snw==">Emirbeyazıt Mahallesi Menteşe Muğla sosyal yaşam mekanları</a>
+    <a class="chip" href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYLh49u7EtsLH5XC_37-9xB1eXOCK0zj3ErHDggvSAhPo0Qqdidzdb7BXOi5A6PunObegONpA7EfWByVM7CbBn0lcjp79EqVLJLdVX4YkvwBWS52-hIHlxJKvcXRy3_3KJKdNHp1U_OvfZ7u56S8mYpany7b_35VbTGe6fETvyisTpgnGL6ADSQS4-XOyBZ6oI2Gn196gI6sAQIcsXT-gdrla7vAGT1jD-L-nTQz3U3kgK4VeHS7WARbcR0WqqMLYvgo0JV50MMsdWfaM2s2m-">Emirbeyazıt Mahallesi Menteşe Muğla restoran kafe park market</a>
+  </div>
+</div>

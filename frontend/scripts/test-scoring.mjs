@@ -1,0 +1,29 @@
+import assert from 'node:assert/strict';
+import { budgetScore, housingComparison, housingPreferences, profiles, weightedScore } from '../src/scoring.mjs';
+assert.equal(budgetScore(30000, 30000), 50);
+assert.equal(budgetScore(27000, 30000), 70);
+assert.equal(budgetScore(27000, 10000), 0);
+assert.equal(budgetScore(21000, 60000), 100);
+assert.equal(budgetScore(null, 30000), null);
+assert.equal(budgetScore(27000, 0), null);
+for (const profile of Object.values(profiles)) {
+  assert.equal(Object.values(profile.weights).reduce((a, b) => a + b, 0), 100);
+  assert.ok(profile.weights.hazard > 0, 'Every profile includes earthquake hazard');
+}
+assert.equal(weightedScore({ rent: 70, transport: 70, social: 70, news: 55, hazard: 23 }, profiles.general.weights), 58);
+assert.equal(weightedScore({ rent: 70, transport: 70, social: 70, news: 55, hazard: 100 }, profiles.general.weights), 73);
+assert.equal(weightedScore({ rent: 70, hazard: null }, profiles.general.weights), 70);
+assert.equal(weightedScore({ hazard: null }, profiles.general.weights), null);
+const listings = [{ rooms: '1+1', amount: 21000 }, { rooms: '1+1', amount: 22000 }, { rooms: '2+1', amount: 30000 }];
+assert.equal(housingPreferences('', 30000), null);
+assert.equal(housingPreferences('1+1', ''), null);
+assert.equal(housingPreferences('4+9', 30000), null);
+assert.equal(housingPreferences('1+1', Infinity), null);
+assert.equal(housingComparison(listings, null).score, null);
+const smallHome = housingComparison(listings, housingPreferences('1+1', '25000'));
+assert.equal(smallHome.listings.length, 2);
+assert.equal(smallHome.median, 21500);
+assert.equal(smallHome.score, 78);
+assert.equal(housingComparison(listings, housingPreferences('2+1', '25000')).score, 10);
+assert.deepEqual(housingComparison(listings, housingPreferences('1+0', '25000')), { listings: [], median: null, score: null });
+console.log('Scoring checks passed: boundaries, weights, missing data and earthquake contribution.');

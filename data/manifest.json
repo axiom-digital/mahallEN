@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_status": "source_backed_static_v1",
+  "reference_date": "2026-10-28",
+  "assembled_at": "2026-10-27T22:30:20.341473+00:00",
+  "expected_pilot_count": 5,
+  "actual_pilot_count": 5,
+  "neighborhoods": [
+    {
+      "id": "kotekli",
+      "name": "Kötekli",
+      "district": "Menteşe",
+      "file": "data/neighborhoods/kotekli.json",
+      "sha256": "d55ce68436acc5866fb3cafb94ee6eb622801f23b9a31c46de29772827295eda",
+      "observation_counts": {
+        "rent_cost": 7,
+        "safety_news": 2,
+        "transportation": 4,
+        "social_life": 8,
+        "earthquake_hazard": 0
+      },
+      "osm_status": "collected_snapshot",
+      "pga_g": 0.351
+    },
+    {
+      "id": "emirbeyazit",
+      "name": "Emirbeyazıt",
+      "district": "Menteşe",
+      "file": "data/neighborhoods/emirbeyazit.json",
+      "sha256": "8c5be21b554e82c2ee9aa4800de2b24d4ba80281c26ec2a59fbaefcc59ee8779",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 2,
+        "transportation": 1,
+        "social_life": 7,
+        "earthquake_hazard": 0
+      },
+      "osm_status": "unavailable",
+      "pga_g": 0.334
+    },
+    {
+      "id": "muslihittin",
+      "name": "Muslihittin",
+      "district": "Menteşe",
+      "file": "data/neighborhoods/muslihittin.json",
+      "sha256": "629320ed7779fd155db347016e8f1d672be51e8164abef97f6369059e8bb6d89",
+      "observation_counts": {
+        "rent_cost": 6,
+        "safety_news": 4,
+        "transportation": 3,
+        "social_life": 19,
+        "earthquake_hazard": 0
+      },
+      "osm_status": "unavailable",
+      "pga_g": 0.334
+    },
+    {
+      "id": "orhaniye",
+      "name": "Orhaniye",
+      "district": "Menteşe",
+      "file": "data/neighborhoods/orhaniye.json",
+      "sha256": "13c4740aec1c0ac88d6990db684cf21ebfc77e37a1f4f4bd714c47d87b8acb39",
+      "observation_counts": {
+        "rent_cost": 4,
+        "safety_news": 1,
+        "transportation": 2,
+        "social_life": 7,
+        "earthquake_hazard": 0
+      },
+      "osm_status": "collected",
+      "pga_g": 0.334
+    },
+    {
+      "id": "akyaka",
+      "name": "Akyaka",
+      "district": "Ula",
+      "file": "data/neighborhoods/akyaka.json",
+      "sha256": "958b9bd08983dd215ca152ce706edc582e3df6887923222acc33566754a02ac6",
+      "observation_counts": {
+        "rent_cost": 6,
+        "safety_news": 2,
+        "transportation": 3,
+        "social_life": 9,
+        "earthquake_hazard": 0
+      },
+      "osm_status": "unavailable",
+      "pga_g": 0.391
+    }
+  ],
+  "factual_review_status": "source_check_pending",
+  "missing_value_policy": "Unknown is null with reason; never zero, invented or borrowed from another neighborhood."
+}

@@ -1,0 +1,836 @@
+{
+  "schema_version": "1.0.0",
+  "id": "emirbeyazit",
+  "name": "Emirbeyazıt",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-10-28",
+  "dataset_status": "source_backed_static_v1",
+  "factual_review_status": "source_check_pending",
+  "location": {
+    "lat": 37.2164311,
+    "lon": 28.362938,
+    "label": "Emirbeyazıt Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, 48050, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9710055,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=Emirbeyaz%C4%B1t%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T22:26:28.666991+00:00",
+    "method": "Nominatim representative point; not a building address or neighborhood-wide measurement"
+  },
+  "categories": {
+    "rent_cost": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "3a9018ac0e65ad",
+          "text": "2+1 | bilinmiyor | 36.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | LİDER GAYRİMENKUL (Emirbeyazıt Mahallesi)",
+          "source_ids": [
+            "web-3"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **2+1** | bilinmiyor | 36.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | LİDER GAYRİMENKUL (Emirbeyazıt Mahallesi)",
+              "source_ids": [
+                "web-3"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "2+1",
+          "amount_tl_month": 36000,
+          "furnished": null,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "7df6a3de1282c3",
+          "text": "1+1 | bilinmiyor | 18.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | EPOK GAYRİMENKUL (Emirbeyazıt Mahallesi)",
+          "source_ids": [
+            "web-3"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | bilinmiyor | 18.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | EPOK GAYRİMENKUL (Emirbeyazıt Mahallesi)",
+              "source_ids": [
+                "web-3"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 18000,
+          "furnished": null,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "63bb0a03c0621c",
+          "text": "2+0 | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | bilinmiyor (Emirbeyazıt Mahallesi)",
+          "source_ids": [
+            "web-3"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **2+0** | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | uzun dönem | bilinmiyor (Emirbeyazıt Mahallesi)",
+              "source_ids": [
+                "web-3"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "2+0",
+          "amount_tl_month": 28000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "safety_news": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "034be551005420",
+          "text": "2026-08-11 | suç/şiddet | Emirbeyazıt Mahallesi Kurşunlu Meydanı çevresinde bir mağazanın önünde asılı Türk bayrağı, yoldan geçen bir kişi tarafından çakmakla ateşe verildi. Şüpheli, Menteşe Belediyesi güvenlik görevlilerinin dikkati sayesinde yakalandı.",
+          "source_ids": [
+            "web-4"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Şüpheli, Menteşe Belediyesi güvenlik görevlilerinin dikkati sayesinde yakalandı.",
+              "source_ids": [
+                "web-4"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-08-11",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "suç/şiddet"
+        },
+        {
+          "id": "2547e25aef2c45",
+          "text": "2025-11-07 | suç/şiddet | Emirbeyazıt Mahallesi'nde bir apartmanın önünde alacak-verecek meselesi yüzünden çıkan tartışma kavgaya dönüştü ve bir kişi bıçakla karın bölgesinden yaralandı.",
+          "source_ids": [
+            "web-5"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **2025-11-07** | suç/şiddet | Emirbeyazıt Mahallesi'nde bir apartmanın önünde alacak-verecek meselesi yüzünden çıkan tartışma kavgaya dönüştü ve bir kişi bıçakla karın bölgesinden yaralandı.",
+              "source_ids": [
+                "web-5"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2025-11-07",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "suç/şiddet"
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "ea393a001a62ea",
+          "text": "1-8 | Menteşe Otogar - Menteşe Yapı Kooperatifi | Otogar, Atatürk Stadyumu, Menteşe Pazaryeri, Menteşe Devlet Hastanesi, Cumhuriyet Meydanı gibi önemli noktalara bağlantı sağlar. | sıklık ve son sefer: bilinmiyor | MUTTAŞ",
+          "source_ids": [
+            "web-10",
+            "web-11",
+            "web-9"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1-8** | Menteşe Otogar - Menteşe Yapı Kooperatifi | Otogar, Atatürk Stadyumu, Menteşe Pazaryeri, Menteşe Devlet Hastanesi, Cumhuriyet Meydanı gibi önemli noktalara bağlantı sağlar.",
+              "source_ids": [
+                "web-9"
+              ]
+            },
+            {
+              "text": "| sıklık ve son sefer: bilinmiyor",
+              "source_ids": [
+                "web-9"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-9"
+              ]
+            },
+            {
+              "text": "| sıklık ve son sefer: bilinmiyor",
+              "source_ids": [
+                "web-10"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-10"
+              ]
+            },
+            {
+              "text": "| sıklık ve son sefer: bilinmiyor",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "| MUTTAŞ",
+              "source_ids": [
+                "web-11"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-8",
+          "official_source_ids": [
+            "web-10",
+            "web-11",
+            "web-9"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "a7622deed3b8f2",
+          "text": "Mabolla Life & Art | bar | Emirbeyazıt, Mola City AVM, 48000 Menteşe/Muğla | güncel faaliyet: bilinmiyor | Gezinomi",
+          "source_ids": [
+            "web-12"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Mabolla Life & Art** | bar | Emirbeyazıt, Mola City AVM, 48000 Menteşe/Muğla | güncel faaliyet: bilinmiyor | Gezinomi",
+              "source_ids": [
+                "web-12"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Mabolla Life & Art",
+          "type": "bar",
+          "location_description": "Emirbeyazıt, Mola City AVM, 48000 Menteşe/Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "7a508b528a0d39",
+          "text": "Muğla Cafe | cafe | Emirbeyazıt Mah., Hasan Ali Yücel Cad., 10, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-13"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Muğla Cafe** | cafe | Emirbeyazıt Mah., Hasan Ali Yücel Cad., 10, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-13"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Muğla Cafe",
+          "type": "cafe",
+          "location_description": "Emirbeyazıt Mah., Hasan Ali Yücel Cad., 10, Menteşe, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "ee764dfe7ec7d9",
+          "text": "Mabolla More | bar | Emirbeyazıt Mah., 10. Cad., 1, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-14"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Cad., 1, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-14"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Mabolla More",
+          "type": "bar",
+          "location_description": "Emirbeyazıt Mah., 10. Cad., 1, Menteşe, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "601e1e191aa70e",
+          "text": "Arasta Çay Bahçesi | cafe | Emirbeyazıt Mah., Semerciler Sok., 18, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Arasta Çay Bahçesi** | cafe | Emirbeyazıt Mah., Semerciler Sok., 18, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Arasta Çay Bahçesi",
+          "type": "cafe",
+          "location_description": "Emirbeyazıt Mah., Semerciler Sok., 18, Menteşe, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "bbb538444791b8",
+          "text": "Atapark Cafe | cafe | Emirbeyazıt Mah., Recai Güreli Cad., 2, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-16",
+            "web-17"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Atapark Cafe** | cafe | Emirbeyazıt Mah., Recai Güreli Cad., 2, Menteşe, Muğla | güncel faaliyet: bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-16",
+                "web-17"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Atapark Cafe",
+          "type": "cafe",
+          "location_description": "Emirbeyazıt Mah., Recai Güreli Cad., 2, Menteşe, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "01806deee7c0e8",
+          "text": "Pablo Cafe | restaurant | Emirbeyazıt Mahallesi 28. Sokak No: 14/1 Muğla Outlet Park B Blok No:3 Menteşe, 48000 Muğla Merkez/Muğla | güncel faaliyet: bilinmiyor | Kapsayıcı",
+          "source_ids": [
+            "web-18"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Menteşe, 48000 Muğla Merkez/Muğla | güncel faaliyet: bilinmiyor | Kapsayıcı",
+              "source_ids": [
+                "web-18"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Pablo Cafe",
+          "type": "restaurant",
+          "location_description": "Emirbeyazıt Mahallesi 28. Sokak No: 14/1 Muğla Outlet Park B Blok No:3 Menteşe, 48000 Muğla Merkez/Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "bf8dae6f1ba006",
+          "text": "Assos Extra | cafe | Emirbeyazıt Mah., Çamlık Sok. No:5/B, Menteşe, Muğla | güncel faaliyet: bilinmiyor | mekan.com",
+          "source_ids": [
+            "web-19"
+          ],
+          "grounding_supports": [
+            {
+              "text": "No:5/B, Menteşe, Muğla | güncel faaliyet: bilinmiyor | mekan.com",
+              "source_ids": [
+                "web-19"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Assos Extra",
+          "type": "cafe",
+          "location_description": "Emirbeyazıt Mah., Çamlık Sok. No:5/B, Menteşe, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        }
+      ],
+      "score": null,
+      "missing_reason": null,
+      "osm": {
+        "status": "unavailable",
+        "places": [],
+        "counts": null,
+        "attempts": [
+          {
+            "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+            "status": "failed",
+            "error": "HTTPError",
+            "http_code": 504
+          },
+          {
+            "endpoint": "https://overpass-api.de/api/interpreter",
+            "status": "failed",
+            "error": "TimeoutError",
+            "http_code": null
+          }
+        ],
+        "missing_reason": "No complete response from public Overpass instances; not zero facilities."
+      },
+      "scope_note": "OSM radius is around a representative point, not a neighborhood boundary. Web examples may describe a wider nearby area."
+    },
+    "earthquake_hazard": {
+      "status": "research_estimate",
+      "value": 0.334,
+      "unit": "g",
+      "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+      "method": "nearest published grid point; no interpolation",
+      "nearest_grid_point": {
+        "latitude": 37.22046,
+        "longitude": 28.35751,
+        "pga_g": 0.334
+      },
+      "distance_to_grid_point_km": 0.6571,
+      "maximum_supported_distance_km": 5,
+      "grid_row_count": 201920,
+      "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "source_title": "Jeodezik Deprem Tehlike Haritası",
+      "source_version": "v1, 2025-02-16",
+      "authors": [
+        "Aktuğ, Bahadır",
+        "Şentürk, Murat Doruk",
+        "Özsaraç, Vedat",
+        "KILIÇ, Nazan"
+      ],
+      "license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+      "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+      "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+      "is_official_afad_tdth": false,
+      "limitations": [
+        "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+        "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+        "No soil class, building safety conclusion, risk label or score is derived."
+      ],
+      "score": null
+    }
+  },
+  "sources": [
+    {
+      "id": "web-0",
+      "publisher": "harita.org",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjF_D_1ZIyuupG0fIDcuoe1FlevPNNrAFdZWF_dvRdyIVssVlVV3VCHh4xVLOhzKrdJ-TuuNbAMHtTAWr3EntBrfPClB38V8LXg0GhSeBH6K-Txz6V3lNM_xX4TbBlv7uHJt3k8C3Lig==",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-1",
+      "publisher": "emlakjet.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCkmXr-zxQRaMtjxL2ImYJlk3pqlybaYyztSAix5GZ4_OlmF7yUoTLHnv9IVND27wVTgBp1UxnOdBzDQyTeczz68dS42Wu5hvLSmTtYaKO3WgkZ_jcBOXN4Z3Tk4ZNwvxLph1DGysMKUxMwjshc8RDCAPGpmiIhetM6YtS1nQX5eck2Z9w",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-2",
+      "publisher": "emlakjet.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo3zl25kSZneroRt3H9ohqDgUFBdG1fSdXpBGcJT16W8tzWuQb0avIzh5uc7yZm3u9ZLyUyy3M18ewxMWeXx76gm98Sc6p3CUUHdh9SOgt0NAtcEYt_Dfpk5qnyQG_EsryllmUYFbU-9U1Qf_nBesRdzzgszE6SlRuFCxNXy9W0r26scE3SXAuc7BaszfIKj0=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-3",
+      "publisher": "hepsiemlak.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0Tp86Z6gsYt2iDlqUQXi0cRIM0mLrorAVIaObhxVlxLgP6SbZuXn_58f6nP8fiMCfbyDUL0mCW5LDE2SThrhyPH2sswv5T0oPH9ehI_xqs3LzN1H4zQUpNnm7BPbeWRobc5Zu15c7F9s=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-4",
+      "publisher": "mentese.bel.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAoUIkJnrMnkLAtXPHvee7yzrSdh3ecTuKuJZDOj_3np2NpZF2aI81PJNtq7tfp1oNSlTAIAakfmTauxuB6sABPtQwqf5dNhcM77gPvdfSke3f9VOqtY0FHH3Z2uc2PrHHt0CkyHWB37ScWzyRadlpzwsoaKACRfIITorWzj3NekQZN9v8v8OhCDkyGJYpgb7mUJO02-ol4t0FxMq4nh0w3o-yPaQ=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-5",
+      "publisher": "muglagazetesi.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3mFXNDQ9CRpj5L02a_FvtXMu0OASD-07Mu6a4MlYHq7DWhq6SJ90zJTmfePZnbEBdyykFBbRvDAsG9yxvLhOYlELJmsQ2sm3CddCBVzyEtFNME2MLAO5jFCbO7U21PU-ELW4ROJ94ebvYtLZgfsh5IO4t9OfFPwSEUq6ZzzcU7mPPqhFu3GhDfcZJ9UbqaScqX-FKHSinFF-x_VLymxj-Z3jMiou-KMNY",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-6",
+      "publisher": "sabah.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlpJNaqjrDAyM23-b_nODZirISSxd1uOpN06PDsitK0035o5_uHWjryc8EIR2_bcigZ88xHCMXOtyeSbg8A7vFCJhdhbAsZoB1F4HmyTzi5PJEqmn9yVYDoXwV7SNW_0yRqQ1svKuym7-eLDs2AJ7ejolrktlPdEhk_QSi1J73mb9CvU9Id61n7hptEKuYLk6OLJJUGh27CyBOckCaSg==",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-7",
+      "publisher": "egeyonhaber.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFimbYYitxlRvgMCgkAEaeXfuKTsY9VcIcS8MaHyZRyDDjJW9M8aDn2nj9Uby3N9jliJu0HNhXIiUAcq1FfO5zyB_tYC-fOeK5_U57MkJ4xJ_A3m53mCp_FfOSZ9m8dNofz0USuuqvvLxwK1aUF4fdvtQdRFcsaGipctrd2XRUI9D_PsyiCVMHhLqyTVlaGCCI3LBqz4EMiYg==",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-8",
+      "publisher": "sabah.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqhbBD2lX54iesyIDl2Qok8s6FUUnlVIaQ4LG89ApiLsd1z9aMbBuVwZAnsDFL3KRzhQnQVdWU9IBn0yjPuDWfYuW7CueScbv45OTZ3aId5-rOHdkA-9hY2jEOllQhIQHxjYIgWZvZ3hIKvHyblWh0thIQ_MXLj-y2Q1DNBNbiTyMxTYZzv5edEm6uz4jrxPpmPbP19Cg5-HProPAb9RU=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-9",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHp1pDjFbafYh4_iFFYTZLXjDuqMMJjCgLB7TqwElYMPfBU0cafZTVrRf6nPtpfK7_IxiknkunzIv--2sP5fTp7nxiSwpWecs_At3ptdSEoLGFSHhOG3ljodhjoipfwnsmnz6STfKSHgUgtus_S1piFwlz1fbjDvjG8LHrSOpC4FzKcuWX2_CshE6I=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-10",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUAEnOmzgWreNaEpakgufPaqOPkGiKLU5YfKNrRcBwKovGWzxLpRJeVBxqulZ18RK3MFmoOigSJH7rd6Awr885kfgMPctPXHkTguKS67dyKy60OHnijDQs-m3hi4okaCUILjXNdYZYby0BxcEaX3-YZ54=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-11",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIn2hBAgeQZf1vCPdeOBCCyY3hjsxDNxNaSOuNXD39K451OAINCocmFzGabIK1fukr09Mo8VQNS3nwxwc2TxNEqDgtmKCPgzvNa4UzvtmFTs1aucVgM6bffZpdmhOp31EPNCYvwSXw0Axe0ZJw-H6arqJxD0k-",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-12",
+      "publisher": "gezinomi.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGz5n7IYSxXsAaSJmQSvM6kJ6fU4CRNjN-kg2jaFL9hx0IU0zeo8BgEMQE_rw2XYtg50mL-hXpNmIJHWCy2uMYUqFv0w_IAGMpfNBCcZxZppBhgy9rYcJbwD6VVcaDK1OFJ32xOxUjfwcHDHlD5wRtJO8LtTI3ifVS29vVeqzxVBFAwyQ==",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-13",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFH_YDjnOLpAMjd5krS6_o4jSsgh94UI7oz1uvdTiLdM4NqffpXbKb3CJwQJubamfzKeHm9e6CDf04V8mpB_MekYdkHLkh5d5JIT7bIhSWUe5Fa-lKPG7MeBE9GIO7z4EnMyBv-fZdi8A0ut9R66H9WvFQ=",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-14",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBB9r-3G8LSnWahKCsqRXNjKoYidpvIeRCI_VNK6Zg_ARCmmC0jwhgnPwAPybNV7od8foAUCfk06DGeZ_p067_Fq2CdOX-tJzxvIEV8dyZIwTpsDDLhS3-QH28KkTG4V5ogVZlSQFW4XcmRIfhjeVgGOL_",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-15",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOQTKUD-PhP1krdXUuyqHjj6elmuD_cGiCzAWwTYsv4YsJ3R_T78aibCaD5JbgZ9dpMw-zocdCrn1qtDmhgrkjH6olnPGfgknRJas3PexXR5p7-15MQwoyLd8IkCVPEdE8WNOZUvZM1bQ5wAIbSXNOZztEOqN0XKEfAg==",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-16",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2T-BimEh7Tdw2-udIguHr7UAmLWkz7MlFZQd4IwP7eZy59eLtMzqcdh8b1rS_pAaRF_W5QoOOgUXyGRQrEdS3yed0g2XGJjGbKW4WwQleaH2LfbargDOZpiibqHls6ExjKMxgy5LAMg7wEA94h2AeDt9o",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-17",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs5K5kKbYOVtjY_2GASXLNXOtnLNzBhVNUF8a2LLkVsz6yWkMJZLkXahoRQkROk4Y0FnsMco0XyBlRbfyAcB_Lg1HjCdod4a8FovMya4aJlp4PPaO9mfZBUhQq5FJKUTDOw2cWt8y40y4fs8J67Q_vvzwD6Hu6Fvh3_tG81g==",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-18",
+      "publisher": "kapsayici.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwUnMk_kdrlJkdskkgqW5SU_DyfWaVDKUx1XfoyB1fgIPaOYJP8wOM-Ckgi5J3L97HPWOFTqKP2jphv3n-wFRrL4nYS9w6zjHiiOs2s2g3Lwc1Ei8h2FIl2a8_bMFAyxOu6ZGVTJNmpkkFcrWd886i",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-19",
+      "publisher": "mekan.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwYGc-at88FRRu6R41gm-JGTFAwx8QG_Oic5C1iNAfJyssnaXfmFh9KznJsGuKxPITJUWEAJE_8Pr__QG7NxwHdlVAuFzDpI6uHDr_FHetURUZiOpHqy2vXbF8XcTElhEGSaOVx9lf",
+      "retrieved_at": "2026-10-27T22:26:00.969296+00:00",
+      "method": "google_search_grounding"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "21f82a3feaa848",
+      "text": "2+1 | eşyasız | 28.000 TL/ay | ilan tarihi: 2026-10-24 | uzun dönem | KAMPUS EMLAK (Kötekli Mahallesi)",
+      "source_ids": [
+        "web-1"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   **2+1** | eşyasız | 28.000 TL/ay | ilan tarihi: 2026-10-24 | uzun dönem | KAMPUS EMLAK (Kötekli Mahallesi)",
+          "source_ids": [
+            "web-1"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "different_neighborhood"
+    },
+    {
+      "id": "4d47af0ad8a1d0",
+      "text": "2+1 | eşyalı | 28.000 TL/ay | ilan tarihi: 2026-10-22 | uzun dönem | KAMPUS EMLAK (Yeniköy Mahallesi)",
+      "source_ids": [
+        "web-1",
+        "web-2"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   **2+1** | eşyalı | 28.000 TL/ay | ilan tarihi: 2026-10-22 | uzun dönem | KAMPUS EMLAK (Yeniköy Mahallesi)",
+          "source_ids": [
+            "web-1",
+            "web-2"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "different_neighborhood"
+    },
+    {
+      "id": "7ab49de5e3616a",
+      "text": "3+1 | bilinmiyor | 52.000 TL/ay | ilan tarihi: 2026-10-21 | uzun dönem | Mehmet Fatih İLİKLİ (Karamehmet Mahallesi)",
+      "source_ids": [
+        "web-1"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   **3+1** | bilinmiyor | 52.000 TL/ay | ilan tarihi: 2026-10-21 | uzun dönem | Mehmet Fatih İLİKLİ (Karamehmet Mahallesi)",
+          "source_ids": [
+            "web-1"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "different_neighborhood"
+    },
+    {
+      "id": "3988365d77b60b",
+      "text": "3+1 | bilinmiyor | 26.500 TL/ay | ilan tarihi: 2026-10-21 | uzun dönem | ÇAĞ EMLAK GAYRİMENKUL (Bayır Mahallesi)",
+      "source_ids": [
+        "web-1",
+        "web-2"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   **3+1** | bilinmiyor | 26.500 TL/ay | ilan tarihi: 2026-10-21 | uzun dönem | ÇAĞ EMLAK GAYRİMENKUL (Bayır Mahallesi)",
+          "source_ids": [
+            "web-1",
+            "web-2"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "different_neighborhood"
+    },
+    {
+      "id": "ee3579401372d1",
+      "text": "1+1 | bilinmiyor | 25.000 TL/ay | ilan tarihi: 2026-10-21 | uzun dönem | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI (Muslihittin Mahallesi)",
+      "source_ids": [
+        "web-1",
+        "web-2"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   **1+1** | bilinmiyor | 25.000 TL/ay | ilan tarihi: 2026-10-21 | uzun dönem | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI (Muslihittin Mahallesi)",
+          "source_ids": [
+            "web-1",
+            "web-2"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "different_neighborhood"
+    },
+    {
+      "id": "7f465e6e01955d",
+      "text": "2025-08-20 | suç/şiddet | Emirbeyazıt Mahallesi'nde bir bankada güvenlik görevlisi olarak çalışan bir kişi, kendisine zimmetli silahıyla başından vurulmuş halde bulundu ve kaldırıldığı hastanede hayatını kaybetti.",
+      "source_ids": [
+        "web-6",
+        "web-7",
+        "web-8"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   **2025-08-20** | suç/şiddet | Emirbeyazıt Mahallesi'nde bir bankada güvenlik görevlisi olarak çalışan bir kişi, kendisine zimmetli silahıyla başından vurulmuş halde bulundu ve kaldırıldığı hastanede hayatını kaybetti.",
+          "source_ids": [
+            "web-6",
+            "web-7",
+            "web-8"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "safety_news",
+      "reason": "outside_date_window"
+    },
+    {
+      "id": "e1774027e83748",
+      "text": "48-5 | Menteşe - Milas | Menteşe Otogar'dan başlayarak Bayır, Yatağan ve Milas Terminal Garajı'na kadar uzanır. | sıklık ve son sefer: bilinmiyor | MUTTAŞ",
+      "source_ids": [
+        "web-10",
+        "web-11",
+        "web-9"
+      ],
+      "grounding_supports": [
+        {
+          "text": "| sıklık ve son sefer: bilinmiyor",
+          "source_ids": [
+            "web-9"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "source_ids": [
+            "web-9"
+          ]
+        },
+        {
+          "text": "*   **48-5** | Menteşe - Milas | Menteşe Otogar'dan başlayarak Bayır, Yatağan ve Milas Terminal Garajı'na kadar uzanır.",
+          "source_ids": [
+            "web-10"
+          ]
+        },
+        {
+          "text": "| sıklık ve son sefer: bilinmiyor",
+          "source_ids": [
+            "web-10"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "source_ids": [
+            "web-10"
+          ]
+        },
+        {
+          "text": "| sıklık ve son sefer: bilinmiyor",
+          "source_ids": [
+            "web-11"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "source_ids": [
+            "web-11"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "transportation",
+      "reason": "regional_route_not_neighborhood_evidence"
+    },
+    {
+      "id": "994e09db33bdae",
+      "text": "48-12 | Köyceğiz - Menteşe | Menteşe Otogar'dan başlayarak Ula, Gökova Kavşağı, Ortaca ve Dalaman Otogar'a kadar bağlantı sağlar. | sıklık ve son sefer: bilinmiyor | MUTTAŞ",
+      "source_ids": [
+        "web-10",
+        "web-11",
+        "web-9"
+      ],
+      "grounding_supports": [
+        {
+          "text": "| sıklık ve son sefer: bilinmiyor",
+          "source_ids": [
+            "web-9"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "source_ids": [
+            "web-9"
+          ]
+        },
+        {
+          "text": "| sıklık ve son sefer: bilinmiyor",
+          "source_ids": [
+            "web-10"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "source_ids": [
+            "web-10"
+          ]
+        },
+        {
+          "text": "*   **48-12** | Köyceğiz - Menteşe | Menteşe Otogar'dan başlayarak Ula, Gökova Kavşağı, Ortaca ve Dalaman Otogar'a kadar bağlantı sağlar.",
+          "source_ids": [
+            "web-11"
+          ]
+        },
+        {
+          "text": "| sıklık ve son sefer: bilinmiyor",
+          "source_ids": [
+            "web-11"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "source_ids": [
+            "web-11"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "transportation",
+      "reason": "regional_route_not_neighborhood_evidence"
+    }
+  ],
+  "provenance": {
+    "grounding_result": "data/research/emirbeyazit_2026-10-28_v5/result.json",
+    "direct_result": "data/pilot/emirbeyazit_direct_sample.json",
+    "model": "gemini-2.5-flash",
+    "research_started_at": "2026-10-27T22:25:43.567575+00:00",
+    "research_finished_at": "2026-10-27T22:26:00.969296+00:00"
+  },
+  "limitations": [
+    "Initial static data release, not a verified complete business/property census.",
+    "Search supports attach only to quoted segments; all narrative claims are not thereby verified.",
+    "Unknown data remains null; academic hazard data is not official AFAD TDTH or building safety.",
+    "Survey weights, live report API and caching are separate tasks."
+  ]
+}

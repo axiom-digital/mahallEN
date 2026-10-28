@@ -1,5 +1,7 @@
+// Team decision recorded in docs/survey/survey-analysis.md, section 5.
+export const agreedWeights = { rent: 32, transport: 10, social: 28, news: 20, hazard: 10 };
 export const profiles = {
-  general: { label: 'Genel', weights: { rent: 20, transport: 20, social: 20, news: 20, hazard: 20 } },
+  general: { label: 'Genel', weights: agreedWeights },
   student: { label: 'Öğrenci', weights: { rent: 30, transport: 25, social: 25, news: 10, hazard: 10 } },
   family: { label: 'Aile', weights: { rent: 20, transport: 15, social: 15, news: 25, hazard: 25 } },
   professional: { label: 'Çalışan', weights: { rent: 20, transport: 30, social: 15, news: 20, hazard: 15 } },

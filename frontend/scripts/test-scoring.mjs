@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { budgetScore, housingComparison, housingPreferences, profiles, weightedScore } from '../src/scoring.mjs';
+import { agreedWeights, budgetScore, housingComparison, housingPreferences, profiles, weightedScore } from '../src/scoring.mjs';
 assert.equal(budgetScore(30000, 30000), 50);
 assert.equal(budgetScore(27000, 30000), 70);
 assert.equal(budgetScore(27000, 10000), 0);
@@ -10,8 +10,9 @@ for (const profile of Object.values(profiles)) {
   assert.equal(Object.values(profile.weights).reduce((a, b) => a + b, 0), 100);
   assert.ok(profile.weights.hazard > 0, 'Every profile includes earthquake hazard');
 }
-assert.equal(weightedScore({ rent: 70, transport: 70, social: 70, news: 55, hazard: 23 }, profiles.general.weights), 58);
-assert.equal(weightedScore({ rent: 70, transport: 70, social: 70, news: 55, hazard: 100 }, profiles.general.weights), 73);
+assert.deepEqual(agreedWeights, { rent: 32, transport: 10, social: 28, news: 20, hazard: 10 });
+assert.equal(weightedScore({ rent: 70, transport: 70, social: 70, news: 55, hazard: 23 }, profiles.general.weights), 62);
+assert.equal(weightedScore({ rent: 70, transport: 70, social: 70, news: 55, hazard: 100 }, profiles.general.weights), 70);
 assert.equal(weightedScore({ rent: 70, hazard: null }, profiles.general.weights), 70);
 assert.equal(weightedScore({ hazard: null }, profiles.general.weights), null);
 const listings = [{ rooms: '1+1', amount: 21000 }, { rooms: '1+1', amount: 22000 }, { rooms: '2+1', amount: 30000 }];

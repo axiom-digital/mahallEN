@@ -1,0 +1,3 @@
+# Optional, standalone #9 experiment; not run by application startup or API reads.
+google-genai==2.12.1
+python-dotenv==1.2.4

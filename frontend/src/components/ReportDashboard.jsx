@@ -109,7 +109,7 @@ export default function ReportDashboard({ report, onRefreshAi, refreshing }) {
         <ScoreCard
           title="Disaster Resilience"
           score={scores.disaster_resilience}
-          subtitle={`AFAD PGA: ${disaster_risk.pga_value_g}g • ${disaster_risk.soil_class}`}
+          subtitle={`Sample PGA: ${disaster_risk.pga_value_g}g • ${disaster_risk.soil_class}`}
           icon={Activity}
         />
       </div>
@@ -133,7 +133,7 @@ export default function ReportDashboard({ report, onRefreshAi, refreshing }) {
             className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition disabled:opacity-50"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin text-emerald-400' : ''}`} />
-            {refreshing ? 'Synthesizing...' : 'Re-Synthesize with AI'}
+            {refreshing ? 'Refreshing...' : 'Refresh report'}
           </button>
         </div>
 
@@ -255,7 +255,7 @@ export default function ReportDashboard({ report, onRefreshAi, refreshing }) {
 
         <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3">
           <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <Activity className="w-4 h-4 text-rose-400" /> AFAD Earthquake & Soil Data
+            <Activity className="w-4 h-4 text-rose-400" /> Sample Earthquake & Soil Metrics
           </h4>
           <div className="space-y-2 text-xs text-slate-300">
             <div className="flex justify-between py-1.5 border-b border-slate-800">
@@ -278,7 +278,7 @@ export default function ReportDashboard({ report, onRefreshAi, refreshing }) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 space-y-4">
           <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <Newspaper className="w-4 h-4 text-emerald-400" /> Verified Local News & Events
+            <Newspaper className="w-4 h-4 text-emerald-400" /> Sample Local News & Events
           </h4>
           <div className="space-y-3">
             {news_items.map((item, idx) => (
@@ -329,7 +329,7 @@ export default function ReportDashboard({ report, onRefreshAi, refreshing }) {
       <div className="rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 space-y-3 text-xs text-slate-400">
         <div className="flex items-center gap-2 text-slate-200 font-semibold">
           <Database className="w-4 h-4 text-emerald-400" />
-          <span>Data Sources & Transparent Scoring Methodology</span>
+          <span>Example Sources & Draft Scoring Methodology</span>
         </div>
         <div className="flex flex-wrap gap-2">
           {data_sources.map((src, i) => (

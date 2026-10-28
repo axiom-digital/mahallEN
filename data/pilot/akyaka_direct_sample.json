@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "dataset_status": "source_backed_sample",
+  "processed_at": "2026-10-27T22:27:05.104079+00:00",
+  "neighborhood": "Akyaka",
+  "district": "Ula",
+  "city": "Muğla",
+  "location": {
+    "lat": 37.0580313,
+    "lon": 28.3271055,
+    "label": "Akyaka, Ula, Muğla, Ege Bölgesi, 48650, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8399373700,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T22:27:03.663325+00:00",
+    "method": "Nominatim representative point; not a building address or neighborhood-wide measurement"
+  },
+  "categories": {
+    "social_life": {
+      "status": "unavailable",
+      "places": [],
+      "counts": null,
+      "attempts": [
+        {
+          "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+          "status": "failed",
+          "error": "HTTPError",
+          "http_code": 504
+        },
+        {
+          "endpoint": "https://overpass-api.de/api/interpreter",
+          "status": "failed",
+          "error": "HTTPError",
+          "http_code": 502
+        }
+      ],
+      "missing_reason": "No complete response from public Overpass instances; not zero facilities."
+    },
+    "earthquake_hazard": {
+      "status": "research_estimate",
+      "value": 0.391,
+      "unit": "g",
+      "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+      "method": "nearest published grid point; no interpolation",
+      "nearest_grid_point": {
+        "latitude": 37.06308,
+        "longitude": 28.32229,
+        "pga_g": 0.391
+      },
+      "distance_to_grid_point_km": 0.7055,
+      "maximum_supported_distance_km": 5,
+      "grid_row_count": 201920,
+      "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "source_title": "Jeodezik Deprem Tehlike Haritası",
+      "source_version": "v1, 2025-02-16",
+      "authors": [
+        "Aktuğ, Bahadır",
+        "Şentürk, Murat Doruk",
+        "Özsaraç, Vedat",
+        "KILIÇ, Nazan"
+      ],
+      "license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+      "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+      "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+      "is_official_afad_tdth": false,
+      "limitations": [
+        "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+        "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+        "No soil class, building safety conclusion, risk label or score is derived."
+      ]
+    }
+  }
+}

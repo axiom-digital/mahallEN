@@ -10,20 +10,23 @@ class Settings:
 
     APP_NAME: str = os.getenv("APP_NAME", "MahallEN API")
     APP_ENV: str = os.getenv("APP_ENV", "development")
-    DEBUG: bool = os.getenv("DEBUG", "True").lower() in ("true", "1", "yes")
+    DEBUG: bool = os.getenv("DEBUG", "False").lower() in ("true", "1", "yes")
 
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "postgresql+psycopg2://mahallen_user:mahallen_pass@localhost:5432/mahallen_db",
+        "sqlite:///./mahallen_local.db",
     )
-    AUTO_FALLBACK_SQLITE: bool = os.getenv("AUTO_FALLBACK_SQLITE", "True").lower() in (
+    AUTO_FALLBACK_SQLITE: bool = os.getenv("AUTO_FALLBACK_SQLITE", "False").lower() in (
         "true",
         "1",
         "yes",
     )
 
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    # Select a supported model during the planned LLM integration work (#9).
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "")
+    # Server-side operator secret; never put this in a VITE_* variable.
+    AI_REFRESH_TOKEN: str = os.getenv("AI_REFRESH_TOKEN", "")
 
     @property
     def cors_origins(self) -> List[str]:

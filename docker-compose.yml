@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   db:
     image: postgres:16-alpine
@@ -7,14 +5,14 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-mahallen_user}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mahallen_pass}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in the root .env file}
       POSTGRES_DB: ${POSTGRES_DB:-mahallen_db}
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-mahallen_user} -d ${POSTGRES_DB:-mahallen_db}"]
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -25,17 +23,20 @@ services:
       dockerfile: Dockerfile
     container_name: mahallen_backend
     restart: unless-stopped
-    env_file:
-      - ./backend/.env.example
     environment:
-      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-mahallen_user}:${POSTGRES_PASSWORD:-mahallen_pass}@db:5432/${POSTGRES_DB:-mahallen_db}
+      APP_ENV: production
+      DEBUG: "false"
+      AUTO_FALLBACK_SQLITE: "false"
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-mahallen_user}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in the root .env file}@db:5432/${POSTGRES_DB:-mahallen_db}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-}
+      AI_REFRESH_TOKEN: ${AI_REFRESH_TOKEN:-}
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     depends_on:
       db:
         condition: service_healthy
-    volumes:
-      - ./backend:/app
 
 volumes:
   postgres_data:

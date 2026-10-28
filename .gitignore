@@ -1,5 +1,6 @@
 # Python / Backend
 __pycache__/
+.pytest_cache/
 *.py[cod]
 *$py.class
 *.so
@@ -50,5 +51,7 @@ frontend/build/
 Thumbs.db
 
 # Docker volumes / logs
+data/cache/
+output/
 postgres_data/
 *.log

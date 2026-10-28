@@ -1,0 +1,10 @@
+import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+const root = fileURLToPath(new URL('../../', import.meta.url));
+const input = await readFile(path.join(root, 'data/pilot/kotekli.ui.v0.2.json'), 'utf8');
+JSON.parse(input);
+const output = path.join(root, 'frontend/src/data/kotekli-preview.json');
+await mkdir(path.dirname(output), { recursive: true });
+await writeFile(output, input, 'utf8');
+console.log('Preview uses saved research and disclosed experimental scores. No provider requests.');

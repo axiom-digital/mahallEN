@@ -1,0 +1,1581 @@
+{
+  "schema_version": "1.0.0",
+  "id": "muslihittin",
+  "name": "Muslihittin",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-10-28",
+  "dataset_status": "source_backed_static_v1",
+  "factual_review_status": "source_check_pending",
+  "location": {
+    "lat": 37.2181413,
+    "lon": 28.3576472,
+    "label": "Muslihittin Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9710002,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=Muslihittin%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T22:26:43.257762+00:00",
+    "method": "Nominatim representative point; not a building address or neighborhood-wide measurement"
+  },
+  "categories": {
+    "rent_cost": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "331e7223517bcb",
+          "text": "1+0 | Eşyalı | 17.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+          "source_ids": [
+            "web-0"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+0** | Eşyalı | 17.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+              "source_ids": [
+                "web-0"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+0",
+          "amount_tl_month": 17000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "866903f1513fc6",
+          "text": "1+1 | Eşyalı | 34.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Ufuk Emlak",
+          "source_ids": [
+            "web-0"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **1+1** | Eşyalı | 34.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Ufuk Emlak",
+              "source_ids": [
+                "web-0"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 34000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "480b8d5a8fe0de",
+          "text": "2+1 | Eşyalı | 42.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+          "source_ids": [
+            "web-1"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **2+1** | Eşyalı | 42.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+              "source_ids": [
+                "web-1"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "2+1",
+          "amount_tl_month": 42000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "c38ac39fae9b7b",
+          "text": "2+1 | Eşyalı | 28.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+          "source_ids": [
+            "web-1"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **2+1** | Eşyalı | 28.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+              "source_ids": [
+                "web-1"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "2+1",
+          "amount_tl_month": 28000,
+          "furnished": true,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "5cb2aff3b291dd",
+          "text": "3+1 | Bilinmiyor | 37.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+          "source_ids": [
+            "web-0"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **3+1** | Bilinmiyor | 37.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+              "source_ids": [
+                "web-0"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "3+1",
+          "amount_tl_month": 37000,
+          "furnished": null,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "0698c77026c1b4",
+          "text": "3+1 | Bilinmiyor | 70.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+          "source_ids": [
+            "web-2"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **3+1** | Bilinmiyor | 70.000 TL/ay | İlan tarihi: Bilinmiyor | Uzun dönem | Bilinmiyor",
+              "source_ids": [
+                "web-2"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "3+1",
+          "amount_tl_month": 70000,
+          "furnished": null,
+          "lease_term": "long_term_reported",
+          "eligible_for_current_comparison": false
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "safety_news": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "60011452eb198f",
+          "text": "2026-08-12 | Trafik | Muğla'nın Menteşe ilçesi Denizli yolu üzeri Volkan Sitesi önünde motosiklet ile otomobilin çarpışması sonucu motosiklet sürücüsü hayatını kaybetti.",
+          "source_ids": [
+            "web-3"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   2026-08-12 | Trafik | Muğla'nın Menteşe ilçesi Denizli yolu üzeri Volkan Sitesi önünde motosiklet ile otomobilin çarpışması sonucu motosiklet sürücüsü hayatını kaybetti.",
+              "source_ids": [
+                "web-3"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-08-12",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "trafik"
+        },
+        {
+          "id": "97ee840ec6aad6",
+          "text": "2026-06-07 | Trafik | Menteşe ilçesi Muslihittin Mahallesi'nde [plaka çıkarıldı] plakalı otomobil ile [plaka çıkarıldı] plakalı araç çarpıştı.",
+          "source_ids": [
+            "web-4"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   2026-06-07 | Trafik | Menteşe ilçesi Muslihittin Mahallesi'nde 20 ALG 552 plakalı otomobil ile 48 AYZ 186 plakalı araç çarpıştı.",
+              "source_ids": [
+                "web-4"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-06-07",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "trafik"
+        },
+        {
+          "id": "10afe20abfc35f",
+          "text": "2026-04-11 | Trafik | Muğla'nın Menteşe ilçesi Muslihittin Mahallesi'nde otomobil ile motosikletin çarpıştığı kazada 1 kişi yaralandı.",
+          "source_ids": [
+            "web-5"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   2026-04-11 | Trafik | Muğla'nın Menteşe ilçesi Muslihittin Mahallesi'nde otomobil ile motosikletin çarpıştığı kazada 1 kişi yaralandı.",
+              "source_ids": [
+                "web-5"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-04-11",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "trafik"
+        },
+        {
+          "id": "4410c4dfa2fc7e",
+          "text": "2025-12-09 | Trafik | Muğla'nın Menteşe ilçesi Muslihittin Mahallesi'nde Geçit Sokak'tan çıkan [plaka çıkarıldı] plakalı otomobil ile Camcı Sokak üzerinde seyir halindeki [plaka çıkarıldı] plakalı motosiklet çarpıştı ve iki kişi yaralandı.",
+          "source_ids": [
+            "web-6"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   2025-12-09 | Trafik | Muğla'nın Menteşe ilçesi Muslihittin Mahallesi'nde Geçit Sokak'tan çıkan 35 BGU 161 plakalı otomobil ile Camcı Sokak üzerinde seyir halindeki 48 AVF 255 plakalı motosiklet çarpıştı ve iki kişi yaralandı.",
+              "source_ids": [
+                "web-6"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2025-12-09",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "trafik"
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "274444623bbbf8",
+          "text": "1-9 | Besko (Adliye) - Şehir İçi | Besko, Şehiriçi, Akyol, Kademe (Adliye, Anadolu Lisesi, Türdü İlkokulu, Sabri Acarsoy İlkokulu, 75. Yıl Okulu, Dumlupınar İlkokulu) duraklarını birbirine bağlar. Kullanıcıya şehir içi ulaşım imkanı sunar. | Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+          "source_ids": [
+            "web-8"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Kullanıcıya şehir içi ulaşım imkanı sunar.",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-9",
+          "official_source_ids": [
+            "web-8"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        },
+        {
+          "id": "c34deda2d28b1e",
+          "text": "1-8 | Menteşe Otogar - Menteşe Yapı Kooperatifi | Menteşe Otogar, Stadyum, Devlet Hastanesi ve Menteşe Yapı Kooperatifi duraklarını birbirine bağlar. Kullanıcıya otogar ve önemli noktalar arasında ulaşım sağlar. | Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+          "source_ids": [
+            "web-8"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "Kullanıcıya otogar ve önemli noktalar arasında ulaşım sağlar.",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-8",
+          "official_source_ids": [
+            "web-8"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        },
+        {
+          "id": "a3f0a85dade373",
+          "text": "1-3 | Menteşe Stadyum - Akçaova | Menteşe (Stadyum) ile Akçaova (Çetir) arasında bağlantı sağlar. | Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+          "source_ids": [
+            "web-8"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "*   **1-3** | Menteşe Stadyum - Akçaova | Menteşe (Stadyum) ile Akçaova (Çetir) arasında bağlantı sağlar.",
+              "source_ids": [
+                "web-8"
+              ]
+            },
+            {
+              "text": "| Sıklık ve son sefer: Bilinmiyor | MUTTAŞ",
+              "source_ids": [
+                "web-8"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-3",
+          "official_source_ids": [
+            "web-8"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "6dab1fe45df565",
+          "text": "Tatlı Mı Tatlı | restaurant | Muslihittin Mah., Nergis Sokak | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26",
+            "web-9"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Tatlı Mı Tatlı** | restaurant | Muslihittin Mah., Nergis Sokak | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-9"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Tatlı Mı Tatlı",
+          "type": "restaurant",
+          "location_description": "Muslihittin Mah., Nergis Sokak",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "c7e8880d0a755c",
+          "text": "Köşem Cafe Restorant | restaurant | Muslihittin Mah., Nergis Sok., 3 | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-10",
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Köşem Cafe Restorant** | restaurant | Muslihittin Mah., Nergis Sok., 3 | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-10"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Köşem Cafe Restorant",
+          "type": "restaurant",
+          "location_description": "Muslihittin Mah., Nergis Sok., 3",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "92c9691d43a5d9",
+          "text": "Bizim Restaurant | restaurant | Muslihittin Mah., Ahmet Sadettin Özsan Sok., 2B | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-11",
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Bizim Restaurant** | restaurant | Muslihittin Mah., Ahmet Sadettin Özsan Sok., 2B | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Bizim Restaurant",
+          "type": "restaurant",
+          "location_description": "Muslihittin Mah., Ahmet Sadettin Özsan Sok., 2B",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "b58bc13c44e424",
+          "text": "Eşsiz Bahçe | cafe | Muslihittin Mah., Nazım Hikmet Parkı içinde | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-12",
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Eşsiz Bahçe** | cafe | Muslihittin Mah., Nazım Hikmet Parkı içinde | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-12"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Eşsiz Bahçe",
+          "type": "cafe",
+          "location_description": "Muslihittin Mah., Nazım Hikmet Parkı içinde",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "b9b9832b8135ce",
+          "text": "SOSYAL KAFE | cafe | Muslihittin, Cemal Karamuğla Sk. No:84 | Güncel faaliyet: Bilinmiyor | Dijital Link",
+          "source_ids": [
+            "web-13"
+          ],
+          "grounding_supports": [
+            {
+              "text": "No:84 | Güncel faaliyet: Bilinmiyor | Dijital Link",
+              "source_ids": [
+                "web-13"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "SOSYAL KAFE",
+          "type": "cafe",
+          "location_description": "Muslihittin, Cemal Karamuğla Sk. No:84",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "6e7a7d644aa3cb",
+          "text": "Gua Coffee | cafe | Muslihittin Mah., Meydan Sok., 2 | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-14",
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Gua Coffee** | cafe | Muslihittin Mah., Meydan Sok., 2 | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-14"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Gua Coffee",
+          "type": "cafe",
+          "location_description": "Muslihittin Mah., Meydan Sok., 2",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "f753d549f10e23",
+          "text": "100. Yıl Parkı | park | Muslihittin Mah., Dönence Sok. | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "100. Yıl Parkı",
+          "type": "park",
+          "location_description": "Muslihittin Mah., Dönence Sok.",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "31fe48c880ee2d",
+          "text": "Mehmet Ağa Kocahavuz Parkı | park | Muslihittin Mah., Mehmet Ağa Kocahavuz Parkı | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-16",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "*   **Mehmet Ağa Kocahavuz Parkı** | park | Muslihittin Mah., Mehmet Ağa Kocahavuz Parkı | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-16"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Mehmet Ağa Kocahavuz Parkı",
+          "type": "park",
+          "location_description": "Muslihittin Mah., Mehmet Ağa Kocahavuz Parkı",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "081a150ad9758c",
+          "text": "Emin Arslan Parkı | park | Muslihittin Mah., Efeler Sok. | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Emin Arslan Parkı",
+          "type": "park",
+          "location_description": "Muslihittin Mah., Efeler Sok.",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "ca160404ed1e8d",
+          "text": "Çınar Altı | park | Muslihittin Mah., Şehit Özden Aşınmaz Cad. | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Çınar Altı",
+          "type": "park",
+          "location_description": "Muslihittin Mah., Şehit Özden Aşınmaz Cad.",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "3faf39f13e604d",
+          "text": "Basın Parkı | park | Muslihittin, Menteşe, Muğla | Güncel faaliyet: Bilinmiyor | Basın Parkı: Menteşe Adres ve Telefon",
+          "source_ids": [
+            "web-19"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **Basın Parkı** | park | Muslihittin, Menteşe, Muğla | Güncel faaliyet: Bilinmiyor | Basın Parkı: Menteşe Adres ve Telefon",
+              "source_ids": [
+                "web-19"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Basın Parkı",
+          "type": "park",
+          "location_description": "Muslihittin, Menteşe, Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "5c8dd88ef74ae7",
+          "text": "Menteşe Sosyo Kültürel Alan Gezi Parkları | park | Muslihittin Mah., Menteşe Sosyo Kültürel Alan Gezi Parkları | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-20",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "*   **Menteşe Sosyo Kültürel Alan Gezi Parkları** | park | Muslihittin Mah., Menteşe Sosyo Kültürel Alan Gezi Parkları | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-20"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Menteşe Sosyo Kültürel Alan Gezi Parkları",
+          "type": "park",
+          "location_description": "Muslihittin Mah., Menteşe Sosyo Kültürel Alan Gezi Parkları",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "88060c9d83b39f",
+          "text": "Bim | supermarket | Muslihittin Mah. Umut Sokak 14, B | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-21",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "Umut Sokak 14, B | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-21"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Bim",
+          "type": "supermarket",
+          "location_description": "Muslihittin Mah. Umut Sokak 14, B",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "930fb86e4b0945",
+          "text": "Şok Market | supermarket | Muslihittin Mah., Çevre Yolu Blv. | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Şok Market",
+          "type": "supermarket",
+          "location_description": "Muslihittin Mah., Çevre Yolu Blv.",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "b0556f05ca84c5",
+          "text": "Gül's Market | market | Muslihittin Mah., Fatih Sok., 27A | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-23",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "*   **Gül's Market** | market | Muslihittin Mah., Fatih Sok., 27A | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-23"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Gül's Market",
+          "type": "market",
+          "location_description": "Muslihittin Mah., Fatih Sok., 27A",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "56f0cbfb7173d0",
+          "text": "SERTAÇ MARKET | market | Muslihittin Mah. Efeler Sok. 15/A | Güncel faaliyet: Bilinmiyor | Bulurum.com",
+          "source_ids": [
+            "web-24"
+          ],
+          "grounding_supports": [
+            {
+              "text": "15/A | Güncel faaliyet: Bilinmiyor | Bulurum.com",
+              "source_ids": [
+                "web-24"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "SERTAÇ MARKET",
+          "type": "market",
+          "location_description": "Muslihittin Mah. Efeler Sok. 15/A",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "5146ac77507f6d",
+          "text": "MERVE MARKET | market | Muslihittin Mah. Mehmet Polatoğlu Cad. 24/D | Güncel faaliyet: Bilinmiyor | Bulurum.com",
+          "source_ids": [
+            "web-24"
+          ],
+          "grounding_supports": [
+            {
+              "text": "24/D | Güncel faaliyet: Bilinmiyor | Bulurum.com",
+              "source_ids": [
+                "web-24"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "MERVE MARKET",
+          "type": "market",
+          "location_description": "Muslihittin Mah. Mehmet Polatoğlu Cad. 24/D",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "ee96dfb24e5d62",
+          "text": "MUĞLA TÜKETİM MALLARI | supermarket | Muslihittin, 48000 AAAA/Muğla | Güncel faaliyet: Bilinmiyor | ilceler.org",
+          "source_ids": [
+            "web-25"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   **MUĞLA TÜKETİM MALLARI** | supermarket | Muslihittin, 48000 AAAA/Muğla | Güncel faaliyet: Bilinmiyor | ilceler.org",
+              "source_ids": [
+                "web-25"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "MUĞLA TÜKETİM MALLARI",
+          "type": "supermarket",
+          "location_description": "Muslihittin, 48000 AAAA/Muğla",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "598c139c9ffca2",
+          "text": "Muğla Büyükşehir Belediyesi Menteşe Sosyo Kültürel Alanı | kültür merkezi | Muslihittin Mah. | Güncel faaliyet: Bilinmiyor | Yandex Maps",
+          "source_ids": [
+            "web-15",
+            "web-17",
+            "web-18",
+            "web-22",
+            "web-26"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-15"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-17"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-18"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-22"
+              ]
+            },
+            {
+              "text": "| Güncel faaliyet: Bilinmiyor | Yandex Maps",
+              "source_ids": [
+                "web-26"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Muğla Büyükşehir Belediyesi Menteşe Sosyo Kültürel Alanı",
+          "type": "community_centre",
+          "location_description": "Muslihittin Mah.",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        }
+      ],
+      "score": null,
+      "missing_reason": null,
+      "osm": {
+        "status": "unavailable",
+        "places": [],
+        "counts": null,
+        "attempts": [
+          {
+            "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+            "status": "failed",
+            "error": "TimeoutError",
+            "http_code": null
+          },
+          {
+            "endpoint": "https://overpass-api.de/api/interpreter",
+            "status": "failed",
+            "error": "HTTPError",
+            "http_code": 502
+          }
+        ],
+        "missing_reason": "No complete response from public Overpass instances; not zero facilities."
+      },
+      "scope_note": "OSM radius is around a representative point, not a neighborhood boundary. Web examples may describe a wider nearby area."
+    },
+    "earthquake_hazard": {
+      "status": "research_estimate",
+      "value": 0.334,
+      "unit": "g",
+      "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+      "method": "nearest published grid point; no interpolation",
+      "nearest_grid_point": {
+        "latitude": 37.22046,
+        "longitude": 28.35751,
+        "pga_g": 0.334
+      },
+      "distance_to_grid_point_km": 0.2581,
+      "maximum_supported_distance_km": 5,
+      "grid_row_count": 201920,
+      "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "source_title": "Jeodezik Deprem Tehlike Haritası",
+      "source_version": "v1, 2025-02-16",
+      "authors": [
+        "Aktuğ, Bahadır",
+        "Şentürk, Murat Doruk",
+        "Özsaraç, Vedat",
+        "KILIÇ, Nazan"
+      ],
+      "license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+      "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+      "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+      "is_official_afad_tdth": false,
+      "limitations": [
+        "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+        "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+        "No soil class, building safety conclusion, risk label or score is derived."
+      ],
+      "score": null
+    }
+  },
+  "sources": [
+    {
+      "id": "web-0",
+      "publisher": "hepsiemlak.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE_Vt4wIi-MAOROxwq4Ywd3GXsR3NTgR0OaD39EOB8gs4_mWGOKcnJkfNDxaPD9XPLMTEsAJcbl4LMmwJsXgdpmIqRKQ3mXzpbs1pRz6QCvfV9ylsNudxpPnuV-QFE7EqfDGgRmt8o5YI=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-1",
+      "publisher": "emlakgo.net",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpsYEm8A_0OZuFkCycaaq61Kil9XveunawEhfadhCo02uOP-4jZlf7FX0bce4TQYS_NZnlFe2dr2NnAS-op1g8qSleh8NeKLP_W09GvvXtQa3KJdwLsm3oUd3HVoEddkwYBBkiZnBLmvH8eGdFAnMOl9ngzrs68AN7VheXznrsSg==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-2",
+      "publisher": "hepsiemlak.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF04aZJ7SuDbHVTT4RoI0PZAm2GZ2Ts_HyOxdpkj4MuyYyAfJRk_Il9RaCL6afYThJudRrdXOHNmqd4i4yMJgLFnmnmjWH1k02-UbXjxYQU-Zpnk_NwPt6H7pIXbgtllbRV1R9e0wDnDAr4qLcJAok=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-3",
+      "publisher": "muglayenigun.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgyb54mhjsfjaY5yGU0xTVFAA7ZLf-rl-XRu0aZTXGdvIX3hI1TwfdubNq2wpOvGhV55OLAM9hFb99mEsDHsfP76HUpHT26CJaCk-Z-hBEdsQPXlYRqP7piAkD6RaGPIoqX09F65q2gU6yKNZ11VIXC-HKAuFGMVrIG2AHuk4N3NZZKr3V-flYK6A8fXF2zDJRYeXQdaJfUQ==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-4",
+      "publisher": "mugladevrim.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ_7iI6gXawiEPh13bfmJ7kXcP9yKsiLIFBte2RId-0N-T1nBEkw35phq2mx1PP5YTIGGHxT0OHTuwkz8pVXdZVMl-M0J3didv0tpQMMHEt36Ckdgg1KrUjLCkaViuGiTUvAVyd9IffpuRnG31MfHbsmj6t3AD4aT-DYcF-x6Fs_giwu40V3Xe-zuS0w_Htw==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-5",
+      "publisher": "haberturk.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-BvAZdpOWrZyG-lUVSR3KLTBcySmKzppE8nvxh4HMkGNk_WnYAEzrbY1YKOorB6CPc628SkbMrWyaeuA7r2QMdd1KeBhSsvVqLMgiKS7XvyPynYMk_SVsXTCeQn4NQ4VXNyI4LXsDurdLHmN0BE_GTfZo1FjLRPGUqrl4ysTy9SBh1-g2cs8APlPS-dr7acBbIsZA0LSqIfary6jRmQ==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-6",
+      "publisher": "haberturk.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxmKmz8C-jzJ6Ls1deCEwWKr0QKbMboZk-XEEGNUgEhCMhHG7eoVZXAHZ1y1hj55iQChuphWDDvZDZUrDFzF3YInHnpNteZ3f_ElDdmBQGXh3Aa42Z93GvlPvHoPmOgc8cBC2w5Q8QqUCVzUadXWvEiVujPdcfTJn6lh36EAK12p3RMc-J-eOxEwmzzKXe_-mSpBdoyqrpNzI01O5JPSF9lzkb2-CZSKg89G28nA==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-7",
+      "publisher": "yenimesaj.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbFpUkIw0X9GC2ohrLTgbDOvicRS8hm_ldAf4T7I3wlf9tDMHhqFIvLq8E9InZ-I8vrszQsSdzfEW34eAwxoaQQqqrL8C0-lgqrLYYLibkXekNHSULeKjUTr9hschTCKKHfipliIz2BAynwA==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-8",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc5BVugQ9UBRz7SlPPmP6CREO3-HslaylIJiLNXokqBPSchHhA0E_bFh5vcaYJds79Gp8H3eRPvoh7Zeg0Jb_azvAPY8eRvwNMw4VHsUQrms6i7Ig4_06jvmV7idGGC99t25J-5C4=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-9",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmqaHimVcHTEosNvMV3ATDTqIY3ildwPFttm8kyeviy8RFupvtDhbncdU0gbHkO_VMC6ls0iaKSZE8l3KfPx66n6CMYv7vB1emEKjU2hxo_DSNVg8_XkWwWo5am91znSFU642OgL158VVos679DAPOzSpOjiI=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-10",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW01g2qwvQMsI3nIz0qwfgLqtx5oybTBblwjwH7Ouzd-0D-siKPu6ypnebfyBmVa9ZENSL2iMokxXsKkkSikU7gbGHFaYLM4N_dzIMJkOPwmlBneWoB8sJyW0KXmu7EkOPTy14qhxbWed8aY979UAvivJNajB9fC66QA==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-11",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_1iRP322n8EakvrbP86MSQ3DxNIJVpyh9HqlXb8S-mXc_8UdzmsLno2TPOOPLl6fCf7FlSh5p0JdpCDuqRdWM-FqAaFUSDLJAUOP6Mf59iHI2k_xsVB1kzciwLeJDTFWk5xOvx3tAsIKdofxxTZ6JqbXWhLUJ",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-12",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyPgqdgEjZ7LddKrFtpT2toP4HpP5_DMozDy0g1VpXMuWBfxew5lSF8gz0Km_hlBc-Z6og3L1BVpZA9WSuX8MdHGAn4g6FmnjR2V3ah-5iWZpA_tdRLxPHS41wVMAKig-IdDGlURNafKQwZjO2qK120wI=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-13",
+      "publisher": "dijital.link",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfoA2pnFtZLfnpwhVC_1RxfqJKbZW4oo2o46RgCiNjfWYlbTtfPdzXWgqQY7tX4CA7iZL6Hx9OzLWw7U5ROCDPXz214POwhviZO_SGDOG-Y9625AHYrH56Y2gb",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-14",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZU58Cmw3xNVnJevxgiU7uIjhWTzHxVUSZt6_DnkoR9VVIUSRRHjKNlSSFVmWjNmkt1Z-a_DrIJHvKs-DoaDHWh3s95jhcmlUkKQsJCDKvSk5oceYBidEBZnUu-KM-LNMP2-nuS6yKCdSxzsKAk9VQ1jo=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-15",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK0_a72Ba_a-Rv7NaueGZIb60aEhWllVOAC9cc77j_3Sp2kwTbJjmuPJpAekpl7Mkca2caTfmqjHQXswvLR70p4TcDxHRGKGMPt4wbSVxG10R_BhQgA-e9Z16I2zffzKU7UfIhnkd2zKql73ve1YRmMo7dJA==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-16",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXfTb3O3qvWPsnz-X1evyY6zUoB-wvletat-qENxmeCLGuF0NhJSIJRoi05qkOap82Gd6HWYucNFdU8KR7zaEaRsS1R8SdLF18nsfH7U12dQXc-_x50XW_T64ob3ebts2va-OzxzHsldgAf3yc_BIsdi7tUv86Rdh9d0BRan-GQj0d",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-17",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoWRf-fR5VBwTydPmkaeJq1qtPfcVPs5dSRMBADm8fyc20InPOxkeTZP2z4JQTtaHMeCPXgfSMg-KAzEaNBS8QF9hbNdB8owSXEfB85LtUQZJLbQy2HhwoifUSOSbAGwgxjpfMGHWPym3pfFG_DrJqKlJwAHKu1nXq",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-18",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE21EHLf5B-gxfX9oX4koha3I4HJz4jPTIkU5iLjdLlL16vdBjR2L9T-lUFyV16QxfeAbMjaOdP7BSwsz8HhFNWrPsGkzBjlt-5AO7uCpNAWeRXmXCiFHId9zFmNRlnh39kxmTO_GXQ-9MtNVpjfnll2w==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-19",
+      "publisher": "com.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRXpcK-ef6S0gLpOlXsKOaybarQUsNoLAbfnOJS_u7K99s0VMQsNwbWcoJCsnLMKNKZhPyzkJxl6yqy_YAnQihGFYosS7jHoF-mHOCTiIk456_Zdb_-2Ib2WqiuwDLqS_ORBThHD7LGiTrbmk=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-20",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG1qcoTXHwsBa05Ljkm7T9oeGTB_JKTDlDJvViJabkrnNb-dX0O0BWGbi3LyDekQ3m3ZGQAd0o6Ymowu6PCuqlgi5aLhBQltC3U4teZ1DxdOjbdluVvQEsSOaYzKzZ4hYuWvR6HG12Szq4qG0QYgysdneMVpJFuMignJJP6LLVYzdeciBNt6n6t4QkevxVbBzZ",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-21",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5cs30Awj_ugJevpGcKDgTEmlKDvPttTjYENmQiFfFLLF-0_y_0a1FAXwwM6xwpFCVAyHX4febBky6yZyMdqvvASXxNlDfyMju2JIXikVRB9gnjm3N2-FDoh_RNXyfLFE1PGYxiHijTDBl",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-22",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoaS_LersYcomRw8kFrgfaoVrs-WJuLSGqSDs2fMkyzIFl1h9crfqf5_wNZv7vlo97UYzqRONBM5iQ0sk4zP89OKvaXw8Aour-L-bZjBX96TD0C4tibRR3tqsKZIK1mxiFambbHtWUZVNNlUBHD_VryWLilNaQSPnYFA==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-23",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWSRbng0_o7uX-tgkw6XJGxU2LOjKffjs357KZs_bEESggnDyvinYkWWpKwlUt0PUKoov3dRe0kNdnf7T6_IQlsN1kdG0eLDnnrJokCbbOKjucc0CcMh-dDw14DMhY8Cvx5mVFZiQqNs3k0H6qSqUFO64=",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-24",
+      "publisher": "bulurum.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWU1E55kzwNxrSCqeBRcD21UXfBHcYRwGqhkAuN8ps8dwNmrkTp0vfZq1VbckW489zNlH9_bM4_Mb7GzKJ5XpHGfwXxx9a5gQMyogAhKuVlgdAOp6knCv4gNszDxBhv7JTwLbweHFNEMR3qCRQO4Bwnw8Q",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-25",
+      "publisher": "ilceler.org",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHskXaTp8u9INai21zjMFICCXuBTZEnzwv5bgDZW6y6RdrX8YHvGeGgU9QcBxXhJdAVWoZpZvugKNM-raKuae8KlFAft8LN0Vf0y9NldGB-nuexWIWvr4ue7jZMqosr64kOBKOBzTsOJECBzz4hmvViW4FSpEq5q2Mc6WvSZkXpfz7hZlztgpxht-Ml3g==",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-26",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2v-S393gpE5AXJMV74NW52Qh31YKy0hJ_cplhnYWRPYRJbEO21PFdTr9nJ2racD-pa2-Ubb987XKhkQPNpoAYO5PChshTwO3YvayCwFMX3K4VygwQQQwNV8oX8XeO5X9h2g2OnEgYwIr8A1vf9Y4-ECj9m7SmVXLlfQlHIlBV97XS7FBIWhCKghkrRwRIUpfmIm3ybvE-tultCA5Jotn2",
+      "retrieved_at": "2026-10-27T22:29:18.011043+00:00",
+      "method": "google_search_grounding"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "50e07bffbbba66",
+      "text": "2024-02-08 | Altyapı | Menteşe ilçesi Muslihittin Mahallesi Camcı Sokak üzerinde bir binanın çatısına yıldırım düştü.",
+      "source_ids": [
+        "web-7"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   2024-02-08 | Altyapı | Menteşe ilçesi Muslihittin Mahallesi Camcı Sokak üzerinde bir binanın çatısına yıldırım düştü.",
+          "source_ids": [
+            "web-7"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "safety_news",
+      "reason": "outside_date_window"
+    }
+  ],
+  "provenance": {
+    "grounding_result": "data/research/muslihittin_2026-10-28_v6/result.json",
+    "direct_result": "data/pilot/muslihittin_direct_sample.json",
+    "model": "gemini-2.5-flash",
+    "research_started_at": "2026-10-27T22:29:02.054904+00:00",
+    "research_finished_at": "2026-10-27T22:29:18.011043+00:00"
+  },
+  "limitations": [
+    "Initial static data release, not a verified complete business/property census.",
+    "Search supports attach only to quoted segments; all narrative claims are not thereby verified.",
+    "Unknown data remains null; academic hazard data is not official AFAD TDTH or building safety.",
+    "Survey weights, live report API and caching are separate tasks."
+  ]
+}

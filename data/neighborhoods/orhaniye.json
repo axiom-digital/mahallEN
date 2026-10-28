@@ -1,0 +1,2386 @@
+{
+  "schema_version": "1.0.0",
+  "id": "orhaniye",
+  "name": "Orhaniye",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-10-28",
+  "dataset_status": "source_backed_static_v1",
+  "factual_review_status": "source_check_pending",
+  "location": {
+    "lat": 37.2152342,
+    "lon": 28.3683149,
+    "label": "Orhaniye Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9710638,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=Orhaniye%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T22:26:53.334636+00:00",
+    "method": "Nominatim representative point; not a building address or neighborhood-wide measurement"
+  },
+  "categories": {
+    "rent_cost": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "bf817ce6ef0789",
+          "text": "3+1 | bilinmiyor | 37.000 TL/ay | ilan tarihi: 2026-10-06 | bilinmiyor | Çakır Emlak Danışmanlığı",
+          "source_ids": [
+            "web-1",
+            "web-2"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   3+1 | bilinmiyor | 37.000 TL/ay | ilan tarihi: 2026-10-06 | bilinmiyor | Çakır Emlak Danışmanlığı",
+              "source_ids": [
+                "web-1",
+                "web-2"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-10-06",
+          "date_status": "reported_by_source_candidate",
+          "rooms": "3+1",
+          "amount_tl_month": 37000,
+          "furnished": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "eaea238bd424e6",
+          "text": "2+1 | bilinmiyor | 40.000 TL/ay | ilan tarihi: 2026-09-12 | bilinmiyor | Kötekli Emlak",
+          "source_ids": [
+            "web-1",
+            "web-3"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   2+1 | bilinmiyor | 40.000 TL/ay | ilan tarihi: 2026-09-12 | bilinmiyor | Kötekli Emlak",
+              "source_ids": [
+                "web-1",
+                "web-3"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-09-12",
+          "date_status": "reported_by_source_candidate",
+          "rooms": "2+1",
+          "amount_tl_month": 40000,
+          "furnished": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "32ef0e0924ee94",
+          "text": "3+1 | eşyasız | 38.000 TL/ay (önce 40.000 TL) | ilan tarihi: 2026-09-08 | bilinmiyor | MUĞLA KAMPÜS EMLAK",
+          "source_ids": [
+            "web-2",
+            "web-3",
+            "web-4"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   3+1 | eşyasız | 38.000 TL/ay (önce 40.000 TL) | ilan tarihi: 2026-09-08 | bilinmiyor | MUĞLA KAMPÜS EMLAK",
+              "source_ids": [
+                "web-2",
+                "web-3",
+                "web-4"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-09-08",
+          "date_status": "reported_by_source_candidate",
+          "rooms": "3+1",
+          "amount_tl_month": 38000,
+          "furnished": false,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false
+        },
+        {
+          "id": "fb8371cb4aa840",
+          "text": "1+1 | eşyalı | 35.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | bilinmiyor",
+          "source_ids": [
+            "web-5"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   1+1 | eşyalı | 35.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | bilinmiyor",
+              "source_ids": [
+                "web-5"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": null,
+          "date_status": "unknown",
+          "rooms": "1+1",
+          "amount_tl_month": 35000,
+          "furnished": true,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "safety_news": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "ee1e24fadff773",
+          "text": "2026-07-03 | suç/şiddet | Orhaniye Mahallesi Berat Sokak'ta bir ihbar üzerine adrese giden ekipler, bir kadını evde baygın halde buldu. Kadın hastaneye kaldırıldı ve sağlık durumunun iyi olduğu öğrenildi.",
+          "source_ids": [
+            "web-9"
+          ],
+          "grounding_supports": [
+            {
+              "text": "Kadın hastaneye kaldırıldı ve sağlık durumunun iyi olduğu öğrenildi.",
+              "source_ids": [
+                "web-9"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "date": "2026-07-03",
+          "date_status": "reported_by_source_candidate",
+          "event_type": "suç/şiddet"
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "e9648c5fc35157",
+          "text": "1-61 | Muğla (Menteşe) - Dokuzçam - Çamlıbel - Çatak - Sungur | Bu hat, Orhaniye Mahallesi'ni Sungur ve çevresindeki kırsal mahallelere bağlayarak ulaşım imkanı sunar. Kalkış durağı Orhaniye Cami Durağı'dır ve sefer saatinden 15 dakika önce Stadyum'dan geçer. Sıklık ve son sefer bilgisi için MUTTAŞ'ın güncel tarifeleri kontrol edilmelidir.",
+          "source_ids": [
+            "web-11",
+            "web-14"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   1-61 | Muğla (Menteşe) - Dokuzçam - Çamlıbel - Çatak - Sungur | Bu hat, Orhaniye Mahallesi'ni Sungur ve çevresindeki kırsal mahallelere bağlayarak ulaşım imkanı sunar.",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "Kalkış durağı Orhaniye Cami Durağı'dır ve sefer saatinden 15 dakika önce Stadyum'dan geçer.",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "Sıklık ve son sefer bilgisi için MUTTAŞ'ın güncel tarifeleri kontrol edilmelidir.",
+              "source_ids": [
+                "web-11"
+              ]
+            },
+            {
+              "text": "Sıklık ve son sefer bilgisi için MUTTAŞ'ın güncel tarifeleri kontrol edilmelidir.",
+              "source_ids": [
+                "web-14"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-61",
+          "official_source_ids": [
+            "web-11",
+            "web-14"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        },
+        {
+          "id": "e6a04ba50e39ee",
+          "text": "1-18 | Menteşe Yapı Koop - Tıp Fakültesi | Bu hat, Menteşe Yapı Kooperatifi'nden başlayarak Tıp Fakültesi'ne kadar ulaşım sağlamaktadır. Güzergah üzerinde Kuru Çeşme, Menteşe Kent Parkı, Denge Sitesi, Nil Sitesi, Ege Sitesi, İmece Sitesi, Gümüş Evler, Kutluay Sitesi, Yücelen Hastanesi, Muğla Eğitim Araştırma Hastanesi gibi duraklar bulunmaktadır. Hafta içi Menteşe Yapı Koop'tan 07:30, 10:30, 13:30, 15:30; Tıp Fakültesi'nden ise 08:30, 11:30, 14:30, 16:30 saatlerinde seferler düzenlenmektedir.",
+          "source_ids": [
+            "web-13"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   1-18 | Menteşe Yapı Koop - Tıp Fakültesi | Bu hat, Menteşe Yapı Kooperatifi'nden başlayarak Tıp Fakültesi'ne kadar ulaşım sağlamaktadır.",
+              "source_ids": [
+                "web-13"
+              ]
+            },
+            {
+              "text": "Güzergah üzerinde Kuru Çeşme, Menteşe Kent Parkı, Denge Sitesi, Nil Sitesi, Ege Sitesi, İmece Sitesi, Gümüş Evler, Kutluay Sitesi, Yücelen Hastanesi, Muğla Eğitim Araştırma Hastanesi gibi duraklar bulunmaktadır.",
+              "source_ids": [
+                "web-13"
+              ]
+            },
+            {
+              "text": "Hafta içi Menteşe Yapı Koop'tan 07:30, 10:30, 13:30, 15:30; Tıp Fakültesi'nden ise 08:30, 11:30, 14:30, 16:30 saatlerinde seferler düzenlenmektedir.",
+              "source_ids": [
+                "web-13"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "code": "1-18",
+          "official_source_ids": [
+            "web-13"
+          ],
+          "timetable_status": "not_verified_current",
+          "frequency_minutes": null,
+          "last_departure": null
+        }
+      ],
+      "score": null,
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "collected",
+      "observations": [
+        {
+          "id": "def0c2b54ac991",
+          "text": "Kışla Parkı | park | Orhaniye Mah., Kışla Parkı | güncel faaliyet: bilinmiyor | Yandex",
+          "source_ids": [
+            "web-17"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| güncel faaliyet: bilinmiyor | Yandex",
+              "source_ids": [
+                "web-17"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Kışla Parkı",
+          "type": "park",
+          "location_description": "Orhaniye Mah., Kışla Parkı",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "15b7b818d34512",
+          "text": "Botanik Bahçe | park | Orhaniye Mah., Botanik Bahçe | güncel faaliyet: bilinmiyor | Yandex",
+          "source_ids": [
+            "web-16",
+            "web-17"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   Botanik Bahçe | park | Orhaniye Mah., Botanik Bahçe | güncel faaliyet: bilinmiyor | Yandex",
+              "source_ids": [
+                "web-16"
+              ]
+            },
+            {
+              "text": "| güncel faaliyet: bilinmiyor | Yandex",
+              "source_ids": [
+                "web-17"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Botanik Bahçe",
+          "type": "park",
+          "location_description": "Orhaniye Mah., Botanik Bahçe",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "3fa67a914d5b98",
+          "text": "Güzel Köy Fırın Café | cafe | Orhaniye Mah., İsmet Çatak Cad. | güncel faaliyet: bilinmiyor | Yandex",
+          "source_ids": [
+            "web-17"
+          ],
+          "grounding_supports": [
+            {
+              "text": "| güncel faaliyet: bilinmiyor | Yandex",
+              "source_ids": [
+                "web-17"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Güzel Köy Fırın Café",
+          "type": "cafe",
+          "location_description": "Orhaniye Mah., İsmet Çatak Cad.",
+          "location_scope": "reported_neighborhood",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "bfd2331ec61bb8",
+          "text": "Kardelen Cafe | kafe | Orhaniye Mahallesi yakın çevresi (3.161 m) | güncel faaliyet: bilinmiyor | Endeksa",
+          "source_ids": [
+            "web-18"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   Kardelen Cafe | kafe | Orhaniye Mahallesi yakın çevresi (3.161 m) | güncel faaliyet: bilinmiyor | Endeksa",
+              "source_ids": [
+                "web-18"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Kardelen Cafe",
+          "type": "cafe",
+          "location_description": "Orhaniye Mahallesi yakın çevresi (3.161 m)",
+          "location_scope": "nearby_area",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "d9d2609390270b",
+          "text": "Köfteci Kardeşler | restaurant | Orhaniye Mahallesi yakın çevresi (1.795 m) | güncel faaliyet: bilinmiyor | Endeksa",
+          "source_ids": [
+            "web-18"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   Köfteci Kardeşler | restaurant | Orhaniye Mahallesi yakın çevresi (1.795 m) | güncel faaliyet: bilinmiyor | Endeksa",
+              "source_ids": [
+                "web-18"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Köfteci Kardeşler",
+          "type": "restaurant",
+          "location_description": "Orhaniye Mahallesi yakın çevresi (1.795 m)",
+          "location_scope": "nearby_area",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "414ffdc036c7eb",
+          "text": "Nefis Pide Lahmacun Salonu | fast_food | Orhaniye Mahallesi yakın çevresi (1.892 m) | güncel faaliyet: bilinmiyor | Endeksa",
+          "source_ids": [
+            "web-18"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   Nefis Pide Lahmacun Salonu | fast_food | Orhaniye Mahallesi yakın çevresi (1.892 m) | güncel faaliyet: bilinmiyor | Endeksa",
+              "source_ids": [
+                "web-18"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Nefis Pide Lahmacun Salonu",
+          "type": "fast_food",
+          "location_description": "Orhaniye Mahallesi yakın çevresi (1.892 m)",
+          "location_scope": "nearby_area",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        },
+        {
+          "id": "0b588cd03f2b78",
+          "text": "Süpüroğlu Restaurant | restaurant | Orhaniye Mahallesi yakın çevresi (2.055 m) | güncel faaliyet: bilinmiyor | Endeksa",
+          "source_ids": [
+            "web-18"
+          ],
+          "grounding_supports": [
+            {
+              "text": "*   Süpüroğlu Restaurant | restaurant | Orhaniye Mahallesi yakın çevresi (2.055 m) | güncel faaliyet: bilinmiyor | Endeksa",
+              "source_ids": [
+                "web-18"
+              ]
+            }
+          ],
+          "review_status": "source_check_pending",
+          "name": "Süpüroğlu Restaurant",
+          "type": "restaurant",
+          "location_description": "Orhaniye Mahallesi yakın çevresi (2.055 m)",
+          "location_scope": "nearby_area",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "origin": "google_search_supplement"
+        }
+      ],
+      "score": null,
+      "missing_reason": null,
+      "osm": {
+        "status": "collected",
+        "access_mode": "overpass",
+        "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+        "attempts": [
+          {
+            "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+            "status": "ok"
+          }
+        ],
+        "retrieved_at": "2026-10-27T22:27:16.574611+00:00",
+        "osm_timestamp": "2026-10-27T22:26:18Z",
+        "scope": {
+          "type": "radius_around_representative_point",
+          "radius_m": 1000
+        },
+        "counts": {
+          "pharmacy": 28,
+          "supermarket": 16,
+          "cafe": 21,
+          "community_centre": 5,
+          "convenience": 18,
+          "restaurant": 14,
+          "cinema": 1,
+          "fast_food": 14,
+          "bar": 1,
+          "park": 27,
+          "sports_centre": 2,
+          "arts_centre": 1,
+          "playground": 1
+        },
+        "osm_object_count": 149,
+        "places": [
+          {
+            "osm_type": "node",
+            "osm_id": 1377410770,
+            "name": "DAŞ Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2130622,
+            "longitude": 28.360707,
+            "distance_to_reference_point_m": 716,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/1377410770"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6530353550,
+            "name": "BİM",
+            "category": "supermarket",
+            "latitude": 37.2117231,
+            "longitude": 28.3700008,
+            "distance_to_reference_point_m": 418,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6530353550"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6542554374,
+            "name": "Kahve Diyarı",
+            "category": "cafe",
+            "latitude": 37.2178198,
+            "longitude": 28.3587795,
+            "distance_to_reference_point_m": 892,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6542554374"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6542554383,
+            "name": "Şok",
+            "category": "supermarket",
+            "latitude": 37.2177145,
+            "longitude": 28.3589584,
+            "distance_to_reference_point_m": 873,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6542554383"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6542554384,
+            "name": "BİM",
+            "category": "supermarket",
+            "latitude": 37.2175964,
+            "longitude": 28.3591454,
+            "distance_to_reference_point_m": 853,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6542554384"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6543264331,
+            "name": "A101",
+            "category": "supermarket",
+            "latitude": 37.2101266,
+            "longitude": 28.3635719,
+            "distance_to_reference_point_m": 706,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6543264331"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6545544380,
+            "name": "Konakaltı İskender Alper Kültür Merkezi",
+            "category": "community_centre",
+            "latitude": 37.2177399,
+            "longitude": 28.3680595,
+            "distance_to_reference_point_m": 280,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6545544380"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6545570374,
+            "name": "Çıtır Market",
+            "category": "convenience",
+            "latitude": 37.2117751,
+            "longitude": 28.3745056,
+            "distance_to_reference_point_m": 670,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6545570374"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6550176580,
+            "name": "Aladağ Ocakbaşı",
+            "category": "restaurant",
+            "latitude": 37.2157642,
+            "longitude": 28.3631489,
+            "distance_to_reference_point_m": 461,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6550176580"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6550203811,
+            "name": "Bol Kepçe Lokantası",
+            "category": "restaurant",
+            "latitude": 37.2164975,
+            "longitude": 28.3624065,
+            "distance_to_reference_point_m": 542,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6550203811"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6550730274,
+            "name": "Can Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2167905,
+            "longitude": 28.3642697,
+            "distance_to_reference_point_m": 398,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6550730274"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6550825883,
+            "name": "Zeybek Sinaması",
+            "category": "cinema",
+            "latitude": 37.2163882,
+            "longitude": 28.36362,
+            "distance_to_reference_point_m": 435,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6550825883"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551426292,
+            "name": "Gonca Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2151955,
+            "longitude": 28.3706662,
+            "distance_to_reference_point_m": 208,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551426292"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551426293,
+            "name": "Muğla Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.215125,
+            "longitude": 28.3704757,
+            "distance_to_reference_point_m": 192,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551426293"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551426296,
+            "name": "Çağlar Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2148558,
+            "longitude": 28.3708995,
+            "distance_to_reference_point_m": 233,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551426296"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551426297,
+            "name": "Kaşıkara Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2149257,
+            "longitude": 28.3714022,
+            "distance_to_reference_point_m": 276,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551426297"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551426298,
+            "name": "Sağlık Market",
+            "category": "convenience",
+            "latitude": 37.2149059,
+            "longitude": 28.3715571,
+            "distance_to_reference_point_m": 289,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551426298"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551426299,
+            "name": "Gökçe Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2148895,
+            "longitude": 28.3717299,
+            "distance_to_reference_point_m": 305,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551426299"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551593809,
+            "name": "Defne Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.213976,
+            "longitude": 28.3706393,
+            "distance_to_reference_point_m": 249,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551593809"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551593811,
+            "name": "Alinda Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2138562,
+            "longitude": 28.3706543,
+            "distance_to_reference_point_m": 258,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551593811"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551593812,
+            "name": "Didem Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2143066,
+            "longitude": 28.3706141,
+            "distance_to_reference_point_m": 228,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551593812"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6551593849,
+            "name": "BİM",
+            "category": "supermarket",
+            "latitude": 37.2170765,
+            "longitude": 28.3703241,
+            "distance_to_reference_point_m": 271,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6551593849"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553849391,
+            "name": "Smooth Coffee",
+            "category": "cafe",
+            "latitude": 37.2152263,
+            "longitude": 28.3619693,
+            "distance_to_reference_point_m": 562,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553849391"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553849392,
+            "name": "Şok",
+            "category": "supermarket",
+            "latitude": 37.2133818,
+            "longitude": 28.3596051,
+            "distance_to_reference_point_m": 798,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553849392"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553849394,
+            "name": "Hamurişi",
+            "category": "cafe",
+            "latitude": 37.213014,
+            "longitude": 28.3600972,
+            "distance_to_reference_point_m": 768,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553849394"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553849395,
+            "name": "Kuranoğlu Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2130739,
+            "longitude": 28.3603757,
+            "distance_to_reference_point_m": 743,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553849395"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553849397,
+            "name": "Sabancı Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.212854,
+            "longitude": 28.360285,
+            "distance_to_reference_point_m": 759,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553849397"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553863489,
+            "name": "Müco",
+            "category": "restaurant",
+            "latitude": 37.2139189,
+            "longitude": 28.3590572,
+            "distance_to_reference_point_m": 833,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553863489"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6553863492,
+            "name": "Kafadar Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2138731,
+            "longitude": 28.3590971,
+            "distance_to_reference_point_m": 830,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6553863492"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6555420344,
+            "name": "Yılmaz Büfe",
+            "category": "convenience",
+            "latitude": 37.2187843,
+            "longitude": 28.3624255,
+            "distance_to_reference_point_m": 654,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6555420344"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6556694680,
+            "name": "Özpa Gıda",
+            "category": "convenience",
+            "latitude": 37.2187682,
+            "longitude": 28.3631536,
+            "distance_to_reference_point_m": 603,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6556694680"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193433,
+            "name": "Mine Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2132168,
+            "longitude": 28.3675285,
+            "distance_to_reference_point_m": 235,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193433"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193434,
+            "name": "Başak Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2133689,
+            "longitude": 28.3679075,
+            "distance_to_reference_point_m": 211,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193434"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193435,
+            "name": "Selçuk Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2132732,
+            "longitude": 28.3676579,
+            "distance_to_reference_point_m": 226,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193435"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193441,
+            "name": "Tezcan Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2134621,
+            "longitude": 28.3681047,
+            "distance_to_reference_point_m": 198,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193441"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193443,
+            "name": "Yüksel Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2135075,
+            "longitude": 28.3682017,
+            "distance_to_reference_point_m": 192,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193443"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193446,
+            "name": "Saba Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2135419,
+            "longitude": 28.3682664,
+            "distance_to_reference_point_m": 188,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193446"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557193447,
+            "name": "Hayat Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2135726,
+            "longitude": 28.3683404,
+            "distance_to_reference_point_m": 185,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557193447"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557290597,
+            "name": "Nizamoğlu Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2136906,
+            "longitude": 28.3682441,
+            "distance_to_reference_point_m": 172,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557290597"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557290598,
+            "name": "Genek Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2138444,
+            "longitude": 28.3681743,
+            "distance_to_reference_point_m": 155,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557290598"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557290600,
+            "name": "Odabaşı Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2146404,
+            "longitude": 28.367533,
+            "distance_to_reference_point_m": 96,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557290600"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557290601,
+            "name": "Fidan Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2144667,
+            "longitude": 28.367656,
+            "distance_to_reference_point_m": 103,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557290601"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557290603,
+            "name": "Deniz Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2147292,
+            "longitude": 28.3674789,
+            "distance_to_reference_point_m": 93,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557290603"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557336679,
+            "name": "Nazar Cafe & Restaurant",
+            "category": "cafe",
+            "latitude": 37.2144385,
+            "longitude": 28.3645731,
+            "distance_to_reference_point_m": 343,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557336679"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557336683,
+            "name": "BİM",
+            "category": "supermarket",
+            "latitude": 37.2130231,
+            "longitude": 28.3656499,
+            "distance_to_reference_point_m": 341,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557336683"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557758100,
+            "name": "Karahan Gurme",
+            "category": "cafe",
+            "latitude": 37.2114568,
+            "longitude": 28.3610363,
+            "distance_to_reference_point_m": 769,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557758100"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6557758101,
+            "name": "Migros",
+            "category": "supermarket",
+            "latitude": 37.2117233,
+            "longitude": 28.3612733,
+            "distance_to_reference_point_m": 736,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6557758101"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6559410691,
+            "name": "Tanrıverdi Kebap",
+            "category": "restaurant",
+            "latitude": 37.2147145,
+            "longitude": 28.365115,
+            "distance_to_reference_point_m": 289,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6559410691"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6559410692,
+            "name": "Derman Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2147987,
+            "longitude": 28.3651049,
+            "distance_to_reference_point_m": 288,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6559410692"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560270536,
+            "name": "Berfin Market",
+            "category": "convenience",
+            "latitude": 37.2156722,
+            "longitude": 28.3612132,
+            "distance_to_reference_point_m": 631,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560270536"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560270537,
+            "name": "Şok",
+            "category": "supermarket",
+            "latitude": 37.2157811,
+            "longitude": 28.3613071,
+            "distance_to_reference_point_m": 624,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560270537"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560270538,
+            "name": "Domino's Pizza",
+            "category": "fast_food",
+            "latitude": 37.2153817,
+            "longitude": 28.3612025,
+            "distance_to_reference_point_m": 630,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560270538"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560270539,
+            "name": "Sostat Döner",
+            "category": "fast_food",
+            "latitude": 37.2153497,
+            "longitude": 28.361283,
+            "distance_to_reference_point_m": 623,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560270539"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560270541,
+            "name": "En Trendy Pizza",
+            "category": "fast_food",
+            "latitude": 37.2160012,
+            "longitude": 28.3618274,
+            "distance_to_reference_point_m": 581,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560270541"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560869937,
+            "name": "Burger King",
+            "category": "fast_food",
+            "latitude": 37.2143466,
+            "longitude": 28.3625213,
+            "distance_to_reference_point_m": 522,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560869937"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560869938,
+            "name": "Bayramefendi Osmanlı Kahvecisi",
+            "category": "cafe",
+            "latitude": 37.2145364,
+            "longitude": 28.3623168,
+            "distance_to_reference_point_m": 537,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560869938"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560869939,
+            "name": "Assos Cafe",
+            "category": "cafe",
+            "latitude": 37.2147294,
+            "longitude": 28.3620701,
+            "distance_to_reference_point_m": 556,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560869939"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560869944,
+            "name": "Corner Bistro",
+            "category": "cafe",
+            "latitude": 37.2142177,
+            "longitude": 28.3623461,
+            "distance_to_reference_point_m": 541,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560869944"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560869952,
+            "name": "Leman Kültür Muğla",
+            "category": "cafe",
+            "latitude": 37.2141153,
+            "longitude": 28.361957,
+            "distance_to_reference_point_m": 577,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560869952"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6560869954,
+            "name": "Uğur Pide",
+            "category": "restaurant",
+            "latitude": 37.2140269,
+            "longitude": 28.3616489,
+            "distance_to_reference_point_m": 605,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6560869954"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6562323383,
+            "name": "Fırın Akyol",
+            "category": "cafe",
+            "latitude": 37.2181446,
+            "longitude": 28.3580527,
+            "distance_to_reference_point_m": 965,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6562323383"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6562325188,
+            "name": "Starbucks",
+            "category": "cafe",
+            "latitude": 37.2179598,
+            "longitude": 28.358468,
+            "distance_to_reference_point_m": 923,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6562325188"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6562325189,
+            "name": "A101",
+            "category": "supermarket",
+            "latitude": 37.2173792,
+            "longitude": 28.3578911,
+            "distance_to_reference_point_m": 953,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6562325189"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 6562325190,
+            "name": null,
+            "category": "cafe",
+            "latitude": 37.2175906,
+            "longitude": 28.3580186,
+            "distance_to_reference_point_m": 949,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/6562325190"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736518,
+            "name": "Tuğba Kuruyemiş",
+            "category": "convenience",
+            "latitude": 37.2163644,
+            "longitude": 28.3617189,
+            "distance_to_reference_point_m": 597,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736518"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736520,
+            "name": "Aladağ Market",
+            "category": "convenience",
+            "latitude": 37.2157363,
+            "longitude": 28.3630302,
+            "distance_to_reference_point_m": 471,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736520"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736523,
+            "name": "Süsyolu Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2158066,
+            "longitude": 28.3628848,
+            "distance_to_reference_point_m": 485,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736523"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736524,
+            "name": "Ata Market",
+            "category": "convenience",
+            "latitude": 37.2157843,
+            "longitude": 28.3629344,
+            "distance_to_reference_point_m": 480,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736524"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736532,
+            "name": "Black Shop",
+            "category": "convenience",
+            "latitude": 37.2162309,
+            "longitude": 28.3612598,
+            "distance_to_reference_point_m": 634,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736532"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736535,
+            "name": "Uğur Pide",
+            "category": "restaurant",
+            "latitude": 37.2157475,
+            "longitude": 28.3622275,
+            "distance_to_reference_point_m": 542,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736535"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736540,
+            "name": "Sıcak Pide",
+            "category": "restaurant",
+            "latitude": 37.2165858,
+            "longitude": 28.3618693,
+            "distance_to_reference_point_m": 590,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736540"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736541,
+            "name": "Muğla Arslanbey Kebap",
+            "category": "restaurant",
+            "latitude": 37.2169543,
+            "longitude": 28.3605441,
+            "distance_to_reference_point_m": 714,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736541"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736542,
+            "name": "Mersin Şef Tantuni",
+            "category": "restaurant",
+            "latitude": 37.2156577,
+            "longitude": 28.3615783,
+            "distance_to_reference_point_m": 598,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736542"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736544,
+            "name": "Akyol Battalbey Çiğköfte",
+            "category": "fast_food",
+            "latitude": 37.2169335,
+            "longitude": 28.3606027,
+            "distance_to_reference_point_m": 709,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736544"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736549,
+            "name": "Denizli Kuruyemiş",
+            "category": "convenience",
+            "latitude": 37.2160265,
+            "longitude": 28.362496,
+            "distance_to_reference_point_m": 523,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736549"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736550,
+            "name": "Latife Coffee",
+            "category": "cafe",
+            "latitude": 37.2159219,
+            "longitude": 28.3625613,
+            "distance_to_reference_point_m": 515,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736550"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736551,
+            "name": "Telve Cafe & Bistro",
+            "category": "cafe",
+            "latitude": 37.2169942,
+            "longitude": 28.3603107,
+            "distance_to_reference_point_m": 735,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736551"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736552,
+            "name": "Ekrem Coşkun Döner",
+            "category": "fast_food",
+            "latitude": 37.2157082,
+            "longitude": 28.3622937,
+            "distance_to_reference_point_m": 536,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736552"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736553,
+            "name": "BİM",
+            "category": "supermarket",
+            "latitude": 37.2158567,
+            "longitude": 28.3617083,
+            "distance_to_reference_point_m": 589,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736553"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736558,
+            "name": "Serpil Park",
+            "category": "cafe",
+            "latitude": 37.2161768,
+            "longitude": 28.3620875,
+            "distance_to_reference_point_m": 561,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736558"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736561,
+            "name": "Mackbear",
+            "category": "cafe",
+            "latitude": 37.2161097,
+            "longitude": 28.3623573,
+            "distance_to_reference_point_m": 536,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736561"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736563,
+            "name": "Dimora Coffee & Kitchen",
+            "category": "cafe",
+            "latitude": 37.2160435,
+            "longitude": 28.3626108,
+            "distance_to_reference_point_m": 513,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736563"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736568,
+            "name": "Ateş Döner",
+            "category": "fast_food",
+            "latitude": 37.2164803,
+            "longitude": 28.3615213,
+            "distance_to_reference_point_m": 617,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736568"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 9610736571,
+            "name": "Meşhur Adıyaman Çiğköftecisi Ömer Aybak",
+            "category": "fast_food",
+            "latitude": 37.2155531,
+            "longitude": 28.3614965,
+            "distance_to_reference_point_m": 605,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/9610736571"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 10766962638,
+            "name": "BİM",
+            "category": "supermarket",
+            "latitude": 37.2105565,
+            "longitude": 28.3604796,
+            "distance_to_reference_point_m": 867,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/10766962638"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 10766962639,
+            "name": "Tarım Kredi Kooperatifi Market",
+            "category": "supermarket",
+            "latitude": 37.2110532,
+            "longitude": 28.3607908,
+            "distance_to_reference_point_m": 812,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/10766962639"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11025891151,
+            "name": "Durak Tekel&Büfe",
+            "category": "convenience",
+            "latitude": 37.2099408,
+            "longitude": 28.3594147,
+            "distance_to_reference_point_m": 984,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11025891151"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11025891153,
+            "name": "Özlem Market",
+            "category": "convenience",
+            "latitude": 37.2067814,
+            "longitude": 28.3648258,
+            "distance_to_reference_point_m": 989,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11025891153"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11082604798,
+            "name": "Kademe Büfe 2",
+            "category": "convenience",
+            "latitude": 37.2122046,
+            "longitude": 28.3707326,
+            "distance_to_reference_point_m": 399,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11082604798"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11082604799,
+            "name": "Nazar Pide Lahmacun",
+            "category": "fast_food",
+            "latitude": 37.2121506,
+            "longitude": 28.3706929,
+            "distance_to_reference_point_m": 402,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11082604799"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11082604800,
+            "name": "A101",
+            "category": "supermarket",
+            "latitude": 37.2118729,
+            "longitude": 28.3695592,
+            "distance_to_reference_point_m": 390,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11082604800"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11082604802,
+            "name": "Ayaz Market",
+            "category": "convenience",
+            "latitude": 37.2102882,
+            "longitude": 28.3669278,
+            "distance_to_reference_point_m": 564,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11082604802"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11271732479,
+            "name": "Bülent Börek",
+            "category": "fast_food",
+            "latitude": 37.2065382,
+            "longitude": 28.3679209,
+            "distance_to_reference_point_m": 968,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11271732479"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11271732485,
+            "name": "Kale Pide",
+            "category": "fast_food",
+            "latitude": 37.2106644,
+            "longitude": 28.3652195,
+            "distance_to_reference_point_m": 577,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11271732485"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11271732487,
+            "name": "Balık Dünyası",
+            "category": "restaurant",
+            "latitude": 37.2108636,
+            "longitude": 28.364215,
+            "distance_to_reference_point_m": 607,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11271732487"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11271732497,
+            "name": "Şok",
+            "category": "supermarket",
+            "latitude": 37.2106116,
+            "longitude": 28.3613452,
+            "distance_to_reference_point_m": 803,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11271732497"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11271732499,
+            "name": "Gökova Pide",
+            "category": "fast_food",
+            "latitude": 37.2102219,
+            "longitude": 28.3610729,
+            "distance_to_reference_point_m": 850,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11271732499"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11303836406,
+            "name": "Lezzet Lokantası",
+            "category": "restaurant",
+            "latitude": 37.2064705,
+            "longitude": 28.3679342,
+            "distance_to_reference_point_m": 975,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11303836406"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11359947658,
+            "name": "Zeybek Market",
+            "category": "convenience",
+            "latitude": 37.2084943,
+            "longitude": 28.3662423,
+            "distance_to_reference_point_m": 772,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11359947658"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11359947660,
+            "name": "Siner Büfe",
+            "category": "convenience",
+            "latitude": 37.2110536,
+            "longitude": 28.3621292,
+            "distance_to_reference_point_m": 718,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11359947660"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11359947662,
+            "name": "Efe Market",
+            "category": "convenience",
+            "latitude": 37.2097206,
+            "longitude": 28.3655458,
+            "distance_to_reference_point_m": 660,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11359947662"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 11392722249,
+            "name": "Blisss",
+            "category": "cafe",
+            "latitude": 37.2139155,
+            "longitude": 28.3627717,
+            "distance_to_reference_point_m": 512,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/11392722249"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 12009173436,
+            "name": "Salt'n Burger",
+            "category": "fast_food",
+            "latitude": 37.2168202,
+            "longitude": 28.3640725,
+            "distance_to_reference_point_m": 415,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/12009173436"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 12460936243,
+            "name": "Muğla Uluslararası Gençlik Merkezi",
+            "category": "community_centre",
+            "latitude": 37.2134916,
+            "longitude": 28.3743551,
+            "distance_to_reference_point_m": 569,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/12460936243"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13374564252,
+            "name": "Okyanus Eczanesi",
+            "category": "pharmacy",
+            "latitude": 37.2135501,
+            "longitude": 28.3618399,
+            "distance_to_reference_point_m": 603,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13374564252"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13395381601,
+            "name": "Başka Şeyler",
+            "category": "cafe",
+            "latitude": 37.2164981,
+            "longitude": 28.3631181,
+            "distance_to_reference_point_m": 481,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13395381601"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13395401801,
+            "name": "Coffee bar",
+            "category": "bar",
+            "latitude": 37.2152573,
+            "longitude": 28.3613891,
+            "distance_to_reference_point_m": 613,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13395401801"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13405019301,
+            "name": "Mezecim",
+            "category": "restaurant",
+            "latitude": 37.2108379,
+            "longitude": 28.3637141,
+            "distance_to_reference_point_m": 636,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13405019301"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13415742601,
+            "name": "Gastro muğla",
+            "category": "restaurant",
+            "latitude": 37.2178869,
+            "longitude": 28.3654202,
+            "distance_to_reference_point_m": 391,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13415742601"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13415758301,
+            "name": "Mabolla Bookstore & Cafe",
+            "category": "cafe",
+            "latitude": 37.2181506,
+            "longitude": 28.365007,
+            "distance_to_reference_point_m": 437,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13415758301"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 13645978502,
+            "name": "Urfa Lezzet Diyarı",
+            "category": "restaurant",
+            "latitude": 37.2160176,
+            "longitude": 28.3683975,
+            "distance_to_reference_point_m": 87,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/13645978502"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 14254469481,
+            "name": "Joplin",
+            "category": "cafe",
+            "latitude": 37.2106952,
+            "longitude": 28.3597006,
+            "distance_to_reference_point_m": 915,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/14254469481"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 14254469484,
+            "name": "Altay Aperatif",
+            "category": "fast_food",
+            "latitude": 37.2158424,
+            "longitude": 28.3573469,
+            "distance_to_reference_point_m": 974,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/14254469484"
+          },
+          {
+            "osm_type": "node",
+            "osm_id": 14254469485,
+            "name": "Öngelen Market",
+            "category": "convenience",
+            "latitude": 37.2157695,
+            "longitude": 28.3573087,
+            "distance_to_reference_point_m": 976,
+            "location_method": "OSM node coordinate",
+            "source_url": "https://www.openstreetmap.org/node/14254469485"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 303662578,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2114155,
+            "longitude": 28.3581594,
+            "distance_to_reference_point_m": 995,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/303662578"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 511484645,
+            "name": null,
+            "category": "community_centre",
+            "latitude": 37.2135471,
+            "longitude": 28.3743608,
+            "distance_to_reference_point_m": 567,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/511484645"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 511485075,
+            "name": "Migros",
+            "category": "supermarket",
+            "latitude": 37.2069196,
+            "longitude": 28.3687981,
+            "distance_to_reference_point_m": 926,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/511485075"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 511485077,
+            "name": "Gazi Mustafa Kemal Atatürk Kültür Merkezi",
+            "category": "community_centre",
+            "latitude": 37.2116136,
+            "longitude": 28.376387,
+            "distance_to_reference_point_m": 820,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/511485077"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 695489776,
+            "name": "Ahmet Taner Kışlalı Parkı",
+            "category": "park",
+            "latitude": 37.2078614,
+            "longitude": 28.3645883,
+            "distance_to_reference_point_m": 884,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/695489776"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 695489780,
+            "name": "Mevhibe İnönü Parkı",
+            "category": "park",
+            "latitude": 37.2154034,
+            "longitude": 28.3736731,
+            "distance_to_reference_point_m": 475,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/695489780"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 695489781,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2170351,
+            "longitude": 28.3740343,
+            "distance_to_reference_point_m": 545,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/695489781"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696153409,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2126363,
+            "longitude": 28.3620417,
+            "distance_to_reference_point_m": 626,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696153409"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696153412,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2106416,
+            "longitude": 28.3757584,
+            "distance_to_reference_point_m": 834,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696153412"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696153413,
+            "name": null,
+            "category": "park",
+            "latitude": 37.211055,
+            "longitude": 28.3758815,
+            "distance_to_reference_point_m": 815,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696153413"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696153416,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2092081,
+            "longitude": 28.3728192,
+            "distance_to_reference_point_m": 780,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696153416"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696651860,
+            "name": "Belediye Park",
+            "category": "park",
+            "latitude": 37.2166656,
+            "longitude": 28.3673627,
+            "distance_to_reference_point_m": 180,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696651860"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696673910,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2087434,
+            "longitude": 28.3611611,
+            "distance_to_reference_point_m": 960,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696673910"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696673915,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2102089,
+            "longitude": 28.3593998,
+            "distance_to_reference_point_m": 967,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696673915"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696683207,
+            "name": null,
+            "category": "park",
+            "latitude": 37.215551,
+            "longitude": 28.3571406,
+            "distance_to_reference_point_m": 990,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696683207"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696750134,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2138431,
+            "longitude": 28.3641044,
+            "distance_to_reference_point_m": 404,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696750134"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696753336,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2109392,
+            "longitude": 28.3610152,
+            "distance_to_reference_point_m": 804,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696753336"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696843083,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2134105,
+            "longitude": 28.3726465,
+            "distance_to_reference_point_m": 434,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696843083"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696843123,
+            "name": null,
+            "category": "park",
+            "latitude": 37.209563,
+            "longitude": 28.3602916,
+            "distance_to_reference_point_m": 950,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696843123"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696843133,
+            "name": "Yekap Parkı",
+            "category": "park",
+            "latitude": 37.2116946,
+            "longitude": 28.3583215,
+            "distance_to_reference_point_m": 969,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696843133"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696962775,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2148505,
+            "longitude": 28.3722476,
+            "distance_to_reference_point_m": 351,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696962775"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696973921,
+            "name": "Uçurum Parkı",
+            "category": "park",
+            "latitude": 37.2136835,
+            "longitude": 28.3766197,
+            "distance_to_reference_point_m": 755,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696973921"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696973927,
+            "name": "Muğla Kapalı Yüzme Havuzu",
+            "category": "sports_centre",
+            "latitude": 37.2117882,
+            "longitude": 28.3753112,
+            "distance_to_reference_point_m": 728,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696973927"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696973929,
+            "name": "Kapalı Spor Salonu",
+            "category": "sports_centre",
+            "latitude": 37.2128252,
+            "longitude": 28.3746098,
+            "distance_to_reference_point_m": 618,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696973929"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 696979997,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2107941,
+            "longitude": 28.3663807,
+            "distance_to_reference_point_m": 523,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/696979997"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 697076094,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2064084,
+            "longitude": 28.366245,
+            "distance_to_reference_point_m": 998,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/697076094"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 697084550,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2088573,
+            "longitude": 28.3748019,
+            "distance_to_reference_point_m": 913,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/697084550"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 697457702,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2156296,
+            "longitude": 28.3643017,
+            "distance_to_reference_point_m": 358,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/697457702"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 697457704,
+            "name": "Serpil Park",
+            "category": "park",
+            "latitude": 37.2162003,
+            "longitude": 28.3620818,
+            "distance_to_reference_point_m": 562,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/697457704"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 697524423,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2172374,
+            "longitude": 28.3651467,
+            "distance_to_reference_point_m": 358,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/697524423"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 698156375,
+            "name": "Kültür Sanat Evi",
+            "category": "arts_centre",
+            "latitude": 37.2188464,
+            "longitude": 28.3627095,
+            "distance_to_reference_point_m": 639,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/698156375"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 698212795,
+            "name": null,
+            "category": "park",
+            "latitude": 37.2069577,
+            "longitude": 28.3645357,
+            "distance_to_reference_point_m": 979,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/698212795"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 698590677,
+            "name": "İnönü Parkı",
+            "category": "park",
+            "latitude": 37.2165277,
+            "longitude": 28.3596092,
+            "distance_to_reference_point_m": 784,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/698590677"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 1193905411,
+            "name": "Türkan Saylan Çağdaş Yaşam Merkezi",
+            "category": "community_centre",
+            "latitude": 37.2125828,
+            "longitude": 28.3716764,
+            "distance_to_reference_point_m": 419,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/1193905411"
+          },
+          {
+            "osm_type": "way",
+            "osm_id": 1460531035,
+            "name": null,
+            "category": "playground",
+            "latitude": 37.2078676,
+            "longitude": 28.3648091,
+            "distance_to_reference_point_m": 876,
+            "location_method": "OSM object bounding-box midpoint",
+            "source_url": "https://www.openstreetmap.org/way/1460531035"
+          }
+        ],
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "limitations": [
+          "Sample radius is not the neighborhood boundary.",
+          "OSM completeness varies; absence is not proof that a facility does not exist.",
+          "Counts are OSM objects, not a deduplicated business census; names may be missing.",
+          "No current opening status, quality rating or affordability is inferred.",
+          "Ongoing read-only collection must use Overpass or an appropriate extract/provider, not the OSM editing API."
+        ]
+      },
+      "scope_note": "OSM radius is around a representative point, not a neighborhood boundary. Web examples may describe a wider nearby area."
+    },
+    "earthquake_hazard": {
+      "status": "research_estimate",
+      "value": 0.334,
+      "unit": "g",
+      "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+      "method": "nearest published grid point; no interpolation",
+      "nearest_grid_point": {
+        "latitude": 37.22046,
+        "longitude": 28.35751,
+        "pga_g": 0.334
+      },
+      "distance_to_grid_point_km": 1.1194,
+      "maximum_supported_distance_km": 5,
+      "grid_row_count": 201920,
+      "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "source_title": "Jeodezik Deprem Tehlike Haritası",
+      "source_version": "v1, 2025-02-16",
+      "authors": [
+        "Aktuğ, Bahadır",
+        "Şentürk, Murat Doruk",
+        "Özsaraç, Vedat",
+        "KILIÇ, Nazan"
+      ],
+      "license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+      "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+      "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+      "is_official_afad_tdth": false,
+      "limitations": [
+        "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+        "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+        "No soil class, building safety conclusion, risk label or score is derived."
+      ],
+      "score": null
+    }
+  },
+  "sources": [
+    {
+      "id": "web-0",
+      "publisher": "harita.org",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyX8k9TvHTRklM5u_gwzsVxagIQZUpL4HtFJJmGXlYqsPEB66HPHFq8LGC_Eg9vVFGXGI6y4tkQSAxK8A9Gy_WDLwSMIUvJe3TLPoznFGOLDKEWZiVxQJvA_NSa-MUKAN0w8UJ4w==",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-1",
+      "publisher": "emlakjet.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF992Kv5p_yiou_ju5tPRzsNNZydU-R4DpobJ-iew7D698dDjDpnjHN5mmi_HW_Prr5RPYJhaz2eajjfU1YFmmZTzkeKK69_KCuN2iCboyo5FwqP959aJRoeZiuf-ul-azc2mKVxFAhvevEO2ItZKBcGenLZiW8A3R2El_eB5e-gSYxDVo8PqpFwaXS58I=",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-2",
+      "publisher": "emlakjet.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmEqRHmiUpb3IId55QCMMRXlj5vFeryYMXSR-KgpRyBfWQ7K0Haq3jWN1HcVixxiN0DJRep6O5LD8EqvBxvFD1W9bXI_KKtv0-wS8-Z5Cra75h4wAwaVME-iQIBShxmf6pOMG__jUMkA27MXkKceOnR002wlUPQSc2l3wacRFepF2d",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-3",
+      "publisher": "emlakjet.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqV1Xky2dd7pYp_n8iT1nUJe5w42eSqBH6rnYx5wRl6CYLu3mFARxdne0rPQGZktW6ohYCDhftGHCqT9XKAqaGD3ef14VRIh-2Xsd3yS0yf5aTSdnFlNfy8VLNDE2r5mX4P-kXdXCh2LYfE7iBPIj6iMMU7t50Xz1I4MQfqL9mbtOW",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-4",
+      "publisher": "trovit.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfqzIojOLdWlf9lls7upF_Z2Di2Ah-tfusBv5f4SGspiH3YHig5TY6M_dQn7rIOpL_wkuIa2VSCV5zor2cenegL7cVIGGtK5DBTncWypPGCARVovc5U8CcvOHRJOJh5xolQZy8qqC0yuXzrtnk4gSmne64qxpVqHQqIwEjClgeyLyLhOdnqIg=",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-5",
+      "publisher": "emlakgo.net",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMOzLn9ZEQ0bsjQvvyHXqih9Wkv5W8AM6njFk8l39EkLl85pN-3DQWO7JYYbAIGErIsF0_YuHm8b96frfc66Imr7G94cl1yB_T4XHydKeVesbBwsNwyROb12cfxU98smVhFQfik6CJGfNMITu1FU8R3gVOWJKDc7J7b8tqNQ==",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-6",
+      "publisher": "muglagazetesi.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnf95z-V113m4qxskstR7JiAzPUCrhqbqx4MZyWPy3Y741OGQGQBGvmbNMUCDubELK0vzvz5_sGm3bmXuRq2FruERZ7kGyXtdc95jsjmWwR2ZCUHxtC5pENfpSAxh7Po-dEPAY6OjmT-ljRTRlWhNTSF9d9u6qtUxL4wOM-8Yguxk3zd5S7vzB-5vdJbdnAJFwaQ6pPO2b2EvkaFJS6jIIRFHHDu6WKrT4X3uq1e-5qSd8d5y0HSa3",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-7",
+      "publisher": "halktv.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuaLwd0fGaUhYQmvhLeVwOi-4I-44F8GXaFv_8Sgu7q9OJf4ACWBZgmL7XVQW5pEhH7Sjtd2WafxG1upvBr0viyQwVraxpw3toq4uoy3d-b58mvmFzjc8rMnbjWGJj3JwtbQTkxBm1XsJvwlY2sRGlmkG9Cn05hxiMHwxL_yqhYIBSFvfZXvWlyYnpmmmnfWJXjWbXOvXz",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-8",
+      "publisher": "sabah.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6mFa1JEUlODfjVmZzafinH5XOwK5cZz7VsGkMLCzvh_tBHc-IvFJgiKbeQwWcS6XtQJxumcIuuQnljokMV1yiMz-FSDd4c0oeg8KfOzsHjq2oUPFawkhQ3Vo2nDjPdKHMufC6_myR5hSz-mk5VJxyltqYK3ZElXkvFZlr7LD7BzYAZ7CA_RTAHiDTzpjRq0xgOwCM3eDy",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-9",
+      "publisher": "muglagazetesi.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq1cSJwEuRf14fFRkuLflsdYUeJQuOzKsZXjzxcLHVXgKy20Md6thj2cJQoEhZLsysjDwd7B_w8EGF1kO0mJ3Nu9DfaYW0N52yPIX7wXT7DC6VYi_ffh1P3OybOGBRA06rxiEMCCon7tlxyin5ujl9sbnPzhmpwgxVquNjwF01SxCL5fzE8oel3Nc8uhIA6yzIeLktv9NQVpo6p0t4WoeBTlxkbkSScxVheZ7kjlP1nZ_rQps-epA=",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-10",
+      "publisher": "muglayenigun.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEt1MjpTMWHzShvivstcFYjNtYhPYCYDxBcpqRGYwsHXmwWz9Y3ILNTNTzmUmyj-ZHaUrt5JTlaoae0jydo_MUkZMe6NwX3sU3ShOSEqb0LwXwtunLvIuME6841KPgWL7qZH9rqpE_13vMD1RFar9pXJ52EEPrac58z37pA",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-11",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4hzmY1PDkSXC61OdNGsYm3nPtLcU8iRY761YdjrUXW4W_yixphC5KPVwg8OrCAiTOCko8z4PodtyEYShkaxXfMtvlxpsXsQrPHz1I-anwyy_pnte6BERi7Qv10xfvCZ5pwJXNhiWeRnPY5aGks1Ox0SfRiGD32E306llQQGEe",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-12",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPNFIe3FVNO8RdrR-Nfkha4MZZaIeA8searzUFcyS7tCksDSGSaIiF7GFGIEo8SF3YWB2M2V1d5FRl_uvui-sa7u-Z0tqzcWr5108q5BndgXthiFSZNoGF",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-13",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBTongFmi0_kqAlSyc1R2SBI9druW8uSi-9hEdzEZ981knncmgvl4CgaK0EvMjZ8kQW09-JbHC9TKnbLt1gCsfmuW9F3TYy55UBLdwJQlvCx94bIJBeHZMWI70z-jLboExOYpPRmZrsrdeS-zZE1ORjvbgO5lTR-ogBVytsF8Ik70lfStw9P8j9R0=",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-14",
+      "publisher": "muttas.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG69LH5nzCpoQIcqTcgGQRyo_GVdpOneydmlZrpXYFcFF1SnSYi7NZf56yEDp48Ac_i8uF7ZUJJqZSZcCL-0Jw6n_62p34e3jwL8q6PT3QZcn3s35sXjOzeNaAjpCyMQcPXclab0G0hH10s1ktWrKNfmhbXZCKmHi--Jm3M",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-15",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBYSNxRnPLOvok4I7YqoG08xKndAbqywDjtLYJdlEQrpkMYXEXyj0G5QRd57SEGQYqYV-icZt88lMJknZ0US043kTt8D3yypEFEAV31x_eWxYfHAEGGT0dVh4yBztnXVy_OjKpux4GNK3P2hEVkbsHsmc=",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-16",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHi28U3l-861edwJQM8QyLPuUG6zB4GiaSr80IC5vIUtSVmhuRXIp_ybwGTmpVyFThsTaRx8fwwBxXjVBfKtarlF-7oJy9UBFxBAUEaJtmfKB3Hp6nNhX4wIGW-V3k32ZPEL2WXV-v-nZA9dKYA9AisBSOlkZE=",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-17",
+      "publisher": "yandex.com.tr",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUhKbXoeBQWJ0VI1bWTnH8NDa-NHjXNvHtJGMpR_g4eZVrPc6TBeo9_M9gC9WzXJzqYj8qjo9r0tdIYLtv2DhekfET-EpdDZZ7hobCqqJaOQPUPuD3KCkMC08fBQiyn6AKj3DKbwPaDh9weBeZ0KNZFOthyQ==",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    },
+    {
+      "id": "web-18",
+      "publisher": "endeksa.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFA6MCkZvHNFa0NGHW1Rp7KQtnI4AemayyK4VQpM5VF7NxVAKc11jO3JPvnafrpsnTdzKMU7vkwjR8dt0Ze3wr6i6XOUKdbWW1BYAoMlMPU-DSq4-Ma4qG-L2GluuUnNiq-krxiJW7cbZcFj0rfpywVNJ9MqbfAIuBwW8l8WFjCuHCcQ==",
+      "retrieved_at": "2026-10-27T22:26:00.043876+00:00",
+      "method": "google_search_grounding"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "9bf14f48ec61ff",
+      "text": "2+1 | bilinmiyor | 40.000 TL/ay | ilan tarihi: 2026-10-15 | bilinmiyor | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI",
+      "source_ids": [],
+      "grounding_supports": [],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "no_attached_grounding_support"
+    },
+    {
+      "id": "6a7c3e6379782e",
+      "text": "4+1 | eşyalı | 45.000 TL/ay (önce 55.000 TL) | ilan tarihi: 2026-06-27 | bilinmiyor | TUNAM YAPIM EMLAK",
+      "source_ids": [
+        "web-3"
+      ],
+      "grounding_supports": [
+        {
+          "text": "*   4+1 | eşyalı | 45.000 TL/ay (önce 55.000 TL) | ilan tarihi: 2026-06-27 | bilinmiyor | TUNAM YAPIM EMLAK",
+          "source_ids": [
+            "web-3"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "rent_cost",
+      "reason": "outside_date_window"
+    },
+    {
+      "id": "a0c3a828d3138e",
+      "text": "2026-07-14 | suç/şiddet | Menteşe ilçesi Orhaniye Mahallesi Sağlık Sokak'ta bir kadın, sevgilisi olduğu iddia edilen kişi tarafından darp edilerek öldürüldü.",
+      "source_ids": [],
+      "grounding_supports": [],
+      "review_status": "source_check_pending",
+      "category": "safety_news",
+      "reason": "no_attached_grounding_support"
+    },
+    {
+      "id": "b03e754b8ccd93",
+      "text": "2024-04-29 | suç/şiddet | Orhaniye Mahallesi Pazar Sokak'ta bir iş yerine kimliği belirsiz kişi ya da kişiler tarafından silahlı saldırı düzenlendi. Olayda can kaybı veya yaralanma yaşanmadı.",
+      "source_ids": [
+        "web-10"
+      ],
+      "grounding_supports": [
+        {
+          "text": "Olayda can kaybı veya yaralanma yaşanmadı.",
+          "source_ids": [
+            "web-10"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "safety_news",
+      "reason": "outside_date_window"
+    },
+    {
+      "id": "c7fcec2242be50",
+      "text": "48-12 | Köyceğiz - Menteşe | Bu hat, Köyceğiz ile Menteşe arasında ulaşım sağlamaktadır. Orhaniye Mahallesi'nin Menteşe ilçesinde olması sebebiyle bu hat mahalleye dolaylı olarak bağlantı sağlamaktadır. Sıklık ve son sefer bilgisi için MUTTAŞ'ın güncel tarifeleri kontrol edilmelidir.",
+      "source_ids": [
+        "web-11",
+        "web-14"
+      ],
+      "grounding_supports": [
+        {
+          "text": "Sıklık ve son sefer bilgisi için MUTTAŞ'ın güncel tarifeleri kontrol edilmelidir.",
+          "source_ids": [
+            "web-11"
+          ]
+        },
+        {
+          "text": "*   48-12 | Köyceğiz - Menteşe | Bu hat, Köyceğiz ile Menteşe arasında ulaşım sağlamaktadır.",
+          "source_ids": [
+            "web-14"
+          ]
+        },
+        {
+          "text": "Orhaniye Mahallesi'nin Menteşe ilçesinde olması sebebiyle bu hat mahalleye dolaylı olarak bağlantı sağlamaktadır.",
+          "source_ids": [
+            "web-14"
+          ]
+        },
+        {
+          "text": "Sıklık ve son sefer bilgisi için MUTTAŞ'ın güncel tarifeleri kontrol edilmelidir.",
+          "source_ids": [
+            "web-14"
+          ]
+        }
+      ],
+      "review_status": "source_check_pending",
+      "category": "transportation",
+      "reason": "regional_route_not_neighborhood_evidence"
+    }
+  ],
+  "provenance": {
+    "grounding_result": "data/research/orhaniye_2026-10-28_v5/result.json",
+    "direct_result": "data/pilot/orhaniye_direct_sample.json",
+    "model": "gemini-2.5-flash",
+    "research_started_at": "2026-10-27T22:25:43.597364+00:00",
+    "research_finished_at": "2026-10-27T22:26:00.043876+00:00"
+  },
+  "limitations": [
+    "Initial static data release, not a verified complete business/property census.",
+    "Search supports attach only to quoted segments; all narrative claims are not thereby verified.",
+    "Unknown data remains null; academic hazard data is not official AFAD TDTH or building safety.",
+    "Survey weights, live report API and caching are separate tasks."
+  ]
+}

@@ -1,0 +1,686 @@
+{
+  "schema_version": "0.1.0",
+  "dataset_status": "draft_requires_review",
+  "assembled_at": "2026-10-27T21:46:16.009397+00:00",
+  "neighborhood": "Kötekli",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "location": {
+    "lat": 37.1660283,
+    "lon": 28.3833896,
+    "label": "Kötekli, Menteşe, Muğla, Ege Bölgesi, 48050, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8607003436,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=K%C3%B6tekli%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T21:38:31.945054+00:00",
+    "method": "OSM/Nominatim representative point; not an address or whole-neighborhood measurement"
+  },
+  "categories": {
+    "rent_cost": {
+      "collection_method": "gemini_google_search",
+      "status": "research_candidate",
+      "model": "gemini-2.5-flash",
+      "reference_date": "2026-10-28",
+      "observations": [
+        {
+          "text": "Muğla / Menteşe / Kötekli Mahallesi'nde 2+1 eşyalı bir dairenin aylık kirası 27.500 TL olarak listelenmiştir. Tarih ve uzun dönem bilgisi bilinmiyor.",
+          "source_ids": [
+            "gemini-0"
+          ],
+          "grounding_supports": [
+            {
+              "supported_text_segment": "Tarih ve uzun dönem bilgisi bilinmiyor.",
+              "source_ids": [
+                "gemini-0"
+              ]
+            }
+          ],
+          "review_status": "requires_human_source_check",
+          "coverage_note": "Metadata supports the quoted segments; it does not verify every assertion in the complete observation."
+        },
+        {
+          "text": "Muğla / Menteşe / Kötekli Mahallesi'nde 2+1 eşyalı bir dairenin aylık kirası 27.000 TL olarak listelenmiştir. İlan tarihi 19 Ağustos 2026'dır.",
+          "source_ids": [
+            "gemini-1"
+          ],
+          "grounding_supports": [
+            {
+              "supported_text_segment": "İlan tarihi 19 Ağustos 2026'dır.",
+              "source_ids": [
+                "gemini-1"
+              ]
+            }
+          ],
+          "review_status": "requires_human_source_check",
+          "coverage_note": "Metadata supports the quoted segments; it does not verify every assertion in the complete observation."
+        }
+      ],
+      "score": null
+    },
+    "safety_news": {
+      "collection_method": "gemini_google_search",
+      "status": "research_candidate",
+      "model": "gemini-2.5-flash",
+      "reference_date": "2026-10-28",
+      "observations": [
+        {
+          "text": "26 Ekim 2026 tarihinde Muğla'nın Menteşe ilçesine bağlı Kötekli Mahallesi'nde etkili olan yağış nedeniyle yol çöktü ve seyir halindeki bir otomobil çukura düştü. Araçtaki iki kişi kendi imkanlarıyla dışarı çıktı. Haberler.com tarafından yayınlanmıştır.",
+          "source_ids": [
+            "gemini-2"
+          ],
+          "grounding_supports": [
+            {
+              "supported_text_segment": "Haberler.com tarafından yayınlanmıştır.",
+              "source_ids": [
+                "gemini-2"
+              ]
+            }
+          ],
+          "review_status": "requires_human_source_check",
+          "coverage_note": "Metadata supports the quoted segments; it does not verify every assertion in the complete observation."
+        }
+      ],
+      "score": null
+    },
+    "transportation": {
+      "collection_method": "gemini_google_search",
+      "status": "research_candidate",
+      "model": "gemini-2.5-flash",
+      "reference_date": "2026-10-28",
+      "observations": [
+        {
+          "text": "MUTTAŞ'ın 1-62 numaralı otobüs hattı, Menteşe Stadyum - Yeniköy güzergahında hizmet vermektedir ve Kötekli'den geçmektedir. 18 Eylül 2026 tarihli bilgiye göre, bu güzergahta yol çalışmaları nedeniyle Kısmet Sitesi'ne giriş yapılamamaktadır.",
+          "source_ids": [
+            "gemini-6",
+            "gemini-7"
+          ],
+          "grounding_supports": [
+            {
+              "supported_text_segment": "18 Eylül 2026 tarihli bilgiye göre, bu güzergahta yol çalışmaları nedeniyle Kısmet Sitesi'ne giriş yapılamamaktadır.",
+              "source_ids": [
+                "gemini-6",
+                "gemini-7"
+              ]
+            }
+          ],
+          "review_status": "requires_human_source_check",
+          "coverage_note": "Metadata supports the quoted segments; it does not verify every assertion in the complete observation."
+        }
+      ],
+      "score": null
+    },
+    "social_life": {
+      "status": "collected_snapshot",
+      "access_mode": "local_one_off_osm_snapshot",
+      "endpoint": "https://api.openstreetmap.org/api/0.6/map.json?bbox=28.3713896%2C37.1570283%2C28.3953896%2C37.1750283",
+      "attempts": [],
+      "retrieved_at": "2026-10-27T21:39:35.672867+00:00",
+      "osm_timestamp": null,
+      "scope": {
+        "type": "radius_around_representative_point",
+        "radius_m": 1000
+      },
+      "counts": {
+        "supermarket": 3,
+        "convenience": 2,
+        "cafe": 29,
+        "restaurant": 1,
+        "park": 2
+      },
+      "osm_object_count": 37,
+      "places": [
+        {
+          "osm_type": "node",
+          "osm_id": 3476044435,
+          "name": "BİM",
+          "category": "supermarket",
+          "latitude": 37.1668381,
+          "longitude": 28.3839806,
+          "distance_to_reference_point_m": 104,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/3476044435"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 4255752990,
+          "name": "Migros",
+          "category": "supermarket",
+          "latitude": 37.164505,
+          "longitude": 28.3862076,
+          "distance_to_reference_point_m": 302,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/4255752990"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 4707015713,
+          "name": "Çağdaş Market",
+          "category": "convenience",
+          "latitude": 37.1650146,
+          "longitude": 28.3858752,
+          "distance_to_reference_point_m": 247,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/4707015713"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 10751422078,
+          "name": "Başka Kahve",
+          "category": "cafe",
+          "latitude": 37.1687555,
+          "longitude": 28.3821777,
+          "distance_to_reference_point_m": 322,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/10751422078"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 11049566769,
+          "name": "MSKÜ Türk Evi Restaurant",
+          "category": "restaurant",
+          "latitude": 37.1645772,
+          "longitude": 28.3725636,
+          "distance_to_reference_point_m": 973,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/11049566769"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12232207001,
+          "name": "BİM",
+          "category": "convenience",
+          "latitude": 37.1716828,
+          "longitude": 28.3774598,
+          "distance_to_reference_point_m": 819,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12232207001"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12364762414,
+          "name": "Coffy",
+          "category": "cafe",
+          "latitude": 37.1697772,
+          "longitude": 28.3806986,
+          "distance_to_reference_point_m": 480,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12364762414"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498236,
+          "name": "Mackbear",
+          "category": "cafe",
+          "latitude": 37.1698555,
+          "longitude": 28.3805984,
+          "distance_to_reference_point_m": 492,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498236"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498237,
+          "name": "Duray 3",
+          "category": "cafe",
+          "latitude": 37.1698399,
+          "longitude": 28.3806313,
+          "distance_to_reference_point_m": 489,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498237"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498238,
+          "name": "Duray 2 (18)",
+          "category": "cafe",
+          "latitude": 37.1699666,
+          "longitude": 28.3808768,
+          "distance_to_reference_point_m": 491,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498238"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498239,
+          "name": "Baydur B",
+          "category": "cafe",
+          "latitude": 37.1701789,
+          "longitude": 28.380629,
+          "distance_to_reference_point_m": 522,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498239"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498240,
+          "name": "Baydur A",
+          "category": "cafe",
+          "latitude": 37.1701275,
+          "longitude": 28.3804047,
+          "distance_to_reference_point_m": 527,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498240"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498241,
+          "name": "Caner Market",
+          "category": "cafe",
+          "latitude": 37.17013,
+          "longitude": 28.3802854,
+          "distance_to_reference_point_m": 533,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498241"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498242,
+          "name": "Altaş A",
+          "category": "cafe",
+          "latitude": 37.1702013,
+          "longitude": 28.380173,
+          "distance_to_reference_point_m": 545,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498242"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498243,
+          "name": "Altaşlar",
+          "category": "cafe",
+          "latitude": 37.17024,
+          "longitude": 28.3801119,
+          "distance_to_reference_point_m": 551,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498243"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498244,
+          "name": "Filli Boya Altaş Tic",
+          "category": "cafe",
+          "latitude": 37.1702511,
+          "longitude": 28.3800701,
+          "distance_to_reference_point_m": 554,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498244"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498247,
+          "name": "Saadettin Ökten Erkek Yurdu",
+          "category": "cafe",
+          "latitude": 37.1707368,
+          "longitude": 28.3806514,
+          "distance_to_reference_point_m": 577,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498247"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498248,
+          "name": "Levent Yüksel",
+          "category": "cafe",
+          "latitude": 37.1709808,
+          "longitude": 28.3803862,
+          "distance_to_reference_point_m": 612,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498248"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498249,
+          "name": "Yenaral",
+          "category": "cafe",
+          "latitude": 37.1707136,
+          "longitude": 28.3810588,
+          "distance_to_reference_point_m": 560,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498249"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498250,
+          "name": "Toprak",
+          "category": "cafe",
+          "latitude": 37.1709917,
+          "longitude": 28.3807902,
+          "distance_to_reference_point_m": 598,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498250"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498251,
+          "name": "Zeytin",
+          "category": "cafe",
+          "latitude": 37.1703556,
+          "longitude": 28.3814408,
+          "distance_to_reference_point_m": 511,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498251"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498252,
+          "name": "Duray 1 (23)",
+          "category": "cafe",
+          "latitude": 37.1700728,
+          "longitude": 28.3814435,
+          "distance_to_reference_point_m": 482,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498252"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498255,
+          "name": "Arabica",
+          "category": "cafe",
+          "latitude": 37.1693591,
+          "longitude": 28.3811872,
+          "distance_to_reference_point_m": 419,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498255"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498256,
+          "name": "Papatya (81)",
+          "category": "cafe",
+          "latitude": 37.1694006,
+          "longitude": 28.3811371,
+          "distance_to_reference_point_m": 425,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498256"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498257,
+          "name": "Ela (10)",
+          "category": "cafe",
+          "latitude": 37.169677,
+          "longitude": 28.3814878,
+          "distance_to_reference_point_m": 439,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498257"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498258,
+          "name": "12",
+          "category": "cafe",
+          "latitude": 37.1697725,
+          "longitude": 28.3815551,
+          "distance_to_reference_point_m": 447,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498258"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498259,
+          "name": "Hesaplı Tavuk",
+          "category": "cafe",
+          "latitude": 37.1692889,
+          "longitude": 28.3813376,
+          "distance_to_reference_point_m": 406,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498259"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498260,
+          "name": "Cici Döner",
+          "category": "cafe",
+          "latitude": 37.1692661,
+          "longitude": 28.3813973,
+          "distance_to_reference_point_m": 401,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498260"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498261,
+          "name": "Moda",
+          "category": "cafe",
+          "latitude": 37.1692501,
+          "longitude": 28.381433,
+          "distance_to_reference_point_m": 398,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498261"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498262,
+          "name": "Veli (83)",
+          "category": "cafe",
+          "latitude": 37.1692366,
+          "longitude": 28.3814649,
+          "distance_to_reference_point_m": 395,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498262"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498263,
+          "name": "Kaptan Kıraathanesi",
+          "category": "cafe",
+          "latitude": 37.1691535,
+          "longitude": 28.3815984,
+          "distance_to_reference_point_m": 382,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498263"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498264,
+          "name": "Altaş C (85)",
+          "category": "cafe",
+          "latitude": 37.1691766,
+          "longitude": 28.381558,
+          "distance_to_reference_point_m": 386,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498264"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12365498265,
+          "name": "Waffle inn",
+          "category": "cafe",
+          "latitude": 37.1692293,
+          "longitude": 28.3816831,
+          "distance_to_reference_point_m": 387,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12365498265"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12880590854,
+          "name": "Türkiye Tarım Kredi Kooperatif Market",
+          "category": "supermarket",
+          "latitude": 37.1709887,
+          "longitude": 28.375199,
+          "distance_to_reference_point_m": 912,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12880590854"
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 12880590868,
+          "name": null,
+          "category": "cafe",
+          "latitude": 37.1624847,
+          "longitude": 28.3753257,
+          "distance_to_reference_point_m": 816,
+          "location_method": "OSM node coordinate",
+          "source_url": "https://www.openstreetmap.org/node/12880590868"
+        },
+        {
+          "osm_type": "way",
+          "osm_id": 552392695,
+          "name": "Yoğurtçu Parkı",
+          "category": "park",
+          "latitude": 37.1699601,
+          "longitude": 28.3799484,
+          "distance_to_reference_point_m": 533,
+          "location_method": "OSM object bounding-box midpoint",
+          "source_url": "https://www.openstreetmap.org/way/552392695"
+        },
+        {
+          "osm_type": "way",
+          "osm_id": 1329578402,
+          "name": null,
+          "category": "park",
+          "latitude": 37.168562,
+          "longitude": 28.37770875,
+          "distance_to_reference_point_m": 577,
+          "location_method": "OSM object bounding-box midpoint",
+          "source_url": "https://www.openstreetmap.org/way/1329578402"
+        }
+      ],
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "limitations": [
+        "Sample radius is not the neighborhood boundary.",
+        "OSM completeness varies; absence is not proof that a facility does not exist.",
+        "Counts are OSM objects, not a deduplicated business census; names may be missing.",
+        "No current opening status, quality rating or affordability is inferred.",
+        "Ongoing read-only collection must use Overpass or an appropriate extract/provider, not the OSM editing API."
+      ]
+    },
+    "earthquake_hazard": {
+      "status": "research_estimate",
+      "value": 0.351,
+      "unit": "g",
+      "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+      "method": "nearest published grid point; no interpolation",
+      "nearest_grid_point": {
+        "latitude": 37.1755,
+        "longitude": 28.38371,
+        "pga_g": 0.351
+      },
+      "distance_to_grid_point_km": 1.0536,
+      "maximum_supported_distance_km": 5,
+      "grid_row_count": 201920,
+      "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "source_title": "Jeodezik Deprem Tehlike Haritası",
+      "source_version": "v1, 2025-02-16",
+      "authors": [
+        "Aktuğ, Bahadır",
+        "Şentürk, Murat Doruk",
+        "Özsaraç, Vedat",
+        "KILIÇ, Nazan"
+      ],
+      "license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+      "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+      "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+      "is_official_afad_tdth": false,
+      "limitations": [
+        "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+        "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+        "No soil class, building safety conclusion, risk label or score is derived."
+      ]
+    }
+  },
+  "grounding_sources": [
+    {
+      "id": "gemini-0",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeEd3OWpf8UyWwi_ygL7r7mI14LhJOiYlr6_VD3th_mClh8XQQlxPUPiJkV80lowaVfwV2Stexr8Rsftnk398ZOsYiB8-n7dA2CXzRihwDOqYUqNwVnEfPMZy27wA3faAxaBvKCHJ817LdAA==",
+      "provider_reported_publisher": "hepsiemlak.com",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-1",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSDcgzNELGYRF68y30rA-5rvhQZCJF4WuSXCFlyzkiSFRzYcDxTdiSvwtkWDPVCI6FUlE4rrIbzuRctn_fjOSjEcbW854llxz-5yT17xgOSAQG_AeJGpViDloYDWhzdCKL0VEDuguZnqb7LBQ9S8INX5nYNvNuFjl_FW8Fpr4yEIwJXNmVkrKG9vug_g==",
+      "provider_reported_publisher": "emlakjet.com",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-2",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR7quAwpQYJkGKkYxX0rhMBdGIvc1BgT_0yUUsM2kb1B50t5j_HYqnRAd67_2BRNaZEdFKHXpqdukQ-XXEZLZEAeKSG15_WCMEFIuUq1ii-_SQJDdGGr1BGa05IrpA5QS4v4GWNyA9tAK2tHNZueG8z4nwjUI07E_6i2xhyJYnw_6DCLiCXPg540KfGFoSRLdcuxKgiIqJ9iPxS2cjK_A=",
+      "provider_reported_publisher": "haberler.com",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-3",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwXffe3b67Q2XMvCnbm8M7WjLuoRl08dYe_c27n9XYvWbrPxjHDmgjD4X3exAwaOSCkP7NzPpg07KAuOUFOOgPdDEPN6obCydHXsuCRG4Gqa9NzcHirxJzOoynbZyd6zTc_ZC0Vg__c8_A0eVDgrKCMx0pMJc9Vpscwwy1CVXDc92-xEVJEjpFl_SAetSDW-artASPd7ig180PbtQphQ==",
+      "provider_reported_publisher": "sondakika.com",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-4",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJJZhou4DtTJMWlE45gR3HV5irORFALZs38BKA0iHduDHS09yG_9XyCIzw3foy_YJJIGqHSrhMVPN1vgH0HmGYe29J6m9YYjDNYtL-3tOIRdKh6Y06_zCsTK8OHGA3BDCi63pa8wYwuwYxjxukB74=",
+      "provider_reported_publisher": "ses15.com.tr",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-5",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVE8kAmdpW3cG810WQbZ9eKlcoCutm-oU63UJB3mJ83fw0cvTdUfGNM6OcxxpCu-Kf_rpE79paPpvHUPXVEWOSN3s-YoskCm39wobsXN2d37DZOrg4hLkuB8_s_M2XPmhz6vkQmqIDAexXa3767mh0HG5TXfIGVILuF3QA3mwlZw0bUamVTr8IdInjx2zV0kFOll99fRDh9ohHqUbX1qi-8KJ4SPv2wAbIgPrRzr_9",
+      "provider_reported_publisher": "anlatilaninotesi.com.tr",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-6",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXobPJVvhe4RUqC6-3fSMy8Hwa4N3ZP4WdBYnKzMfWwUD-78aQbL2_GLB1JIJB_kkUpucUXP3tiyHPdgE8qpndUGdPbZR9VNTRZDGbKk6Fb6xZG_-2uauw-AAF04uCHYtURNhaBjl8y5AQ2Or8TN42jAksMcziwvqj4Bc=",
+      "provider_reported_publisher": "muttas.com.tr",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-7",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgNbKW82LIy1GiYbBP8FuPQ5CX3nWEs11LRBFVGYReBKtcFeB_RvJzhK7sVyHD1gZAjZAAMFNcBQo5n0rgGwafpuE1Donkxoi8Q8Bw7UGidUOI5GUNDAaeZKk_L2PYSpWHRDr-sIY=",
+      "provider_reported_publisher": "muttas.com.tr",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-8",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZFU8RoQ_D2QbVaWJU09ETqINDItqCqavNL6Ey_eoWuQJ54qC7PDTOsNGIb_lhKwSeeHxyiy_UEXVnRZ7G7tGpq-hLtB_0apaxz-VteytTughv1wY2zzS-Awx-aoUmD8piqqKVU_MuvcYDGGH6yi6ix0Q-aXv-iJkl6313QNtBLpixc6V__XURSvZUeC5EeuLQaeUemoUmAQLxO3H5Qimd7erwgEXjV-45-UN3exbZsqgnT7U=",
+      "provider_reported_publisher": "moovitapp.com",
+      "method": "Gemini Google Search grounding metadata"
+    },
+    {
+      "id": "gemini-9",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQED4vqHSk5kLY2j8KbDcmNQzUGvgcE6cKwHh17D45hnURhzkzW_DI89469vNgtYrD_vS1KJPCauCoLoaey2avMONA-dFdixYj_Oe8ineZmDZfeeQZUyS5IE66_IctmPUZEjKcPlZq5oFJNpjeNJnm8iCUpleIb2Bw7sxKlOwwuH10o7SLvL4hCuZ7B0RWxhZvADe45gUpPFs5hRv0MoNOT67kvXDkVNtw==",
+      "provider_reported_publisher": "moovitapp.com",
+      "method": "Gemini Google Search grounding metadata"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "category": "safety_news",
+      "reason": "Personal identifiers in model text require manual redaction",
+      "source_ids": [
+        "gemini-3",
+        "gemini-4",
+        "gemini-5"
+      ]
+    },
+    {
+      "category": "transportation",
+      "reason": "Non-official transport publisher",
+      "source_ids": [
+        "gemini-8",
+        "gemini-9"
+      ]
+    }
+  ],
+  "scores": {
+    "overall": null,
+    "student": null,
+    "family": null,
+    "professional": null
+  },
+  "provenance": {
+    "grounding_result": "data\\research\\kotekli_2026-10-28_v3\\result.json",
+    "direct_data_result": "data\\pilot\\kotekli_direct_sample.json"
+  },
+  "limitations": [
+    "Source collection prototype; no calibrated score or verified final report is produced.",
+    "Research hazard grid is not the official AFAD TDTH product.",
+    "Social-life sample radius is not an administrative neighborhood boundary.",
+    "Grounding confirms that search was used; factual claims still require review."
+  ]
+}

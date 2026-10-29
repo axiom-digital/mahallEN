@@ -6,11 +6,11 @@
 
 MahallEN aims to answer *"Is this neighborhood a good place to live?"* with a single, source-backed report covering **Safety & News**, **Rent & Cost**, **Transportation Accessibility**, **Earthquake Hazard**, and **Social Life & Daily Amenities**, plus suitability ratings for **University Students**, **Families**, and **Working Professionals**.
 
-**Current stage: pilot prototype.** The first source-backed static release covers all five neighborhoods (#7), with unknown fields and source-review status retained. Versioned prompts and an explicit Gemini Search API client are available (#9); the general preview uses the team-selected survey weights (#8). The backend seed database is still illustrative. Frontend completion (#10), live report/cache integration (#11), source review and scoring validation remain separate work. No completed MVP or official AFAD integration is claimed.
+**Current stage: pilot prototype.** The first source-backed static release covers all five neighborhoods (#7), with unknown fields and source-review status retained. Versioned prompts and an explicit Gemini Search API client are available (#9); the survey analysis and team-selected weights (32% cost, 28% social, 20% safety/news, 10% disaster, 10% transport) are documented (#8) and implemented in the frontend scoring module. The new template UI and horizontal category score charts (#10) as well as persistent SQLite/PostgreSQL report caching (`ReportCache`, `X-Cache: HIT/MISS`, and cache invalidation endpoint) (#11) are implemented. Remaining open work includes migrating the backend runtime database from illustrative seed data (`seed_service.py`) to the static JSON dataset, integrating the #8 weights and numeric `social_life` score into the backend scoring service, and completing human factual review. No completed MVP or official AFAD integration is claimed.
 
-See [today's M2 roadmap](docs/ROADMAP_M2.md) for the board snapshot, task order and expected evidence. M2 tasks have not been marked complete by these code corrections.
+See [Implementation Verification (#24)](docs/IMPLEMENTATION_VERIFICATION.md) for the full feature audit, test/build evidence, and remaining tasks across #7, #8, #9, #10, and #11, and [today's M2 roadmap](docs/ROADMAP_M2.md) for the board snapshot and task order.
 
-The first source-backed static dataset now covers all five pilot neighborhoods: see [data manifest](data/manifest.json) and [data dictionary](data/README.md). Unknown fields and source-review status are retained. The React preview uses the saved Kötekli sample, housing preferences and a street map without making Gemini calls. The backend database still contains illustrative seed data; importing the static records into the live report/cache is separate work (#11). Social life replaces community sentiment in the new source plan. [Data Sources](docs/DATA_SOURCES.md) records the collection methods and limitations.
+The first source-backed static dataset covers all five pilot neighborhoods: see [data manifest](data/manifest.json) and [data dictionary](data/README.md). Unknown fields and source-review status are retained. The React frontend connects search, district filters, profile suitability ranking, and 5-category horizontal score charts (`ScoreBarChart`) to the backend API without treating missing category scores as zero. The backend database still seeds illustrative M1 data by default; connecting the static JSON records and 5-category weights directly into the live report/cache pipeline remains open work. [Data Sources](docs/DATA_SOURCES.md) records the collection methods and limitations.
 
 ---
 
@@ -29,11 +29,11 @@ Team Axiom operates as an **Agile, self-organizing, cross-functional squad**. Ra
 
 ## Tech Stack
 
-- **Backend:** Python 3.11+, FastAPI, SQLAlchemy 2.0, Pydantic v2
+- **Backend:** Python 3.11+, FastAPI, SQLAlchemy 2.0, Pydantic v2, persistent `ReportCache` (`X-Cache: HIT/MISS`)
 - **Database:** local SQLite by default; PostgreSQL 16 via Docker Compose. Optional SQLite fallback is restricted to explicitly enabled development use.
-- **AI / LLM Layer:** demo synthesis by default. The existing Gemini integration skeleton is disabled until an operator configures a supported model, API key and refresh secret. SDK migration and live integration are tracked in #9; persistent caching is tracked in #11.
-- **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons
-- **Testing:** Pytest & FastAPI `TestClient`
+- **AI / LLM Layer:** demo synthesis by default. The existing Gemini integration skeleton is disabled until an operator configures a supported model, API key and refresh secret. Versioned research prompts and the `google-genai` Search grounding client are in `backend/scripts/grounding_client.py` (#9); persistent report caching is in `backend/app/services/cache_service.py` (#11).
+- **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons (template UI & 0–100 horizontal score bar charts #10)
+- **Testing:** Pytest (55 tests) & FastAPI `TestClient`, Node ESM scoring tests (`frontend/scripts/test-scoring.mjs`)
 
 ---
 
@@ -87,4 +87,4 @@ Ordinary report reads and the UI's **Refresh report** button only reload demo sy
 
 The optional `?refresh_ai=true` path is operator-only: configure `GEMINI_API_KEY`, a supported `GEMINI_MODEL`, and an `AI_REFRESH_TOKEN` of at least 32 random characters on the backend, then send that secret in `X-AI-Refresh-Token`. Never place either secret in frontend code or `VITE_*` variables. The endpoint admits at most one live attempt per 60 seconds across neighborhoods **per API process**; failed attempts also consume that interval. Keep the current single-process/local setup; shared limiting must precede multi-worker deployment. Invalid, oversized, HTML-containing or unavailable model output returns the demo fallback.
 
-The explicit Gemini Search research client, versioned prompts and source acceptance flow are documented in [LLM Integration](docs/LLM_INTEGRATION.md). This separate #9 module does not replace the M1 demo report endpoint. Persistent report/cache integration remains #11.
+The explicit Gemini Search research client, versioned prompts and source acceptance flow are documented in [LLM Integration](docs/LLM_INTEGRATION.md). This separate #9 module does not replace the M1 demo report endpoint. Persistent report caching (`ReportCache`, TTL, hit counter, and operator-only `DELETE /api/v1/neighborhoods/{slug}/cache`) is implemented (#11); full verification and remaining integration items are recorded in [Implementation Verification (#24)](docs/IMPLEMENTATION_VERIFICATION.md).

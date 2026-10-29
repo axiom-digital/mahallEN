@@ -4,7 +4,7 @@ from math import ceil
 from time import monotonic
 import unicodedata
 
-from fastapi import APIRouter, Depends, HTTPException, Query, Request, Security
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response, Security
 from fastapi.security import APIKeyHeader
 from sqlalchemy.orm import Session
 
@@ -16,6 +16,11 @@ from app.schemas.neighborhood import (
     NeighborhoodFullReportSchema,
 )
 from app.services.ai_service import generate_neighborhood_ai_report
+from app.services.cache_service import (
+    get_cached_report,
+    set_cached_report,
+    invalidate_cached_report,
+)
 from app.services.scoring_service import get_scoring_methodology
 
 router = APIRouter(prefix="/neighborhoods", tags=["Neighborhoods & AI Reports"])
@@ -62,13 +67,14 @@ def list_neighborhoods(
 def get_neighborhood_report(
     slug: str,
     request: Request,
+    response: Response,
     refresh_ai: bool = Query(
         False, description="Force live Gemini LLM generation if API key is configured"
     ),
     refresh_token: Optional[str] = Security(refresh_token_header),
     db: Session = Depends(get_db),
 ):
-    """Return a pilot demo report; live regeneration requires operator authorization."""
+    """Return a pilot demo report; cached reports served with X-Cache: HIT; live regeneration requires operator authorization."""
     if refresh_ai:
         expected_token = settings.AI_REFRESH_TOKEN
         if not expected_token or len(expected_token) < 32:
@@ -77,6 +83,7 @@ def get_neighborhood_report(
             raise HTTPException(status_code=403, detail="Invalid AI refresh token.")
         if not settings.GEMINI_API_KEY or not settings.GEMINI_MODEL:
             raise HTTPException(status_code=503, detail="Live AI provider is not configured.")
+
     neighborhood = (
         db.query(Neighborhood).filter(Neighborhood.slug == slug.lower().strip()).first()
     )
@@ -85,6 +92,15 @@ def get_neighborhood_report(
             status_code=404,
             detail=f"Neighborhood '{slug}' not found in Muğla pilot dataset.",
         )
+
+    # Cache hit check (persistent cache item #11)
+    if not refresh_ai and settings.REPORT_CACHE_ENABLED:
+        cached_result = get_cached_report(db, neighborhood.slug)
+        if cached_result is not None:
+            cached_data, hit_count = cached_result
+            response.headers["X-Cache"] = "HIT"
+            response.headers["X-Cache-Hits"] = str(hit_count)
+            return cached_data
 
     if refresh_ai:
         with request.app.state.ai_refresh_lock:
@@ -102,7 +118,7 @@ def get_neighborhood_report(
         neighborhood, force_live_llm=refresh_ai
     )
 
-    return {
+    report_payload = {
         "id": neighborhood.id,
         "slug": neighborhood.slug,
         "name": neighborhood.name,
@@ -147,3 +163,34 @@ def get_neighborhood_report(
         "ai_report": ai_report,
         "scoring_methodology": get_scoring_methodology(),
     }
+
+    if settings.REPORT_CACHE_ENABLED:
+        model_version = ai_report.get("generated_by", "demo-synthesis")
+        set_cached_report(
+            db,
+            neighborhood.slug,
+            report_payload,
+            ttl_seconds=settings.REPORT_CACHE_TTL_SECONDS,
+            model_version=model_version,
+        )
+
+    response.headers["X-Cache"] = "MISS"
+    response.headers["X-Cache-Hits"] = "0"
+    return report_payload
+
+
+@router.delete("/{slug}/cache", tags=["Neighborhoods & AI Reports"])
+def delete_neighborhood_cache(
+    slug: str,
+    refresh_token: Optional[str] = Security(refresh_token_header),
+    db: Session = Depends(get_db),
+):
+    """Invalidate cached report for a specific neighborhood."""
+    expected_token = settings.AI_REFRESH_TOKEN
+    if not expected_token or len(expected_token) < 32:
+        raise HTTPException(status_code=403, detail="Cache invalidation is disabled.")
+    if not refresh_token or not compare_digest(refresh_token.encode(), expected_token.encode()):
+        raise HTTPException(status_code=403, detail="Invalid token for cache invalidation.")
+
+    deleted = invalidate_cached_report(db, slug)
+    return {"slug": slug, "cache_invalidated": deleted}

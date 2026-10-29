@@ -26,7 +26,7 @@ Bu kod düzeltmesi mevcut iskeletin bakımıdır. Yeni veri seti, anket analizi,
 - Türkçe/literal arama, parametre sınırları, eski frontend isteklerini iptal etme ve boş sonuç durumu.
 - Güvenlik güncellemeleri ve açık demo veri etiketi. Gerçek veri ve kanıt üretimi #7/#8 altında kalır.
 
-Çıkan test/derleme kayıtları, Irmak'ın [#24](https://github.com/axiom-digital/mahallEN/issues/24) doğrulamasında kullanabileceği yerel kanıttır. Ekip incelemesi tamamlanmadan issue tamamlandı sayılmaz.
+Çıkan test/derleme kayıtları, Irmak'ın [#24](https://github.com/axiom-digital/mahallEN/issues/24) doğrulamasında kullanabileceği yerel kanıttır. Güncel #7, #8, #9, #10 ve #11 doğrulama raporu ve kalan işler listesi [Uygulama Doğrulama Raporu (`docs/IMPLEMENTATION_VERIFICATION.md`)](IMPLEMENTATION_VERIFICATION.md) içinde kayıt altına alınmıştır. Ekip incelemesi tamamlanmadan issue tamamlandı sayılmaz.
 
 ### Yerel doğrulama kaydı — 27 Ekim 2026
 

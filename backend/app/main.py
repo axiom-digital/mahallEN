@@ -40,8 +40,9 @@ def create_app(database_url: str | None = None) -> FastAPI:
         CORSMiddleware,
         allow_origins=settings.cors_origins,
         allow_credentials=False,
-        allow_methods=["GET"],
+        allow_methods=["GET", "DELETE"],
         allow_headers=["Content-Type", "X-AI-Refresh-Token"],
+        expose_headers=["X-Cache", "X-Cache-Hits"],
     )
     application.include_router(neighborhoods_router, prefix="/api/v1")
 

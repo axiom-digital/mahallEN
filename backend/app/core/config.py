@@ -28,6 +28,14 @@ class Settings:
     # Server-side operator secret; never put this in a VITE_* variable.
     AI_REFRESH_TOKEN: str = os.getenv("AI_REFRESH_TOKEN", "")
 
+    # Persistent report cache settings (#11)
+    REPORT_CACHE_ENABLED: bool = os.getenv("REPORT_CACHE_ENABLED", "True").lower() in (
+        "true",
+        "1",
+        "yes",
+    )
+    REPORT_CACHE_TTL_SECONDS: int = int(os.getenv("REPORT_CACHE_TTL_SECONDS", "86400"))
+
     @property
     def cors_origins(self) -> List[str]:
         origins = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173")

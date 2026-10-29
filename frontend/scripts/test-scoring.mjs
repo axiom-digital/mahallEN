@@ -1,5 +1,16 @@
 import assert from 'node:assert/strict';
-import { agreedWeights, budgetScore, housingComparison, housingPreferences, profiles, weightedScore } from '../src/scoring.mjs';
+import {
+  CATEGORY_DEFINITIONS,
+  agreedWeights,
+  budgetScore,
+  extractCategoryScores,
+  housingComparison,
+  housingPreferences,
+  normalizeScoreValue,
+  profiles,
+  weightedScore,
+} from '../src/scoring.mjs';
+
 assert.equal(budgetScore(30000, 30000), 50);
 assert.equal(budgetScore(27000, 30000), 70);
 assert.equal(budgetScore(27000, 10000), 0);
@@ -27,4 +38,40 @@ assert.equal(smallHome.median, 21500);
 assert.equal(smallHome.score, 78);
 assert.equal(housingComparison(listings, housingPreferences('2+1', '25000')).score, 10);
 assert.deepEqual(housingComparison(listings, housingPreferences('1+0', '25000')), { listings: [], median: null, score: null });
+
+// Issue #10: Category score normalization & missing data policy (never coerce null/undefined to 0)
+assert.equal(CATEGORY_DEFINITIONS.length, 5);
+assert.deepEqual(
+  CATEGORY_DEFINITIONS.map((c) => c.label),
+  ['Maliyet', 'Sosyal yaşam', 'Güvenlik / haberler', 'Afet', 'Ulaşım']
+);
+assert.equal(normalizeScoreValue(null), null);
+assert.equal(normalizeScoreValue(undefined), null);
+assert.equal(normalizeScoreValue(''), null);
+assert.equal(normalizeScoreValue(false), null);
+assert.equal(normalizeScoreValue(-5), null);
+assert.equal(normalizeScoreValue(105), null);
+assert.equal(normalizeScoreValue(0), 0);
+assert.equal(normalizeScoreValue(74.4), 74);
+assert.equal(normalizeScoreValue(100), 100);
+
+const backendScores = {
+  overall_livability: 75,
+  cost_affordability: 62,
+  safety: 72,
+  disaster_resilience: 74,
+  transportation: 90,
+};
+const mapped = extractCategoryScores(backendScores);
+assert.deepEqual(
+  mapped.map((m) => [m.key, m.value]),
+  [
+    ['cost_affordability', 62],
+    ['social_life', null],
+    ['safety', 72],
+    ['disaster_resilience', 74],
+    ['transportation', 90],
+  ]
+);
+
 console.log('Scoring checks passed: boundaries, weights, missing data and earthquake contribution.');

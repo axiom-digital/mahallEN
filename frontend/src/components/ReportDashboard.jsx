@@ -17,333 +17,567 @@ import {
   MapPin,
   Info,
 } from 'lucide-react';
-import ScoreCard from './ScoreCard';
+import ScoreCard, {
+  ScoreBarChart,
+  extractCategoryScores,
+  normalizeScoreValue,
+} from './ScoreCard';
 
-export default function ReportDashboard({ report, onRefreshAi, refreshing }) {
-  if (!report) return null;
+function formatCurrency(value) {
+  const num = Number(value);
+  if (!Number.isFinite(num)) return 'Belirtilmedi';
+  return `${num.toLocaleString('tr-TR')} TL`;
+}
+
+function getSentimentLabel(sentiment) {
+  if (sentiment === 'positive') return { text: 'Olumlu', className: 'sentiment-positive' };
+  if (sentiment === 'negative') return { text: 'Dikkat', className: 'sentiment-negative' };
+  return { text: 'Bilgi', className: 'sentiment-neutral' };
+}
+
+function buildDynamicChartSummary(name, scores) {
+  const categories = extractCategoryScores(scores);
+  const available = categories.filter((c) => c.value !== null);
+  const missing = categories.filter((c) => c.value === null);
+
+  if (!available.length) {
+    return `${name} için sayısal kategori puanları henüz mevcut değil.`;
+  }
+
+  const sorted = [...available].sort((a, b) => b.value - a.value);
+  const highest = sorted[0];
+  const lowest = sorted[sorted.length - 1];
+
+  let summary = `${name} raporunda ${highest.label.toLocaleLowerCase('tr-TR')} (${highest.value}/100) öne çıkarken, ${lowest.label.toLocaleLowerCase('tr-TR')} (${lowest.value}/100) kendi önceliklerinle birlikte değerlendirilmeli.`;
+  if (missing.length > 0) {
+    const missingNames = missing.map((m) => m.label.toLocaleLowerCase('tr-TR')).join(', ');
+    summary += ` Backend verisinde henüz sayısal puanı bulunmayan başlıklar (${missingNames}) sıfır puan olarak sayılmaz.`;
+  }
+  return summary;
+}
+
+export default function ReportDashboard({
+  report,
+  neighborhoods = [],
+  selectedSlug = '',
+  onSelectNeighborhood,
+  onOpenDialog,
+  onRefreshAi,
+  refreshing = false,
+  loading = false,
+  error = null,
+  onRetry,
+  onResetSearch,
+}) {
+  if (loading) {
+    return (
+      <div className="report-state-card" role="status" aria-live="polite" data-testid="report-loading">
+        <div className="loading-spinner" aria-hidden="true" />
+        <h3>Mahalle raporu ve puan grafikleri yükleniyor…</h3>
+        <p>Seçilen mahallenin güncel backend verileri getiriliyor.</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="report-state-card is-error" role="alert" data-testid="report-error">
+        <AlertTriangle size={28} aria-hidden="true" />
+        <h3>Rapor verisi alınamadı</h3>
+        <p>{error}</p>
+        {onRetry && (
+          <button type="button" className="button dark" onClick={onRetry}>
+            Tekrar dene <span aria-hidden="true">↻</span>
+          </button>
+        )}
+      </div>
+    );
+  }
+
+  if (!report) {
+    return (
+      <div className="report-state-card is-empty" role="status" data-testid="report-empty">
+        <MapPin size={28} aria-hidden="true" />
+        <h3>Görüntülenecek mahalle raporu seçilmedi</h3>
+        <p>
+          Arama sonucunda eşleşen bir mahalle bulunamadığında rapor ekranı temizlenir. Yukarıdan bir mahalle seçebilir veya aramayı sıfırlayabilirsin.
+        </p>
+        {onResetSearch && (
+          <button type="button" className="button dark" onClick={onResetSearch}>
+            Tüm mahalleleri göster <span aria-hidden="true">↗</span>
+          </button>
+        )}
+      </div>
+    );
+  }
 
   const {
     name,
     district,
     city,
     tagline,
-    scores,
-    suitability,
-    rent_analysis,
-    transport_analysis,
-    disaster_risk,
-    news_items,
-    community_comments,
-    data_sources,
-    ai_report,
-    scoring_methodology,
+    scores = {},
+    suitability = {},
+    rent_analysis = {},
+    transport_analysis = {},
+    disaster_risk = {},
+    news_items = [],
+    community_comments = [],
+    data_sources = [],
+    ai_report = {},
+    scoring_methodology = {},
   } = report;
 
+  const overallScore = normalizeScoreValue(scores?.overall_livability);
+  const socialScore = normalizeScoreValue(scores?.social_life ?? scores?.social);
+  const chartSummaryText = buildDynamicChartSummary(name, scores);
+
+  const profileRows = [
+    {
+      key: 'students',
+      label: 'Öğrenci',
+      icon: GraduationCap,
+      score: normalizeScoreValue(suitability?.students),
+      verdict: ai_report?.student_verdict,
+      toneClass: 'suitability-fill-green',
+    },
+    {
+      key: 'families',
+      label: 'Aile',
+      icon: Users,
+      score: normalizeScoreValue(suitability?.families),
+      verdict: ai_report?.family_verdict,
+      toneClass: 'suitability-fill-olive',
+    },
+    {
+      key: 'professionals',
+      label: 'Çalışan',
+      icon: Briefcase,
+      score: normalizeScoreValue(suitability?.professionals),
+      verdict: ai_report?.professional_verdict,
+      toneClass: 'suitability-fill-rust',
+    },
+  ];
+
   return (
-    <div className="space-y-6">
-      {/* Top Neighborhood Hero Header */}
-      <div className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/40 p-6 md:p-8 shadow-xl">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-          <div className="space-y-2 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-medium">
-              <MapPin className="w-3.5 h-3.5" />
-              <span>{district}, {city} • Pilot Area Report</span>
+    <div className="report-dashboard-wrapper" data-testid="report-dashboard">
+      {/* Top Template Section: Copy + Score Bar Chart Preview */}
+      <div className="report-grid">
+        <div className="report-copy">
+          <h2 id="report-title">
+            Sadece bir puan değil.
+            <br />
+            Bir mahallenin
+            <br />
+            <em>bütün hikâyesi.</em>
+          </h2>
+          <p>
+            Artıları, dikkat etmen gerekenler ve kategori puanları aynı yerde. Kendin için önemli olanı gör, sorularını bilerek sor.
+          </p>
+
+          {neighborhoods.length > 0 && onSelectNeighborhood && (
+            <div className="report-switcher" role="group" aria-label="Raporu gösterilen mahalleyi değiştir">
+              <span className="report-switcher-label">Seçili mahalle:</span>
+              <div className="report-switcher-pills">
+                {neighborhoods.map((item) => {
+                  const active = item.slug === (selectedSlug || report.slug);
+                  return (
+                    <button
+                      key={item.slug}
+                      type="button"
+                      className={`switcher-pill ${active ? 'active' : ''}`}
+                      aria-pressed={active}
+                      onClick={() => onSelectNeighborhood(item.slug)}
+                    >
+                      {item.name.replace(/\s+Mahallesi$/i, '')}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
-              {name}
-            </h2>
-            <p className="text-slate-300 text-sm md:text-base leading-relaxed">
-              {tagline}
+          )}
+
+          <div className="report-copy-actions">
+            {onOpenDialog && (
+              <button type="button" className="button dark" onClick={onOpenDialog}>
+                {name.replace(/\s+Mahallesi$/i, '')} özet penceresi <span aria-hidden="true">↗</span>
+              </button>
+            )}
+            <a className="button outline-dark" href="#rapor-detay">
+              Detaylı kırılımı incele <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <p className="small-note">
+            Grafikler mevcut backend verilerini kullanır. Eksik kategori verileri sıfır puan gibi gösterilmez.
+          </p>
+        </div>
+
+        <div className="report-preview" aria-label={`${name} puan grafikleri kartı`}>
+          <div className="report-preview-head">
+            <div>
+              <span className="eyebrow">
+                {(city || 'MUĞLA').toLocaleUpperCase('tr-TR')} / {(district || 'MENTEŞE').toLocaleUpperCase('tr-TR')}
+              </span>
+              <h3 data-testid="report-neighborhood-name">{name}</h3>
+              <span>Backend mahalle raporu · 0–100 ölçeği</span>
+            </div>
+            <div className="preview-score" data-testid="overall-score" aria-label={`Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
+              {overallScore !== null ? overallScore : '—'}
+              <small>/100</small>
+            </div>
+          </div>
+
+          <ScoreBarChart scores={scores} idPrefix="report" />
+
+          <div className="report-note">
+            <span aria-hidden="true">↗</span>
+            <p>
+              <b>Rakamları birlikte oku.</b> {chartSummaryText}
             </p>
           </div>
 
-          <div className="flex items-center gap-5 bg-slate-950/70 border border-slate-800/90 rounded-2xl p-5 shrink-0">
-            <div className="text-center">
-              <span className="text-xs uppercase tracking-wider text-slate-400 block mb-1">
-                Overall Livability
-              </span>
-              <div className="text-4xl font-extrabold text-emerald-400">
-                {scores.overall_livability}
-                <span className="text-lg text-slate-500 font-normal">/100</span>
-              </div>
-            </div>
-            <div className="h-12 w-px bg-slate-800" />
-            <div className="space-y-1 text-xs text-slate-300">
-              <div>
-                <span className="text-slate-400">Avg. Rent:</span>{' '}
-                <strong className="text-white">{rent_analysis.average_rent_tl.toLocaleString()} TL</strong>
-              </div>
-              <div>
-                <span className="text-slate-400">Seismic Risk:</span>{' '}
-                <strong className="text-amber-300">{disaster_risk.risk_level}</strong>
-              </div>
-              <div>
-                <span className="text-slate-400">Campus Dist:</span>{' '}
-                <strong className="text-white">{transport_analysis.distance_to_campus_km} km</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Category Scores Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <ScoreCard
-          title="Safety & News"
-          score={scores.safety}
-          subtitle="Incident reports, street lighting & local sentiment"
-          icon={ShieldCheck}
-        />
-        <ScoreCard
-          title="Transportation"
-          score={scores.transportation}
-          subtitle={`Bus every ${transport_analysis.bus_frequency_min} min • Campus ${transport_analysis.distance_to_campus_km} km`}
-          icon={Bus}
-        />
-        <ScoreCard
-          title="Cost Affordability"
-          score={scores.cost_affordability}
-          subtitle={`Avg ${rent_analysis.average_rent_tl.toLocaleString()} TL • ${rent_analysis.trend_6m}`}
-          icon={Wallet}
-        />
-        <ScoreCard
-          title="Disaster Resilience"
-          score={scores.disaster_resilience}
-          subtitle={`Sample PGA: ${disaster_risk.pga_value_g}g • ${disaster_risk.soil_class}`}
-          icon={Activity}
-        />
-      </div>
-
-      {/* AI Executive Report & Pros/Cons */}
-      <div className="rounded-3xl border border-emerald-500/25 bg-slate-900/90 p-6 md:p-7 space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-800 pb-4">
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
-              <Sparkles className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="text-lg font-bold text-white">AI-Synthesized Livability Verdict</h3>
-              <p className="text-xs text-slate-400">{ai_report.generated_by}</p>
-            </div>
-          </div>
-
-          <button
-            onClick={onRefreshAi}
-            disabled={refreshing}
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition disabled:opacity-50"
-          >
-            <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin text-emerald-400' : ''}`} />
-            {refreshing ? 'Refreshing...' : 'Refresh report'}
-          </button>
-        </div>
-
-        <p className="text-slate-200 leading-relaxed text-sm md:text-base">
-          {ai_report.executive_summary}
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="rounded-2xl bg-emerald-950/20 border border-emerald-500/20 p-4 space-y-2.5">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" /> Key Advantages (Pros)
-            </h4>
-            <ul className="space-y-2 text-sm text-slate-300">
-              {ai_report.pros.map((pro, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="text-emerald-400 mt-1">•</span>
-                  <span>{pro}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="rounded-2xl bg-amber-950/20 border border-amber-500/20 p-4 space-y-2.5">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-2">
-              <AlertTriangle className="w-4 h-4" /> Trade-offs & Watchouts (Cons)
-            </h4>
-            <ul className="space-y-2 text-sm text-slate-300">
-              {ai_report.cons.map((con, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="text-amber-400 mt-1">•</span>
-                  <span>{con}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Suitability by Target User Profile */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/75 p-5 space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-sky-400 font-semibold text-sm">
-              <GraduationCap className="w-5 h-5" />
-              <span>University Students</span>
-            </div>
-            <span className="text-lg font-bold text-white">{suitability.students}/100</span>
-          </div>
-          <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-            <div className="h-full bg-sky-400 rounded-full" style={{ width: `${suitability.students}%` }} />
-          </div>
-          <p className="text-xs text-slate-300 leading-relaxed">{ai_report.student_verdict}</p>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/75 p-5 space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-purple-400 font-semibold text-sm">
-              <Users className="w-5 h-5" />
-              <span>Families</span>
-            </div>
-            <span className="text-lg font-bold text-white">{suitability.families}/100</span>
-          </div>
-          <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-            <div className="h-full bg-purple-400 rounded-full" style={{ width: `${suitability.families}%` }} />
-          </div>
-          <p className="text-xs text-slate-300 leading-relaxed">{ai_report.family_verdict}</p>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/75 p-5 space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-emerald-400 font-semibold text-sm">
-              <Briefcase className="w-5 h-5" />
-              <span>Working Professionals</span>
-            </div>
-            <span className="text-lg font-bold text-white">{suitability.professionals}/100</span>
-          </div>
-          <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-            <div className="h-full bg-emerald-400 rounded-full" style={{ width: `${suitability.professionals}%` }} />
-          </div>
-          <p className="text-xs text-slate-300 leading-relaxed">{ai_report.professional_verdict}</p>
-        </div>
-      </div>
-
-      {/* Domain Breakdown: Rent, Transport & Earthquake */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3">
-          <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <Wallet className="w-4 h-4 text-emerald-400" /> Rent & Housing Market
-          </h4>
-          <div className="space-y-2 text-xs text-slate-300">
-            <div className="flex justify-between py-1.5 border-b border-slate-800">
-              <span className="text-slate-400">Average Monthly Rent:</span>
-              <span className="font-semibold text-white">{rent_analysis.average_rent_tl.toLocaleString()} TL</span>
-            </div>
-            <div className="flex justify-between py-1.5 border-b border-slate-800">
-              <span className="text-slate-400">Typical Range:</span>
-              <span className="font-medium text-slate-200">{rent_analysis.rent_range_tl}</span>
-            </div>
-            <div className="flex justify-between py-1.5">
-              <span className="text-slate-400">6-Month Trend:</span>
-              <span className="font-medium text-amber-300">{rent_analysis.trend_6m}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3">
-          <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <Bus className="w-4 h-4 text-sky-400" /> Transit & Mobility Highlights
-          </h4>
-          <ul className="space-y-2 text-xs text-slate-300">
-            {transport_analysis.highlights.map((h, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <span className="text-sky-400">•</span>
-                <span>{h}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3">
-          <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <Activity className="w-4 h-4 text-rose-400" /> Sample Earthquake & Soil Metrics
-          </h4>
-          <div className="space-y-2 text-xs text-slate-300">
-            <div className="flex justify-between py-1.5 border-b border-slate-800">
-              <span className="text-slate-400">Hazard Level:</span>
-              <span className="font-semibold text-amber-300">{disaster_risk.risk_level}</span>
-            </div>
-            <div className="flex justify-between py-1.5 border-b border-slate-800">
-              <span className="text-slate-400">Peak Ground Accel. (PGA):</span>
-              <span className="font-medium text-white">{disaster_risk.pga_value_g} g</span>
-            </div>
-            <div className="flex justify-between py-1.5">
-              <span className="text-slate-400">Soil Classification:</span>
-              <span className="font-medium text-slate-200">{disaster_risk.soil_class}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* News & Community Sentiment */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 space-y-4">
-          <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <Newspaper className="w-4 h-4 text-emerald-400" /> Sample Local News & Events
-          </h4>
-          <div className="space-y-3">
-            {news_items.map((item, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
-                <div className="flex items-center justify-between gap-2">
-                  <span className="text-xs font-semibold text-slate-200">{item.title}</span>
-                  <span
-                    className={`text-[10px] px-2 py-0.5 rounded-full uppercase font-semibold ${
-                      item.sentiment === 'positive'
-                        ? 'bg-emerald-500/15 text-emerald-300'
-                        : item.sentiment === 'negative'
-                        ? 'bg-rose-500/15 text-rose-300'
-                        : 'bg-slate-700 text-slate-300'
-                    }`}
-                  >
-                    {item.sentiment}
-                  </span>
-                </div>
-                <p className="text-xs text-slate-400 leading-relaxed">{item.summary}</p>
-                <div className="text-[11px] text-slate-500">
-                  Source: {item.source} • {item.date}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 space-y-4">
-          <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-            <MessageSquareQuote className="w-4 h-4 text-sky-400" /> Community & Student Reviews
-          </h4>
-          <div className="space-y-3">
-            {community_comments.map((c, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-sky-300">{c.author_profile}</span>
-                  <span className="text-xs text-amber-400">{'★'.repeat(c.rating)}{'☆'.repeat(5 - c.rating)}</span>
-                </div>
-                <p className="text-xs text-slate-300 italic">"{c.comment}"</p>
-                <div className="text-[11px] text-slate-500">Via {c.platform}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Transparency, Sources & Risk R-02/R-03 Mitigation Footer */}
-      <div className="rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 space-y-3 text-xs text-slate-400">
-        <div className="flex items-center gap-2 text-slate-200 font-semibold">
-          <Database className="w-4 h-4 text-emerald-400" />
-          <span>Example Sources & Draft Scoring Methodology</span>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {data_sources.map((src, i) => (
-            <span key={i} className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-300">
-              {src}
+          <div className="report-preview-foot">
+            <span>MEVCUT BACKEND VERİSİ</span>
+            <span>
+              Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}
             </span>
-          ))}
+          </div>
         </div>
-        <p className="text-slate-500 flex items-start gap-1.5 pt-1">
-          <Info className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
-          <span>
-            <strong>Methodology & Disclaimer:</strong> {scoring_methodology?.note} {ai_report.disclaimer}
-          </span>
-        </p>
+      </div>
+
+      {/* Detailed Report Stack in Matching Cream/Green/Terracotta Theme */}
+      <div id="rapor-detay" className="report-details-stack">
+        {/* Neighborhood Banner & Quick Facts */}
+        <div className="report-banner-card">
+          <div className="report-banner-main">
+            <span className="report-pill-badge">
+              <MapPin size={14} aria-hidden="true" />
+              {district}, {city} · Pilot Bölge Raporu
+            </span>
+            <h3>{name}</h3>
+            <p>{tagline}</p>
+          </div>
+
+          <div className="report-banner-stats">
+            <div className="banner-stat-box">
+              <span className="banner-stat-label">Genel Puan</span>
+              <strong className="banner-stat-number">
+                {overallScore !== null ? overallScore : '—'}
+                <small>/100</small>
+              </strong>
+            </div>
+            <div className="banner-stat-divider" aria-hidden="true" />
+            <dl className="banner-meta-list">
+              <div>
+                <dt>Ortalama Kira:</dt>
+                <dd>{formatCurrency(rent_analysis?.average_rent_tl)}</dd>
+              </div>
+              <div>
+                <dt>Sismik Tehlike:</dt>
+                <dd>{disaster_risk?.risk_level || '—'} ({disaster_risk?.pga_value_g ?? '—'}g)</dd>
+              </div>
+              <div>
+                <dt>Kampüs Mesafesi:</dt>
+                <dd>{transport_analysis?.distance_to_campus_km ?? '—'} km</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        {/* 5 Category Score Cards */}
+        <div className="score-cards-grid" aria-label="Kategori bazlı puan kartları">
+          <ScoreCard
+            title="Maliyet"
+            score={scores?.cost_affordability}
+            subtitle={`Ort. ${formatCurrency(rent_analysis?.average_rent_tl)} · ${rent_analysis?.trend_6m || ''}`}
+            icon={Wallet}
+            testId="card-cost_affordability"
+          />
+          <ScoreCard
+            title="Sosyal yaşam"
+            score={socialScore}
+            subtitle={
+              socialScore !== null
+                ? 'Mahalle yaşamı ve sosyal olanaklar'
+                : `${community_comments.length} mahalle yorumu mevcut · Sayısal puan backend verisinde henüz tanımlı değil`
+            }
+            icon={Users}
+            testId="card-social_life"
+          />
+          <ScoreCard
+            title="Güvenlik / haberler"
+            score={scores?.safety}
+            subtitle={`${news_items.length} yerel haber kaydı ve sokak güvenliği bağlamı`}
+            icon={ShieldCheck}
+            testId="card-safety"
+          />
+          <ScoreCard
+            title="Afet"
+            score={scores?.disaster_resilience}
+            subtitle={`PGA: ${disaster_risk?.pga_value_g ?? '—'}g · ${disaster_risk?.soil_class || ''}`}
+            icon={Activity}
+            testId="card-disaster_resilience"
+          />
+          <ScoreCard
+            title="Ulaşım"
+            score={scores?.transportation}
+            subtitle={`${transport_analysis?.bus_frequency_min ?? '—'} dk sefer aralığı · Kampüs ${transport_analysis?.distance_to_campus_km ?? '—'} km`}
+            icon={Bus}
+            testId="card-transportation"
+          />
+        </div>
+
+        {/* AI Synthesis & Pros / Cons */}
+        <div className="report-synthesis-card">
+          <div className="synthesis-header">
+            <div className="synthesis-title-group">
+              <span className="synthesis-icon" aria-hidden="true">
+                <Sparkles size={18} />
+              </span>
+              <div>
+                <h3>Mahalle Yaşam Sentezi ve Değerlendirme</h3>
+                <p>{ai_report?.generated_by || 'MahallEN Rapor Sentezi'}</p>
+              </div>
+            </div>
+
+            {onRefreshAi && (
+              <button
+                type="button"
+                onClick={onRefreshAi}
+                disabled={refreshing}
+                className="refresh-report-btn"
+              >
+                <RefreshCw size={14} className={refreshing ? 'spin-icon' : ''} aria-hidden="true" />
+                <span>{refreshing ? 'Yenileniyor…' : 'Raporu yenile'}</span>
+              </button>
+            )}
+          </div>
+
+          <p className="synthesis-summary">{ai_report?.executive_summary}</p>
+
+          <div className="pros-cons-grid">
+            <div className="pros-box">
+              <h4>
+                <CheckCircle2 size={16} aria-hidden="true" />
+                <span>Öne Çıkan Avantajlar (Artılar)</span>
+              </h4>
+              <ul>
+                {(ai_report?.pros || []).map((pro, idx) => (
+                  <li key={idx}>{pro}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="cons-box">
+              <h4>
+                <AlertTriangle size={16} aria-hidden="true" />
+                <span>Dikkat Edilmesi Gerekenler (Eksiler)</span>
+              </h4>
+              <ul>
+                {(ai_report?.cons || []).map((con, idx) => (
+                  <li key={idx}>{con}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Suitability by User Profile (No purple!) */}
+        <div className="suitability-cards-grid" aria-label="Yaşam profiline göre uygunluk">
+          {profileRows.map((prof) => {
+            const Icon = prof.icon;
+            return (
+              <article key={prof.key} className="suitability-card">
+                <div className="suitability-head">
+                  <div className="suitability-title">
+                    <Icon size={18} aria-hidden="true" />
+                    <h4>{prof.label} Profili</h4>
+                  </div>
+                  <strong className="suitability-score">
+                    {prof.score !== null ? `${prof.score}/100` : '—'}
+                  </strong>
+                </div>
+
+                {prof.score !== null ? (
+                  <div
+                    className="suitability-track"
+                    role="progressbar"
+                    aria-label={`${prof.label} uygunluk puanı`}
+                    aria-valuenow={prof.score}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                  >
+                    <div
+                      className={`suitability-fill ${prof.toneClass}`}
+                      style={{ width: `${prof.score}%` }}
+                    />
+                  </div>
+                ) : (
+                  <div className="suitability-track is-missing" aria-hidden="true" />
+                )}
+
+                <p className="suitability-verdict">{prof.verdict}</p>
+              </article>
+            );
+          })}
+        </div>
+
+        {/* Domain Breakdown: Rent, Transport & Disaster Risk */}
+        <div className="domain-cards-grid">
+          <article className="domain-card">
+            <h4 className="domain-card-title">
+              <Wallet size={17} aria-hidden="true" />
+              <span>Kira ve Konut Piyasası</span>
+            </h4>
+            <dl className="domain-metrics-list">
+              <div>
+                <dt>Ortalama Aylık Kira</dt>
+                <dd>{formatCurrency(rent_analysis?.average_rent_tl)}</dd>
+              </div>
+              <div>
+                <dt>Tipik Kira Aralığı</dt>
+                <dd>{rent_analysis?.rent_range_tl || '—'}</dd>
+              </div>
+              <div>
+                <dt>6 Aylık Eğilim</dt>
+                <dd className="rust-accent">{rent_analysis?.trend_6m || '—'}</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article className="domain-card">
+            <h4 className="domain-card-title">
+              <Bus size={17} aria-hidden="true" />
+              <span>Ulaşım ve Hareketlilik</span>
+            </h4>
+            <dl className="domain-metrics-list compact">
+              <div>
+                <dt>Otobüs Sefer Sıklığı</dt>
+                <dd>Yaklaşık {transport_analysis?.bus_frequency_min ?? '—'} dk</dd>
+              </div>
+              <div>
+                <dt>Kampüs / Merkez Mesafesi</dt>
+                <dd>
+                  {transport_analysis?.distance_to_campus_km ?? '—'} km / {transport_analysis?.distance_to_center_km ?? '—'} km
+                </dd>
+              </div>
+            </dl>
+            <ul className="domain-highlights-list">
+              {(transport_analysis?.highlights || []).map((h, i) => (
+                <li key={i}>{h}</li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="domain-card">
+            <h4 className="domain-card-title">
+              <Activity size={17} aria-hidden="true" />
+              <span>Deprem ve Zemin Göstergeleri</span>
+            </h4>
+            <dl className="domain-metrics-list">
+              <div>
+                <dt>Tehlike Düzeyi</dt>
+                <dd className="rust-accent">{disaster_risk?.risk_level || '—'}</dd>
+              </div>
+              <div>
+                <dt>En Büyük Yer İvmesi (PGA)</dt>
+                <dd>{disaster_risk?.pga_value_g ?? '—'} g</dd>
+              </div>
+              <div>
+                <dt>Zemin Sınıfı</dt>
+                <dd>{disaster_risk?.soil_class || '—'}</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+
+        {/* Local News & Community Reviews */}
+        <div className="evidence-cards-grid">
+          <article className="evidence-card">
+            <h4 className="domain-card-title">
+              <Newspaper size={17} aria-hidden="true" />
+              <span>Yerel Haberler ve Olay Kayıtları</span>
+            </h4>
+            <div className="evidence-list">
+              {news_items.length > 0 ? (
+                news_items.map((item, idx) => {
+                  const badge = getSentimentLabel(item.sentiment);
+                  return (
+                    <div key={idx} className="evidence-item">
+                      <div className="evidence-item-top">
+                        <strong>{item.title}</strong>
+                        <span className={`sentiment-badge ${badge.className}`}>{badge.text}</span>
+                      </div>
+                      <p>{item.summary}</p>
+                      <small>
+                        Kaynak: {item.source} · {item.date}
+                      </small>
+                    </div>
+                  );
+                })
+              ) : (
+                <p className="empty-subtext">Bu mahalle için kayıtlı yerel haber örneği bulunmuyor.</p>
+              )}
+            </div>
+          </article>
+
+          <article className="evidence-card">
+            <h4 className="domain-card-title">
+              <MessageSquareQuote size={17} aria-hidden="true" />
+              <span>Mahalle Sakinleri ve Öğrenci Yorumları</span>
+            </h4>
+            <div className="evidence-list">
+              {community_comments.length > 0 ? (
+                community_comments.map((c, idx) => {
+                  const rating = Math.max(0, Math.min(5, Number(c.rating) || 0));
+                  return (
+                    <div key={idx} className="evidence-item">
+                      <div className="evidence-item-top">
+                        <strong>{c.author_profile}</strong>
+                        <span className="rating-stars" aria-label={`5 üzerinden ${rating} yıldız`}>
+                          {'★'.repeat(rating)}
+                          {'☆'.repeat(5 - rating)}
+                        </span>
+                      </div>
+                      <p className="comment-quote">“{c.comment}”</p>
+                      <small>Platform: {c.platform}</small>
+                    </div>
+                  );
+                })
+              ) : (
+                <p className="empty-subtext">Bu mahalle için kayıtlı yorum bulunmuyor.</p>
+              )}
+            </div>
+          </article>
+        </div>
+
+        {/* Transparency, Sources & Methodology Footer */}
+        <div className="methodology-footer-card">
+          <div className="methodology-head">
+            <Database size={18} aria-hidden="true" />
+            <h4>Veri Kaynakları ve Puanlama Yöntemi</h4>
+          </div>
+
+          {data_sources.length > 0 && (
+            <div className="sources-chip-list">
+              {data_sources.map((src, i) => (
+                <span key={i} className="source-chip">
+                  {src}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <details className="method-details">
+            <summary>Bu puanlar nasıl hesaplandı ve veri kapsamı nedir?</summary>
+            <p>
+              {scoring_methodology?.note ||
+                'Kategori puanları 0 ile 100 arasında normalize edilmiştir. Backend üzerinde sayısal verisi bulunmayan kategoriler sıfır puan olarak değerlendirilmez.'}
+            </p>
+            {ai_report?.disclaimer && <p>{ai_report.disclaimer}</p>}
+          </details>
+        </div>
       </div>
     </div>
   );

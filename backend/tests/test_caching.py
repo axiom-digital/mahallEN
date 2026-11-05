@@ -1,4 +1,6 @@
+import json
 from datetime import datetime, timedelta, timezone
+from types import SimpleNamespace
 from unittest.mock import Mock
 import pytest
 
@@ -169,3 +171,71 @@ def test_report_cache_disabled_flag(client, monkeypatch):
     res2 = client.get("/api/v1/neighborhoods/orhaniye/report")
     assert res2.status_code == 200
     assert res2.headers.get("X-Cache") == "MISS"
+
+
+@pytest.mark.parametrize("provider_failure", [TimeoutError(), '{"scores": {"safety": 100}}'])
+def test_kotekli_gemini_refresh_cache_lifecycle(client, monkeypatch, provider_failure):
+    monkeypatch.setattr(settings, "AI_REFRESH_TOKEN", "k" * 32)
+    monkeypatch.setattr(settings, "GEMINI_API_KEY", "dummy-key")
+    monkeypatch.setattr(settings, "GEMINI_MODEL", "test-model")
+    narrative = {
+        "executive_summary": "Pilot gözlemler toplu taşıma bağlantılarını gösteriyor.",
+        "pros": ["Kampüs bağlantısı olan hat adayları var."],
+        "cons": ["Sefer sıklığı belirsiz."],
+    }
+    import google.generativeai as genai
+
+    failure = (
+        SimpleNamespace(text=provider_failure)
+        if isinstance(provider_failure, str) else provider_failure
+    )
+    provider = Mock(side_effect=[SimpleNamespace(text=json.dumps(narrative)), failure])
+    model = Mock(return_value=SimpleNamespace(generate_content=provider))
+    monkeypatch.setattr(genai, "configure", Mock())
+    monkeypatch.setattr(genai, "GenerativeModel", model)
+    url = "/api/v1/neighborhoods/kotekli/report"
+    refresh_url = f"{url}?refresh_ai=true"
+    headers = {"X-AI-Refresh-Token": "k" * 32}
+
+    local = client.get(url)
+    assert (local.status_code, local.headers["X-Cache"]) == (200, "MISS")
+    assert client.get(refresh_url).status_code == 403
+    provider.assert_not_called()
+
+    refresh = client.get(refresh_url, headers=headers)
+    assert (refresh.status_code, refresh.headers["X-Cache"]) == (200, "MISS")
+    updated = refresh.json()
+    original = local.json()
+    assert {key: value for key, value in updated.items() if key != "ai_report"} == {
+        key: value for key, value in original.items() if key != "ai_report"
+    }
+    assert updated["ai_report"] == {
+        **original["ai_report"],
+        **narrative,
+        "executive_summary": f"{original['tagline']}. {narrative['executive_summary']}",
+        "generated_by": "Google Gemini (test-model) - Kötekli pilot",
+    }
+    assert "tools" not in model.call_args.kwargs
+    evidence = json.loads(provider.call_args.args[0])
+    assert evidence["reference_date"] == "2026-10-28"
+    assert evidence["computed_scores"] == original["scores"]
+    assert evidence["source_links"] == original["data_sources"]
+    assert evidence["suitability"] == original["suitability"]
+    assert evidence["transport_analysis"]["bus_frequency_min"] is None
+    assert evidence["rent_listings"][0]["sources"]
+    assert evidence["social_places"][0]["sources"]
+    assert evidence["hazard_source"]["url"] in original["data_sources"]
+
+    hit = client.get(url)
+    assert (hit.status_code, hit.headers["X-Cache"], hit.headers["X-Cache-Hits"]) == (200, "HIT", "1")
+    assert hit.json() == updated
+    assert provider.call_count == 1
+
+    client.app.state.ai_refresh_not_before = 0
+    failed = client.get(refresh_url, headers=headers)
+    assert failed.status_code == 502
+    assert "cache was not changed" in failed.json()["detail"]
+    preserved = client.get(url)
+    assert (preserved.headers["X-Cache"], preserved.headers["X-Cache-Hits"]) == ("HIT", "2")
+    assert preserved.json() == updated
+    assert provider.call_count == 2

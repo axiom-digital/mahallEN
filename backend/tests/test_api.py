@@ -121,7 +121,7 @@ def _live_content():
 
 def test_live_refresh_disabled_by_default(client, monkeypatch):
     provider = Mock()
-    monkeypatch.setattr(ai_service, "_generate_live_content", provider)
+    monkeypatch.setattr(ai_service, "_request_gemini", provider)
     assert client.get("/api/v1/neighborhoods/kotekli/report?refresh_ai=true").status_code == 403
     provider.assert_not_called()
 
@@ -130,7 +130,7 @@ def test_live_refresh_disabled_by_default(client, monkeypatch):
 def test_live_refresh_requires_operator_secret(client, monkeypatch, token):
     _configure_live(monkeypatch)
     provider = Mock()
-    monkeypatch.setattr(ai_service, "_generate_live_content", provider)
+    monkeypatch.setattr(ai_service, "_request_gemini", provider)
     headers = {} if token is None else {"X-AI-Refresh-Token": token}
     assert client.get(
         "/api/v1/neighborhoods/kotekli/report?refresh_ai=true", headers=headers
@@ -178,17 +178,6 @@ def test_provider_failure_falls_back(client, monkeypatch):
     )
     assert response.status_code == 200
     assert "Demo" in response.json()["ai_report"]["generated_by"]
-
-
-def test_kotekli_live_refresh_cannot_replace_pilot_with_demo(client, monkeypatch):
-    _configure_live(monkeypatch)
-    provider = Mock()
-    monkeypatch.setattr(ai_service, "_generate_live_content", provider)
-    assert client.get(
-        "/api/v1/neighborhoods/kotekli/report?refresh_ai=true",
-        headers={"X-AI-Refresh-Token": "t" * 32},
-    ).status_code == 409
-    provider.assert_not_called()
 
 
 def test_read_with_missing_summary_never_calls_provider(client, monkeypatch):

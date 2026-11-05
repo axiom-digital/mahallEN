@@ -1,3 +1,5 @@
+from contextlib import nullcontext
+import logging
 from typing import List, Literal, Optional
 from hmac import compare_digest
 from math import ceil
@@ -15,7 +17,7 @@ from app.schemas.neighborhood import (
     NeighborhoodSummarySchema,
     NeighborhoodFullReportSchema,
 )
-from app.services.ai_service import generate_neighborhood_ai_report
+from app.services.ai_service import generate_kotekli_ai_report, generate_neighborhood_ai_report
 from app.services.cache_service import (
     get_cached_report,
     set_cached_report,
@@ -24,6 +26,7 @@ from app.services.cache_service import (
 from app.services.kotekli_report import build_kotekli_report, load_kotekli_pilot
 from app.services.scoring_service import get_scoring_methodology
 
+logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/neighborhoods", tags=["Neighborhoods & AI Reports"])
 refresh_token_header = APIKeyHeader(name="X-AI-Refresh-Token", auto_error=False)
 
@@ -95,18 +98,8 @@ def get_neighborhood_report(
         )
 
     pilot = load_kotekli_pilot() if neighborhood.slug == "kotekli" else None
-    if pilot and refresh_ai:
-        raise HTTPException(status_code=409, detail="Live synthesis is unavailable for the Kötekli pilot report.")
-
-    cache_version = pilot[1] if pilot else None
-    # Kötekli must bypass any cached M1 demo report or older pilot snapshot.
-    if not refresh_ai and settings.REPORT_CACHE_ENABLED:
-        cached_result = get_cached_report(db, neighborhood.slug, model_version=cache_version)
-        if cached_result is not None:
-            cached_data, hit_count = cached_result
-            response.headers["X-Cache"] = "HIT"
-            response.headers["X-Cache-Hits"] = str(hit_count)
-            return cached_data
+    if pilot and refresh_ai and not settings.REPORT_CACHE_ENABLED:
+        raise HTTPException(status_code=503, detail="Kötekli refresh requires the report cache.")
 
     if refresh_ai:
         with request.app.state.ai_refresh_lock:
@@ -120,24 +113,52 @@ def get_neighborhood_report(
                 )
             request.app.state.ai_refresh_not_before = now + 60
 
-    report_payload = (
-        build_kotekli_report(neighborhood.id, pilot[0])
-        if pilot else _build_demo_report(neighborhood, force_live_llm=refresh_ai)
-    )
+    refreshed_report = None
+    if pilot and refresh_ai:
+        refreshed_report = build_kotekli_report(neighborhood.id, pilot[0])
+        try:
+            refreshed_report["ai_report"] = generate_kotekli_ai_report(pilot[0], refreshed_report)
+        except Exception:
+            # Provider errors can contain credentials or the evidence prompt.
+            logger.warning("Gemini failed to generate a valid Kötekli report.")
+            raise HTTPException(
+                status_code=502,
+                detail="Gemini could not generate a valid Kötekli report. The cache was not changed.",
+            ) from None
 
-    if settings.REPORT_CACHE_ENABLED:
-        model_version = cache_version or report_payload["ai_report"]["generated_by"]
-        set_cached_report(
-            db,
-            neighborhood.slug,
-            report_payload,
-            ttl_seconds=settings.REPORT_CACHE_TTL_SECONDS,
-            model_version=model_version,
-        )
+    # Keep a local cache fill from racing a completed Gemini refresh in this process.
+    cache_lock = request.app.state.ai_refresh_lock if pilot else nullcontext()
+    with cache_lock:
+        cache_version = pilot[1] if pilot else None
+        # Kötekli must bypass any cached M1 demo report or older pilot snapshot.
+        if not refresh_ai and settings.REPORT_CACHE_ENABLED:
+            cached_result = get_cached_report(db, neighborhood.slug, model_version=cache_version)
+            if cached_result is not None:
+                cached_data, hit_count = cached_result
+                response.headers["X-Cache"] = "HIT"
+                response.headers["X-Cache-Hits"] = str(hit_count)
+                return cached_data
 
-    response.headers["X-Cache"] = "MISS"
-    response.headers["X-Cache-Hits"] = "0"
-    return report_payload
+        report_payload = refreshed_report
+        if report_payload is None:
+            report_payload = (
+                build_kotekli_report(neighborhood.id, pilot[0])
+                if pilot else _build_demo_report(neighborhood, force_live_llm=refresh_ai)
+            )
+
+        if settings.REPORT_CACHE_ENABLED:
+            model_version = cache_version or report_payload["ai_report"]["generated_by"]
+            set_cached_report(
+                db,
+                neighborhood.slug,
+                report_payload,
+                ttl_seconds=settings.REPORT_CACHE_TTL_SECONDS,
+                model_version=model_version,
+            )
+
+        response.headers["X-Cache"] = "MISS"
+        response.headers["X-Cache-Hits"] = "0"
+        return report_payload
 
 
 def _build_demo_report(neighborhood: Neighborhood, force_live_llm: bool) -> dict:

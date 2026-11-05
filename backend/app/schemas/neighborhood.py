@@ -61,17 +61,17 @@ ReportBullet = Annotated[
 ]
 
 
-class AIReportContentSchema(BaseModel):
+class ReportNarrativeSchema(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     executive_summary: ReportText
     pros: List[ReportBullet] = Field(max_length=6)
     cons: List[ReportBullet] = Field(max_length=6)
-    student_verdict: ReportText
-    family_verdict: ReportText
-    professional_verdict: ReportText
 
-    @field_validator("executive_summary", "pros", "cons", "student_verdict", "family_verdict", "professional_verdict")
+    @field_validator(
+        "executive_summary", "pros", "cons", "student_verdict", "family_verdict",
+        "professional_verdict", check_fields=False,
+    )
     @classmethod
     def plain_text_only(cls, value):
         texts = value if isinstance(value, list) else [value]
@@ -81,6 +81,12 @@ class AIReportContentSchema(BaseModel):
             ):
                 raise ValueError("AI report must contain plain text")
         return value
+
+
+class AIReportContentSchema(ReportNarrativeSchema):
+    student_verdict: ReportText
+    family_verdict: ReportText
+    professional_verdict: ReportText
 
 
 class AIReportSynthesisSchema(AIReportContentSchema):

@@ -29,13 +29,29 @@ def test_report_caching_lifecycle(client):
     assert res2.headers.get("X-Cache-Hits") == "1"
     data2 = res2.json()
     assert data2["slug"] == "kotekli"
-    assert data2["ai_report"] == data1["ai_report"]
+    assert data2 == data1
 
     # 3. Third call: Cache HIT with incremented count
     res3 = client.get("/api/v1/neighborhoods/kotekli/report")
     assert res3.status_code == 200
     assert res3.headers.get("X-Cache") == "HIT"
     assert res3.headers.get("X-Cache-Hits") == "2"
+
+
+def test_kotekli_ignores_existing_demo_cache(client):
+    with client.app.state.session_factory() as db:
+        db.add(ReportCache(
+            slug="kotekli",
+            report_data={"slug": "kotekli", "demo": True},
+            expires_at=datetime.now(timezone.utc) + timedelta(hours=1),
+        ))
+        db.commit()
+
+    response = client.get("/api/v1/neighborhoods/kotekli/report")
+    assert response.status_code == 200
+    assert response.headers["X-Cache"] == "MISS"
+    assert response.json()["ai_report"]["generated_by"] == "MahallEN Kötekli Pilot Sentezi"
+    assert client.get("/api/v1/neighborhoods/kotekli/report").headers["X-Cache"] == "HIT"
 
 
 def test_report_cache_expiration(client):

@@ -8,7 +8,7 @@ class NewsItemSchema(BaseModel):
     title: str
     source: str
     date: str
-    sentiment: str = Field(description="positive | neutral | negative")
+    sentiment: str | None = Field(description="positive | neutral | negative")
     summary: str
 
 
@@ -20,36 +20,37 @@ class CommunityCommentSchema(BaseModel):
 
 
 class CategoryScoresSchema(BaseModel):
-    overall_livability: int = Field(ge=0, le=100)
-    safety: int = Field(ge=0, le=100)
-    transportation: int = Field(ge=0, le=100)
-    cost_affordability: int = Field(ge=0, le=100)
-    disaster_resilience: int = Field(ge=0, le=100)
+    overall_livability: int | None = Field(ge=0, le=100)
+    safety: int | None = Field(ge=0, le=100)
+    transportation: int | None = Field(ge=0, le=100)
+    cost_affordability: int | None = Field(ge=0, le=100)
+    disaster_resilience: int | None = Field(ge=0, le=100)
+    social_life: int | None = Field(default=None, ge=0, le=100)
 
 
 class SuitabilitySchema(BaseModel):
-    students: int = Field(ge=0, le=100)
-    families: int = Field(ge=0, le=100)
-    professionals: int = Field(ge=0, le=100)
+    students: int | None = Field(ge=0, le=100)
+    families: int | None = Field(ge=0, le=100)
+    professionals: int | None = Field(ge=0, le=100)
 
 
 class RentAnalysisSchema(BaseModel):
-    average_rent_tl: int
-    rent_range_tl: str
-    trend_6m: str
+    average_rent_tl: int | None
+    rent_range_tl: str | None
+    trend_6m: str | None
 
 
 class TransportAnalysisSchema(BaseModel):
-    bus_frequency_min: int
-    distance_to_campus_km: float
-    distance_to_center_km: float
+    bus_frequency_min: int | None
+    distance_to_campus_km: float | None
+    distance_to_center_km: float | None
     highlights: List[str]
 
 
 class DisasterRiskSchema(BaseModel):
-    risk_level: str
-    pga_value_g: float
-    soil_class: str
+    risk_level: str | None
+    pga_value_g: float | None
+    soil_class: str | None
 
 
 ReportText = Annotated[

@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_cached_report(
-    db: Session, slug: str
+    db: Session, slug: str, *, model_version: Optional[str] = None
 ) -> Optional[Tuple[Dict[str, Any], int]]:
     """
     Retrieves cached report data if present and not expired.
@@ -22,7 +22,7 @@ def get_cached_report(
         .filter(ReportCache.slug == normalized_slug)
         .first()
     )
-    if not cache_entry:
+    if not cache_entry or (model_version is not None and cache_entry.model_version != model_version):
         return None
 
     now = datetime.now(timezone.utc)

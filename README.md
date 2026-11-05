@@ -31,7 +31,7 @@ Team Axiom operates as an **Agile, self-organizing, cross-functional squad**. Ra
 
 - **Backend:** Python 3.11+, FastAPI, SQLAlchemy 2.0, Pydantic v2, persistent `ReportCache` (`X-Cache: HIT/MISS`)
 - **Database:** local SQLite by default; PostgreSQL 16 via Docker Compose. Optional SQLite fallback is restricted to explicitly enabled development use.
-- **AI / LLM Layer:** demo synthesis by default. The existing Gemini integration skeleton is disabled until an operator configures a supported model, API key and refresh secret. Versioned research prompts and the `google-genai` Search grounding client are in `backend/scripts/grounding_client.py` (#9); persistent report caching is in `backend/app/services/cache_service.py` (#11).
+- **AI / LLM Layer:** local pilot synthesis for Kötekli and demo synthesis for the other neighborhoods by default. The existing Gemini integration skeleton is disabled until an operator configures a supported model, API key and refresh secret. Versioned research prompts and the `google-genai` Search grounding client are in `backend/scripts/grounding_client.py` (#9); persistent report caching is in `backend/app/services/cache_service.py` (#11).
 - **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons (template UI & 0–100 horizontal score bar charts #10)
 - **Testing:** Pytest (55 tests) & FastAPI `TestClient`, Node ESM scoring tests (`frontend/scripts/test-scoring.mjs`)
 
@@ -83,8 +83,10 @@ Compose reads the root `.env`; local Python development reads `backend/.env`. Da
 
 ### Existing AI endpoint safeguards
 
-Ordinary report reads and the UI's **Refresh report** button only reload demo synthesis. They never initiate a paid/provider call, including when a seed summary is missing.
+Ordinary report reads and the UI's **Refresh report** button use the local report pipeline without a provider call. The Kötekli endpoint uses the [saved pilot snapshot](data/pilot/kotekli.ui.v0.2.json) for its evidence and experimental category scores. The rent score uses the snapshot's 2+1 and 30,000 TL reference. Overall and profile scores require housing preferences and are left empty on this endpoint. Neighborhood lists and rankings still use the M1 seed data.
 
-The optional `?refresh_ai=true` path is operator-only: configure `GEMINI_API_KEY`, a supported `GEMINI_MODEL`, and an `AI_REFRESH_TOKEN` of at least 32 random characters on the backend, then send that secret in `X-AI-Refresh-Token`. Never place either secret in frontend code or `VITE_*` variables. The endpoint admits at most one live attempt per 60 seconds across neighborhoods **per API process**; failed attempts also consume that interval. Keep the current single-process/local setup; shared limiting must precede multi-worker deployment. Invalid, oversized, HTML-containing or unavailable model output returns the demo fallback.
+The Kötekli report is assembled on a cache miss and the saved report is served on subsequent hits. Its cache version includes the pilot snapshot hash, so pre-existing demo entries are rebuilt. Kötekli currently supports local synthesis only.
+
+The optional `?refresh_ai=true` path is operator-only: configure `GEMINI_API_KEY`, a supported `GEMINI_MODEL`, and an `AI_REFRESH_TOKEN` of at least 32 random characters on the backend, then send that secret in `X-AI-Refresh-Token`. Never place either secret in frontend code or `VITE_*` variables. The endpoint admits at most one live attempt per 60 seconds across neighborhoods **per API process**; failed attempts also consume that interval. Keep the current single-process/local setup; shared limiting must precede multi-worker deployment. For the other neighborhoods, invalid, oversized, HTML-containing or unavailable model output returns the demo fallback.
 
 The explicit Gemini Search research client, versioned prompts and source acceptance flow are documented in [LLM Integration](docs/LLM_INTEGRATION.md). This separate #9 module does not replace the M1 demo report endpoint. Persistent report caching (`ReportCache`, TTL, hit counter, and operator-only `DELETE /api/v1/neighborhoods/{slug}/cache`) is implemented (#11); full verification and remaining integration items are recorded in [Implementation Verification (#24)](docs/IMPLEMENTATION_VERIFICATION.md).

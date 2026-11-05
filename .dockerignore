@@ -1,0 +1,11 @@
+**
+!backend/
+!backend/Dockerfile
+!backend/requirements.txt
+!backend/app/
+!backend/app/**
+backend/app/**/__pycache__/
+backend/app/**/*.pyc
+!data/
+!data/pilot/
+!data/pilot/kotekli.ui.v0.2.json

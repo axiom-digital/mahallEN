@@ -21,6 +21,7 @@ from app.services.cache_service import (
     set_cached_report,
     invalidate_cached_report,
 )
+from app.services.kotekli_report import build_kotekli_report, load_kotekli_pilot
 from app.services.scoring_service import get_scoring_methodology
 
 router = APIRouter(prefix="/neighborhoods", tags=["Neighborhoods & AI Reports"])
@@ -74,7 +75,7 @@ def get_neighborhood_report(
     refresh_token: Optional[str] = Security(refresh_token_header),
     db: Session = Depends(get_db),
 ):
-    """Return a pilot demo report; cached reports served with X-Cache: HIT; live regeneration requires operator authorization."""
+    """Return a pilot report and indicate whether it was served from cache."""
     if refresh_ai:
         expected_token = settings.AI_REFRESH_TOKEN
         if not expected_token or len(expected_token) < 32:
@@ -93,9 +94,14 @@ def get_neighborhood_report(
             detail=f"Neighborhood '{slug}' not found in Muğla pilot dataset.",
         )
 
-    # Cache hit check (persistent cache item #11)
+    pilot = load_kotekli_pilot() if neighborhood.slug == "kotekli" else None
+    if pilot and refresh_ai:
+        raise HTTPException(status_code=409, detail="Live synthesis is unavailable for the Kötekli pilot report.")
+
+    cache_version = pilot[1] if pilot else None
+    # Kötekli must bypass any cached M1 demo report or older pilot snapshot.
     if not refresh_ai and settings.REPORT_CACHE_ENABLED:
-        cached_result = get_cached_report(db, neighborhood.slug)
+        cached_result = get_cached_report(db, neighborhood.slug, model_version=cache_version)
         if cached_result is not None:
             cached_data, hit_count = cached_result
             response.headers["X-Cache"] = "HIT"
@@ -114,11 +120,32 @@ def get_neighborhood_report(
                 )
             request.app.state.ai_refresh_not_before = now + 60
 
-    ai_report = generate_neighborhood_ai_report(
-        neighborhood, force_live_llm=refresh_ai
+    report_payload = (
+        build_kotekli_report(neighborhood.id, pilot[0])
+        if pilot else _build_demo_report(neighborhood, force_live_llm=refresh_ai)
     )
 
-    report_payload = {
+    if settings.REPORT_CACHE_ENABLED:
+        model_version = cache_version or report_payload["ai_report"]["generated_by"]
+        set_cached_report(
+            db,
+            neighborhood.slug,
+            report_payload,
+            ttl_seconds=settings.REPORT_CACHE_TTL_SECONDS,
+            model_version=model_version,
+        )
+
+    response.headers["X-Cache"] = "MISS"
+    response.headers["X-Cache-Hits"] = "0"
+    return report_payload
+
+
+def _build_demo_report(neighborhood: Neighborhood, force_live_llm: bool) -> dict:
+    ai_report = generate_neighborhood_ai_report(
+        neighborhood, force_live_llm=force_live_llm
+    )
+
+    return {
         "id": neighborhood.id,
         "slug": neighborhood.slug,
         "name": neighborhood.name,
@@ -163,20 +190,6 @@ def get_neighborhood_report(
         "ai_report": ai_report,
         "scoring_methodology": get_scoring_methodology(),
     }
-
-    if settings.REPORT_CACHE_ENABLED:
-        model_version = ai_report.get("generated_by", "demo-synthesis")
-        set_cached_report(
-            db,
-            neighborhood.slug,
-            report_payload,
-            ttl_seconds=settings.REPORT_CACHE_TTL_SECONDS,
-            model_version=model_version,
-        )
-
-    response.headers["X-Cache"] = "MISS"
-    response.headers["X-Cache-Hits"] = "0"
-    return report_payload
 
 
 @router.delete("/{slug}/cache", tags=["Neighborhoods & AI Reports"])

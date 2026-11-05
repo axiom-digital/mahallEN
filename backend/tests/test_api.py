@@ -39,9 +39,24 @@ def test_get_kotekli_full_report(client):
     assert res.status_code == 200
     report = res.json()
     assert report["slug"] == "kotekli"
-    assert report["suitability"]["students"] >= 90
-    assert report["ai_report"]["executive_summary"]
-    assert "demo" in report["ai_report"]["disclaimer"].lower()
+    pilot = json.loads(
+        (Path(__file__).resolve().parents[2] / "data/pilot/kotekli.ui.v0.2.json").read_text()
+    )
+    assert report["scores"] == {
+        "overall_livability": None,
+        "safety": pilot["scores"]["news"]["value"],
+        "transportation": pilot["scores"]["transport"]["value"],
+        "cost_affordability": pilot["scores"]["rent"]["value"],
+        "disaster_resilience": pilot["scores"]["hazard"]["value"],
+        "social_life": pilot["scores"]["social"]["value"],
+    }
+    assert report["suitability"] == {"students": None, "families": None, "professionals": None}
+    assert report["ai_report"]["generated_by"] == "MahallEN Kötekli Pilot Sentezi"
+    assert report["disaster_risk"]["pga_value_g"] == pilot["hazard"]["value"]
+    assert report["disaster_risk"]["soil_class"] is None
+    assert report["transport_analysis"]["bus_frequency_min"] is None
+    assert report["rent_analysis"]["average_rent_tl"] is None
+    assert report["community_comments"] == []
 
 
 @pytest.mark.parametrize("query", ["Kötekli", "KÖTEKLİ", "KOTEKLI"])
@@ -128,7 +143,7 @@ def test_live_refresh_has_global_cooldown(client, monkeypatch):
     provider = Mock(return_value=json.dumps(_live_content()))
     monkeypatch.setattr(ai_service, "_generate_live_content", provider)
     headers = {"X-AI-Refresh-Token": "t" * 32}
-    first = client.get("/api/v1/neighborhoods/kotekli/report?refresh_ai=true", headers=headers)
+    first = client.get("/api/v1/neighborhoods/emirbeyazit/report?refresh_ai=true", headers=headers)
     second = client.get("/api/v1/neighborhoods/akyaka/report?refresh_ai=true", headers=headers)
     assert first.status_code == 200
     assert first.json()["ai_report"]["executive_summary"] == _live_content()["executive_summary"]
@@ -147,7 +162,7 @@ def test_invalid_live_output_falls_back_without_500(client, monkeypatch, raw):
     _configure_live(monkeypatch)
     monkeypatch.setattr(ai_service, "_generate_live_content", Mock(return_value=raw))
     response = client.get(
-        "/api/v1/neighborhoods/kotekli/report?refresh_ai=true",
+        "/api/v1/neighborhoods/emirbeyazit/report?refresh_ai=true",
         headers={"X-AI-Refresh-Token": "t" * 32},
     )
     assert response.status_code == 200
@@ -158,11 +173,22 @@ def test_provider_failure_falls_back(client, monkeypatch):
     _configure_live(monkeypatch)
     monkeypatch.setattr(ai_service, "_generate_live_content", Mock(side_effect=TimeoutError))
     response = client.get(
-        "/api/v1/neighborhoods/kotekli/report?refresh_ai=true",
+        "/api/v1/neighborhoods/emirbeyazit/report?refresh_ai=true",
         headers={"X-AI-Refresh-Token": "t" * 32},
     )
     assert response.status_code == 200
     assert "Demo" in response.json()["ai_report"]["generated_by"]
+
+
+def test_kotekli_live_refresh_cannot_replace_pilot_with_demo(client, monkeypatch):
+    _configure_live(monkeypatch)
+    provider = Mock()
+    monkeypatch.setattr(ai_service, "_generate_live_content", provider)
+    assert client.get(
+        "/api/v1/neighborhoods/kotekli/report?refresh_ai=true",
+        headers={"X-AI-Refresh-Token": "t" * 32},
+    ).status_code == 409
+    provider.assert_not_called()
 
 
 def test_read_with_missing_summary_never_calls_provider(client, monkeypatch):
@@ -170,9 +196,9 @@ def test_read_with_missing_summary_never_calls_provider(client, monkeypatch):
     provider = Mock()
     monkeypatch.setattr(ai_service, "_generate_live_content", provider)
     with client.app.state.session_factory() as db:
-        db.query(Neighborhood).filter_by(slug="kotekli").first().ai_summary = None
+        db.query(Neighborhood).filter_by(slug="emirbeyazit").first().ai_summary = None
         db.commit()
-    assert client.get("/api/v1/neighborhoods/kotekli/report").status_code == 200
+    assert client.get("/api/v1/neighborhoods/emirbeyazit/report").status_code == 200
     provider.assert_not_called()
 
 

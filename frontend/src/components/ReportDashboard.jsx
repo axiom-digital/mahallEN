@@ -24,6 +24,7 @@ import ScoreCard, {
 } from './ScoreCard';
 
 function formatCurrency(value) {
+  if (value == null) return 'Belirtilmedi';
   const num = Number(value);
   if (!Number.isFinite(num)) return 'Belirtilmedi';
   return `${num.toLocaleString('tr-TR')} TL`;
@@ -562,9 +563,13 @@ export default function ReportDashboard({
           {data_sources.length > 0 && (
             <div className="sources-chip-list">
               {data_sources.map((src, i) => (
-                <span key={i} className="source-chip">
-                  {src}
-                </span>
+                /^https?:\/\//i.test(src) ? (
+                  <a key={i} className="source-chip" href={src} target="_blank" rel="noreferrer">
+                    {new URL(src).hostname}
+                  </a>
+                ) : (
+                  <span key={i} className="source-chip">{src}</span>
+                )
               ))}
             </div>
           )}

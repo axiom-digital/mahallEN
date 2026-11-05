@@ -1,0 +1,413 @@
+{
+  "schema_version": "2.0.0",
+  "id": "bahcelievler",
+  "geo_key": "tr/ankara/cankaya/bahcelievler",
+  "country": "Türkiye",
+  "name": "Bahçelievler",
+  "district": "Çankaya",
+  "city": "Ankara",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "bahcelievler-identity",
+    "target_id": "bahcelievler",
+    "category": "identity",
+    "evidence_quotes": [
+      "BAHÇELİEVLER MH.DÖGOL CD.ÇANKAYA/ANKARA"
+    ],
+    "text": "Ankara / Çankaya / Bahçelievler",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "ego-448"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "bahcelievler-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 39.9278078,
+    "lon": 32.8264893,
+    "label": "Bahçelievler Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 6779580,
+    "source_id": "geocode-bahcelievler",
+    "checked_at": "2026-11-05T22:18:22.254869+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20052761",
+          "target_id": "bahcelievler",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 50,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Bahçelievler Mahallesi, Çankaya , Ankara",
+            "İlan Güncelleme Tarihi 03 Kasım 2026",
+            "50.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 50000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-03",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20052761"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20052761",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20042418",
+          "target_id": "bahcelievler",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 50,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Bahçelievler Mahallesi, Çankaya , Ankara",
+            "İlan Güncelleme Tarihi 05 Kasım 2026",
+            "50.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 50000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-05",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20042418"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20042418",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20041891",
+          "target_id": "bahcelievler",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Bahçelievler Mahallesi, Çankaya , Ankara",
+            "İlan Güncelleme Tarihi 01 Kasım 2026",
+            "45.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 45000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-01",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20041891"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20041891",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "missing",
+      "score": null,
+      "observations": [],
+      "missing_reason": "Bu taramada mahalleye açıkça bağlanan ve gövdesi okunarak denetlenen uygun kayıt elde edilmedi; hizmet/olay yokluğu anlamına gelmez."
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "bahcelievler-448",
+          "target_id": "bahcelievler",
+          "category": "transportation",
+          "text": "EGO 448 Beşevler–Bahçelievler hattı, Bahçelievler Mahallesi Dögol Caddesi ve Bahriye Üçok Parkı adreslerini listeliyor.",
+          "evidence_quotes": [
+            "Hat No : 448 Hat Adı : BEŞEVLER-BAHÇELİEVLER"
+          ],
+          "code": "448",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": null,
+          "date_basis": "undated_operator_page",
+          "limitations": "Kalkış saatleri duraktan geçiş saati değildir; tek bir sefer sıklığı türetilmedi.",
+          "source_ids": [
+            "ego-448"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "bahcelievler-448",
+          "event_date": null,
+          "publication_date": null
+        },
+        {
+          "id": "bahcelievler-accessibility",
+          "target_id": "bahcelievler",
+          "category": "transportation",
+          "text": "21 Eylül 2026 tarihli haber Bahçelievler 35. Cadde–52. Sokak kesişiminde kaldırım ve erişilebilirlik şikâyetini bildiriyor; onarımın gerçekleşip gerçekleşmediği bilinmiyor.",
+          "evidence_quotes": [
+            "Ankara’nın Çankaya ilçesi Bahçelievler Mahallesi’nde",
+            "Yayınlanma: 21/09/2026",
+            "35. Cadde ile 52. Sokak"
+          ],
+          "code": null,
+          "kind": "reported_pedestrian_accessibility_issue",
+          "date": "2026-09-21",
+          "date_basis": "publication_date",
+          "limitations": "Yayıncının aktardığı şikâyet; saha ölçümü veya mahallenin tüm kaldırımlarına ilişkin sonuç değildir.",
+          "source_ids": [
+            "news-bahcelievler"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "bahcelievler-accessibility",
+          "event_date": null,
+          "publication_date": "2026-09-21"
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "bahcelievler-park",
+          "target_id": "bahcelievler",
+          "category": "social_life",
+          "location_source_id": "cankaya-identity",
+          "location_quote": "Bahçelievler Ebru Acer Yıldırım Bahriye Üçok Parkı İçi",
+          "text": "Çankaya Belediyesi Bahriye Üçok Parkı'nın yenilendiğini 20 Ağustos 2025 tarihli haberinde bildiriyor. Muhtarlık rehberi parkı Bahçelievler ile ilişkilendiriyor.",
+          "evidence_quotes": [
+            "Bahçelievler’deki Bahriye Üçok Parkı"
+          ],
+          "name": "Bahriye Üçok Parkı",
+          "type": "park",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "date": "2025-08-20",
+          "date_basis": "publication_date",
+          "limitations": "Geçmiş tarihli bakım haberi bugünkü fiziksel durum garantisi değildir.",
+          "source_ids": [
+            "cankaya-park",
+            "cankaya-identity"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "bahcelievler-park",
+          "event_date": null,
+          "publication_date": "2025-08-20"
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.304,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.304,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 39.91843,
+          "longitude": 32.82574,
+          "pga_g": 0.304
+        },
+        "distance_to_grid_point_km": 1.0447,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "cankaya-identity",
+      "url": "https://www.cankaya.bel.tr/rehber/muhtarlarimiz/muhtarlarimiz",
+      "final_url": "https://www.cankaya.bel.tr/rehber/muhtarlarimiz/muhtarlarimiz",
+      "publisher": "Muhtarlarımız - Muhtarlarımız - Muhtarlarımız - Çankaya Belediyesi",
+      "checked_at": "2026-11-05T22:13:52.664373+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "345b4e320076fbca7ac0c07b08a57c2bf2643723c04d8e3263bde7b2b182dcfc"
+    },
+    {
+      "id": "cankaya-park",
+      "url": "https://www.cankaya.bel.tr/haberler/bahriye-ucok-parki-yenilendi",
+      "final_url": "https://www.cankaya.bel.tr/haberler/bahriye-ucok-parki-yenilendi",
+      "publisher": "Bahriye Üçok Parkı Yenilendi - Çankaya Belediyesi",
+      "checked_at": "2026-11-05T22:14:29.901128+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "3dd009f00c82c3db821ec5dc556aa41d2b80bfbda75a98fc78a8eaa1df84cf43"
+    },
+    {
+      "id": "ego-448",
+      "url": "https://www.ego.gov.tr/hareketsaatleri?hat_no=448",
+      "final_url": "https://www.ego.gov.tr/hareketsaatleri?hat_no=448",
+      "publisher": "Hareket Saatleri",
+      "checked_at": "2026-11-05T22:13:53.184122+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "a5517948f1b4e606a7a304641e19938b8d71a9a8861c882d616ac1f7b8da1ccf"
+    },
+    {
+      "id": "emlakjet-20041891",
+      "url": "https://www.emlakjet.com/ilan/cars-dan-kiralik-yeni-bina-bahce-kati-11-daire-20041891",
+      "final_url": "https://www.emlakjet.com/ilan/cars-dan-kiralik-yeni-bina-bahce-kati-11-daire-20041891",
+      "publisher": "Bahçeli Çarşı Emlak Ankara Çankaya Bahçelievler Mahallesi Stüdyo Oda Kiralık Daire 45,000 TL #20041891 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:25.771135+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "b3a2567a54e55e0e7dd74f3c644d89faafb6546a40999174ff49ff351fb0dd47"
+    },
+    {
+      "id": "emlakjet-20042418",
+      "url": "https://www.emlakjet.com/ilan/arel-den-yeni-bina-besevler-yakini-bahce-kat-ayri-mutfakli-21-20042418",
+      "final_url": "https://www.emlakjet.com/ilan/arel-den-yeni-bina-besevler-yakini-bahce-kat-ayri-mutfakli-21-20042418",
+      "publisher": "Arel Emlak Ankara Çankaya Bahçelievler Mahallesi 2+1 Oda Kiralık Daire 50,000 TL #20042418 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:24.773767+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "69e2a00794f99a85db53e39b7ddd3118d0f8967378d0e7f572f68befe9854f31"
+    },
+    {
+      "id": "emlakjet-20052761",
+      "url": "https://www.emlakjet.com/ilan/sahibinden-beyaz-esyali-20052761",
+      "final_url": "https://www.emlakjet.com/ilan/sahibinden-beyaz-esyali-20052761",
+      "publisher": "Sahibinden Ankara Çankaya Bahçelievler Mahallesi 3+1 Oda Kiralık Daire 50,000 TL #20052761 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:23.965579+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "57221dd3cfee91dea61a073c711736236e4fc7d510b9e71a21bc53d50285406c"
+    },
+    {
+      "id": "geocode-bahcelievler",
+      "url": "https://nominatim.openstreetmap.org/search?q=Bah%C3%A7elievler%2C+%C3%87ankaya%2C+Ankara&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Bah%C3%A7elievler%2C+%C3%87ankaya%2C+Ankara&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:22.254869+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "80503509e6b0374ad9e34e2d112038778b50347a69031d75ecb70348f3f0f15e"
+    },
+    {
+      "id": "news-bahcelievler",
+      "url": "https://mansetankara.com/ozel-haber/cankayada-kaldirim-cilesi-271792h",
+      "final_url": "https://mansetankara.com/ozel-haber/cankayada-kaldirim-cilesi-271792h",
+      "publisher": "Çankaya’da kaldırım çilesi",
+      "checked_at": "2026-11-05T22:21:12.721136+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "76cf4092077241f94012c0e09fb374bfe076f55e819e4ce05f1caaa4bf199151"
+    }
+  ],
+  "excluded_observations": [],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

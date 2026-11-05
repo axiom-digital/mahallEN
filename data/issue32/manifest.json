@@ -1,0 +1,186 @@
+{
+  "schema_version": "2.0.0",
+  "reference_date": "2026-11-06",
+  "expected_pilot_count": 10,
+  "actual_pilot_count": 10,
+  "neighborhoods": [
+    {
+      "id": "kotekli",
+      "geo_key": "tr/mugla/mentese/kotekli",
+      "city": "Muğla",
+      "district": "Menteşe",
+      "file": "data/issue32/neighborhoods/kotekli.json",
+      "sha256": "a8006aca260398d95e50fd33f643a1341887912fff3a92f0fcc0c7c97c638e9a",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 1,
+        "transportation": 1,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 10
+    },
+    {
+      "id": "emirbeyazit",
+      "geo_key": "tr/mugla/mentese/emirbeyazit",
+      "city": "Muğla",
+      "district": "Menteşe",
+      "file": "data/issue32/neighborhoods/emirbeyazit.json",
+      "sha256": "80c284350568098f85b8bf705b77b2f580f88ca3f89414bead72aebd6a068c8d",
+      "observation_counts": {
+        "rent_cost": 2,
+        "safety_news": 1,
+        "transportation": 0,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 8
+    },
+    {
+      "id": "muslihittin",
+      "geo_key": "tr/mugla/mentese/muslihittin",
+      "city": "Muğla",
+      "district": "Menteşe",
+      "file": "data/issue32/neighborhoods/muslihittin.json",
+      "sha256": "d11fa525874e348fcf9fa30ec12353272b6df96112367f9d0827448954e2efed",
+      "observation_counts": {
+        "rent_cost": 2,
+        "safety_news": 1,
+        "transportation": 1,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 9
+    },
+    {
+      "id": "orhaniye",
+      "geo_key": "tr/mugla/mentese/orhaniye",
+      "city": "Muğla",
+      "district": "Menteşe",
+      "file": "data/issue32/neighborhoods/orhaniye.json",
+      "sha256": "3d316c4750e2c78a1dd960b20da9f744385e5946c62781e41f64a4d309c2c73a",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 1,
+        "transportation": 1,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 10
+    },
+    {
+      "id": "akyaka",
+      "geo_key": "tr/mugla/ula/akyaka",
+      "city": "Muğla",
+      "district": "Ula",
+      "file": "data/issue32/neighborhoods/akyaka.json",
+      "sha256": "50639f30a23de061cebb97ca7ad59359b6d7c3e902682e109f065f800cdba0ce",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 1,
+        "transportation": 1,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 10
+    },
+    {
+      "id": "caferaga",
+      "geo_key": "tr/istanbul/kadikoy/caferaga",
+      "city": "İstanbul",
+      "district": "Kadıköy",
+      "file": "data/issue32/neighborhoods/caferaga.json",
+      "sha256": "3ab473df2d8afb237a609704fd72562635cb26bd9c1011d9925a430b22cf51d6",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 0,
+        "transportation": 1,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 9
+    },
+    {
+      "id": "bahcelievler",
+      "geo_key": "tr/ankara/cankaya/bahcelievler",
+      "city": "Ankara",
+      "district": "Çankaya",
+      "file": "data/issue32/neighborhoods/bahcelievler.json",
+      "sha256": "37295cbb71311899079d7e4316f864845c8c937e8f02907850307e887cc7d2ee",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 0,
+        "transportation": 2,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 10
+    },
+    {
+      "id": "kultur",
+      "geo_key": "tr/izmir/konak/kultur",
+      "city": "İzmir",
+      "district": "Konak",
+      "file": "data/issue32/neighborhoods/kultur.json",
+      "sha256": "e2ff9ff1945cc75a2608315ddf63bd95988d27e7a8701f98b3ef16690799e2db",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 1,
+        "transportation": 0,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 9
+    },
+    {
+      "id": "yenibaglar",
+      "geo_key": "tr/eskisehir/tepebasi/yenibaglar",
+      "city": "Eskişehir",
+      "district": "Tepebaşı",
+      "file": "data/issue32/neighborhoods/yenibaglar.json",
+      "sha256": "d040ed9d4f5f07f8894478295414e8ef1eebb6b88293abc366f3b4ec2847f40d",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 0,
+        "transportation": 0,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 8
+    },
+    {
+      "id": "gorukle",
+      "geo_key": "tr/bursa/nilufer/gorukle",
+      "city": "Bursa",
+      "district": "Nilüfer",
+      "file": "data/issue32/neighborhoods/gorukle.json",
+      "sha256": "5db4b91cefcccce2855305fd02ce3536a6698f5814cc760e000e712538b96734",
+      "observation_counts": {
+        "rent_cost": 3,
+        "safety_news": 1,
+        "transportation": 1,
+        "social_life": 1,
+        "earthquake_hazard": 0
+      },
+      "source_count": 9
+    }
+  ],
+  "active_unique_source_urls": 68,
+  "active_source_urls_checked": 68,
+  "active_source_urls_http_200": 68,
+  "audit_total_urls_attempted": 208,
+  "audit_status_counts": {
+    "page_read": 139,
+    "data_read": 11,
+    "unavailable": 20,
+    "empty_or_script_only": 37,
+    "non_html_requires_review": 1
+  },
+  "scope_corrections": [
+    "Yeniköy yerine Akyaka/Ula/Muğla.",
+    "Kullanıcı onayıyla Bornova/Kültür yerine Konak/Kültür/İzmir."
+  ],
+  "missing_value_policy": "Unknown is null with a reason, never zero or borrowed from another locality.",
+  "llm_reports_generated": false,
+  "cache_prewarmed": false
+}

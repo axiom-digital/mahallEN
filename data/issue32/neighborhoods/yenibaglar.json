@@ -1,0 +1,345 @@
+{
+  "schema_version": "2.0.0",
+  "id": "yenibaglar",
+  "geo_key": "tr/eskisehir/tepebasi/yenibaglar",
+  "country": "Türkiye",
+  "name": "Yenibağlar",
+  "district": "Tepebaşı",
+  "city": "Eskişehir",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "yenibaglar-identity",
+    "target_id": "yenibaglar",
+    "category": "identity",
+    "evidence_quotes": [
+      "YENİBAĞLAR MAHALLESİ"
+    ],
+    "text": "Eskişehir / Tepebaşı / Yenibağlar",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "tepebasi-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "yenibaglar-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 39.7868994,
+    "lon": 30.5085696,
+    "label": "Yenibağlar Mahallesi, Tepebaşı, Eskişehir, İç Anadolu Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 12028266,
+    "source_id": "geocode-yenibaglar",
+    "checked_at": "2026-11-05T22:18:26.027829+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20057486",
+          "target_id": "yenibaglar",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 14,250 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+            "İlan Güncelleme Tarihi 04 Kasım 2026",
+            "14.250 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 14250,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-04",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20057486"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20057486",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20033971",
+          "target_id": "yenibaglar",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 21,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+            "İlan Güncelleme Tarihi 28 Ekim 2026",
+            "21.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 21000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-10-28",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20033971"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20033971",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20030742",
+          "target_id": "yenibaglar",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 33,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+            "İlan Güncelleme Tarihi 27 Ekim 2026",
+            "33.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 33000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-10-27",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20030742"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20030742",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "missing",
+      "score": null,
+      "observations": [],
+      "missing_reason": "Bu taramada mahalleye açıkça bağlanan ve gövdesi okunarak denetlenen uygun kayıt elde edilmedi; hizmet/olay yokluğu anlamına gelmez."
+    },
+    "transportation": {
+      "status": "missing",
+      "score": null,
+      "observations": [],
+      "missing_reason": "Bu taramada mahalleye açıkça bağlanan ve gövdesi okunarak denetlenen uygun kayıt elde edilmedi; hizmet/olay yokluğu anlamına gelmez."
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "yenibaglar-youth",
+          "target_id": "yenibaglar",
+          "category": "social_life",
+          "text": "Tepebaşı Belediyesi 29 Ekim Gençlik Merkezi'ni Yenibağlar Mahallesi Akıcı Sokak No:54 adresinde listeliyor.",
+          "evidence_quotes": [
+            "29 Ekim Gençlik Merkezi",
+            "Yenibağlar Mahallesi Akıcı Sokak No:54"
+          ],
+          "name": "29 Ekim Gençlik Merkezi",
+          "type": "community_centre",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_municipal_directory",
+          "limitations": "Güncel kontenjan, kurs takvimi ve açık olma durumu ayrıca doğrulanmadı.",
+          "source_ids": [
+            "tepebasi-youth"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "yenibaglar-youth",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.271,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.271,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 39.78353,
+          "longitude": 30.49901,
+          "pga_g": 0.271
+        },
+        "distance_to_grid_point_km": 0.8987,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-20030742",
+      "url": "https://www.emlakjet.com/ilan/mukemmel-konumda-full-esyali-31-kiralik-daire-20030742",
+      "final_url": "https://www.emlakjet.com/ilan/mukemmel-konumda-full-esyali-31-kiralik-daire-20030742",
+      "publisher": "Sahibinden Eskişehir Tepebaşı Yenibağlar Mahallesi 3+1 Oda Kiralık Daire 33,000 TL #20030742 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:33.856685+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "07e63a4c78d3c3a77d29c61b996e615d4fc105582b3ab60dc97c0afc669e441b"
+    },
+    {
+      "id": "emlakjet-20033971",
+      "url": "https://www.emlakjet.com/ilan/akademi-den-aof-yakini-esyali-abonelikleri-acik-kiralik-21-20033971",
+      "final_url": "https://www.emlakjet.com/ilan/akademi-den-aof-yakini-esyali-abonelikleri-acik-kiralik-21-20033971",
+      "publisher": "Akademi Emlak Danışmanlık Eskişehir Tepebaşı Yenibağlar Mahallesi 2+1 Oda Kiralık Daire 21,000 TL #20033971 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:32.772605+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "e369d38bd3242e3f9e74daab0f8e3a42adddf68d7691001592b68fbc0bbf7c19"
+    },
+    {
+      "id": "emlakjet-20057486",
+      "url": "https://www.emlakjet.com/ilan/yeni-baglar-mahallesinde-bakimli-11-kiralik-daire-20057486",
+      "final_url": "https://www.emlakjet.com/ilan/yeni-baglar-mahallesinde-bakimli-11-kiralik-daire-20057486",
+      "publisher": "Kri̇stal Unity Eskişehir Tepebaşı Yenibağlar Mahallesi 1+1 Oda Kiralık Daire 14,250 TL #20057486 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:31.827832+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "46422c8c9e7f1ee633d65c0ddfcae744dd4dfd31b33250db7f3876fc19eefc31"
+    },
+    {
+      "id": "geocode-yenibaglar",
+      "url": "https://nominatim.openstreetmap.org/search?q=Yeniba%C4%9Flar%2C+Tepeba%C5%9F%C4%B1%2C+Eski%C5%9Fehir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Yeniba%C4%9Flar%2C+Tepeba%C5%9F%C4%B1%2C+Eski%C5%9Fehir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:26.027829+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "39b9e36b9d20d732a4234bedf8a64e77b4a79da5d809059c44a1c9d5245ff0d8"
+    },
+    {
+      "id": "tepebasi-identity",
+      "url": "https://tepebasi.bel.tr/Muhtarlik",
+      "final_url": "https://tepebasi.bel.tr/Muhtarlik",
+      "publisher": "Eskişehir Tepebaşı Belediyesi",
+      "checked_at": "2026-11-05T22:13:02.668992+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "d867a078fe60a4b695ecf826285b131a229c52bf99c8b0c3d4fc572627e41282"
+    },
+    {
+      "id": "tepebasi-youth",
+      "url": "https://www.tepebasi.bel.tr/DışBirim/Detay/29ekimgenclikmerkezi",
+      "final_url": "https://www.tepebasi.bel.tr/D%C4%B1%C5%9FBirim/Detay/29ekimgenclikmerkezi",
+      "publisher": "Eskişehir Tepebaşı Belediyesi",
+      "checked_at": "2026-11-05T22:13:56.317682+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "3be9afdd1e0b365933ad8a66e72fad5dc43d10ddbd872576918f65f0f906deb1"
+    }
+  ],
+  "excluded_observations": [],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "schema_version": "2.0.0",
+  "id": "orhaniye",
+  "geo_key": "tr/mugla/mentese/orhaniye",
+  "country": "Türkiye",
+  "name": "Orhaniye",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "orhaniye-identity",
+    "target_id": "orhaniye",
+    "category": "identity",
+    "evidence_quotes": [
+      "Orhaniye Mahallesi"
+    ],
+    "text": "Muğla / Menteşe / Orhaniye",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "mentese-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "orhaniye-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 37.2152342,
+    "lon": 28.3683149,
+    "label": "Orhaniye Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9710638,
+    "source_id": "geocode-orhaniye",
+    "checked_at": "2026-11-05T22:18:15.209801+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-19820765",
+          "target_id": "orhaniye",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 36,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Orhaniye Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 02 Kasım 2026",
+            "36.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 36000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-02",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-19820765"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-19820765",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20036445",
+          "target_id": "orhaniye",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 38,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Orhaniye Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 29 Ekim 2026",
+            "38.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 38000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-10-29",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20036445"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20036445",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-19529247",
+          "target_id": "orhaniye",
+          "category": "rent_cost",
+          "text": "Yayıncıda 4+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Orhaniye Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 27 Ekim 2026",
+            "45.000 ₺",
+            "4+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "4+1",
+          "asking_amount_tl": 45000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-10-27",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-19529247"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-19529247",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "orhaniye-news",
+          "target_id": "orhaniye",
+          "category": "safety_news",
+          "text": "3 Temmuz 2026 tarihli haber Orhaniye'de ihbar üzerine sağlık yardımı verildiğini bildiriyor. Haberde suç işlendiği kesinleştirilmiyor.",
+          "evidence_quotes": [
+            "Muğla’nın Menteşe ilçesine bağlı Orhaniye Mahallesi Berat Sokak’ta",
+            "Yayınlanma: 03 Temmuz 2026"
+          ],
+          "event_type": "health_assistance_not_established_crime",
+          "date": "2026-07-03",
+          "date_basis": "publication_date",
+          "event_date": null,
+          "limitations": "Sağlık ayrıntıları ve kişisel tanımlayıcılar aktarılmadı; suç veya intihar varsayımı yapılmadı.",
+          "source_ids": [
+            "news-orhaniye"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "orhaniye-news",
+          "publication_date": "2026-07-03"
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "orhaniye-route-1-61",
+          "target_id": "orhaniye",
+          "category": "transportation",
+          "text": "MUTTAŞ 1-61 sayfası kalkış durağını Orhaniye Cami Durağı olarak belirtiyor.",
+          "evidence_quotes": [
+            "1-61 - Muğla (Menteşe) - Sungur",
+            "Kalkış Durağı Orhaniye Cami Durağı"
+          ],
+          "code": "1-61",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": null,
+          "date_basis": "undated_operator_page",
+          "limitations": "Sayfa güncellemesi 8 Mayıs 2025; canlı işleyiş doğrulanmadı.",
+          "source_ids": [
+            "muttas-1-61"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "orhaniye-route-1-61",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "orhaniye-park",
+          "target_id": "orhaniye",
+          "category": "social_life",
+          "text": "Belediye Kışla Parkı'nı Orhaniye satırında listeliyor.",
+          "evidence_quotes": [
+            "ORHANİYE Kışla Parkı"
+          ],
+          "name": "Kışla Parkı",
+          "type": "park",
+          "latitude": 37.213456,
+          "longitude": 28.372817,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_municipal_inventory",
+          "limitations": "Tesis kalitesi ve açık olma durumu ayrıca ölçülmedi.",
+          "source_ids": [
+            "mentese-parks"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "orhaniye-park",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.334,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.334,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 37.22046,
+          "longitude": 28.35751,
+          "pga_g": 0.334
+        },
+        "distance_to_grid_point_km": 1.1194,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-19529247",
+      "url": "https://www.emlakjet.com/ilan/merkezi-konumda-mukemmel-daire-19529247",
+      "final_url": "https://www.emlakjet.com/ilan/merkezi-konumda-mukemmel-daire-19529247",
+      "publisher": "Tunam Yapim Emlak Muğla Menteşe Orhaniye Mahallesi 4+1 Oda Kiralık Daire 45,000 TL #19529247 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:12.686328+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "47f6494d695a40167546a99de2e961f4b90e251eca18c18b36b246c547f30196"
+    },
+    {
+      "id": "emlakjet-19820765",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765",
+      "publisher": "Muğla Kampüs Emlak Muğla Menteşe Orhaniye Mahallesi 3+1 Oda Kiralık Daire 36,000 TL #19820765 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:02.817683+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "cb88a87380fc7f8ba5c5fd97023d6cd4792a0b4576f7e51ca428931527a66ef0"
+    },
+    {
+      "id": "emlakjet-20036445",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-de-sehrin-kalbinde-kiralik-21-arakat-daire-20036445",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-orhaniye-de-sehrin-kalbinde-kiralik-21-arakat-daire-20036445",
+      "publisher": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Orhaniye Mahallesi 2+1 Oda Kiralık Daire 38,000 TL #20036445 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:11.887685+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "da9557be8e5b5c244759eb93ce18cb8cbb3ac86793ac787018bd6cf97b0a9856"
+    },
+    {
+      "id": "geocode-orhaniye",
+      "url": "https://nominatim.openstreetmap.org/search?q=Orhaniye%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Orhaniye%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:15.209801+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "2c97292f0616f4d675a991ca1e47d9f72c0fb3aaa525115e0125cc0675e5944c"
+    },
+    {
+      "id": "mentese-identity",
+      "url": "https://mentese.bel.tr/cop-saatleri/",
+      "final_url": "https://mentese.bel.tr/cop-saatleri/",
+      "publisher": "Çöp Alma Saatleri – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:13:02.667057+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05"
+    },
+    {
+      "id": "mentese-parks",
+      "url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "final_url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "publisher": "Afet ve Acil Durum Toplanma Alanları – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:14:29.900540+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3"
+    },
+    {
+      "id": "muttas-1-61",
+      "url": "https://ulasim.muttas.com.tr/hat/1-61-mugla-mentese-sungur-136",
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-61-mugla-mentese-sungur-136",
+      "publisher": "1-61 - Muğla (Menteşe) - Sungur | MUTTAŞ Otobüs Sefer Saatleri",
+      "checked_at": "2026-11-05T22:13:03.659688+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "07665d9653d7f34c999640521f049b0e777adc8dce4efaf721fa614580677316"
+    },
+    {
+      "id": "news-orhaniye",
+      "url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesede-ihbar-uzerine-gidilen-evde-bir-kadin-baygin-halde-bulundu-216130h",
+      "final_url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesede-ihbar-uzerine-gidilen-evde-bir-kadin-baygin-halde-bulundu-216130h",
+      "publisher": "Menteşe’de İhbar Üzerine Gidilen Evde Bir Kadın Baygın Halde Bulundu",
+      "checked_at": "2026-11-05T22:21:14.199359+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "a01fab5390b0590683aa4e685041b72026de402f3f0311971ab14ab64e546926"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "legacy-bf817ce6ef0789",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-eaea238bd424e6",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-32ef0e0924ee94",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-fb8371cb4aa840",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ee1e24fadff773",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-e9648c5fc35157",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-e6a04ba50e39ee",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-def0c2b54ac991",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-15b7b818d34512",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-3fa67a914d5b98",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-bfd2331ec61bb8",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-d9d2609390270b",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-414ffdc036c7eb",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-0b588cd03f2b78",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/orhaniye.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    }
+  ],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "schema_version": "2.0.0",
+  "id": "gorukle",
+  "geo_key": "tr/bursa/nilufer/gorukle",
+  "country": "Türkiye",
+  "name": "Görükle",
+  "district": "Nilüfer",
+  "city": "Bursa",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "gorukle-identity",
+    "target_id": "gorukle",
+    "category": "identity",
+    "evidence_quotes": [
+      "Görükle Mahallesi Üniversite Caddesi No:6 Nilüfer, Bursa"
+    ],
+    "text": "Bursa / Nilüfer / Görükle",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "nilufer-sport"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "gorukle-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 40.2318707,
+    "lon": 28.8394783,
+    "label": "Görükle, Nilüfer, Bursa, Marmara Bölgesi, 16285, Türkiye",
+    "osm_type": "node",
+    "osm_id": 2772722383,
+    "source_id": "geocode-gorukle",
+    "checked_at": "2026-11-05T22:18:27.892731+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20063664",
+          "target_id": "gorukle",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 15,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Görükle Mahallesi, Nilüfer , Bursa",
+            "İlan Güncelleme Tarihi 05 Kasım 2026",
+            "15.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 15000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-05",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20063664"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20063664",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20059980",
+          "target_id": "gorukle",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 13,500 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Görükle Mahallesi, Nilüfer , Bursa",
+            "İlan Güncelleme Tarihi 04 Kasım 2026",
+            "13.500 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 13500,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-04",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20059980"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20059980",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20052436",
+          "target_id": "gorukle",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 26,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Görükle Mahallesi, Nilüfer , Bursa",
+            "İlan Güncelleme Tarihi 03 Kasım 2026",
+            "26.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 26000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-03",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20052436"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20052436",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "gorukle-news",
+          "target_id": "gorukle",
+          "category": "safety_news",
+          "text": "17 Nisan 2026 tarihli İHA kaynaklı haber Görükle Kamelya Caddesi'nde başlayan silahlı olay ve takip sonrasında bir kişinin yaralandığını aktarıyor.",
+          "evidence_quotes": [
+            "Nilüfer ilçesi Görükle Mahallesi Kamelya Caddesi üzerinde",
+            "Giriş: 17-04-2026"
+          ],
+          "event_type": "reported_armed_violence",
+          "date": "2026-04-17",
+          "date_basis": "publication_date",
+          "event_date": null,
+          "limitations": "Mağdur/şüpheli isimleri ve sağlık ayrıntıları çıkarıldı; haber bir suç oranı veya kesin adli karar değildir.",
+          "source_ids": [
+            "news-gorukle"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "gorukle-news",
+          "publication_date": "2026-04-17"
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "gorukle-road",
+          "target_id": "gorukle",
+          "category": "transportation",
+          "text": "Bursa Büyükşehir Belediyesi 12 Ağustos 2026 tarihli haberinde Görükle–İrfaniye bağlantısı için Atatürk Bulvarı yol yapımını bildiriyor. İşin tamamlandığı sonucu çıkarılamaz.",
+          "evidence_quotes": [
+            "Nilüfer ilçesi Görükle Mahallesi’nin",
+            "Atatürk Bulvarı’nda, yol yapım faaliyetleri aralıksız devam ediyor."
+          ],
+          "code": null,
+          "kind": "road_project",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": "2026-08-12",
+          "date_basis": "publication_date",
+          "limitations": "Haber tarihindeki proje durumudur; açık yol veya güncel toplu taşıma hattı değildir.",
+          "source_ids": [
+            "bursa-road"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "gorukle-road",
+          "event_date": null,
+          "publication_date": "2026-08-12"
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "gorukle-sport",
+          "target_id": "gorukle",
+          "category": "social_life",
+          "text": "Nilüfer Belediyesi Görükle Spor Parkı'nı Görükle Mahallesi Üniversite Caddesi No:6 adresinde listeliyor.",
+          "evidence_quotes": [
+            "Görükle Spor Parkı"
+          ],
+          "name": "Görükle Spor Parkı",
+          "type": "sports_park",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_municipal_directory",
+          "limitations": "Adres kaydı kontrol edildi; fiziksel durum ve bugünkü çalışma saatleri doğrulanmadı.",
+          "source_ids": [
+            "nilufer-sport"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "gorukle-sport",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.344,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.344,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 40.23319,
+          "longitude": 28.82744,
+          "pga_g": 0.344
+        },
+        "distance_to_grid_point_km": 1.0324,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "bursa-road",
+      "url": "https://www.bursa.bel.tr/haber/buyuksehirden-gorukleye-yeni-ulasim-aksi-37585",
+      "final_url": "https://www.bursa.bel.tr/haber/buyuksehirden-gorukleye-yeni-ulasim-aksi",
+      "publisher": "Büyükşehir&#039;den Görükle&#039;ye yeni ulaşım aksı - Bursa Büyükşehir Belediyesi",
+      "checked_at": "2026-11-05T22:13:52.260597+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "12a9e39fa2a6bcdef9d5a96f763f020cd143deaf32ea37f9091184570d6ec4af"
+    },
+    {
+      "id": "emlakjet-20052436",
+      "url": "https://www.emlakjet.com/ilan/gm-den-gorukle-merkezde-aile-sitesinde-kiralik-31-genis-daire-20052436",
+      "final_url": "https://www.emlakjet.com/ilan/gm-den-gorukle-merkezde-aile-sitesinde-kiralik-31-genis-daire-20052436",
+      "publisher": "Gm Emlak Danışmanlığı Bursa Nilüfer Görükle Mahallesi 3+1 Oda Kiralık Daire 26,000 TL #20052436 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:36.898113+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "142c91082aff9548ba3f218b52bacdf001b5fbb37b13690d97936ff033de48c2"
+    },
+    {
+      "id": "emlakjet-20059980",
+      "url": "https://www.emlakjet.com/ilan/anil-konu-dan-gorukle-abonelikleri-acik-11-esyali-kiralik-daire-20059980",
+      "final_url": "https://www.emlakjet.com/ilan/anil-konu-dan-gorukle-abonelikleri-acik-11-esyali-kiralik-daire-20059980",
+      "publisher": "Anil Konu Gayri̇menkul Bursa Nilüfer Görükle Mahallesi 1+1 Oda Kiralık Daire 13,500 TL #20059980 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:35.935083+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "e4a524e166de3ee7c258ba78cc116f4cdfcc73f076886707c1abea7c44f7cbe4"
+    },
+    {
+      "id": "emlakjet-20063664",
+      "url": "https://www.emlakjet.com/ilan/o-g-osmanli-dan-esyali-daire-20063664",
+      "final_url": "https://www.emlakjet.com/ilan/o-g-osmanli-dan-esyali-daire-20063664",
+      "publisher": "Osmanli Gayri̇menkul Mülk Yöneti̇mi̇ Bursa Nilüfer Görükle Mahallesi 2+1 Oda Kiralık Daire 15,000 TL #20063664 | Emlakjet",
+      "checked_at": "2026-11-05T22:15:04.436624+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "dcd1866af96b786fb6d31241808a8af07e97f51302581c99c4a4c3bae697b01a"
+    },
+    {
+      "id": "geocode-gorukle",
+      "url": "https://nominatim.openstreetmap.org/search?q=G%C3%B6r%C3%BCkle%2C+Nil%C3%BCfer%2C+Bursa&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=G%C3%B6r%C3%BCkle%2C+Nil%C3%BCfer%2C+Bursa&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:27.892731+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "ff1c1dbfcb23f04efdc55605300ad17a2bad5481ac9b3ef5f77df6dfe6c06352"
+    },
+    {
+      "id": "news-gorukle",
+      "url": "https://www.bursapress.com.tr/bursada-gece-yarisi-silah-sesleri/",
+      "final_url": "https://www.bursapress.com.tr/bursada-gece-yarisi-silah-sesleri/",
+      "publisher": "Bursa'da gece yarısı silah sesleri! - BursaPress",
+      "checked_at": "2026-11-05T22:21:13.559754+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "85c36acbf08af7954eb94b6e79f9ebbcbf248d1ac0d0b3c6171129f8b28fb142"
+    },
+    {
+      "id": "nilufer-sport",
+      "url": "https://www.nilufer.bel.tr/kategoriler/tesisler/spor-tesisleri/gorukle-spor-parki",
+      "final_url": "https://www.nilufer.bel.tr/kategoriler/tesisler/spor-tesisleri/gorukle-spor-parki",
+      "publisher": "Nilüfer Belediyesi",
+      "checked_at": "2026-11-05T22:13:55.971217+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "06c601470531bf40e21454b0e8cbab5ce4d0c2cb4ff1a67ba3ffb67c12ad49d2"
+    }
+  ],
+  "excluded_observations": [],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

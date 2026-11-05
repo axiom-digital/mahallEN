@@ -1,0 +1,589 @@
+{
+  "schema_version": "2.0.0",
+  "id": "muslihittin",
+  "geo_key": "tr/mugla/mentese/muslihittin",
+  "country": "Türkiye",
+  "name": "Muslihittin",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "muslihittin-identity",
+    "target_id": "muslihittin",
+    "category": "identity",
+    "evidence_quotes": [
+      "Muslihittin Mahallesi"
+    ],
+    "text": "Muğla / Menteşe / Muslihittin",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "mentese-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "muslihittin-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 37.2181413,
+    "lon": 28.3576472,
+    "label": "Muslihittin Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9710002,
+    "source_id": "geocode-muslihittin",
+    "checked_at": "2026-11-05T22:18:13.286837+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20024236",
+          "target_id": "muslihittin",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 55,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Muslihittin Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 27 Ekim 2026",
+            "55.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 55000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-10-27",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20024236"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20024236",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20008478",
+          "target_id": "muslihittin",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 20,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Muslihittin Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 04 Kasım 2026",
+            "20.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 20000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-04",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20008478"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20008478",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "muslihittin-news",
+          "target_id": "muslihittin",
+          "category": "safety_news",
+          "text": "11 Nisan 2026 tarihli İHA haberi Muslihittin'de otomobil ve motosikletin çarpıştığı yaralanmalı trafik kazasını aktarıyor.",
+          "evidence_quotes": [
+            "Muğla'nın Menteşe ilçesi Muslihittin Mahallesi'nde",
+            "Giriş: 11.04.2026"
+          ],
+          "event_type": "traffic_collision_not_crime_rate",
+          "date": "2026-04-11",
+          "date_basis": "publication_date",
+          "event_date": null,
+          "limitations": "Trafik kazası asayiş suçu veya mahalle geneli güvenlik ölçümü sayılmaz.",
+          "source_ids": [
+            "news-muslihittin"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "muslihittin-news",
+          "publication_date": "2026-04-11"
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "muslihittin-route-1-9",
+          "target_id": "muslihittin",
+          "category": "transportation",
+          "location_source_id": "mentese-parks",
+          "location_quote": "MUSLİHİTTİN Nazım Hikmet Parkı",
+          "text": "MUTTAŞ 1-9 durak listesinde Nazım Hikmet Parkı var; belediyenin park tablosu bu parkı Muslihittin ile eşleştiriyor.",
+          "evidence_quotes": [
+            "1-9 - Besko (Adliye) - Şehir İçi",
+            "NAZIM HİKMET PARKI"
+          ],
+          "code": "1-9",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": null,
+          "date_basis": "undated_operator_page",
+          "limitations": "İki kaynak park adına göre birleştirildi; durak koordinatı, mahalle geneli erişim ve bekleme süresi ölçülmedi.",
+          "source_ids": [
+            "muttas-1-9",
+            "mentese-parks"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "muslihittin-route-1-9",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "muslihittin-park",
+          "target_id": "muslihittin",
+          "category": "social_life",
+          "text": "Belediyenin toplanma alanı tablosu Nazım Hikmet Parkı'nı Muslihittin satırında listeliyor.",
+          "evidence_quotes": [
+            "MUSLİHİTTİN Nazım Hikmet Parkı"
+          ],
+          "name": "Nazım Hikmet Parkı",
+          "type": "park",
+          "latitude": 37.219748,
+          "longitude": 28.348218,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_municipal_inventory",
+          "limitations": "Envanterde yer alması bugünkü bakım, açık olma veya afet anında kullanılabilirlik garantisi değildir.",
+          "source_ids": [
+            "mentese-parks"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "muslihittin-park",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.334,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.334,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 37.22046,
+          "longitude": 28.35751,
+          "pga_g": 0.334
+        },
+        "distance_to_grid_point_km": 0.2581,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-20008478",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mahallesi-nde-kiralik-11-daire-20008478",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mahallesi-nde-kiralik-11-daire-20008478",
+      "publisher": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Muslihittin Mahallesi 1+1 Oda Kiralık Daire 20,000 TL #20008478 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:08.077119+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "0be6c17b340b78028d1079be7a92d9162cc87a8b9dda37347a18a7dd13aa71d6"
+    },
+    {
+      "id": "emlakjet-20024236",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mah-31-esyasiz-kiralik-daire-20024236",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mah-31-esyasiz-kiralik-daire-20024236",
+      "publisher": "Muğla Kampüs Emlak Muğla Menteşe Muslihittin Mahallesi 3+1 Oda Kiralık Daire 55,000 TL #20024236 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:06.903772+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "0bfc50d1dc696f9ef6490b714b2e35ec5515eac823fb730186dae5504bdda41c"
+    },
+    {
+      "id": "geocode-muslihittin",
+      "url": "https://nominatim.openstreetmap.org/search?q=Muslihittin%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Muslihittin%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:13.286837+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "b455f0b12f172b4ed0c6b8a0b8dcb11b744ca2bcca34abd4163fe5a789a8a400"
+    },
+    {
+      "id": "mentese-identity",
+      "url": "https://mentese.bel.tr/cop-saatleri/",
+      "final_url": "https://mentese.bel.tr/cop-saatleri/",
+      "publisher": "Çöp Alma Saatleri – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:13:02.667057+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05"
+    },
+    {
+      "id": "mentese-parks",
+      "url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "final_url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "publisher": "Afet ve Acil Durum Toplanma Alanları – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:14:29.900540+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3"
+    },
+    {
+      "id": "muttas-1-9",
+      "url": "https://ulasim.muttas.com.tr/hat/1-9-besko-adliye-sehir-ici-93",
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-9-besko-adliye-sehir-ici-93",
+      "publisher": "1-9 - Besko (Adliye) - Şehir İçi | MUTTAŞ Otobüs Sefer Saatleri",
+      "checked_at": "2026-11-05T22:13:04.307942+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "95325a1dcb406fa07dc91e8ebb1efb40493e85e9daa56fb8a95dc4213302a716"
+    },
+    {
+      "id": "news-muslihittin",
+      "url": "https://yerel-haberler.haberturk.com/mugla-haberleri/mentesede-motosiklet-kazasi-1-yarali-117419176",
+      "final_url": "https://yerel-haberler.haberturk.com/mugla-haberleri/mentesede-motosiklet-kazasi-1-yarali-117419176",
+      "publisher": "Menteşe'de motosiklet kazası:1 yaralı - Muğla Haberleri",
+      "checked_at": "2026-11-05T22:21:13.678780+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "ce7c7033c441cd802e3a74be605565be66a95e349f9982281d85cf69ba73c6b3"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "legacy-331e7223517bcb",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-866903f1513fc6",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-480b8d5a8fe0de",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-c38ac39fae9b7b",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-5cb2aff3b291dd",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-0698c77026c1b4",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-60011452eb198f",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-97ee840ec6aad6",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-10afe20abfc35f",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-4410c4dfa2fc7e",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-274444623bbbf8",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-c34deda2d28b1e",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-a3f0a85dade373",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-6dab1fe45df565",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-c7e8880d0a755c",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-92c9691d43a5d9",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-b58bc13c44e424",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-b9b9832b8135ce",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-6e7a7d644aa3cb",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-f753d549f10e23",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-31fe48c880ee2d",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-081a150ad9758c",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ca160404ed1e8d",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-3faf39f13e604d",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-5c8dd88ef74ae7",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-88060c9d83b39f",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-930fb86e4b0945",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-b0556f05ca84c5",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-56f0cbfb7173d0",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-5146ac77507f6d",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ee96dfb24e5d62",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-598c139c9ffca2",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/muslihittin.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "rental-reject-4",
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "id": "rental-reject-5",
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-kotekli-de-universiteye-yakin-bodrum-kat-21-kiralik-daire-20059568",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "id": "rental-reject-6",
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-kotekli-mah-arakatta-21-esyali-kiralik-daire-20041991",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "id": "rental-reject-7",
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942",
+      "reason": "detail_address_does_not_match_target"
+    }
+  ],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

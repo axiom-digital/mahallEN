@@ -1,0 +1,533 @@
+{
+  "schema_version": "2.0.0",
+  "id": "akyaka",
+  "geo_key": "tr/mugla/ula/akyaka",
+  "country": "Türkiye",
+  "name": "Akyaka",
+  "district": "Ula",
+  "city": "Muğla",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "akyaka-identity",
+    "target_id": "akyaka",
+    "category": "identity",
+    "evidence_quotes": [
+      "Akyaka Mahallesi, Atatürk Caddesi"
+    ],
+    "text": "Muğla / Ula / Akyaka",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "ula-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "akyaka-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 37.0580313,
+    "lon": 28.3271055,
+    "label": "Akyaka, Ula, Muğla, Ege Bölgesi, 48650, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8399373700,
+    "source_id": "geocode-akyaka",
+    "checked_at": "2026-11-05T22:18:17.189643+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20056665",
+          "target_id": "akyaka",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 40,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Akyaka Mahallesi, Ula , Muğla",
+            "İlan Güncelleme Tarihi 04 Kasım 2026",
+            "40.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 40000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-04",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20056665"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20056665",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20002170",
+          "target_id": "akyaka",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 40,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Akyaka Mahallesi, Ula , Muğla",
+            "İlan Güncelleme Tarihi 22 Ekim 2026",
+            "40.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 40000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-10-22",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20002170"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20002170",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-19996826",
+          "target_id": "akyaka",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 25,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Akyaka Mahallesi, Ula , Muğla",
+            "İlan Güncelleme Tarihi 03 Kasım 2026",
+            "25.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 25000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-03",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-19996826"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-19996826",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "akyaka-news",
+          "target_id": "akyaka",
+          "category": "safety_news",
+          "text": "1 Haziran 2026 tarihli ajans haberi Ula/Akyaka'da motosiklet hırsızlığını aktarıyor.",
+          "evidence_quotes": [
+            "Muğla’nın Ula ilçesine bağlı Akyaka Mahallesi’nde meydana gelen hırsızlık olayı",
+            "Giriş Tarihi: 01.06.2026"
+          ],
+          "event_type": "reported_theft",
+          "date": "2026-06-01",
+          "date_basis": "publication_date",
+          "event_date": null,
+          "limitations": "Olay tarihi yayın tarihinden ayrıca doğrulanmadı; güncel mahalle riskini ölçmez.",
+          "source_ids": [
+            "news-akyaka"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "akyaka-news",
+          "publication_date": "2026-06-01"
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "akyaka-route-12-5",
+          "target_id": "akyaka",
+          "category": "transportation",
+          "text": "MUTTAŞ 12-5 Menteşe–Akyaka hattının duraklarında Akyaka Meydan ve Akyaka Garaj listeleniyor.",
+          "evidence_quotes": [
+            "12-5 - Menteşe - Akyaka",
+            "AKYAKA MEYDAN",
+            "AKYAKA GARAJ"
+          ],
+          "code": "12-5",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": null,
+          "date_basis": "undated_operator_page",
+          "limitations": "Planlanan hat kaydıdır; gerçek bekleme süresi ölçülmedi.",
+          "source_ids": [
+            "muttas-12-5"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "akyaka-route-12-5",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "akyaka-culture",
+          "target_id": "akyaka",
+          "category": "social_life",
+          "text": "Ula Belediyesi 12 Ekim 2026 tarihli yayınında Akyaka'da Nail Çakırhan ve Halet Çambel anma konseri düzenlendiğini bildiriyor.",
+          "evidence_quotes": [
+            "Akyaka’nın eşsiz gün batımında",
+            "düzenlenen anma konserinde bir araya geldik."
+          ],
+          "name": "Nail Çakırhan ve Halet Çambel anma konseri",
+          "type": "past_cultural_event",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "not_applicable",
+          "date": "2026-10-12",
+          "date_basis": "publication_date",
+          "limitations": "Yayın tarihi olay günü olarak atanmadı; geçmiş etkinlik kalıcı tesis veya düzenli program değildir.",
+          "source_ids": [
+            "ula-culture"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "akyaka-culture",
+          "event_date": null,
+          "publication_date": "2026-10-12"
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.391,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.391,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 37.06308,
+          "longitude": 28.32229,
+          "pga_g": 0.391
+        },
+        "distance_to_grid_point_km": 0.7055,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-19996826",
+      "url": "https://www.emlakjet.com/ilan/akyaka-da-esyali-kis-sezonuna-uygun-kiralik-daire-19996826",
+      "final_url": "https://www.emlakjet.com/ilan/akyaka-da-esyali-kis-sezonuna-uygun-kiralik-daire-19996826",
+      "publisher": "Joker Gayrimenkul Muğla Ula Akyaka Mahallesi 1+1 Oda Kiralık Daire 25,000 TL #19996826 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:17.073865+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "91d90fd73947286dab1752198b7e98147c10cdfe3882addda33b8463bf63004d"
+    },
+    {
+      "id": "emlakjet-20002170",
+      "url": "https://www.emlakjet.com/ilan/akyaka-merkezi-konum-esyali-21-dubleks-daire-20002170",
+      "final_url": "https://www.emlakjet.com/ilan/akyaka-merkezi-konum-esyali-21-dubleks-daire-20002170",
+      "publisher": "Güven Emlak Muğla Ula Akyaka Mahallesi 2+1 Oda Kiralık Daire 40,000 TL #20002170 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:15.966376+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "20947662b4a6de14da8650ad68f74d9edc26c47c90f07da364e0588fa3dd81d9"
+    },
+    {
+      "id": "emlakjet-20056665",
+      "url": "https://www.emlakjet.com/ilan/akyaka-da-kiralik-esyali-31-dubleks-daire-20056665",
+      "final_url": "https://www.emlakjet.com/ilan/akyaka-da-kiralik-esyali-31-dubleks-daire-20056665",
+      "publisher": "Joker Gayrimenkul Muğla Ula Akyaka Mahallesi 3+1 Oda Kiralık Daire 40,000 TL #20056665 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:14.849012+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "3a89d9544ce57fa07f3929506f93d4eb5394e8134391b89d64d9ad57738ec3fe"
+    },
+    {
+      "id": "geocode-akyaka",
+      "url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:17.189643+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "ea26a570642ec9a8ef9e2c6f0773427f373c8fc0eb82f2a55d7a171cd4473015"
+    },
+    {
+      "id": "muttas-12-5",
+      "url": "https://ulasim.muttas.com.tr/hat/12-5-mentese-akyaka-297",
+      "final_url": "https://ulasim.muttas.com.tr/hat/12-5-mentese-akyaka-297",
+      "publisher": "12-5 - Menteşe - Akyaka | MUTTAŞ Otobüs Sefer Saatleri",
+      "checked_at": "2026-11-05T22:13:04.426549+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "4bf756a52b038d9aea1ad6954ad8726ee82c90e84820093ef86224c97b3936be"
+    },
+    {
+      "id": "news-akyaka",
+      "url": "https://www.sabah.com.tr/yasam/muglada-hayrete-dusuren-anlar-hirsizin-rahatligi-pes-dedirtti-once-etrafi-kontrol-etti-sonra-motosiklete-binip-gitti-7594620",
+      "final_url": "https://www.sabah.com.tr/yasam/muglada-hayrete-dusuren-anlar-hirsizin-rahatligi-pes-dedirtti-once-etrafi-kontrol-etti-sonra-motosiklete-binip-gitti-7594620",
+      "publisher": "Muğla’da hayrete düşüren anlar! Hırsızın rahatlığı pes dedirtti: Önce etrafı kontrol etti sonra motosiklete binip gitti! - Yaşam Haberleri",
+      "checked_at": "2026-11-05T22:21:13.612808+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "7c8f9eb80243024322b5cb47c2b8441a8bb44ed31c9d497cd9a6feb71b59b494"
+    },
+    {
+      "id": "ula-culture",
+      "url": "https://ula.bel.tr/haberler/nail-cakirhan-ve-halet-cambel-akyakada-anma-konseriyle-anildi",
+      "final_url": "https://ula.bel.tr/haberler/nail-cakirhan-ve-halet-cambel-akyakada-anma-konseriyle-anildi",
+      "publisher": "Nail Çakırhan ve Halet Çambel Akyaka’da Anma Konseriyle Anıldı · Ula Belediyesi",
+      "checked_at": "2026-11-05T22:16:22.091091+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "4f4b2009697c34eb61b35077937f616045978bc43d6517f40f0bfe7a2d695e44"
+    },
+    {
+      "id": "ula-identity",
+      "url": "https://ula.bel.tr/duyurular/belediyeye-ait-tasinmazlarin-kiralama-ihalesi",
+      "final_url": "https://ula.bel.tr/duyurular/belediyeye-ait-tasinmazlarin-kiralama-ihalesi",
+      "publisher": "Belediyemize Ait 16 Taşınmazın Kiralama İhalesi – 11 Kasım 2026 · Ula Belediyesi",
+      "checked_at": "2026-11-05T22:13:03.606203+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "a516db320e1a71f41118a5a9feadd2a64bbd476a5d4d667aacf47ddde43052c5"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "legacy-ba936d2208f8da",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-0514a2ac7ad2e4",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-473f1c9549d6bb",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ca9b73a26aed59",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-a7a366052ef667",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-cd9948f9d9e9c1",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-dae413c4452884",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-67a23dadc3a53c",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-941c716c1cf135",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-b71d0ff800bb08",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-424b5403e0fb54",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-6ff7003ee07fea",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-dc9293c3f75e2f",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-fba9f43a71fc6d",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-e0122d2973ae89",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-212cd146ae5a5c",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-d14107c594d27f",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ab0624ecea456f",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-d8ae7b05f99b23",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-2b14d584ce3306",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/akyaka.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    }
+  ],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

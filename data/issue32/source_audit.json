@@ -1,0 +1,3180 @@
+{
+  "schema_version": "1.0",
+  "checks": [
+    {
+      "requested_url": "https://anlat.kadikoy.bel.tr/mahalleler/caferaga",
+      "checked_at": "2026-11-05T22:13:02.665429+00:00",
+      "http_status": 200,
+      "final_url": "https://anlat.kadikoy.bel.tr/mahalleler/caferaga",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "53c4d98eff16ac4994687e9bbf0eacc176c34d3e1ef35f9c09bc3c00cccbe673",
+      "title": "ANLAT KADIKÖY | KADIKÖY BELEDİYESİ",
+      "published_at": null,
+      "text_sha256": "9f177419014e0f78f8756602ea935f55d641a062c285c62303db84a88758a3f7"
+    },
+    {
+      "requested_url": "https://anlatilaninotesi.com.tr/20260901/muglada-supheli-olum-2-kisi-basindan-vurulmus-halde-bulundu-1108411144.html",
+      "checked_at": "2026-11-05T22:21:13.611980+00:00",
+      "http_status": 200,
+      "final_url": "https://anlatilaninotesi.com.tr/20260901/muglada-supheli-olum-2-kisi-basindan-vurulmus-halde-bulundu-1108411144.html",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "18e06082d60e45360629f7031b72f16b1258458f44924064da0ff08e126f0e13",
+      "title": "Muğla'da şüpheli ölüm: 2 kişi başından vurulmuş halde bulundu - 01.09.2026, Sputnik Türkiye",
+      "published_at": "20260901T1741+0300",
+      "text_sha256": "8d75d3010579bca988b65b8e9e1c22d13a6fe2e408aeffe3217c4c8d900a0020"
+    },
+    {
+      "requested_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3",
+      "text_sha256": "833058e6b9fc9086e4b93808efe0b352b03b656a3234fb69ce8624f0f6eabd6a"
+    },
+    {
+      "requested_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9",
+      "title": "Jeodezik Deprem Tehlike Haritası",
+      "published_at": null,
+      "text_sha256": "c9912657600e93267b1b60adbbe422cb0e74544f3ac8dbc3619449fb92925f16"
+    },
+    {
+      "requested_url": "https://izmir.ktb.gov.tr/TR-77347/kultur-ve-sanat-merkezleri.html",
+      "checked_at": "2026-11-05T22:16:55.233185+00:00",
+      "http_status": 200,
+      "final_url": "https://izmir.ktb.gov.tr/TR-77347/kultur-ve-sanat-merkezleri.html",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "ea9cf8af8513f86f0f5f783770a2629126beeedd024b224597384f361b7531e9",
+      "title": "Kültür ve Sanat Merkezleri",
+      "published_at": null,
+      "text_sha256": "0ef036ee615e2aa9a2e48a6b49796cc9f83f5dbd8430032ac7807ab590d3d2af"
+    },
+    {
+      "requested_url": "https://kultursanat.kadikoy.bel.tr/tr/kultur-merkezleri/tarih-edebiyat-ve-sanat-kutuphanesi",
+      "checked_at": "2026-11-05T22:13:02.666272+00:00",
+      "http_status": 200,
+      "final_url": "https://kultursanat.kadikoy.bel.tr/tr/kultur-merkezleri/tarih-edebiyat-ve-sanat-kutuphanesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3405ddf49db395c3f2ee3ed195a3adc18fecd3b3272f5f293e4008ffc71e141d",
+      "title": "Kültür Sanat Portalı | Kültür Merkezleri",
+      "published_at": null,
+      "text_sha256": "b27c578c14042b6e0226dc7e96c903d653669ab7e4437882c66c44e665e4345a"
+    },
+    {
+      "requested_url": "https://mansetankara.com/ozel-haber/cankayada-kaldirim-cilesi-271792h",
+      "checked_at": "2026-11-05T22:21:12.721136+00:00",
+      "http_status": 200,
+      "final_url": "https://mansetankara.com/ozel-haber/cankayada-kaldirim-cilesi-271792h",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "76cf4092077241f94012c0e09fb374bfe076f55e819e4ce05f1caaa4bf199151",
+      "title": "Çankaya’da kaldırım çilesi",
+      "published_at": null,
+      "text_sha256": "cd717dd0f11f223dfe0d7d1f5de62e9414331dedb56bf07ffe893b0ad6a962d1"
+    },
+    {
+      "requested_url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "checked_at": "2026-11-05T22:14:29.900540+00:00",
+      "http_status": 200,
+      "final_url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3",
+      "title": "Afet ve Acil Durum Toplanma Alanları – T.C. Menteşe Belediyesi",
+      "published_at": null,
+      "text_sha256": "2ffa58c697c875d85c7d21969ba1b0847c59209034c5dd545787a9f6c9ca9d3f"
+    },
+    {
+      "requested_url": "https://mentese.bel.tr/cop-saatleri/",
+      "checked_at": "2026-11-05T22:13:02.667057+00:00",
+      "http_status": 200,
+      "final_url": "https://mentese.bel.tr/cop-saatleri/",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05",
+      "title": "Çöp Alma Saatleri – T.C. Menteşe Belediyesi",
+      "published_at": null,
+      "text_sha256": "755d2318f43d8dfe0827a014a8008f2d97801d96784f52042ff5da2cdb222e86"
+    },
+    {
+      "requested_url": "https://mentese.bel.tr/mentesede-bayrak-saldirisinin-suphelisi-belediye-guvenliginin-dikkatiyle-yakalandi/",
+      "checked_at": "2026-11-05T22:13:02.667707+00:00",
+      "http_status": 200,
+      "final_url": "https://mentese.bel.tr/mentesede-bayrak-saldirisinin-suphelisi-belediye-guvenliginin-dikkatiyle-yakalandi/",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "a3f557d19a22d2cd2e674528523abc2e892ce38c5fdf4d0db57d9eafc4077f5b",
+      "title": "Menteşe’de Bayrak Saldırısının Şüphelisi Belediye Güvenliğinin Dikkatiyle Yakalandı – T.C. Menteşe Belediyesi",
+      "published_at": null,
+      "text_sha256": "cb499a085051ab29eac18f8ce1948369da7d8ba48511a4f78f7e75dea6b14e4c"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:17.189643+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "ea26a570642ec9a8ef9e2c6f0773427f373c8fc0eb82f2a55d7a171cd4473015",
+      "text_sha256": "c3bc2d02b16cd8c9be8f115c46accd3442360c005474ba6dd7d276104ca261e2"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Bah%C3%A7elievler%2C+%C3%87ankaya%2C+Ankara&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:22.254869+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Bah%C3%A7elievler%2C+%C3%87ankaya%2C+Ankara&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "80503509e6b0374ad9e34e2d112038778b50347a69031d75ecb70348f3f0f15e",
+      "text_sha256": "9eebdc260b9d4203bba07a6983fa19158594bf5180ed00949b77715544452167"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Cafera%C4%9Fa%2C+Kad%C4%B1k%C3%B6y%2C+%C4%B0stanbul&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:20.410609+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Cafera%C4%9Fa%2C+Kad%C4%B1k%C3%B6y%2C+%C4%B0stanbul&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "d2745be932da985bc6c5f9aafcd9bd54de41fc913f3d860a11153406ffb571e9",
+      "text_sha256": "76f4b28bd26f2b263bd65743cc7764e6915645c23f70113bff8b37217e1311ae"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Emirbeyaz%C4%B1t%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:11.641039+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Emirbeyaz%C4%B1t%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "8bcfdfac98de2efe4eff6e0c8975d99f190f473c1c4a1979d1335a2b89510728",
+      "text_sha256": "b8dfe79822d243e65abab06d1c30762dfe67e32b747ff5b4f3378cc1de9b52be"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=G%C3%B6r%C3%BCkle%2C+Nil%C3%BCfer%2C+Bursa&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:27.892731+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=G%C3%B6r%C3%BCkle%2C+Nil%C3%BCfer%2C+Bursa&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "ff1c1dbfcb23f04efdc55605300ad17a2bad5481ac9b3ef5f77df6dfe6c06352",
+      "text_sha256": "c433a1916832d499be1d86d3c856f79a54f98d111c7445f072cb82a988ac4bb6"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=K%C3%B6tekli%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:09.359975+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=K%C3%B6tekli%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "979f7cb9f15054c8d81235dacea806a89d742b19acc9430f0631a9c0e2d1a9f5",
+      "text_sha256": "abc24b783da7b38c2cee13767fc98a7eaf3535f54d99cbd12ba9262e85008f91"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=K%C3%BClt%C3%BCr%2C+Konak%2C+%C4%B0zmir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:24.236484+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=K%C3%BClt%C3%BCr%2C+Konak%2C+%C4%B0zmir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "98452b71dbf2c6ec3004f87d30f99e229d6dbfbc345156a258707aae7eb4fd2f",
+      "text_sha256": "fcec36796df3d931fa3551e3d35e1f52358d526147e235f6d8c9408ab00d2f4b"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Muslihittin%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:13.286837+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Muslihittin%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "b455f0b12f172b4ed0c6b8a0b8dcb11b744ca2bcca34abd4163fe5a789a8a400",
+      "text_sha256": "a6a24eb5cc5b0f1ce5327a003a9842e161ba952d4d6335290ef16fa09ae0b218"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Orhaniye%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:15.209801+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Orhaniye%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "2c97292f0616f4d675a991ca1e47d9f72c0fb3aaa525115e0125cc0675e5944c",
+      "text_sha256": "a24a67b071122103f90ad70f2009c1351cb8d0e86549793f38b8243ac2c28398"
+    },
+    {
+      "requested_url": "https://nominatim.openstreetmap.org/search?q=Yeniba%C4%9Flar%2C+Tepeba%C5%9F%C4%B1%2C+Eski%C5%9Fehir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "checked_at": "2026-11-05T22:18:26.027829+00:00",
+      "http_status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Yeniba%C4%9Flar%2C+Tepeba%C5%9F%C4%B1%2C+Eski%C5%9Fehir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "status": "data_read",
+      "redirects": [],
+      "content_type": "application/json; charset=utf-8",
+      "response_sha256": "39b9e36b9d20d732a4234bedf8a64e77b4a79da5d809059c44a1c9d5245ff0d8",
+      "text_sha256": "59280ce21769a510f4da6d0f7c2e26575612b280944da160b98a3de377d62306"
+    },
+    {
+      "requested_url": "https://tepebasi.bel.tr/Muhtarlik",
+      "checked_at": "2026-11-05T22:13:02.668992+00:00",
+      "http_status": 200,
+      "final_url": "https://tepebasi.bel.tr/Muhtarlik",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "d867a078fe60a4b695ecf826285b131a229c52bf99c8b0c3d4fc572627e41282",
+      "title": "Eskişehir Tepebaşı Belediyesi",
+      "published_at": null,
+      "text_sha256": "b1a154fa79200035ea637882aa39ebdbcefb7a5110a861dd1ec109a9a8781336"
+    },
+    {
+      "requested_url": "https://ula.bel.tr/duyurular/belediyeye-ait-tasinmazlarin-kiralama-ihalesi",
+      "checked_at": "2026-11-05T22:13:03.606203+00:00",
+      "http_status": 200,
+      "final_url": "https://ula.bel.tr/duyurular/belediyeye-ait-tasinmazlarin-kiralama-ihalesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a516db320e1a71f41118a5a9feadd2a64bbd476a5d4d667aacf47ddde43052c5",
+      "title": "Belediyemize Ait 16 Taşınmazın Kiralama İhalesi – 11 Kasım 2026 · Ula Belediyesi",
+      "published_at": null,
+      "text_sha256": "b6b7160713859ac40b72ebe08ff2893f28564c27906d365eb7700cfff8aa796f"
+    },
+    {
+      "requested_url": "https://ula.bel.tr/haberler/gokova-run-fest-2026-tamamlandi",
+      "checked_at": "2026-11-05T22:16:22.091368+00:00",
+      "http_status": 200,
+      "final_url": "https://ula.bel.tr/haberler/gokova-run-fest-2026-tamamlandi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b3eec395b36a571ce218e85fc5cf60bdf9952bef6e000474d5fa8450aa022d11",
+      "title": "Gökova Run Fest 2026 Tamamlandı · Ula Belediyesi",
+      "published_at": "2026-09-28",
+      "text_sha256": "92fa5a59f90bed0c74a321dc30edaec4339d43f7feb52741daf3f0f8f993b361"
+    },
+    {
+      "requested_url": "https://ula.bel.tr/haberler/nail-cakirhan-ve-halet-cambel-akyakada-anma-konseriyle-anildi",
+      "checked_at": "2026-11-05T22:16:22.091091+00:00",
+      "http_status": 200,
+      "final_url": "https://ula.bel.tr/haberler/nail-cakirhan-ve-halet-cambel-akyakada-anma-konseriyle-anildi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "4f4b2009697c34eb61b35077937f616045978bc43d6517f40f0bfe7a2d695e44",
+      "title": "Nail Çakırhan ve Halet Çambel Akyaka’da Anma Konseriyle Anıldı · Ula Belediyesi",
+      "published_at": "2026-10-12",
+      "text_sha256": "72e4c4b366704e4520d4d2cedbb9cc0837723ca50fb34255c993f4a7e05b9c0a"
+    },
+    {
+      "requested_url": "https://ulasim.muttas.com.tr/hat/1-61-mugla-mentese-sungur-136",
+      "checked_at": "2026-11-05T22:13:03.659688+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-61-mugla-mentese-sungur-136",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "07665d9653d7f34c999640521f049b0e777adc8dce4efaf721fa614580677316",
+      "title": "1-61 - Muğla (Menteşe) - Sungur | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "3ee2b965988d3884a32359da83125c7b694af33806a191fe3774ec2fde28128b"
+    },
+    {
+      "requested_url": "https://ulasim.muttas.com.tr/hat/1-66-mentese-otogar-yenikoy-128",
+      "checked_at": "2026-11-05T22:13:04.306519+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-66-mentese-otogar-yenikoy-128",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "aa6017532d210442850c652363a2e3ba91c9d7d5de4916f5d78fd80f6df41b02",
+      "title": "1-66 - Menteşe Otogar - Yeniköy | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "f7a55ab6f92aa466dde5ab36bdd9c7fcf44f2184449d3e688c7dbe08c683130a"
+    },
+    {
+      "requested_url": "https://ulasim.muttas.com.tr/hat/1-9-besko-adliye-sehir-ici-93",
+      "checked_at": "2026-11-05T22:13:04.307942+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-9-besko-adliye-sehir-ici-93",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "95325a1dcb406fa07dc91e8ebb1efb40493e85e9daa56fb8a95dc4213302a716",
+      "title": "1-9 - Besko (Adliye) - Şehir İçi | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "699b5b2fc13083015c64c8ac0122753eebbc3f16272bb641cef1fe095545b8db"
+    },
+    {
+      "requested_url": "https://ulasim.muttas.com.tr/hat/12-5-mentese-akyaka-297",
+      "checked_at": "2026-11-05T22:13:04.426549+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/12-5-mentese-akyaka-297",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "4bf756a52b038d9aea1ad6954ad8726ee82c90e84820093ef86224c97b3936be",
+      "title": "12-5 - Menteşe - Akyaka | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "81781901dceb0fd4857bf5b593d26d58dc7681e7c12c77541af218e2549139ad"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0Tp86Z6gsYt2iDlqUQXi0cRIM0mLrorAVIaObhxVlxLgP6SbZuXn_58f6nP8fiMCfbyDUL0mCW5LDE2SThrhyPH2sswv5T0oPH9ehI_xqs3LzN1H4zQUpNnm7BPbeWRobc5Zu15c7F9s=",
+      "checked_at": "2026-11-05T22:13:04.518698+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/emirbeyazit-kiralik",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0Tp86Z6gsYt2iDlqUQXi0cRIM0mLrorAVIaObhxVlxLgP6SbZuXn_58f6nP8fiMCfbyDUL0mCW5LDE2SThrhyPH2sswv5T0oPH9ehI_xqs3LzN1H4zQUpNnm7BPbeWRobc5Zu15c7F9s="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "be643523dc28bfb0bd2cf829abd37dcaae97111c7e07ef05e1cfbbd67b28d8f3"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE21EHLf5B-gxfX9oX4koha3I4HJz4jPTIkU5iLjdLlL16vdBjR2L9T-lUFyV16QxfeAbMjaOdP7BSwsz8HhFNWrPsGkzBjlt-5AO7uCpNAWeRXmXCiFHId9zFmNRlnh39kxmTO_GXQ-9MtNVpjfnll2w==",
+      "checked_at": "2026-11-05T22:26:00.503622+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/cinar_alti/73861804559/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE21EHLf5B-gxfX9oX4koha3I4HJz4jPTIkU5iLjdLlL16vdBjR2L9T-lUFyV16QxfeAbMjaOdP7BSwsz8HhFNWrPsGkzBjlt-5AO7uCpNAWeRXmXCiFHId9zFmNRlnh39kxmTO_GXQ-9MtNVpjfnll2w=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3702ffd645cefb79ae764add1ed64b91610bf32329d5702f5aca7781ac3f8ba2",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2v-S393gpE5AXJMV74NW52Qh31YKy0hJ_cplhnYWRPYRJbEO21PFdTr9nJ2racD-pa2-Ubb987XKhkQPNpoAYO5PChshTwO3YvayCwFMX3K4VygwQQQwNV8oX8XeO5X9h2g2OnEgYwIr8A1vf9Y4-ECj9m7SmVXLlfQlHIlBV97XS7FBIWhCKghkrRwRIUpfmIm3ybvE-tultCA5Jotn2",
+      "checked_at": "2026-11-05T22:26:00.504002+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/mugla_buyuksehir_belediyesi_mentese_sosyo_kulturel_alani/221634897189/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2v-S393gpE5AXJMV74NW52Qh31YKy0hJ_cplhnYWRPYRJbEO21PFdTr9nJ2racD-pa2-Ubb987XKhkQPNpoAYO5PChshTwO3YvayCwFMX3K4VygwQQQwNV8oX8XeO5X9h2g2OnEgYwIr8A1vf9Y4-ECj9m7SmVXLlfQlHIlBV97XS7FBIWhCKghkrRwRIUpfmIm3ybvE-tultCA5Jotn2"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b1ab92488d7997db0faca0b47cbe43e344fdd36f3dfd8723a69499a5a19f47e4",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBYSNxRnPLOvok4I7YqoG08xKndAbqywDjtLYJdlEQrpkMYXEXyj0G5QRd57SEGQYqYV-icZt88lMJknZ0US043kTt8D3yypEFEAV31x_eWxYfHAEGGT0dVh4yBztnXVy_OjKpux4GNK3P2hEVkbsHsmc=",
+      "checked_at": "2026-11-05T22:26:00.504372+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/kisla_parki/60670187476/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBYSNxRnPLOvok4I7YqoG08xKndAbqywDjtLYJdlEQrpkMYXEXyj0G5QRd57SEGQYqYV-icZt88lMJknZ0US043kTt8D3yypEFEAV31x_eWxYfHAEGGT0dVh4yBztnXVy_OjKpux4GNK3P2hEVkbsHsmc="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a758aed89151289c42bded7c045cc068769f8564965feec47b2cffc4c805f29b",
+      "title": "",
+      "published_at": "2026-02-03T16:29:09.015Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG1qcoTXHwsBa05Ljkm7T9oeGTB_JKTDlDJvViJabkrnNb-dX0O0BWGbi3LyDekQ3m3ZGQAd0o6Ymowu6PCuqlgi5aLhBQltC3U4teZ1DxdOjbdluVvQEsSOaYzKzZ4hYuWvR6HG12Szq4qG0QYgysdneMVpJFuMignJJP6LLVYzdeciBNt6n6t4QkevxVbBzZ",
+      "checked_at": "2026-11-05T22:26:00.506945+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/mentese_sosyo_kulturel_alan_gezi_parklari/177012544093/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG1qcoTXHwsBa05Ljkm7T9oeGTB_JKTDlDJvViJabkrnNb-dX0O0BWGbi3LyDekQ3m3ZGQAd0o6Ymowu6PCuqlgi5aLhBQltC3U4teZ1DxdOjbdluVvQEsSOaYzKzZ4hYuWvR6HG12Szq4qG0QYgysdneMVpJFuMignJJP6LLVYzdeciBNt6n6t4QkevxVbBzZ"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "5683f707610492cd7a28505d42c03771f9110460cc630151a9b39c371968b21f",
+      "title": "",
+      "published_at": "2025-05-01T17:34:08.265Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMOzLn9ZEQ0bsjQvvyHXqih9Wkv5W8AM6njFk8l39EkLl85pN-3DQWO7JYYbAIGErIsF0_YuHm8b96frfc66Imr7G94cl1yB_T4XHydKeVesbBwsNwyROb12cfxU98smVhFQfik6CJGfNMITu1FU8R3gVOWJKDc7J7b8tqNQ==",
+      "checked_at": "2026-11-05T22:13:05.959095+00:00",
+      "http_status": 200,
+      "final_url": "https://emlakgo.net/kiralik-konut/mugla-mentese-orhaniye-mahallesi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMOzLn9ZEQ0bsjQvvyHXqih9Wkv5W8AM6njFk8l39EkLl85pN-3DQWO7JYYbAIGErIsF0_YuHm8b96frfc66Imr7G94cl1yB_T4XHydKeVesbBwsNwyROb12cfxU98smVhFQfik6CJGfNMITu1FU8R3gVOWJKDc7J7b8tqNQ=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "37e6244de861e7f24a23748670df9be63b73763b6e34d4591fd8d6a32fee8ec5",
+      "title": "Menteşe Orhaniye Mahallesi Kiralık Ev İlanları ve Fiyatları - EmlakGO.net",
+      "published_at": null,
+      "text_sha256": "b77c1efb484668bdc17bb1207867ca246b533bd1b1bd23c25d71a104d30866fd"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhzxen7ngjaD9I-lnQL56ze0-UdlqJOVqoJPviHM9nEy--ibbFixXky3zTZeFZ6yKJO4rmkSKGdYDzK5oheCIk2WGqb056KkF5wvIThPllizU16JP9rQC6p_PJJ9_gskfjZX433iC8M7BGMpHEgE=",
+      "checked_at": "2026-11-05T22:26:02.133923+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/252_live/60041603502/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPhzxen7ngjaD9I-lnQL56ze0-UdlqJOVqoJPviHM9nEy--ibbFixXky3zTZeFZ6yKJO4rmkSKGdYDzK5oheCIk2WGqb056KkF5wvIThPllizU16JP9rQC6p_PJJ9_gskfjZX433iC8M7BGMpHEgE="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "5089f0e3a20abd4562989deeab95d89f99580e324248ad50f93b66abaabc5dcb",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhs9YCW1uPRW6-aksTT90nzPYNG6F6L8u0oDzQYyemT7wiMSc0yeqZk8d79I5OLp2tICiJVGB7JS7GCbw1BVJZ2pxXaPLGj06CH_-Zp7JstYbJ147nKRcrekohEviVnxkQE7E0pjxJge_QDyuTh90tQ3lj5q2lVKLpoEzL0is3ilUHhxfpCJUVRjAWyaSSzhTLMwcZwcTrr4j2a3YzGobGek3nYU-ZcIvR5jtHW8=",
+      "checked_at": "2026-11-05T22:13:07.747972+00:00",
+      "http_status": 200,
+      "final_url": "https://www.gercekfethiye.com/mentese-akyaka-otobus-saatleri-2025-muttas-toplu-tasima-seferleri-guncel-bilgi/107663/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhs9YCW1uPRW6-aksTT90nzPYNG6F6L8u0oDzQYyemT7wiMSc0yeqZk8d79I5OLp2tICiJVGB7JS7GCbw1BVJZ2pxXaPLGj06CH_-Zp7JstYbJ147nKRcrekohEviVnxkQE7E0pjxJge_QDyuTh90tQ3lj5q2lVKLpoEzL0is3ilUHhxfpCJUVRjAWyaSSzhTLMwcZwcTrr4j2a3YzGobGek3nYU-ZcIvR5jtHW8="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "2f5cf2ac7ad643b501719e5aaf5bc61f0c1c61466a342a56930cc624d2d12676",
+      "title": "Menteşe – Akyaka Otobüs Saatleri 2025: Muttaş Toplu Taşıma Seferleri Güncel Bilgi",
+      "published_at": "2025-09-26T10:10:02+03:00",
+      "text_sha256": "880ebaa9165f905e3d1c91706afb35d8900930577827a3a66856d86a68888bc0"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVJwlD2u2JMPpXkn8YXS6l13RFyqIPA7sB8cYV-m3J1ZRcLKQgum1lmZGJ3O742pIjPeLSHLfYL-3nsDnJhan7PX2kRjZONjL2qbL8-lcpz2YbRv6QJFFJZwRlWWQOhIh4S2GpEMGasIcHoYEXvU_PcaUK2yEEhMaFwB6WQ_4=",
+      "checked_at": "2026-11-05T22:26:02.138338+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/akyaka_azmak_restaurant/148386904490/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVJwlD2u2JMPpXkn8YXS6l13RFyqIPA7sB8cYV-m3J1ZRcLKQgum1lmZGJ3O742pIjPeLSHLfYL-3nsDnJhan7PX2kRjZONjL2qbL8-lcpz2YbRv6QJFFJZwRlWWQOhIh4S2GpEMGasIcHoYEXvU_PcaUK2yEEhMaFwB6WQ_4="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "6b4ffc73b7bb20d4f046c4d68f14047f0fcb73b11b6f915a8d12073cad17a7e3",
+      "title": "",
+      "published_at": "2026-09-05T10:13:07.121Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWSRbng0_o7uX-tgkw6XJGxU2LOjKffjs357KZs_bEESggnDyvinYkWWpKwlUt0PUKoov3dRe0kNdnf7T6_IQlsN1kdG0eLDnnrJokCbbOKjucc0CcMh-dDw14DMhY8Cvx5mVFZiQqNs3k0H6qSqUFO64=",
+      "checked_at": "2026-11-05T22:26:02.138484+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/gul_s_market/7503448525/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWSRbng0_o7uX-tgkw6XJGxU2LOjKffjs357KZs_bEESggnDyvinYkWWpKwlUt0PUKoov3dRe0kNdnf7T6_IQlsN1kdG0eLDnnrJokCbbOKjucc0CcMh-dDw14DMhY8Cvx5mVFZiQqNs3k0H6qSqUFO64="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "083db75696966da06e96547f69fe97db2101c4563f2560868cef15ca804c3f03",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXfTb3O3qvWPsnz-X1evyY6zUoB-wvletat-qENxmeCLGuF0NhJSIJRoi05qkOap82Gd6HWYucNFdU8KR7zaEaRsS1R8SdLF18nsfH7U12dQXc-_x50XW_T64ob3ebts2va-OzxzHsldgAf3yc_BIsdi7tUv86Rdh9d0BRan-GQj0d",
+      "checked_at": "2026-11-05T22:26:02.296294+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/mehmet_aga_kocahavuz_parki/112905539498/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXfTb3O3qvWPsnz-X1evyY6zUoB-wvletat-qENxmeCLGuF0NhJSIJRoi05qkOap82Gd6HWYucNFdU8KR7zaEaRsS1R8SdLF18nsfH7U12dQXc-_x50XW_T64ob3ebts2va-OzxzHsldgAf3yc_BIsdi7tUv86Rdh9d0BRan-GQj0d"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "ef1717c6d2298a4594cd23e27f0ab720b9a478e6b5a4519d2d4ba8f2d38aff0e",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYYf0iSXkZSFq7u5pmTg7VD8q_rmH9-sqlpkIaFose9bRbmbyQ1e6brWb1nGjRYytUrbPs4VyCEWM2VJ26i4Ug84wMoDzu_LMIJ0bTeQcOL4GbIKhsXfJ0H4Fg1Cduhupt1VKCaUzrjls_MbPYAEiX8PxTPm3OWb_V",
+      "checked_at": "2026-11-05T22:13:08.106182+00:00",
+      "http_status": 200,
+      "final_url": "https://wanderlog.com/place/details/10295109/akyaka-town-market",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYYf0iSXkZSFq7u5pmTg7VD8q_rmH9-sqlpkIaFose9bRbmbyQ1e6brWb1nGjRYytUrbPs4VyCEWM2VJ26i4Ug84wMoDzu_LMIJ0bTeQcOL4GbIKhsXfJ0H4Fg1Cduhupt1VKCaUzrjls_MbPYAEiX8PxTPm3OWb_V"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "7ecccd444ee1865c9be7a00744e55b628584397c2fda94e07bb586c8dfc44dc9",
+      "title": "Akyaka Town Market, Mugla, Turkiye - Reviews, Ratings, Tips and Why You Should Go – Wanderlog",
+      "published_at": null,
+      "text_sha256": "0e2bb561fba2c8d15a75acf9d55ba7ab730924c5eb5e7425826be9b759426f33"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZGqeyNDMhVT6GzIMdY7CNNtqXX782gceIEqPTHFaFyVeYPs5O7i2bExng7OFDmDfQ2vUYdnyrIQ3-9dAuIdhUi9IRM6q-q12eRSoWzygLpaskkHYADLnzKW4mGI1iOqiKBFVExY55DlGcEdf0NtPEwNrZR2OE6MHYzOC3ItHUreRtSC9U14EnaSK9h83WlztLhgA1LZGJtW4XXe-ArfcEOPwRvLNY6Q8xenc4",
+      "checked_at": "2026-11-05T22:13:09.724010+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ntv.com.tr/turkiye/galeri-muglada-tur-midibusunun-freni-patladi-2-olu-35-yarali,C6AUdi86P02Zr9sChzZevA",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZGqeyNDMhVT6GzIMdY7CNNtqXX782gceIEqPTHFaFyVeYPs5O7i2bExng7OFDmDfQ2vUYdnyrIQ3-9dAuIdhUi9IRM6q-q12eRSoWzygLpaskkHYADLnzKW4mGI1iOqiKBFVExY55DlGcEdf0NtPEwNrZR2OE6MHYzOC3ItHUreRtSC9U14EnaSK9h83WlztLhgA1LZGJtW4XXe-ArfcEOPwRvLNY6Q8xenc4"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3ab0a3178f7945e6266e8024a9631b18936263293c5ce48ecac3c0b52f489d4b",
+      "title": "Muğla'da tur midibüsünün freni patladı: 2 ölü, 35 yaralı | NTV Haber",
+      "published_at": null,
+      "text_sha256": "9511f5a9653997d0d98406fd63fa78e9a0b26cf3788313b61aac1d44fa5ad310"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfK8d88j0_eSZpEvYkE1KY4beouBYz8Lf2Biro8QFZWjsHHgHxRbI7BIYd-arW3qJgp1CeJyM67YHM1BlS6YRWv8hou6xJHv4dgHn3zQLe3tDO7Fqlp8mbo7rRnH_9Vm8qFz-6mU-pN1vmOkaJlCULPCgs89wb",
+      "checked_at": "2026-11-05T22:26:03.678319+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/west_cafe_bistro/63515405554/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfK8d88j0_eSZpEvYkE1KY4beouBYz8Lf2Biro8QFZWjsHHgHxRbI7BIYd-arW3qJgp1CeJyM67YHM1BlS6YRWv8hou6xJHv4dgHn3zQLe3tDO7Fqlp8mbo7rRnH_9Vm8qFz-6mU-pN1vmOkaJlCULPCgs89wb"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "902c8097d7a518158860ab7d429f950ac2f4d6911b86e1e9a165a2c4ed52c5e8",
+      "title": "",
+      "published_at": "2025-09-29T10:30:02.997Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfqzIojOLdWlf9lls7upF_Z2Di2Ah-tfusBv5f4SGspiH3YHig5TY6M_dQn7rIOpL_wkuIa2VSCV5zor2cenegL7cVIGGtK5DBTncWypPGCARVovc5U8CcvOHRJOJh5xolQZy8qqC0yuXzrtnk4gSmne64qxpVqHQqIwEjClgeyLyLhOdnqIg=",
+      "checked_at": "2026-11-05T22:13:10.032217+00:00",
+      "http_status": 401,
+      "final_url": "https://daire.trovit.com.tr/kiral%C4%B1k-daire-mu%C4%9Fla-orhaniye-mahallesi",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfqzIojOLdWlf9lls7upF_Z2Di2Ah-tfusBv5f4SGspiH3YHig5TY6M_dQn7rIOpL_wkuIa2VSCV5zor2cenegL7cVIGGtK5DBTncWypPGCARVovc5U8CcvOHRJOJh5xolQZy8qqC0yuXzrtnk4gSmne64qxpVqHQqIwEjClgeyLyLhOdnqIg="
+        }
+      ],
+      "content_type": "text/plain",
+      "response_sha256": "d134ca025a6c63b2555200885d71cb6e61f8097cdfd7ecf13675b3df0c721797"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhn_DZcILw7odir_FxagBzj0CXlDnGlj5l8UUYnqG8vXUPDsOBAfGh8ModJ7v-rCkQleqcfD3b7bkZXZMIzJPxmNl_MRVzPWtdMD6DgH_qw8Gs7xvAt1_w4jLO8vtlkMvigo0-uGCUWW6W6ummTEmB1-MSj1rr83aUUAbh1d-RuxQi",
+      "checked_at": "2026-11-05T22:26:03.736669+00:00",
+      "http_status": 200,
+      "final_url": "https://www.endeksa.com/tr/analiz/turkiye/mugla/mentese/kotekli/eglence",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhn_DZcILw7odir_FxagBzj0CXlDnGlj5l8UUYnqG8vXUPDsOBAfGh8ModJ7v-rCkQleqcfD3b7bkZXZMIzJPxmNl_MRVzPWtdMD6DgH_qw8Gs7xvAt1_w4jLO8vtlkMvigo0-uGCUWW6W6ummTEmB1-MSj1rr83aUUAbh1d-RuxQi"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "ce06339ecd9fff3083f1d768e5adb7f2133086bc0e24cf889e6eff770c35257b",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjF_D_1ZIyuupG0fIDcuoe1FlevPNNrAFdZWF_dvRdyIVssVlVV3VCHh4xVLOhzKrdJ-TuuNbAMHtTAWr3EntBrfPClB38V8LXg0GhSeBH6K-Txz6V3lNM_xX4TbBlv7uHJt3k8C3Lig==",
+      "checked_at": "2026-11-05T22:13:10.520477+00:00",
+      "http_status": 200,
+      "final_url": "https://harita.org/mugla/mentese/emirbeyazit/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjF_D_1ZIyuupG0fIDcuoe1FlevPNNrAFdZWF_dvRdyIVssVlVV3VCHh4xVLOhzKrdJ-TuuNbAMHtTAWr3EntBrfPClB38V8LXg0GhSeBH6K-Txz6V3lNM_xX4TbBlv7uHJt3k8C3Lig=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "3fd40411b70f3801a5a2439ad0d915d7205c2d0fb35c2dda8db7776f65be2d82",
+      "title": "Emirbeyazıt Mahallesi Haritası — Menteşe, Muğla | harita.org",
+      "published_at": null,
+      "text_sha256": "5dadf99f177fcfc976af7c2b08f9e0a5a6861db6a4ad1713d03737285d61db48"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjVCUtnQ534sjxtT3zxMjrMvs2DmTAIZKiADuieIDTLY2V1kvzNaT8Ujdrmgkh4-AenBOLJgLNXRVdL-3ALqBe2q6YIdLaLX3GtSRAzRv04qJ0GGXq51MRNKUmAVuCsp1mRtNMN1cFRse4YAccK-1kNFDHVeA5HuhPay0TjBUNb5e0Ee5PpTM2tDAXhXOx7UuQ",
+      "checked_at": "2026-11-05T22:13:11.688533+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglayenigun.com/koteklide-hareketli-gece-silah-sesleri-panige-neden-oldu/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjVCUtnQ534sjxtT3zxMjrMvs2DmTAIZKiADuieIDTLY2V1kvzNaT8Ujdrmgkh4-AenBOLJgLNXRVdL-3ALqBe2q6YIdLaLX3GtSRAzRv04qJ0GGXq51MRNKUmAVuCsp1mRtNMN1cFRse4YAccK-1kNFDHVeA5HuhPay0TjBUNb5e0Ee5PpTM2tDAXhXOx7UuQ"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "5443aea3a15b104cef39c0cd511ce500912001174b86d3920c4eebb4a389596f",
+      "title": "Kötekli’de hareketli gece: \"Silah sesleri paniğe neden oldu\" - Muğla Yenigün Gazetesi",
+      "published_at": "2026-03-31T10:02:33+03:00",
+      "text_sha256": "fd0bc9ab52d8ac7c150bffffad358158e5b22756b863850b6fa50a5d0185934a"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEokfQeKkScYLM8FhESQHz19Dezy-tbKQDl-BKoLBZ2r4R411KtRiEdXomtrUi_RFn1xUekeYlzQRJNuA7rLopNydEHDGMT6ZSs5JgQjeczq9yXyfwuPLx8GHVZD5jJ4TdvpeplonJdJNFQJQ3vlw4=",
+      "checked_at": "2026-11-05T22:13:11.875751+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/ula-kirsal-mahalle-kiralik",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEokfQeKkScYLM8FhESQHz19Dezy-tbKQDl-BKoLBZ2r4R411KtRiEdXomtrUi_RFn1xUekeYlzQRJNuA7rLopNydEHDGMT6ZSs5JgQjeczq9yXyfwuPLx8GHVZD5jJ4TdvpeplonJdJNFQJQ3vlw4="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "929f962355316197b1baa827665adc238653ea85d82b10256ed80b4095b0f3a8"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEt1MjpTMWHzShvivstcFYjNtYhPYCYDxBcpqRGYwsHXmwWz9Y3ILNTNTzmUmyj-ZHaUrt5JTlaoae0jydo_MUkZMe6NwX3sU3ShOSEqb0LwXwtunLvIuME6841KPgWL7qZH9rqpE_13vMD1RFar9pXJ52EEPrac58z37pA",
+      "checked_at": "2026-11-05T22:13:11.960963+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglayenigun.com/mentesede-is-yerine-silahli-saldiri/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEt1MjpTMWHzShvivstcFYjNtYhPYCYDxBcpqRGYwsHXmwWz9Y3ILNTNTzmUmyj-ZHaUrt5JTlaoae0jydo_MUkZMe6NwX3sU3ShOSEqb0LwXwtunLvIuME6841KPgWL7qZH9rqpE_13vMD1RFar9pXJ52EEPrac58z37pA"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "9c9bf74e19fcfe303b913abb1fc4069bca87dccd5e71da6417349ed84461eca0",
+      "title": "Menteşe'de iş yerine silahlı saldırı - Muğla Yenigün Gazetesi",
+      "published_at": "2024-04-29T11:36:39+03:00",
+      "text_sha256": "140741a34839be5fad2bceae0cbf9c5e8f26f3ace7f0173597b19a8d0b2ae959"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuaLwd0fGaUhYQmvhLeVwOi-4I-44F8GXaFv_8Sgu7q9OJf4ACWBZgmL7XVQW5pEhH7Sjtd2WafxG1upvBr0viyQwVraxpw3toq4uoy3d-b58mvmFzjc8rMnbjWGJj3JwtbQTkxBm1XsJvwlY2sRGlmkG9Cn05hxiMHwxL_yqhYIBSFvfZXvWlyYnpmmmnfWJXjWbXOvXz",
+      "checked_at": "2026-11-05T22:13:12.202877+00:00",
+      "http_status": 200,
+      "final_url": "https://halktv.com.tr/turkiye/muglada-dehset-tartistigi-sevgilisini-doverek-oldurdu-1042496h",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuaLwd0fGaUhYQmvhLeVwOi-4I-44F8GXaFv_8Sgu7q9OJf4ACWBZgmL7XVQW5pEhH7Sjtd2WafxG1upvBr0viyQwVraxpw3toq4uoy3d-b58mvmFzjc8rMnbjWGJj3JwtbQTkxBm1XsJvwlY2sRGlmkG9Cn05hxiMHwxL_yqhYIBSFvfZXvWlyYnpmmmnfWJXjWbXOvXz"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3b53674de9800ee4b84143134d8d1b44dc54ca78d32bd9e98fa907e529b76c80",
+      "title": "Muğla'da dehşet! Tartıştığı sevgilisini döverek öldürdü",
+      "published_at": "2026-07-14T17:37:00+03:00",
+      "text_sha256": "885a89ec24fc085497a907a9f613814fc5f05bfdffd2534e1c9cacc38390609b"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvkArc2DCrRJIvXB_6jV9mzJNWR8x-xW3JbmncFuoGzwAr0FmOqjA_fK-3PdfuYcFlWAZJXWVDHUH827sXFGjwiGMOsytP0ZvRNXIStJ1a5G04BpmT4QKP2rwIHnPiXmuMeSipfJf678PZpR4mI6xY8P8yG3-xICt0wbHoXWiyb43sSZPuqAYl8PtSV6lsSSduPb6svH7i9bGyTbkHii_GH0-fDVi0D6WkqnQ1-oY_9GBBSpPpi0JLOeX2DHzsfnm_AjqlwGcv9xjODU8sudL98h0CQCTv",
+      "checked_at": "2026-11-05T22:13:12.574170+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sabah.com.tr/yasam/muglada-hayrete-dusuren-anlar-hirsizin-rahatligi-pes-dedirtti-once-etrafi-kontrol-etti-sonra-motosiklete-binip-gitti-7594620",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvkArc2DCrRJIvXB_6jV9mzJNWR8x-xW3JbmncFuoGzwAr0FmOqjA_fK-3PdfuYcFlWAZJXWVDHUH827sXFGjwiGMOsytP0ZvRNXIStJ1a5G04BpmT4QKP2rwIHnPiXmuMeSipfJf678PZpR4mI6xY8P8yG3-xICt0wbHoXWiyb43sSZPuqAYl8PtSV6lsSSduPb6svH7i9bGyTbkHii_GH0-fDVi0D6WkqnQ1-oY_9GBBSpPpi0JLOeX2DHzsfnm_AjqlwGcv9xjODU8sudL98h0CQCTv"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "68616755470a853d32cd02842972e1bf6ee263f6b7a60b1638c3a420c3f6e026",
+      "title": "Muğla’da hayrete düşüren anlar! Hırsızın rahatlığı pes dedirtti: Önce etrafı kontrol etti sonra motosiklete binip gitti! - Yaşam Haberleri",
+      "published_at": null,
+      "text_sha256": "b5f94ffbd4b2df414ba7bc0bdcd980880e5e8c0ecaec894d9ca3f167026fd171"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzWVDYwaXeUg7jMTweMVgp2WPnJ1DGqO776UlHN1cBTbWXuduZylzx6R48j0zNbW4oze-oNSqOFrbbxIKR6TqCGW6ebPwacS8sD5qdut3W22NZPzlomrGN2_W4SBiC52XyUuapHhuNKXUv6pnvrCtRbE5ZMA==",
+      "checked_at": "2026-11-05T22:26:03.859297+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/rahat_meyhane/236867757972/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzWVDYwaXeUg7jMTweMVgp2WPnJ1DGqO776UlHN1cBTbWXuduZylzx6R48j0zNbW4oze-oNSqOFrbbxIKR6TqCGW6ebPwacS8sD5qdut3W22NZPzlomrGN2_W4SBiC52XyUuapHhuNKXUv6pnvrCtRbE5ZMA=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "9a05fd0fb1d7ad9b5dd29d21ac8286ec6253ed261db3084076fa4564077a788e",
+      "title": "",
+      "published_at": "2026-04-20T03:40:30.123Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-BvAZdpOWrZyG-lUVSR3KLTBcySmKzppE8nvxh4HMkGNk_WnYAEzrbY1YKOorB6CPc628SkbMrWyaeuA7r2QMdd1KeBhSsvVqLMgiKS7XvyPynYMk_SVsXTCeQn4NQ4VXNyI4LXsDurdLHmN0BE_GTfZo1FjLRPGUqrl4ysTy9SBh1-g2cs8APlPS-dr7acBbIsZA0LSqIfary6jRmQ==",
+      "checked_at": "2026-11-05T22:13:14.196913+00:00",
+      "http_status": 200,
+      "final_url": "https://yerel-haberler.haberturk.com/mugla-haberleri/mentesede-motosiklet-kazasi-1-yarali-117419176",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-BvAZdpOWrZyG-lUVSR3KLTBcySmKzppE8nvxh4HMkGNk_WnYAEzrbY1YKOorB6CPc628SkbMrWyaeuA7r2QMdd1KeBhSsvVqLMgiKS7XvyPynYMk_SVsXTCeQn4NQ4VXNyI4LXsDurdLHmN0BE_GTfZo1FjLRPGUqrl4ysTy9SBh1-g2cs8APlPS-dr7acBbIsZA0LSqIfary6jRmQ=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "769da0c8ce25ee751784e56783066f2403d62ca80f9e67245d9de23d53afcaaf",
+      "title": "Menteşe'de motosiklet kazası:1 yaralı - Muğla Haberleri",
+      "published_at": null,
+      "text_sha256": "bc837ef3888632d4debff317535f302360c2e08c380d7dd826a498d7f23b45d1"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0-XTO09sMY41bScIHsgj7krBYjUu7cDJe9bbyq_RSNsR_ks-g8rj_sYv38yKlmX83ToF02q5BI6bvHygoH_nAsE5Fxs_Gv1CaIHFJN7T2VtVK_VBcwIr48jVW0p9qiAy_nBa7Dw==",
+      "checked_at": "2026-11-05T22:13:14.872029+00:00",
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=TRMkyX_cn1g",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0-XTO09sMY41bScIHsgj7krBYjUu7cDJe9bbyq_RSNsR_ks-g8rj_sYv38yKlmX83ToF02q5BI6bvHygoH_nAsE5Fxs_Gv1CaIHFJN7T2VtVK_VBcwIr48jVW0p9qiAy_nBa7Dw=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b994ec4afba384bb8f03722e225d7cceeb941ce7437784043805694fd95c78fe",
+      "title": "Freni Boşalan Tur Otobüsü Dehşet Saçtı | 2 Ölü 4’ü Ağır Çok Sayıda Yaralı - YouTube",
+      "published_at": "2024-07-13T06:45:47-07:00",
+      "text_sha256": "7248e984188cff31f1757efe962d91386bc88af0c428187804963681650be1e5"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF04aZJ7SuDbHVTT4RoI0PZAm2GZ2Ts_HyOxdpkj4MuyYyAfJRk_Il9RaCL6afYThJudRrdXOHNmqd4i4yMJgLFnmnmjWH1k02-UbXjxYQU-Zpnk_NwPt6H7pIXbgtllbRV1R9e0wDnDAr4qLcJAok=",
+      "checked_at": "2026-11-05T22:13:15.470793+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/muslihittin-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF04aZJ7SuDbHVTT4RoI0PZAm2GZ2Ts_HyOxdpkj4MuyYyAfJRk_Il9RaCL6afYThJudRrdXOHNmqd4i4yMJgLFnmnmjWH1k02-UbXjxYQU-Zpnk_NwPt6H7pIXbgtllbRV1R9e0wDnDAr4qLcJAok="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "5b772ee92abed116385be9dfc2b95d5f0ac1d75bd14494abc34b2114027b08c3"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2T-BimEh7Tdw2-udIguHr7UAmLWkz7MlFZQd4IwP7eZy59eLtMzqcdh8b1rS_pAaRF_W5QoOOgUXyGRQrEdS3yed0g2XGJjGbKW4WwQleaH2LfbargDOZpiibqHls6ExjKMxgy5LAMg7wEA94h2AeDt9o",
+      "checked_at": "2026-11-05T22:26:03.867344+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/atapark_cafe/61316789724/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2T-BimEh7Tdw2-udIguHr7UAmLWkz7MlFZQd4IwP7eZy59eLtMzqcdh8b1rS_pAaRF_W5QoOOgUXyGRQrEdS3yed0g2XGJjGbKW4WwQleaH2LfbargDOZpiibqHls6ExjKMxgy5LAMg7wEA94h2AeDt9o"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "fd6d5f817f3de6a44a1411659c3804725d5d9d17f03229d07f293f67f7000368",
+      "title": "",
+      "published_at": "2025-05-25T16:57:46.776Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6mFa1JEUlODfjVmZzafinH5XOwK5cZz7VsGkMLCzvh_tBHc-IvFJgiKbeQwWcS6XtQJxumcIuuQnljokMV1yiMz-FSDd4c0oeg8KfOzsHjq2oUPFawkhQ3Vo2nDjPdKHMufC6_myR5hSz-mk5VJxyltqYK3ZElXkvFZlr7LD7BzYAZ7CA_RTAHiDTzpjRq0xgOwCM3eDy",
+      "checked_at": "2026-11-05T22:13:15.755692+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sabah.com.tr/yasam/muglada-kan-donduran-olay-sevgilisini-doverek-oldurdu-7622395",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6mFa1JEUlODfjVmZzafinH5XOwK5cZz7VsGkMLCzvh_tBHc-IvFJgiKbeQwWcS6XtQJxumcIuuQnljokMV1yiMz-FSDd4c0oeg8KfOzsHjq2oUPFawkhQ3Vo2nDjPdKHMufC6_myR5hSz-mk5VJxyltqYK3ZElXkvFZlr7LD7BzYAZ7CA_RTAHiDTzpjRq0xgOwCM3eDy"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b4ac50a42bbce1d7f30bba80d9838ce2d2417baa826e88576b7083e31e67b21a",
+      "title": "Muğla’da kan donduran olay: Sevgilisini döverek öldürdü! - Yaşam Haberleri",
+      "published_at": null,
+      "text_sha256": "4cfb06b0a47088d36c6bce846ddda909483c6ecfd1443d056b16bfc41cb870d6"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF992Kv5p_yiou_ju5tPRzsNNZydU-R4DpobJ-iew7D698dDjDpnjHN5mmi_HW_Prr5RPYJhaz2eajjfU1YFmmZTzkeKK69_KCuN2iCboyo5FwqP959aJRoeZiuf-ul-azc2mKVxFAhvevEO2ItZKBcGenLZiW8A3R2El_eB5e-gSYxDVo8PqpFwaXS58I=",
+      "checked_at": "2026-11-05T22:13:15.993708+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-orhaniye-mahallesi/emlakcidan",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF992Kv5p_yiou_ju5tPRzsNNZydU-R4DpobJ-iew7D698dDjDpnjHN5mmi_HW_Prr5RPYJhaz2eajjfU1YFmmZTzkeKK69_KCuN2iCboyo5FwqP959aJRoeZiuf-ul-azc2mKVxFAhvevEO2ItZKBcGenLZiW8A3R2El_eB5e-gSYxDVo8PqpFwaXS58I="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e58c3a20f94b5d260122ba684c6d89049aec2872783cc2e1d75a3bbde9f4b2d6",
+      "title": "Emlakçıdan Menteşe Orhaniye Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "30fe2a39f362ecd2c486eadab040d9037bb99770cb366f4ea38e826b26de9fd4"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBB9r-3G8LSnWahKCsqRXNjKoYidpvIeRCI_VNK6Zg_ARCmmC0jwhgnPwAPybNV7od8foAUCfk06DGeZ_p067_Fq2CdOX-tJzxvIEV8dyZIwTpsDDLhS3-QH28KkTG4V5ogVZlSQFW4XcmRIfhjeVgGOL_",
+      "checked_at": "2026-11-05T22:26:05.474375+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/mabolla_more/60874362902/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBB9r-3G8LSnWahKCsqRXNjKoYidpvIeRCI_VNK6Zg_ARCmmC0jwhgnPwAPybNV7od8foAUCfk06DGeZ_p067_Fq2CdOX-tJzxvIEV8dyZIwTpsDDLhS3-QH28KkTG4V5ogVZlSQFW4XcmRIfhjeVgGOL_"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "730e2ca70db682cddb07ad9228d15a32383774fd9b6cf6d602261c690a010d72",
+      "title": "",
+      "published_at": "2026-04-28T16:40:04.765Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBTongFmi0_kqAlSyc1R2SBI9druW8uSi-9hEdzEZ981knncmgvl4CgaK0EvMjZ8kQW09-JbHC9TKnbLt1gCsfmuW9F3TYy55UBLdwJQlvCx94bIJBeHZMWI70z-jLboExOYpPRmZrsrdeS-zZE1ORjvbgO5lTR-ogBVytsF8Ik70lfStw9P8j9R0=",
+      "checked_at": "2026-11-05T22:13:17.236469+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-18-mentese-yapi-koop-tip-fakultesi-441/70265",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBTongFmi0_kqAlSyc1R2SBI9druW8uSi-9hEdzEZ981knncmgvl4CgaK0EvMjZ8kQW09-JbHC9TKnbLt1gCsfmuW9F3TYy55UBLdwJQlvCx94bIJBeHZMWI70z-jLboExOYpPRmZrsrdeS-zZE1ORjvbgO5lTR-ogBVytsF8Ik70lfStw9P8j9R0="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "238e23d6019ea2aa22ff15314328ef834d62aaef6a54e7523813425f00d162e9",
+      "title": "1-18 - Menteşe Yapı Koop - Tıp Fakültesi | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "ed4c36287439991581ac3c457e72cfaf23cf8453df219d0d59d6800cbab464da"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCkmXr-zxQRaMtjxL2ImYJlk3pqlybaYyztSAix5GZ4_OlmF7yUoTLHnv9IVND27wVTgBp1UxnOdBzDQyTeczz68dS42Wu5hvLSmTtYaKO3WgkZ_jcBOXN4Z3Tk4ZNwvxLph1DGysMKUxMwjshc8RDCAPGpmiIhetM6YtS1nQX5eck2Z9w",
+      "checked_at": "2026-11-05T22:13:17.723409+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-konut/mugla-mentese-emirbeyazit-mahallesi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCkmXr-zxQRaMtjxL2ImYJlk3pqlybaYyztSAix5GZ4_OlmF7yUoTLHnv9IVND27wVTgBp1UxnOdBzDQyTeczz68dS42Wu5hvLSmTtYaKO3WgkZ_jcBOXN4Z3Tk4ZNwvxLph1DGysMKUxMwjshc8RDCAPGpmiIhetM6YtS1nQX5eck2Z9w"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "97440d9defeeb17a9ae124300ebea2ea958471ed4c7add89aaa11d6c15ebc15c",
+      "title": "Menteşe Emirbeyazıt Mahallesi Kiralık Ev Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "af3fea41dc5bbac57546037f03d53cd3721ceb8ce1c6ccfc64cb07a348b9851f"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0gpurRtzSq2fAQBkaUKfnhjKU56kFY0_RynWNOCaDuAAM880nGIXSEoPkYfItdrGBRvCkeOERYDzrENqeEI7TU1quir_1D7MZP42pFsdCCF7RZXJpE8wlm8NUMXcR1Ik7NrbO9G2-SAMaAjc_DICLb9jzPCiK-w=",
+      "checked_at": "2026-11-05T22:26:06.099622+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/askyaka_pilavcisi/245530947140/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0gpurRtzSq2fAQBkaUKfnhjKU56kFY0_RynWNOCaDuAAM880nGIXSEoPkYfItdrGBRvCkeOERYDzrENqeEI7TU1quir_1D7MZP42pFsdCCF7RZXJpE8wlm8NUMXcR1Ik7NrbO9G2-SAMaAjc_DICLb9jzPCiK-w="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "2fb3f9d841e6297a549e66953950cb8a89280d340428f511fd74bcc54ed5d8be",
+      "title": "",
+      "published_at": "2026-05-05T18:00:23.697Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE_Vt4wIi-MAOROxwq4Ywd3GXsR3NTgR0OaD39EOB8gs4_mWGOKcnJkfNDxaPD9XPLMTEsAJcbl4LMmwJsXgdpmIqRKQ3mXzpbs1pRz6QCvfV9ylsNudxpPnuV-QFE7EqfDGgRmt8o5YI=",
+      "checked_at": "2026-11-05T22:13:18.418222+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/muslihittin-kiralik",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE_Vt4wIi-MAOROxwq4Ywd3GXsR3NTgR0OaD39EOB8gs4_mWGOKcnJkfNDxaPD9XPLMTEsAJcbl4LMmwJsXgdpmIqRKQ3mXzpbs1pRz6QCvfV9ylsNudxpPnuV-QFE7EqfDGgRmt8o5YI="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "bb7bda54f32d84ec079c559342be38def198f9cdff116ede4c1122d6bc30c4b2"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFH_YDjnOLpAMjd5krS6_o4jSsgh94UI7oz1uvdTiLdM4NqffpXbKb3CJwQJubamfzKeHm9e6CDf04V8mpB_MekYdkHLkh5d5JIT7bIhSWUe5Fa-lKPG7MeBE9GIO7z4EnMyBv-fZdi8A0ut9R66H9WvFQ=",
+      "checked_at": "2026-11-05T22:26:06.252987+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/mugla_cafe/203901162486/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFH_YDjnOLpAMjd5krS6_o4jSsgh94UI7oz1uvdTiLdM4NqffpXbKb3CJwQJubamfzKeHm9e6CDf04V8mpB_MekYdkHLkh5d5JIT7bIhSWUe5Fa-lKPG7MeBE9GIO7z4EnMyBv-fZdi8A0ut9R66H9WvFQ="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "494ff3889ad211dd6bffb356d6732a3e4b53beb131084ddc1e2547883493df39",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIn2hBAgeQZf1vCPdeOBCCyY3hjsxDNxNaSOuNXD39K451OAINCocmFzGabIK1fukr09Mo8VQNS3nwxwc2TxNEqDgtmKCPgzvNa4UzvtmFTs1aucVgM6bffZpdmhOp31EPNCYvwSXw0Axe0ZJw-H6arqJxD0k-",
+      "checked_at": "2026-11-05T22:13:19.682833+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/48-12-koycegiz-mentese-322",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIn2hBAgeQZf1vCPdeOBCCyY3hjsxDNxNaSOuNXD39K451OAINCocmFzGabIK1fukr09Mo8VQNS3nwxwc2TxNEqDgtmKCPgzvNa4UzvtmFTs1aucVgM6bffZpdmhOp31EPNCYvwSXw0Axe0ZJw-H6arqJxD0k-"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "347d2a2650cc4ec5396755dede1a99f9fb20bcdea5fbc565625db3ee6eaaa6dc",
+      "title": "48-12 - Köyceğiz - Menteşe | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "4484ca635176c953e026fd13de5417b70c34948aa41bcbd3304928b46b94433e"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPNFIe3FVNO8RdrR-Nfkha4MZZaIeA8searzUFcyS7tCksDSGSaIiF7GFGIEo8SF3YWB2M2V1d5FRl_uvui-sa7u-Z0tqzcWr5108q5BndgXthiFSZNoGF",
+      "checked_at": "2026-11-05T22:13:20.086189+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPNFIe3FVNO8RdrR-Nfkha4MZZaIeA8searzUFcyS7tCksDSGSaIiF7GFGIEo8SF3YWB2M2V1d5FRl_uvui-sa7u-Z0tqzcWr5108q5BndgXthiFSZNoGF"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "b8184f489aefece4978500fe2b20ffd3dd38bc08bcfa485c619032971ef1f3f2",
+      "title": "MUTTAŞ Otobüs Sefer Saatleri | Muğla",
+      "published_at": null,
+      "text_sha256": "ac9f8d0ed56a66284fe3b06142c09849f520fe6d6cea897e39d62c812ecd3c17"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUKA9dVfNaVoTYzzcdaZmxkmEbJTseYwRsF2vGR64FwH1LPeoVj8SHKmkRMyRBfbH7Lh9N6KGEB2sbxc71F7ZkEtdJQCnDFQVnoSPGns3Ly1OAVVFJjVOACBtVBrD8udsFZQ5-oTzyQILdiAZ0LXzwEbNDOBreOz4dQ9Gt-Q==",
+      "checked_at": "2026-11-05T22:13:20.091352+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-48-yenikoy-tip-fakultesikyk-132",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUKA9dVfNaVoTYzzcdaZmxkmEbJTseYwRsF2vGR64FwH1LPeoVj8SHKmkRMyRBfbH7Lh9N6KGEB2sbxc71F7ZkEtdJQCnDFQVnoSPGns3Ly1OAVVFJjVOACBtVBrD8udsFZQ5-oTzyQILdiAZ0LXzwEbNDOBreOz4dQ9Gt-Q=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "32b477fa61b4bcc83a49c670d806577a596a64e6fc07e753f342972794044951",
+      "title": "1-48 - Yeniköy - Tıp Fakültesi(Kyk) | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "7630b8838567a50937cb383851afb07e4a25bc0385904c1efd73deea1e621a3a"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUz2ajPZrb88Q-Aqi6R-THxqL9UZnDUp95EL3Y3amW7FH41dvG1FIqCDSvepdX6brFQcRWR2ejCm4XsgAw9QDhzwpSAWgygbpFb-KbUBdQSOC2H2p2nIfdbmo42X_nCgIkt48s_T146wiHWta_qsQzxjJzbo_4QeWo4Z5KyOZrjNo=",
+      "checked_at": "2026-11-05T22:26:06.317195+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/etpark_tencere_ev_yemekleri/78344419241/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUz2ajPZrb88Q-Aqi6R-THxqL9UZnDUp95EL3Y3amW7FH41dvG1FIqCDSvepdX6brFQcRWR2ejCm4XsgAw9QDhzwpSAWgygbpFb-KbUBdQSOC2H2p2nIfdbmo42X_nCgIkt48s_T146wiHWta_qsQzxjJzbo_4QeWo4Z5KyOZrjNo="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "ab178df60e742f7f9713c265f474a0011813690a379e623e14d16beea1b17365",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW01g2qwvQMsI3nIz0qwfgLqtx5oybTBblwjwH7Ouzd-0D-siKPu6ypnebfyBmVa9ZENSL2iMokxXsKkkSikU7gbGHFaYLM4N_dzIMJkOPwmlBneWoB8sJyW0KXmu7EkOPTy14qhxbWed8aY979UAvivJNajB9fC66QA==",
+      "checked_at": "2026-11-05T22:26:07.420246+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/kosem_cafe_restorant/2611708667/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW01g2qwvQMsI3nIz0qwfgLqtx5oybTBblwjwH7Ouzd-0D-siKPu6ypnebfyBmVa9ZENSL2iMokxXsKkkSikU7gbGHFaYLM4N_dzIMJkOPwmlBneWoB8sJyW0KXmu7EkOPTy14qhxbWed8aY979UAvivJNajB9fC66QA=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a11b088b59e73390fa6f24e0262040a93094c8551f14af54d6478e83c1659d58",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWU1E55kzwNxrSCqeBRcD21UXfBHcYRwGqhkAuN8ps8dwNmrkTp0vfZq1VbckW489zNlH9_bM4_Mb7GzKJ5XpHGfwXxx9a5gQMyogAhKuVlgdAOp6knCv4gNszDxBhv7JTwLbweHFNEMR3qCRQO4Bwnw8Q",
+      "checked_at": "2026-11-05T22:13:22.074551+00:00",
+      "http_status": 200,
+      "final_url": "https://www.bulurum.com/dir/market-ve-bakkallar/mentese/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWU1E55kzwNxrSCqeBRcD21UXfBHcYRwGqhkAuN8ps8dwNmrkTp0vfZq1VbckW489zNlH9_bM4_Mb7GzKJ5XpHGfwXxx9a5gQMyogAhKuVlgdAOp6knCv4gNszDxBhv7JTwLbweHFNEMR3qCRQO4Bwnw8Q"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "c80103a938c6682e3b13a5b7c4f7d0f28024899eb90bbaf93f139697a0caade8",
+      "title": "Menteşe Market ve Bakkallar | Muğla Menteşe Market ve Bakkallar | Bulurum.com",
+      "published_at": null,
+      "text_sha256": "0a498957837447406330a4340d90eb502d503d43107756ade1ded1ebbac09d70"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWWfi3CdabdBPV4e6uFwoRWyJKlN7AUxNk3RuyHiTLSEVS-1W1ZItSYYFXu6UIM-ATA_JjcqkZyg9Xyzm-nloS0BkHC6utZnqxMs1FFlKuBxnC-TeQslqP-a6DOYQfGZlZWb6qAcRpKG2enaibQ-OSEe8=",
+      "checked_at": "2026-11-05T22:26:08.444207+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/devin_akyaka/33819638984/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWWfi3CdabdBPV4e6uFwoRWyJKlN7AUxNk3RuyHiTLSEVS-1W1ZItSYYFXu6UIM-ATA_JjcqkZyg9Xyzm-nloS0BkHC6utZnqxMs1FFlKuBxnC-TeQslqP-a6DOYQfGZlZWb6qAcRpKG2enaibQ-OSEe8="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "879cbf32f905024b0b4c07593fead01cb2b82e26e7aad9542251c4bcb848b7e5",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ_7iI6gXawiEPh13bfmJ7kXcP9yKsiLIFBte2RId-0N-T1nBEkw35phq2mx1PP5YTIGGHxT0OHTuwkz8pVXdZVMl-M0J3didv0tpQMMHEt36Ckdgg1KrUjLCkaViuGiTUvAVyd9IffpuRnG31MfHbsmj6t3AD4aT-DYcF-x6Fs_giwu40V3Xe-zuS0w_Htw==",
+      "checked_at": "2026-11-05T22:26:08.626408+00:00",
+      "http_status": 200,
+      "final_url": "https://mugladevrim.com.tr/haberler/mugla-haberleri/mentese-de-iki-otomobil-carpisti",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ_7iI6gXawiEPh13bfmJ7kXcP9yKsiLIFBte2RId-0N-T1nBEkw35phq2mx1PP5YTIGGHxT0OHTuwkz8pVXdZVMl-M0J3didv0tpQMMHEt36Ckdgg1KrUjLCkaViuGiTUvAVyd9IffpuRnG31MfHbsmj6t3AD4aT-DYcF-x6Fs_giwu40V3Xe-zuS0w_Htw=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "4ba51603870203bc7209dc43d90ccd630556fd132b0067c4218380cb3ffd61ca",
+      "title": "Menteşe'de iki otomobil çarpıştı - Muğla Haber",
+      "published_at": null,
+      "text_sha256": "a055f7bd9dd5fe3227897c8af8eb37bd9919c7c753ead9a83af0dfbb79f16dfd"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZleYEV25gDD92JZpps38GL50dmGN4jwBj4Jl_tovVqycwkaWbEd8fliNGpJjApe2rZOZzwAakM-BoUbjJ-ZIxg8AHuc5ksGn4Ls0Xup8BRFpp55HKQ2XqBYBFsbuwZOWhlcI3htm7N6XYsOlhFcKapXX6BlSzz9MeUvl7S2yKeHthcvQ=",
+      "checked_at": "2026-11-05T22:26:08.672447+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/akyaka_belediye_parki/158050840238/reviews/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZleYEV25gDD92JZpps38GL50dmGN4jwBj4Jl_tovVqycwkaWbEd8fliNGpJjApe2rZOZzwAakM-BoUbjJ-ZIxg8AHuc5ksGn4Ls0Xup8BRFpp55HKQ2XqBYBFsbuwZOWhlcI3htm7N6XYsOlhFcKapXX6BlSzz9MeUvl7S2yKeHthcvQ="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "45dacc18dc7de2237ff43f502772d2c281f48a55b30edec59509669b45800ed5",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_1iRP322n8EakvrbP86MSQ3DxNIJVpyh9HqlXb8S-mXc_8UdzmsLno2TPOOPLl6fCf7FlSh5p0JdpCDuqRdWM-FqAaFUSDLJAUOP6Mf59iHI2k_xsVB1kzciwLeJDTFWk5xOvx3tAsIKdofxxTZ6JqbXWhLUJ",
+      "checked_at": "2026-11-05T22:26:09.681472+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/bizim_restaurant/2783785876/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_1iRP322n8EakvrbP86MSQ3DxNIJVpyh9HqlXb8S-mXc_8UdzmsLno2TPOOPLl6fCf7FlSh5p0JdpCDuqRdWM-FqAaFUSDLJAUOP6Mf59iHI2k_xsVB1kzciwLeJDTFWk5xOvx3tAsIKdofxxTZ6JqbXWhLUJ"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "5e55c17c9b0244868d5ebf9726131ff4916451b502ea8442d18a20976434a7b9",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbFpUkIw0X9GC2ohrLTgbDOvicRS8hm_ldAf4T7I3wlf9tDMHhqFIvLq8E9InZ-I8vrszQsSdzfEW34eAwxoaQQqqrL8C0-lgqrLYYLibkXekNHSULeKjUTr9hschTCKKHfipliIz2BAynwA==",
+      "checked_at": "2026-11-05T22:13:24.539561+00:00",
+      "http_status": 200,
+      "final_url": "https://www.yenimesaj.com.tr/arsiv-T20240208.htm",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbFpUkIw0X9GC2ohrLTgbDOvicRS8hm_ldAf4T7I3wlf9tDMHhqFIvLq8E9InZ-I8vrszQsSdzfEW34eAwxoaQQqqrL8C0-lgqrLYYLibkXekNHSULeKjUTr9hschTCKKHfipliIz2BAynwA=="
+        }
+      ],
+      "content_type": "text/html; charset=iso-8859-9",
+      "response_sha256": "66562405e845b9296bdf539076d831471f57fdb71ff4ff0333cc03cad9693b68",
+      "title": "Yeni Mesaj Internet Sitesi",
+      "published_at": null,
+      "text_sha256": "da963602d7fc5cf62f26b0b9a30f4c613e6dea8403b7255338d2670d8019a9ab"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdmIGKVNMdS8yzc22iS0QdRnXKTJ95CQZn8z3R9nyatp93PTsCA3DTBUQuufQr-NcWWWeiPD6CMiLA0jPxTRQp7LDvbLMe5IP0h4AJ0tqkYymU99jpzIWURwqAV8FvYIeZT90wAcPyN60F_X2Weuf-7TfyLtcbfGXjfMbFG4E4yvLlQeuC6dJB-_ztWQnPmgcTR0d7Z9QaJ5T7SDmjlA==",
+      "checked_at": "2026-11-05T22:13:25.010775+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sondakika.com/guncel/haber-mugla-nin-mentese-ilcesinde-bir-evde-eski-sevgilil-20197119/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdmIGKVNMdS8yzc22iS0QdRnXKTJ95CQZn8z3R9nyatp93PTsCA3DTBUQuufQr-NcWWWeiPD6CMiLA0jPxTRQp7LDvbLMe5IP0h4AJ0tqkYymU99jpzIWURwqAV8FvYIeZT90wAcPyN60F_X2Weuf-7TfyLtcbfGXjfMbFG4E4yvLlQeuC6dJB-_ztWQnPmgcTR0d7Z9QaJ5T7SDmjlA=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "dcfcc1f1b33750cad5af7ae0e233b25b8965049080f84007baeec313b74dadc0",
+      "title": "Muğla'nın Menteşe ilçesinde bir evde eski sevgililer silahla başlarından vurulmuş halde ölü bulundu - Son Dakika",
+      "published_at": "2026-09-01T16:18:00+03:00",
+      "text_sha256": "82b21f36a43617dda9a70a63c686c52de61de4a4d7b68107a8e2ba95949da9c3"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg==",
+      "checked_at": "2026-11-05T22:26:10.454164+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/kukla_pub/165576003677/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfySqTBt-LMVWfz8gJZXWvF8jEp7IxJ4TxTd0gJjEAWUtDVTmUtHK_YZtF4S_FebdUEL5mmu2x60KWH-BWAZlvgbFkOQC9yaYELlo4Fae8hENE3zALtZf7zQrDlYXfn1zOhk60WK8nFKnGkf2w6Id8Xg=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "2fab4ac6b8858007cbf1ed9ce536fa068fb8de5901faa2603592522390bbcf32",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgyb54mhjsfjaY5yGU0xTVFAA7ZLf-rl-XRu0aZTXGdvIX3hI1TwfdubNq2wpOvGhV55OLAM9hFb99mEsDHsfP76HUpHT26CJaCk-Z-hBEdsQPXlYRqP7piAkD6RaGPIoqX09F65q2gU6yKNZ11VIXC-HKAuFGMVrIG2AHuk4N3NZZKr3V-flYK6A8fXF2zDJRYeXQdaJfUQ==",
+      "checked_at": "2026-11-05T22:13:25.217068+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglayenigun.com/mugla-mentesede-feci-kaza-motosiklet-surucusu-hayatini-kaybetti/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgyb54mhjsfjaY5yGU0xTVFAA7ZLf-rl-XRu0aZTXGdvIX3hI1TwfdubNq2wpOvGhV55OLAM9hFb99mEsDHsfP76HUpHT26CJaCk-Z-hBEdsQPXlYRqP7piAkD6RaGPIoqX09F65q2gU6yKNZ11VIXC-HKAuFGMVrIG2AHuk4N3NZZKr3V-flYK6A8fXF2zDJRYeXQdaJfUQ=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "201777f384669f12e6ab8a800629659810768f5c2ad04d9a42da73a65572ad00",
+      "title": "Muğla Menteşe’de Feci Kaza: Motosiklet Sürücüsü Hayatını Kaybetti - Muğla Yenigün Gazetesi",
+      "published_at": "2026-08-12T20:59:44+03:00",
+      "text_sha256": "a7077fac8f03495075c432167558fbaee9ffb1f1b51856032be6e8ebfcc71d57"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi-cjDJXSMW-BmHvqYV3idYfDvp0B-MQW8wS6WVOYz2PScxkfO6tzWjAXaWqi7ROFwIiHsOryyQXDFpG7WuX1dU4FsGXv4h-Rkzg63fS2fjpUuDG3y93akgrJJtEODW32uu-wdPO2PVXYyXjJUgkPhsezgIdtcVzl-yVTw9L-HZooYAl0T69nkge_i0BdeGoz8B7vUwHwOnM2UUYYIqple4syyhVC_rw2kRNcOTSq5gMQcqa4k2wYDU6-gcwM=",
+      "checked_at": "2026-11-05T22:13:25.996908+00:00",
+      "http_status": 200,
+      "final_url": "https://www.iha.com.tr/mugla-haberleri/mugla-akyakada-meydana-gelen-kazada-2-kisi-hayatini-kaybetti-yarali-sayisi-artiyor-98821961",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi-cjDJXSMW-BmHvqYV3idYfDvp0B-MQW8wS6WVOYz2PScxkfO6tzWjAXaWqi7ROFwIiHsOryyQXDFpG7WuX1dU4FsGXv4h-Rkzg63fS2fjpUuDG3y93akgrJJtEODW32uu-wdPO2PVXYyXjJUgkPhsezgIdtcVzl-yVTw9L-HZooYAl0T69nkge_i0BdeGoz8B7vUwHwOnM2UUYYIqple4syyhVC_rw2kRNcOTSq5gMQcqa4k2wYDU6-gcwM="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "5320f78664dfabaf8479c1123299c94c6f4e5f8e460c059d3784e810917785d7",
+      "title": "Muğla Akyaka’da meydana gelen kazada 2 kişi hayatını kaybetti, yaralı sayısı artıyor İhlas Haber Ajansı",
+      "published_at": "",
+      "text_sha256": "54b0578e4a5b545cfec526aaf7ecdeee01f5a8c311d722315390ceee8d3baa9a"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFimbYYitxlRvgMCgkAEaeXfuKTsY9VcIcS8MaHyZRyDDjJW9M8aDn2nj9Uby3N9jliJu0HNhXIiUAcq1FfO5zyB_tYC-fOeK5_U57MkJ4xJ_A3m53mCp_FfOSZ9m8dNofz0USuuqvvLxwK1aUF4fdvtQdRFcsaGipctrd2XRUI9D_PsyiCVMHhLqyTVlaGCCI3LBqz4EMiYg==",
+      "checked_at": "2026-11-05T22:13:26.431285+00:00",
+      "http_status": 200,
+      "final_url": "https://www.egeyonhaber.com/mugla/muglada-guvenlik-gorevlisi-basindan-vurulmus-halde-bulundu/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFimbYYitxlRvgMCgkAEaeXfuKTsY9VcIcS8MaHyZRyDDjJW9M8aDn2nj9Uby3N9jliJu0HNhXIiUAcq1FfO5zyB_tYC-fOeK5_U57MkJ4xJ_A3m53mCp_FfOSZ9m8dNofz0USuuqvvLxwK1aUF4fdvtQdRFcsaGipctrd2XRUI9D_PsyiCVMHhLqyTVlaGCCI3LBqz4EMiYg=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "b0c275d206645d5088ac022a6981f37cccc72cb3ba5653a7de233f4999ae379a",
+      "title": "Muğla’da Güvenlik Görevlisi Başından Vurulmuş Halde Bulundu - Egeyön Haber",
+      "published_at": "2025-08-20T10:47:33+00:00",
+      "text_sha256": "e56b6235f77f9eac586d4a4686994f3b30e576fcee4dfb433494ccb9c5c95491"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpsYEm8A_0OZuFkCycaaq61Kil9XveunawEhfadhCo02uOP-4jZlf7FX0bce4TQYS_NZnlFe2dr2NnAS-op1g8qSleh8NeKLP_W09GvvXtQa3KJdwLsm3oUd3HVoEddkwYBBkiZnBLmvH8eGdFAnMOl9ngzrs68AN7VheXznrsSg==",
+      "checked_at": "2026-11-05T22:13:26.949999+00:00",
+      "http_status": 200,
+      "final_url": "https://emlakgo.net/kiralik-konut/mugla-mentese-muslihittin-mahallesi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpsYEm8A_0OZuFkCycaaq61Kil9XveunawEhfadhCo02uOP-4jZlf7FX0bce4TQYS_NZnlFe2dr2NnAS-op1g8qSleh8NeKLP_W09GvvXtQa3KJdwLsm3oUd3HVoEddkwYBBkiZnBLmvH8eGdFAnMOl9ngzrs68AN7VheXznrsSg=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "aa9b97b21c2d94f9e337e490cb2a71560cfcc7723a15d9bc4f0296270440feb1",
+      "title": "Menteşe Muslihittin Mahallesi Kiralık Ev İlanları ve Fiyatları - EmlakGO.net",
+      "published_at": null,
+      "text_sha256": "49225e02b70991a42bc32fde87c97581ae5940f8ed30c51fad26e9f514d7f728"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFr_iF49Z2X0o4RyWUq4EshFs8pbWkczYcsCm5c_qokZmVbaaZm3urAz5OWkegtMomRT-zpKqhRngw5SCK5j8OjN7jdFxDfqWBMNjxIi-sw9KritbpgM-KXeqxQjYH5vlrnzzJa7Q-YNyhPscykM1uIRYkHiWTTJ9ZtHzF5iGhkWzR6SxIuE3JIxn_bm6LUZ4FUxD695-Vn7q5siaMxtv5OH265uouQtCpdEVnW0oNW8Vm6Kw==",
+      "checked_at": "2026-11-05T22:13:27.208530+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglagazetesi.com.tr/mentese-haberleri/mentese-koteklide-silahli-saldiriyla-ilgili-2-kisi-tutuklandi-182281h",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFr_iF49Z2X0o4RyWUq4EshFs8pbWkczYcsCm5c_qokZmVbaaZm3urAz5OWkegtMomRT-zpKqhRngw5SCK5j8OjN7jdFxDfqWBMNjxIi-sw9KritbpgM-KXeqxQjYH5vlrnzzJa7Q-YNyhPscykM1uIRYkHiWTTJ9ZtHzF5iGhkWzR6SxIuE3JIxn_bm6LUZ4FUxD695-Vn7q5siaMxtv5OH265uouQtCpdEVnW0oNW8Vm6Kw=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "b6517cd4d8404b1fbfde71adce2a14d6478c403c4e912bea003c41d8af82f9b7",
+      "title": "Menteşe Kötekli'de Silahlı Saldırıyla İlgili 2 Kişi Tutuklandı",
+      "published_at": null,
+      "text_sha256": "9eb101ce17bd193841687db055841efd59b3c88feef6bee3b455d4fa954315eb"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtXqIlJfEgjxykl53HNpbNHq5gKiPQjoc7YMPnSfy2F9XBJf7ULSCQY0ACqmplVvPJHdtwq1m-wVLLCmsoH2DPePF0M4qsb8zUwbeSWjQU2i7S09c6OaU0RC3PxJ_G46Orc-P0shK-95dMVdHhgXtXR-rZl9RVFlk7j94zw83g_6rMCflmBEk9Sx-HudTxCoA7K1ifymlhaUQQIJMS5vZhUfOTLmQ=",
+      "checked_at": "2026-11-05T22:13:28.737809+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sabah.com.tr/video/yasam/tartisan-iki-kisi-birbirini-sokak-ortasinda-bicakladi-o-anlar-kamerada",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtXqIlJfEgjxykl53HNpbNHq5gKiPQjoc7YMPnSfy2F9XBJf7ULSCQY0ACqmplVvPJHdtwq1m-wVLLCmsoH2DPePF0M4qsb8zUwbeSWjQU2i7S09c6OaU0RC3PxJ_G46Orc-P0shK-95dMVdHhgXtXR-rZl9RVFlk7j94zw83g_6rMCflmBEk9Sx-HudTxCoA7K1ifymlhaUQQIJMS5vZhUfOTLmQ="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a73851f3a18298b806b2d15363c404684f649b3884fb156195f02d4e053393a1",
+      "title": "Tartışan iki kişi, birbirini sokak ortasında bıçakladı: O anlar kamerada videosunu izle | Son Dakika Haberleri",
+      "published_at": null,
+      "text_sha256": "756218a1cfa3a04195d5fd6b3a950aa3b2219fa4c4484bce5eaa185277324548"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvkfg9V93Z0SheSEVbqkSFI4y0oskKTqVdn1wNjgLummLfhCoIYqk0cKZqrsJs6PwZwzcJFValnfPyuXg6tIp5PhYGCpif1YaWzxpli4M66rh2CTNAhekD3H566acbEqo-EuRs2D5bMkxPf57SGEcA0jw=",
+      "checked_at": "2026-11-05T22:13:28.992045+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/12-5-mentese-akyaka-297",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvkfg9V93Z0SheSEVbqkSFI4y0oskKTqVdn1wNjgLummLfhCoIYqk0cKZqrsJs6PwZwzcJFValnfPyuXg6tIp5PhYGCpif1YaWzxpli4M66rh2CTNAhekD3H566acbEqo-EuRs2D5bMkxPf57SGEcA0jw="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "444298b96e12c1301ffef84f1d00f8cfe3e8ae2e1bd5222073a56f3e77ad41d4",
+      "title": "12-5 - Menteşe - Akyaka | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "81781901dceb0fd4857bf5b593d26d58dc7681e7c12c77541af218e2549139ad"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwYGc-at88FRRu6R41gm-JGTFAwx8QG_Oic5C1iNAfJyssnaXfmFh9KznJsGuKxPITJUWEAJE_8Pr__QG7NxwHdlVAuFzDpI6uHDr_FHetURUZiOpHqy2vXbF8XcTElhEGSaOVx9lf",
+      "checked_at": "2026-11-05T22:13:29.074792+00:00",
+      "http_status": 200,
+      "final_url": "https://mekan.com/yeme-icme/c/mugla/i/merkez",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwYGc-at88FRRu6R41gm-JGTFAwx8QG_Oic5C1iNAfJyssnaXfmFh9KznJsGuKxPITJUWEAJE_8Pr__QG7NxwHdlVAuFzDpI6uHDr_FHetURUZiOpHqy2vXbF8XcTElhEGSaOVx9lf"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "bd798ab38a2e8ca38decfba9c7bfb389e55b67fe17c070927107a0822928ad47",
+      "title": "Menteşe Yeme İçme Mekanları, Restoranlar, Kafeler, Barlar, Gece Kulüpleri - mekan.com",
+      "published_at": null,
+      "text_sha256": "facf0d3d9e7e9b14da7668db8852fa5930f8ca35480f008ec2938dad4000b596"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFysjc6zP7Dfl3IxcPHT7QYktb_ZWKmF1FlNydXGO56q9VvNY6LppXm5xprWcmcCp5g4zbjDKdKBSq0OB2WDH1uaaJrfoR5ITFtRClt86qetHP8PMp2guYsOelAlu3TZq8nUxeboQyc62zlIR7XCYWr7MHbWmGgjWVL9t94DMHTUlCQQMI4EPuAIJJjw6pDssjiPm8C1zcb_M5AquuksFFQGwFRtCizww==",
+      "checked_at": "2026-11-05T22:13:29.161216+00:00",
+      "http_status": 202,
+      "final_url": "https://moovitapp.com/index/tr/toplu_ta%C5%9F%C4%B1ma-K%C3%B6tekli_Mu%C4%9Fla-Mu%C4%9Fla-site_232053303-4485",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFysjc6zP7Dfl3IxcPHT7QYktb_ZWKmF1FlNydXGO56q9VvNY6LppXm5xprWcmcCp5g4zbjDKdKBSq0OB2WDH1uaaJrfoR5ITFtRClt86qetHP8PMp2guYsOelAlu3TZq8nUxeboQyc62zlIR7XCYWr7MHbWmGgjWVL9t94DMHTUlCQQMI4EPuAIJJjw6pDssjiPm8C1zcb_M5AquuksFFQGwFRtCizww=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1hzX8H1f6uURTUvXkoLlrRctMOdc9A_ctZ07PXZSQGyYCx9d5aOW-_59Z2NuIyFZP9l8P2AYpefq4AZeog_FdeVrK3zDcJ5g58Kn9G0il3I7P9EhPXELxCnmXHH1sa6D1QPG2nSWy",
+      "checked_at": "2026-11-05T22:13:29.415774+00:00",
+      "http_status": 200,
+      "final_url": "https://mekan.com/yeme-icme/c/mugla/i/merkez",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1hzX8H1f6uURTUvXkoLlrRctMOdc9A_ctZ07PXZSQGyYCx9d5aOW-_59Z2NuIyFZP9l8P2AYpefq4AZeog_FdeVrK3zDcJ5g58Kn9G0il3I7P9EhPXELxCnmXHH1sa6D1QPG2nSWy"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "e3243ff2b77be66baeb9afa7a63679823b58be87780944c5da284128375c022a",
+      "title": "Menteşe Yeme İçme Mekanları, Restoranlar, Kafeler, Barlar, Gece Kulüpleri - mekan.com",
+      "published_at": null,
+      "text_sha256": "facf0d3d9e7e9b14da7668db8852fa5930f8ca35480f008ec2938dad4000b596"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3mFXNDQ9CRpj5L02a_FvtXMu0OASD-07Mu6a4MlYHq7DWhq6SJ90zJTmfePZnbEBdyykFBbRvDAsG9yxvLhOYlELJmsQ2sm3CddCBVzyEtFNME2MLAO5jFCbO7U21PU-ELW4ROJ94ebvYtLZgfsh5IO4t9OfFPwSEUq6ZzzcU7mPPqhFu3GhDfcZJ9UbqaScqX-FKHSinFF-x_VLymxj-Z3jMiou-KMNY",
+      "checked_at": "2026-11-05T22:13:30.676495+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesedeki-bicakli-kavganin-goruntuleri-ortaya-cikti-200580h",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3mFXNDQ9CRpj5L02a_FvtXMu0OASD-07Mu6a4MlYHq7DWhq6SJ90zJTmfePZnbEBdyykFBbRvDAsG9yxvLhOYlELJmsQ2sm3CddCBVzyEtFNME2MLAO5jFCbO7U21PU-ELW4ROJ94ebvYtLZgfsh5IO4t9OfFPwSEUq6ZzzcU7mPPqhFu3GhDfcZJ9UbqaScqX-FKHSinFF-x_VLymxj-Z3jMiou-KMNY"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "e9cd9c5f2b304faa1dcf6663c48426b6f26d5287e65a1793f696b33d16ac1f19",
+      "title": "Menteşe’deki Bıçaklı Kavganın Görüntüleri Ortaya Çıktı",
+      "published_at": null,
+      "text_sha256": "754cf39cf014fbc5411bc57157064c5884bd54f9409b439c9285717985693eaa"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5cs30Awj_ugJevpGcKDgTEmlKDvPttTjYENmQiFfFLLF-0_y_0a1FAXwwM6xwpFCVAyHX4febBky6yZyMdqvvASXxNlDfyMju2JIXikVRB9gnjm3N2-FDoh_RNXyfLFE1PGYxiHijTDBl",
+      "checked_at": "2026-11-05T22:26:10.747393+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/bim/17623977295/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5cs30Awj_ugJevpGcKDgTEmlKDvPttTjYENmQiFfFLLF-0_y_0a1FAXwwM6xwpFCVAyHX4febBky6yZyMdqvvASXxNlDfyMju2JIXikVRB9gnjm3N2-FDoh_RNXyfLFE1PGYxiHijTDBl"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "75370ccf419d8d35841629f1f7392b795ef37324edaafd57bebce2b81ff04e87",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG69LH5nzCpoQIcqTcgGQRyo_GVdpOneydmlZrpXYFcFF1SnSYi7NZf56yEDp48Ac_i8uF7ZUJJqZSZcCL-0Jw6n_62p34e3jwL8q6PT3QZcn3s35sXjOzeNaAjpCyMQcPXclab0G0hH10s1ktWrKNfmhbXZCKmHi--Jm3M",
+      "checked_at": "2026-11-05T22:13:31.020055+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/print/hat/48-12-koycegiz-mentese-322",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG69LH5nzCpoQIcqTcgGQRyo_GVdpOneydmlZrpXYFcFF1SnSYi7NZf56yEDp48Ac_i8uF7ZUJJqZSZcCL-0Jw6n_62p34e3jwL8q6PT3QZcn3s35sXjOzeNaAjpCyMQcPXclab0G0hH10s1ktWrKNfmhbXZCKmHi--Jm3M"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "c888bccf6902ee7eedaaa96675183a2305a420d77a5d827ff520d7c35ac4bb98",
+      "title": "48-12 - Köyceğiz - Menteşe | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "0136b1554180e945e70e9561637fcd4a11b995af43ad30f217cb8fe29031f142"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VE5PBGvM_I7WXU6rUQAUyTMGj8Fsf9MvDMMS6otprX0ePlWceAfPK856p6SGCsjWmyUs9-YXfXcxtRS45tLtlIrAwYhFDPcQ0yNRM_FK02uE4HI6P9p1FWHA_1SIT6Swl2URK0szY6BvTInCFuKy2EH-Kr-YJiAR",
+      "checked_at": "2026-11-05T22:26:11.341081+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/akyaka_orman_kampi/212485193257/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6VE5PBGvM_I7WXU6rUQAUyTMGj8Fsf9MvDMMS6otprX0ePlWceAfPK856p6SGCsjWmyUs9-YXfXcxtRS45tLtlIrAwYhFDPcQ0yNRM_FK02uE4HI6P9p1FWHA_1SIT6Swl2URK0szY6BvTInCFuKy2EH-Kr-YJiAR"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a7a901d58e495924fc415958fa523d9afd080280a2d287a4dac18252d46d60c3",
+      "title": "",
+      "published_at": "2025-06-11T17:28:02.415Z",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFA6MCkZvHNFa0NGHW1Rp7KQtnI4AemayyK4VQpM5VF7NxVAKc11jO3JPvnafrpsnTdzKMU7vkwjR8dt0Ze3wr6i6XOUKdbWW1BYAoMlMPU-DSq4-Ma4qG-L2GluuUnNiq-krxiJW7cbZcFj0rfpywVNJ9MqbfAIuBwW8l8WFjCuHCcQ==",
+      "checked_at": "2026-11-05T22:26:12.048783+00:00",
+      "http_status": 200,
+      "final_url": "https://www.endeksa.com/tr/analiz/turkiye/mugla/mentese/orhaniye/eglence",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFA6MCkZvHNFa0NGHW1Rp7KQtnI4AemayyK4VQpM5VF7NxVAKc11jO3JPvnafrpsnTdzKMU7vkwjR8dt0Ze3wr6i6XOUKdbWW1BYAoMlMPU-DSq4-Ma4qG-L2GluuUnNiq-krxiJW7cbZcFj0rfpywVNJ9MqbfAIuBwW8l8WFjCuHCcQ=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "ce06339ecd9fff3083f1d768e5adb7f2133086bc0e24cf889e6eff770c35257b",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOQTKUD-PhP1krdXUuyqHjj6elmuD_cGiCzAWwTYsv4YsJ3R_T78aibCaD5JbgZ9dpMw-zocdCrn1qtDmhgrkjH6olnPGfgknRJas3PexXR5p7-15MQwoyLd8IkCVPEdE8WNOZUvZM1bQ5wAIbSXNOZztEOqN0XKEfAg==",
+      "checked_at": "2026-11-05T22:26:12.653269+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/arasta_cay_bahcesi/181776807488/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOQTKUD-PhP1krdXUuyqHjj6elmuD_cGiCzAWwTYsv4YsJ3R_T78aibCaD5JbgZ9dpMw-zocdCrn1qtDmhgrkjH6olnPGfgknRJas3PexXR5p7-15MQwoyLd8IkCVPEdE8WNOZUvZM1bQ5wAIbSXNOZztEOqN0XKEfAg=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "c95b27b3e9d809b2ee28b8afbb72bae82d5f1d856058fcf28667115df9aa5dbe",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQvqAXopjODJnGoi5Tln3B-XJCCm-4piIE7fCWi3nVUt6HAe3nRhHVAzK1_fA5QiqkuQE75bFc4a_FK9mUZkhc_rMOC8_s3z3bFSdg_75l3I7dyzfuBBYFV4sY1_wIcBP-r__GSwXZn71x03S1aJNBdmmYI6uJCDmwFy0=",
+      "checked_at": "2026-11-05T22:13:32.846493+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-65-mentese-otogar-yenikoy-129",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQvqAXopjODJnGoi5Tln3B-XJCCm-4piIE7fCWi3nVUt6HAe3nRhHVAzK1_fA5QiqkuQE75bFc4a_FK9mUZkhc_rMOC8_s3z3bFSdg_75l3I7dyzfuBBYFV4sY1_wIcBP-r__GSwXZn71x03S1aJNBdmmYI6uJCDmwFy0="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "ab633fa50f39e88d16302a03b55107ebd1e48eee4f686f5a4a0c281da98f6357",
+      "title": "1-65 - Menteşe Otogar - Yeniköy | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "90204bc2eaef52825a56b589dbe529df0d0f919d77a82f4f65f7db6eea606373"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUAEnOmzgWreNaEpakgufPaqOPkGiKLU5YfKNrRcBwKovGWzxLpRJeVBxqulZ18RK3MFmoOigSJH7rd6Awr885kfgMPctPXHkTguKS67dyKy60OHnijDQs-m3hi4okaCUILjXNdYZYby0BxcEaX3-YZ54=",
+      "checked_at": "2026-11-05T22:13:33.029004+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/48-5-mentese-milas-265",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUAEnOmzgWreNaEpakgufPaqOPkGiKLU5YfKNrRcBwKovGWzxLpRJeVBxqulZ18RK3MFmoOigSJH7rd6Awr885kfgMPctPXHkTguKS67dyKy60OHnijDQs-m3hi4okaCUILjXNdYZYby0BxcEaX3-YZ54="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "c1cf8a43cbf1f5c1669164e11cd6558229b78616ac18ebf6c21241ab9b607ebd",
+      "title": "48-5 - Menteşe - Milas | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "b7006a919c5619e38f0875ead989c1ac9ddbcd49a775d1511ea5de7637618247"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUhKbXoeBQWJ0VI1bWTnH8NDa-NHjXNvHtJGMpR_g4eZVrPc6TBeo9_M9gC9WzXJzqYj8qjo9r0tdIYLtv2DhekfET-EpdDZZ7hobCqqJaOQPUPuD3KCkMC08fBQiyn6AKj3DKbwPaDh9weBeZ0KNZFOthyQ==",
+      "checked_at": "2026-11-05T22:26:12.752448+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/200213/mentese/search/Kafeler/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUhKbXoeBQWJ0VI1bWTnH8NDa-NHjXNvHtJGMpR_g4eZVrPc6TBeo9_M9gC9WzXJzqYj8qjo9r0tdIYLtv2DhekfET-EpdDZZ7hobCqqJaOQPUPuD3KCkMC08fBQiyn6AKj3DKbwPaDh9weBeZ0KNZFOthyQ=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "8417568596c16b2d1c38740d0a760527ffadb60b8648874af96f1b6eb0833e57",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVKZO_P_SPqs25ozq4qwHSkZAoGkmbyE5qtLgi_1tZQabjYW20vBxbpUW91vGAV_FsI1UPVxiJ7vokY8tbW5j0tVyih3brcXChcn6wsUk2OI3FoDHjhaKAMb1z-jZC2OQS9oKtHNuHuCF4jAdSzB4eNVamUIYdMn4aIKzptBCVOj1jGm4=",
+      "checked_at": "2026-11-05T22:13:34.009680+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/storage/uploads/tarifeler/1779028104_1-22.pdf",
+      "status": "non_html_requires_review",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVKZO_P_SPqs25ozq4qwHSkZAoGkmbyE5qtLgi_1tZQabjYW20vBxbpUW91vGAV_FsI1UPVxiJ7vokY8tbW5j0tVyih3brcXChcn6wsUk2OI3FoDHjhaKAMb1z-jZC2OQS9oKtHNuHuCF4jAdSzB4eNVamUIYdMn4aIKzptBCVOj1jGm4="
+        }
+      ],
+      "content_type": "application/pdf",
+      "response_sha256": "63d564ac2ca37af27bab6360cc964ebb61ab4f065b31fe264359d07913499aa8"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWPrpkie0cyvUWwt_sCdNqOsJBxPlpQA9NbpFzOoNAvIw4wERFmwozvLgjMYKUck5Sx9qbOrEsYLALV9lLOW6OzkMZUPvQ3lLmuaBVfn29IaH7HQ20roOMvoZl8P76sapv3GLKABjLebDVJHOj20z2DOIVUqfJqYJ4wXLMUmvyDH-gI4ZRBvoe0w-dMf6DF1_lZcFe5HvRZItJRQ==",
+      "checked_at": "2026-11-05T22:13:34.546340+00:00",
+      "http_status": 200,
+      "final_url": "https://otobussaatleri.net/1-66-mentese-otogar-kotekli-yenikoy-gece-hatti-mugla-otobus-saatleri/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWPrpkie0cyvUWwt_sCdNqOsJBxPlpQA9NbpFzOoNAvIw4wERFmwozvLgjMYKUck5Sx9qbOrEsYLALV9lLOW6OzkMZUPvQ3lLmuaBVfn29IaH7HQ20roOMvoZl8P76sapv3GLKABjLebDVJHOj20z2DOIVUqfJqYJ4wXLMUmvyDH-gI4ZRBvoe0w-dMf6DF1_lZcFe5HvRZItJRQ=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "b3f5e219cd74aca2709ab4d93901f3c5fed2aa0667008e7d9dda5d5af6e29f32",
+      "title": "1-66 Menteşe Otogar Kötekli Yeniköy (Gece Hattı) Muğla Otobüs Saatleri – OtobusSaatleri.Net",
+      "published_at": null,
+      "text_sha256": "8e3e5f58576c402a58815c03e433a34d76b5d2868c1d3c36f68e6bfa4e6cab7a"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc5BVugQ9UBRz7SlPPmP6CREO3-HslaylIJiLNXokqBPSchHhA0E_bFh5vcaYJds79Gp8H3eRPvoh7Zeg0Jb_azvAPY8eRvwNMw4VHsUQrms6i7Ig4_06jvmV7idGGC99t25J-5C4=",
+      "checked_at": "2026-11-05T22:13:35.536498+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hatlar/mentese",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc5BVugQ9UBRz7SlPPmP6CREO3-HslaylIJiLNXokqBPSchHhA0E_bFh5vcaYJds79Gp8H3eRPvoh7Zeg0Jb_azvAPY8eRvwNMw4VHsUQrms6i7Ig4_06jvmV7idGGC99t25J-5C4="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "a050808857983433f70984b31be2d6573130a882da763258f61af3a4ffcbb48c",
+      "title": "Menteşe Hatları | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "f7759a98c2bfe20b33f20c193f29fffbeef282ef2bbe0ec7593c7e4228201164"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlpJNaqjrDAyM23-b_nODZirISSxd1uOpN06PDsitK0035o5_uHWjryc8EIR2_bcigZ88xHCMXOtyeSbg8A7vFCJhdhbAsZoB1F4HmyTzi5PJEqmn9yVYDoXwV7SNW_0yRqQ1svKuym7-eLDs2AJ7ejolrktlPdEhk_QSi1J73mb9CvU9Id61n7hptEKuYLk6OLJJUGh27CyBOckCaSg==",
+      "checked_at": "2026-11-05T22:13:35.628447+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sabah.com.tr/yasam/mentesede-guvenlik-gorevlisi-basindan-vurulmus-halde-bulundu-7408635",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlpJNaqjrDAyM23-b_nODZirISSxd1uOpN06PDsitK0035o5_uHWjryc8EIR2_bcigZ88xHCMXOtyeSbg8A7vFCJhdhbAsZoB1F4HmyTzi5PJEqmn9yVYDoXwV7SNW_0yRqQ1svKuym7-eLDs2AJ7ejolrktlPdEhk_QSi1J73mb9CvU9Id61n7hptEKuYLk6OLJJUGh27CyBOckCaSg=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "6e7b78bbacb897aa162181a0a441e97372e6e89d14093aac44656405ccdb5a9e",
+      "title": "Menteşe'de başından vurulan güvenlik görevlisi hayatını kaybetti - Yaşam Haberleri",
+      "published_at": null,
+      "text_sha256": "894e07d24b76cd25f73d52992511c0f8fd16b010a1078c23bcfad442a3d14136"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmnQk9wRYLC7yhthec-nhQJI9jEKBjvXGM02oGHSAjKrAI4Qu9EyYBMoAeqbDGiXWjrtNBhf4aEt-Q6IO7z397l-Q-W0a29dBggOhUYwBjUYjHcssMYI3hR5-9pfR42xyMrP8BvPHo4hlFNZfWyQjaGXY=",
+      "checked_at": "2026-11-05T22:26:13.794660+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/friends_pub/17651996026/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmnQk9wRYLC7yhthec-nhQJI9jEKBjvXGM02oGHSAjKrAI4Qu9EyYBMoAeqbDGiXWjrtNBhf4aEt-Q6IO7z397l-Q-W0a29dBggOhUYwBjUYjHcssMYI3hR5-9pfR42xyMrP8BvPHo4hlFNZfWyQjaGXY="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "90a90b5efb256bb8b8da266ae1163f701bc93be83bebe1183d30b1c87b11c5c2",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmqaHimVcHTEosNvMV3ATDTqIY3ildwPFttm8kyeviy8RFupvtDhbncdU0gbHkO_VMC6ls0iaKSZE8l3KfPx66n6CMYv7vB1emEKjU2hxo_DSNVg8_XkWwWo5am91znSFU642OgL158VVos679DAPOzSpOjiI=",
+      "checked_at": "2026-11-05T22:26:13.903918+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/tatli_mi_tatli/13905140646/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmqaHimVcHTEosNvMV3ATDTqIY3ildwPFttm8kyeviy8RFupvtDhbncdU0gbHkO_VMC6ls0iaKSZE8l3KfPx66n6CMYv7vB1emEKjU2hxo_DSNVg8_XkWwWo5am91znSFU642OgL158VVos679DAPOzSpOjiI="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "83542106f64589dd3902bf60cec57ec07df3ac29dde01452985ea85218dba9d5",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoWRf-fR5VBwTydPmkaeJq1qtPfcVPs5dSRMBADm8fyc20InPOxkeTZP2z4JQTtaHMeCPXgfSMg-KAzEaNBS8QF9hbNdB8owSXEfB85LtUQZJLbQy2HhwoifUSOSbAGwgxjpfMGHWPym3pfFG_DrJqKlJwAHKu1nXq",
+      "checked_at": "2026-11-05T22:26:14.903782+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/emin_arslan_parki/169113632956/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoWRf-fR5VBwTydPmkaeJq1qtPfcVPs5dSRMBADm8fyc20InPOxkeTZP2z4JQTtaHMeCPXgfSMg-KAzEaNBS8QF9hbNdB8owSXEfB85LtUQZJLbQy2HhwoifUSOSbAGwgxjpfMGHWPym3pfFG_DrJqKlJwAHKu1nXq"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "7e8c3c449d63c68d444b15817b3f74a89a1b8747d0e020d88dff8ef5086290d0",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoaS_LersYcomRw8kFrgfaoVrs-WJuLSGqSDs2fMkyzIFl1h9crfqf5_wNZv7vlo97UYzqRONBM5iQ0sk4zP89OKvaXw8Aour-L-bZjBX96TD0C4tibRR3tqsKZIK1mxiFambbHtWUZVNNlUBHD_VryWLilNaQSPnYFA==",
+      "checked_at": "2026-11-05T22:26:15.103692+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/sok_market/205622179846/related/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoaS_LersYcomRw8kFrgfaoVrs-WJuLSGqSDs2fMkyzIFl1h9crfqf5_wNZv7vlo97UYzqRONBM5iQ0sk4zP89OKvaXw8Aour-L-bZjBX96TD0C4tibRR3tqsKZIK1mxiFambbHtWUZVNNlUBHD_VryWLilNaQSPnYFA=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "0a8b21343f864e9578fa02186368ada875e0a81acbcbd2afe9d8e351e47627c4",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpj_1ndXV9_WS8YYb9MIIYKtEzPwlW7930t-mH-HS01V8R0cRkGfhCj04NWZr_UTWxMdJrgt7YGvNFOoOWG3X2WrCEvktg-646Ezu6wTlHrOBfEz57qpWswVY80VrETYx91yud0lkf31KPy6y98FLXDTVRfTTUJppH",
+      "checked_at": "2026-11-05T22:13:37.938523+00:00",
+      "http_status": 200,
+      "final_url": "https://minibussefersaatleri.com/mugla-akyaka-minibus-saatleri/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpj_1ndXV9_WS8YYb9MIIYKtEzPwlW7930t-mH-HS01V8R0cRkGfhCj04NWZr_UTWxMdJrgt7YGvNFOoOWG3X2WrCEvktg-646Ezu6wTlHrOBfEz57qpWswVY80VrETYx91yud0lkf31KPy6y98FLXDTVRfTTUJppH"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "2e16a5e74f4f100568e196ea7362d5e5cc4bd519d67ddb411b1adc510b8a93dc",
+      "title": "MUTTAŞ 12-5 Menteşe–Akyaka Saatleri ve Durakları",
+      "published_at": null,
+      "text_sha256": "a590937e1acf9e7e07119ec7e022e0b3f145d166a9e938077896a5f13e7fd02d"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq1cSJwEuRf14fFRkuLflsdYUeJQuOzKsZXjzxcLHVXgKy20Md6thj2cJQoEhZLsysjDwd7B_w8EGF1kO0mJ3Nu9DfaYW0N52yPIX7wXT7DC6VYi_ffh1P3OybOGBRA06rxiEMCCon7tlxyin5ujl9sbnPzhmpwgxVquNjwF01SxCL5fzE8oel3Nc8uhIA6yzIeLktv9NQVpo6p0t4WoeBTlxkbkSScxVheZ7kjlP1nZ_rQps-epA=",
+      "checked_at": "2026-11-05T22:13:38.130087+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesede-ihbar-uzerine-gidilen-evde-bir-kadin-baygin-halde-bulundu-216130h",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq1cSJwEuRf14fFRkuLflsdYUeJQuOzKsZXjzxcLHVXgKy20Md6thj2cJQoEhZLsysjDwd7B_w8EGF1kO0mJ3Nu9DfaYW0N52yPIX7wXT7DC6VYi_ffh1P3OybOGBRA06rxiEMCCon7tlxyin5ujl9sbnPzhmpwgxVquNjwF01SxCL5fzE8oel3Nc8uhIA6yzIeLktv9NQVpo6p0t4WoeBTlxkbkSScxVheZ7kjlP1nZ_rQps-epA="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "6756228716d3366d0ce7f7fe7ac1d77e0326f3f71219c7b404bfc95642708723",
+      "title": "Menteşe’de İhbar Üzerine Gidilen Evde Bir Kadın Baygın Halde Bulundu",
+      "published_at": null,
+      "text_sha256": "0c111c96bd7f5bdc13861fa36cec164503043fd33eda10f6d0eef9dec99a43f1"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqhbBD2lX54iesyIDl2Qok8s6FUUnlVIaQ4LG89ApiLsd1z9aMbBuVwZAnsDFL3KRzhQnQVdWU9IBn0yjPuDWfYuW7CueScbv45OTZ3aId5-rOHdkA-9hY2jEOllQhIQHxjYIgWZvZ3hIKvHyblWh0thIQ_MXLj-y2Q1DNBNbiTyMxTYZzv5edEm6uz4jrxPpmPbP19Cg5-HProPAb9RU=",
+      "checked_at": "2026-11-05T22:13:38.136341+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sabah.com.tr/haberplus/muglada-dehset-veren-olay-basindan-vurulmus-halde-bulundu-7408594",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqhbBD2lX54iesyIDl2Qok8s6FUUnlVIaQ4LG89ApiLsd1z9aMbBuVwZAnsDFL3KRzhQnQVdWU9IBn0yjPuDWfYuW7CueScbv45OTZ3aId5-rOHdkA-9hY2jEOllQhIQHxjYIgWZvZ3hIKvHyblWh0thIQ_MXLj-y2Q1DNBNbiTyMxTYZzv5edEm6uz4jrxPpmPbP19Cg5-HProPAb9RU="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "edbeeca511a94cb7b9c6d0ed7180fa1b919b13d8480c18ef79522b486f24a531",
+      "title": "Muğla’da dehşet veren olay: Başından vurulmuş halde bulundu - Haberplus Haberleri",
+      "published_at": null,
+      "text_sha256": "20027d5e9179f680a55b21cb5cb985beec09e8516fbc83f8cabba1375ca4c823"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs5K5kKbYOVtjY_2GASXLNXOtnLNzBhVNUF8a2LLkVsz6yWkMJZLkXahoRQkROk4Y0FnsMco0XyBlRbfyAcB_Lg1HjCdod4a8FovMya4aJlp4PPaO9mfZBUhQq5FJKUTDOw2cWt8y40y4fs8J67Q_vvzwD6Hu6Fvh3_tG81g==",
+      "checked_at": "2026-11-05T22:26:15.848064+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/200213/mentese/category/cafe/184106390/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs5K5kKbYOVtjY_2GASXLNXOtnLNzBhVNUF8a2LLkVsz6yWkMJZLkXahoRQkROk4Y0FnsMco0XyBlRbfyAcB_Lg1HjCdod4a8FovMya4aJlp4PPaO9mfZBUhQq5FJKUTDOw2cWt8y40y4fs8J67Q_vvzwD6Hu6Fvh3_tG81g=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e7485a6a9f2ee8c47e2fbc3e90c5e33056bd638c678d853d8b3a5e430305ba0b",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwUlinZIpVirE_1njq92uPyqtJuGBgMThXdYAlB8kvspsX37kqil-MUPFtTBeD4YQd1oR_-FZNETKS5y_8Upsgw0aFM_TatwK516e6kO_Os-v7ze1GV68eMgC5lgq8-D__cOnQ-MZrOD903g==",
+      "checked_at": "2026-11-05T22:13:39.765007+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/mentese-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwUlinZIpVirE_1njq92uPyqtJuGBgMThXdYAlB8kvspsX37kqil-MUPFtTBeD4YQd1oR_-FZNETKS5y_8Upsgw0aFM_TatwK516e6kO_Os-v7ze1GV68eMgC5lgq8-D__cOnQ-MZrOD903g=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "39b2800ab5abf3173893c2a6d7e28d0711584f1b10ec66459aaf943392a19d8c"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwUnMk_kdrlJkdskkgqW5SU_DyfWaVDKUx1XfoyB1fgIPaOYJP8wOM-Ckgi5J3L97HPWOFTqKP2jphv3n-wFRrL4nYS9w6zjHiiOs2s2g3Lwc1Ei8h2FIl2a8_bMFAyxOu6ZGVTJNmpkkFcrWd886i",
+      "checked_at": "2026-11-05T22:13:39.865799+00:00",
+      "http_status": 200,
+      "final_url": "https://kapsayici.com/kategori/restoran/mugla/mentese",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwUnMk_kdrlJkdskkgqW5SU_DyfWaVDKUx1XfoyB1fgIPaOYJP8wOM-Ckgi5J3L97HPWOFTqKP2jphv3n-wFRrL4nYS9w6zjHiiOs2s2g3Lwc1Ei8h2FIl2a8_bMFAyxOu6ZGVTJNmpkkFcrWd886i"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "5e93814c6baef62d705b12122d5bcc85e3e97766739e2dac554f912dba7d7367",
+      "title": "Menteşe Muğla Restoranlar - En İyi 29 Firma | Türkiye'nin Firma Rehberi",
+      "published_at": null,
+      "text_sha256": "0c243d6a5138f844e5314412c0ab600ba5d9e6ba3608a738bba27729df949e50"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxmKmz8C-jzJ6Ls1deCEwWKr0QKbMboZk-XEEGNUgEhCMhHG7eoVZXAHZ1y1hj55iQChuphWDDvZDZUrDFzF3YInHnpNteZ3f_ElDdmBQGXh3Aa42Z93GvlPvHoPmOgc8cBC2w5Q8QqUCVzUadXWvEiVujPdcfTJn6lh36EAK12p3RMc-J-eOxEwmzzKXe_-mSpBdoyqrpNzI01O5JPSF9lzkb2-CZSKg89G28nA==",
+      "checked_at": "2026-11-05T22:13:39.873529+00:00",
+      "http_status": 200,
+      "final_url": "https://yerel-haberler.haberturk.com/mugla-haberleri/mentesede-otomobil-ile-motosiklet-carpisti-2-yarali-115719319",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxmKmz8C-jzJ6Ls1deCEwWKr0QKbMboZk-XEEGNUgEhCMhHG7eoVZXAHZ1y1hj55iQChuphWDDvZDZUrDFzF3YInHnpNteZ3f_ElDdmBQGXh3Aa42Z93GvlPvHoPmOgc8cBC2w5Q8QqUCVzUadXWvEiVujPdcfTJn6lh36EAK12p3RMc-J-eOxEwmzzKXe_-mSpBdoyqrpNzI01O5JPSF9lzkb2-CZSKg89G28nA=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "f5cf340995c13251a12dcc1ef1e028b3c8fddf98ddb8c9316d3e718706b05d7d",
+      "title": "Menteşe'de otomobil ile motosiklet çarpıştı: 2 yaralı - Muğla Son Dakika Haberleri - Habertürk Yerel Haberler",
+      "published_at": null,
+      "text_sha256": "fc8c8786bc64daa3dfe0c747e0ec00dc784b1a2ea307bae76c05af59713acd9d"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyPgqdgEjZ7LddKrFtpT2toP4HpP5_DMozDy0g1VpXMuWBfxew5lSF8gz0Km_hlBc-Z6og3L1BVpZA9WSuX8MdHGAn4g6FmnjR2V3ah-5iWZpA_tdRLxPHS41wVMAKig-IdDGlURNafKQwZjO2qK120wI=",
+      "checked_at": "2026-11-05T22:26:15.959103+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/essiz_bahce/81938303279/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyPgqdgEjZ7LddKrFtpT2toP4HpP5_DMozDy0g1VpXMuWBfxew5lSF8gz0Km_hlBc-Z6og3L1BVpZA9WSuX8MdHGAn4g6FmnjR2V3ah-5iWZpA_tdRLxPHS41wVMAKig-IdDGlURNafKQwZjO2qK120wI="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "2d1389a34aeb00c75a4f5ad5084d1e577c626a4d9c691ba8761263c307a6441a",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGz5n7IYSxXsAaSJmQSvM6kJ6fU4CRNjN-kg2jaFL9hx0IU0zeo8BgEMQE_rw2XYtg50mL-hXpNmIJHWCy2uMYUqFv0w_IAGMpfNBCcZxZppBhgy9rYcJbwD6VVcaDK1OFJ32xOxUjfwcHDHlD5wRtJO8LtTI3ifVS29vVeqzxVBFAwyQ==",
+      "checked_at": "2026-11-05T22:13:40.400719+00:00",
+      "http_status": 200,
+      "final_url": "https://www.gezinomi.com/gezi-rehberi/mentese-tatilinde-gece-hayati.html",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGz5n7IYSxXsAaSJmQSvM6kJ6fU4CRNjN-kg2jaFL9hx0IU0zeo8BgEMQE_rw2XYtg50mL-hXpNmIJHWCy2uMYUqFv0w_IAGMpfNBCcZxZppBhgy9rYcJbwD6VVcaDK1OFJ32xOxUjfwcHDHlD5wRtJO8LtTI3ifVS29vVeqzxVBFAwyQ=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "25cfa659ba7da091d341682f5002fab583777bc472ea855e70bd9d2ed97a2b55",
+      "title": "Gezinomi - Her Gün Tatil Olsa",
+      "published_at": null,
+      "text_sha256": "34c0ed03676f0a5be3e890c15b20ce0fa68c5c62332993c17c153c52e05e4d76"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH10xPvicUzeTTXpy88ZyIPhmC1_WL2b1grvW1-wW75KQgp9OYb9kQkBQr0YAlyXe68NR92UxZ1hbMahvQzBjCih-i0qJz7etiNTwnECPUjD2iEmKa4EKWV3VNqHYx0ko1691HHvs85HY677oqfk92VU3Zc3b-DZR2XP6Ev-Nzx7H8O8DTQtWZEH608BfnBzZn2dtjF2RGcWfkfSTw=",
+      "checked_at": "2026-11-05T22:26:17.325119+00:00",
+      "http_status": 200,
+      "final_url": "https://mugladevrim.com.tr/haberler/mugla-haberleri/mugla-da-motosiklet-denetimleri-siklastirildi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH10xPvicUzeTTXpy88ZyIPhmC1_WL2b1grvW1-wW75KQgp9OYb9kQkBQr0YAlyXe68NR92UxZ1hbMahvQzBjCih-i0qJz7etiNTwnECPUjD2iEmKa4EKWV3VNqHYx0ko1691HHvs85HY677oqfk92VU3Zc3b-DZR2XP6Ev-Nzx7H8O8DTQtWZEH608BfnBzZn2dtjF2RGcWfkfSTw="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "f8130270cc11f8f7bfbaa48f69c959c01b5d244d32f6786ea9a1d82a9aac38cf",
+      "title": "Muğla'da motosiklet denetimleri sıklaştırıldı - Muğla Haber",
+      "published_at": null,
+      "text_sha256": "7c570f476ab580c7a2762cc7a4b65974b4acaaf04718b1560231171fed0ca77c"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH475m-2cr1Ybwfjy-jQq2Uqu1d9rdXRyZ8L32uLozZamZDdiRAOjjB_SK9l78PtxLBMl26CBDnb8e-72dZDvJNn_fhdGxb1VrTFBXibOJxvToO_9Ofw-OvobIRlk4eQt50hvBpplB9IONivK-RxbvfZZ46sd8vPvjeZxJ8gduxTpQ=",
+      "checked_at": "2026-11-05T22:13:41.756544+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/print/hat/1-66-mentese-otogar-yenikoy-128",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH475m-2cr1Ybwfjy-jQq2Uqu1d9rdXRyZ8L32uLozZamZDdiRAOjjB_SK9l78PtxLBMl26CBDnb8e-72dZDvJNn_fhdGxb1VrTFBXibOJxvToO_9Ofw-OvobIRlk4eQt50hvBpplB9IONivK-RxbvfZZ46sd8vPvjeZxJ8gduxTpQ="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "35629d08553db17219eb4cae2321c605027b2a5a6fa2fedf23727d1ab0c58ed5",
+      "title": "1-66 - Menteşe Otogar - Yeniköy | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "fe11bcf2d3e2228cfbe90c7b8596f9a4301139f35d10f7f8c49fabbd7eb01726"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4hzmY1PDkSXC61OdNGsYm3nPtLcU8iRY761YdjrUXW4W_yixphC5KPVwg8OrCAiTOCko8z4PodtyEYShkaxXfMtvlxpsXsQrPHz1I-anwyy_pnte6BERi7Qv10xfvCZ5pwJXNhiWeRnPY5aGks1Ox0SfRiGD32E306llQQGEe",
+      "checked_at": "2026-11-05T22:13:42.234658+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/print/hat/1-61-mugla-mentese-sungur-136",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4hzmY1PDkSXC61OdNGsYm3nPtLcU8iRY761YdjrUXW4W_yixphC5KPVwg8OrCAiTOCko8z4PodtyEYShkaxXfMtvlxpsXsQrPHz1I-anwyy_pnte6BERi7Qv10xfvCZ5pwJXNhiWeRnPY5aGks1Ox0SfRiGD32E306llQQGEe"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "eb9cecddc9ce86fdfe666d04ec90d0878df37d04012dffdddd5e51a69728c4f4",
+      "title": "1-61 - Muğla (Menteşe) - Sungur | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "67c045501096e4755cb027a406626cd467d398a8ffa12e9bc577acf4b0e10c61"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5dtdc4NjeilC-Hdfus3NkyPaXh0CjDvQuW_ko__iMcq133XekWR-e6us50hGuEY0afzdUii9oEWqX0A7ImA4BZtJuKmaMAHZaO9o-2uNJnRmbbE9ugcPunBpDgBFWbYJ0RO4sppg=",
+      "checked_at": "2026-11-05T22:13:42.482522+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hatlar/mentese",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5dtdc4NjeilC-Hdfus3NkyPaXh0CjDvQuW_ko__iMcq133XekWR-e6us50hGuEY0afzdUii9oEWqX0A7ImA4BZtJuKmaMAHZaO9o-2uNJnRmbbE9ugcPunBpDgBFWbYJ0RO4sppg="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "8cbbd5a83c23391884b29a56bf8743206e1e3922623a8ad7cff46799ec4026da",
+      "title": "Menteşe Hatları | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "f7759a98c2bfe20b33f20c193f29fffbeef282ef2bbe0ec7593c7e4228201164"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAoUIkJnrMnkLAtXPHvee7yzrSdh3ecTuKuJZDOj_3np2NpZF2aI81PJNtq7tfp1oNSlTAIAakfmTauxuB6sABPtQwqf5dNhcM77gPvdfSke3f9VOqtY0FHH3Z2uc2PrHHt0CkyHWB37ScWzyRadlpzwsoaKACRfIITorWzj3NekQZN9v8v8OhCDkyGJYpgb7mUJO02-ol4t0FxMq4nh0w3o-yPaQ=",
+      "checked_at": "2026-11-05T22:13:42.488777+00:00",
+      "http_status": 200,
+      "final_url": "https://mentese.bel.tr/mentesede-bayrak-saldirisinin-suphelisi-belediye-guvenliginin-dikkatiyle-yakalandi/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAoUIkJnrMnkLAtXPHvee7yzrSdh3ecTuKuJZDOj_3np2NpZF2aI81PJNtq7tfp1oNSlTAIAakfmTauxuB6sABPtQwqf5dNhcM77gPvdfSke3f9VOqtY0FHH3Z2uc2PrHHt0CkyHWB37ScWzyRadlpzwsoaKACRfIITorWzj3NekQZN9v8v8OhCDkyGJYpgb7mUJO02-ol4t0FxMq4nh0w3o-yPaQ="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "a3f557d19a22d2cd2e674528523abc2e892ce38c5fdf4d0db57d9eafc4077f5b",
+      "title": "Menteşe’de Bayrak Saldırısının Şüphelisi Belediye Güvenliğinin Dikkatiyle Yakalandı – T.C. Menteşe Belediyesi",
+      "published_at": null,
+      "text_sha256": "cb499a085051ab29eac18f8ce1948369da7d8ba48511a4f78f7e75dea6b14e4c"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK0_a72Ba_a-Rv7NaueGZIb60aEhWllVOAC9cc77j_3Sp2kwTbJjmuPJpAekpl7Mkca2caTfmqjHQXswvLR70p4TcDxHRGKGMPt4wbSVxG10R_BhQgA-e9Z16I2zffzKU7UfIhnkd2zKql73ve1YRmMo7dJA==",
+      "checked_at": "2026-11-05T22:26:17.409205+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/100_yil_parki/67909725848/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK0_a72Ba_a-Rv7NaueGZIb60aEhWllVOAC9cc77j_3Sp2kwTbJjmuPJpAekpl7Mkca2caTfmqjHQXswvLR70p4TcDxHRGKGMPt4wbSVxG10R_BhQgA-e9Z16I2zffzKU7UfIhnkd2zKql73ve1YRmMo7dJA=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "d2373f4398fc4638c3d6d0216ae5b3fc85a05f604c2575227eb611bf41658758",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRXpcK-ef6S0gLpOlXsKOaybarQUsNoLAbfnOJS_u7K99s0VMQsNwbWcoJCsnLMKNKZhPyzkJxl6yqy_YAnQihGFYosS7jHoF-mHOCTiIk456_Zdb_-2Ib2WqiuwDLqS_ORBThHD7LGiTrbmk=",
+      "checked_at": "2026-11-05T22:13:43.827298+00:00",
+      "http_status": 200,
+      "final_url": "https://com.com.tr/mugla/mentese/park/basin-parki",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRXpcK-ef6S0gLpOlXsKOaybarQUsNoLAbfnOJS_u7K99s0VMQsNwbWcoJCsnLMKNKZhPyzkJxl6yqy_YAnQihGFYosS7jHoF-mHOCTiIk456_Zdb_-2Ib2WqiuwDLqS_ORBThHD7LGiTrbmk="
+        }
+      ],
+      "content_type": "text/html;charset=UTF-8",
+      "response_sha256": "5cb2d79e8d61f51f4fe935b1bc694ae4aeae2ed6333b40415f4ef574655f7006",
+      "title": "Basın Parkı: Menteşe Adres ve Telefon",
+      "published_at": null,
+      "text_sha256": "2daadb48d607a62592809c10603457fda14a189b519ee2e3135c80872cae1a87"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSopKAgGBYOVWUEVzPmE0dRylccqaoeOeIVt_kYx1sMWlgvobIDBupHx6_yTSVePX6IF1EcyFvJaN35w6ibJlP1S43RFna3crES72XkNcB70w1E9kCPtc-mR2lZoFODem8ofAuWvAM3VbHVkxm938LWvuAcQ-PKPo96NyfK1BwGpRcACEvOTVeqtYWakghnXalWWi8E5gzl6lJRzAGXVhjlVfbuykZ91FwGKcUaaDn",
+      "checked_at": "2026-11-05T22:13:43.996817+00:00",
+      "http_status": 200,
+      "final_url": "https://anlatilaninotesi.com.tr/20260901/muglada-supheli-olum-2-kisi-basindan-vurulmus-halde-bulundu-1108411144.html",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSopKAgGBYOVWUEVzPmE0dRylccqaoeOeIVt_kYx1sMWlgvobIDBupHx6_yTSVePX6IF1EcyFvJaN35w6ibJlP1S43RFna3crES72XkNcB70w1E9kCPtc-mR2lZoFODem8ofAuWvAM3VbHVkxm938LWvuAcQ-PKPo96NyfK1BwGpRcACEvOTVeqtYWakghnXalWWi8E5gzl6lJRzAGXVhjlVfbuykZ91FwGKcUaaDn"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "82abae8a2c9d74dc1d7f82b087bfcd616c81275b32e6c3edde7653991b4b1538",
+      "title": "Muğla'da şüpheli ölüm: 2 kişi başından vurulmuş halde bulundu - 01.09.2026, Sputnik Türkiye",
+      "published_at": "20260901T1741+0300",
+      "text_sha256": "8d75d3010579bca988b65b8e9e1c22d13a6fe2e408aeffe3217c4c8d900a0020"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUTFwmMKWcV3GTPdpW09pD8zWUAgtNwAEj8SItNEwU5nM9nJg5MMtLdftLq8Q5C2JAczDaWgD_H-tgo0Sm12Ek6eeP56tuER3PJenhTPUZQzMPZKFr2HBBExgbeoUfje2dmR0K7lQar4QFVg6S806bVYNw24CXRNqzFsGNIUI=",
+      "checked_at": "2026-11-05T22:13:44.648158+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/mugla-ula-akyaka-kiralik/daire/0-47523328",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUTFwmMKWcV3GTPdpW09pD8zWUAgtNwAEj8SItNEwU5nM9nJg5MMtLdftLq8Q5C2JAczDaWgD_H-tgo0Sm12Ek6eeP56tuER3PJenhTPUZQzMPZKFr2HBBExgbeoUfje2dmR0K7lQar4QFVg6S806bVYNw24CXRNqzFsGNIUI="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "afe582edf11f3297b3c95d617519dbce8ef9ea65dac3e153eec57d47bda243b8"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX8VygQg-oZnAJBhzqL9G8wCfoW49RBO939JRbBUJjq3sghSvg8f7YF6phrxcpexOZFyf8SMX9X-4PvBQeb40aWGkAQ5Xj5c3RPIIMuAEb13MWGXVyV26OvjypiSwOohcltXM3-8acJO_huPVnmOXwv14ivYI7P_adtd8=",
+      "checked_at": "2026-11-05T22:13:44.907681+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-62-mentese-stadyum-yenikoy-85",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX8VygQg-oZnAJBhzqL9G8wCfoW49RBO939JRbBUJjq3sghSvg8f7YF6phrxcpexOZFyf8SMX9X-4PvBQeb40aWGkAQ5Xj5c3RPIIMuAEb13MWGXVyV26OvjypiSwOohcltXM3-8acJO_huPVnmOXwv14ivYI7P_adtd8="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "9d02ef1e62693bd205f936a0759e553ee6ca012e17401b887ce3931910ed54c1",
+      "title": "1-62 - Menteşe Stadyum - Yeniköy | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "823d0ffce133e628f6f5e138ef409c481023ae9fbca5ee76063659632b37da61"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZU58Cmw3xNVnJevxgiU7uIjhWTzHxVUSZt6_DnkoR9VVIUSRRHjKNlSSFVmWjNmkt1Z-a_DrIJHvKs-DoaDHWh3s95jhcmlUkKQsJCDKvSk5oceYBidEBZnUu-KM-LNMP2-nuS6yKCdSxzsKAk9VQ1jo=",
+      "checked_at": "2026-11-05T22:26:18.193067+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/gua_coffee/233774213204/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZU58Cmw3xNVnJevxgiU7uIjhWTzHxVUSZt6_DnkoR9VVIUSRRHjKNlSSFVmWjNmkt1Z-a_DrIJHvKs-DoaDHWh3s95jhcmlUkKQsJCDKvSk5oceYBidEBZnUu-KM-LNMP2-nuS6yKCdSxzsKAk9VQ1jo="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "740eec480020eb7370ccb3892e2a2dcd6f868bfd45725f90650a0edae974a550",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZeBtyhM3sTlmBjm3yFSbLJBznCIjSPuChyecY63QMpOsJ7Vsz0ix5LT8fsaMcZlndUAQYXZhZXG6b1-03gw7k2iw8eoYHCQX10_G_AFNPJgBqaqIQptgmcXRSFXAjDXlO1FOPVt863No8y7cUumY=",
+      "checked_at": "2026-11-05T22:13:46.080037+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/12-12-ula-akyaka-442",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZeBtyhM3sTlmBjm3yFSbLJBznCIjSPuChyecY63QMpOsJ7Vsz0ix5LT8fsaMcZlndUAQYXZhZXG6b1-03gw7k2iw8eoYHCQX10_G_AFNPJgBqaqIQptgmcXRSFXAjDXlO1FOPVt863No8y7cUumY="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "d0a3af76cf82765771236c3a076d3d650f8e8c56a21f9c14bd3419b2e7835d20",
+      "title": "12-12 - Ula-Akyaka | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "cf2e66d3a525801b0c9f2a2a67ea6d3e5e30630bf5daeaf6d25bba5ef2b276eb"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeuYQsrJk_KklypGZ3td9R0eLM5FzGXpANp1RG990WseHa-R6Egp38_Oej3mwuHFwQFStoDVA-RPQP0yqdoHejx6wiDBCepJdhGcOB9aKljs_iQ66pbMUSDoGqAsMg3ITct-0nrsJTtxP4Vg==",
+      "checked_at": "2026-11-05T22:13:46.428600+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/ula-akyaka-kiralik-1-1",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeuYQsrJk_KklypGZ3td9R0eLM5FzGXpANp1RG990WseHa-R6Egp38_Oej3mwuHFwQFStoDVA-RPQP0yqdoHejx6wiDBCepJdhGcOB9aKljs_iQ66pbMUSDoGqAsMg3ITct-0nrsJTtxP4Vg=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "b35618a00d8166c761936613b50714dffd1b213e5d9d89213b19955aac3cd0cf"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfoA2pnFtZLfnpwhVC_1RxfqJKbZW4oo2o46RgCiNjfWYlbTtfPdzXWgqQY7tX4CA7iZL6Hx9OzLWw7U5ROCDPXz214POwhviZO_SGDOG-Y9625AHYrH56Y2gb",
+      "checked_at": "2026-11-05T22:13:46.967018+00:00",
+      "http_status": 200,
+      "final_url": "https://dijital.link/sosyal-kafe",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfoA2pnFtZLfnpwhVC_1RxfqJKbZW4oo2o46RgCiNjfWYlbTtfPdzXWgqQY7tX4CA7iZL6Hx9OzLWw7U5ROCDPXz214POwhviZO_SGDOG-Y9625AHYrH56Y2gb"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "7c83759abcfe621746d645eb198b4c7aa5d1bcbbee0812b356c60296ffa83b53",
+      "title": "SOSYAL KAFE - Kahve dükkanı - Menteşe Muğla",
+      "published_at": null,
+      "text_sha256": "a584fb16064b60552545e57e8dfc9c0c33667a15b074fae49c5a8d0cc899cc9c"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHi28U3l-861edwJQM8QyLPuUG6zB4GiaSr80IC5vIUtSVmhuRXIp_ybwGTmpVyFThsTaRx8fwwBxXjVBfKtarlF-7oJy9UBFxBAUEaJtmfKB3Hp6nNhX4wIGW-V3k32ZPEL2WXV-v-nZA9dKYA9AisBSOlkZE=",
+      "checked_at": "2026-11-05T22:26:18.200235+00:00",
+      "http_status": 200,
+      "final_url": "https://yandex.com.tr/maps/org/botanik_bahce/136755110612/",
+      "status": "empty_or_script_only",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHi28U3l-861edwJQM8QyLPuUG6zB4GiaSr80IC5vIUtSVmhuRXIp_ybwGTmpVyFThsTaRx8fwwBxXjVBfKtarlF-7oJy9UBFxBAUEaJtmfKB3Hp6nNhX4wIGW-V3k32ZPEL2WXV-v-nZA9dKYA9AisBSOlkZE="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "0f2b76cf79cf58109e1e529bb19f67a061975ca61e48290a9734807b108b76c4",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU=",
+      "checked_at": "2026-11-05T22:13:48.090514+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-konut/mugla-mentese-kotekli-mahallesi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4IgCfSbQTw-uHvJIWEWgO-JpFihAU1HuW1TDFeZCDJAt63DsRH5FmLwLZgjRIgB9s0jRooTsE-yNwplnGm_I4FqZ3QXNasCh-tY9ZXVxCPHP6Wctj-Q_pFIVno5xYk8LZ7A2-8aEqBOjqxkRAe_oSejwjYGEbeotRZADhM28GPU="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "f4159b25c7d97c842eae0cfc1f5c6f56f26c94e2db30802bae41fc81d3a20d3d",
+      "title": "Menteşe Kötekli Mahallesi Kiralık Ev Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "3b450b6571f1617ae6b59649cdcb22101ea9f05700639389329fcaa0e2f3129d"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkJLc2AwgiCoaCbT80Kis7pNXcZzTRvPYDZmYAvrKN3nTd_uzEEeGO5TcgscHKZmL_bDSueIY0i6T3EgzV3gg1rHVn-RRc3Xrxqm7fP6JmxVKaUM39L7j5V3JQ3bjsgsi8tykJYUJNfpbdJwbki48dMY-TvZ7Pi2Kb7z-eLC93rJ5rJluaAbfz2nT-kDlak3W5qwKUiVZn0BjjJgosTw==",
+      "checked_at": "2026-11-05T22:13:48.270309+00:00",
+      "http_status": 202,
+      "final_url": "https://moovitapp.com/index/en/public_transit-mu%C4%9Fla_k%C3%B6tekli-Mu%C4%9Fla-site_19435857-4485",
+      "status": "unavailable",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkJLc2AwgiCoaCbT80Kis7pNXcZzTRvPYDZmYAvrKN3nTd_uzEEeGO5TcgscHKZmL_bDSueIY0i6T3EgzV3gg1rHVn-RRc3Xrxqm7fP6JmxVKaUM39L7j5V3JQ3bjsgsi8tykJYUJNfpbdJwbki48dMY-TvZ7Pi2Kb7z-eLC93rJ5rJluaAbfz2nT-kDlak3W5qwKUiVZn0BjjJgosTw=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkn4SRk6HwBIspqQ0q1PgpIDAuXMFgW_8zAkghy5zsL9nwySojFdDvOXiXfJ1b3tCD3uKJvf3nf8I1brO80SHx-KFMSKtpS1zfueY1F8NmBwkhIwBaSVSIW7pPFQy4sNQmhBLgUpgY-jEoOl7M8Tygq2JzK2rtVmc-5cnoU8jXYEgVv9agbikd7R8Qk3Sy2ramxf-G7G5na7Hu3CQJMmqcJ4E7zonymWeypo8RxcqBvOgWrXmg1w==",
+      "checked_at": "2026-11-05T22:13:48.368049+00:00",
+      "http_status": 200,
+      "final_url": "https://yerel-haberler.haberturk.com/mugla-haberleri/muglada-2-kisi-silahla-baslarindan-vurulmus-halde-olu-bulundu-42361132",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkn4SRk6HwBIspqQ0q1PgpIDAuXMFgW_8zAkghy5zsL9nwySojFdDvOXiXfJ1b3tCD3uKJvf3nf8I1brO80SHx-KFMSKtpS1zfueY1F8NmBwkhIwBaSVSIW7pPFQy4sNQmhBLgUpgY-jEoOl7M8Tygq2JzK2rtVmc-5cnoU8jXYEgVv9agbikd7R8Qk3Sy2ramxf-G7G5na7Hu3CQJMmqcJ4E7zonymWeypo8RxcqBvOgWrXmg1w=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "dac2880a8c434d895317dd1a05c623d11a71607735040155d4598fc283b92858",
+      "title": "Muğla'da 2 kişi silahla başlarından vurulmuş halde ölü bulundu - Muğla Son Dakika Haberleri - Habertürk Yerel Haberler",
+      "published_at": null,
+      "text_sha256": "81185e8cf97efd7b40b212cd5a0ea48ec8137a5e2274f070b270428401a0f797"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmEqRHmiUpb3IId55QCMMRXlj5vFeryYMXSR-KgpRyBfWQ7K0Haq3jWN1HcVixxiN0DJRep6O5LD8EqvBxvFD1W9bXI_KKtv0-wS8-Z5Cra75h4wAwaVME-iQIBShxmf6pOMG__jUMkA27MXkKceOnR002wlUPQSc2l3wacRFepF2d",
+      "checked_at": "2026-11-05T22:13:49.062672+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-konut/mugla-mentese-orhaniye-mahallesi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmEqRHmiUpb3IId55QCMMRXlj5vFeryYMXSR-KgpRyBfWQ7K0Haq3jWN1HcVixxiN0DJRep6O5LD8EqvBxvFD1W9bXI_KKtv0-wS8-Z5Cra75h4wAwaVME-iQIBShxmf6pOMG__jUMkA27MXkKceOnR002wlUPQSc2l3wacRFepF2d"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "34fb1052e27a03274e25173103d4a2bff2d6cc37342c6d21c406c24ed9d953a7",
+      "title": "Menteşe Orhaniye Mahallesi Kiralık Ev Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "30fe2a39f362ecd2c486eadab040d9037bb99770cb366f4ea38e826b26de9fd4"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnf95z-V113m4qxskstR7JiAzPUCrhqbqx4MZyWPy3Y741OGQGQBGvmbNMUCDubELK0vzvz5_sGm3bmXuRq2FruERZ7kGyXtdc95jsjmWwR2ZCUHxtC5pENfpSAxh7Po-dEPAY6OjmT-ljRTRlWhNTSF9d9u6qtUxL4wOM-8Yguxk3zd5S7vzB-5vdJbdnAJFwaQ6pPO2b2EvkaFJS6jIIRFHHDu6WKrT4X3uq1e-5qSd8d5y0HSa3",
+      "checked_at": "2026-11-05T22:13:49.975767+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglagazetesi.com.tr/mugla-haberleri/muglada-sevgilisini-darp-ederek-olduren-supheli-adliyeye-sevk-edildi-216819h",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnf95z-V113m4qxskstR7JiAzPUCrhqbqx4MZyWPy3Y741OGQGQBGvmbNMUCDubELK0vzvz5_sGm3bmXuRq2FruERZ7kGyXtdc95jsjmWwR2ZCUHxtC5pENfpSAxh7Po-dEPAY6OjmT-ljRTRlWhNTSF9d9u6qtUxL4wOM-8Yguxk3zd5S7vzB-5vdJbdnAJFwaQ6pPO2b2EvkaFJS6jIIRFHHDu6WKrT4X3uq1e-5qSd8d5y0HSa3"
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "35c82ba1f04293c447f4a482fff14c702e961487fdaa13e5d0206a701b91e44d",
+      "title": "Muğla’da Sevgilisini Darp Ederek Öldüren Şüpheli Adliyeye Sevk Edildi",
+      "published_at": null,
+      "text_sha256": "c093cf0bec98a85dad0048126a0c4be778e52e5a20004182a09fa1d8187ccb9f"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo3zl25kSZneroRt3H9ohqDgUFBdG1fSdXpBGcJT16W8tzWuQb0avIzh5uc7yZm3u9ZLyUyy3M18ewxMWeXx76gm98Sc6p3CUUHdh9SOgt0NAtcEYt_Dfpk5qnyQG_EsryllmUYFbU-9U1Qf_nBesRdzzgszE6SlRuFCxNXy9W0r26scE3SXAuc7BaszfIKj0=",
+      "checked_at": "2026-11-05T22:13:50.271532+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-emirbeyazit-mahallesi/emlakcidan",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo3zl25kSZneroRt3H9ohqDgUFBdG1fSdXpBGcJT16W8tzWuQb0avIzh5uc7yZm3u9ZLyUyy3M18ewxMWeXx76gm98Sc6p3CUUHdh9SOgt0NAtcEYt_Dfpk5qnyQG_EsryllmUYFbU-9U1Qf_nBesRdzzgszE6SlRuFCxNXy9W0r26scE3SXAuc7BaszfIKj0="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e90c2fd1591d7a2631061c2ff3bfb319a2621447a588f94f8f3c62c987de793d",
+      "title": "Emlakçıdan Menteşe Emirbeyazıt Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "af3fea41dc5bbac57546037f03d53cd3721ceb8ce1c6ccfc64cb07a348b9851f"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHp1pDjFbafYh4_iFFYTZLXjDuqMMJjCgLB7TqwElYMPfBU0cafZTVrRf6nPtpfK7_IxiknkunzIv--2sP5fTp7nxiSwpWecs_At3ptdSEoLGFSHhOG3ljodhjoipfwnsmnz6STfKSHgUgtus_S1piFwlz1fbjDvjG8LHrSOpC4FzKcuWX2_CshE6I=",
+      "checked_at": "2026-11-05T22:13:50.469129+00:00",
+      "http_status": 200,
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-8-mentese-otogar-mentese-yapi-kooperatifi-92",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHp1pDjFbafYh4_iFFYTZLXjDuqMMJjCgLB7TqwElYMPfBU0cafZTVrRf6nPtpfK7_IxiknkunzIv--2sP5fTp7nxiSwpWecs_At3ptdSEoLGFSHhOG3ljodhjoipfwnsmnz6STfKSHgUgtus_S1piFwlz1fbjDvjG8LHrSOpC4FzKcuWX2_CshE6I="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "b13dcaa62056e78c0c021d25cbab664db29b2cab0cb3456f912d0a75182d1be1",
+      "title": "1-8 - Menteşe Otogar - Menteşe Yapı Kooperatifi | MUTTAŞ Otobüs Sefer Saatleri",
+      "published_at": null,
+      "text_sha256": "5294fb0265b8d9574744238592129cdf4367651225292f7a2b8ae7a6b185343b"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqV1Xky2dd7pYp_n8iT1nUJe5w42eSqBH6rnYx5wRl6CYLu3mFARxdne0rPQGZktW6ohYCDhftGHCqT9XKAqaGD3ef14VRIh-2Xsd3yS0yf5aTSdnFlNfy8VLNDE2r5mX4P-kXdXCh2LYfE7iBPIj6iMMU7t50Xz1I4MQfqL9mbtOW",
+      "checked_at": "2026-11-05T22:13:50.785506+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-orhaniye-mahallesi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqV1Xky2dd7pYp_n8iT1nUJe5w42eSqBH6rnYx5wRl6CYLu3mFARxdne0rPQGZktW6ohYCDhftGHCqT9XKAqaGD3ef14VRIh-2Xsd3yS0yf5aTSdnFlNfy8VLNDE2r5mX4P-kXdXCh2LYfE7iBPIj6iMMU7t50Xz1I4MQfqL9mbtOW"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "95107ef39a9302145e6720c6f404a865936c190fd8b3ec0fa99418444a4d3af7",
+      "title": "Menteşe Orhaniye Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "30fe2a39f362ecd2c486eadab040d9037bb99770cb366f4ea38e826b26de9fd4"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHskXaTp8u9INai21zjMFICCXuBTZEnzwv5bgDZW6y6RdrX8YHvGeGgU9QcBxXhJdAVWoZpZvugKNM-raKuae8KlFAft8LN0Vf0y9NldGB-nuexWIWvr4ue7jZMqosr64kOBKOBzTsOJECBzz4hmvViW4FSpEq5q2Mc6WvSZkXpfz7hZlztgpxht-Ml3g==",
+      "checked_at": "2026-11-05T22:13:51.073283+00:00",
+      "http_status": 200,
+      "final_url": "https://ilceler.org/mugla/mentese/avm/mugla-tuketim-mallari-662-alisveris-merkezi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHskXaTp8u9INai21zjMFICCXuBTZEnzwv5bgDZW6y6RdrX8YHvGeGgU9QcBxXhJdAVWoZpZvugKNM-raKuae8KlFAft8LN0Vf0y9NldGB-nuexWIWvr4ue7jZMqosr64kOBKOBzTsOJECBzz4hmvViW4FSpEq5q2Mc6WvSZkXpfz7hZlztgpxht-Ml3g=="
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "706b7707a78ded28ed572deda297e2ad685ceacb770cda8b0113cd9c7fa29f20",
+      "title": "MUĞLA TÜKETİM MALLARI — Menteşe, Muğla | Adres ve Harita",
+      "published_at": null,
+      "text_sha256": "801c5c3b66205a15557bcae5d7b132ac1a650ccddfe5a884377aa5497eff4bec"
+    },
+    {
+      "requested_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyX8k9TvHTRklM5u_gwzsVxagIQZUpL4HtFJJmGXlYqsPEB66HPHFq8LGC_Eg9vVFGXGI6y4tkQSAxK8A9Gy_WDLwSMIUvJe3TLPoznFGOLDKEWZiVxQJvA_NSa-MUKAN0w8UJ4w==",
+      "checked_at": "2026-11-05T22:13:51.521605+00:00",
+      "http_status": 200,
+      "final_url": "https://harita.org/mugla/mentese/orhaniye/",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyX8k9TvHTRklM5u_gwzsVxagIQZUpL4HtFJJmGXlYqsPEB66HPHFq8LGC_Eg9vVFGXGI6y4tkQSAxK8A9Gy_WDLwSMIUvJe3TLPoznFGOLDKEWZiVxQJvA_NSa-MUKAN0w8UJ4w=="
+        }
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "15d1f5ee7ef3f52475a072c0b77007930e2a2b526be12b526973eea884d97a0c",
+      "title": "Orhaniye Mahallesi Haritası — Menteşe, Muğla | harita.org",
+      "published_at": null,
+      "text_sha256": "add23aa7b6406b4a5b4e0e8aee865f2db6650212a3b4249c4090a807faf31b18"
+    },
+    {
+      "requested_url": "https://www.aa.com.tr/tr/gundem/bircok-ilde-kuvvetli-ruzgar-ve-saganak-etkili-oluyor/3792988",
+      "checked_at": "2026-11-05T22:26:19.132765+00:00",
+      "http_status": 200,
+      "final_url": "https://www.aa.com.tr/tr/gundem/bircok-ilde-kuvvetli-ruzgar-ve-saganak-etkili-oluyor/3792988",
+      "status": "empty_or_script_only",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "c77d9fe92271ca8d993c2a6367dd7fb57e7a5681b605decaaea4992eda7c9c01",
+      "title": "Birçok ilde kuvvetli rüzgar ve sağanak etkili oluyor",
+      "published_at": "2026-01-08T08:15:58.317",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://www.aa.com.tr/tr/gundem/kadikoyde-bina-yikimi-sirasinda-gocuk-altinda-kalan-2-isci-kurtarildi/3981917",
+      "checked_at": "2026-11-05T22:26:19.354880+00:00",
+      "http_status": 200,
+      "final_url": "https://www.aa.com.tr/tr/gundem/kadikoyde-bina-yikimi-sirasinda-gocuk-altinda-kalan-2-isci-kurtarildi/3981917",
+      "status": "empty_or_script_only",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "0005d9e77c5c204c9bcc94b03cc1325e60f52c18cd37a55e844d6949d8d9cc15",
+      "title": "Kadıköy'de bina yıkımı sırasında göçük altında kalan 2 işçi kurtarıldı",
+      "published_at": "2026-06-30T10:39:34.653",
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested_url": "https://www.bursa.bel.tr/haber/buyuksehirden-gorukleye-yeni-ulasim-aksi-37585",
+      "checked_at": "2026-11-05T22:13:52.260597+00:00",
+      "http_status": 200,
+      "final_url": "https://www.bursa.bel.tr/haber/buyuksehirden-gorukleye-yeni-ulasim-aksi",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 301,
+          "url": "https://www.bursa.bel.tr/haber/buyuksehirden-gorukleye-yeni-ulasim-aksi-37585"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "12a9e39fa2a6bcdef9d5a96f763f020cd143deaf32ea37f9091184570d6ec4af",
+      "title": "Büyükşehir&#039;den Görükle&#039;ye yeni ulaşım aksı - Bursa Büyükşehir Belediyesi",
+      "published_at": null,
+      "text_sha256": "0ffa5cee4e99ab6f124b3da9edbe2e8245e7ad5ab214a393d55401771837815e"
+    },
+    {
+      "requested_url": "https://www.bursapress.com.tr/bursada-gece-yarisi-silah-sesleri/",
+      "checked_at": "2026-11-05T22:21:13.559754+00:00",
+      "http_status": 200,
+      "final_url": "https://www.bursapress.com.tr/bursada-gece-yarisi-silah-sesleri/",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "85c36acbf08af7954eb94b6e79f9ebbcbf248d1ac0d0b3c6171129f8b28fb142",
+      "title": "Bursa'da gece yarısı silah sesleri! - BursaPress",
+      "published_at": "2026-04-17T09:18:46+03:00",
+      "text_sha256": "ea40894d6671a51edbef83dc480a8a18aedbba507e8894846e7e8ad28107c3b1"
+    },
+    {
+      "requested_url": "https://www.cankaya.bel.tr/haberler/bahriye-ucok-parki-yenilendi",
+      "checked_at": "2026-11-05T22:14:29.901128+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cankaya.bel.tr/haberler/bahriye-ucok-parki-yenilendi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "3dd009f00c82c3db821ec5dc556aa41d2b80bfbda75a98fc78a8eaa1df84cf43",
+      "title": "Bahriye Üçok Parkı Yenilendi - Çankaya Belediyesi",
+      "published_at": null,
+      "text_sha256": "47def312423693e0488eb907d1b74592e4ea9bbc59cafbc0e26d91a726a621a7"
+    },
+    {
+      "requested_url": "https://www.cankaya.bel.tr/rehber/emekli-lokalleri/bahcelievler-emekli-lokali",
+      "checked_at": "2026-11-05T22:13:52.507730+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cankaya.bel.tr/rehber/emekli-lokalleri/bahcelievler-emekli-lokali",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "9fde7a6b9ddf55d5e8765f1ac89f75d26c8074faa2c0e7d03bbad59c808d26cf",
+      "title": "Bahçelievler Emekli Lokali - Emekli Lokalleri - Bahçelievler Emekli Lokali - Çankaya Belediyesi",
+      "published_at": null,
+      "text_sha256": "9a2d727a156ef0570db2817a6a9deb0bfb04eeba937bc9f0e53c7cfea333391f"
+    },
+    {
+      "requested_url": "https://www.cankaya.bel.tr/rehber/muhtarlarimiz/muhtarlarimiz",
+      "checked_at": "2026-11-05T22:13:52.664373+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cankaya.bel.tr/rehber/muhtarlarimiz/muhtarlarimiz",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "345b4e320076fbca7ac0c07b08a57c2bf2643723c04d8e3263bde7b2b182dcfc",
+      "title": "Muhtarlarımız - Muhtarlarımız - Muhtarlarımız - Çankaya Belediyesi",
+      "published_at": null,
+      "text_sha256": "573bb8fa6ceeeacf521d248c83f6b778cbdd39b9fc88c5ea12e77596d016fb02"
+    },
+    {
+      "requested_url": "https://www.ego.gov.tr/hareketsaatleri?hat_no=448",
+      "checked_at": "2026-11-05T22:13:53.184122+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ego.gov.tr/hareketsaatleri?hat_no=448",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a5517948f1b4e606a7a304641e19938b8d71a9a8861c882d616ac1f7b8da1ccf",
+      "title": "Hareket Saatleri",
+      "published_at": null,
+      "text_sha256": "8e0c62be3c47ed75b5999600de4d69648fab361018ea7a481930d6c075f515fb"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/51-alsancak-talatpasa-bulvari-kiralik-21-daire-20061818",
+      "checked_at": "2026-11-05T22:16:27.735969+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/51-alsancak-talatpasa-bulvari-kiralik-21-daire-20061818",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b6d78fba8efd4cc0a558e7cbbc666acae2066b631e88433ead8a6b0f916f419b",
+      "title": "Remax Best İzmir Konak Kültür Mahallesi 2+1 Oda Kiralık Daire 45,000 TL #20061818 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "0a0f8198dc909b3b93b28e4aca149d69115ef6be105a53e9aed2ebbb76fc4a1c"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/akademi-den-aof-yakini-esyali-abonelikleri-acik-kiralik-21-20033971",
+      "checked_at": "2026-11-05T22:16:32.772605+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/akademi-den-aof-yakini-esyali-abonelikleri-acik-kiralik-21-20033971",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e369d38bd3242e3f9e74daab0f8e3a42adddf68d7691001592b68fbc0bbf7c19",
+      "title": "Akademi Emlak Danışmanlık Eskişehir Tepebaşı Yenibağlar Mahallesi 2+1 Oda Kiralık Daire 21,000 TL #20033971 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "0153017fa990a26c0180c8d9f79a7ecf498e662eca3b7d60f6580908ef915559"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/akyaka-da-esyali-kis-sezonuna-uygun-kiralik-daire-19996826",
+      "checked_at": "2026-11-05T22:16:17.073865+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/akyaka-da-esyali-kis-sezonuna-uygun-kiralik-daire-19996826",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "91d90fd73947286dab1752198b7e98147c10cdfe3882addda33b8463bf63004d",
+      "title": "Joker Gayrimenkul Muğla Ula Akyaka Mahallesi 1+1 Oda Kiralık Daire 25,000 TL #19996826 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "239d636e4c42238029b2667efef6062e628e9116b31de50ff939bc7f0f838476"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/akyaka-da-kiralik-esyali-31-dubleks-daire-20056665",
+      "checked_at": "2026-11-05T22:16:14.849012+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/akyaka-da-kiralik-esyali-31-dubleks-daire-20056665",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3a89d9544ce57fa07f3929506f93d4eb5394e8134391b89d64d9ad57738ec3fe",
+      "title": "Joker Gayrimenkul Muğla Ula Akyaka Mahallesi 3+1 Oda Kiralık Daire 40,000 TL #20056665 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "4b0ba3e615964dcbcb4d1ed9d001616ea6ce5e4f084f26dbdbbbb4922116801e"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/akyaka-merkezi-konum-esyali-21-dubleks-daire-20002170",
+      "checked_at": "2026-11-05T22:16:15.966376+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/akyaka-merkezi-konum-esyali-21-dubleks-daire-20002170",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "20947662b4a6de14da8650ad68f74d9edc26c47c90f07da364e0588fa3dd81d9",
+      "title": "Güven Emlak Muğla Ula Akyaka Mahallesi 2+1 Oda Kiralık Daire 40,000 TL #20002170 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "6d17192a3c0d190d984cfadc6fd1d74275ed9b84332467f7f4eaed10b91bd816"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/alsancak-sair-esref-bulvarinda-11-70m2-temiz-bakimli-esyali-kiralik-daire-20032574",
+      "checked_at": "2026-11-05T22:16:29.421442+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/alsancak-sair-esref-bulvarinda-11-70m2-temiz-bakimli-esyali-kiralik-daire-20032574",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "09e70753eb2045d8f228685513d00a047ba21e42c232059ed0a6a4edca9121e4",
+      "title": "Almi̇ra Emlak İzmir Konak Kültür Mahallesi 1+1 Oda Kiralık Daire 37,000 TL #20032574 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "34a806646edfb7916d2c1892fb2fe740891acadce58a13e4687f67bc2f69a836"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/alsancak-sevinc-pastanesi-sokagi-nda-esyali-kiralik-3-51-daire-20059592",
+      "checked_at": "2026-11-05T22:16:28.501548+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/alsancak-sevinc-pastanesi-sokagi-nda-esyali-kiralik-3-51-daire-20059592",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "64e3f33c0d80241aac44b8dc447677fd04b5328fb74a7de6ec9f437bc8dc0143",
+      "title": "Coldwell Banker Vista İzmir Konak Kültür Mahallesi 3.5+1 Oda Kiralık Daire 90,000 TL #20059592 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "4612681d48fdbc1fc9d40033fe9ebe668d5a3a33b5c3a62b1483fd194fa7a032"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/anil-konu-dan-gorukle-abonelikleri-acik-11-esyali-kiralik-daire-20059980",
+      "checked_at": "2026-11-05T22:16:35.935083+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/anil-konu-dan-gorukle-abonelikleri-acik-11-esyali-kiralik-daire-20059980",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e4a524e166de3ee7c258ba78cc116f4cdfcc73f076886707c1abea7c44f7cbe4",
+      "title": "Anil Konu Gayri̇menkul Bursa Nilüfer Görükle Mahallesi 1+1 Oda Kiralık Daire 13,500 TL #20059980 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "407f433c60d3c17fba5e4c1a355e43e8e7a91abdcdcb8c910e6cffd8d61dc85b"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/arel-den-yeni-bina-besevler-yakini-bahce-kat-ayri-mutfakli-21-20042418",
+      "checked_at": "2026-11-05T22:16:24.773767+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/arel-den-yeni-bina-besevler-yakini-bahce-kat-ayri-mutfakli-21-20042418",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "69e2a00794f99a85db53e39b7ddd3118d0f8967378d0e7f572f68befe9854f31",
+      "title": "Arel Emlak Ankara Çankaya Bahçelievler Mahallesi 2+1 Oda Kiralık Daire 50,000 TL #20042418 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "cd750687e28c5b08c34a1e53c89a93414324b8fc347928183e0d8912bb6ccad0"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/cars-dan-kiralik-yeni-bina-bahce-kati-11-daire-20041891",
+      "checked_at": "2026-11-05T22:16:25.771135+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/cars-dan-kiralik-yeni-bina-bahce-kati-11-daire-20041891",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b3a2567a54e55e0e7dd74f3c644d89faafb6546a40999174ff49ff351fb0dd47",
+      "title": "Bahçeli Çarşı Emlak Ankara Çankaya Bahçelievler Mahallesi Stüdyo Oda Kiralık Daire 45,000 TL #20041891 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "4bea18389c49f05711002407cea7ed374584a33df16004f989151b7c77859d5f"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/gm-den-gorukle-merkezde-aile-sitesinde-kiralik-31-genis-daire-20052436",
+      "checked_at": "2026-11-05T22:16:36.898113+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/gm-den-gorukle-merkezde-aile-sitesinde-kiralik-31-genis-daire-20052436",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "142c91082aff9548ba3f218b52bacdf001b5fbb37b13690d97936ff033de48c2",
+      "title": "Gm Emlak Danışmanlığı Bursa Nilüfer Görükle Mahallesi 3+1 Oda Kiralık Daire 26,000 TL #20052436 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "2528f8abd663d6a16ba5064a9c4fc321f12d5fbb57cfd4a7903abf4fff55e8a5"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866",
+      "checked_at": "2026-11-05T22:15:58.725718+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "397640d4b76e5be91903d124af5792557348e4bf2c916ee3d14ecc30adc8a353",
+      "title": "Kötekli Emlak Muğla Menteşe Kötekli Mahallesi 3+1 Oda Kiralık Daire 45,000 TL #20045866 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "1c51a37c3bac9b6cb3909719e16606abcafce01f0f76c2dbed354e1136a64252"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/merkezi-konumda-mukemmel-daire-19529247",
+      "checked_at": "2026-11-05T22:16:12.686328+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/merkezi-konumda-mukemmel-daire-19529247",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "47f6494d695a40167546a99de2e961f4b90e251eca18c18b36b246c547f30196",
+      "title": "Tunam Yapim Emlak Muğla Menteşe Orhaniye Mahallesi 4+1 Oda Kiralık Daire 45,000 TL #19529247 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "7c821d4b4459e4165694387c936e036a80a45b6cce29c715b634a4203e04d347"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/moda-caddesi-leylek-sk-ta-esyali-kiralik-11-daire-20056964",
+      "checked_at": "2026-11-05T22:16:21.622626+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/moda-caddesi-leylek-sk-ta-esyali-kiralik-11-daire-20056964",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "dd6ef1db04545938cd7ce1d739359a613b479bf1959e81ba68ca9a668bbb67fe",
+      "title": "Pb Türki̇ye Gayri̇menkul Danişmanlik İstanbul Kadıköy Caferağa Mahallesi 1+1 Oda Kiralık Daire 60,000 TL #20056964 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "ab066532249f59fc44ed3c2ae3255a86fdb48714820058dc49ac46ea48f1cd53"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942",
+      "checked_at": "2026-11-05T22:16:00.960216+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "686e29d1b42c19e572db4ed1d37769994420cb416f510e29b36929a9b1295d94",
+      "title": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Emirbeyazıt Mahallesi 2+1 Oda Kiralık Daire 36,000 TL #20045942 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "355443f76be20fab62996b38ece13f8380c013dd3c1831591d93feae87c136a4"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-kotekli-de-universiteye-yakin-bodrum-kat-21-kiralik-daire-20059568",
+      "checked_at": "2026-11-05T22:16:08.882004+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-kotekli-de-universiteye-yakin-bodrum-kat-21-kiralik-daire-20059568",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "0fef7117783bb8007227fe81fdb74d9df8cb458d55ea75eb29cfbcbe655bdcfa",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Kötekli Mahallesi 2+1 Oda Kiralık Daire 17,000 TL #20059568 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "52a1f2a2d35307fa84cebc02e3abec1a98f113862a76d0570ca65142125ff5c6"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-kotekli-mah-arakatta-21-esyali-kiralik-daire-20041991",
+      "checked_at": "2026-11-05T22:16:09.754732+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-kotekli-mah-arakatta-21-esyali-kiralik-daire-20041991",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "56bbd7dfff01fe6527d5f16f32f23412f8c557d236a44fcd16b039e7f65b5770",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Kötekli Mahallesi 2+1 Oda Kiralık Daire 30,000 TL #20041991 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "1a07c02c337c2e3eeeb6aad33053d5ad5e4922171044ceafdd0ee605bd6af391"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-genis-11-esyali-kiralik-daire-20030342",
+      "checked_at": "2026-11-05T22:15:59.300527+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-genis-11-esyali-kiralik-daire-20030342",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "fe21fd7e276177f0df7f096172a1407b6485f042865cad092834f2be09340ef7",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Kötekli Mahallesi 1+1 Oda Kiralık Daire 22,000 TL #20030342 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "ef33df5d08a2fa485d02d29444838781dff78fb0ba5928464ab23291cb1a8a24"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867",
+      "checked_at": "2026-11-05T22:15:58.209359+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "21b4b0fe465c4ce1d08a3056b614e94ece7967dd370f66ba340ba5d96cfba4ca",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Kötekli Mahallesi 2+1 Oda Kiralık Daire 29,500 TL #19904867 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "fae5da00ece231de20d26f2dddd30be0ae441cf8147d9fd3692e6781c3a8cb25"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mah-31-esyasiz-kiralik-daire-20024236",
+      "checked_at": "2026-11-05T22:16:06.903772+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mah-31-esyasiz-kiralik-daire-20024236",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "0bfc50d1dc696f9ef6490b714b2e35ec5515eac823fb730186dae5504bdda41c",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Muslihittin Mahallesi 3+1 Oda Kiralık Daire 55,000 TL #20024236 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "494f26703fe4e9294d676612a607b967aa2df2ee573439574a356071e895600f"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mahallesi-nde-kiralik-11-daire-20008478",
+      "checked_at": "2026-11-05T22:16:08.077119+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mahallesi-nde-kiralik-11-daire-20008478",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "0be6c17b340b78028d1079be7a92d9162cc87a8b9dda37347a18a7dd13aa71d6",
+      "title": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Muslihittin Mahallesi 1+1 Oda Kiralık Daire 20,000 TL #20008478 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "3e6ebe06368191c4c865faac60c45d654d750f7d357d3f5bda0714b33f171d56"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniye-mah-site-icerisinde-31-kiralik-daire-20042450",
+      "checked_at": "2026-11-05T22:16:04.814306+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniye-mah-site-icerisinde-31-kiralik-daire-20042450",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "e534e90935eb71773fbb8460af8a653157c84225ca7094efe73d7d8d6aba3dea",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Orhaniye Mahallesi 3+1 Oda Kiralık Daire 46,000 TL #20042450 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "249c70b7d966f07b4bcca0fea59e69cfbdb7e0c400312fb063b02cdda11a44b6"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniyede-kiralik-31-daire-20056549",
+      "checked_at": "2026-11-05T22:16:03.789456+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniyede-kiralik-31-daire-20056549",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "87e6060ce899473446b6ad022c987bf13262c217328f7b008b42f5775f862516",
+      "title": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Orhaniye Mahallesi 3+1 Oda Kiralık Daire 40,000 TL #20056549 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "05f803fa472406331d8a89ca0cf3005598c810359e3dd04ca253beed0d598ff7"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-merkez-de-kiralik-11-daire-19999225",
+      "checked_at": "2026-11-05T22:16:02.026494+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-merkez-de-kiralik-11-daire-19999225",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3bca20de2b52c1b73ec41e4f1407a689bd1d36fb28a49ac6d2af00dc24517073",
+      "title": "Emlak Tapu Gayri̇menkul Muğla Menteşe Emirbeyazıt Mahallesi 1+1 Oda Kiralık Daire 35,000 TL #19999225 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "be03014d10727a71aea0a3ba2fcb10ce447671afdbc60d54d4aab666a166e381"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-orhaniye-de-sehrin-kalbinde-kiralik-21-arakat-daire-20036445",
+      "checked_at": "2026-11-05T22:16:11.887685+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-orhaniye-de-sehrin-kalbinde-kiralik-21-arakat-daire-20036445",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "da9557be8e5b5c244759eb93ce18cb8cbb3ac86793ac787018bd6cf97b0a9856",
+      "title": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Orhaniye Mahallesi 2+1 Oda Kiralık Daire 38,000 TL #20036445 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "fea84260cdcf379ddf4ede042697891ef5f7a207166e73172bba0f4f34e4a282"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765",
+      "checked_at": "2026-11-05T22:16:02.817683+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "cb88a87380fc7f8ba5c5fd97023d6cd4792a0b4576f7e51ca428931527a66ef0",
+      "title": "Muğla Kampüs Emlak Muğla Menteşe Orhaniye Mahallesi 3+1 Oda Kiralık Daire 36,000 TL #19820765 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "dae109d3a2a8e42defb347fcf0fdd71409564a621d63075ebab7c6f0ee526b35"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/mukemmel-konumda-full-esyali-31-kiralik-daire-20030742",
+      "checked_at": "2026-11-05T22:16:33.856685+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/mukemmel-konumda-full-esyali-31-kiralik-daire-20030742",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "07e63a4c78d3c3a77d29c61b996e615d4fc105582b3ab60dc97c0afc669e441b",
+      "title": "Sahibinden Eskişehir Tepebaşı Yenibağlar Mahallesi 3+1 Oda Kiralık Daire 33,000 TL #20030742 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "57ef33697303230025052ea7449a7bbce8369c6243e7776236d48bd03890f62e"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/o-g-osmanli-dan-esyali-daire-20063664",
+      "checked_at": "2026-11-05T22:15:04.436624+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/o-g-osmanli-dan-esyali-daire-20063664",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "dcd1866af96b786fb6d31241808a8af07e97f51302581c99c4a4c3bae697b01a",
+      "title": "Osmanli Gayri̇menkul Mülk Yöneti̇mi̇ Bursa Nilüfer Görükle Mahallesi 2+1 Oda Kiralık Daire 15,000 TL #20063664 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "097a3e1316e3833e297066ce71c6c74ffdc631fb966ac28f62d08900c78a27db"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/odak-emlak-tan-moda-burnu-na-yakin-balkonlu-genis-21-20052836",
+      "checked_at": "2026-11-05T22:16:19.760795+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/odak-emlak-tan-moda-burnu-na-yakin-balkonlu-genis-21-20052836",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "221978fc44761f183cb8a678375c916fbed3373065f6ff76f64a1a518ffae4ed",
+      "title": "Odak Emlak Danişmanliği İstanbul Kadıköy Caferağa Mahallesi 2+1 Oda Kiralık Daire 60,000 TL #20052836 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "05a0e739abf9ae34025651346bfc282d16c3697483dbfef09b680725402765e5"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/odak-tan-merkezi-konumda-yenilenmis-esyali-bahce-kati-20051492",
+      "checked_at": "2026-11-05T22:16:20.629033+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/odak-tan-merkezi-konumda-yenilenmis-esyali-bahce-kati-20051492",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "a7c4a0d6c93cccfc888958c164b6f754b8b8af6c3a6beebf8a43fa3aadd7b733",
+      "title": "Odak Emlak Danişmanliği İstanbul Kadıköy Caferağa Mahallesi 3+1 Oda Kiralık Daire 78,000 TL #20051492 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "975529d9c6b4c32d67954d5885a96c46fa1fbc5da7cee6cf9c6dea46fdf3156b"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/sahibinden-beyaz-esyali-20052761",
+      "checked_at": "2026-11-05T22:16:23.965579+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/sahibinden-beyaz-esyali-20052761",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "57221dd3cfee91dea61a073c711736236e4fc7d510b9e71a21bc53d50285406c",
+      "title": "Sahibinden Ankara Çankaya Bahçelievler Mahallesi 3+1 Oda Kiralık Daire 50,000 TL #20052761 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "6097134ffc58f5f970959c798cebaf99c95e83941ae3796464303d2f1a6f3e17"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/ilan/yeni-baglar-mahallesinde-bakimli-11-kiralik-daire-20057486",
+      "checked_at": "2026-11-05T22:16:31.827832+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/ilan/yeni-baglar-mahallesinde-bakimli-11-kiralik-daire-20057486",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "46422c8c9e7f1ee633d65c0ddfcae744dd4dfd31b33250db7f3876fc19eefc31",
+      "title": "Kri̇stal Unity Eskişehir Tepebaşı Yenibağlar Mahallesi 1+1 Oda Kiralık Daire 14,250 TL #20057486 | Emlakjet",
+      "published_at": null,
+      "text_sha256": "f02d2efb5f384fffffc388c496b3a981d2c47ca1a724d098aadf6ed52676a377"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/ankara-cankaya-bahcelievler-mahallesi",
+      "checked_at": "2026-11-05T22:16:22.803825+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/ankara-cankaya-bahcelievler-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "f8b0eaaca5c60146791866c7444d1f816e1b027fbc77a8f47c74b836fa966db1",
+      "title": "Çankaya Bahçelievler Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "24493bf2ed21189c516a9a45658a5a58774ff9664fa76155a1507f56f7ff2300"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/bursa-nilufer-gorukle-mahallesi",
+      "checked_at": "2026-11-05T22:16:34.922209+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/bursa-nilufer-gorukle-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "9f590b46127d8091db10a97bad305e4147010494c94cb8d99c30b5568f915a04",
+      "title": "Nilüfer Görükle Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "cc4fff3cf5c8a76313560e390fc11f4d8da00bb96acac1201ffa7a38f182b57f"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/eskisehir-tepebasi-yenibaglar-mahallesi",
+      "checked_at": "2026-11-05T22:16:30.368878+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/eskisehir-tepebasi-yenibaglar-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b4b301013eb643005a0f562807d67ac97a5dc0f12e17a0062b17dc0c19aa8abc",
+      "title": "Tepebaşı Yenibağlar Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "8e1c9af0023be33f9d1fb081edcd8d4f6b1799d8b4a3afd04727e92bc1668fec"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/istanbul-kadikoy-caferaga-mahallesi",
+      "checked_at": "2026-11-05T22:16:18.359912+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/istanbul-kadikoy-caferaga-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "c94e071823668bf28659b84fac3036582f15ad75848143cd4cc837cd291487c2",
+      "title": "Kadıköy Caferağa Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "2de8432ed9b33ee79a44df57305918e34be19bdb605fbec54d8824e207656f61"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/izmir-konak-kultur-mahallesi",
+      "checked_at": "2026-11-05T22:16:26.608373+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/izmir-konak-kultur-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "b20c6dae857daa8be7724a506794b2c1d07b03e3833f1285e87d5422687f0ad9",
+      "title": "Konak Kültür Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "10dfffd27f174fbab3b39a7f551e6fcfeba2b41ce3a7ce63857f3096134df87e"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-emirbeyazit-mahallesi",
+      "checked_at": "2026-11-05T22:15:59.881798+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-emirbeyazit-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "7ef653d8a0ffec68a4bb82d2b511d05056f3afacdca2255d3c2facc83ec28b18",
+      "title": "Menteşe Emirbeyazıt Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "a24f6285ae6454ba6d3af451da60d2c6c2366767aed88707bfcc99647ff3ee86"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-kotekli-mahallesi",
+      "checked_at": "2026-11-05T22:15:57.578449+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-kotekli-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "6beaaa25d3a571bf92b14f9e4859a573a4c9489c7c700a913ec64e0a67f45ae5",
+      "title": "Menteşe Kötekli Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "0c70ec009ac7d8f831dbf943366a14a8b1a4f74b24702695333dace320bacb17"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-muslihittin-mahallesi",
+      "checked_at": "2026-11-05T22:16:05.712626+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-muslihittin-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "f362b037624112f80771f25320035746b8c32fa8083598b3a2fdb6c7ac55f939",
+      "title": "Menteşe Muslihittin Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "9b70f7677cb8a51d980431d8216691da8593a2ec2bd743c5eb1a71818a5736bd"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-orhaniye-mahallesi",
+      "checked_at": "2026-11-05T22:16:10.860952+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-orhaniye-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "95107ef39a9302145e6720c6f404a865936c190fd8b3ec0fa99418444a4d3af7",
+      "title": "Menteşe Orhaniye Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "981f0882b1947ed0539781334bf4f3f37b9a101537f589d4dcc2ece460682f4c"
+    },
+    {
+      "requested_url": "https://www.emlakjet.com/kiralik-daire/mugla-ula-akyaka-mahallesi",
+      "checked_at": "2026-11-05T22:16:13.581746+00:00",
+      "http_status": 200,
+      "final_url": "https://www.emlakjet.com/kiralik-daire/mugla-ula-akyaka-mahallesi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "861ae13f3af97df46df1f00fe9212259f1becc534506a86c0e20a724b32a051b",
+      "title": "Ula Akyaka Mahallesi Kiralık Daire Fiyatları ve İlanları | Emlakjet",
+      "published_at": null,
+      "text_sha256": "c2b777d34261f78ef320b79eba410b61f1bf857d43e92e104ba2019023324560"
+    },
+    {
+      "requested_url": "https://www.gazeteyenigun.com.tr/haber/27472966/konakta-silahli-kuyumcu-soygunu-zanli-ates-acti",
+      "checked_at": "2026-11-05T22:21:12.720702+00:00",
+      "http_status": 200,
+      "final_url": "https://www.gazeteyenigun.com.tr/haber/27472966/konakta-silahli-kuyumcu-soygunu-zanli-ates-acti",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "861fe51e7107daf2a2e3605bd6143f7d842346a9309015bcd63863958c1e647b",
+      "title": "Konak'ta silahlı kuyumcu soygunu: Zanlı ateş açtı! - Yenigün Gazetesi",
+      "published_at": null,
+      "text_sha256": "e0f89aeb6a938384ff261e267959f67a940a631734b00a76fea4c07cdacdf829"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/caferaga-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:53.751168+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/caferaga-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "373febc2ac84820a8ea92841d778e8fbd80d9c2a9a649fd4e6d3c5865800e29c"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/cankaya-bahcelievler-mah-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:53.756047+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/cankaya-bahcelievler-mah-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "93baff8f92403d429a72a71ad0430e9483c11b45a93dc0283d58f657356c7029"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/konak-kultur-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:53.815033+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/konak-kultur-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "68d448776466deeb29499b8b76196af374f7b0a2d27a9dc216a16ce29496aa32"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/mentese-emirbeyazit-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:54.348114+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/mentese-emirbeyazit-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "6cba5e0467b5f06c03b28d4aa77b86fed335d2b793bcbf7aa0f2f5b55e41e8b8"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/mentese-kotekli-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:54.420785+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/mentese-kotekli-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "fd5d2bbe741e4467cbbe8179778a2084297250cf8cd260d5ff1e854919f910ac"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/mentese-muslihittin-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:54.488231+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/mentese-muslihittin-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "6af6d4829f0a86241730e5409cc2b4242a3e64694aef6b4f66506b45a480e620"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/mentese-orhaniye-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:54.594976+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/mentese-orhaniye-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "6f15beb37db76590fe95859662ab9b34c2b6e4770aabad5d54a34b0a1ac6ec1c"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/nilufer-gorukle-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:54.595220+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/nilufer-gorukle-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "f010c62db84a7ca63cb97b922fae1de0b57b6251eb118fef43964bb4171e59b2"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/tepebasi-yenibaglar-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:55.055640+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/tepebasi-yenibaglar-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "aa3105ee68cdcf6a036c5ef987951e7424cc947c807d9751851eb56279041664"
+    },
+    {
+      "requested_url": "https://www.hepsiemlak.com/ula-akyaka-kiralik/daire",
+      "checked_at": "2026-11-05T22:13:55.116754+00:00",
+      "http_status": 403,
+      "final_url": "https://www.hepsiemlak.com/ula-akyaka-kiralik/daire",
+      "status": "unavailable",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "1c753b9cfa37c0b9b6a01b463fb52c456c2da048063c813004e7d5e6d71d1795"
+    },
+    {
+      "requested_url": "https://www.izmir.bel.tr/tr/KararDetayi/35024",
+      "checked_at": "2026-11-05T22:13:55.221297+00:00",
+      "http_status": 200,
+      "final_url": "https://www.izmir.bel.tr/tr/KararDetayi/35024",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "ae24b5d298b35a2ae73f4c5d2596914adf5a5d656fbd3741466022c51476049b",
+      "title": "İzmir Büyükşehir Belediyesi",
+      "published_at": null,
+      "text_sha256": "ebf7c9becc1e70ed4eeb61ef32e2e8400f10c4a51a97e5a6a912fa58e8454db1"
+    },
+    {
+      "requested_url": "https://www.metro.istanbul/BizeUlasin/",
+      "checked_at": "2026-11-05T22:13:55.329813+00:00",
+      "http_status": 200,
+      "final_url": "https://www.metro.istanbul/BizeUlasin/",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "eef2cd912f4af5e9ed45427d47a07e1b4eae37d97f44b99dddf4260898627835",
+      "title": "",
+      "published_at": null,
+      "text_sha256": "87547a167904b57ad9dabe6de8fcc121d08fc7ba7db5a7421e22776d9f157301"
+    },
+    {
+      "requested_url": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T3",
+      "checked_at": "2026-11-05T22:13:55.423835+00:00",
+      "http_status": 200,
+      "final_url": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T3",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "88222ece0d6ac6a05d996d4992ec05d3670a07939299b995fcbac949ef9c3b69",
+      "title": "Kadıköy-Moda Tramvay Hattı",
+      "published_at": null,
+      "text_sha256": "c37929595b9103b3061bf14f49bffedd3584fd4f38b1b1a244824fd5eaebad91"
+    },
+    {
+      "requested_url": "https://www.metro.istanbul/duyuru/detay/t3-kadikoy-moda-tramvay-hattinda-bakim-calismasi-100226",
+      "checked_at": "2026-11-05T22:13:55.828961+00:00",
+      "http_status": 200,
+      "final_url": "https://www.metro.istanbul/en",
+      "status": "page_read",
+      "redirects": [
+        {
+          "status": 302,
+          "url": "https://www.metro.istanbul/duyuru/detay/t3-kadikoy-moda-tramvay-hattinda-bakim-calismasi-100226"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "56508569e645dcdc37bddf08d6eb3105b800f598896799dc8f85bda29229b409",
+      "title": "METRO İSTANBUL",
+      "published_at": null,
+      "text_sha256": "ee7eedc6f652faa970a5daefb798dbeb5116dd1acc52c25a85a3df28998a2481"
+    },
+    {
+      "requested_url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesede-ihbar-uzerine-gidilen-evde-bir-kadin-baygin-halde-bulundu-216130h",
+      "checked_at": "2026-11-05T22:21:14.199359+00:00",
+      "http_status": 200,
+      "final_url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesede-ihbar-uzerine-gidilen-evde-bir-kadin-baygin-halde-bulundu-216130h",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "a01fab5390b0590683aa4e685041b72026de402f3f0311971ab14ab64e546926",
+      "title": "Menteşe’de İhbar Üzerine Gidilen Evde Bir Kadın Baygın Halde Bulundu",
+      "published_at": null,
+      "text_sha256": "0c111c96bd7f5bdc13861fa36cec164503043fd33eda10f6d0eef9dec99a43f1"
+    },
+    {
+      "requested_url": "https://www.nilufer.bel.tr/kategoriler/tesisler/spor-tesisleri/gorukle-spor-parki",
+      "checked_at": "2026-11-05T22:13:55.971217+00:00",
+      "http_status": 200,
+      "final_url": "https://www.nilufer.bel.tr/kategoriler/tesisler/spor-tesisleri/gorukle-spor-parki",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=UTF-8",
+      "response_sha256": "06c601470531bf40e21454b0e8cbab5ce4d0c2cb4ff1a67ba3ffb67c12ad49d2",
+      "title": "Nilüfer Belediyesi",
+      "published_at": null,
+      "text_sha256": "010fe6ff1aec40f686032a3b0b34143fae132f92a7d5ed88b829a37891690632"
+    },
+    {
+      "requested_url": "https://www.nilufer.gov.tr/mahalle-muhtarlari",
+      "checked_at": "2026-11-05T22:13:56.169102+00:00",
+      "http_status": 200,
+      "final_url": "https://www.nilufer.gov.tr/mahalle-muhtarlari",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "93f1efd782c9ea6e0dd4ce5c57411f3e6cc0ed75d07558b0e16af53fca117124",
+      "title": "T.C. Nilüfer Kaymakamlığı - Mahalle Muhtarlıkları",
+      "published_at": null,
+      "text_sha256": "2b5a6534f115faed068f7a47d88efa26020fd057219e80ae39e4d3b27c938233"
+    },
+    {
+      "requested_url": "https://www.sabah.com.tr/yasam/muglada-hayrete-dusuren-anlar-hirsizin-rahatligi-pes-dedirtti-once-etrafi-kontrol-etti-sonra-motosiklete-binip-gitti-7594620",
+      "checked_at": "2026-11-05T22:21:13.612808+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sabah.com.tr/yasam/muglada-hayrete-dusuren-anlar-hirsizin-rahatligi-pes-dedirtti-once-etrafi-kontrol-etti-sonra-motosiklete-binip-gitti-7594620",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "7c8f9eb80243024322b5cb47c2b8441a8bb44ed31c9d497cd9a6feb71b59b494",
+      "title": "Muğla’da hayrete düşüren anlar! Hırsızın rahatlığı pes dedirtti: Önce etrafı kontrol etti sonra motosiklete binip gitti! - Yaşam Haberleri",
+      "published_at": null,
+      "text_sha256": "c63e122808606a708707c5d801732573b5cd8e80994371120500319334b530d5"
+    },
+    {
+      "requested_url": "https://www.tepebasi.bel.tr/DışBirim/Detay/29ekimgenclikmerkezi",
+      "checked_at": "2026-11-05T22:13:56.317682+00:00",
+      "http_status": 200,
+      "final_url": "https://www.tepebasi.bel.tr/D%C4%B1%C5%9FBirim/Detay/29ekimgenclikmerkezi",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "3be9afdd1e0b365933ad8a66e72fad5dc43d10ddbd872576918f65f0f906deb1",
+      "title": "Eskişehir Tepebaşı Belediyesi",
+      "published_at": null,
+      "text_sha256": "8c166d08a381719944496ee8dcb315a66ba690fb803b3d565eb3c9ff7d23e4bb"
+    },
+    {
+      "requested_url": "https://yerel-haberler.haberturk.com/mugla-haberleri/mentesede-motosiklet-kazasi-1-yarali-117419176",
+      "checked_at": "2026-11-05T22:21:13.678780+00:00",
+      "http_status": 200,
+      "final_url": "https://yerel-haberler.haberturk.com/mugla-haberleri/mentesede-motosiklet-kazasi-1-yarali-117419176",
+      "status": "page_read",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "response_sha256": "ce7c7033c441cd802e3a74be605565be66a95e349f9982281d85cf69ba73c6b3",
+      "title": "Menteşe'de motosiklet kazası:1 yaralı - Muğla Haberleri",
+      "published_at": null,
+      "text_sha256": "384e00ccee705507e0f0b059f10cc7a40e56eba194049a7ef2eeff31043001ea"
+    }
+  ],
+  "meaning": "All listed URLs attempted. HTTP reachability and claim correctness are separate checks."
+}

@@ -1,0 +1,376 @@
+{
+  "schema_version": "2.0.0",
+  "id": "kultur",
+  "geo_key": "tr/izmir/konak/kultur",
+  "country": "Türkiye",
+  "name": "Kültür",
+  "district": "Konak",
+  "city": "İzmir",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "kultur-identity",
+    "target_id": "kultur",
+    "category": "identity",
+    "evidence_quotes": [
+      "Konak ilçesi, Kültür Mahallesi"
+    ],
+    "text": "İzmir / Konak / Kültür",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "izmir-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "kultur-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 38.4312455,
+    "lon": 27.1366978,
+    "label": "Kültür Mahallesi, İzmir, Konak, İzmir, Ege Bölgesi, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 10340784,
+    "source_id": "geocode-kultur",
+    "checked_at": "2026-11-05T22:18:24.236484+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20061818",
+          "target_id": "kultur",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Kültür Mahallesi, Konak , İzmir",
+            "İlan Güncelleme Tarihi 05 Kasım 2026",
+            "45.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 45000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-05",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20061818"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20061818",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20059592",
+          "target_id": "kultur",
+          "category": "rent_cost",
+          "text": "Yayıncıda 5+1 kiralık daire için 90,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Kültür Mahallesi, Konak , İzmir",
+            "İlan Güncelleme Tarihi 04 Kasım 2026",
+            "90.000 ₺",
+            "5+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "5+1",
+          "asking_amount_tl": 90000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-04",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20059592"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20059592",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20032574",
+          "target_id": "kultur",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 37,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Kültür Mahallesi, Konak , İzmir",
+            "İlan Güncelleme Tarihi 28 Ekim 2026",
+            "37.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 37000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-10-28",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20032574"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20032574",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "kultur-news",
+          "target_id": "kultur",
+          "category": "safety_news",
+          "text": "Yayıncı Konak/Kültür'de bir kuyumcuya yönelik silahlı soygun girişimi ve şüphelinin yakalanmasını haberleştiriyor.",
+          "evidence_quotes": [
+            "Konak ilçesine bağlı Kültür Mahallesi Şevket Özçelik Sokak’ta bulunan bir kuyumcuda",
+            "Zanlı, havaya ateş açtı"
+          ],
+          "event_type": "reported_robbery_attempt",
+          "date": null,
+          "date_basis": "unknown",
+          "event_date": null,
+          "limitations": "Arama sonucu tarihi tek başına kanıt sayılmadı; incelenen makale gövdesinde yayın tarihi yer almadığı için tarih boş bırakıldı.",
+          "source_ids": [
+            "news-kultur"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "kultur-news",
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "missing",
+      "score": null,
+      "observations": [],
+      "missing_reason": "Bu taramada mahalleye açıkça bağlanan ve gövdesi okunarak denetlenen uygun kayıt elde edilmedi; hizmet/olay yokluğu anlamına gelmez."
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "kultur-art",
+          "target_id": "kultur",
+          "category": "social_life",
+          "text": "İzmir İl Kültür ve Turizm Müdürlüğü Arkas Sanat Merkezi'ni Kültür Mahallesi, 1380. Sokak, Konak/İzmir adresinde listeliyor.",
+          "evidence_quotes": [
+            "Arkas Sanat Merkezi Kültür Mahallesi, 1380 . Sk. 3-1, 35230 Konak/İzmir"
+          ],
+          "name": "Arkas Sanat Merkezi",
+          "type": "arts_centre",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_provincial_directory",
+          "limitations": "Adres envanteri kontrol edildi; güncel sergi ve açık olma durumu teyit edilmedi.",
+          "source_ids": [
+            "izmir-arts"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "kultur-art",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.368,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.368,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 38.43455,
+          "longitude": 27.15081,
+          "pga_g": 0.368
+        },
+        "distance_to_grid_point_km": 1.283,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-20032574",
+      "url": "https://www.emlakjet.com/ilan/alsancak-sair-esref-bulvarinda-11-70m2-temiz-bakimli-esyali-kiralik-daire-20032574",
+      "final_url": "https://www.emlakjet.com/ilan/alsancak-sair-esref-bulvarinda-11-70m2-temiz-bakimli-esyali-kiralik-daire-20032574",
+      "publisher": "Almi̇ra Emlak İzmir Konak Kültür Mahallesi 1+1 Oda Kiralık Daire 37,000 TL #20032574 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:29.421442+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "09e70753eb2045d8f228685513d00a047ba21e42c232059ed0a6a4edca9121e4"
+    },
+    {
+      "id": "emlakjet-20059592",
+      "url": "https://www.emlakjet.com/ilan/alsancak-sevinc-pastanesi-sokagi-nda-esyali-kiralik-3-51-daire-20059592",
+      "final_url": "https://www.emlakjet.com/ilan/alsancak-sevinc-pastanesi-sokagi-nda-esyali-kiralik-3-51-daire-20059592",
+      "publisher": "Coldwell Banker Vista İzmir Konak Kültür Mahallesi 3.5+1 Oda Kiralık Daire 90,000 TL #20059592 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:28.501548+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "64e3f33c0d80241aac44b8dc447677fd04b5328fb74a7de6ec9f437bc8dc0143"
+    },
+    {
+      "id": "emlakjet-20061818",
+      "url": "https://www.emlakjet.com/ilan/51-alsancak-talatpasa-bulvari-kiralik-21-daire-20061818",
+      "final_url": "https://www.emlakjet.com/ilan/51-alsancak-talatpasa-bulvari-kiralik-21-daire-20061818",
+      "publisher": "Remax Best İzmir Konak Kültür Mahallesi 2+1 Oda Kiralık Daire 45,000 TL #20061818 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:27.735969+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "b6d78fba8efd4cc0a558e7cbbc666acae2066b631e88433ead8a6b0f916f419b"
+    },
+    {
+      "id": "geocode-kultur",
+      "url": "https://nominatim.openstreetmap.org/search?q=K%C3%BClt%C3%BCr%2C+Konak%2C+%C4%B0zmir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=K%C3%BClt%C3%BCr%2C+Konak%2C+%C4%B0zmir&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:24.236484+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "98452b71dbf2c6ec3004f87d30f99e229d6dbfbc345156a258707aae7eb4fd2f"
+    },
+    {
+      "id": "izmir-arts",
+      "url": "https://izmir.ktb.gov.tr/TR-77347/kultur-ve-sanat-merkezleri.html",
+      "final_url": "https://izmir.ktb.gov.tr/TR-77347/kultur-ve-sanat-merkezleri.html",
+      "publisher": "Kültür ve Sanat Merkezleri",
+      "checked_at": "2026-11-05T22:16:55.233185+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "ea9cf8af8513f86f0f5f783770a2629126beeedd024b224597384f361b7531e9"
+    },
+    {
+      "id": "izmir-identity",
+      "url": "https://www.izmir.bel.tr/tr/KararDetayi/35024",
+      "final_url": "https://www.izmir.bel.tr/tr/KararDetayi/35024",
+      "publisher": "İzmir Büyükşehir Belediyesi",
+      "checked_at": "2026-11-05T22:13:55.221297+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "ae24b5d298b35a2ae73f4c5d2596914adf5a5d656fbd3741466022c51476049b"
+    },
+    {
+      "id": "news-kultur",
+      "url": "https://www.gazeteyenigun.com.tr/haber/27472966/konakta-silahli-kuyumcu-soygunu-zanli-ates-acti",
+      "final_url": "https://www.gazeteyenigun.com.tr/haber/27472966/konakta-silahli-kuyumcu-soygunu-zanli-ates-acti",
+      "publisher": "Konak'ta silahlı kuyumcu soygunu: Zanlı ateş açtı! - Yenigün Gazetesi",
+      "checked_at": "2026-11-05T22:21:12.720702+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "861fe51e7107daf2a2e3605bd6143f7d842346a9309015bcd63863958c1e647b"
+    }
+  ],
+  "excluded_observations": [],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

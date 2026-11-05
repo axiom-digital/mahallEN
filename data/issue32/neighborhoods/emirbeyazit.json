@@ -1,0 +1,441 @@
+{
+  "schema_version": "2.0.0",
+  "id": "emirbeyazit",
+  "geo_key": "tr/mugla/mentese/emirbeyazit",
+  "country": "Türkiye",
+  "name": "Emirbeyazıt",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "emirbeyazit-identity",
+    "target_id": "emirbeyazit",
+    "category": "identity",
+    "evidence_quotes": [
+      "Emirbeyazıt Mahallesi"
+    ],
+    "text": "Muğla / Menteşe / Emirbeyazıt",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "mentese-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "emirbeyazit-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 37.2164311,
+    "lon": 28.362938,
+    "label": "Emirbeyazıt Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, 48050, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9710055,
+    "source_id": "geocode-emirbeyazit",
+    "checked_at": "2026-11-05T22:18:11.641039+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20045942",
+          "target_id": "emirbeyazit",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 36,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Emirbeyazıt Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 01 Kasım 2026",
+            "36.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 36000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-01",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20045942"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20045942",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-19999225",
+          "target_id": "emirbeyazit",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 35,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Emirbeyazıt Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 20 Ekim 2026",
+            "35.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 35000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-10-20",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-19999225"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-19999225",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emirbeyazit-news",
+          "target_id": "emirbeyazit",
+          "category": "safety_news",
+          "text": "Belediye haberi Emirbeyazıt Kurşunlu Meydanı çevresindeki bayrak yakma olayı ve şüphelinin yakalanmasını aktarıyor.",
+          "evidence_quotes": [
+            "Olay, 11 Ağustos gecesi Emirbeyazıt Mahallesi Kurşunlu Meydanı çevresinde meydana geldi."
+          ],
+          "event_type": "reported_public_order_incident",
+          "date": null,
+          "date_basis": "event_day_month_only",
+          "limitations": "Metin 11 Ağustos diyor; olay yılı bu metinden kesinleşmediği için tam tarih üretilmedi. Suç oranı veya yargısal sonuç değildir.",
+          "source_ids": [
+            "mentese-news"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emirbeyazit-news",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "missing",
+      "score": null,
+      "observations": [],
+      "missing_reason": "Bu taramada mahalleye açıkça bağlanan ve gövdesi okunarak denetlenen uygun kayıt elde edilmedi; hizmet/olay yokluğu anlamına gelmez."
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emirbeyazit-park",
+          "target_id": "emirbeyazit",
+          "category": "social_life",
+          "text": "Belediyenin tablosu 2000 Derneği Dayanışma Parkı'nı Emirbeyazıt satırında listeliyor.",
+          "evidence_quotes": [
+            "EMİRBEYAZIT 2000 Derneği Dayanışma Parkı"
+          ],
+          "name": "2000 Derneği Dayanışma Parkı",
+          "type": "park",
+          "latitude": 37.2101,
+          "longitude": 28.3598,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_municipal_inventory",
+          "limitations": "Tesis kalitesi ve açık olma durumu ayrıca ölçülmedi.",
+          "source_ids": [
+            "mentese-parks"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emirbeyazit-park",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.334,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.334,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 37.22046,
+          "longitude": 28.35751,
+          "pga_g": 0.334
+        },
+        "distance_to_grid_point_km": 0.6571,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-19999225",
+      "url": "https://www.emlakjet.com/ilan/mugla-merkez-de-kiralik-11-daire-19999225",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-merkez-de-kiralik-11-daire-19999225",
+      "publisher": "Emlak Tapu Gayri̇menkul Muğla Menteşe Emirbeyazıt Mahallesi 1+1 Oda Kiralık Daire 35,000 TL #19999225 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:02.026494+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "3bca20de2b52c1b73ec41e4f1407a689bd1d36fb28a49ac6d2af00dc24517073"
+    },
+    {
+      "id": "emlakjet-20045942",
+      "url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942",
+      "publisher": "Yildiz Emlak Gayri̇menkul Yatirim Danişmanliği Muğla Menteşe Emirbeyazıt Mahallesi 2+1 Oda Kiralık Daire 36,000 TL #20045942 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:00.960216+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "686e29d1b42c19e572db4ed1d37769994420cb416f510e29b36929a9b1295d94"
+    },
+    {
+      "id": "geocode-emirbeyazit",
+      "url": "https://nominatim.openstreetmap.org/search?q=Emirbeyaz%C4%B1t%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Emirbeyaz%C4%B1t%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:11.641039+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "8bcfdfac98de2efe4eff6e0c8975d99f190f473c1c4a1979d1335a2b89510728"
+    },
+    {
+      "id": "mentese-identity",
+      "url": "https://mentese.bel.tr/cop-saatleri/",
+      "final_url": "https://mentese.bel.tr/cop-saatleri/",
+      "publisher": "Çöp Alma Saatleri – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:13:02.667057+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05"
+    },
+    {
+      "id": "mentese-news",
+      "url": "https://mentese.bel.tr/mentesede-bayrak-saldirisinin-suphelisi-belediye-guvenliginin-dikkatiyle-yakalandi/",
+      "final_url": "https://mentese.bel.tr/mentesede-bayrak-saldirisinin-suphelisi-belediye-guvenliginin-dikkatiyle-yakalandi/",
+      "publisher": "Menteşe’de Bayrak Saldırısının Şüphelisi Belediye Güvenliğinin Dikkatiyle Yakalandı – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:13:02.667707+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "a3f557d19a22d2cd2e674528523abc2e892ce38c5fdf4d0db57d9eafc4077f5b"
+    },
+    {
+      "id": "mentese-parks",
+      "url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "final_url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "publisher": "Afet ve Acil Durum Toplanma Alanları – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:14:29.900540+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "emirbeyazit-route-1-9",
+      "reason": "stop_name_without_independently_matched_neighborhood_address"
+    },
+    {
+      "id": "legacy-3a9018ac0e65ad",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-7df6a3de1282c3",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-63bb0a03c0621c",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-034be551005420",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-2547e25aef2c45",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ea393a001a62ea",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-a7622deed3b8f2",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-7a508b528a0d39",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ee764dfe7ec7d9",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-601e1e191aa70e",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-bbb538444791b8",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-01806deee7c0e8",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-bf8dae6f1ba006",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/emirbeyazit.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "rental-reject-0",
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "id": "rental-reject-1",
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniyede-kiralik-31-daire-20056549",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "id": "rental-reject-2",
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniye-mah-site-icerisinde-31-kiralik-daire-20042450",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "id": "rental-reject-3",
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866",
+      "reason": "detail_address_does_not_match_target"
+    }
+  ],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

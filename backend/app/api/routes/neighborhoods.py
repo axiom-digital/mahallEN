@@ -1,5 +1,4 @@
 from contextlib import nullcontext
-import logging
 from typing import List, Literal, Optional
 from hmac import compare_digest
 from math import ceil
@@ -23,10 +22,9 @@ from app.services.cache_service import (
     set_cached_report,
     invalidate_cached_report,
 )
-from app.services.kotekli_report import build_kotekli_report, load_kotekli_pilot
+from app.services.kotekli_report import build_kotekli_report, kotekli_pilot_evidence, load_kotekli_pilot
 from app.services.scoring_service import get_scoring_methodology
 
-logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/neighborhoods", tags=["Neighborhoods & AI Reports"])
 refresh_token_header = APIKeyHeader(name="X-AI-Refresh-Token", auto_error=False)
 
@@ -119,8 +117,6 @@ def get_neighborhood_report(
         try:
             refreshed_report["ai_report"] = generate_kotekli_ai_report(pilot[0], refreshed_report)
         except Exception:
-            # Provider errors can contain credentials or the evidence prompt.
-            logger.warning("Gemini failed to generate a valid Kötekli report.")
             raise HTTPException(
                 status_code=502,
                 detail="Gemini could not generate a valid Kötekli report. The cache was not changed.",
@@ -137,6 +133,9 @@ def get_neighborhood_report(
                 cached_data, hit_count = cached_result
                 response.headers["X-Cache"] = "HIT"
                 response.headers["X-Cache-Hits"] = str(hit_count)
+                if pilot and "pilot_evidence" not in cached_data:
+                    # Keep valid narratives cached before the evidence field was added.
+                    return {**cached_data, "pilot_evidence": kotekli_pilot_evidence(pilot[0])}
                 return cached_data
 
         report_payload = refreshed_report

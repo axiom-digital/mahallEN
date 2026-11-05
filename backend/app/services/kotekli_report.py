@@ -15,6 +15,18 @@ def load_kotekli_pilot() -> tuple[dict, str]:
     return json.loads(raw), f"kotekli-pilot-v1:{sha256(raw).hexdigest()}"
 
 
+def kotekli_pilot_evidence(pilot: dict) -> dict:
+    return {
+        "reference_date": pilot["date"],
+        "location": pilot["location"],
+        "rent": pilot["rent"],
+        "transport": pilot["transport"],
+        "news": pilot["news"],
+        "social_places": pilot["social"]["places"],
+        "hazard": pilot["hazard"],
+    }
+
+
 def build_kotekli_report(neighborhood_id: int, pilot: dict) -> dict:
     scores = pilot["scores"]
     location = pilot["location"]
@@ -62,6 +74,7 @@ def build_kotekli_report(neighborhood_id: int, pilot: dict) -> dict:
         ],
         "community_comments": [],
         "data_sources": list(dict.fromkeys(sources)),
+        "pilot_evidence": kotekli_pilot_evidence(pilot),
         "ai_report": {
             "executive_summary": (
                 f"{tagline}. Kira ilanları, toplu taşıma hatları, yerel haberler, "

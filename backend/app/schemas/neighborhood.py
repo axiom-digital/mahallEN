@@ -127,5 +127,6 @@ class NeighborhoodFullReportSchema(BaseModel):
     news_items: List[NewsItemSchema]
     community_comments: List[CommunityCommentSchema]
     data_sources: List[str]
+    pilot_evidence: dict | None = None
     ai_report: AIReportSynthesisSchema
     scoring_methodology: dict

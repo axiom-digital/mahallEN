@@ -7,6 +7,7 @@ import pytest
 from app.core.config import settings
 from app.models.report_cache import ReportCache
 from app.services import ai_service
+from app.services.kotekli_report import load_kotekli_pilot
 
 
 def test_report_caching_lifecycle(client):
@@ -38,6 +39,19 @@ def test_report_caching_lifecycle(client):
     assert res3.status_code == 200
     assert res3.headers.get("X-Cache") == "HIT"
     assert res3.headers.get("X-Cache-Hits") == "2"
+
+
+def test_kotekli_adds_pilot_evidence_to_existing_cache_hit(client):
+    url = "/api/v1/neighborhoods/kotekli/report"
+    original = client.get(url).json()
+    with client.app.state.session_factory() as db:
+        cached = db.query(ReportCache).filter_by(slug="kotekli").one()
+        cached.report_data = {key: value for key, value in cached.report_data.items() if key != "pilot_evidence"}
+        db.commit()
+
+    hit = client.get(url)
+    assert hit.headers["X-Cache"] == "HIT"
+    assert hit.json() == original
 
 
 def test_kotekli_ignores_existing_demo_cache(client):
@@ -218,13 +232,24 @@ def test_kotekli_gemini_refresh_cache_lifecycle(client, monkeypatch, provider_fa
     assert "tools" not in model.call_args.kwargs
     evidence = json.loads(provider.call_args.args[0])
     assert evidence["reference_date"] == "2026-10-28"
-    assert evidence["computed_scores"] == original["scores"]
-    assert evidence["source_links"] == original["data_sources"]
-    assert evidence["suitability"] == original["suitability"]
-    assert evidence["transport_analysis"]["bus_frequency_min"] is None
-    assert evidence["rent_listings"][0]["sources"]
-    assert evidence["social_places"][0]["sources"]
-    assert evidence["hazard_source"]["url"] in original["data_sources"]
+    assert evidence["computed_scores"] == {
+        key: score for key, score in original["scores"].items() if key != "overall_livability"
+    }
+    assert set(evidence) == {"reference_date", "computed_scores", "observations"}
+    assert evidence["observations"].keys() == evidence["computed_scores"].keys()
+    for observations in evidence["observations"].values():
+        assert 1 <= len(observations) <= 2
+        for observation in observations:
+            assert set(observation) == {"observation", "source"}
+            assert observation["source"]
+            assert 0 < len(observation["observation"]) <= 180
+    assert "https://" not in provider.call_args.args[0]
+    assert len(provider.call_args.args[0]) < 4000
+    assert original["pilot_evidence"]["reference_date"] == "2026-10-28"
+    pilot, _ = load_kotekli_pilot()
+    for key in ("location", "rent", "transport", "news", "hazard"):
+        assert original["pilot_evidence"][key] == pilot[key]
+    assert original["pilot_evidence"]["social_places"] == pilot["social"]["places"]
 
     hit = client.get(url)
     assert (hit.status_code, hit.headers["X-Cache"], hit.headers["X-Cache-Hits"]) == (200, "HIT", "1")

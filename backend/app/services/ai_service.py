@@ -4,11 +4,9 @@ Gemini is called only for authorized refreshes. The demo and Kötekli pilot
 paths validate their narratives and handle provider failures independently.
 """
 
-from itertools import islice
 import json
 import logging
 import re
-from textwrap import shorten
 from typing import Dict, Any
 from app.core.config import settings
 from app.models.neighborhood import Neighborhood
@@ -98,38 +96,30 @@ def _report_json(raw_text: str) -> str:
     return raw_text
 
 
-def _short_observations(records: list[dict], text_field: str = "text") -> list[dict]:
-    sourced = (record for record in records if record["sources"])
-    return [
-        {
-            "observation": shorten(record[text_field], width=180, placeholder="…"),
-            "source": record["sources"][0]["publisher"],
-        }
-        for record in islice(sourced, 2)
-    ]
-
-
 def generate_kotekli_ai_report(pilot: dict, report: dict) -> dict:
-    hazard = pilot["hazard"]
     evidence = {
         "reference_date": pilot["date"],
-        "computed_scores": {
-            key: score for key, score in report["scores"].items() if key != "overall_livability"
-        },
-        "observations": {
-            "cost_affordability": _short_observations(pilot["rent"]),
-            "transportation": _short_observations(pilot["transport"]),
-            "safety": _short_observations(pilot["news"]),
-            "social_life": _short_observations(pilot["social"]["places"], "name"),
-            "disaster_resilience": [{
-                "observation": f"Araştırma gridinde PGA {hazard['value']} {hazard['unit']}.",
-                "source": hazard["sourceTitle"],
-            }],
-        },
+        "name": report["name"],
+        "district": report["district"],
+        "city": report["city"],
+        "computed_scores": report["scores"],
+        "suitability": report["suitability"],
+        "source_links": report["data_sources"],
+        "score_context": report["scoring_methodology"]["note"],
+        "scoring_status": pilot["scoringStatus"],
+        "rent_analysis": report["rent_analysis"],
+        "transport_analysis": report["transport_analysis"],
+        "disaster_risk": report["disaster_risk"],
+        "rent_listings": pilot["rent"],
+        "transport_routes": pilot["transport"],
+        "news": pilot["news"],
+        "social_places": pilot["social"]["places"],
+        "hazard_source": pilot["hazard"],
+        "location_source": pilot["location"],
     }
     stage = "provider"
     try:
-        raw = _request_gemini(evidence, KOTEKLI_SYSTEM_INSTRUCTION, prompt_limit=4000)
+        raw = _request_gemini(evidence, KOTEKLI_SYSTEM_INSTRUCTION, prompt_limit=40000)
         stage = "report_validation"
         narrative = ReportNarrativeSchema.model_validate_json(_report_json(raw)).model_dump()
         if any(re.search(r"https?://|www\.", text, re.IGNORECASE) for text in (

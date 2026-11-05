@@ -232,19 +232,13 @@ def test_kotekli_gemini_refresh_cache_lifecycle(client, monkeypatch, provider_fa
     assert "tools" not in model.call_args.kwargs
     evidence = json.loads(provider.call_args.args[0])
     assert evidence["reference_date"] == "2026-10-28"
-    assert evidence["computed_scores"] == {
-        key: score for key, score in original["scores"].items() if key != "overall_livability"
-    }
-    assert set(evidence) == {"reference_date", "computed_scores", "observations"}
-    assert evidence["observations"].keys() == evidence["computed_scores"].keys()
-    for observations in evidence["observations"].values():
-        assert 1 <= len(observations) <= 2
-        for observation in observations:
-            assert set(observation) == {"observation", "source"}
-            assert observation["source"]
-            assert 0 < len(observation["observation"]) <= 180
-    assert "https://" not in provider.call_args.args[0]
-    assert len(provider.call_args.args[0]) < 4000
+    assert evidence["computed_scores"] == original["scores"]
+    assert evidence["source_links"] == original["data_sources"]
+    assert evidence["suitability"] == original["suitability"]
+    assert evidence["transport_analysis"]["bus_frequency_min"] is None
+    assert evidence["rent_listings"][0]["sources"]
+    assert evidence["social_places"][0]["sources"]
+    assert evidence["hazard_source"]["url"] in original["data_sources"]
     assert original["pilot_evidence"]["reference_date"] == "2026-10-28"
     pilot, _ = load_kotekli_pilot()
     for key in ("location", "rent", "transport", "news", "hazard"):

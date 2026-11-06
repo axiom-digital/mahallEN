@@ -5,7 +5,7 @@ from unittest.mock import Mock
 
 from app.models.place import Place
 from app.models.report_cache import ReportCache
-from app.services import place_service, place_research
+from app.services import place_service, place_research, place_assessment
 
 
 TARGET = {"name": "Erzene", "district": "Bornova", "city": "İzmir", "location": {"lat": 38.47, "lon": 27.22}}
@@ -20,7 +20,7 @@ def discovered(client, monkeypatch):
 def fixture_report(identity):
     return {"place": {"id": identity, **{k: TARGET[k] for k in ("name", "district", "city")}},
         "summary": "Kaynaklı rapor", "reference_date": "2026-11-06", "categories": [],
-        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test"}
+        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test", "report_version": 2}
 
 
 def test_empty_search_does_not_return_a_pilot_catalog(client, monkeypatch):
@@ -39,18 +39,22 @@ def test_search_can_discover_a_neighborhood_outside_saved_ten(client, monkeypatc
         assert db.get(Place, identity).target["district"] == "Bornova"
 
 
-def test_saved_neighborhood_is_read_from_persistent_cache_without_provider(client, monkeypatch):
-    monkeypatch.setattr(place_service, "lookup_neighborhoods", lambda q: [])
-    generate = Mock(side_effect=AssertionError("Provider must not be called"))
+def test_saved_sources_are_upgraded_once_without_search_and_full_report_is_cached(client, monkeypatch):
+    generate = Mock(side_effect=AssertionError("Search must not run for saved evidence"))
+    assess = Mock(side_effect=lambda evidence: {**evidence, "report_version": 2, "assessment": {"test": True}})
     monkeypatch.setattr(place_research, "generate_place_report", generate)
+    monkeypatch.setattr(place_assessment, "assess_place_report", assess)
     found = client.get("/api/v1/places/search?q=Caferağa").json()["results"]
-    assert len(found) == 1 and found[0]["report_available"]
     path = f"/api/v1/places/{found[0]['id']}/report"
+    assert client.get(path).status_code == 404
+    first = client.post(path)
+    assert first.status_code == 201 and first.headers["x-cache"] == "MISS"
     a, b = client.get(path), client.post(path)
     assert a.status_code == b.status_code == 200
     assert a.headers["x-cache"] == b.headers["x-cache"] == "HIT"
-    assert a.json() == b.json()
+    assert a.json() == b.json() == first.json()
     generate.assert_not_called()
+    assess.assert_called_once()
 
 
 def test_new_place_is_generated_once_and_next_read_and_post_hit_cache(client, monkeypatch):

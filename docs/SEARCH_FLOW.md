@@ -81,3 +81,46 @@ kontrolünde Bostanlı raporu `201 MISS` ile 48,66 sn'de üretildi; dört bulgun
 alıntısı rapor verisinde saklandı. Tekrar GET `200 HIT` ve birebir aynı JSON'u
 verdi. Bu süreler tekil gözlemlerdir; arama/model yoğunluğuna göre değişebilir.
 Backend testlerinin tamamı: 85 başarılı.
+
+## Tam rapor ve puan ön değerlendirmesi (şema v2)
+
+Kaynak özeti tam rapor değildir. Yeni raporda Tavily kaynak araştırması ve
+alıntı eşleştirmesinden sonra ikinci Gemini adımı çalışır: en az üç paragraflık
+anlatım, artılar/eksiler, beş kategori için gerekçe ve kaynak bulgu kimlikleri,
+öğrenci/aile/çalışan yorumları üretilir. Ön puanlar modelin proje yorumudur;
+ölçülmüş istatistik olarak sunulmaz. Kanıt olmayan puan ve farklı kategoriye
+bağlanan bulgu kimliği reddedilir. Yeterli veri bulunmayan kategori null kalır.
+Tekil asayiş haberinden genel güvenlik, PGA noktasından bina güvenliği puanı
+üretilmesi istenmez.
+
+Genel ağırlıklar maliyet 32, sosyal yaşam 28, haber/güvenlik 20, deprem 10,
+ulaşım 10'dur. Profil ağırlıkları frontend'deki proje senaryolarıyla aynıdır.
+Genel ve profil ön puanları yalnız mevcut kategori puanlarının ağırlıkları
+yeniden oranlanarak hesaplanır; puanlanan başlık sayısı ekranda açıkça gösterilir.
+Bunlar tüm boyutları kapsayan karşılaştırmalı bir ölçüm değildir.
+
+GET, yalnız `report_version: 2` olan geçerli tam raporu döndürür. Eski kaynak
+özetinde 404 döner; frontend POST ile tam raporu hazırlar. Mevcut geçerli kaynak
+özeti bu yükseltmede yeniden web araması yapılmadan kullanılır. Başarıda v2
+cache'e yazılır; hatada kaynak özeti korunur. Sonraki GET/POST üretim çağırmaz.
+Arama sonuçları ve profil listeleri de cache'deki ön puanları kullanır.
+
+Kayıtlı on mahallenin tam raporlarını kullanıcı açmadan hazırlamak için:
+
+```powershell
+cd backend
+python scripts/prepare_place_reports.py
+```
+
+Komut iki paralel Gemini işiyle çalışır; geçerli tam raporları atlar. Başarısız
+kayıtlar korunur, gizli sağlayıcı/anahtar değişimi yapılmaz. API başlangıcı LLM
+çağırmaz. Ana sayfada kayıtlı mahalleler yine otomatik listelenmez.
+
+Canlı v2 kontrolü (7 Kasım): on kayıtlı mahallenin tam raporu yerel kalıcı
+cache'e hazırlandı; ikinci CLI çalışması hepsi için HIT verdi. Muğla dışından
+Suadiye / Kadıköy / İstanbul ilk GET 404, Tavily + Gemini tam üretim 201 MISS
+(24,71 sn), tekrar GET aynı JSON ile 200 HIT verdi. Suadiye örneğinde beş
+başlığın ikisi için ön puan üretildi; yetersiz kategoriler sıfırla doldurulmadı.
+Kötekli'de üç kategori ön puanı, üç paragraf rapor, artılar/eksiler ve üç profil
+yorumu tarayıcıda kontrol edildi. Kayıtlı kaynaklardan hazırlanan raporlar yeni
+Tavily araştırması yapılmış gibi etiketlenmez.

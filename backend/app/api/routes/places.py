@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from app.core.config import settings
 from app.core.database import get_db
 from app.models.place import Place
-from app.services import place_service, place_research
+from app.services import place_service, place_research, place_assessment
 from app.services.cache_service import get_cached_report, set_cached_report
 
 logger = logging.getLogger(__name__)
@@ -56,8 +56,8 @@ def require_place(db, identity):
 def read_report(identity: str, response: Response, db: Session = Depends(get_db)):
     require_place(db, identity)
     cached = get_cached_report(db, "place:" + identity)
-    if cached is None:
-        raise HTTPException(404, "Bu mahalle için henüz hazır rapor yok.")
+    if cached is None or cached[0].get("report_version") != 2:
+        raise HTTPException(404, "Bu mahalle için tam rapor henüz hazırlanmadı.")
     response.headers["X-Cache"] = "HIT"
     response.headers["X-Cache-Hits"] = str(cached[1])
     return cached[0]
@@ -71,7 +71,7 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
     lock = request.app.state.place_report_locks[int(identity[:8], 16) % 32]
     with lock:
         cached = get_cached_report(db, "place:" + identity)
-        if cached is not None:
+        if cached is not None and cached[0].get("report_version") == 2:
             response.headers["X-Cache"] = "HIT"
             return cached[0]
         if not settings.REPORT_CACHE_ENABLED:
@@ -79,7 +79,8 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
         if not request.app.state.place_generation_slots.acquire(blocking=False):
             raise HTTPException(429, "Şu anda başka raporlar hazırlanıyor. Biraz sonra tekrar dene.", headers={"Retry-After": "30"})
         try:
-            report = place_research.generate_place_report(place.target, identity)
+            report = (place_assessment.assess_place_report(cached[0]) if cached is not None
+                      else place_research.generate_place_report(place.target, identity))
         except place_research.ResearchUnavailable as error:
             raise HTTPException(503, str(error)) from None
         except Exception as error:
@@ -87,7 +88,7 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
             raise HTTPException(502, "Kaynak araştırması veya rapor servisi yanıt veremedi. Rapor kaydedilmedi; tekrar deneyebilirsin.") from None
         finally:
             request.app.state.place_generation_slots.release()
-        set_cached_report(db, "place:" + identity, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v1:grounded")
+        set_cached_report(db, "place:" + identity, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v2:assessment")
         response.headers["X-Cache"] = "MISS"
         response.status_code = 201
         return report

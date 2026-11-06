@@ -8,6 +8,7 @@ from google import genai
 
 from app.core.config import settings
 from app.services import place_research as research
+from app.services import place_assessment
 
 
 TARGET = {"name": "Erzene", "district": "Bornova", "city": "İzmir"}
@@ -63,6 +64,7 @@ def test_missing_tavily_key_is_not_cached(client, monkeypatch):
 def test_gemini_uses_tavily_evidence_and_rejects_unmatched_or_truncated_output(monkeypatch, quote, source_id, finish):
     monkeypatch.setattr(settings, "GEMINI_API_KEY", "test-key")
     monkeypatch.setattr(settings, "TAVILY_API_KEY", "test-key")
+    monkeypatch.setattr(place_assessment, "assess_place_report", lambda report: report)
     sources = {"S1": {"id": "S1", "title": "Park", "url": "https://example.org/park"}}
     supports = [{"text": "Erzene park alanı için yeni proje planlanıyor.", "source_ids": ["S1"]}]
     monkeypatch.setattr(research, "collect_sources", Mock(return_value=(sources, supports)))

@@ -131,14 +131,17 @@ export default function ReportDashboard({
   } = report;
 
   const evidence = report.evidence_report;
+  const assessment = report.assessment;
+  const evidenceOnly = evidence && !assessment;
   const evidenceCategories = evidence?.categories || [];
   const findingCount = evidenceCategories.reduce((sum, category) => sum + category.items.length, 0);
   const coveredCount = evidenceCategories.filter(category => category.items.length > 0).length;
   const sourceCount = new Set(evidenceCategories.flatMap(category => category.items.flatMap(item => item.sources.map(source => source.url)))).size;
   const categoryIcons = { rent_cost: Wallet, social_life: Users, safety_news: ShieldCheck, earthquake_hazard: Activity, transportation: Bus };
+  const rationale = key => assessment?.categories.find(c => c.category === key)?.rationale;
   const overallScore = normalizeScoreValue(scores?.overall_livability);
   const socialScore = normalizeScoreValue(scores?.social_life ?? scores?.social);
-  const chartSummaryText = buildDynamicChartSummary(name, scores);
+  const chartSummaryText = assessment ? `${assessment.coverage}/5 başlık için proje ön değerlendirmesi var. Genel puan yalnız değerlendirilebilen başlıklardan hesaplandı; ölçülmüş yaşam kalitesi değildir.` : buildDynamicChartSummary(name, scores);
 
   const profileRows = [
     {
@@ -180,7 +183,7 @@ export default function ReportDashboard({
             <em>bütün hikâyesi.</em>
           </h2>
           <p>
-            {evidence ? "Kira, ulaşım ve mahalle yaşamına dair kaynaklı bulguları incele. Bilginin kaynağını ve eksik kalan başlıkları birlikte gör." : "Artıları, dikkat etmen gerekenler ve kategori puanları aynı yerde. Kendin için önemli olanı gör, sorularını bilerek sor."}
+            {evidenceOnly ? "Kira, ulaşım ve mahalle yaşamına dair kaynaklı bulguları incele. Bilginin kaynağını ve eksik kalan başlıkları birlikte gör." : "Artıları, dikkat etmen gerekenler ve kategori puanları aynı yerde. Kendin için önemli olanı gör, sorularını bilerek sor."}
           </p>
 
           {neighborhoods.length > 0 && onSelectNeighborhood && (
@@ -217,7 +220,7 @@ export default function ReportDashboard({
           </div>
 
           <p className="small-note">
-            {evidence ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : "Grafikler mevcut backend verilerini kullanır. Eksik kategori verileri sıfır puan gibi gösterilmez."}
+            {evidenceOnly ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : assessment ? "Ön puanlar model değerlendirmesidir. Hesaplama kapsamını ve gerekçeleri raporda inceleyebilirsin." : "Eksik kategori verileri sıfır puan gibi gösterilmez."}
           </p>
         </div>
 
@@ -228,15 +231,15 @@ export default function ReportDashboard({
                 {(city || 'MUĞLA').toLocaleUpperCase('tr-TR')} / {(district || 'MENTEŞE').toLocaleUpperCase('tr-TR')}
               </span>
               <h3 data-testid="report-neighborhood-name">{name}</h3>
-              <span>{evidence ? "Kaynaklı mahalle raporu" : "Backend mahalle raporu · 0–100 ölçeği"}</span>
+              <span>{evidenceOnly ? "Kaynaklı mahalle raporu" : assessment ? "Yapay zekâ ön değerlendirmesi · 0–100" : "Mahalle değerlendirmesi · 0–100 ölçeği"}</span>
             </div>
-            <div className="preview-score" data-testid="overall-score" aria-label={evidence ? `${findingCount} kaynaklı bulgu` : `Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
-              {evidence ? findingCount : overallScore !== null ? overallScore : '—'}
-              <small>{evidence ? 'bulgu' : '/100'}</small>
+            <div className="preview-score" data-testid="overall-score" aria-label={evidenceOnly ? `${findingCount} kaynaklı bulgu` : `Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
+              {evidenceOnly ? findingCount : overallScore !== null ? overallScore : '—'}
+              <small>{evidenceOnly ? 'bulgu' : '/100'}</small>
             </div>
           </div>
 
-          {evidence ? <div className="report-bars" role="list" aria-label="Kaynaklı bilgi kapsamı">
+          {evidenceOnly ? <div className="report-bars" role="list" aria-label="Kaynaklı bilgi kapsamı">
             {evidenceCategories.map(category => <div className="bar-row" role="listitem" key={category.id}>
               <span className="bar-label">{category.label}</span>
               <span>{category.items.length ? `${category.items.length} kaynaklı bulgu` : 'Kaynaklı bilgi bulunamadı'}</span>
@@ -246,12 +249,12 @@ export default function ReportDashboard({
           <div className="report-note">
             <span aria-hidden="true">↗</span>
             <p>
-              {evidence ? <><b>{sourceCount} farklı kaynak.</b> Beş başlıktan {coveredCount} tanesinde kaynaklı bilgi var. Ayrıntılarda kaynak bağlantılarını inceleyebilirsin.</> : <><b>Rakamları birlikte oku.</b> {chartSummaryText}</>}
+              {evidenceOnly ? <><b>{sourceCount} farklı kaynak.</b> Beş başlıktan {coveredCount} tanesinde kaynaklı bilgi var. Ayrıntılarda kaynak bağlantılarını inceleyebilirsin.</> : <><b>Rakamları birlikte oku.</b> {chartSummaryText}</>}
             </p>
           </div>
 
           <div className="report-preview-foot">
-            <span>{evidence ? "KAYNAK KAPSAMI" : "MEVCUT BACKEND VERİSİ"}</span>
+            <span>{evidenceOnly ? "KAYNAK KAPSAMI" : assessment ? "YAPAY ZEKÂ ÖN DEĞERLENDİRMESİ" : "MEVCUT BACKEND VERİSİ"}</span>
             <span>
               {evidence ? `Referans tarihi: ${evidence.reference_date}` : <>Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}</>}
             </span>
@@ -272,7 +275,7 @@ export default function ReportDashboard({
             <p>{tagline}</p>
           </div>
 
-          {evidence ? <div className="report-banner-stats">
+          {evidenceOnly ? <div className="report-banner-stats">
             <div className="banner-stat-box">
               <span className="banner-stat-label">Kaynaklı bulgu</span>
               <strong className="banner-stat-number">{findingCount}</strong>
@@ -285,14 +288,18 @@ export default function ReportDashboard({
             </dl>
           </div> : <div className="report-banner-stats">
             <div className="banner-stat-box">
-              <span className="banner-stat-label">Genel Puan</span>
+              <span className="banner-stat-label">{assessment ? "Genel ön puan" : "Genel Puan"}</span>
               <strong className="banner-stat-number">
                 {overallScore !== null ? overallScore : '—'}
                 <small>/100</small>
               </strong>
             </div>
             <div className="banner-stat-divider" aria-hidden="true" />
-            <dl className="banner-meta-list">
+            {assessment ? <dl className="banner-meta-list">
+              <div><dt>Değerlendirilen başlık:</dt><dd>{assessment.coverage} / 5</dd></div>
+              <div><dt>Kaynak:</dt><dd>{sourceCount}</dd></div>
+              <div><dt>Değerlendirme:</dt><dd>Yapay zekâ ön puanı</dd></div>
+            </dl> : <dl className="banner-meta-list">
               <div>
                 <dt>Ortalama Kira:</dt>
                 <dd>{formatCurrency(rent_analysis?.average_rent_tl)}</dd>
@@ -305,12 +312,14 @@ export default function ReportDashboard({
                 <dt>Kampüs Mesafesi:</dt>
                 <dd>{transport_analysis?.distance_to_campus_km ?? '—'} km</dd>
               </div>
-            </dl>
+            </dl>}
           </div>}
         </div>
 
+        {assessment && <p className="small-note">Yapay zekâ ön değerlendirmesi · {assessment.coverage}/5 başlık puanlandı. {assessment.methodology}</p>}
+
         {/* Source coverage uses the existing category-card layout. */}
-        {evidence ? <div className="score-cards-grid" aria-label="Kategori bazlı kaynaklı bilgiler">
+        {evidenceOnly ? <div className="score-cards-grid" aria-label="Kategori bazlı kaynaklı bilgiler">
           {['rent_cost', 'social_life', 'safety_news', 'earthquake_hazard', 'transportation'].map(key => {
             const category = evidenceCategories.find(item => item.id === key);
             if (!category) return null;
@@ -329,7 +338,7 @@ export default function ReportDashboard({
           <ScoreCard
             title="Maliyet"
             score={scores?.cost_affordability}
-            subtitle={`Ort. ${formatCurrency(rent_analysis?.average_rent_tl)} · ${rent_analysis?.trend_6m || ''}`}
+            subtitle={rationale('rent_cost') || `Ort. ${formatCurrency(rent_analysis?.average_rent_tl)} · ${rent_analysis?.trend_6m || ''}`}
             icon={Wallet}
             testId="card-cost_affordability"
           />
@@ -337,9 +346,9 @@ export default function ReportDashboard({
             title="Sosyal yaşam"
             score={socialScore}
             subtitle={
-              socialScore !== null
+              rationale('social_life') || (socialScore !== null
                 ? 'Mahalle yaşamı ve sosyal olanaklar'
-                : `${community_comments.length} mahalle yorumu mevcut · Sayısal puan backend verisinde henüz tanımlı değil`
+                : `${community_comments.length} mahalle yorumu mevcut · Sayısal puan backend verisinde henüz tanımlı değil`)
             }
             icon={Users}
             testId="card-social_life"
@@ -347,36 +356,28 @@ export default function ReportDashboard({
           <ScoreCard
             title="Güvenlik / haberler"
             score={scores?.safety}
-            subtitle={`${news_items.length} yerel haber kaydı ve sokak güvenliği bağlamı`}
+            subtitle={rationale('safety_news') || `${news_items.length} yerel haber kaydı ve sokak güvenliği bağlamı`}
             icon={ShieldCheck}
             testId="card-safety"
           />
           <ScoreCard
             title="Afet"
             score={scores?.disaster_resilience}
-            subtitle={`PGA: ${disaster_risk?.pga_value_g ?? '—'}g · ${disaster_risk?.soil_class || ''}`}
+            subtitle={rationale('earthquake_hazard') || `PGA: ${disaster_risk?.pga_value_g ?? '—'}g · ${disaster_risk?.soil_class || ''}`}
             icon={Activity}
             testId="card-disaster_resilience"
           />
           <ScoreCard
             title="Ulaşım"
             score={scores?.transportation}
-            subtitle={`${transport_analysis?.bus_frequency_min ?? '—'} dk sefer aralığı · Kampüs ${transport_analysis?.distance_to_campus_km ?? '—'} km`}
+            subtitle={rationale('transportation') || `${transport_analysis?.bus_frequency_min ?? '—'} dk sefer aralığı · Kampüs ${transport_analysis?.distance_to_campus_km ?? '—'} km`}
             icon={Bus}
             testId="card-transportation"
           />
         </div>}
 
         {/* AI Synthesis & Pros / Cons */}
-        {report.evidence_report && <div className="domain-cards-grid">
-          {report.evidence_report.categories.map(category => <article className="domain-card" key={category.id}>
-            <h4 className="domain-card-title">{category.label}</h4>
-            {category.items.length ? category.items.map((item, index) => <div key={index} className="source-finding">
-              <p>{item.text}</p>{item.note && <small>{item.note}</small>}
-              <div>{item.sources.map(s => <a key={s.id} href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a>)}</div>
-            </div>) : <p>{category.missing_reason || 'Bu başlıkta yeterli kaynaklı bilgi bulunamadı.'}</p>}
-          </article>)}
-        </div>}
+
 
         <div className="report-synthesis-card">
           <div className="synthesis-header">
@@ -403,10 +404,10 @@ export default function ReportDashboard({
             )}
           </div>
 
-          <p className="synthesis-summary">{ai_report?.executive_summary}</p>
+          <div className="synthesis-summary">{(ai_report?.executive_summary || "").split(/\n+/).filter(Boolean).map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>
 
           <div className="pros-cons-grid">
-            {(!evidence || ai_report?.pros?.length > 0) && <>
+            {(!evidenceOnly || ai_report?.pros?.length > 0) && <>
             <div className="pros-box">
               <h4>
                 <CheckCircle2 size={16} aria-hidden="true" />
@@ -423,7 +424,7 @@ export default function ReportDashboard({
             <div className="cons-box">
               <h4>
                 <AlertTriangle size={16} aria-hidden="true" />
-                <span>{evidence ? "Verinin sınırları" : "Dikkat Edilmesi Gerekenler (Eksiler)"}</span>
+                <span>{evidenceOnly ? "Verinin sınırları" : "Dikkat Edilmesi Gerekenler (Eksiler)"}</span>
               </h4>
               <ul>
                 {(ai_report?.cons || []).map((con, idx) => (
@@ -434,7 +435,7 @@ export default function ReportDashboard({
           </div>
         </div>
 
-        {!evidence && <>
+        {(!evidence || assessment) && <>
         {/* Suitability by User Profile (No purple!) */}
         <div className="suitability-cards-grid" aria-label="Yaşam profiline göre uygunluk">
           {profileRows.map((prof) => {
@@ -475,6 +476,7 @@ export default function ReportDashboard({
           })}
         </div>
 
+        {!assessment && <>
         {/* Domain Breakdown: Rent, Transport & Disaster Risk */}
         <div className="domain-cards-grid">
           <article className="domain-card">
@@ -605,12 +607,23 @@ export default function ReportDashboard({
         </div>
 
         </>}
+        </>}
+
+        {report.evidence_report && <div className="domain-cards-grid">
+          {report.evidence_report.categories.map(category => <article className="domain-card" key={category.id}>
+            <h4 className="domain-card-title">{category.label}</h4>
+            {category.items.length ? category.items.map((item, index) => <div key={index} className="source-finding">
+              <p>{item.text}</p>{item.note && <small>{item.note}</small>}
+              <div>{item.sources.map(s => <a key={s.id} href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a>)}</div>
+            </div>) : <p>{category.missing_reason || 'Bu başlıkta yeterli kaynaklı bilgi bulunamadı.'}</p>}
+          </article>)}
+        </div>}
 
         {/* Transparency, Sources & Methodology Footer */}
         <div className="methodology-footer-card">
           <div className="methodology-head">
             <Database size={18} aria-hidden="true" />
-            <h4>{evidence ? "Kaynaklar ve veri kapsamı" : "Veri Kaynakları ve Puanlama Yöntemi"}</h4>
+            <h4>{evidenceOnly ? "Kaynaklar ve veri kapsamı" : "Veri Kaynakları ve Puanlama Yöntemi"}</h4>
           </div>
 
           {data_sources.length > 0 && (
@@ -628,7 +641,7 @@ export default function ReportDashboard({
           )}
 
           <details className="method-details">
-            <summary>{evidence ? "Bu bilgiler nasıl hazırlandı?" : "Bu puanlar nasıl hesaplandı ve veri kapsamı nedir?"}</summary>
+            <summary>{evidenceOnly ? "Bu bilgiler nasıl hazırlandı?" : "Bu puanlar nasıl hesaplandı ve veri kapsamı nedir?"}</summary>
             <p>
               {scoring_methodology?.note ||
                 'Kategori puanları 0 ile 100 arasında normalize edilmiştir. Backend üzerinde sayısal verisi bulunmayan kategoriler sıfır puan olarak değerlendirilmez.'}

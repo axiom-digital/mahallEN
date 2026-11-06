@@ -206,6 +206,12 @@ export default function App() {
       .then((data) => {
         if (controller.signal.aborted) return;
         setReport(data);
+        setNeighborhoods(current => current.map(item => item.slug === data.slug ? { ...item,
+          overall_score: data.scores?.overall_livability,
+          suitability_student: data.suitability?.students,
+          suitability_family: data.suitability?.families,
+          suitability_professional: data.suitability?.professionals,
+        } : item));
       })
       .catch((err) => {
         if (err.name === 'AbortError') return;

@@ -138,8 +138,11 @@ def generate_place_report(target, identity):
     summary = parsed.summary if len(findings) == len(parsed.findings) else (
         f"{location['name']} / {location['district']} / {location['city']} için "
         f"kaynak metinleriyle eşleşen {len(findings)} bulgu derlendi. Eksik kategoriler ayrıca belirtildi.")
-    return {"place": {"id": identity, **location}, "reference_date": today, "summary": summary,
+    report = {"place": {"id": identity, **location}, "reference_date": today, "summary": summary,
         "categories": categories, "limitations": parsed.limitations + [
             "Web aramasıyla hazırlanmış araştırma adayıdır; tam sayfa ve olgusal inceleme ayrıca gereklidir.",
             "Eksik veri sıfır değildir. Haber sayısından güvenlik, deprem haberinden bina sağlamlığı sonucu çıkarılmaz."],
         "origin": "grounded_research_candidate", "generated_by": f"Tavily + Google Gemini ({settings.GEMINI_REPORT_MODEL})"}
+
+    from app.services.place_assessment import assess_place_report
+    return assess_place_report(report)

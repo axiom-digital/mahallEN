@@ -86,13 +86,19 @@ def cached_available(db, identity):
     if not row:
         return False
     expires = row.expires_at.replace(tzinfo=timezone.utc) if row.expires_at.tzinfo is None else row.expires_at
-    return expires > datetime.now(timezone.utc)
+    return expires > datetime.now(timezone.utc) and row.report_data.get("report_version") == 2
 
 
 def public_place(db, row):
+    available = cached_available(db, row.id)
+    cached = db.query(ReportCache).filter_by(slug="place:" + row.id).first() if available else None
+    assessment = cached.report_data.get("assessment", {}) if cached else {}
+    profiles = assessment.get("profile_scores", {})
     return {"id": row.id, **{k: row.target[k] for k in ("name", "district", "city")},
             "label": f"{row.target['name']} / {row.target['district']} / {row.target['city']}",
-            "report_available": cached_available(db, row.id)}
+            "report_available": available, "overall_score": assessment.get("overall_score"),
+            "suitability_student": profiles.get("students"), "suitability_family": profiles.get("families"),
+            "suitability_professional": profiles.get("professionals")}
 
 
 def saved_report(record, identity):

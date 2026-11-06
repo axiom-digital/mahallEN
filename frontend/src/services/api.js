@@ -4,7 +4,9 @@ import { adaptPlaceReport } from './placeAdapter.mjs';
 export async function fetchNeighborhoods(query = '', profile = '', { signal } = {}) {
   if (!query.trim()) return [];
   const response = await searchPlaces(query, signal);
-  return response.results.map(place => ({...place, slug: place.id, tagline: `${place.district} / ${place.city}`, overall_score: null, avg_rent_tl: null}));
+  const field = ({ student: 'suitability_student', family: 'suitability_family', professional: 'suitability_professional' })[profile] || 'overall_score';
+  return response.results.map(place => ({...place, slug: place.id, tagline: `${place.district} / ${place.city}`, avg_rent_tl: null}))
+    .sort((a, b) => (b[field] ?? -1) - (a[field] ?? -1));
 }
 export async function fetchNeighborhoodSuggestions(query, { signal } = {}) {
   return (await suggestPlaces(query, signal)).results;

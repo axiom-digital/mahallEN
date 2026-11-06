@@ -25,11 +25,20 @@ kalıcı cache'e hazırlanır; bunlar LLM tarafından yeni üretilmiş rapor diy
 sunulmaz. Başlangıç dış servis/LLM çağırmaz ve önceki üretilmiş raporu ezmez.
 Diğer mahalleler yalnız kullanıcı seçtiğinde hazırlanır.
 
-Yeni araştırmada `google-genai` SDK'sı ile Google Search kaynakları toplanır,
-ardından aynı araştırma JSON raporuna dönüştürülür. Yanıtın tamamlandığı,
-arama/kaynak metadata'sı ve her bulgunun gerçek destek segmenti + kaynak
-kimlikleri kontrol edilir. Eksik kategoriler boş kalır. Bu, tam sayfa olgusal
-inceleme yerine geçmez; arama destekli aday durumu kullanıcıya belirtilir.
+Yeni araştırmada Tavily Search ile kira, yerel haberler, toplu taşıma, sosyal yaşam
+ve deprem kaynakları için beş `basic` sorgusu yapılır (her biri en fazla üç sonuç).
+HTTPS kaynaklar alınır; tekrarlanan URL'ler birleştirilir, farklı sorgu özetleri
+korunur. Tavily'nin şirket dizini sonuçları kanıt olarak alınmaz. Her kaynak
+özeti en fazla 5.000 karakterdir. Varsayılan basic arama maliyeti, cache kaçıran
+bir rapor için beş Tavily kredisidir; otomatik advanced yükseltme kapalıdır.
+Ardından `google-genai` ile Gemini bu kaynak özetlerini Türkçe JSON raporuna
+çevirir; Gemini Google Search çağırmaz. Çıktının tamamlanması, yerel Pydantic
+şeması (Gemini isteğinde de zorunlu) ve her alıntının belirtilen kaynak metninde birebir bulunması kontrol
+edilir. Eşleşmeyen bulgular elenir; hiç bulgu kalmazsa rapor kaydedilmez.
+Bulgu elendiğinde serbest özet de kullanılmaz; yalnız kalan bulgu sayısını
+belirten özet hazırlanır. Kabul edilen alıntılar rapor verisinde saklanır.
+Eksik kategoriler boş kalır. Birebir alıntı kontrolü iddianın doğru yorumlandığını
+kanıtlamaz; tam sayfa olgusal inceleme yerine geçmez. Aday durumu raporda belirtilir.
 
 Başarısız veya yarım yanıt başarı diye kaydedilmez; eski cache satırı korunur.
 Bir API sürecinde aynı mahalle için eşzamanlı seçimler tek üretimi paylaşır;
@@ -38,12 +47,13 @@ kullanıcıya hata olarak döner; gizli tekrar döngüsü veya model değişimi 
 Üretim için çok worker kullanılırsa süreçler arası iş kilidi/iş kuyruğu ayrıca
 gereklidir. Normal çalışma tek Uvicorn worker'dır.
 
-`GEMINI_API_KEY`, `GEMINI_RESEARCH_MODEL` ve `GEMINI_REPORT_MODEL` sunucuda
-ayarlanır. Son iki alanın varsayılanı `gemini-2.5-flash`. Araştırma ve rapor
-çağrıları ayrı ayrı 90 sn sınırındadır; tamamlanmamış çıktılar elenir. Cache TTL
-`REPORT_CACHE_TTL_SECONDS` ile yönetilir. Frontend yalnız `VITE_API_BASE_URL`
-bilir; anahtarlar tarayıcıya verilmez. Docker imajı veri özetini ve isim dizinini
-içerir; `google-genai` temel backend bağımlılığına eklendi.
+`TAVILY_API_KEY`, `GEMINI_API_KEY` ve `GEMINI_REPORT_MODEL` yalnız sunucuda
+ayarlanır. Varsayılan model `gemini-3.5-flash-lite`; farklı desteklenen Gemini
+modeli ortam değişkeniyle seçilebilir. Tavily sorguları ayrı ayrı 20 sn,
+Gemini isteği 90 sn ile sınırlıdır. Arama veya model hatasında gizli fallback,
+tekrar döngüsü veya sahte rapor yoktur. Cache TTL `REPORT_CACHE_TTL_SECONDS`
+ile yönetilir. Önceden hazırlanmış cache kayıtları sağlayıcı değişiminde silinmez.
+Frontend yalnız `VITE_API_BASE_URL` bilir; anahtarlar tarayıcıya verilmez.
 
 ## Kontroller
 
@@ -59,3 +69,15 @@ okuma `200 HIT` döndü. 12 bulgu dört kategoride saklandı; yeterli kaynak bul
 deprem kategorisi boş kaldı. Tarayıcıda eski tasarımın korunduğu, açılışta pilot
 listesi olmadığı, `Erze` yazınca `Erzene / Bornova / İzmir` önerisi ve klavyeyle
 seçimden sonra kayıtlı raporun açıldığı kontrol edildi.
+
+7 Kasım 2026 Tavily + Gemini canlı kontrolü: Bostanlı / Karşıyaka / İzmir
+ilk okumada `404`, gerçek üretimde `201 MISS` (12,5 sn), tekrar okumada aynı
+raporla `200 HIT` verdi. `gemini-3.5-flash-lite` kullanıldı; kira için bir,
+ulaşım için iki, sosyal yaşam için iki kaynak eşleşmeli bulgu saklandı.
+Haber/güvenlik ve deprem kategorileri yeterli destek olmadığından boş kaldı.
+
+Çıktı şeması API isteğinde zorunlu hâle getirildikten sonraki son sunucu
+kontrolünde Bostanlı raporu `201 MISS` ile 48,66 sn'de üretildi; dört bulgunun
+alıntısı rapor verisinde saklandı. Tekrar GET `200 HIT` ve birebir aynı JSON'u
+verdi. Bu süreler tekil gözlemlerdir; arama/model yoğunluğuna göre değişebilir.
+Backend testlerinin tamamı: 85 başarılı.

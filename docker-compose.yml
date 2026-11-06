@@ -31,8 +31,8 @@ services:
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-}
-      GEMINI_RESEARCH_MODEL: ${GEMINI_RESEARCH_MODEL:-gemini-2.5-flash}
-      GEMINI_REPORT_MODEL: ${GEMINI_REPORT_MODEL:-gemini-2.5-flash}
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      GEMINI_REPORT_MODEL: ${GEMINI_REPORT_MODEL:-gemini-3.5-flash-lite}
       AI_REFRESH_TOKEN: ${AI_REFRESH_TOKEN:-}
     ports:
       - "127.0.0.1:8000:8000"

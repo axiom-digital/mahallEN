@@ -1,0 +1,6 @@
+{
+  "asOf": "2026-10-28",
+  "netMinimumWage": {"amount": 28075.5, "unit": "TL/ay", "validFrom": "2026-01-01", "validTo": "2026-12-31", "publisher": "Çalışma ve Sosyal Güvenlik Bakanlığı", "url": "https://www.csgb.gov.tr/poco-pages/asgari-ucret"},
+  "undergraduateScholarship": {"amount": 4000, "unit": "TL/ay", "publisher": "Gençlik ve Spor Bakanlığı", "publishedAt": "2026-01-05", "url": "https://gsb.gov.tr/tr/haber-detay/295278-yukseltilen-gsb-burskredileri-6-ocakta-odenmeye-baslanacak"},
+  "note": "KYK lisans burs/kredi tutarı tek başına kişinin toplam geliri değildir. Ücret ve burs farklı referans senaryolarıdır. Oranlar asgari yaşam bütçesi veya resmî erişilebilirlik endeksi değildir."
+}

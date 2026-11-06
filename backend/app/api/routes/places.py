@@ -56,7 +56,7 @@ def require_place(db, identity):
 def read_report(identity: str, response: Response, db: Session = Depends(get_db)):
     require_place(db, identity)
     cached = get_cached_report(db, "place:" + identity)
-    if cached is None or cached[0].get("report_version") != 2:
+    if cached is None or cached[0].get("report_version") != 3:
         raise HTTPException(404, "Bu mahalle için tam rapor henüz hazırlanmadı.")
     response.headers["X-Cache"] = "HIT"
     response.headers["X-Cache-Hits"] = str(cached[1])
@@ -71,7 +71,7 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
     lock = request.app.state.place_report_locks[int(identity[:8], 16) % 32]
     with lock:
         cached = get_cached_report(db, "place:" + identity)
-        if cached is not None and cached[0].get("report_version") == 2:
+        if cached is not None and cached[0].get("report_version") == 3:
             response.headers["X-Cache"] = "HIT"
             return cached[0]
         if not settings.REPORT_CACHE_ENABLED:
@@ -88,7 +88,7 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
             raise HTTPException(502, "Kaynak araştırması veya rapor servisi yanıt veremedi. Rapor kaydedilmedi; tekrar deneyebilirsin.") from None
         finally:
             request.app.state.place_generation_slots.release()
-        set_cached_report(db, "place:" + identity, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v2:assessment")
+        set_cached_report(db, "place:" + identity, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v3:rules")
         response.headers["X-Cache"] = "MISS"
         response.status_code = 201
         return report

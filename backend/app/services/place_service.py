@@ -86,7 +86,7 @@ def cached_available(db, identity):
     if not row:
         return False
     expires = row.expires_at.replace(tzinfo=timezone.utc) if row.expires_at.tzinfo is None else row.expires_at
-    return expires > datetime.now(timezone.utc) and row.report_data.get("report_version") == 2
+    return expires > datetime.now(timezone.utc) and row.report_data.get("report_version") == 3
 
 
 def public_place(db, row):
@@ -97,6 +97,7 @@ def public_place(db, row):
     return {"id": row.id, **{k: row.target[k] for k in ("name", "district", "city")},
             "label": f"{row.target['name']} / {row.target['district']} / {row.target['city']}",
             "report_available": available, "overall_score": assessment.get("overall_score"),
+            "avg_rent_tl": assessment.get("calculation", {}).get("monthly_rent"),
             "suitability_student": profiles.get("students"), "suitability_family": profiles.get("families"),
             "suitability_professional": profiles.get("professionals")}
 

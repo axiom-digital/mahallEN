@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY --chown=appuser:appuser backend/app ./app
 COPY data/pilot_neighborhoods.json /app/data/
 COPY data/place_directory /app/data/place_directory
+COPY data/scoring_research /app/data/scoring_research
 
 USER appuser
 

@@ -1,3 +1,7 @@
+> Güncel puanlama: şema v3 / rules-v1. Aşağıdaki v2 model puanı yaklaşımı
+> kaldırıldı. Gemini yalnız metin üretir; genel/profil puanı beş kategori
+> tamamlanmadan hesaplanmaz. Ayrıntılar son bölümde ve data/scoring_research/README.md.
+
 # Arama → seçilen mahalle → kayıtlı veya yeni rapor
 
 Mevcut ana sayfanın görseli, arama kutusu, renkleri ve rapor kartları korunur.
@@ -124,3 +128,31 @@ başlığın ikisi için ön puan üretildi; yetersiz kategoriler sıfırla dold
 Kötekli'de üç kategori ön puanı, üç paragraf rapor, artılar/eksiler ve üç profil
 yorumu tarayıcıda kontrol edildi. Kayıtlı kaynaklardan hazırlanan raporlar yeni
 Tavily araştırması yapılmış gibi etiketlenmez.
+
+## Puanlama düzeltmesi — v3 / rules-v1
+
+Modelin yetersiz veriye rağmen nötr 50 üretmesi kabul edilmez. Model yanıt
+şemasında artık puan alanı yoktur; eklerse Pydantic reddeder. Puanları
+`rule_scoring.py` mevcut `categoryEvaluation.mjs` proje ölçütleriyle hesaplar.
+Beş kategori tamamlanmadan genel/profil puanı hesaplanmaz; eksik kategorilerin
+ağırlıkları kaldırılıp yanıltıcı toplam yapılmaz. Kira medyanı yalnız uygun,
+tarihli, son 90 günlük 1+1 örneklerdir; 0 gerçek bir sonuç olabilir.
+
+Çalışma alanındaki daha kapsamlı beş Muğla araştırması `data/scoring_research/`
+altına kaynakları ve tarihleriyle taşındı. Özet paketin bu verinin yerine
+kullanılması hatası giderildi. Diğer mahallelerde yalnız kaynakta açıkça bulunan
+ve kurala uygun girdiler kullanılır; yetersizlikte 50 konulmaz. Bu durum her
+mahallede tüm kategorilerin hazır olduğu anlamına gelmez.
+
+Cache şeması 3 olduğundan eski model-puanlı v2 kayıtları tam rapor HIT sayılmaz.
+Kaynak verisi korunarak v3'e yükseltilir. Hazırlama CLI'sı on kaydı v3 olarak
+hazırladı. Kötekli canlı API ve tarayıcı kontrolünde 200 HIT: maliyet 18,
+ulaşım 35, sosyal 73, haber göstergesi 25, ters PGA grid yüzdeliği 23; genel
+37. Raporun kaynak referans tarihi 28 Ekim 2026 olarak açıkça gösterilir.
+Bunlar eski kayıtlar ve açıklanmış proje ölçütleriyle hesaplanmış göstergelerdir;
+güncel saha ölçümü, suç oranı veya bina dayanıklılığı değildir.
+
+95 backend testi geçti. Regresyonlar: modelin puan alanı eklemesinin reddi,
+boş veride 50 üretilmemesi, aynı olayın tekrar sayılmaması, kaynak dışı aylık
+kira varsayılmaması, uzak PGA noktasının elenmesi, gerçek 0'ın korunması ve
+bilinen Kötekli girdileriyle hesapların tekrarlanabilirliği.

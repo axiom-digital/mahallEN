@@ -141,7 +141,7 @@ export default function ReportDashboard({
   const rationale = key => assessment?.categories.find(c => c.category === key)?.rationale;
   const overallScore = normalizeScoreValue(scores?.overall_livability);
   const socialScore = normalizeScoreValue(scores?.social_life ?? scores?.social);
-  const chartSummaryText = assessment ? `${assessment.coverage}/5 başlık için proje ön değerlendirmesi var. Genel puan yalnız değerlendirilebilen başlıklardan hesaplandı; ölçülmüş yaşam kalitesi değildir.` : buildDynamicChartSummary(name, scores);
+  const chartSummaryText = assessment ? `${assessment.coverage}/5 başlık kaynaklı proje kurallarıyla hesaplandı. Beş başlık tamamlanmadan genel puan verilmez; model nötr 50 eklemez.` : buildDynamicChartSummary(name, scores);
 
   const profileRows = [
     {
@@ -220,7 +220,7 @@ export default function ReportDashboard({
           </div>
 
           <p className="small-note">
-            {evidenceOnly ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : assessment ? "Ön puanlar model değerlendirmesidir. Hesaplama kapsamını ve gerekçeleri raporda inceleyebilirsin." : "Eksik kategori verileri sıfır puan gibi gösterilmez."}
+            {evidenceOnly ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : assessment ? "Puanlar açıklanmış proje kurallarıyla hesaplanır. Kullanılan girdiler ve hesaplama gerekçeleri kartlarda yer alır." : "Eksik kategori verileri sıfır puan gibi gösterilmez."}
           </p>
         </div>
 
@@ -231,7 +231,7 @@ export default function ReportDashboard({
                 {(city || 'MUĞLA').toLocaleUpperCase('tr-TR')} / {(district || 'MENTEŞE').toLocaleUpperCase('tr-TR')}
               </span>
               <h3 data-testid="report-neighborhood-name">{name}</h3>
-              <span>{evidenceOnly ? "Kaynaklı mahalle raporu" : assessment ? "Yapay zekâ ön değerlendirmesi · 0–100" : "Mahalle değerlendirmesi · 0–100 ölçeği"}</span>
+              <span>{evidenceOnly ? "Kaynaklı mahalle raporu" : assessment ? "Kural tabanlı proje değerlendirmesi · 0–100" : "Mahalle değerlendirmesi · 0–100 ölçeği"}</span>
             </div>
             <div className="preview-score" data-testid="overall-score" aria-label={evidenceOnly ? `${findingCount} kaynaklı bulgu` : `Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
               {evidenceOnly ? findingCount : overallScore !== null ? overallScore : '—'}
@@ -254,7 +254,7 @@ export default function ReportDashboard({
           </div>
 
           <div className="report-preview-foot">
-            <span>{evidenceOnly ? "KAYNAK KAPSAMI" : assessment ? "YAPAY ZEKÂ ÖN DEĞERLENDİRMESİ" : "MEVCUT BACKEND VERİSİ"}</span>
+            <span>{evidenceOnly ? "KAYNAK KAPSAMI" : assessment ? "PROJE PUANLAMA KURALLARI" : "MEVCUT BACKEND VERİSİ"}</span>
             <span>
               {evidence ? `Referans tarihi: ${evidence.reference_date}` : <>Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}</>}
             </span>
@@ -298,7 +298,7 @@ export default function ReportDashboard({
             {assessment ? <dl className="banner-meta-list">
               <div><dt>Değerlendirilen başlık:</dt><dd>{assessment.coverage} / 5</dd></div>
               <div><dt>Kaynak:</dt><dd>{sourceCount}</dd></div>
-              <div><dt>Değerlendirme:</dt><dd>Yapay zekâ ön puanı</dd></div>
+              <div><dt>Değerlendirme:</dt><dd>Kural tabanlı gösterge</dd></div>
             </dl> : <dl className="banner-meta-list">
               <div>
                 <dt>Ortalama Kira:</dt>
@@ -316,7 +316,7 @@ export default function ReportDashboard({
           </div>}
         </div>
 
-        {assessment && <p className="small-note">Yapay zekâ ön değerlendirmesi · {assessment.coverage}/5 başlık puanlandı. {assessment.methodology}</p>}
+        {assessment && <p className="small-note">Kural tabanlı proje değerlendirmesi · {assessment.coverage}/5 başlık puanlandı. {assessment.methodology}</p>}
 
         {/* Source coverage uses the existing category-card layout. */}
         {evidenceOnly ? <div className="score-cards-grid" aria-label="Kategori bazlı kaynaklı bilgiler">

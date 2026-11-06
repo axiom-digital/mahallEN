@@ -208,6 +208,7 @@ export default function App() {
         setReport(data);
         setNeighborhoods(current => current.map(item => item.slug === data.slug ? { ...item,
           overall_score: data.scores?.overall_livability,
+          avg_rent_tl: data.rent_analysis?.average_rent_tl,
           suitability_student: data.suitability?.students,
           suitability_family: data.suitability?.families,
           suitability_professional: data.suitability?.professionals,
@@ -755,7 +756,7 @@ export default function App() {
                         <div className="rank-place">
                           {item.name.replace(/\s+Mahallesi$/i, '')}
                           <small>
-                            {item.district} / {item.city} · Ort.{' '}
+                            {item.district} / {item.city} · 1+1 örnek medyanı:{' '}
                             {item.avg_rent_tl == null ? 'Kira bilgisi raporda' : `${Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL`}
                           </small>
                         </div>

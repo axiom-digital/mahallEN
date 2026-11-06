@@ -10,3 +10,6 @@ backend/app/**/*.pyc
 !data/pilot_neighborhoods.json
 !data/place_directory/
 !data/place_directory/**
+
+!data/scoring_research/
+!data/scoring_research/**

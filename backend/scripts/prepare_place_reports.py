@@ -22,7 +22,7 @@ from app.services.place_service import DATASET, place_id, saved_report
 
 
 def current(row):
-    if not row or row.report_data.get("report_version") != 2:
+    if not row or row.report_data.get("report_version") != 3:
         return False
     expiry = row.expires_at
     if expiry.tzinfo is None:
@@ -46,7 +46,7 @@ def main():
             report = assess_place_report(evidence)
             with Session(engine) as db:
                 if not current(db.query(ReportCache).filter_by(slug=key).first()):
-                    set_cached_report(db, key, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v2:assessment")
+                    set_cached_report(db, key, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v3:rules")
             return record["name"], "PREPARED"
         except Exception as error:
             # Never log provider request headers or credential-bearing responses.

@@ -20,7 +20,7 @@ def discovered(client, monkeypatch):
 def fixture_report(identity):
     return {"place": {"id": identity, **{k: TARGET[k] for k in ("name", "district", "city")}},
         "summary": "Kaynaklı rapor", "reference_date": "2026-11-06", "categories": [],
-        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test", "report_version": 2}
+        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test", "report_version": 3}
 
 
 def test_empty_search_does_not_return_a_pilot_catalog(client, monkeypatch):
@@ -41,7 +41,7 @@ def test_search_can_discover_a_neighborhood_outside_saved_ten(client, monkeypatc
 
 def test_saved_sources_are_upgraded_once_without_search_and_full_report_is_cached(client, monkeypatch):
     generate = Mock(side_effect=AssertionError("Search must not run for saved evidence"))
-    assess = Mock(side_effect=lambda evidence: {**evidence, "report_version": 2, "assessment": {"test": True}})
+    assess = Mock(side_effect=lambda evidence: {**evidence, "report_version": 3, "assessment": {"test": True}})
     monkeypatch.setattr(place_research, "generate_place_report", generate)
     monkeypatch.setattr(place_assessment, "assess_place_report", assess)
     found = client.get("/api/v1/places/search?q=Caferağa").json()["results"]

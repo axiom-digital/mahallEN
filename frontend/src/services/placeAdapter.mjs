@@ -8,7 +8,7 @@ export function adaptPlaceReport(raw) {
     coordinates: null,
     scores: { overall_livability: assessment?.overall_score ?? null, safety: score('safety_news'), transportation: score('transportation'), cost_affordability: score('rent_cost'), disaster_resilience: score('earthquake_hazard'), social_life: score('social_life') },
     suitability: assessment?.profile_scores || { students: null, families: null, professionals: null },
-    rent_analysis: { average_rent_tl: null, rent_range_tl: null, trend_6m: null },
+    rent_analysis: { average_rent_tl: assessment?.calculation?.monthly_rent ?? null, rent_range_tl: null, trend_6m: assessment?.calculation?.rent_sample_count ? `1+1 tarihli ilan medyanı · ${assessment.calculation.rent_sample_count} örnek` : null },
     transport_analysis: { bus_frequency_min: null, distance_to_campus_km: null, distance_to_center_km: null, highlights: category('transportation').map(i => i.text) },
     disaster_risk: { risk_level: null, pga_value_g: null, soil_class: null },
     news_items: category('safety_news').map(i => ({ title: 'Kaynaklı haber kaydı', summary: i.text, source: i.sources.map(s => s.title).join(', '), date: i.date, sentiment: null })),

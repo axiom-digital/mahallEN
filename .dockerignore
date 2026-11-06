@@ -8,3 +8,5 @@ backend/app/**/__pycache__/
 backend/app/**/*.pyc
 !data/
 !data/pilot_neighborhoods.json
+!data/place_directory/
+!data/place_directory/**

@@ -24,6 +24,7 @@ import ScoreCard, {
 } from './ScoreCard';
 
 function formatCurrency(value) {
+  if (value === null || value === undefined || value === '') return 'Belirtilmedi';
   if (value == null) return 'Belirtilmedi';
   const num = Number(value);
   if (!Number.isFinite(num)) return 'Belirtilmedi';
@@ -75,7 +76,7 @@ export default function ReportDashboard({
       <div className="report-state-card" role="status" aria-live="polite" data-testid="report-loading">
         <div className="loading-spinner" aria-hidden="true" />
         <h3>Mahalle raporu ve puan grafikleri yükleniyor…</h3>
-        <p>Seçilen mahallenin güncel backend verileri getiriliyor.</p>
+        <p>Kayıtlı rapor getiriliyor. İlk kez seçilen mahallelerde kaynak araştırması ve rapor hazırlığı birkaç dakika sürebilir.</p>
       </div>
     );
   }
@@ -330,6 +331,16 @@ export default function ReportDashboard({
         </div>
 
         {/* AI Synthesis & Pros / Cons */}
+        {report.evidence_report && <div className="domain-cards-grid">
+          {report.evidence_report.categories.map(category => <article className="domain-card" key={category.id}>
+            <h4 className="domain-card-title">{category.label}</h4>
+            {category.items.length ? category.items.map((item, index) => <div key={index} className="source-finding">
+              <p>{item.text}</p>{item.note && <small>{item.note}</small>}
+              <div>{item.sources.map(s => <a key={s.id} href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a>)}</div>
+            </div>) : <p>{category.missing_reason || 'Bu başlıkta yeterli kaynaklı bilgi bulunamadı.'}</p>}
+          </article>)}
+        </div>}
+
         <div className="report-synthesis-card">
           <div className="synthesis-header">
             <div className="synthesis-title-group">

@@ -130,6 +130,12 @@ export default function ReportDashboard({
     scoring_methodology = {},
   } = report;
 
+  const evidence = report.evidence_report;
+  const evidenceCategories = evidence?.categories || [];
+  const findingCount = evidenceCategories.reduce((sum, category) => sum + category.items.length, 0);
+  const coveredCount = evidenceCategories.filter(category => category.items.length > 0).length;
+  const sourceCount = new Set(evidenceCategories.flatMap(category => category.items.flatMap(item => item.sources.map(source => source.url)))).size;
+  const categoryIcons = { rent_cost: Wallet, social_life: Users, safety_news: ShieldCheck, earthquake_hazard: Activity, transportation: Bus };
   const overallScore = normalizeScoreValue(scores?.overall_livability);
   const socialScore = normalizeScoreValue(scores?.social_life ?? scores?.social);
   const chartSummaryText = buildDynamicChartSummary(name, scores);
@@ -174,7 +180,7 @@ export default function ReportDashboard({
             <em>bütün hikâyesi.</em>
           </h2>
           <p>
-            Artıları, dikkat etmen gerekenler ve kategori puanları aynı yerde. Kendin için önemli olanı gör, sorularını bilerek sor.
+            {evidence ? "Kira, ulaşım ve mahalle yaşamına dair kaynaklı bulguları incele. Bilginin kaynağını ve eksik kalan başlıkları birlikte gör." : "Artıları, dikkat etmen gerekenler ve kategori puanları aynı yerde. Kendin için önemli olanı gör, sorularını bilerek sor."}
           </p>
 
           {neighborhoods.length > 0 && onSelectNeighborhood && (
@@ -211,7 +217,7 @@ export default function ReportDashboard({
           </div>
 
           <p className="small-note">
-            Grafikler mevcut backend verilerini kullanır. Eksik kategori verileri sıfır puan gibi gösterilmez.
+            {evidence ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : "Grafikler mevcut backend verilerini kullanır. Eksik kategori verileri sıfır puan gibi gösterilmez."}
           </p>
         </div>
 
@@ -222,27 +228,32 @@ export default function ReportDashboard({
                 {(city || 'MUĞLA').toLocaleUpperCase('tr-TR')} / {(district || 'MENTEŞE').toLocaleUpperCase('tr-TR')}
               </span>
               <h3 data-testid="report-neighborhood-name">{name}</h3>
-              <span>Backend mahalle raporu · 0–100 ölçeği</span>
+              <span>{evidence ? "Kaynaklı mahalle raporu" : "Backend mahalle raporu · 0–100 ölçeği"}</span>
             </div>
-            <div className="preview-score" data-testid="overall-score" aria-label={`Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
-              {overallScore !== null ? overallScore : '—'}
-              <small>/100</small>
+            <div className="preview-score" data-testid="overall-score" aria-label={evidence ? `${findingCount} kaynaklı bulgu` : `Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
+              {evidence ? findingCount : overallScore !== null ? overallScore : '—'}
+              <small>{evidence ? 'bulgu' : '/100'}</small>
             </div>
           </div>
 
-          <ScoreBarChart scores={scores} idPrefix="report" />
+          {evidence ? <div className="report-bars" role="list" aria-label="Kaynaklı bilgi kapsamı">
+            {evidenceCategories.map(category => <div className="bar-row" role="listitem" key={category.id}>
+              <span className="bar-label">{category.label}</span>
+              <span>{category.items.length ? `${category.items.length} kaynaklı bulgu` : 'Kaynaklı bilgi bulunamadı'}</span>
+            </div>)}
+          </div> : <ScoreBarChart scores={scores} idPrefix="report" />}
 
           <div className="report-note">
             <span aria-hidden="true">↗</span>
             <p>
-              <b>Rakamları birlikte oku.</b> {chartSummaryText}
+              {evidence ? <><b>{sourceCount} farklı kaynak.</b> Beş başlıktan {coveredCount} tanesinde kaynaklı bilgi var. Ayrıntılarda kaynak bağlantılarını inceleyebilirsin.</> : <><b>Rakamları birlikte oku.</b> {chartSummaryText}</>}
             </p>
           </div>
 
           <div className="report-preview-foot">
-            <span>MEVCUT BACKEND VERİSİ</span>
+            <span>{evidence ? "KAYNAK KAPSAMI" : "MEVCUT BACKEND VERİSİ"}</span>
             <span>
-              Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}
+              {evidence ? `Referans tarihi: ${evidence.reference_date}` : <>Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}</>}
             </span>
           </div>
         </div>
@@ -255,13 +266,24 @@ export default function ReportDashboard({
           <div className="report-banner-main">
             <span className="report-pill-badge">
               <MapPin size={14} aria-hidden="true" />
-              {district}, {city} · Pilot Bölge Raporu
+              {district}, {city} · Mahalle Raporu
             </span>
             <h3>{name}</h3>
             <p>{tagline}</p>
           </div>
 
-          <div className="report-banner-stats">
+          {evidence ? <div className="report-banner-stats">
+            <div className="banner-stat-box">
+              <span className="banner-stat-label">Kaynaklı bulgu</span>
+              <strong className="banner-stat-number">{findingCount}</strong>
+            </div>
+            <div className="banner-stat-divider" aria-hidden="true" />
+            <dl className="banner-meta-list">
+              <div><dt>Farklı kaynak:</dt><dd>{sourceCount}</dd></div>
+              <div><dt>Bilgi bulunan başlık:</dt><dd>{coveredCount} / {evidenceCategories.length}</dd></div>
+              <div><dt>Referans tarihi:</dt><dd>{evidence.reference_date}</dd></div>
+            </dl>
+          </div> : <div className="report-banner-stats">
             <div className="banner-stat-box">
               <span className="banner-stat-label">Genel Puan</span>
               <strong className="banner-stat-number">
@@ -284,11 +306,26 @@ export default function ReportDashboard({
                 <dd>{transport_analysis?.distance_to_campus_km ?? '—'} km</dd>
               </div>
             </dl>
-          </div>
+          </div>}
         </div>
 
-        {/* 5 Category Score Cards */}
-        <div className="score-cards-grid" aria-label="Kategori bazlı puan kartları">
+        {/* Source coverage uses the existing category-card layout. */}
+        {evidence ? <div className="score-cards-grid" aria-label="Kategori bazlı kaynaklı bilgiler">
+          {['rent_cost', 'social_life', 'safety_news', 'earthquake_hazard', 'transportation'].map(key => {
+            const category = evidenceCategories.find(item => item.id === key);
+            if (!category) return null;
+            const Icon = categoryIcons[key];
+            const count = category.items.length;
+            return <article className="score-card-item" key={key} data-testid={`evidence-card-${key}`}>
+              <div className="score-card-head">
+                <div className="score-card-title-wrap"><span className="score-card-icon"><Icon size={18} aria-hidden="true" /></span><h4 className="score-card-title">{category.label}</h4></div>
+                <span className="score-card-badge">{count ? `${count} bulgu` : 'Kaynak eksik'}</span>
+              </div>
+              <p>{count ? category.items[0].text : category.missing_reason || 'Bu başlıkta yeterli kaynaklı bilgi bulunamadı.'}</p>
+              {count > 1 && <small>{count - 1} bulgu daha · Ayrıntıları aşağıda incele</small>}
+            </article>;
+          })}
+        </div> : <div className="score-cards-grid" aria-label="Kategori bazlı puan kartları">
           <ScoreCard
             title="Maliyet"
             score={scores?.cost_affordability}
@@ -328,7 +365,7 @@ export default function ReportDashboard({
             icon={Bus}
             testId="card-transportation"
           />
-        </div>
+        </div>}
 
         {/* AI Synthesis & Pros / Cons */}
         {report.evidence_report && <div className="domain-cards-grid">
@@ -369,6 +406,7 @@ export default function ReportDashboard({
           <p className="synthesis-summary">{ai_report?.executive_summary}</p>
 
           <div className="pros-cons-grid">
+            {(!evidence || ai_report?.pros?.length > 0) && <>
             <div className="pros-box">
               <h4>
                 <CheckCircle2 size={16} aria-hidden="true" />
@@ -381,10 +419,11 @@ export default function ReportDashboard({
               </ul>
             </div>
 
+            </>}
             <div className="cons-box">
               <h4>
                 <AlertTriangle size={16} aria-hidden="true" />
-                <span>Dikkat Edilmesi Gerekenler (Eksiler)</span>
+                <span>{evidence ? "Verinin sınırları" : "Dikkat Edilmesi Gerekenler (Eksiler)"}</span>
               </h4>
               <ul>
                 {(ai_report?.cons || []).map((con, idx) => (
@@ -395,6 +434,7 @@ export default function ReportDashboard({
           </div>
         </div>
 
+        {!evidence && <>
         {/* Suitability by User Profile (No purple!) */}
         <div className="suitability-cards-grid" aria-label="Yaşam profiline göre uygunluk">
           {profileRows.map((prof) => {
@@ -564,11 +604,13 @@ export default function ReportDashboard({
           </article>
         </div>
 
+        </>}
+
         {/* Transparency, Sources & Methodology Footer */}
         <div className="methodology-footer-card">
           <div className="methodology-head">
             <Database size={18} aria-hidden="true" />
-            <h4>Veri Kaynakları ve Puanlama Yöntemi</h4>
+            <h4>{evidence ? "Kaynaklar ve veri kapsamı" : "Veri Kaynakları ve Puanlama Yöntemi"}</h4>
           </div>
 
           {data_sources.length > 0 && (
@@ -586,7 +628,7 @@ export default function ReportDashboard({
           )}
 
           <details className="method-details">
-            <summary>Bu puanlar nasıl hesaplandı ve veri kapsamı nedir?</summary>
+            <summary>{evidence ? "Bu bilgiler nasıl hazırlandı?" : "Bu puanlar nasıl hesaplandı ve veri kapsamı nedir?"}</summary>
             <p>
               {scoring_methodology?.note ||
                 'Kategori puanları 0 ile 100 arasında normalize edilmiştir. Backend üzerinde sayısal verisi bulunmayan kategoriler sıfır puan olarak değerlendirilmez.'}

@@ -7,7 +7,7 @@ from pydantic import BaseModel, ConfigDict, Field, StringConstraints, field_vali
 class NewsItemSchema(BaseModel):
     title: str
     source: str
-    date: str
+    date: str | None
     sentiment: str | None = Field(description="positive | neutral | negative")
     summary: str
 
@@ -101,12 +101,12 @@ class NeighborhoodSummarySchema(BaseModel):
     district: str
     city: str
     tagline: str
-    overall_score: int
-    avg_rent_tl: int
-    earthquake_risk_level: str
-    suitability_student: int
-    suitability_family: int
-    suitability_professional: int
+    overall_score: int | None
+    avg_rent_tl: int | None
+    earthquake_risk_level: str | None
+    suitability_student: int | None
+    suitability_family: int | None
+    suitability_professional: int | None
 
     model_config = ConfigDict(from_attributes=True)
 

@@ -8,7 +8,6 @@ from unittest.mock import Mock
 import pytest
 
 from app.core.config import settings
-from app.models.neighborhood import Neighborhood
 from app.services import ai_service
 
 
@@ -19,44 +18,44 @@ def test_health_endpoint(client):
     assert data["status"] == "ok"
     assert "MahallEN" in data["project"]
     assert data["database_backend"] == "sqlite"
-    assert data["data_mode"] == "demo"
+    assert data["data_mode"] == "pilot"
 
 
 def test_list_pilot_neighborhoods(client):
     res = client.get("/api/v1/neighborhoods")
     assert res.status_code == 200
     items = res.json()
-    assert {item["slug"] for item in items} == {
-        "kotekli", "emirbeyazit", "muslihittin", "orhaniye", "akyaka"
-    }
-    assert [item["overall_score"] for item in items] == sorted(
-        [item["overall_score"] for item in items], reverse=True
+    dataset = json.loads(
+        (Path(__file__).resolve().parents[2] / "data/pilot_neighborhoods.json").read_text()
     )
+    assert len(items) == 10
+    assert {item["slug"] for item in items} == {item["id"] for item in dataset["neighborhoods"]}
+    assert all(item["overall_score"] is None for item in items)
 
 
-def test_get_kotekli_full_report(client):
-    res = client.get("/api/v1/neighborhoods/kotekli/report")
-    assert res.status_code == 200
-    report = res.json()
-    assert report["slug"] == "kotekli"
-    pilot = json.loads(
-        (Path(__file__).resolve().parents[2] / "data/pilot/kotekli.ui.v0.2.json").read_text()
+@pytest.mark.parametrize("slug", ["kotekli", "caferaga"])
+def test_pilot_reports_use_the_new_dataset(client, slug):
+    url = f"/api/v1/neighborhoods/{slug}/report"
+    first = client.get(url)
+    assert (first.status_code, first.headers["X-Cache"]) == (200, "MISS")
+    report = first.json()
+    assert report["slug"] == slug
+    dataset = json.loads(
+        (Path(__file__).resolve().parents[2] / "data/pilot_neighborhoods.json").read_text()
     )
-    assert report["scores"] == {
-        "overall_livability": None,
-        "safety": pilot["scores"]["news"]["value"],
-        "transportation": pilot["scores"]["transport"]["value"],
-        "cost_affordability": pilot["scores"]["rent"]["value"],
-        "disaster_resilience": pilot["scores"]["hazard"]["value"],
-        "social_life": pilot["scores"]["social"]["value"],
-    }
-    assert report["suitability"] == {"students": None, "families": None, "professionals": None}
-    assert report["ai_report"]["generated_by"] == "MahallEN Kötekli Pilot Sentezi"
-    assert report["disaster_risk"]["pga_value_g"] == pilot["hazard"]["value"]
-    assert report["disaster_risk"]["soil_class"] is None
-    assert report["transport_analysis"]["bus_frequency_min"] is None
+    pilot = next(record for record in dataset["neighborhoods"] if record["id"] == slug)
+    evidence = report["pilot_evidence"]
+    assert evidence["geo_key"] == pilot["geo_key"]
+    assert evidence["reference_date"] == "2026-11-06"
+    assert evidence["categories"] == pilot["categories"]
+    assert set(report["data_sources"]) == {source["url"] for source in pilot["sources"]}
+    assert all(value is None for value in report["scores"].values())
+    assert all(value is None for value in report["suitability"].values())
+    assert report["disaster_risk"]["pga_value_g"] == pilot["categories"]["earthquake_hazard"]["value"]
     assert report["rent_analysis"]["average_rent_tl"] is None
-    assert report["community_comments"] == []
+    second = client.get(url)
+    assert second.headers["X-Cache"] == "HIT"
+    assert second.json() == report
 
 
 @pytest.mark.parametrize("query", ["Kötekli", "KÖTEKLİ", "KOTEKLI"])
@@ -74,7 +73,8 @@ def test_search_treats_wildcards_literally(client, query):
 def test_profile_sorting(client, profile):
     items = client.get("/api/v1/neighborhoods", params={"profile": profile}).json()
     scores = [item[f"suitability_{profile}"] for item in items]
-    assert scores == sorted(scores, reverse=True)
+    assert len(scores) == 10
+    assert all(score is None for score in scores)
 
 
 def test_invalid_search_parameters(client):
@@ -113,9 +113,6 @@ def _live_content():
         "executive_summary": "Illustrative live summary.",
         "pros": ["One example advantage."],
         "cons": ["One example limitation."],
-        "student_verdict": "Illustrative student assessment.",
-        "family_verdict": "Illustrative family assessment.",
-        "professional_verdict": "Illustrative professional assessment.",
     }
 
 
@@ -141,12 +138,12 @@ def test_live_refresh_requires_operator_secret(client, monkeypatch, token):
 def test_live_refresh_has_global_cooldown(client, monkeypatch):
     _configure_live(monkeypatch)
     provider = Mock(return_value=json.dumps(_live_content()))
-    monkeypatch.setattr(ai_service, "_generate_live_content", provider)
+    monkeypatch.setattr(ai_service, "_request_gemini", provider)
     headers = {"X-AI-Refresh-Token": "t" * 32}
     first = client.get("/api/v1/neighborhoods/emirbeyazit/report?refresh_ai=true", headers=headers)
     second = client.get("/api/v1/neighborhoods/akyaka/report?refresh_ai=true", headers=headers)
     assert first.status_code == 200
-    assert first.json()["ai_report"]["executive_summary"] == _live_content()["executive_summary"]
+    assert first.json()["ai_report"]["executive_summary"].endswith(_live_content()["executive_summary"])
     assert second.status_code == 429
     assert 1 <= int(second.headers["Retry-After"]) <= 60
     assert provider.call_count == 1
@@ -158,35 +155,34 @@ def test_live_refresh_has_global_cooldown(client, monkeypatch):
     json.dumps({**_live_content(), "pros": ["x" * 601]}),
     json.dumps({**_live_content(), "unexpected": "field"}), "x" * 20001,
 ])
-def test_invalid_live_output_falls_back_without_500(client, monkeypatch, raw):
+def test_invalid_live_output_returns_bad_gateway(client, monkeypatch, raw):
     _configure_live(monkeypatch)
-    monkeypatch.setattr(ai_service, "_generate_live_content", Mock(return_value=raw))
+    monkeypatch.setattr(ai_service, "_request_gemini", Mock(return_value=raw))
     response = client.get(
         "/api/v1/neighborhoods/emirbeyazit/report?refresh_ai=true",
         headers={"X-AI-Refresh-Token": "t" * 32},
     )
-    assert response.status_code == 200
-    assert response.json()["ai_report"]["generated_by"] == "MahallEN Demo Synthesis (sample data)"
+    assert response.status_code == 502
+    assert "cache was not changed" in response.json()["detail"]
 
 
-def test_provider_failure_falls_back(client, monkeypatch):
+def test_provider_failure_preserves_normal_pilot_response(client, monkeypatch):
     _configure_live(monkeypatch)
-    monkeypatch.setattr(ai_service, "_generate_live_content", Mock(side_effect=TimeoutError))
+    monkeypatch.setattr(ai_service, "_request_gemini", Mock(side_effect=TimeoutError))
     response = client.get(
         "/api/v1/neighborhoods/emirbeyazit/report?refresh_ai=true",
         headers={"X-AI-Refresh-Token": "t" * 32},
     )
-    assert response.status_code == 200
-    assert "Demo" in response.json()["ai_report"]["generated_by"]
+    assert response.status_code == 502
+    normal = client.get("/api/v1/neighborhoods/emirbeyazit/report")
+    assert normal.status_code == 200
+    assert normal.json()["ai_report"]["generated_by"] == "MahallEN Pilot Sentezi"
 
 
-def test_read_with_missing_summary_never_calls_provider(client, monkeypatch):
+def test_normal_read_never_calls_provider(client, monkeypatch):
     _configure_live(monkeypatch)
     provider = Mock()
-    monkeypatch.setattr(ai_service, "_generate_live_content", provider)
-    with client.app.state.session_factory() as db:
-        db.query(Neighborhood).filter_by(slug="emirbeyazit").first().ai_summary = None
-        db.commit()
+    monkeypatch.setattr(ai_service, "_request_gemini", provider)
     assert client.get("/api/v1/neighborhoods/emirbeyazit/report").status_code == 200
     provider.assert_not_called()
 

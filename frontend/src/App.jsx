@@ -597,7 +597,7 @@ export default function App() {
 
                     <div className="card-metrics-strip">
                       <span>
-                        Ort. Kira: <b>{Number(place.avg_rent_tl).toLocaleString('tr-TR')} TL</b>
+                        Ort. Kira: <b>{place.avg_rent_tl == null ? '—' : `${place.avg_rent_tl.toLocaleString('tr-TR')} TL`}</b>
                       </span>
                       <span>
                         {activeProfile.buttonLabel}:{' '}
@@ -694,7 +694,7 @@ export default function App() {
                           {item.name.replace(/\s+Mahallesi$/i, '')}
                           <small>
                             {item.district} / {item.city} · Ort.{' '}
-                            {Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL
+                            {item.avg_rent_tl == null ? '—' : `${item.avg_rent_tl.toLocaleString('tr-TR')} TL`}
                           </small>
                         </div>
                         <span className="rank-score">{score !== null ? score : '—'}</span>

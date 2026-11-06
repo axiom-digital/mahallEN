@@ -54,7 +54,7 @@ def create_app(database_url: str | None = None) -> FastAPI:
             "team": "Axiom (SE3003)",
             "database_backend": request.app.state.database_backend,
             "llm_provider": "Demo synthesis (sample data)",
-            "data_mode": "demo",
+            "data_mode": "pilot",
             "pilot_region": "Muğla (Menteşe & Ula)",
         }
 

@@ -10,7 +10,7 @@ COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY --chown=appuser:appuser backend/app ./app
-COPY data/pilot/kotekli.ui.v0.2.json /app/data/pilot/
+COPY data/pilot_neighborhoods.json /app/data/
 
 USER appuser
 

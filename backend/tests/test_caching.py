@@ -7,7 +7,7 @@ import pytest
 from app.core.config import settings
 from app.models.report_cache import ReportCache
 from app.services import ai_service
-from app.services.kotekli_report import load_kotekli_pilot
+from app.services.pilot_report import load_pilot_neighborhoods
 
 
 def test_report_caching_lifecycle(client):
@@ -41,23 +41,10 @@ def test_report_caching_lifecycle(client):
     assert res3.headers.get("X-Cache-Hits") == "2"
 
 
-def test_kotekli_adds_pilot_evidence_to_existing_cache_hit(client):
-    url = "/api/v1/neighborhoods/kotekli/report"
-    original = client.get(url).json()
-    with client.app.state.session_factory() as db:
-        cached = db.query(ReportCache).filter_by(slug="kotekli").one()
-        cached.report_data = {key: value for key, value in cached.report_data.items() if key != "pilot_evidence"}
-        db.commit()
-
-    hit = client.get(url)
-    assert hit.headers["X-Cache"] == "HIT"
-    assert hit.json() == original
-
-
 def test_kotekli_ignores_existing_demo_cache(client):
     with client.app.state.session_factory() as db:
         db.add(ReportCache(
-            slug="kotekli",
+            slug="tr/mugla/mentese/kotekli",
             report_data={"slug": "kotekli", "demo": True},
             expires_at=datetime.now(timezone.utc) + timedelta(hours=1),
         ))
@@ -66,7 +53,7 @@ def test_kotekli_ignores_existing_demo_cache(client):
     response = client.get("/api/v1/neighborhoods/kotekli/report")
     assert response.status_code == 200
     assert response.headers["X-Cache"] == "MISS"
-    assert response.json()["ai_report"]["generated_by"] == "MahallEN Kötekli Pilot Sentezi"
+    assert response.json()["ai_report"]["generated_by"] == "MahallEN Pilot Sentezi"
     assert client.get("/api/v1/neighborhoods/kotekli/report").headers["X-Cache"] == "HIT"
 
 
@@ -86,7 +73,7 @@ def test_report_cache_expiration(client):
     # Expire the cache entry manually in DB
     app = client.app
     with app.state.session_factory() as db:
-        cached = db.query(ReportCache).filter(ReportCache.slug == "kotekli").first()
+        cached = db.query(ReportCache).filter(ReportCache.slug == "tr/mugla/mentese/kotekli").first()
         assert cached is not None
         cached.expires_at = datetime.now(timezone.utc) - timedelta(seconds=10)
         db.commit()
@@ -150,10 +137,9 @@ def test_report_cache_force_refresh_bypasses_cache(client, monkeypatch):
     # Mock live generation
     mock_content = (
         '{"executive_summary": "Fresh live report", '
-        '"pros": ["Pro 1"], "cons": ["Con 1"], '
-        '"student_verdict": "Good", "family_verdict": "Great", "professional_verdict": "Top"}'
+        '"pros": ["Pro 1"], "cons": ["Con 1"]}'
     )
-    monkeypatch.setattr(ai_service, "_generate_live_content", Mock(return_value=mock_content))
+    monkeypatch.setattr(ai_service, "_request_gemini", Mock(return_value=mock_content))
 
     # Force live refresh
     res_refresh = client.get(
@@ -163,13 +149,13 @@ def test_report_cache_force_refresh_bypasses_cache(client, monkeypatch):
     )
     assert res_refresh.status_code == 200
     assert res_refresh.headers.get("X-Cache") == "MISS"
-    assert res_refresh.json()["ai_report"]["executive_summary"] == "Fresh live report"
+    assert res_refresh.json()["ai_report"]["executive_summary"].endswith("Fresh live report")
 
     # Subsequent normal request should hit the new cached report
     res_subsequent = client.get("/api/v1/neighborhoods/emirbeyazit/report")
     assert res_subsequent.status_code == 200
     assert res_subsequent.headers.get("X-Cache") == "HIT"
-    assert res_subsequent.json()["ai_report"]["executive_summary"] == "Fresh live report"
+    assert res_subsequent.json()["ai_report"]["executive_summary"].endswith("Fresh live report")
 
 
 def test_report_cache_disabled_flag(client, monkeypatch):
@@ -227,23 +213,17 @@ def test_kotekli_gemini_refresh_cache_lifecycle(client, monkeypatch, provider_fa
         **original["ai_report"],
         **narrative,
         "executive_summary": f"{original['tagline']}. {narrative['executive_summary']}",
-        "generated_by": "Google Gemini (test-model) - Kötekli pilot",
+        "generated_by": "Google Gemini (test-model) - neighborhood pilot",
     }
     assert "tools" not in model.call_args.kwargs
     evidence = json.loads(provider.call_args.args[0])
-    assert evidence["reference_date"] == "2026-10-28"
+    _, pilot, _ = load_pilot_neighborhoods()["kotekli"]
+    assert evidence["reference_date"] == pilot["reference_date"]
     assert evidence["computed_scores"] == original["scores"]
-    assert evidence["source_links"] == original["data_sources"]
-    assert evidence["suitability"] == original["suitability"]
-    assert evidence["transport_analysis"]["bus_frequency_min"] is None
-    assert evidence["rent_listings"][0]["sources"]
-    assert evidence["social_places"][0]["sources"]
-    assert evidence["hazard_source"]["url"] in original["data_sources"]
-    assert original["pilot_evidence"]["reference_date"] == "2026-10-28"
-    pilot, _ = load_kotekli_pilot()
-    for key in ("location", "rent", "transport", "news", "hazard"):
-        assert original["pilot_evidence"][key] == pilot[key]
-    assert original["pilot_evidence"]["social_places"] == pilot["social"]["places"]
+    assert evidence["earthquake_pga_g"] == original["disaster_risk"]["pga_value_g"]
+    assert evidence["categories"]["rent_cost"]["observations"][0]["source_ids"]
+    assert original["pilot_evidence"]["sources"] == pilot["sources"]
+    assert original["pilot_evidence"]["categories"] == pilot["categories"]
 
     hit = client.get(url)
     assert (hit.status_code, hit.headers["X-Cache"], hit.headers["X-Cache-Hits"]) == (200, "HIT", "1")

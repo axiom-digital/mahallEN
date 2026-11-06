@@ -1,4 +1,3 @@
-from contextlib import nullcontext
 from typing import List, Literal, Optional
 from hmac import compare_digest
 from math import ceil
@@ -11,19 +10,17 @@ from sqlalchemy.orm import Session
 
 from app.core.config import settings
 from app.core.database import get_db
-from app.models.neighborhood import Neighborhood
 from app.schemas.neighborhood import (
     NeighborhoodSummarySchema,
     NeighborhoodFullReportSchema,
 )
-from app.services.ai_service import generate_kotekli_ai_report, generate_neighborhood_ai_report
+from app.services.ai_service import generate_pilot_ai_report
 from app.services.cache_service import (
     get_cached_report,
     set_cached_report,
     invalidate_cached_report,
 )
-from app.services.kotekli_report import build_kotekli_report, kotekli_pilot_evidence, load_kotekli_pilot
-from app.services.scoring_service import get_scoring_methodology
+from app.services.pilot_report import build_pilot_report, load_pilot_neighborhoods, pilot_summary
 
 router = APIRouter(prefix="/neighborhoods", tags=["Neighborhoods & AI Reports"])
 refresh_token_header = APIKeyHeader(name="X-AI-Refresh-Token", auto_error=False)
@@ -41,27 +38,17 @@ def list_neighborhoods(
     profile: Optional[Literal["student", "family", "professional"]] = Query(
         None, description="Sort by suitability profile: student | family | professional"
     ),
-    db: Session = Depends(get_db),
 ):
-    """Lists or searches Muğla pilot neighborhoods with summary scores."""
-    results = db.query(Neighborhood).all()
+    """List pilot neighborhoods, optionally filtered by name, district or city."""
+    results = [pilot_summary(index, pilot) for index, pilot, _ in load_pilot_neighborhoods().values()]
     if q:
         search_term = _search_text(q.strip())
         results = [
             item for item in results
-            if any(search_term in _search_text(value) for value in (
-                item.name, item.district, item.slug, item.tagline
-            ))
+            if any(search_term in _search_text(item[key]) for key in ("name", "district", "city", "slug"))
         ]
-    if profile == "student":
-        results.sort(key=lambda x: x.suitability_student, reverse=True)
-    elif profile == "family":
-        results.sort(key=lambda x: x.suitability_family, reverse=True)
-    elif profile == "professional":
-        results.sort(key=lambda x: x.suitability_professional, reverse=True)
-    else:
-        results.sort(key=lambda x: x.overall_score, reverse=True)
-
+    score_field = f"suitability_{profile}" if profile else "overall_score"
+    results.sort(key=lambda item: (item[score_field] is None, -(item[score_field] or 0)))
     return results
 
 
@@ -86,18 +73,14 @@ def get_neighborhood_report(
         if not settings.GEMINI_API_KEY or not settings.GEMINI_MODEL:
             raise HTTPException(status_code=503, detail="Live AI provider is not configured.")
 
-    neighborhood = (
-        db.query(Neighborhood).filter(Neighborhood.slug == slug.lower().strip()).first()
-    )
-    if not neighborhood:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Neighborhood '{slug}' not found in Muğla pilot dataset.",
-        )
+    record = load_pilot_neighborhoods().get(slug.lower().strip())
+    if record is None:
+        raise HTTPException(status_code=404, detail=f"Neighborhood '{slug}' not found in the pilot dataset.")
 
-    pilot = load_kotekli_pilot() if neighborhood.slug == "kotekli" else None
-    if pilot and refresh_ai and not settings.REPORT_CACHE_ENABLED:
-        raise HTTPException(status_code=503, detail="Kötekli refresh requires the report cache.")
+    neighborhood_id, pilot, cache_version = record
+    cache_key = pilot["geo_key"]
+    if refresh_ai and not settings.REPORT_CACHE_ENABLED:
+        raise HTTPException(status_code=503, detail="Live refresh requires the report cache.")
 
     if refresh_ai:
         with request.app.state.ai_refresh_lock:
@@ -112,104 +95,39 @@ def get_neighborhood_report(
             request.app.state.ai_refresh_not_before = now + 60
 
     refreshed_report = None
-    if pilot and refresh_ai:
-        refreshed_report = build_kotekli_report(neighborhood.id, pilot[0])
+    if refresh_ai:
+        refreshed_report = build_pilot_report(neighborhood_id, pilot)
         try:
-            refreshed_report["ai_report"] = generate_kotekli_ai_report(pilot[0], refreshed_report)
+            refreshed_report["ai_report"] = generate_pilot_ai_report(pilot, refreshed_report)
         except Exception:
             raise HTTPException(
                 status_code=502,
-                detail="Gemini could not generate a valid Kötekli report. The cache was not changed.",
+                detail="Gemini could not generate a valid pilot report. The cache was not changed.",
             ) from None
 
-    # Keep a local cache fill from racing a completed Gemini refresh in this process.
-    cache_lock = request.app.state.ai_refresh_lock if pilot else nullcontext()
-    with cache_lock:
-        cache_version = pilot[1] if pilot else None
-        # Kötekli must bypass any cached M1 demo report or older pilot snapshot.
+    # Prevent a local cache fill from racing a completed live refresh in this process.
+    with request.app.state.ai_refresh_lock:
         if not refresh_ai and settings.REPORT_CACHE_ENABLED:
-            cached_result = get_cached_report(db, neighborhood.slug, model_version=cache_version)
+            cached_result = get_cached_report(db, cache_key, model_version=cache_version)
             if cached_result is not None:
                 cached_data, hit_count = cached_result
                 response.headers["X-Cache"] = "HIT"
                 response.headers["X-Cache-Hits"] = str(hit_count)
-                if pilot and "pilot_evidence" not in cached_data:
-                    # Keep valid narratives cached before the evidence field was added.
-                    return {**cached_data, "pilot_evidence": kotekli_pilot_evidence(pilot[0])}
                 return cached_data
 
-        report_payload = refreshed_report
-        if report_payload is None:
-            report_payload = (
-                build_kotekli_report(neighborhood.id, pilot[0])
-                if pilot else _build_demo_report(neighborhood, force_live_llm=refresh_ai)
-            )
-
+        report_payload = refreshed_report or build_pilot_report(neighborhood_id, pilot)
         if settings.REPORT_CACHE_ENABLED:
-            model_version = cache_version or report_payload["ai_report"]["generated_by"]
             set_cached_report(
                 db,
-                neighborhood.slug,
+                cache_key,
                 report_payload,
                 ttl_seconds=settings.REPORT_CACHE_TTL_SECONDS,
-                model_version=model_version,
+                model_version=cache_version,
             )
 
         response.headers["X-Cache"] = "MISS"
         response.headers["X-Cache-Hits"] = "0"
         return report_payload
-
-
-def _build_demo_report(neighborhood: Neighborhood, force_live_llm: bool) -> dict:
-    ai_report = generate_neighborhood_ai_report(
-        neighborhood, force_live_llm=force_live_llm
-    )
-
-    return {
-        "id": neighborhood.id,
-        "slug": neighborhood.slug,
-        "name": neighborhood.name,
-        "district": neighborhood.district,
-        "city": neighborhood.city,
-        "tagline": neighborhood.tagline,
-        "coordinates": {
-            "lat": neighborhood.latitude,
-            "lng": neighborhood.longitude,
-        },
-        "scores": {
-            "overall_livability": neighborhood.overall_score,
-            "safety": neighborhood.safety_score,
-            "transportation": neighborhood.transport_score,
-            "cost_affordability": neighborhood.cost_score,
-            "disaster_resilience": neighborhood.disaster_safety_score,
-        },
-        "suitability": {
-            "students": neighborhood.suitability_student,
-            "families": neighborhood.suitability_family,
-            "professionals": neighborhood.suitability_professional,
-        },
-        "rent_analysis": {
-            "average_rent_tl": neighborhood.avg_rent_tl,
-            "rent_range_tl": neighborhood.rent_range_tl,
-            "trend_6m": neighborhood.rent_trend_6m,
-        },
-        "transport_analysis": {
-            "bus_frequency_min": neighborhood.bus_frequency_min,
-            "distance_to_campus_km": neighborhood.distance_to_campus_km,
-            "distance_to_center_km": neighborhood.distance_to_center_km,
-            "highlights": neighborhood.transport_highlights,
-        },
-        "disaster_risk": {
-            "risk_level": neighborhood.earthquake_risk_level,
-            "pga_value_g": neighborhood.pga_value_g,
-            "soil_class": neighborhood.soil_class,
-        },
-        "news_items": neighborhood.news_items,
-        "community_comments": neighborhood.community_comments,
-        "data_sources": neighborhood.data_sources,
-        "ai_report": ai_report,
-        "scoring_methodology": get_scoring_methodology(),
-    }
 
 
 @router.delete("/{slug}/cache", tags=["Neighborhoods & AI Reports"])
@@ -225,5 +143,6 @@ def delete_neighborhood_cache(
     if not refresh_token or not compare_digest(refresh_token.encode(), expected_token.encode()):
         raise HTTPException(status_code=403, detail="Invalid token for cache invalidation.")
 
-    deleted = invalidate_cached_report(db, slug)
+    record = load_pilot_neighborhoods().get(slug.lower().strip())
+    deleted = invalidate_cached_report(db, record[1]["geo_key"]) if record else False
     return {"slug": slug, "cache_invalidated": deleted}

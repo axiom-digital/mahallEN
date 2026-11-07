@@ -29,6 +29,8 @@ korunur. `income_2026.json` yayıncı bağlantılarıyla referans senaryoların�
 28.075,50 TL net asgari ücret tutarı 7 Kasım 2026'da resmî ÇSGB tablosunda
 kontrol edildi: https://www.csgb.gov.tr/poco-pages/asgari-ucret .
 
-Genel ve profil puanları beş kategori tamamlanmadan hesaplanmaz. Gemini'nin
+Genel/profil ön puanları mevcut kategorilerin ağırlıkları yeniden ölçeklenerek
+hesaplanır; eksik başlıklar ve kullanılan kapsam ayrıca gösterilir. Hiç kategori
+puanı yoksa toplam üretilmez. Tam kategori kapsamı olmadan sonuç kısmi ön puandır. Gemini'nin
 şemasında puan alanı yoktur; model yalnız kodla hesaplanan girdilere dayanarak
 rapor metni yazar. Eski model puanları report_version 3 ile geçersiz kılınır.

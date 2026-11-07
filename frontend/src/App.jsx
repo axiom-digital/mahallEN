@@ -1,12 +1,12 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   fetchNeighborhoods,
-  fetchNeighborhoodReport,
   fetchNeighborhoodSuggestions,
   fetchSystemHealth,
 } from './services/api';
-import ReportDashboard from './components/ReportDashboard';
-import { ScoreBarChart, normalizeScoreValue } from './components/ScoreCard';
+import { normalizeScoreValue } from './components/ScoreCard';
+
+import { openReportPage } from './navigation.mjs';
 
 const NEIGHBORHOOD_VISUALS = {
   kotekli: {
@@ -81,31 +81,21 @@ const QUICK_SUGGESTIONS = [];
 export default function App() {
   const [neighborhoods, setNeighborhoods] = useState([]);
   const [selectedSlug, setSelectedSlug] = useState(null);
-  const [report, setReport] = useState(null);
 
-  const [searchInput, setSearchInput] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchInput, setSearchInput] = useState(window.history.state?.search?.searchInput || '');
+  const [searchQuery, setSearchQuery] = useState(window.history.state?.search?.searchQuery || '');
   const [suggestions, setSuggestions] = useState([]);
   const [suggestionsOpen, setSuggestionsOpen] = useState(false);
   const [activeSuggestion, setActiveSuggestion] = useState(-1);
-  const [districtFilter, setDistrictFilter] = useState('all');
-  const [profileFilter, setProfileFilter] = useState('');
+  const [districtFilter, setDistrictFilter] = useState(window.history.state?.search?.districtFilter || 'all');
+  const [profileFilter, setProfileFilter] = useState(window.history.state?.search?.profileFilter || '');
 
   const [loadingList, setLoadingList] = useState(false);
   const [listError, setListError] = useState(null);
   const [listRetryCount, setListRetryCount] = useState(0);
 
-  const [loadingReport, setLoadingReport] = useState(false);
-  const [reportPhase, setReportPhase] = useState('checking');
-  const [reportError, setReportError] = useState(null);
-  const [reportRetryCount, setReportRetryCount] = useState(0);
-  const [refreshingAi, setRefreshingAi] = useState(false);
-
   const [health, setHealth] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dialogOpen, setDialogOpen] = useState(false);
-
-  const reportDialogRef = useRef(null);
 
   useEffect(() => {
     if (!suggestionsOpen || searchInput.trim().length < 2) { setSuggestions([]); return; }
@@ -119,12 +109,7 @@ export default function App() {
   }, [searchInput, suggestionsOpen]);
 
   const chooseSuggestion = place => {
-    setSuggestionsOpen(false); setSuggestions([]); setActiveSuggestion(-1);
-    setSearchInput(`${place.name}, ${place.district}, ${place.city}`);
-    setSearchQuery(`${place.name} ${place.district} ${place.city}`);
-    setNeighborhoods([{ ...place, slug: place.id, overall_score: null, avg_rent_tl: null }]);
-    setDistrictFilter('all'); setSelectedSlug(place.id); setReport(null); setMobileMenuOpen(false);
-    setTimeout(() => scrollToSection('ornek-rapor'), 0);
+    openReportPage(place, {searchInput, searchQuery: `${place.name} ${place.district} ${place.city}`, districtFilter, profileFilter});
   };
 
   // System health check
@@ -143,7 +128,6 @@ export default function App() {
     if (!searchQuery.trim()) {
       setNeighborhoods([]);
       setSelectedSlug(null);
-      setReport(null);
       setListError(null);
       setLoadingList(false);
       return;
@@ -184,63 +168,10 @@ export default function App() {
     if (loadingList) return;
     if (displayedNeighborhoods.length === 0) {
       setSelectedSlug(null);
-      setReport(null);
       return;
     }
     // A report opens only after the user explicitly selects a search result.
   }, [displayedNeighborhoods, loadingList, selectedSlug]);
-
-  // Fetch full report whenever selectedSlug changes
-  useEffect(() => {
-    if (!selectedSlug) {
-      setReport(null);
-      setReportError(null);
-      setLoadingReport(false);
-      return;
-    }
-
-    const controller = new AbortController();
-    setLoadingReport(true);
-    setReportPhase('checking');
-    setReportError(null);
-
-    fetchNeighborhoodReport(selectedSlug, { signal: controller.signal,
-      onProgress: phase => { if (!controller.signal.aborted) setReportPhase(phase); } })
-      .then((data) => {
-        if (controller.signal.aborted) return;
-        setReport(data);
-        setNeighborhoods(current => current.map(item => item.slug === data.slug ? { ...item,
-          report_available: true,
-          overall_score: data.scores?.overall_livability,
-          avg_rent_tl: data.rent_analysis?.average_rent_tl,
-          suitability_student: data.suitability?.students,
-          suitability_family: data.suitability?.families,
-          suitability_professional: data.suitability?.professionals,
-        } : item));
-      })
-      .catch((err) => {
-        if (err.name === 'AbortError') return;
-        setReportError(err.message || 'Mahalle raporu yüklenirken bir sorun oluştu.');
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) {
-          setLoadingReport(false);
-        }
-      });
-
-    return () => controller.abort();
-  }, [selectedSlug, reportRetryCount]);
-
-  // Sync modal <dialog> state
-  useEffect(() => {
-    const dialog = reportDialogRef.current;
-    if (!dialog) return;
-    if (dialogOpen && report) {
-      if (!dialog.open) dialog.showModal();
-    } else if (dialog.open) {
-      dialog.close();
-    }
-  }, [dialogOpen, report]);
 
   const scrollToSection = useCallback((elementId) => {
     const el = document.getElementById(elementId);
@@ -256,7 +187,7 @@ export default function App() {
     e.preventDefault();
     const trimmed = searchInput.trim();
     if (trimmed.length < 2) return;
-    setSuggestionsOpen(false); setSuggestions([]); setSelectedSlug(null); setReport(null);
+    setSuggestionsOpen(false); setSuggestions([]); setSelectedSlug(null);
     setDistrictFilter('all');
     setSearchQuery(trimmed);
     scrollToSection('mahalleler');
@@ -280,23 +211,9 @@ export default function App() {
     setDistrictFilter(district);
   };
 
-  const handleSelectNeighborhood = (slug, { scrollToReport = false, openModal = false } = {}) => {
-    setSelectedSlug(slug);
-    setMobileMenuOpen(false);
-    if (openModal) {
-      setDialogOpen(true);
-    } else if (scrollToReport) {
-      scrollToSection('ornek-rapor');
-    }
-  };
-
-  const handleRefreshAi = () => {
-    if (!selectedSlug) return;
-    setRefreshingAi(true);
-    fetchNeighborhoodReport(selectedSlug)
-      .then((data) => setReport(data))
-      .catch((err) => setReportError(err.message || 'Rapor yenilenemedi.'))
-      .finally(() => setRefreshingAi(false));
+  const handleSelectNeighborhood = slug => {
+    const place = neighborhoods.find(item => item.slug === slug || item.id === slug);
+    if (place) openReportPage(place, {searchInput, searchQuery, districtFilter, profileFilter});
   };
 
   const activeProfile = PROFILE_CONFIG[profileFilter] || PROFILE_CONFIG[''];
@@ -306,7 +223,6 @@ export default function App() {
     return [...neighborhoods].sort((a, b) => (Number(b[field]) || 0) - (Number(a[field]) || 0));
   }, [neighborhoods, activeProfile]);
 
-  const dialogOverallScore = normalizeScoreValue(report?.scores?.overall_livability);
 
   return (
     <div className="mahallen-shell">
@@ -336,7 +252,7 @@ export default function App() {
             <a href="#sana-gore" onClick={() => setMobileMenuOpen(false)}>
               Sana göre
             </a>
-            <a href="#ornek-rapor" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#mahalleler" onClick={() => setMobileMenuOpen(false)}>
               Rapor &amp; Grafikler
             </a>
             <a href="#nasil-calisir" onClick={() => setMobileMenuOpen(false)}>
@@ -346,7 +262,7 @@ export default function App() {
               type="button"
               className="nav-report"
               onClick={() =>
-                selectedSlug ? scrollToSection('ornek-rapor') : document.getElementById('neighborhood-search')?.focus()
+                document.getElementById('neighborhood-search')?.focus()
               }
             >
               <span>Raporu incele</span>
@@ -512,8 +428,8 @@ export default function App() {
                 <br />
                 Seninkini bulmak için keşfetmeye başla.
               </p>
-              <a className="text-link" href="#ornek-rapor">
-                Seçili mahalle raporuna geç <span aria-hidden="true">↓</span>
+              <a className="text-link" href="#mahalleler">
+                Bir mahalle seçerek raporunu aç <span aria-hidden="true">↓</span>
               </a>
             </div>
           </div>
@@ -631,7 +547,7 @@ export default function App() {
                     <button
                       type="button"
                       className="card-image-link"
-                      onClick={() => handleSelectNeighborhood(place.slug, { scrollToReport: true })}
+                      onClick={() => handleSelectNeighborhood(place.slug)}
                       aria-label={`${place.name} raporunu incele`}
                     >
                       <div className="card-photo">
@@ -653,7 +569,7 @@ export default function App() {
                       <h3>{place.name.replace(/\s+Mahallesi$/i, '')}</h3>
                       <button
                         type="button"
-                        onClick={() => handleSelectNeighborhood(place.slug, { scrollToReport: true })}
+                        onClick={() => handleSelectNeighborhood(place.slug)}
                         aria-label={`${place.name} raporunu aç`}
                       >
                         ↗
@@ -674,7 +590,7 @@ export default function App() {
 
                     <div className="card-bottom">
                       <span>
-                        {overallVal !== null ? 'Genel puan' : place.report_available ? 'Kaynaklı rapor hazır' : 'İlk keşfe hazır'}{' '}
+                        {overallVal !== null ? (place.score_partial ? 'Genel ön puan' : 'Genel puan') : place.report_available ? 'Kaynaklı rapor hazır' : 'İlk keşfe hazır'}{' '}
                         {overallVal !== null && <strong>
                           {overallVal}
                           <small>/100</small>
@@ -682,7 +598,7 @@ export default function App() {
                       </span>
                       <button
                         type="button"
-                        onClick={() => handleSelectNeighborhood(place.slug, { scrollToReport: true })}
+                        onClick={() => handleSelectNeighborhood(place.slug)}
                       >
                         Raporu incele ↗
                       </button>
@@ -695,8 +611,8 @@ export default function App() {
 
           <div className="section-end">
             <span>Bir mahalle, tek bir sayıdan fazlasıdır.</span>
-            <a href="#ornek-rapor">
-              Seçili mahalle raporunda detayları gör <span aria-hidden="true">↓</span>
+            <a href="#mahalleler">
+              Bir mahalle seçerek detaylarını gör <span aria-hidden="true">↓</span>
             </a>
           </div>
         </section>
@@ -754,7 +670,7 @@ export default function App() {
                         key={item.slug}
                         type="button"
                         className={`ranking-row ranking-row-button ${isSelected ? 'is-selected' : ''}`}
-                        onClick={() => handleSelectNeighborhood(item.slug, { scrollToReport: true })}
+                        onClick={() => handleSelectNeighborhood(item.slug)}
                       >
                         <span className="rank-num">0{index + 1}</span>
                         <div className="rank-place">
@@ -780,35 +696,6 @@ export default function App() {
               </p>
             </div>
           </div>
-        </section>
-
-        {/* 03 / RAPOR VE PUAN GRAFİKLERİ */}
-        <section
-          className="report-section section container"
-          id="ornek-rapor"
-          hidden={!selectedSlug && !loadingReport && !reportError}
-          aria-labelledby="report-title"
-        >
-          <div className="section-top">
-            <span className="eyebrow">03 / RAKAMLARIN ARKASINDAKİ HAYAT</span>
-            <span className="section-index">Açık, anlaşılır, gerekçeli.</span>
-          </div>
-
-          <ReportDashboard
-            report={report}
-            neighborhoods={displayedNeighborhoods}
-            selectedSlug={selectedSlug}
-            onSelectNeighborhood={(slug) => handleSelectNeighborhood(slug, { scrollToReport: false })}
-            onOpenDialog={() => setDialogOpen(true)}
-            onRefreshAi={handleRefreshAi}
-            refreshing={refreshingAi}
-            loading={loadingReport}
-            loadingPhase={reportPhase}
-            loadingPlace={neighborhoods.find(item => item.slug === selectedSlug)}
-            error={reportError}
-            onRetry={() => setReportRetryCount((c) => c + 1)}
-            onResetSearch={handleResetFilters}
-          />
         </section>
 
         {/* 04 / NASIL ÇALIŞIR? */}
@@ -932,83 +819,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* REPORT SUMMARY DIALOG (Template Modal) */}
-      <dialog
-        ref={reportDialogRef}
-        id="report-dialog"
-        className="report-dialog"
-        aria-labelledby="dialog-title"
-        onCancel={(e) => {
-          e.preventDefault();
-          setDialogOpen(false);
-        }}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) {
-            setDialogOpen(false);
-          }
-        }}
-      >
-        {report && (
-          <>
-            <div className="dialog-top">
-              <span className="eyebrow">MAHALLEN / MAHALLE RAPOR ÖZETİ</span>
-              <button
-                type="button"
-                className="close"
-                aria-label="Raporu kapat"
-                onClick={() => setDialogOpen(false)}
-              >
-                ×
-              </button>
-            </div>
 
-            <div className="dialog-title-row">
-              <div>
-                <p className="dialog-location" id="dialog-location">
-                  {report.city} / {report.district}
-                </p>
-                <h2 id="dialog-title">{report.name}</h2>
-              </div>
-              <div className="dialog-score" id="dialog-score">
-                {dialogOverallScore !== null ? dialogOverallScore : '—'}
-                <small> /100</small>
-              </div>
-            </div>
-
-            <p className="demo-notice">
-              Bu özet mevcut backend verilerini gösterir. Eksik kategori verisi sıfır (0) puan olarak değerlendirilmez.
-            </p>
-
-            <ScoreBarChart scores={report.scores} idPrefix="dialog" />
-
-            <div className="dialog-story">
-              <h3>Mahalleye dair genel değerlendirme</h3>
-              <p id="dialog-description">
-                {report.ai_report?.executive_summary || report.tagline}
-              </p>
-            </div>
-
-            <details className="method-details">
-              <summary>Puanlama yöntemi ve veri kapsamı</summary>
-              <p>
-                {report.scoring_methodology?.note ||
-                  'Gösterilen değerler 0–100 ölçeğindeki backend kategori puanlarıdır.'}
-              </p>
-            </details>
-
-            <button
-              type="button"
-              className="button dark dialog-compare"
-              onClick={() => {
-                setDialogOpen(false);
-                scrollToSection('rapor-detay');
-              }}
-            >
-              Tam rapor kırılımına git <span aria-hidden="true">↓</span>
-            </button>
-          </>
-        )}
-      </dialog>
     </div>
   );
 }

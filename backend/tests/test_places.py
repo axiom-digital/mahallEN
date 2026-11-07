@@ -40,6 +40,17 @@ def test_search_can_discover_a_neighborhood_outside_saved_ten(client, monkeypatc
         assert db.get(Place, identity).target["district"] == "Bornova"
 
 
+def test_direct_report_page_can_get_place_metadata_without_generating(client, monkeypatch):
+    path = discovered(client, monkeypatch)
+    generate = Mock(side_effect=AssertionError("Metadata must not generate a report"))
+    monkeypatch.setattr(place_research, "generate_place_report", generate)
+    response = client.get(path.removesuffix("/report"))
+    assert response.status_code == 200
+    assert response.json()["name"] == "Erzene" and response.json()["district"] == "Bornova"
+    assert not response.json()["report_available"]
+    generate.assert_not_called()
+
+
 def test_saved_sources_are_upgraded_once_without_search_and_full_report_is_cached(client, monkeypatch):
     generate = Mock(side_effect=AssertionError("Search must not run for saved evidence"))
     assess = Mock(side_effect=lambda evidence: {**evidence, "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL, "assessment": {"test": True}})

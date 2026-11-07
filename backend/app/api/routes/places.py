@@ -53,6 +53,11 @@ def require_place(db, identity):
     return place
 
 
+@router.get("/{identity}")
+def place_details(identity: str, db: Session = Depends(get_db)):
+    return place_service.public_place(db, require_place(db, identity))
+
+
 @router.get("/{identity}/report/status")
 def report_status(identity: str, request: Request, db: Session = Depends(get_db)):
     require_place(db, identity)
@@ -71,7 +76,7 @@ def read_report(identity: str, response: Response, db: Session = Depends(get_db)
         raise HTTPException(404, "Bu mahalle için tam rapor henüz hazırlanmadı.")
     response.headers["X-Cache"] = "HIT"
     response.headers["X-Cache-Hits"] = str(cached[1])
-    return cached[0]
+    return place_assessment.with_score_summary(cached[0])
 
 
 @router.post("/{identity}/report")
@@ -84,7 +89,7 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
         cached = get_cached_report(db, "place:" + identity)
         if cached is not None and place_assessment.is_current_report(cached[0]):
             response.headers["X-Cache"] = "HIT"
-            return cached[0]
+            return place_assessment.with_score_summary(cached[0])
         if not settings.REPORT_CACHE_ENABLED:
             raise HTTPException(503, "Rapor hazırlamak için sunucu önbelleği etkin olmalı.")
         if not request.app.state.place_generation_slots.acquire(blocking=False):

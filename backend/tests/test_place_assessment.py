@@ -9,11 +9,25 @@ from app.core.config import settings
 from app.services import place_assessment as assessment, place_research
 
 
-def test_weighted_scores_require_all_categories_and_preserve_real_zero():
+def test_weighted_scores_use_only_known_categories_and_preserve_real_zero():
     categories = [SimpleNamespace(category=key, score=0) for key in assessment.CATEGORY_WEIGHTS]
     assert assessment.weighted_score(categories, assessment.CATEGORY_WEIGHTS) == 0
     categories[0].score = None
+    assert assessment.weighted_score(categories, assessment.CATEGORY_WEIGHTS) == 0
+    for category in categories: category.score = None
     assert assessment.weighted_score(categories, assessment.CATEGORY_WEIGHTS) is None
+
+
+def test_partial_summary_is_visible_and_explains_exactly_what_is_missing():
+    scores = {"rent_cost": None, "social_life": 40, "safety_news": 40, "earthquake_hazard": 12, "transportation": 40}
+    raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in scores.items()]}}
+    result = assessment.with_score_summary(raw)["assessment"]
+    assert result["overall_score"] == 36
+    assert result["coverage"] == 4 and result["weight_coverage"] == 68
+    assert result["missing_categories"] == ["rent_cost"] and result["partial"]
+    assert result["profile_scores"] == {"students": 36, "families": 31, "professionals": 35}
+    assert result["categories"][0]["score"] is None
+    assert "overall_score" not in raw["assessment"]
 
 
 @pytest.mark.parametrize("text", [

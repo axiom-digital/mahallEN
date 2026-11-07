@@ -122,9 +122,31 @@ def is_current_report(report):
 
 
 def weighted_score(categories, weights):
-    if {c.category for c in categories} != set(weights) or any(c.score is None for c in categories):
+    if {c.category for c in categories} != set(weights):
         return None
-    return rule_scoring.rounded(sum(c.score * weights[c.category] for c in categories) / sum(weights.values()))
+    available = [c for c in categories if c.score is not None]
+    denominator = sum(weights[c.category] for c in available)
+    return rule_scoring.rounded(sum(c.score * weights[c.category] for c in available) / denominator) if denominator else None
+
+
+def with_score_summary(report):
+    """Refresh derived totals from cached category scores; no research/model call."""
+    assessment = report.get("assessment")
+    if not assessment or not assessment.get("categories"):
+        return report
+    categories = [SimpleNamespace(category=c["category"], score=c.get("score")) for c in assessment["categories"]]
+    missing = [c.category for c in categories if c.score is None]
+    covered_weight = sum(CATEGORY_WEIGHTS[c.category] for c in categories if c.score is not None)
+    return {**report, "assessment": {**assessment,
+        "overall_score": weighted_score(categories, CATEGORY_WEIGHTS),
+        "profile_scores": {key: weighted_score(categories, weights) for key, weights in PROFILE_WEIGHTS.items()},
+        "coverage": len(categories) - len(missing), "missing_categories": missing,
+        "weight_coverage": covered_weight, "partial": bool(missing), "score_summary_version": 2,
+        "methodology": "Kategori puanları açıklanmış proje kurallarıyla hesaplanır; Gemini puan vermez. "
+        "Ağırlıklar: maliyet %32, sosyal yaşam %28, haber göstergesi %20, deprem araştırma gridi %10, ulaşım %10. "
+        "Genel ön puan, mevcut kategori puanlarının ağırlıklı ortalamasıdır; eksik kategoriler hesaba katılmaz ve kalan ağırlıklar yeniden ölçeklenir. "
+        f"Kapsam {len(categories)-len(missing)}/5 kategori; kullanılan ağırlık %{covered_weight}. "
+        "Kısmi kapsamlı ön puan tam veriyle hesaplanan sonuçla eşdeğer değildir. Haber göstergesi suç oranı; deprem göstergesi bina dayanıklılığı değildir."}}
 
 
 def detailed_evidence(evidence, record):
@@ -221,9 +243,7 @@ def assess_place_report(evidence):
         "evidence_ids": [f"{c.category}:{i+1}" for group in evidence['categories'] if group['id'] == c.category for i in range(len(group['items']))]} for c in categories],
         overall_score=weighted_score(categories, CATEGORY_WEIGHTS), profile_scores={key: weighted_score(categories, weights) for key, weights in PROFILE_WEIGHTS.items()},
         weights=CATEGORY_WEIGHTS, coverage=sum(c.score is not None for c in categories), provisional=True,
-        calculation=calculated, briefing=briefing, editorial_version=2, scoring_version=rule_scoring.VERSION,
-        methodology="Açıklanmış proje kurallarıyla hesaplanır; Gemini puan vermez. Konut maliyeti %32, sosyal olanaklar %28, haber göstergesi %20, ters PGA grid yüzdeliği %10, ulaşım %10. "
-        "Beş kategori tamamlanmadan genel/profil puanı üretilmez. Haber göstergesi suç oranı; PGA göstergesi bina güvenliği değildir. Kaynak tarihleri raporda korunur.")
-    return {**evidence, "assessment": result, "report_version": rule_scoring.REPORT_VERSION,
+        calculation=calculated, briefing=briefing, editorial_version=2, scoring_version=rule_scoring.VERSION)
+    return with_score_summary({**evidence, "assessment": result, "report_version": rule_scoring.REPORT_VERSION,
             "writer_model": settings.GEMINI_REPORT_MODEL,
-            "scoring_version": rule_scoring.VERSION, "generated_by": f"Google Gemini ({settings.GEMINI_REPORT_MODEL}) · kural tabanlı puanlar"}
+            "scoring_version": rule_scoring.VERSION, "generated_by": f"Google Gemini ({settings.GEMINI_REPORT_MODEL}) · kural tabanlı puanlar"})

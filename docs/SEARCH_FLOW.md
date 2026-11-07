@@ -1,6 +1,7 @@
-> Güncel puanlama: şema v3 / rules-v1. Aşağıdaki v2 model puanı yaklaşımı
-> kaldırıldı. Gemini yalnız metin üretir; genel/profil puanı beş kategori
-> tamamlanmadan hesaplanmaz. Ayrıntılar son bölümde ve data/scoring_research/README.md.
+> Güncel akış: mahalle seçimi `/mahalle/<id>` rapor sayfasını açar.
+> Kategori kuralları `rules-v1`, türetilmiş genel/profil özeti `score_summary_version: 2`.
+> Mevcut kategori ağırlıklarından ön puan hesaplanır; eksikler ve kapsam açıkça gösterilir.
+> Aşağıdaki önceki sürüm notları tarihsel kayıttır; en son bölüm geçerli davranışı açıklar.
 
 # Arama → seçilen mahalle → kayıtlı veya yeni rapor
 
@@ -278,3 +279,42 @@ Masaüstü/mobil kategori penceresi, 3+1 → 4+1 filtresi, gerçek İETT saatler
 ve Escape ile kapanma kontrol edildi. Bebek cache okuması araştırma sürümü 3
 ve Flash-Lite kimliğiyle yapılıyor; bu veri Git dışındaki yerel cache
 içindedir. Dağıtımda yeni dinamik kayıtlar aynı akışla üretilir.
+
+
+## Ayrı rapor sayfası ve görünür puanlar — 8 Kasım 2026
+
+Ana sayfada öneriden veya sonuç kartından mahalle seçimi artık aşağı kaydırmaz:
+`/mahalle/<32-karakter-id>` adresine gider. Araştırma yükleme ekranı ve tam rapor
+bu sayfada bulunur. Ana sayfadaki eski rapor bölümü ve özet penceresi kaldırıldı.
+Sayfanın doğrudan açılması/yenilenmesi ve tarayıcı geri/ileri çalışır; aramaya
+dönüşte önceki arama ve filtre durumu korunur. Ayrıntı kategorileri mevcut
+pencerelerini kullanır. Ana görsel ve arama sayfasının tasarımı korunur.
+
+`GET /places/{id}` yalnız mahalle metadatasını verir, araştırma başlatmaz.
+Rapor sayfası kimliği URL'den alır; cache GET, gerekirse POST ve gerçek aşama
+izlemesi bu sayfaya taşındı. Aramaya dönülürse eski frontend isteği/izlemesi
+iptal edilir. Sunucuda başlamış araştırma başarılı olursa cache'e tamamlanabilir.
+Vite geliştirme/preview SPA fallback'i derin URL'leri karşılar; farklı bir
+statik üretim sunucusunda bilinmeyen frontend rotaları index.html'e yönlendirilmelidir.
+
+Genel puanın bütün kategoriler tamamlanana kadar gizlenmesi kaldırıldı.
+`with_score_summary` mevcut kategori puanlarının ağırlıklı ortalamasını alır;
+**yalnız mevcut kategorilerin ağırlık toplamı** paydadır. Eksik kategorilere
+0 veya 50 atanmaz. Hiç sayısal kategori yoksa genel puan da yoktur. Eksikli
+sonuç **Genel ön puan** etiketi, X/5 kategori ve eksik başlıklarıyla gösterilir;
+tam kapsamlı sonuçla eşdeğer olduğu iddia edilmez. Kategori kuralları değişmedi.
+
+Örnek: Bebek'in mevcut maliyet dışındaki puanları sosyal 40, haber 40, deprem
+12, ulaşım 40. Kullanılan ağırlık toplamı %68; `(40×28 + 40×20 + 12×10 +
+40×10) / 68` yuvarlanınca 36 verir. Kapsam 4/5'tir, maliyet hesaba katılmaz.
+Öğrenci/aile/çalışan ön puanları aynı kapsam ilkesiyle kendi ağırlıklarını kullanır.
+
+Bu türetilmiş özet hem rapor cache GET/POST okumasında hem arama metadatasında
+aynı fonksiyonla hazırlanır; yalnız toplamın değişmesi yeniden Tavily/Gemini
+çağrısı gerektirmez ve kaynak/kategori puanları değiştirilmez. Ham cache'de
+eski toplamın null olması yeni rapor sayfasında toplamı gizlemez.
+
+Doğrulama: 132 backend testi, iki Node gezinme testi ve frontend üretim
+derlemesi geçti. Tarayıcıda öneriden seçim, sonuç kartından seçim, yenileme,
+geri/ileri, aramaya dönüş, 390 px mobil taşma ve 1280 px masaüstü puan görünümü
+kontrol edildi. Bebek yeni adreste 36/100 genel ön puan ve beş kategoriyle açıldı.

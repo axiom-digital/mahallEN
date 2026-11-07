@@ -57,8 +57,6 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
   const evidence = report.evidence_report;
   const narrative = report.ai_report || {};
   const paragraphs = (narrative.executive_summary || '').split(/\n+/).filter(Boolean);
-  const lead = paragraphs[0]?.split(/(?<=[.!?])\s+(?=[A-ZÇĞİÖŞÜ])/)[0] || briefing.overview;
-  const remainingParagraphs = [paragraphs[0]?.slice(lead?.length || 0).trim(), ...paragraphs.slice(1)].filter(Boolean);
   const selected = categories.find(category => category.key === activeCategory);
   const categoryItems = key => evidence.categories.find(category => category.id === key)?.items || [];
   const findings = evidence.categories.find(category => category.id === activeCategory)?.items || [];
@@ -73,17 +71,18 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
   return <div className="report-dashboard-wrapper reading-report" data-testid="report-dashboard">
     <header id="rapor-detay" className="neighborhood-intro">
       <div><span className="neighborhood-breadcrumb"><MapPin size={13} />{report.city} / {report.district}</span>
-        <h2 id="report-title">{atPlace(report.name)} yaşam</h2>
-        <p className="neighborhood-deck">{lead}</p>
+        <h1 id="report-title">{atPlace(report.name)} yaşam</h1>
+        {roomGroup?.listings?.length > 0 && <button className="report-housing-fact" type="button" onClick={() => openCategory('rent_cost')}><Wallet size={16}/><span><b>{roomGroup.rooms} ilan örnekleri</b> · {currency(Math.min(...roomGroup.listings.map(item => item.amount)))} – {currency(Math.max(...roomGroup.listings.map(item => item.amount)))}</span><ArrowUpRight size={14}/></button>}
         <div className="neighborhood-meta"><span>{date} · kaynak kontrolü</span><span>{counts.venues || 0} mekân</span><span>{counts.routes || 0} resmî hat</span></div>
       </div>
-      <aside className="neighborhood-snapshot"><span className="eyebrow">KONUTTAN BAŞLAYALIM</span>
-        {roomGroup?.listings?.length ? <><span className="snapshot-room">{roomGroup.rooms} · kaynaklı ilan örnekleri</span>
-          <strong>{currency(Math.min(...roomGroup.listings.map(item => item.amount)))}{Math.min(...roomGroup.listings.map(item => item.amount)) !== Math.max(...roomGroup.listings.map(item => item.amount)) && <><small>–</small>{currency(Math.max(...roomGroup.listings.map(item => item.amount)))}</>}</strong>
-          <p>İstenen bedeller. {roomGroup.listings.length} ilan örneği; mahalle ortalaması değildir.</p>
-          <button type="button" onClick={() => openCategory('rent_cost')}>İlanları karşılaştır <ArrowUpRight size={15} /></button></>
-          : <><strong>Konut seçenekleri</strong><p>Kaynaklarda geçen oda tiplerini ve kira koşullarını birlikte incele.</p><button type="button" onClick={() => openCategory('rent_cost')}>Konut bilgilerini aç <ArrowUpRight size={15} /></button></>}
-        {report.scores.overall_livability != null && <div className="snapshot-overall">MahallEN ön puanı <b>{report.scores.overall_livability}<small>/100</small></b></div>}
+      <aside className="report-overall-panel" aria-label="Genel değerlendirme">
+        <span className="eyebrow">{assessment.partial ? 'GENEL ÖN PUAN' : 'GENEL PUAN'}</span>
+        <div className="overall-score-ring" style={{'--score-angle': `${(report.scores.overall_livability || 0) * 3.6}deg`}}>
+          <strong data-testid="overall-score">{report.scores.overall_livability ?? '—'}<small>/100</small></strong>
+        </div>
+        <p className="overall-coverage">{assessment.coverage}/5 kategoriye dayanıyor</p>
+        {assessment.partial && <p className="overall-missing">{(assessment.missing_categories || []).map(key => categories.find(category => category.key === key)?.title).filter(Boolean).join(', ')} hesaba katılmadı.</p>}
+        <a href="#report-method" onClick={event => { event.preventDefault(); const method = document.getElementById('report-method'); if (method) { method.open = true; method.scrollIntoView({behavior:'smooth',block:'start'}); } }}>Puan nasıl hesaplandı? <ArrowUpRight size={13}/></a>
       </aside>
     </header>
 
@@ -102,7 +101,7 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
           : key === 'earthquake_hazard' && briefing.hazard?.value != null ? 'Akademik gridin temsil noktasındaki sarsıntı tehlikesi; binanın dayanıklılığı değildir.'
           : items[0]?.text || 'Bu başlık için mahalleye ait yeterli kaynak henüz bulunamadı.';
         return <button key={key} type="button" className={`neighborhood-answer answer-${key}`} onClick={() => openCategory(key)} data-testid={`card-${score}`} aria-haspopup="dialog">
-          <div className="answer-label"><Icon size={18}/><span>{title}</span>{value != null && <b>{value}<small>/100</small></b>}</div>
+          <div className="answer-label"><Icon size={18}/><span>{title}</span></div><div className={`answer-score ${value == null ? 'is-unavailable' : ''}`} data-testid={`score-${score}`}>{value != null ? <><strong>{value}</strong><span>/100</span></> : <span>Veri eksik</span>}</div>
           <h4>{heading}</h4><p>{text}</p><span className="answer-action">{key === 'rent_cost' ? 'İlanları gör' : key === 'social_life' ? 'Mekânları keşfet' : key === 'transportation' ? 'Hatları incele' : 'Kaynakları incele'}<ArrowUpRight size={14}/></span>
         </button>;
       })}</div>
@@ -135,8 +134,8 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
         {onRefreshAi && <button type="button" className="refresh-report-btn" disabled={refreshing} onClick={onRefreshAi}>
           <RefreshCw size={14} className={refreshing ? 'spin-icon' : ''} /><span>{refreshing ? 'Yükleniyor…' : 'Yeniden yükle'}</span></button>}
       </div>
-      <div className="synthesis-summary">{remainingParagraphs.slice(0, 1).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
-      {remainingParagraphs.length > 1 && <details className="reading-full-report"><summary>Raporun tamamını oku</summary><div className="synthesis-summary">{remainingParagraphs.slice(1).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div></details>}
+      <div className="synthesis-summary">{paragraphs.slice(0, 1).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
+      {paragraphs.length > 1 && <details className="reading-full-report"><summary>Raporun tamamını oku</summary><div className="synthesis-summary">{paragraphs.slice(1).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div></details>}
       <div className="pros-cons-grid">
         {narrative.pros?.length > 0 && <div className="pros-box"><h4>Öne çıkanlar</h4><ul>{narrative.pros.slice(0, 2).map((text, i) => <li key={i}>{text}</li>)}</ul></div>}
         {narrative.cons?.length > 0 && <div className="cons-box"><h4>Dikkat etmen gerekenler</h4><ul>{narrative.cons.slice(0, 2).map((text, i) => <li key={i}>{text}</li>)}</ul></div>}
@@ -145,7 +144,7 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
 
     <section className="neighborhood-profile" aria-label="Yaşam profiline göre değerlendirme"><div><span className="eyebrow">SENİN ÖNCELİĞİN</span><h3>Hayatına nasıl uyar?</h3></div><div className="profile-answer"><div className="reading-filter-row" role="group" aria-label="Rapor yaşam profili">{[['students','Öğrenci'],['families','Aile'],['professionals','Çalışan']].map(([key,label]) => <button key={key} type="button" aria-pressed={profile === key} className={profile === key ? 'active' : ''} onClick={() => setProfile(key)}>{label}</button>)}</div><p>{narrative[({students:'student_verdict',families:'family_verdict',professionals:'professional_verdict'})[profile]]}</p>{report.suitability[profile] != null && <small>Profil ön puanı · {report.suitability[profile]}/100</small>}</div></section>
 
-    <details className="methodology-footer-card reading-methodology"><summary>Kaynaklar, kapsam ve puanlama</summary>
+    <details id="report-method" className="methodology-footer-card reading-methodology"><summary>Kaynaklar, kapsam ve puanlama</summary>
       <p>{assessment.methodology}</p>
       <p>Kaynak dönemi: {date}. Haber göstergesi suç oranı, PGA göstergesi bina dayanıklılığı değildir. Eksik kategoriler sıfır sayılmaz.</p>
       {categories.map(category => <details className="method-details" key={category.key}><summary>{category.title}</summary>

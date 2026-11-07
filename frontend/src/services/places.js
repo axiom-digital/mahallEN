@@ -19,6 +19,10 @@ export async function suggestPlaces(query, signal) {
   return (await request(`/suggest?q=${encodeURIComponent(query.trim())}`, { signal })).data;
 }
 
+export async function getPlace(id, signal) {
+  return (await request(`/${encodeURIComponent(id)}`, { signal })).data;
+}
+
 export async function openPlaceReport(id, signal, onPrepare = () => {}, onProgress = () => {}) {
   const path = `/${encodeURIComponent(id)}/report`;
   try {

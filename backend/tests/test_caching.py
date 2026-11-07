@@ -10,6 +10,17 @@ from app.services import ai_service
 from app.services.pilot_report import load_pilot_neighborhoods
 
 
+def test_nested_json_refresh_persists_even_with_the_same_loaded_object(client):
+    from app.services.cache_service import set_cached_report
+    with client.app.state.session_factory() as db:
+        row = set_cached_report(db, "nested-refresh", {"record": {"rows": [1, 2]}})
+        same = row.report_data
+        same["record"]["rows"].pop()
+        set_cached_report(db, "nested-refresh", same)
+    with client.app.state.session_factory() as db:
+        assert db.query(ReportCache).filter_by(slug="nested-refresh").one().report_data == {"record": {"rows": [1]}}
+
+
 def test_report_caching_lifecycle(client):
     """
     Validates Issue #11 caching lifecycle:

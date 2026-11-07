@@ -1,5 +1,6 @@
 import React from 'react';
 import AssessedReport from './AssessedReport';
+import ReportLoading from './ReportLoading';
 import {
   ShieldCheck,
   Bus,
@@ -68,18 +69,14 @@ export default function ReportDashboard({
   onRefreshAi,
   refreshing = false,
   loading = false,
+  loadingPhase = 'checking',
+  loadingPlace,
   error = null,
   onRetry,
   onResetSearch,
 }) {
   if (loading) {
-    return (
-      <div className="report-state-card" role="status" aria-live="polite" data-testid="report-loading">
-        <div className="loading-spinner" aria-hidden="true" />
-        <h3>Mahalle raporu ve puan grafikleri yükleniyor…</h3>
-        <p>Kayıtlı rapor getiriliyor. İlk kez seçilen mahallelerde kaynak araştırması ve rapor hazırlığı birkaç dakika sürebilir.</p>
-      </div>
-    );
+    return <ReportLoading key={selectedSlug} place={loadingPlace} phase={loadingPhase} />;
   }
 
   if (error) {

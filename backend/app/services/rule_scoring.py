@@ -41,6 +41,8 @@ def record_for(evidence):
     known = matched_record(evidence["place"])
     if known:
         return known
+    if evidence.get("research_record"):
+        return evidence["research_record"]
     record = {**evidence["place"], "asOf": evidence["reference_date"],
               "rents": [], "routes": [], "venues": [], "news": [], "hazard": {}}
     for category in evidence["categories"]:
@@ -125,7 +127,7 @@ def calculate(record, as_of=None):
     alert_text = " ".join(a["summary"] for a in recent).lower()
     penalty = (12 if re.search("çök|giriş yapılam|kapan|ulaşım.*kilit|yol.*çalış|altyapı.*çalış", alert_text) else 0) + (8 if re.search("güzerg.h.*düzen|güzerg.h.*değiş|durak.*taş|giriş yapılam", alert_text) else 0)
     cap = 35 if any(a.get("status") == "official_access_restriction" and 0 <= age(a.get("observedAt"), today) <= 30 for a in alerts) else 45 if any(a.get("status") == "official_notice_visible" and "giriş yapılam" in a["summary"].lower() for a in recent) else 100
-    transport = min(rounded(connections*7.5 + service + frequency + night + weekend - penalty), cap) if routes else None
+    transport = min(rounded(connections*7.5 + service + frequency + night + weekend - penalty), cap) if routes and any(times) else None
 
     venues = list({v.get("id", v.get("name")): v for v in record.get("venues", []) if v.get("scope") != "nearby" and v.get("sources")}.values())
     types = {v["type"] for v in venues}
@@ -160,7 +162,7 @@ def calculate(record, as_of=None):
     scores = dict(zip(["rent_cost", "transportation", "social_life", "safety_news", "earthquake_hazard"], [rent, transport, social, safety, seismic]))
     reasons = {
         "rent_cost": f"1+1 son 90 günlük tarihli ilan örnekleri: {len(rents)}. Medyan: {monthly} TL/ay. Net asgari ücret referansı: {income['amount']} TL. Kira/gelir oranı açıklanmış eşiklere uygulanır; gerçekleşen kira veya mahalle ortalaması değildir." if rent is not None else "Ödeme dönemi/tarihi doğrulanmış karşılaştırılabilir 1+1 örneği bulunmadı; nötr 50 verilmedi.",
-        "transportation": f"Resmî hat kaydı: {len(routes)}. Hedef bağlantıları {connections*7.5}/30; hizmet yayılımı {service}/15; tarife aralığı {frequency}/15; gece {night}/10; hafta sonu {weekend}/10; yol/güzergâh bildirimi etkisi -{penalty}; erişim sınırı {cap}. Gerçek gecikme ölçülmedi.",
+        "transportation": f"Resmî hat kaydı: {len(routes)}. Hedef bağlantıları {connections*7.5}/30; hizmet yayılımı {service}/15; tarife aralığı {frequency}/15; gece {night}/10; hafta sonu {weekend}/10; yol/güzergâh bildirimi etkisi -{penalty}; erişim sınırı {cap}. Gerçek gecikme ölçülmedi." if transport is not None else f"{len(routes)} resmî hat kaydı var; karşılaştırılabilir hareket saatleri eksik olduğundan puan üretilmedi. Hat bilgileri raporda korunur.",
         "social_life": f"Kaynaklı mekân {len(venues)}; olanak türleri {group_points}/60, yemek çeşitleri ipucu {min(10, styles*2)}/20, kültür/spor/aktivite {(5 if types & GROUPS[5] else 0)+(3 if types & {'sports_centre','fitness_centre'} else 0)+activity}/10. Menü fiyatı doğrulanmış işletme: {len(menus)}. Sayım hizmet kalitesi ölçümü değildir.",
         "safety_news": f"Haber temelli düşük güvenli proje göstergesi: 50 başlangıçtan en güçlü iki tarihli asayiş kaydının etkisi çıkarılır. Değerlendirilen olay: {len(penalties)}. Suç oranı veya kişisel güvenlik tahmini değildir." if safety is not None else "Puanlanabilir tarihli asayiş kaydı yok; haber bulunmaması güvenli mahalle anlamına gelmez, 50 verilmez.",
         "earthquake_hazard": f"Akademik PGA grid değeri {value} g; ters grid yüzdeliği {seismic}/100. Grid uzaklığı {hazard.get('gridDistance')} km. Bina dayanıklılığı veya resmî AFAD güvenlik puanı değildir." if seismic is not None else "Kaynaklı ve en fazla 5 km uzaklıkta PGA grid noktası yok; bina güvenliği puanı üretilmedi.",

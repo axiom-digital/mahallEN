@@ -47,3 +47,11 @@ def test_price_without_explicit_monthly_period_does_not_become_affordability():
     assert rules.record_for(evidence)["rents"] == []
     evidence["categories"][0]["items"][0]["evidence_quote"] = "1+1 25000 TL/ay 2026-11-01"
     assert rules.record_for(evidence)["rents"][0]["amount"] == 25000
+
+
+def test_missing_timetable_is_not_interpreted_as_zero_transport_service():
+    record = {"asOf": "2026-11-08", "routes": [{"code": "22B", "route": "Bebek - Kabataş",
+        "officialHeadingVerified": True, "localEvidence": "Bebek durağı", "sources": [{"url": "https://iett.istanbul"}]}]}
+    result = rules.calculate(record)
+    assert result["counts"]["routes"] == 1
+    assert result["scores"]["transportation"] is None

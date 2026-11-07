@@ -1,0 +1,27 @@
+{
+  "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+  "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+  "title": "Jeodezik Deprem Tehlike Haritası",
+  "license": "cc-by-sa-4.0",
+  "checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+  "source_file": "PGA_0.10_50yrs.csv",
+  "creators": [
+    {
+      "name": "Aktuğ, Bahadır",
+      "affiliation": "Ankara Üniversitesi"
+    },
+    {
+      "name": "Şentürk, Murat Doruk",
+      "affiliation": "AFAD"
+    },
+    {
+      "name": "Özsaraç, Vedat",
+      "affiliation": "AFAD"
+    },
+    {
+      "name": "KILIÇ, Nazan",
+      "affiliation": "AFAD"
+    }
+  ],
+  "checked_at": "2026-11-08"
+}

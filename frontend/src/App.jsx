@@ -96,6 +96,7 @@ export default function App() {
   const [listRetryCount, setListRetryCount] = useState(0);
 
   const [loadingReport, setLoadingReport] = useState(false);
+  const [reportPhase, setReportPhase] = useState('checking');
   const [reportError, setReportError] = useState(null);
   const [reportRetryCount, setReportRetryCount] = useState(0);
   const [refreshingAi, setRefreshingAi] = useState(false);
@@ -200,13 +201,16 @@ export default function App() {
 
     const controller = new AbortController();
     setLoadingReport(true);
+    setReportPhase('checking');
     setReportError(null);
 
-    fetchNeighborhoodReport(selectedSlug, { signal: controller.signal })
+    fetchNeighborhoodReport(selectedSlug, { signal: controller.signal,
+      onProgress: phase => { if (!controller.signal.aborted) setReportPhase(phase); } })
       .then((data) => {
         if (controller.signal.aborted) return;
         setReport(data);
         setNeighborhoods(current => current.map(item => item.slug === data.slug ? { ...item,
+          report_available: true,
           overall_score: data.scores?.overall_livability,
           avg_rent_tl: data.rent_analysis?.average_rent_tl,
           suitability_student: data.suitability?.students,
@@ -662,19 +666,19 @@ export default function App() {
                       <span>
                         Kira: <b>{place.avg_rent_tl == null ? 'Kaynakları incele' : `${Number(place.avg_rent_tl).toLocaleString('tr-TR')} TL`}</b>
                       </span>
-                      <span>
+                      {activeSuitability !== null && <span>
                         {activeProfile.buttonLabel}:{' '}
-                        <b>{activeSuitability !== null ? `${activeSuitability}/100` : '—'}</b>
-                      </span>
+                        <b>{`${activeSuitability}/100`}</b>
+                      </span>}
                     </div>
 
                     <div className="card-bottom">
                       <span>
-                        Genel puan{' '}
-                        <strong>
-                          {overallVal !== null ? overallVal : '—'}
+                        {overallVal !== null ? 'Genel puan' : place.report_available ? 'Kaynaklı rapor hazır' : 'İlk keşfe hazır'}{' '}
+                        {overallVal !== null && <strong>
+                          {overallVal}
                           <small>/100</small>
-                        </strong>
+                        </strong>}
                       </span>
                       <button
                         type="button"
@@ -760,7 +764,7 @@ export default function App() {
                             {item.avg_rent_tl == null ? 'Kira bilgisi raporda' : `${Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL`}
                           </small>
                         </div>
-                        <span className="rank-score">{score !== null ? score : '—'}</span>
+                        <span className="rank-score">{score !== null ? score : '↗'}</span>
                       </button>
                     );
                   })
@@ -799,6 +803,8 @@ export default function App() {
             onRefreshAi={handleRefreshAi}
             refreshing={refreshingAi}
             loading={loadingReport}
+            loadingPhase={reportPhase}
+            loadingPlace={neighborhoods.find(item => item.slug === selectedSlug)}
             error={reportError}
             onRetry={() => setReportRetryCount((c) => c + 1)}
             onResetSearch={handleResetFilters}

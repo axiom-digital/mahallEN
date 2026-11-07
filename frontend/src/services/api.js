@@ -11,8 +11,8 @@ export async function fetchNeighborhoods(query = '', profile = '', { signal } = 
 export async function fetchNeighborhoodSuggestions(query, { signal } = {}) {
   return (await suggestPlaces(query, signal)).results;
 }
-export async function fetchNeighborhoodReport(slug, { signal, onPrepare } = {}) {
-  const result = await openPlaceReport(slug, signal, onPrepare);
+export async function fetchNeighborhoodReport(slug, { signal, onPrepare, onProgress } = {}) {
+  const result = await openPlaceReport(slug, signal, onPrepare, onProgress);
   return adaptPlaceReport(result.data);
 }
 export async function fetchSystemHealth({ signal } = {}) {

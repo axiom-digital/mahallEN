@@ -14,25 +14,48 @@ from app.services import place_assessment
 TARGET = {"name": "Erzene", "district": "Bornova", "city": "İzmir"}
 
 
+@pytest.fixture(autouse=True)
+def no_live_geography(monkeypatch):
+    monkeypatch.setattr(research, "collect_geography", lambda target: {})
+
+
+def test_quote_normalization_accepts_formatting_but_not_different_numbers():
+    assert research.quote_matches("Bebek’te 250.000 TL", "Bebek'te\n250.000   TL")
+    assert not research.quote_matches("Bebek’te 25.000 TL", "Bebek'te 250.000 TL")
+
+
+def test_busy_gemini_is_actionable_and_does_not_switch_writer():
+    from google.genai import errors
+    fake = Mock()
+    fake.models.generate_content.side_effect = errors.ServerError(503, {"error": {"message": "busy", "status": "UNAVAILABLE"}})
+    with pytest.raises(research.ResearchUnavailable, match="Flash-Lite"):
+        research.gemini_generate(fake, contents="public source facts")
+    fake.models.generate_content.assert_called_once_with(model=settings.GEMINI_REPORT_MODEL, contents="public source facts")
+    options = research.gemini_http_options()
+    assert options.retry_options.attempts == 2
+    assert 503 in options.retry_options.http_status_codes
+    assert 429 not in options.retry_options.http_status_codes
+
+
 def test_search_deduplicates_urls_preserves_excerpts_and_excludes_empty_or_unsafe_sources(monkeypatch):
     responses = [Mock(json=lambda i=i: {"results": [
         {"url": "https://example.org/park", "content": f"Erzene Bornova park bilgisi {i}"},
         {"url": "http://example.org/unsafe", "content": "Yeterince uzun bir metin"},
         {"url": "https://tavily.com/knowledge/company/x", "content": "Yeterince uzun bir metin"},
         {"url": "https://example.org/empty", "content": ""},
-    ]}) for i in range(5)]
+    ]}) for i in range(10)]
     client = Mock()
     client.post.side_effect = responses
     monkeypatch.setattr(research.httpx, "Client", Mock(return_value=Mock(
         __enter__=Mock(return_value=client), __exit__=Mock(return_value=False))))
     sources, supports = research.collect_sources(TARGET)
-    assert len(sources) == 1 and len(supports) == 5
+    assert len(sources) == 1 and len(supports) == 10
     assert all(s["source_ids"] == ["S1"] for s in supports)
     for call in client.post.call_args_list:
         request = call.kwargs["json"]
         assert all(word in request["query"] for word in TARGET.values())
         assert request["search_depth"] == "basic" and not request["auto_parameters"]
-        assert request["max_results"] == 3
+        assert request["max_results"] == 5
 
 
 def test_tavily_failure_stops_research_without_partial_success(monkeypatch):
@@ -43,7 +66,7 @@ def test_tavily_failure_stops_research_without_partial_success(monkeypatch):
         __enter__=Mock(return_value=client), __exit__=Mock(return_value=False))))
     with pytest.raises(httpx.HTTPStatusError):
         research.collect_sources(TARGET)
-    assert client.post.call_count == 1
+    assert 1 <= client.post.call_count <= 10
 
 
 def test_missing_tavily_key_is_not_cached(client, monkeypatch):
@@ -53,6 +76,25 @@ def test_missing_tavily_key_is_not_cached(client, monkeypatch):
     assert client.post(path).status_code == 503
     assert "Tavily" in client.post(path).json()["detail"]
     assert client.get(path).status_code == 404
+
+
+def test_price_not_present_in_its_listing_quote_never_reaches_the_writer(monkeypatch):
+    monkeypatch.setattr(settings, "GEMINI_API_KEY", "test")
+    monkeypatch.setattr(settings, "TAVILY_API_KEY", "test")
+    sources = {"S1": {"id": "S1", "title": "Erzene ilanı", "url": "https://example.org/listing"}}
+    quote = "Erzene Bornova İzmir 1+1 25.000 TL 01.11.2026"
+    monkeypatch.setattr(research, "collect_sources", Mock(return_value=(sources, [{"text": quote, "source_ids": ["S1"]}])))
+    result = SimpleNamespace(candidates=[SimpleNamespace(finish_reason="STOP")], text=json.dumps({
+        "summary": "Erzene ilanı", "findings": [{"category": "rent_cost", "text": "Erzene 1+1 35.000 TL",
+        "evidence_quote": quote, "source_ids": ["S1"], "details": {"amount_tl": 35000, "rooms": "1+1"}}], "limitations": []}))
+    fake = Mock()
+    fake.models.generate_content.return_value = result
+    monkeypatch.setattr(genai, "Client", Mock(return_value=Mock(__enter__=Mock(return_value=fake), __exit__=Mock(return_value=False))))
+    writer = Mock()
+    monkeypatch.setattr(place_assessment, "assess_place_report", writer)
+    with pytest.raises(research.ResearchUnavailable):
+        research.generate_place_report(TARGET, "identity")
+    writer.assert_not_called()
 
 
 @pytest.mark.parametrize("quote,source_id,finish", [
@@ -70,7 +112,7 @@ def test_gemini_uses_tavily_evidence_and_rejects_unmatched_or_truncated_output(m
     monkeypatch.setattr(research, "collect_sources", Mock(return_value=(sources, supports)))
     result = SimpleNamespace(candidates=[SimpleNamespace(finish_reason=finish)], text=json.dumps({
         "summary": "Park projesi", "findings": [{"category": "social_life", "text": "Park planı var.",
-        "evidence_quote": quote, "source_ids": [source_id]}], "limitations": []}))
+        "evidence_quote": quote, "source_ids": [source_id], "details": {}}], "limitations": []}))
     fake = Mock()
     fake.models.generate_content.return_value = result
     monkeypatch.setattr(genai, "Client", Mock(return_value=Mock(

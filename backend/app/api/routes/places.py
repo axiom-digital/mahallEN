@@ -7,6 +7,7 @@ from app.core.database import get_db
 from app.models.place import Place
 from app.services import place_service, place_research, place_assessment
 from app.services.cache_service import get_cached_report, set_cached_report
+from app.services.research_progress import track
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/places", tags=["Neighborhood search"])
@@ -52,6 +53,16 @@ def require_place(db, identity):
     return place
 
 
+@router.get("/{identity}/report/status")
+def report_status(identity: str, request: Request, db: Session = Depends(get_db)):
+    require_place(db, identity)
+    active = request.app.state.place_report_progress.get(identity)
+    if active:
+        return {"phase": active}
+    cached = get_cached_report(db, "place:" + identity, increment_hit=False)
+    return {"phase": "ready" if cached and place_assessment.is_current_report(cached[0]) else "checking"}
+
+
 @router.get("/{identity}/report")
 def read_report(identity: str, response: Response, db: Session = Depends(get_db)):
     require_place(db, identity)
@@ -79,14 +90,18 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
         if not request.app.state.place_generation_slots.acquire(blocking=False):
             raise HTTPException(429, "Şu anda başka raporlar hazırlanıyor. Biraz sonra tekrar dene.", headers={"Retry-After": "30"})
         try:
-            report = (place_assessment.assess_place_report(cached[0]) if cached is not None
-                      else place_research.generate_place_report(place.target, identity))
+            progress = request.app.state.place_report_progress
+            progress[identity] = "research" if cached is None or place_assessment.needs_research(cached[0]) else "writing"
+            with track(lambda value: progress.__setitem__(identity, value)):
+                report = (place_assessment.assess_place_report(cached[0]) if cached is not None and not place_assessment.needs_research(cached[0])
+                          else place_research.generate_place_report(place.target, identity))
         except place_research.ResearchUnavailable as error:
             raise HTTPException(503, str(error)) from None
         except Exception as error:
             logger.warning("Place research failed: %s", type(error).__name__)
             raise HTTPException(502, "Kaynak araştırması veya rapor servisi yanıt veremedi. Rapor kaydedilmedi; tekrar deneyebilirsin.") from None
         finally:
+            request.app.state.place_report_progress.pop(identity, None)
             request.app.state.place_generation_slots.release()
         set_cached_report(db, "place:" + identity, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v3:rules")
         response.headers["X-Cache"] = "MISS"

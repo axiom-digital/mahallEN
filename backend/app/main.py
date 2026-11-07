@@ -41,6 +41,7 @@ def create_app(database_url: str | None = None) -> FastAPI:
     application.state.ai_refresh_not_before = 0.0
     application.state.place_report_locks = [Lock() for _ in range(32)]
     application.state.place_generation_slots = BoundedSemaphore(2)
+    application.state.place_report_progress = {}
     application.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,

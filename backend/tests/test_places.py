@@ -21,7 +21,7 @@ def discovered(client, monkeypatch):
 def fixture_report(identity):
     return {"place": {"id": identity, **{k: TARGET[k] for k in ("name", "district", "city")}},
         "summary": "Kaynaklı rapor", "reference_date": "2026-11-06", "categories": [],
-        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
+        "origin": "grounded_research_candidate", "research_version": 3, "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
 
 
 def test_empty_search_does_not_return_a_pilot_catalog(client, monkeypatch):
@@ -167,3 +167,45 @@ def test_concurrent_clicks_share_one_generation(client, monkeypatch):
 def test_identity_separates_same_name_in_different_cities():
     assert place_service.place_id(TARGET) != place_service.place_id({**TARGET, "city": "Ankara"})
     assert place_service.place_id(TARGET) == place_service.place_id({**TARGET, "name": "Erzene Mahallesi"})
+
+
+def test_old_shallow_research_is_researched_again_not_only_reworded(client, monkeypatch):
+    path = discovered(client, monkeypatch)
+    identity = path.split("/")[-2]
+    old = {**fixture_report(identity), "research_version": 1}
+    with client.app.state.session_factory() as db:
+        db.add(ReportCache(slug="place:" + identity, report_data=old, model_version="old-research",
+            cached_at=datetime.now(timezone.utc), expires_at=datetime.now(timezone.utc) + timedelta(hours=1), hit_count=0))
+        db.commit()
+    generate = Mock(return_value=fixture_report(identity))
+    assess = Mock(side_effect=AssertionError("Old shallow sources need new search"))
+    monkeypatch.setattr(place_research, "generate_place_report", generate)
+    monkeypatch.setattr(place_assessment, "assess_place_report", assess)
+    assert client.get(path).status_code == 404
+    assert client.post(path).status_code == 201
+    assert client.get(path).status_code == 200
+    generate.assert_called_once()
+
+
+def test_status_tracks_real_phase_and_does_not_increment_report_hits(client, monkeypatch):
+    from app.services.research_progress import phase
+    path = discovered(client, monkeypatch)
+    started, release = Event(), Event()
+    def generate(target, identity):
+        phase("extraction")
+        started.set()
+        assert release.wait(5)
+        return fixture_report(identity)
+    monkeypatch.setattr(place_research, "generate_place_report", generate)
+    assert client.get(path + "/status").json() == {"phase": "checking"}
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        pending = executor.submit(client.post, path)
+        assert started.wait(5)
+        assert client.get(path + "/status").json() == {"phase": "extraction"}
+        release.set()
+        assert pending.result().status_code == 201
+    for _ in range(3):
+        assert client.get(path + "/status").json() == {"phase": "ready"}
+    with client.app.state.session_factory() as db:
+        assert db.query(ReportCache).filter_by(slug="place:" + path.split("/")[-2]).one().hit_count == 0
+    assert not client.app.state.place_report_progress

@@ -22,7 +22,7 @@ def build_briefing(record, calculation):
             room_groups[row.get("rooms", "Belirtilmemiş")].append({
                 "amount": row["amount"], "date": row.get("date"), "rooms": row.get("rooms"),
                 "comparable": bool(row.get("eligible") and 0 <= age(row.get("date"), calculation["as_of"]) <= 90 and not row.get("locationConflict") and row.get("lease") != "seasonal"),
-                "sources": [{"url": s["url"], "title": s.get("publisher", "İlan kaynağı")} for s in row["sources"]],
+                "sources": [{"url": s["url"], "title": s.get("publisher") or s.get("title") or "İlan kaynağı"} for s in row["sources"]],
             })
     rents = []
     for room, rows in sorted(room_groups.items()):
@@ -30,15 +30,15 @@ def build_briefing(record, calculation):
         rents.append({"rooms": room, "sample_count": len(valid), "median": median(r["amount"] for r in valid) if valid else None,
             "min": min((r["amount"] for r in valid), default=None), "max": max((r["amount"] for r in valid), default=None),
             "listings": sorted(rows, key=lambda r: r["date"] or "", reverse=True)})
-    routes = [{"code": r.get("code"), "route": r.get("route"), "local_evidence": r.get("localEvidence"),
-        "sources": [{"url": s["url"], "title": s.get("publisher", "Hat kaynağı")} for s in r.get("sources", [])[:2]]}
+    routes = [{"code": r.get("code"), "route": r.get("route"), "local_evidence": r.get("localEvidence"), "timetable": r.get("timetable", []),
+        "sources": [{"url": s["url"], "title": s.get("publisher") or s.get("title") or "Hat kaynağı"} for s in r.get("sources", [])[:2]]}
         for r in record.get("routes", []) if r.get("officialHeadingVerified") and "kontrol edilmeli" not in r.get("localEvidence", "")]
     venues = [{"id": v.get("id", v["name"]), "name": v["name"], "kind": TYPE_LABELS.get(v.get("type"), "Mekân"),
         "address": v.get("address"), "scope": v.get("scope"), "lat": v.get("lat"), "lon": v.get("lon"),
-        "sources": [{"url": s["url"], "title": s.get("publisher", "Mekân kaynağı")} for s in v.get("sources", [])[:2]]}
+        "sources": [{"url": s["url"], "title": s.get("publisher") or s.get("title") or "Mekân kaynağı"} for s in v.get("sources", [])[:2]]}
         for v in record.get("venues", []) if v.get("scope") != "nearby" and v.get("sources")]
     alerts = [{"text": a["summary"], "date": a.get("date"), "observed_at": a.get("observedAt"), "status": a.get("status"),
-        "sources": [{"url": s["url"], "title": s.get("publisher", "Duyuru kaynağı")} for s in a.get("sources", [])[:2]]}
+        "sources": [{"url": s["url"], "title": s.get("publisher") or s.get("title") or "Duyuru kaynağı"} for s in a.get("sources", [])[:2]]}
         for a in record.get("transportAlerts", []) if a.get("sources")]
     monthly = calculation.get("monthly_rent")
     facts = []

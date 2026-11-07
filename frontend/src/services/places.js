@@ -19,13 +19,29 @@ export async function suggestPlaces(query, signal) {
   return (await request(`/suggest?q=${encodeURIComponent(query.trim())}`, { signal })).data;
 }
 
-export async function openPlaceReport(id, signal, onPrepare = () => {}) {
+export async function openPlaceReport(id, signal, onPrepare = () => {}, onProgress = () => {}) {
   const path = `/${encodeURIComponent(id)}/report`;
   try {
     return await request(path, { signal });
   } catch (error) {
     if (error.status !== 404) throw error;
     onPrepare();
-    return request(path, { method: 'POST', signal });
+    onProgress('research');
+    let timer;
+    let stopped = false;
+    const poll = async () => {
+      try {
+        const result = await request(`${path}/status`, { signal });
+        if (!stopped && !signal?.aborted && ['research', 'extraction', 'writing', 'ready'].includes(result.data.phase)) onProgress(result.data.phase);
+      } catch { /* Progress failure must not discard a successful report request. */ }
+      if (!stopped && !signal?.aborted) timer = setTimeout(poll, 1200);
+    };
+    timer = setTimeout(poll, 600);
+    try {
+      return await request(path, { method: 'POST', signal });
+    } finally {
+      stopped = true;
+      clearTimeout(timer);
+    }
   }
 }

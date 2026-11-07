@@ -30,11 +30,12 @@ sunulmaz. Başlangıç dış servis/LLM çağırmaz ve önceki üretilmiş rapor
 Diğer mahalleler yalnız kullanıcı seçtiğinde hazırlanır.
 
 Yeni araştırmada Tavily Search ile kira, yerel haberler, toplu taşıma, sosyal yaşam
-ve deprem kaynakları için beş `basic` sorgusu yapılır (her biri en fazla üç sonuç).
+ve deprem kaynakları için on `basic` sorgusu yapılır (her biri en fazla beş sonuç).
 HTTPS kaynaklar alınır; tekrarlanan URL'ler birleştirilir, farklı sorgu özetleri
 korunur. Tavily'nin şirket dizini sonuçları kanıt olarak alınmaz. Her kaynak
-özeti en fazla 5.000 karakterdir. Varsayılan basic arama maliyeti, cache kaçıran
-bir rapor için beş Tavily kredisidir; otomatik advanced yükseltme kapalıdır.
+metni, özet ve varsa raw içerikten en fazla 8.000 karakter olarak alınır.
+Kira iki, otobüs/vapur/metro üç, sosyal olanaklar üç ayrı sorguyla araştırılır; otomatik
+advanced yükseltme kapalıdır. Yeni araştırma on Tavily arama isteği kullanır.
 Ardından `google-genai` ile Gemini bu kaynak özetlerini Türkçe JSON raporuna
 çevirir; Gemini Google Search çağırmaz. Çıktının tamamlanması, yerel Pydantic
 şeması (Gemini isteğinde de zorunlu) ve her alıntının belirtilen kaynak metninde birebir bulunması kontrol
@@ -53,7 +54,7 @@ gereklidir. Normal çalışma tek Uvicorn worker'dır.
 
 `TAVILY_API_KEY`, `GEMINI_API_KEY` ve `GEMINI_REPORT_MODEL` yalnız sunucuda
 ayarlanır. Seçili model `gemini-3.5-flash-lite`; kaynak çıkarımı ve rapor metni aynı
-modelle üretilir. Otomatik model veya sağlayıcı değişimi yapılmaz. Tavily sorguları ayrı ayrı 20 sn,
+modelle üretilir. Otomatik model veya sağlayıcı değişimi yapılmaz. Tavily sorguları ayrı ayrı 25 sn,
 Gemini isteği 90 sn ile sınırlıdır. Arama veya model hatasında gizli fallback,
 tekrar döngüsü veya sahte rapor yoktur. Cache TTL `REPORT_CACHE_TTL_SECONDS`
 ile yönetilir. Önceden hazırlanmış cache kayıtları sağlayıcı değişiminde silinmez.
@@ -187,3 +188,93 @@ Doğrulama: 105 backend testi ve frontend üretim derlemesi başarılı. Masaüs
 ve dar ekranda kira filtresi, mekân filtresi ve gerçek harita işaretleri
 kontrol edildi. Yerel cache'deki 14 kayıt Flash-Lite yazıcı kimliğiyle üretildi;
 Cihangir GET aynı JSON ile 200 HIT verdi. Bu yerel cache verisi Git'e eklenmez.
+
+
+## İlk keşif ve kapsamlı araştırma düzeltmesi — 8 Kasım 2026
+
+Mahalle seçimiyle birlikte hareketli keşif haritası ve mahalleye özel bekleme
+ekranı açılır. Yüzde veya süreye bağlı sahte aşamalar gösterilmez. Sunucunun
+`GET /places/{id}/report/status` yanıtı kontrol → araştırma → kaynak çıkarımı →
+rapor yazımı aşamalarını bildirir. Frontend yalnız üretim sırasında bu durumu
+izler; bitişte, hata veya mahalle değişiminde izleme durur. Status sorguları
+raporun cache sayacını artırmaz. Gerçek cache HIT bekletilmeden açılır.
+
+Bebek incelemesinde kaynaklı metnin sonradan dar regex'lerle tekrar çözülmesi,
+ilan/haber tarihlerinin atılması ve resmî hatların kaybolması bulundu. Yeni
+`research_facts.py` modeli ilan tutarı/oda tipi/ödeme dönemi, yayın tarihi,
+mekân adı/türü/adresi ve resmî hat kodlarını yapılandırılmış olarak taşır.
+Hedef mahalle ve kaynak eşleşmesi kontrol edilir. Fiyat ve oda tipi aynı ilan
+alıntısında bulunmalı; önerilen diğer mahalle ilanları karıştırılmaz. Fiyat
+satırından önce tarih bulunması artık fiyat eşlemesini bozmaz. Aylık dönem
+açık değilse ilan yine gösterilir, aylık karşılaştırma puanına katılmaz.
+
+Flash-Lite kaynakları beş kategoriye ayrılmış bağlamlarda işler (aynı anda en
+fazla iki çıkarım isteği), ardından yine Flash-Lite metni yazar. Her kategoriye
+ayrı bulgu bütçesi ayrılır. Alıntılarda yalnız Unicode/boşluk/tipografik tırnak
+normalizasyonu uygulanır; değişen sayı veya kaynak kimliği kabul edilmez.
+`research_version: 2` öncesindeki dinamik cache kayıtları yeni araştırmaya
+alınır; yalnız eski metni yeniden yazmak yeterli sayılmaz. Hata eski kaydı silmez.
+
+Hareket tarifesi eksikliği sıfır ulaşım hizmeti gibi puanlanmaz. Kaynaklı ilan,
+hat, mekân ve bölgesel rapor notları puandan bağımsız görünür. Genel puan
+hesaplanamıyorsa bulgu kapsamı ve sayısal karşılaştırma kapsamı ayrı etiketlenir;
+bulgu sayısı puan yerine konulmaz. Profil metinleri doğrudan okunabilir.
+
+Metin denetimi yayın tarihini olay tarihine dönüştürmeyi, istenen kira bedelini
+gerçekleşmiş kira gibi anlatmayı ve belediye kitapçığı varlığını eksi saymayı
+reddeder. Yalnız bu metin denetimi hatasında aynı modele en fazla bir düzeltme
+isteği yapılır; tekrar başarısızsa sonuç kaydedilmez. Geçici Gemini 500/502/503/504 hatasında aynı model için en fazla bir kısa
+tekrar yapılır. Kota hatası otomatik tekrarlanmaz; model değiştirilmez. Bu sınırlı editoryal kontrol olgusal doğruluk garantisi değildir.
+
+Bebek canlı akışında Tavily'den 36 kaynak geldi; beş kategoride kaynaklı bulgular,
+altı tekil ilan kaydı, on mekân ve iki resmî hat kaydı ekrana taşındı. Kaynakta
+uygun 1+1 aylık kıyas ve yakın PGA noktası bulunmadığından bu puanlar uydurulmadı.
+
+Son kontroller: 121 backend testi ve frontend üretim derlemesi geçti. Etiler
+için gerçek API akışında araştırma → çıkarım → yazım aşamaları gözlendi;
+yeni rapor 26,3 saniyede 201 MISS, sonraki GET aynı JSON ile 200 HIT verdi.
+Masaüstü ve 390 px mobil yükleme görünümü kontrol edildi; yatay taşma yoktu.
+
+
+## Mevcut son davranış — kısa görünüm ve doğrulanmış ek veri
+
+Araştırma sürümü **3**. Önceki dinamik sürümler tamamlanmış yeni rapor sayılmaz.
+Ana raporda bir giriş, konut örnek aralığı ve beş kısa kategori vardır. Uzun
+kaynak/ilan/mekân/tarife listeleri kategori pencerelerine taşındı; Escape ve
+kapatma çalışır. Profil yorumları sekmelidir. Aynı bulgular ikinci bir kart
+ızgarasında tekrar basılmaz. Genel puan yalnız beş kategori tamamlanırsa görünür.
+
+Yeni mahallede isim/ilçe/şehir ile tekil Nominatim eşleşmesi alınır. Eşleşme
+olmazsa konum uydurulmaz. Checksum'u yayıncının canlı API'siyle doğrulanmış
+CC-BY-SA-4.0 PGA gridi `data/geography/` altında lisans bilgisiyle paketlendi.
+En yakın nokta 5 km içinde ise mevcut karşılaştırma kuralı kullanılabilir.
+Bebek'in doğrulanmış temsil noktasındaki araştırma değeri .388 g; uzaklık
+1.3937 km. Bu ölçüm AFAD veya bina dayanıklılığı değerlendirmesi değildir.
+
+İETT kaynaklı ilk üç hattın gerçek resmî sayfasındaki hareket saati endpoint'i
+okunur; yönler, hafta içi/cumartesi/pazar sütunları karıştırılmaz. 22 hattında
+İstinye Dereiçi kalkışlı hafta içi 05:50–22:55 ve 79 yayımlanmış hareket görüldü.
+Bu saatler Bebek durağından geçiş saati değildir. 22B'deki boş hafta içi sütunu
+hafta sonu değerleriyle doldurulmaz. Her iki hattın kaynakları ve tabloları
+kategori penceresinde açılabilir.
+
+İsteğe bağlı OSM mekân toplaması bir ad/id ile eşleşen idarî alanı kullanır;
+yarıçap mahalle sınırı diye sunulmaz. Kısa süre içinde kaynak yanıtlamazsa web
+mekânları korunur ve sıfır mekân sonucu çıkarılmaz. Koordinat olmayan listede
+boş harita gösterilmez. Bu ek toplama için ikinci bir LLM veya sağlayıcı yoktur;
+araştırma ve yazım modeli hâlâ Gemini 3.5 Flash-Lite, web araması Tavily'dir.
+
+Cache servisinde aynı yüklenmiş JSON nesnesinin iç alanları değiştirildiğinde
+SQLAlchemy'nin güncellemeyi atlaması düzeltildi. Yenileme açıkça dirty olarak
+işaretlenir; ayrı oturumdan tekrar okuma regresyonu eklenmiştir. Yayın tarihi
+ile olay tarihi ayrımı ayrıca çıktı normalizasyonu ve doğrulamayla korunur.
+
+Bebek yerel raporunda beş tekil ilan, on mekân, iki resmî hat ve yakın grid
+verisi var. Dört kategori puanı hesaplanıyor. 1+1 aylık karşılaştırma girdisi
+bulunmadığından maliyet/genel puanı uydurulmadı; gerçek 3+1 örnekler görünür.
+
+Son doğrulama: 130 backend testi ve frontend üretim derlemesi başarılı.
+Masaüstü/mobil kategori penceresi, 3+1 → 4+1 filtresi, gerçek İETT saatleri
+ve Escape ile kapanma kontrol edildi. Bebek cache okuması araştırma sürümü 3
+ve Flash-Lite kimliğiyle yapılıyor; bu veri Git dışındaki yerel cache
+içindedir. Dağıtımda yeni dinamik kayıtlar aynı akışla üretilir.

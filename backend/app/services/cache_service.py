@@ -3,13 +3,15 @@ from typing import Any, Dict, Optional, Tuple
 import logging
 
 from sqlalchemy.orm import Session
+from sqlalchemy.orm.attributes import flag_modified
+from copy import deepcopy
 from app.models.report_cache import ReportCache
 
 logger = logging.getLogger(__name__)
 
 
 def get_cached_report(
-    db: Session, slug: str, *, model_version: Optional[str] = None
+    db: Session, slug: str, *, model_version: Optional[str] = None, increment_hit: bool = True
 ) -> Optional[Tuple[Dict[str, Any], int]]:
     """
     Retrieves cached report data if present and not expired.
@@ -35,8 +37,9 @@ def get_cached_report(
         logger.info(f"Cache expired for '{normalized_slug}'")
         return None
 
-    cache_entry.hit_count += 1
-    db.commit()
+    if increment_hit:
+        cache_entry.hit_count += 1
+        db.commit()
     return cache_entry.report_data, cache_entry.hit_count
 
 
@@ -62,7 +65,8 @@ def set_cached_report(
     )
 
     if cache_entry:
-        cache_entry.report_data = report_data
+        cache_entry.report_data = deepcopy(report_data)
+        flag_modified(cache_entry, "report_data")
         cache_entry.model_version = model_version
         cache_entry.cached_at = now
         cache_entry.expires_at = expires_at

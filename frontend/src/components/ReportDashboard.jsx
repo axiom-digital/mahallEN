@@ -1,4 +1,5 @@
 import React from 'react';
+import AssessedReport from './AssessedReport';
 import {
   ShieldCheck,
   Bus,
@@ -111,6 +112,10 @@ export default function ReportDashboard({
         )}
       </div>
     );
+  }
+
+  if (report.assessment) {
+    return <AssessedReport key={report.slug} report={report} onRefreshAi={onRefreshAi} refreshing={refreshing} />;
   }
 
   const {

@@ -94,7 +94,7 @@ export function ScoreBarChart({ scores, idPrefix = 'chart' }) {
   );
 }
 
-export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }) {
+export default function ScoreCard({ title, score, subtitle, icon: Icon, testId, children }) {
   const validScore = normalizeScoreValue(score);
   const style = getScoreBadgeStyle(validScore);
 
@@ -132,6 +132,7 @@ export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }
       )}
 
       {subtitle && <p className="score-card-subtitle">{subtitle}</p>}
+      {children}
     </article>
   );
 }

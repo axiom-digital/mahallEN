@@ -2443,3 +2443,42 @@ dialog h2 {
 .source-finding p { font-size: 14px; line-height: 1.8; margin: 0 0 8px; }
 .source-finding small { display: block; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .source-finding a { display: inline-block; max-width: 100%; overflow-wrap: anywhere; font-size: 11px; color: var(--olive); margin: 10px 10px 0 0; text-underline-offset: 3px; }
+
+/* The report leads with the result; evidence stays available on request. */
+.reading-report { display: flex; flex-direction: column; gap: 24px; }
+.reading-report .report-banner-main h2 { margin: 20px 0 12px; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; font-weight: 500; }
+.reading-report .score-card-item { min-height: 200px; display: flex; flex-direction: column; }
+.reading-report .score-card-subtitle { margin: 14px 0; flex: 1; font-size: 13px; line-height: 1.6; }
+.reading-detail-button { display: inline-flex; align-items: center; gap: 8px; width: fit-content; border: 0; padding: 4px 0; color: var(--green); background: transparent; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; text-align: left; text-underline-offset: 4px; }
+.reading-detail-button:hover { text-decoration: underline; }
+.reading-detail-button:focus-visible, .reading-report summary:focus-visible, .reading-close:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
+.reading-narrative .synthesis-header h3, .reading-category-panel h3, .reading-profiles > h3 { margin: 8px 0 0; font-size: 24px; font-weight: 500; }
+.reading-narrative .synthesis-summary { max-width: 85ch; }
+.reading-narrative .synthesis-summary p { line-height: 1.9; margin: 16px 0; }
+.reading-full-report { margin: 14px 0 24px; }
+.reading-report summary { cursor: pointer; font-size: 13px; line-height: 1.6; font-weight: 600; }
+.reading-report .pros-cons-grid { margin-top: 26px; }
+.reading-report .pros-box h4, .reading-report .cons-box h4 { text-transform: none; font-size: 15px; letter-spacing: 0; }
+.reading-report .suitability-cards-grid { margin-top: 18px; }
+.reading-report .suitability-card > p { font-size: 13px; line-height: 1.7; }
+.reading-profile-note { margin-top: 18px; }
+.reading-profile-note p { font-size: 13px; line-height: 1.9; }
+.reading-methodology > summary { font-size: 15px; }
+.reading-methodology > p { font-size: 12px; line-height: 1.8; margin-top: 20px; color: var(--muted); }
+.reading-disclaimer { margin: 0; font-size: 11px; line-height: 1.8; color: var(--muted); }
+.reading-close { border: 0; background: transparent; color: inherit; padding: 6px; cursor: pointer; }
+.reading-category-panel { scroll-margin-top: 28px; }
+.reading-finding { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.reading-finding > p { margin: 0 0 8px; font-size: 14px; line-height: 1.8; }
+.reading-finding time { font-size: 11px; color: var(--muted); }
+.reading-source-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 10px; }
+.reading-source-links a { display: inline-flex; align-items: center; gap: 3px; max-width: 100%; overflow-wrap: anywhere; color: var(--olive); font-size: 12px; }
+.reading-source-links details summary, .reading-item-note summary { font-size: 11px; font-weight: 400; }
+.reading-source-links details a { display: flex; margin-top: 8px; }
+.reading-item-note { margin-top: 10px; color: var(--muted); }
+.reading-item-note p { font-size: 12px; line-height: 1.8; }
+@media (max-width: 760px) {
+  .reading-report .score-card-item { min-height: 180px; }
+  .reading-report .synthesis-header { gap: 16px; align-items: start; }
+  .reading-narrative .synthesis-header h3 { font-size: 22px; }
+}

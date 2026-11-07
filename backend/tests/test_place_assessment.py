@@ -16,6 +16,22 @@ def test_weighted_scores_require_all_categories_and_preserve_real_zero():
     assert assessment.weighted_score(categories, assessment.CATEGORY_WEIGHTS) is None
 
 
+@pytest.mark.parametrize("text", [
+    "Üç ilandan mahalle genelinde konut piyasası bu seviyede seyretmektedir.",
+    "1+1 için ortalama aylık kira 23.000 TL olarak hesaplandı.",
+    "Güzergâhlar aktif olarak kullanılmaktadır.",
+])
+def test_report_rejects_observed_unsupported_generalizations(text):
+    with pytest.raises(place_research.ResearchUnavailable):
+        assessment.validate_narrative(SimpleNamespace(executive_summary=text), {})
+
+
+def test_report_rejects_read_date_relabelled_as_announcement_date():
+    record = {"transportAlerts": [{"observedAt": "2026-10-28", "date": None}]}
+    with pytest.raises(place_research.ResearchUnavailable):
+        assessment.validate_narrative(SimpleNamespace(executive_summary="2026-10-28 tarihli resmî duyuruda durak erişimi anlatıldı."), record)
+
+
 def test_failed_upgrade_preserves_saved_evidence(client, monkeypatch):
     from app.models.report_cache import ReportCache
     from app.services import place_service

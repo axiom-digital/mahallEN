@@ -52,8 +52,8 @@ kullanıcıya hata olarak döner; gizli tekrar döngüsü veya model değişimi 
 gereklidir. Normal çalışma tek Uvicorn worker'dır.
 
 `TAVILY_API_KEY`, `GEMINI_API_KEY` ve `GEMINI_REPORT_MODEL` yalnız sunucuda
-ayarlanır. Varsayılan model `gemini-3.5-flash-lite`; farklı desteklenen Gemini
-modeli ortam değişkeniyle seçilebilir. Tavily sorguları ayrı ayrı 20 sn,
+ayarlanır. Seçili model `gemini-3.5-flash-lite`; kaynak çıkarımı ve rapor metni aynı
+modelle üretilir. Otomatik model veya sağlayıcı değişimi yapılmaz. Tavily sorguları ayrı ayrı 20 sn,
 Gemini isteği 90 sn ile sınırlıdır. Arama veya model hatasında gizli fallback,
 tekrar döngüsü veya sahte rapor yoktur. Cache TTL `REPORT_CACHE_TTL_SECONDS`
 ile yönetilir. Önceden hazırlanmış cache kayıtları sağlayıcı değişiminde silinmez.
@@ -116,7 +116,8 @@ cd backend
 python scripts/prepare_place_reports.py
 ```
 
-Komut iki paralel Gemini işiyle çalışır; geçerli tam raporları atlar. Başarısız
+Komut varsayılan olarak tek Gemini işiyle çalışır; geçerli tam raporları atlar.
+`--workers 2` açıkça seçilebilir; `--rewrite-text` metin ve okuma detaylarını yeniler. Başarısız
 kayıtlar korunur, gizli sağlayıcı/anahtar değişimi yapılmaz. API başlangıcı LLM
 çağırmaz. Ana sayfada kayıtlı mahalleler yine otomatik listelenmez.
 
@@ -156,3 +157,33 @@ güncel saha ölçümü, suç oranı veya bina dayanıklılığı değildir.
 boş veride 50 üretilmemesi, aynı olayın tekrar sayılmaması, kaynak dışı aylık
 kira varsayılmaması, uzak PGA noktasının elenmesi, gerçek 0'ın korunması ve
 bilinen Kötekli girdileriyle hesapların tekrarlanabilirliği.
+
+
+## Güncel rapor akışı ve okuma ekranı — 7 Kasım 2026
+
+Kullanıcının seçtiği akış **Tavily Search → Gemini `gemini-3.5-flash-lite`**.
+Tavily kaynak arar; Flash-Lite hem kaynak çıkarımını hem Türkçe raporu yazar.
+Alternatif yazıcı ayarı ve otomatik model fallback'i yoktur. Puanlar mevcut
+`rules-v1` kurallarıyla hesaplanır. Yukarıdaki v2 bölümü tarihsel kayıttır;
+model puanı ve kısmi toplam yaklaşımı kullanılmaz.
+
+Cache geçerliliği şema sürümü yanında `writer_model` eşleşmesini de gerektirir.
+Başka yazıcıyla oluşturulmuş kayıt GET HIT sayılmaz; kaynakları korunarak
+seçili yazıcıyla yeniden hazırlanır. Üretim başarısızsa eski satır ezilmez.
+
+`place_briefing.py` puanlamayla aynı girdilerden oda tiplerine göre kira örnekleri,
+resmî hatlar, mekânlar ve tarihli bildirimler hazırlar. Ekranda oda tipi filtresi,
+türüne göre mekân listesi ve yalnız koordinatı bulunan kayıtların Leaflet
+haritası vardır. Harita konumu bilinmeyen mekânlara koordinat uydurmaz.
+Okuma tarihi ile yayın tarihi ayrı alanlardır. Kaynak referans tarihi görünür.
+
+Yazıcıya yinelenen yönlendirme URL'leri yerine sınırlı, okunabilir kaynak
+metinleri ve çeşitli mekân örnekleri gönderilir; gerçek kaynak bağlantıları
+raporda saklanır. Metin kontrolü örneklerden mahalle geneline atlama, ilan
+medyanını ortalama diye sunma ve belirli tarihsiz devam iddialarını reddeder.
+Bu kontroller tam olgusal incelemenin yerine geçmez.
+
+Doğrulama: 105 backend testi ve frontend üretim derlemesi başarılı. Masaüstü
+ve dar ekranda kira filtresi, mekân filtresi ve gerçek harita işaretleri
+kontrol edildi. Yerel cache'deki 14 kayıt Flash-Lite yazıcı kimliğiyle üretildi;
+Cihangir GET aynı JSON ile 200 HIT verdi. Bu yerel cache verisi Git'e eklenmez.

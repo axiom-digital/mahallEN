@@ -56,7 +56,7 @@ def require_place(db, identity):
 def read_report(identity: str, response: Response, db: Session = Depends(get_db)):
     require_place(db, identity)
     cached = get_cached_report(db, "place:" + identity)
-    if cached is None or cached[0].get("report_version") != 3:
+    if cached is None or not place_assessment.is_current_report(cached[0]):
         raise HTTPException(404, "Bu mahalle için tam rapor henüz hazırlanmadı.")
     response.headers["X-Cache"] = "HIT"
     response.headers["X-Cache-Hits"] = str(cached[1])
@@ -71,7 +71,7 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
     lock = request.app.state.place_report_locks[int(identity[:8], 16) % 32]
     with lock:
         cached = get_cached_report(db, "place:" + identity)
-        if cached is not None and cached[0].get("report_version") == 3:
+        if cached is not None and place_assessment.is_current_report(cached[0]):
             response.headers["X-Cache"] = "HIT"
             return cached[0]
         if not settings.REPORT_CACHE_ENABLED:

@@ -3,6 +3,7 @@ from datetime import datetime, timedelta, timezone
 from threading import Event
 from unittest.mock import Mock
 
+from app.core.config import settings
 from app.models.place import Place
 from app.models.report_cache import ReportCache
 from app.services import place_service, place_research, place_assessment
@@ -20,7 +21,7 @@ def discovered(client, monkeypatch):
 def fixture_report(identity):
     return {"place": {"id": identity, **{k: TARGET[k] for k in ("name", "district", "city")}},
         "summary": "Kaynaklı rapor", "reference_date": "2026-11-06", "categories": [],
-        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test", "report_version": 3}
+        "origin": "grounded_research_candidate", "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
 
 
 def test_empty_search_does_not_return_a_pilot_catalog(client, monkeypatch):
@@ -41,7 +42,7 @@ def test_search_can_discover_a_neighborhood_outside_saved_ten(client, monkeypatc
 
 def test_saved_sources_are_upgraded_once_without_search_and_full_report_is_cached(client, monkeypatch):
     generate = Mock(side_effect=AssertionError("Search must not run for saved evidence"))
-    assess = Mock(side_effect=lambda evidence: {**evidence, "report_version": 3, "assessment": {"test": True}})
+    assess = Mock(side_effect=lambda evidence: {**evidence, "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL, "assessment": {"test": True}})
     monkeypatch.setattr(place_research, "generate_place_report", generate)
     monkeypatch.setattr(place_assessment, "assess_place_report", assess)
     found = client.get("/api/v1/places/search?q=Caferağa").json()["results"]
@@ -68,6 +69,24 @@ def test_new_place_is_generated_once_and_next_read_and_post_hit_cache(client, mo
         assert next_response.status_code == 200 and next_response.headers["x-cache"] == "HIT"
         assert next_response.json() == first.json()
     generate.assert_called_once()
+
+
+def test_cache_from_another_model_is_not_served_as_flash_lite(client, monkeypatch):
+    path = discovered(client, monkeypatch)
+    identity = path.split("/")[-2]
+    wrong = {**fixture_report(identity), "writer_model": "gemini-2.5-flash"}
+    with client.app.state.session_factory() as db:
+        db.add(ReportCache(slug="place:" + identity, report_data=wrong, model_version="old-writer",
+            cached_at=datetime.now(timezone.utc), expires_at=datetime.now(timezone.utc) + timedelta(hours=1), hit_count=0))
+        db.commit()
+    assert client.get(path).status_code == 404
+    upgrade = Mock(return_value=fixture_report(identity))
+    monkeypatch.setattr(place_assessment, "assess_place_report", upgrade)
+    assert client.post(path).status_code == 201
+    result = client.get(path)
+    assert result.status_code == 200 and result.headers["x-cache"] == "HIT"
+    assert result.json()["writer_model"] == settings.GEMINI_REPORT_MODEL
+    upgrade.assert_called_once()
 
 
 def test_failure_does_not_create_cache_and_expired_previous_report_is_preserved(client, monkeypatch):

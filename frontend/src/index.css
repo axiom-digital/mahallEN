@@ -2482,3 +2482,66 @@ dialog h2 {
   .reading-report .synthesis-header { gap: 16px; align-items: start; }
   .reading-narrative .synthesis-header h3 { font-size: 22px; }
 }
+
+/* Editorial report: one clear introduction, then useful category views. */
+.reading-report { gap: 32px; }
+.reading-report .report-banner-card { background: transparent; color: var(--ink); padding: 0 0 28px; border-radius: 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) 220px; align-items: start; gap: 48px; }
+.reading-report .report-pill-badge { background: transparent; padding: 0; color: var(--muted); font-size: 13px; }
+.reading-report .report-banner-main h2 { font-size: clamp(38px, 5vw, 64px); font-weight: 600; letter-spacing: -2px; margin: 18px 0; }
+.reading-report .report-banner-main .reading-lead { color: var(--ink); font-size: 18px; line-height: 1.75; max-width: 640px; margin: 0 0 18px; }
+.reading-source-date { color: var(--muted); font-size: 12px; }
+.reading-report .report-banner-stats { display: block; background: var(--green); color: var(--paper); border: 0; border-radius: 12px; padding: 24px; min-width: 0; }
+.reading-report .banner-stat-number { font-size: 64px; line-height: 1.2; margin-top: 12px; }
+.reading-report .banner-stat-number small { font-size: 18px; }
+.reading-report .banner-stat-divider { display: none; }
+.reading-report .banner-meta-list { margin-top: 16px; }
+.reading-report .banner-meta-list dt, .reading-report .banner-stat-label { color: #dbe5dd; }
+.reading-report .score-card-item { background: #fffefa; min-height: 190px; padding: 20px; border-radius: 10px; }
+.reading-report .score-card-title { font-size: 14px; }
+.reading-report .score-card-head { gap: 6px; }
+.reading-report .score-card-icon { width: 30px; height: 30px; }
+.reading-report .score-card-title-wrap { gap: 8px; }
+.reading-report .score-card-track { height: 5px; }
+.reading-report .score-card-badge { padding: 3px 7px; font-size: 11px; }
+.reading-report .reading-narrative { background: transparent; border: 0; padding: 4px 0 10px; }
+.reading-report .reading-narrative .synthesis-header h3 { font-size: 30px; }
+.reading-report .reading-narrative .synthesis-summary { max-width: 88ch; font-size: 16px; }
+.reading-report .pros-box, .reading-report .cons-box { background: transparent; border: 0; border-radius: 0; padding: 4px 24px; border-left: 2px solid var(--olive); }
+.reading-report .cons-box { border-left-color: var(--rust); }
+.reading-report .suitability-card { background: transparent; }
+.reading-filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0; }
+.reading-filter-row button { border: 1px solid var(--line); border-radius: 30px; padding: 7px 16px; background: transparent; color: var(--ink); font-size: 13px; cursor: pointer; }
+.reading-filter-row button.active { background: var(--green); border-color: var(--green); color: var(--paper); }
+.reading-rent-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px 0; border-block: 1px solid var(--line); }
+.reading-rent-summary span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.reading-rent-summary strong { font-size: 20px; font-weight: 500; }
+.reading-map-caption { font-size: 12px; line-height: 1.8; color: var(--muted); margin: 14px 0; }
+.reading-listings article { display: grid; grid-template-columns: 1fr auto; gap: 8px 18px; border-bottom: 1px solid var(--line); padding: 18px 0; }
+.reading-listings article strong { font-size: 20px; font-weight: 500; display: block; }
+.reading-listings article span { font-size: 12px; color: var(--muted); }
+.reading-listings .reading-source-links { grid-column: 1 / -1; }
+.reading-listing-status { align-self: center; border: 1px solid var(--line); border-radius: 20px; padding: 4px 10px; }
+.reading-social-layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 28px; align-items: start; }
+.reading-venue-list { max-height: 540px; overflow-y: auto; padding-right: 14px; }
+.reading-venue-list article { border-bottom: 1px solid var(--line); padding: 18px 8px; }
+.reading-venue-list article.is-selected { background: var(--lime); }
+.reading-venue-list h4 { font-size: 19px; margin: 5px 0; }
+.reading-venue-list p, .reading-route-list p { font-size: 13px; line-height: 1.8; margin: 5px 0; }
+.reading-venue-list small { font-size: 11px; color: var(--muted); }
+.venue-map { height: 470px; width: 100%; border: 1px solid var(--line); border-radius: 10px; z-index: 0; background: var(--soft); }
+.reading-route-list article { display: flex; align-items: start; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.reading-route-code { display: inline-flex; flex-shrink: 0; justify-content: center; min-width: 64px; padding: 10px; border-radius: 8px; background: var(--green); color: var(--paper); font-size: 18px; }
+.reading-route-list h4 { margin: 0 0 8px; font-size: 18px; font-weight: 500; }
+.reading-notices { margin-top: 28px; }
+.reading-notices > p { font-size: 12px; color: var(--muted); }
+@media (max-width: 760px) {
+  .reading-report .report-banner-card { grid-template-columns: 1fr; gap: 24px; }
+  .reading-report .report-banner-stats { display: flex; gap: 28px; align-items: center; }
+  .reading-report .banner-stat-number { font-size: 48px; }
+  .reading-report .banner-meta-list { margin-top: 0; }
+  .reading-rent-summary { grid-template-columns: 1fr; gap: 14px; }
+  .reading-social-layout { grid-template-columns: 1fr; }
+  .reading-venue-list { max-height: 400px; }
+  .venue-map { height: 340px; }
+  .reading-route-list article { gap: 12px; }
+}

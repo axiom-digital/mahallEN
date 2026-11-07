@@ -86,7 +86,8 @@ def cached_available(db, identity):
     if not row:
         return False
     expires = row.expires_at.replace(tzinfo=timezone.utc) if row.expires_at.tzinfo is None else row.expires_at
-    return expires > datetime.now(timezone.utc) and row.report_data.get("report_version") == 3
+    from app.services.place_assessment import is_current_report
+    return expires > datetime.now(timezone.utc) and is_current_report(row.report_data)
 
 
 def public_place(db, row):

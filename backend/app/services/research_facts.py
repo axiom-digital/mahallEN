@@ -6,10 +6,10 @@ from urllib.parse import urlparse
 from pydantic import BaseModel, ConfigDict, Field
 from app.services.place_service import normalize
 
-RESEARCH_VERSION = 3
+RESEARCH_VERSION = 4
 OFFICIAL_TRANSPORT = {"ulasim.muttas.com.tr", "eshot.gov.tr", "iett.istanbul", "iett.istanbul.tr",
     "ego.gov.tr", "metro.istanbul", "izmir.bel.tr", "izdeniz.com.tr", "sehirhatlari.istanbul",
-    "ulasim.istanbul", "burulas.com.tr", "estram.com.tr"}
+    "ulasim.istanbul", "burulas.com.tr", "estram.com.tr", "ulasim.mersin.bel.tr"}
 
 
 class FactDetails(BaseModel):
@@ -107,7 +107,7 @@ def grounded_record(location, reference_date, findings, sources, supports):
         elif f.category == "social_life" and details.name and (normalize(details.name) in text or
                 re.sub(r"\W", "", normalize(details.name)) in re.sub(r"\W", "", text)):
             allowed = {"cafe", "restaurant", "fast_food", "bar", "pub", "nightclub", "live_music", "supermarket",
-                "convenience", "marketplace", "park", "playground", "community_centre", "arts_centre", "cinema",
+                "convenience", "marketplace", "bakery", "park", "playground", "community_centre", "arts_centre", "cinema",
                 "theatre", "library", "sports_centre", "fitness_centre"}
             if details.venue_type not in allowed:
                 continue

@@ -130,26 +130,9 @@ def calculate(record, as_of=None):
     transport = min(rounded(connections*7.5 + service + frequency + night + weekend - penalty), cap) if routes and any(times) else None
 
     venues = list({v.get("id", v.get("name")): v for v in record.get("venues", []) if v.get("scope") != "nearby" and v.get("sources")}.values())
-    types = {v["type"] for v in venues}
-    group_points = sum(bool(types & group) for group in GROUPS) * 10
-    food = " ".join(v["name"] for v in venues if v["type"] in GROUPS[0])
-    styles = sum(bool(re.search(pattern, food, re.I)) for pattern in ["döner|dürüm|kebap|köfte|pide|lahmacun", "burger|tost|sandviç", "pizza|caesars", "ev yemek|lokanta|esnaf|çorba", "sushi|asya|hint mutfa|çin mutfa|meksika|vegan|vejetaryen"])
-    activity = 2 if any(f.get("sources") and f.get("sentiment") == "positive" and re.search("aktivite|kafe dışı", f.get("criterion", ""), re.I) and 0 <= age(f.get("date"), today) <= 90 for f in record.get("assessments", {}).get("social_life", [])) else 0
-    menus = [v for v in venues if v.get("menuPrices") and 0 <= age(v.get("menuVerifiedAt"), today) <= 90]
-    social = rounded(group_points + min(10, styles*2) + (5 if types & GROUPS[5] else 0) + (3 if types & {"sports_centre", "fitness_centre"} else 0) + activity + (10 if len(menus) >= 3 else 5 if menus else 0)) if venues else None
-
-    incidents = {}
-    for n in record.get("news", []):
-        days = age(n.get("date"), today)
-        if not (0 <= days <= 365 and n.get("sources") and re.search("suç|şiddet|asayiş", n.get("type", ""))):
-            continue
-        text = n["summary"].lower()
-        severity = 20 if re.search("ölüm|öldür|yaşamını yitir|hayatını kaybet", text) else 10 if re.search("ateş|silah|bıçak|darp|yarala", text) else 8 if re.search("hırsız|soygun|gasp", text) else 0
-        if severity:
-            key = n["date"] + re.sub(r"\W", "", text, flags=re.ASCII)[:90]
-            incidents[key] = severity * (.5 if days > 180 else 1)
-    penalties = sorted(incidents.values(), reverse=True)
-    safety = rounded(50 - penalties[0] - min(5, penalties[1] if len(penalties) > 1 else 0)) if penalties else None
+    # A search sample is not a census, and press coverage is not a crime rate.
+    social = None
+    safety = None
 
     hazard = record.get("hazard", {})
     value = hazard.get("value")
@@ -163,8 +146,8 @@ def calculate(record, as_of=None):
     reasons = {
         "rent_cost": f"1+1 son 90 günlük tarihli ilan örnekleri: {len(rents)}. Medyan: {monthly} TL/ay. Net asgari ücret referansı: {income['amount']} TL. Kira/gelir oranı açıklanmış eşiklere uygulanır; gerçekleşen kira veya mahalle ortalaması değildir." if rent is not None else "Ödeme dönemi/tarihi doğrulanmış karşılaştırılabilir 1+1 örneği bulunmadı; nötr 50 verilmedi.",
         "transportation": f"Resmî hat kaydı: {len(routes)}. Hedef bağlantıları {connections*7.5}/30; hizmet yayılımı {service}/15; tarife aralığı {frequency}/15; gece {night}/10; hafta sonu {weekend}/10; yol/güzergâh bildirimi etkisi -{penalty}; erişim sınırı {cap}. Gerçek gecikme ölçülmedi." if transport is not None else f"{len(routes)} resmî hat kaydı var; karşılaştırılabilir hareket saatleri eksik olduğundan puan üretilmedi. Hat bilgileri raporda korunur.",
-        "social_life": f"Kaynaklı mekân {len(venues)}; olanak türleri {group_points}/60, yemek çeşitleri ipucu {min(10, styles*2)}/20, kültür/spor/aktivite {(5 if types & GROUPS[5] else 0)+(3 if types & {'sports_centre','fitness_centre'} else 0)+activity}/10. Menü fiyatı doğrulanmış işletme: {len(menus)}. Sayım hizmet kalitesi ölçümü değildir.",
-        "safety_news": f"Haber temelli düşük güvenli proje göstergesi: 50 başlangıçtan en güçlü iki tarihli asayiş kaydının etkisi çıkarılır. Değerlendirilen olay: {len(penalties)}. Suç oranı veya kişisel güvenlik tahmini değildir." if safety is not None else "Puanlanabilir tarihli asayiş kaydı yok; haber bulunmaması güvenli mahalle anlamına gelmez, 50 verilmez.",
+        "social_life": "Aramada bulunan mekânlar örnektir; eksik liste sosyal yaşam kalitesine sayısal puan vermez.",
+        "safety_news": "Tekil haberler suç oranı veya mahalle güvenliği ölçümü değildir; güvenlik puanı hesaplanmaz.",
         "earthquake_hazard": f"Akademik PGA grid değeri {value} g; ters grid yüzdeliği {seismic}/100. Grid uzaklığı {hazard.get('gridDistance')} km. Bina dayanıklılığı veya resmî AFAD güvenlik puanı değildir." if seismic is not None else "Kaynaklı ve en fazla 5 km uzaklıkta PGA grid noktası yok; bina güvenliği puanı üretilmedi.",
     }
     return {"scores": scores, "reasons": reasons, "monthly_rent": monthly,

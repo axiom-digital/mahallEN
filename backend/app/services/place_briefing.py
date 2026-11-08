@@ -6,7 +6,7 @@ from app.services.rule_scoring import age
 
 TYPE_LABELS = {"cafe": "Kafe", "restaurant": "Restoran", "fast_food": "Yeme içme",
     "bar": "Bar", "pub": "Pub", "nightclub": "Gece kulübü", "live_music": "Canlı müzik",
-    "supermarket": "Market", "convenience": "Market", "marketplace": "Pazar",
+    "bakery": "Fırın", "fitness_centre": "Spor salonu", "sports_centre": "Spor alanı", "supermarket": "Market", "convenience": "Market", "marketplace": "Pazar",
     "park": "Park", "playground": "Oyun alanı", "community_centre": "Kültür merkezi",
     "arts_centre": "Sanat merkezi", "cinema": "Sinema", "theatre": "Tiyatro", "library": "Kütüphane"}
 
@@ -45,9 +45,9 @@ def build_briefing(record, calculation):
     if monthly is not None:
         facts.append(f"Tarihli {calculation['rent_sample_count']} adet 1+1 ilanının medyanı {money(monthly)}.")
     if routes:
-        facts.append(f"Kaynaklarda {len(routes)} resmî hat ve {len(venues)} mekân kaydı bulunuyor.")
+        facts.append(f"Kaynaklarda {len(routes)} resmî hat ve {len(venues)} örnek mekân kaydı derlendi; bu sayı mahalle toplamı değildir.")
     elif venues:
-        facts.append(f"Mahalle ve çevresinden {len(venues)} mekân kaydı var.")
+        facts.append(f"Kaynak taramasında {len(venues)} örnek mekân kaydı derlendi; mahalle toplamı değildir.")
     if alerts:
         facts.append("Ulaşım kararında tarihli yol ve erişim duyurularını da hesaba kat.")
     return {"version": 1, "overview": " ".join(facts) or "Bu mahalleyi kaynaklı bulgular ve kategori ayrıntılarıyla incele.",

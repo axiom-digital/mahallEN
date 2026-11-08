@@ -10,6 +10,7 @@ from app.services.place_briefing import build_briefing
 from app.services.research_progress import phase
 from app.services.research_facts import RESEARCH_VERSION
 from app.services.place_service import normalize
+from app.services.report_quality import evidence_view, INFORMATIONAL_REASONS
 
 CATEGORY_WEIGHTS = {"rent_cost": 32, "social_life": 28, "safety_news": 20, "earthquake_hazard": 10, "transportation": 10}
 PROFILE_WEIGHTS = {
@@ -47,6 +48,10 @@ def validate_narrative(parsed, record):
     summary = parsed.executive_summary.casefold()
     all_text = " ".join([parsed.executive_summary, *getattr(parsed, "pros", []), *getattr(parsed, "cons", []),
         getattr(parsed, "student_verdict", ""), getattr(parsed, "family_verdict", ""), getattr(parsed, "professional_verdict", "")]).casefold()
+    # The writer may format dates, but cannot introduce a different ISO date.
+    source_dates = set(re.findall(r"\b20\d{2}-\d{2}-\d{2}\b", json.dumps(record, ensure_ascii=False)))
+    if set(re.findall(r"\b20\d{2}-\d{2}-\d{2}\b", all_text)) - source_dates:
+        raise ResearchUnavailable("Metindeki tarih kaynak kayıtlarıyla eşleşmedi; kaynak tarihlerini değiştirmeden yeniden yaz.")
     unsupported = ("mahalle genelinde konut piyasası", "güncel kiralama bedelleri", "aktif olarak kullanılmaktadır",
                    "yoğun öğrenci nüfusu", "güvenli bir mahalle", "deprem açısından güvenli", "devam etmektedir", "devam ediyor", "halen sürmektedir",
                    "kiraya verilmektedir", "kiralanmaktadır", "alternatifi bulunmadığını", "üst gelir grubuna hitap", "ulaşımı kolaylaştır")
@@ -134,19 +139,26 @@ def with_score_summary(report):
     assessment = report.get("assessment")
     if not assessment or not assessment.get("categories"):
         return report
-    categories = [SimpleNamespace(category=c["category"], score=c.get("score")) for c in assessment["categories"]]
+    report = evidence_view(report)
+    category_rows = [{**c, "score": None, "rationale": INFORMATIONAL_REASONS[c["category"]], "scoring_status": "informational"}
+        if c["category"] in INFORMATIONAL_REASONS else c for c in assessment["categories"]]
+    categories = [SimpleNamespace(category=c["category"], score=c.get("score")) for c in category_rows]
+    meaningful_total = sum(c.score is not None and c.category in {"rent_cost", "transportation"} for c in categories) == 2
     missing = [c.category for c in categories if c.score is None]
     covered_weight = sum(CATEGORY_WEIGHTS[c.category] for c in categories if c.score is not None)
     return {**report, "assessment": {**assessment,
-        "overall_score": weighted_score(categories, CATEGORY_WEIGHTS),
-        "profile_scores": {key: weighted_score(categories, weights) for key, weights in PROFILE_WEIGHTS.items()},
+        "categories": category_rows,
+        "calculation": {**assessment.get("calculation", {}), "scores": {
+            **assessment.get("calculation", {}).get("scores", {}), "social_life": None, "safety_news": None}},
+        "overall_score": weighted_score(categories, CATEGORY_WEIGHTS) if meaningful_total else None,
+        "profile_scores": {key: weighted_score(categories, weights) if meaningful_total else None for key, weights in PROFILE_WEIGHTS.items()},
         "coverage": len(categories) - len(missing), "missing_categories": missing,
-        "weight_coverage": covered_weight, "partial": bool(missing), "score_summary_version": 2,
-        "methodology": "Kategori puanları açıklanmış proje kurallarıyla hesaplanır; Gemini puan vermez. "
-        "Ağırlıklar: maliyet %32, sosyal yaşam %28, haber göstergesi %20, deprem araştırma gridi %10, ulaşım %10. "
-        "Genel ön puan, mevcut kategori puanlarının ağırlıklı ortalamasıdır; eksik kategoriler hesaba katılmaz ve kalan ağırlıklar yeniden ölçeklenir. "
-        f"Kapsam {len(categories)-len(missing)}/5 kategori; kullanılan ağırlık %{covered_weight}. "
-        "Kısmi kapsamlı ön puan tam veriyle hesaplanan sonuçla eşdeğer değildir. Haber göstergesi suç oranı; deprem göstergesi bina dayanıklılığı değildir."}}
+        "weight_coverage": covered_weight, "partial": bool(missing), "score_summary_version": 3, "overall_ready": meaningful_total,
+        "methodology": "Mekân araması bir örnek derlemesidir; mahalledeki bütün işletmeleri saymaz ve sosyal yaşam kalitesini puanlamaz. Tekil haberler güvenlik veya suç oranı puanına çevrilmez. "
+        "Kira ve ulaşımın ikisi de sayısal karşılaştırmaya uygun değilse genel puan verilmez; yalnız deprem gridiyle mahalle kalitesi yargılanmaz. "
+        "Uygun veride maliyet, ulaşım ve deprem araştırma göstergelerinin mevcut ağırlıklarıyla sınırlı bir ön puan hesaplanır. "
+        f"Mevcut sayısal başlık: {len(categories)-len(missing)}. Deprem araştırma göstergesi bina dayanıklılığı değildir."}}
+
 
 
 def detailed_evidence(evidence, record):
@@ -187,7 +199,7 @@ def assess_place_report(evidence):
         raise ResearchUnavailable("Tam rapor için sunucuda Gemini API anahtarı yapılandırılmalı.")
     phase("writing")
     record = rule_scoring.record_for(evidence)
-    evidence = detailed_evidence(evidence, record)
+    evidence = evidence_view(detailed_evidence(evidence, record))
     calculated = rule_scoring.calculate(record)
     briefing = build_briefing(record, calculated)
     package = narrative_package(evidence, calculated, briefing)
@@ -207,6 +219,7 @@ def assess_place_report(evidence):
         "venue_examples varsa executive_summary içinde en az bir mekanın adını kaynaktaki gibi açıkça yaz. "
         "Sonuçları abartma: mekân kaydı öğrenci nüfusunu, hattın varlığı kısa yolculuğu, gece hattı da gece güvenliğini kanıtlamaz. "
         "Öğrenci nüfusu, kampüse yakınlık, merkez mesafesi veya aileye uygunluk girdide yoksa bunları varsayma. "
+        "Bulunan mekân sayısını mahallenin toplam işletme sayısı gibi kullanma. Az kaynak bulunmasını az sosyal olanak veya düşük kalite diye yorumlama. Haberlerden mahalle güvenliği, sakinlik veya suç oranı sonucu çıkarma. "
         "Pros/cons her biri 0–4 kısa somut madde olsun; desteklenen eksi yoksa cons boş dizi olabilir. Belediye raporu veya kitapçığının varlığı tek başına eksi değildir. Aynı iddia hem paragrafta hem iki listede tekrar edilmesin. "
         "Profil yorumları en fazla iki cümle: ilgili konut tipi/fiyat örneği ve günlük ulaşım/erişim koşulu. Genel geçer cazip görünmektedir gibi dolgu kullanma. "
         "observed_at ve officialCheckedAt yalnız okuma/kontrol tarihidir; bunları duyuru yayın tarihi veya olay tarihi olarak yazma. Tarihi olmayan resmî sayfalar için kontrol tarihinde sayfada görüldü de. Kaynak tarihini açık tut. İlan MEDYANI ortalama değildir; ortalama kira ifadesini kullanma. Tarihli duyurular için geçmiş zaman kullan: duyurulmuştu, bildirildi, kayıtta yer alıyor. Çalışmalar devam ediyor veya aktif kullanılmaktadır gibi bugün hâlâ geçerli olduğunu varsayan cümleler kullanma. Bilinmeyeni 50/dengeli diye yorumlama; düşük puanı da kesin kötü hizmet sayma. "

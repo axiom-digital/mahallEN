@@ -6,8 +6,8 @@ from app.services import rule_scoring as rules
 def test_kotekli_uses_the_detailed_research_and_existing_rubric():
     record = rules.matched_record({"name": "Kötekli", "district": "Menteşe", "city": "Muğla"})
     result = rules.calculate(record)
-    assert result["scores"] == {"rent_cost": 18, "transportation": 35, "social_life": 73,
-                                "safety_news": 25, "earthquake_hazard": 23}
+    assert result["scores"] == {"rent_cost": 18, "transportation": 35, "social_life": None,
+                                "safety_news": None, "earthquake_hazard": 23}
     assert len(record["venues"]) == 44 and len(record["routes"]) == 4
     assert result["counts"] == {"rents": 8, "venues": 40, "routes": 3, "news": 8}
     assert rules.matched_record({"name": "Kötekli", "district": "Başka İlçe", "city": "Muğla"}) is None
@@ -29,7 +29,14 @@ def test_extra_coverage_of_the_same_incident_does_not_multiply_its_effect():
              "sources": [{"url": "https://example.org/news"}]}
     one = rules.calculate({"asOf": "2026-11-07", "news": [event]})
     many = rules.calculate({"asOf": "2026-11-07", "news": [deepcopy(event) for _ in range(10)]})
-    assert one["scores"]["safety_news"] == many["scores"]["safety_news"] == 30
+    assert one["scores"]["safety_news"] is many["scores"]["safety_news"] is None
+
+
+def test_search_sample_size_does_not_grade_neighborhood_social_quality():
+    venue = {"name": "Örnek Kafe", "type": "cafe", "sources": [{"url": "https://example.org/cafe"}]}
+    for count in (0, 3, 40):
+        result = rules.calculate({"asOf": "2026-11-08", "venues": [deepcopy(venue) for _ in range(count)]})
+        assert result["scores"]["social_life"] is None
 
 
 def test_grid_comparison_is_computed_and_rejects_far_away_points():

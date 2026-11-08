@@ -22,12 +22,28 @@ def test_partial_summary_is_visible_and_explains_exactly_what_is_missing():
     scores = {"rent_cost": None, "social_life": 40, "safety_news": 40, "earthquake_hazard": 12, "transportation": 40}
     raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in scores.items()]}}
     result = assessment.with_score_summary(raw)["assessment"]
-    assert result["overall_score"] == 36
-    assert result["coverage"] == 4 and result["weight_coverage"] == 68
-    assert result["missing_categories"] == ["rent_cost"] and result["partial"]
-    assert result["profile_scores"] == {"students": 36, "families": 31, "professionals": 35}
+    assert result["overall_score"] is None
+    assert result["coverage"] == 2 and result["weight_coverage"] == 20
+    assert result["missing_categories"] == ["rent_cost", "social_life", "safety_news"] and result["partial"]
+    assert all(value is None for value in result["profile_scores"].values())
+    assert result["categories"][1]["scoring_status"] == 'informational'
     assert result["categories"][0]["score"] is None
     assert "overall_score" not in raw["assessment"]
+
+
+def test_general_summary_requires_both_cost_and_transport_comparisons():
+    scores = {"rent_cost": 60, "social_life": 20, "safety_news": 10, "earthquake_hazard": 56, "transportation": 80}
+    raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in scores.items()]}}
+    result = assessment.with_score_summary(raw)["assessment"]
+    assert result['overall_ready'] and result['overall_score'] == 63
+    raw['assessment']['categories'][0]['score'] = None
+    assert assessment.with_score_summary(raw)['assessment']['overall_score'] is None
+
+
+def test_writer_cannot_change_a_source_iso_date():
+    with pytest.raises(place_research.ResearchUnavailable, match='tarih'):
+        assessment.validate_narrative(SimpleNamespace(executive_summary='2026-10-06 tarihinde yayımlanan haber.'),
+            {'news': [{'date': '2026-10-16', 'date_basis': 'publication_date'}]})
 
 
 @pytest.mark.parametrize("text", [

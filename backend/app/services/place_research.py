@@ -59,7 +59,7 @@ class Finding(BaseModel):
 class Synthesis(BaseModel):
     model_config = ConfigDict(extra="forbid")
     summary: str = Field(min_length=1, max_length=2000)
-    findings: list[Finding] = Field(max_length=50)
+    findings: list[Finding] = Field(max_length=100)
     limitations: list[str] = Field(max_length=12)
 
 
@@ -84,35 +84,42 @@ def research_queries(location):
     topics = [
         ('kiralık daire 1+1 aylık kira ilan tarihi', None),
         ('kiralık daire 2+1 3+1 fiyat ilan tarihi', None),
-        ('otobüs hatları durak güzergah', ["iett.istanbul", "eshot.gov.tr", "ego.gov.tr", "ulasim.muttas.com.tr", "burulas.com.tr", "estram.com.tr"]),
-        ('vapur iskele hat sefer tarifesi -iptal', ["sehirhatlari.istanbul", "metro.istanbul", "izdeniz.com.tr", "ego.gov.tr"]),
+        ('otobüs hatları durak güzergah belediye resmi', None),
+        ('vapur iskele hat sefer tarifesi -iptal', None),
         ('metro tramvay istasyon hat', None),
-        ('kafe restoran kahve mekan adres', None),
-        ('park kütüphane kültür spor belediye', None),
-        ('market süpermarket mağaza adres', None),
-        ('yerel haber silahlı saldırı hırsızlık olay 2026', None),
+        ('kafe kahve adres', ['yandex.com.tr', 'google.com/maps']),
+        ('restoran lokanta adres', ['yandex.com.tr', 'google.com/maps']),
+        ('market süpermarket fırın adres', ['yandex.com.tr', 'google.com/maps']),
+        ('spor salonu halı saha adres', ['yandex.com.tr', 'google.com/maps']),
+        ('park kütüphane kültür merkezi belediye', None),
+        ('yerel haber belediye gelişmeler', None),
         ('deprem zemin jeoloji AFAD belediye rapor', None),
     ]
     return [(f"{place} Mahallesi {topic}", domains) for topic, domains in topics]
 
 
 def collect_sources(location):
-    """Ten complementary searches, bounded parallel requests and attributed excerpts."""
+    """Separate venue types so one short search cannot stand for the whole area."""
     sources, supports, seen = {}, [], set()
     with httpx.Client(timeout=25) as client:
         def search(query):
             text, domains = query
-            payload = {"query": text, "search_depth": "basic", "max_results": 5,
+            social = any(word in text for word in ('kafe kahve', 'restoran lokanta', 'market süpermarket', 'spor salonu', 'park kütüphane'))
+            payload = {"query": text, "search_depth": "basic", "max_results": 10 if social else 5, "country": "turkey",
                 "include_answer": False, "include_raw_content": "text", "auto_parameters": False}
             if domains:
                 payload["include_domains"] = domains
+            else:
+                payload["exclude_domains"] = ["rocketreach.co", "yelp.com", "mapquest.com"]
+            if 'yerel haber' in text:
+                payload["time_range"] = "year"
             response = client.post("https://api.tavily.com/search",
                 headers={"Authorization": f"Bearer {settings.TAVILY_API_KEY}"}, json=payload)
             response.raise_for_status()
             return response.json().get("results", [])
         with ThreadPoolExecutor(max_workers=3) as executor:
             results = list(executor.map(search, research_queries(location)))
-    query_categories = ["rent_cost", "rent_cost", "transportation", "transportation", "transportation", "social_life", "social_life", "social_life", "safety_news", "earthquake_hazard"]
+    query_categories = ["rent_cost"] * 2 + ["transportation"] * 3 + ["social_life"] * 5 + ["safety_news", "earthquake_hazard"]
     for items, category in zip(results, query_categories):
         for item in items:
             url = item.get("url", "")
@@ -202,7 +209,7 @@ def generate_place_report(target, identity):
         return parsed.model_copy(update={"findings": [f for f in parsed.findings if f.category == category]})
     with ThreadPoolExecutor(max_workers=2) as executor:
         batches = [batch for batch in executor.map(extract, CATEGORY_LABELS) if batch]
-    budgets = {"rent_cost": 10, "safety_news": 8, "transportation": 12, "social_life": 14, "earthquake_hazard": 6}
+    budgets = {"rent_cost": 10, "safety_news": 8, "transportation": 12, "social_life": 40, "earthquake_hazard": 6}
     parsed = Synthesis(summary=" ".join(batch.summary for batch in batches)[:2000],
         findings=[f for batch in batches for f in batch.findings[:budgets[batch.findings[0].category] if batch.findings else 0]],
         limitations=list(dict.fromkeys(note for batch in batches for note in batch.limitations))[:12])
@@ -222,6 +229,8 @@ def generate_place_report(target, identity):
             if not all(primary(sources[key]) for key in ids):
                 continue
         if finding.category != "earthquake_hazard" and normalize(location["name"]) not in normalize(local_context):
+            continue
+        if finding.category == "social_life" and not all(normalize(location[key]) in normalize(local_context) for key in ("city", "district")):
             continue
         if ids <= sources.keys() and any(quote_matches(finding.evidence_quote, support["text"]) and ids <= set(support["source_ids"]) for support in supports):
             findings.append(finding)

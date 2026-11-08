@@ -21,7 +21,7 @@ def discovered(client, monkeypatch):
 def fixture_report(identity):
     return {"place": {"id": identity, **{k: TARGET[k] for k in ("name", "district", "city")}},
         "summary": "Kaynaklı rapor", "reference_date": "2026-11-06", "categories": [],
-        "origin": "grounded_research_candidate", "research_version": 3, "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
+        "origin": "grounded_research_candidate", "research_version": 4, "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
 
 
 def test_empty_search_does_not_return_a_pilot_catalog(client, monkeypatch):

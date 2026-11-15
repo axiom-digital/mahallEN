@@ -1,5 +1,7 @@
 # Muğla pilotu — düzenlenebilir statik veri seti v1
 
+**#32 / 10 mahalle veri teslimi (6 Kasım 2026):** LLM rapor hazırlama adımının yeni girdisi `data/pilot_neighborhoods.json` dosyasıdır. Tekil kayıtlar, kaynak kontrolü ve checksum manifesti `data/issue32/` altındadır. Akyaka esas alındı; kullanıcı onayıyla İzmir kaydı Konak/Kültür olarak düzeltildi. [Kapsam, eksikler, veri sözlüğü ve yeniden üretme](../docs/ISSUE32_DATA_HANDOFF.md). Bu paket ayrı veri teslimidir; mevcut beş mahallelik uygulama/rapor dosyalarını otomatik değiştirmez.
+
 Kapsam: Kötekli, Emirbeyazıt, Muslihittin, Orhaniye (Menteşe); Akyaka (Ula). Bu ilk statik teslim gerçek kaynak izleri içerir. Olgusal kaynak kontrolü tamamlanmış bir envanter veya resmî güvenlik/afet ölçümü değildir.
 
 ## Dosyalar

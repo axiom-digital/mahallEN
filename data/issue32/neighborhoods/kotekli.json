@@ -1,0 +1,537 @@
+{
+  "schema_version": "2.0.0",
+  "id": "kotekli",
+  "geo_key": "tr/mugla/mentese/kotekli",
+  "country": "Türkiye",
+  "name": "Kötekli",
+  "district": "Menteşe",
+  "city": "Muğla",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "kotekli-identity",
+    "target_id": "kotekli",
+    "category": "identity",
+    "evidence_quotes": [
+      "Kötekli Mahallesi"
+    ],
+    "text": "Muğla / Menteşe / Kötekli",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "mentese-identity"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "kotekli-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 37.1660283,
+    "lon": 28.3833896,
+    "label": "Kötekli, Menteşe, Muğla, Ege Bölgesi, 48050, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8607003436,
+    "source_id": "geocode-kotekli",
+    "checked_at": "2026-11-05T22:18:09.359975+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-19904867",
+          "target_id": "kotekli",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 29,500 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Kötekli Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 31 Ekim 2026",
+            "29.500 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 29500,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-10-31",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-19904867"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-19904867",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20045866",
+          "target_id": "kotekli",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Kötekli Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 01 Kasım 2026",
+            "45.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 45000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-01",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20045866"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20045866",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20030342",
+          "target_id": "kotekli",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 22,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Kötekli Mahallesi, Menteşe , Muğla",
+            "İlan Güncelleme Tarihi 27 Ekim 2026",
+            "22.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 22000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-10-27",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20030342"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20030342",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "kotekli-news",
+          "target_id": "kotekli",
+          "category": "safety_news",
+          "text": "1 Eylül 2026 tarihli haber Kötekli'deki bir evde iki kişinin ölü bulunduğunu aktarıyor; kesin adli sonuç bu kayıttan çıkarılamaz.",
+          "evidence_quotes": [
+            "Kötekli Mahallesi’ndeki bir apartmandan silah sesleri",
+            "Muğla’nın Menteşe ilçesinde"
+          ],
+          "event_type": "reported_death_investigation",
+          "date": "2026-09-01",
+          "date_basis": "publication_date",
+          "event_date": null,
+          "limitations": "Kişisel tanımlayıcılar aktarılmadı. Haber sayısı suç oranı değildir.",
+          "source_ids": [
+            "news-kotekli"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "kotekli-news",
+          "publication_date": "2026-09-01"
+        }
+      ],
+      "missing_reason": null
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "kotekli-route-1-66",
+          "target_id": "kotekli",
+          "category": "transportation",
+          "text": "MUTTAŞ 1-66 hattının yayımlanmış durak listesinde Kötekli Muhtarlık bulunuyor.",
+          "evidence_quotes": [
+            "1-66 - Menteşe Otogar - Yeniköy",
+            "KÖTEKLİ MUHTARLIK"
+          ],
+          "code": "1-66",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": null,
+          "date_basis": "undated_operator_page",
+          "limitations": "Durak listesi kontrol edildi; canlı araç konumu, duraktan geçiş saati ve erişim süresi doğrulanmadı.",
+          "source_ids": [
+            "muttas-1-66"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "kotekli-route-1-66",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "kotekli-sports-ground",
+          "target_id": "kotekli",
+          "category": "social_life",
+          "text": "Belediyenin tablosu M.S.K.Ü. Futbol Sahası'nı Kötekli satırında listeliyor.",
+          "evidence_quotes": [
+            "KÖTEKLİ M.S.K.Ü. Futbol Sahası"
+          ],
+          "name": "M.S.K.Ü. Futbol Sahası",
+          "type": "sports_ground",
+          "latitude": 37.168789,
+          "longitude": 28.376464,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_municipal_inventory",
+          "limitations": "Üniversite tesisi; halka serbest giriş, güncel açık olma ve kullanım koşulları doğrulanmadı.",
+          "source_ids": [
+            "mentese-parks"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "kotekli-sports-ground",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.351,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.351,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 37.1755,
+          "longitude": 28.38371,
+          "pga_g": 0.351
+        },
+        "distance_to_grid_point_km": 1.0536,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-19904867",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867",
+      "publisher": "Muğla Kampüs Emlak Muğla Menteşe Kötekli Mahallesi 2+1 Oda Kiralık Daire 29,500 TL #19904867 | Emlakjet",
+      "checked_at": "2026-11-05T22:15:58.209359+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "21b4b0fe465c4ce1d08a3056b614e94ece7967dd370f66ba340ba5d96cfba4ca"
+    },
+    {
+      "id": "emlakjet-20030342",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-genis-11-esyali-kiralik-daire-20030342",
+      "final_url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-genis-11-esyali-kiralik-daire-20030342",
+      "publisher": "Muğla Kampüs Emlak Muğla Menteşe Kötekli Mahallesi 1+1 Oda Kiralık Daire 22,000 TL #20030342 | Emlakjet",
+      "checked_at": "2026-11-05T22:15:59.300527+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "fe21fd7e276177f0df7f096172a1407b6485f042865cad092834f2be09340ef7"
+    },
+    {
+      "id": "emlakjet-20045866",
+      "url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866",
+      "final_url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866",
+      "publisher": "Kötekli Emlak Muğla Menteşe Kötekli Mahallesi 3+1 Oda Kiralık Daire 45,000 TL #20045866 | Emlakjet",
+      "checked_at": "2026-11-05T22:15:58.725718+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "397640d4b76e5be91903d124af5792557348e4bf2c916ee3d14ecc30adc8a353"
+    },
+    {
+      "id": "geocode-kotekli",
+      "url": "https://nominatim.openstreetmap.org/search?q=K%C3%B6tekli%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=K%C3%B6tekli%2C+Mente%C5%9Fe%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:09.359975+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "979f7cb9f15054c8d81235dacea806a89d742b19acc9430f0631a9c0e2d1a9f5"
+    },
+    {
+      "id": "mentese-identity",
+      "url": "https://mentese.bel.tr/cop-saatleri/",
+      "final_url": "https://mentese.bel.tr/cop-saatleri/",
+      "publisher": "Çöp Alma Saatleri – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:13:02.667057+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05"
+    },
+    {
+      "id": "mentese-parks",
+      "url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "final_url": "https://mentese.bel.tr/afet-ve-acil-durum-toplanma-alanlari/",
+      "publisher": "Afet ve Acil Durum Toplanma Alanları – T.C. Menteşe Belediyesi",
+      "checked_at": "2026-11-05T22:14:29.900540+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3"
+    },
+    {
+      "id": "muttas-1-66",
+      "url": "https://ulasim.muttas.com.tr/hat/1-66-mentese-otogar-yenikoy-128",
+      "final_url": "https://ulasim.muttas.com.tr/hat/1-66-mentese-otogar-yenikoy-128",
+      "publisher": "1-66 - Menteşe Otogar - Yeniköy | MUTTAŞ Otobüs Sefer Saatleri",
+      "checked_at": "2026-11-05T22:13:04.306519+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "aa6017532d210442850c652363a2e3ba91c9d7d5de4916f5d78fd80f6df41b02"
+    },
+    {
+      "id": "news-kotekli",
+      "url": "https://anlatilaninotesi.com.tr/20260901/muglada-supheli-olum-2-kisi-basindan-vurulmus-halde-bulundu-1108411144.html",
+      "final_url": "https://anlatilaninotesi.com.tr/20260901/muglada-supheli-olum-2-kisi-basindan-vurulmus-halde-bulundu-1108411144.html",
+      "publisher": "Muğla'da şüpheli ölüm: 2 kişi başından vurulmuş halde bulundu - 01.09.2026, Sputnik Türkiye",
+      "checked_at": "2026-11-05T22:21:13.611980+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "18e06082d60e45360629f7031b72f16b1258458f44924064da0ff08e126f0e13"
+    }
+  ],
+  "excluded_observations": [
+    {
+      "id": "legacy-abce2e9c812f55",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-c6935cfec981e8",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-a04658201edf6b",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-e6c0043785e095",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-e436a600da61e1",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-a126b475a4c3d2",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-36800010fe17f7",
+      "category": "rent_cost",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-016489fc63dbae",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-f218f254397ada",
+      "category": "safety_news",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ece33114a54cc4",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-a6166027981741",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-cf53533d0fe5d1",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-ff35a1bda4e0d9",
+      "category": "transportation",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-88bc639be08501",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-68d5d496395cbd",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-882172a1611b18",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-7f6785da85639e",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-c75551e8b0bf4a",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-af9ce94084e933",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-596442444cfa4c",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    },
+    {
+      "id": "legacy-af31e9c98af025",
+      "category": "social_life",
+      "archive_file": "data/neighborhoods/kotekli.json",
+      "reason": "Legacy search-supported candidate is not automatically promoted; only newly checked narrow claims are admitted."
+    }
+  ],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

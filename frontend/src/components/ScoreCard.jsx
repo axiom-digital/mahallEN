@@ -12,7 +12,7 @@ export function getScoreBadgeStyle(score) {
   if (validScore === null) {
     return {
       tone: 'missing',
-      label: 'Veri bekleniyor',
+      label: 'Yeterli veri yok',
     };
   }
   if (validScore >= 80) {
@@ -72,7 +72,7 @@ export function ScoreBarChart({ scores, idPrefix = 'chart' }) {
                 className="bar-track is-missing"
                 aria-label={`${item.label}: sayısal puan verisi henüz mevcut değil`}
               >
-                <span className="bar-missing-tag">Veri bekleniyor</span>
+                <span className="bar-missing-tag">Yeterli veri yok</span>
               </div>
             )}
 
@@ -94,7 +94,7 @@ export function ScoreBarChart({ scores, idPrefix = 'chart' }) {
   );
 }
 
-export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }) {
+export default function ScoreCard({ title, score, subtitle, icon: Icon, testId, children }) {
   const validScore = normalizeScoreValue(score);
   const style = getScoreBadgeStyle(validScore);
 
@@ -110,7 +110,7 @@ export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }
           <h4 className="score-card-title">{title}</h4>
         </div>
         <span className={`score-card-badge tone-${style.tone}`}>
-          {validScore !== null ? `${validScore}/100` : 'Veri bekleniyor'}
+          {validScore !== null ? `${validScore}/100` : 'Yeterli veri yok'}
         </span>
       </div>
 
@@ -132,6 +132,7 @@ export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }
       )}
 
       {subtitle && <p className="score-card-subtitle">{subtitle}</p>}
+      {children}
     </article>
   );
 }

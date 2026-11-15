@@ -1,0 +1,1140 @@
+{
+  "kotekli-sports-ground": {
+    "claim_sha256": "3aa03e3b9b5abb61928d959412d66e2c6ff1f3f4fd72deb1857a0fd3983fdbc6",
+    "checks": [
+      {
+        "source_id": "mentese-parks",
+        "quotes": [
+          "KÖTEKLİ M.S.K.Ü. Futbol Sahası"
+        ],
+        "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3",
+        "text_sha256": "2ffa58c697c875d85c7d21969ba1b0847c59209034c5dd545787a9f6c9ca9d3f",
+        "checked_at": "2026-11-05T22:14:29.900540+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "muslihittin-route-1-9": {
+    "claim_sha256": "d5874d843763f39f5f49a2dc79d9045053f2d9b8c8d2e549e1af8a749e644cd9",
+    "checks": [
+      {
+        "source_id": "muttas-1-9",
+        "quotes": [
+          "1-9 - Besko (Adliye) - Şehir İçi",
+          "NAZIM HİKMET PARKI"
+        ],
+        "response_sha256": "95325a1dcb406fa07dc91e8ebb1efb40493e85e9daa56fb8a95dc4213302a716",
+        "text_sha256": "699b5b2fc13083015c64c8ac0122753eebbc3f16272bb641cef1fe095545b8db",
+        "checked_at": "2026-11-05T22:13:04.307942+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      },
+      {
+        "source_id": "mentese-parks",
+        "quotes": [
+          "MUSLİHİTTİN Nazım Hikmet Parkı"
+        ],
+        "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3",
+        "text_sha256": "2ffa58c697c875d85c7d21969ba1b0847c59209034c5dd545787a9f6c9ca9d3f",
+        "checked_at": "2026-11-05T22:14:29.900540+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "kotekli-route-1-66": {
+    "claim_sha256": "a296911a3e5d23f3533f37825e676b3a55fa45c85d13dd59d20a3826dc80c631",
+    "checks": [
+      {
+        "source_id": "muttas-1-66",
+        "quotes": [
+          "1-66 - Menteşe Otogar - Yeniköy",
+          "KÖTEKLİ MUHTARLIK"
+        ],
+        "response_sha256": "aa6017532d210442850c652363a2e3ba91c9d7d5de4916f5d78fd80f6df41b02",
+        "text_sha256": "f7a55ab6f92aa466dde5ab36bdd9c7fcf44f2184449d3e688c7dbe08c683130a",
+        "checked_at": "2026-11-05T22:13:04.306519+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "orhaniye-route-1-61": {
+    "claim_sha256": "7f8f8015c3b60c04d931a6e0f9daf27b10c8e8f385756cfb00222007e86aa622",
+    "checks": [
+      {
+        "source_id": "muttas-1-61",
+        "quotes": [
+          "1-61 - Muğla (Menteşe) - Sungur",
+          "Kalkış Durağı Orhaniye Cami Durağı"
+        ],
+        "response_sha256": "07665d9653d7f34c999640521f049b0e777adc8dce4efaf721fa614580677316",
+        "text_sha256": "3ee2b965988d3884a32359da83125c7b694af33806a191fe3774ec2fde28128b",
+        "checked_at": "2026-11-05T22:13:03.659688+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "akyaka-route-12-5": {
+    "claim_sha256": "db3ebaf95c6f5133ced15f5a1b1782a9327b8f0a0f692f0c1f42426b72ba4470",
+    "checks": [
+      {
+        "source_id": "muttas-12-5",
+        "quotes": [
+          "12-5 - Menteşe - Akyaka",
+          "AKYAKA MEYDAN",
+          "AKYAKA GARAJ"
+        ],
+        "response_sha256": "4bf756a52b038d9aea1ad6954ad8726ee82c90e84820093ef86224c97b3936be",
+        "text_sha256": "81781901dceb0fd4857bf5b593d26d58dc7681e7c12c77541af218e2549139ad",
+        "checked_at": "2026-11-05T22:13:04.426549+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "muslihittin-park": {
+    "claim_sha256": "161634aabb78a2b7059762b0a771ae10f158326a4df32f2adcb708ecd2446435",
+    "checks": [
+      {
+        "source_id": "mentese-parks",
+        "quotes": [
+          "MUSLİHİTTİN Nazım Hikmet Parkı"
+        ],
+        "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3",
+        "text_sha256": "2ffa58c697c875d85c7d21969ba1b0847c59209034c5dd545787a9f6c9ca9d3f",
+        "checked_at": "2026-11-05T22:14:29.900540+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emirbeyazit-park": {
+    "claim_sha256": "75e7f75eea4679067933541ad959a5bffb14d962118fd857345f8ebf177bf32c",
+    "checks": [
+      {
+        "source_id": "mentese-parks",
+        "quotes": [
+          "EMİRBEYAZIT 2000 Derneği Dayanışma Parkı"
+        ],
+        "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3",
+        "text_sha256": "2ffa58c697c875d85c7d21969ba1b0847c59209034c5dd545787a9f6c9ca9d3f",
+        "checked_at": "2026-11-05T22:14:29.900540+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "orhaniye-park": {
+    "claim_sha256": "51657c3f80aa2fe025ef16937e6aff1c1ad9301fe37226050c71f1cc21eb9a78",
+    "checks": [
+      {
+        "source_id": "mentese-parks",
+        "quotes": [
+          "ORHANİYE Kışla Parkı"
+        ],
+        "response_sha256": "48fe327debb469096e7adc6e298cde89db347695c39d464e104f1acbe39a9da3",
+        "text_sha256": "2ffa58c697c875d85c7d21969ba1b0847c59209034c5dd545787a9f6c9ca9d3f",
+        "checked_at": "2026-11-05T22:14:29.900540+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "caferaga-library": {
+    "claim_sha256": "a366535fa9c7f753f70ad1fe2cbe0bc5f7edab8826a28250ae4bd80269420ab6",
+    "checks": [
+      {
+        "source_id": "kadikoy-tesak",
+        "quotes": [
+          "Tarih, Edebiyat ve Sanat Kütüphanesi"
+        ],
+        "response_sha256": "3405ddf49db395c3f2ee3ed195a3adc18fecd3b3272f5f293e4008ffc71e141d",
+        "text_sha256": "b27c578c14042b6e0226dc7e96c903d653669ab7e4437882c66c44e665e4345a",
+        "checked_at": "2026-11-05T22:13:02.666272+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "caferaga-t3": {
+    "claim_sha256": "e089da182e53a1ea0c47d5a4a34ff144aafe9a1cba62e0ee8154fecc98dc3c39",
+    "checks": [
+      {
+        "source_id": "metro-t3",
+        "quotes": [
+          "Moda İlkokulu, Moda, Rızapaşa, Mühürdar, Damga Sokak"
+        ],
+        "response_sha256": "88222ece0d6ac6a05d996d4992ec05d3670a07939299b995fcbac949ef9c3b69",
+        "text_sha256": "c37929595b9103b3061bf14f49bffedd3584fd4f38b1b1a244824fd5eaebad91",
+        "checked_at": "2026-11-05T22:13:55.423835+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      },
+      {
+        "source_id": "metro-t3-address",
+        "quotes": [
+          "Caferağa Mahallesi Mühürdar Caddesi Damga Sokak No.4 Kadıköy/İstanbul"
+        ],
+        "response_sha256": "eef2cd912f4af5e9ed45427d47a07e1b4eae37d97f44b99dddf4260898627835",
+        "text_sha256": "87547a167904b57ad9dabe6de8fcc121d08fc7ba7db5a7421e22776d9f157301",
+        "checked_at": "2026-11-05T22:13:55.329813+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "bahcelievler-448": {
+    "claim_sha256": "c9077db08356e32b9cba9caa108eafdde47bccf2fa80e194dd48fa9b65819be7",
+    "checks": [
+      {
+        "source_id": "ego-448",
+        "quotes": [
+          "Hat No : 448 Hat Adı : BEŞEVLER-BAHÇELİEVLER"
+        ],
+        "response_sha256": "a5517948f1b4e606a7a304641e19938b8d71a9a8861c882d616ac1f7b8da1ccf",
+        "text_sha256": "8e0c62be3c47ed75b5999600de4d69648fab361018ea7a481930d6c075f515fb",
+        "checked_at": "2026-11-05T22:13:53.184122+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "bahcelievler-park": {
+    "claim_sha256": "b552d05de4008be73d1bffa50fe1492b57817aadc479d2d0e7385bb855dd07dd",
+    "checks": [
+      {
+        "source_id": "cankaya-park",
+        "quotes": [
+          "Bahçelievler’deki Bahriye Üçok Parkı"
+        ],
+        "response_sha256": "3dd009f00c82c3db821ec5dc556aa41d2b80bfbda75a98fc78a8eaa1df84cf43",
+        "text_sha256": "47def312423693e0488eb907d1b74592e4ea9bbc59cafbc0e26d91a726a621a7",
+        "checked_at": "2026-11-05T22:14:29.901128+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      },
+      {
+        "source_id": "cankaya-identity",
+        "quotes": [
+          "Bahçelievler Ebru Acer Yıldırım Bahriye Üçok Parkı İçi"
+        ],
+        "response_sha256": "345b4e320076fbca7ac0c07b08a57c2bf2643723c04d8e3263bde7b2b182dcfc",
+        "text_sha256": "573bb8fa6ceeeacf521d248c83f6b778cbdd39b9fc88c5ea12e77596d016fb02",
+        "checked_at": "2026-11-05T22:13:52.664373+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "kultur-art": {
+    "claim_sha256": "957e57274df38f5d00a5f62c04ff61b6333be450d304a52da2d151cbae4568e2",
+    "checks": [
+      {
+        "source_id": "izmir-arts",
+        "quotes": [
+          "Arkas Sanat Merkezi Kültür Mahallesi, 1380 . Sk. 3-1, 35230 Konak/İzmir"
+        ],
+        "response_sha256": "ea9cf8af8513f86f0f5f783770a2629126beeedd024b224597384f361b7531e9",
+        "text_sha256": "0ef036ee615e2aa9a2e48a6b49796cc9f83f5dbd8430032ac7807ab590d3d2af",
+        "checked_at": "2026-11-05T22:16:55.233185+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "yenibaglar-youth": {
+    "claim_sha256": "da66a7bfe94492a5a64c6290fc72f2ffae4f64ea573aaeda448a24576150f43b",
+    "checks": [
+      {
+        "source_id": "tepebasi-youth",
+        "quotes": [
+          "29 Ekim Gençlik Merkezi",
+          "Yenibağlar Mahallesi Akıcı Sokak No:54"
+        ],
+        "response_sha256": "3be9afdd1e0b365933ad8a66e72fad5dc43d10ddbd872576918f65f0f906deb1",
+        "text_sha256": "8c166d08a381719944496ee8dcb315a66ba690fb803b3d565eb3c9ff7d23e4bb",
+        "checked_at": "2026-11-05T22:13:56.317682+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "gorukle-sport": {
+    "claim_sha256": "5813cb6a748e950408e070188829c30de1e44036c4d0bd2d84842c3b91020372",
+    "checks": [
+      {
+        "source_id": "nilufer-sport",
+        "quotes": [
+          "Görükle Spor Parkı"
+        ],
+        "response_sha256": "06c601470531bf40e21454b0e8cbab5ce4d0c2cb4ff1a67ba3ffb67c12ad49d2",
+        "text_sha256": "010fe6ff1aec40f686032a3b0b34143fae132f92a7d5ed88b829a37891690632",
+        "checked_at": "2026-11-05T22:13:55.971217+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "gorukle-road": {
+    "claim_sha256": "ec8035348d558043563dc40a3e0c8595b0fe38b1fc8a59e8382d0b432bf5a9f0",
+    "checks": [
+      {
+        "source_id": "bursa-road",
+        "quotes": [
+          "Nilüfer ilçesi Görükle Mahallesi’nin",
+          "Atatürk Bulvarı’nda, yol yapım faaliyetleri aralıksız devam ediyor."
+        ],
+        "response_sha256": "12a9e39fa2a6bcdef9d5a96f763f020cd143deaf32ea37f9091184570d6ec4af",
+        "text_sha256": "0ffa5cee4e99ab6f124b3da9edbe2e8245e7ad5ab214a393d55401771837815e",
+        "checked_at": "2026-11-05T22:13:52.260597+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "akyaka-culture": {
+    "claim_sha256": "fee24002d5e67734e25fc320f6354ed6fa189ab6a1e6ef3f1646d4d40ca63ba7",
+    "checks": [
+      {
+        "source_id": "ula-culture",
+        "quotes": [
+          "Akyaka’nın eşsiz gün batımında",
+          "düzenlenen anma konserinde bir araya geldik."
+        ],
+        "response_sha256": "4f4b2009697c34eb61b35077937f616045978bc43d6517f40f0bfe7a2d695e44",
+        "text_sha256": "72e4c4b366704e4520d4d2cedbb9cc0837723ca50fb34255c993f4a7e05b9c0a",
+        "checked_at": "2026-11-05T22:16:22.091091+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emirbeyazit-news": {
+    "claim_sha256": "62a4466eb6126034834dc5d24a6c213884e948f5bebd67281659e4cff10ee38e",
+    "checks": [
+      {
+        "source_id": "mentese-news",
+        "quotes": [
+          "Olay, 11 Ağustos gecesi Emirbeyazıt Mahallesi Kurşunlu Meydanı çevresinde meydana geldi."
+        ],
+        "response_sha256": "a3f557d19a22d2cd2e674528523abc2e892ce38c5fdf4d0db57d9eafc4077f5b",
+        "text_sha256": "cb499a085051ab29eac18f8ce1948369da7d8ba48511a4f78f7e75dea6b14e4c",
+        "checked_at": "2026-11-05T22:13:02.667707+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "kotekli-news": {
+    "claim_sha256": "85832ad2d2945f5b4aa23a272efbbf84c1eff185627381a3eb9ab6c5a1253d71",
+    "checks": [
+      {
+        "source_id": "news-kotekli",
+        "quotes": [
+          "Kötekli Mahallesi’ndeki bir apartmandan silah sesleri",
+          "Muğla’nın Menteşe ilçesinde"
+        ],
+        "response_sha256": "18e06082d60e45360629f7031b72f16b1258458f44924064da0ff08e126f0e13",
+        "text_sha256": "8d75d3010579bca988b65b8e9e1c22d13a6fe2e408aeffe3217c4c8d900a0020",
+        "checked_at": "2026-11-05T22:21:13.611980+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "akyaka-news": {
+    "claim_sha256": "cf8b74c37262b15dde564b8065c67b478f2d0cde085861274989f2e5f98e0cef",
+    "checks": [
+      {
+        "source_id": "news-akyaka",
+        "quotes": [
+          "Muğla’nın Ula ilçesine bağlı Akyaka Mahallesi’nde meydana gelen hırsızlık olayı",
+          "Giriş Tarihi: 01.06.2026"
+        ],
+        "response_sha256": "7c8f9eb80243024322b5cb47c2b8441a8bb44ed31c9d497cd9a6feb71b59b494",
+        "text_sha256": "c63e122808606a708707c5d801732573b5cd8e80994371120500319334b530d5",
+        "checked_at": "2026-11-05T22:21:13.612808+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "muslihittin-news": {
+    "claim_sha256": "c9587bd85eb4a3c8bc7e07927de8df755380d25fa47165338a7f51935e187d53",
+    "checks": [
+      {
+        "source_id": "news-muslihittin",
+        "quotes": [
+          "Muğla'nın Menteşe ilçesi Muslihittin Mahallesi'nde",
+          "Giriş: 11.04.2026"
+        ],
+        "response_sha256": "ce7c7033c441cd802e3a74be605565be66a95e349f9982281d85cf69ba73c6b3",
+        "text_sha256": "384e00ccee705507e0f0b059f10cc7a40e56eba194049a7ef2eeff31043001ea",
+        "checked_at": "2026-11-05T22:21:13.678780+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "orhaniye-news": {
+    "claim_sha256": "dcd07c04e476a8ac95fc5ae5fe97e75cf6b234cead254b94ea99d97d147ff60a",
+    "checks": [
+      {
+        "source_id": "news-orhaniye",
+        "quotes": [
+          "Muğla’nın Menteşe ilçesine bağlı Orhaniye Mahallesi Berat Sokak’ta",
+          "Yayınlanma: 03 Temmuz 2026"
+        ],
+        "response_sha256": "a01fab5390b0590683aa4e685041b72026de402f3f0311971ab14ab64e546926",
+        "text_sha256": "0c111c96bd7f5bdc13861fa36cec164503043fd33eda10f6d0eef9dec99a43f1",
+        "checked_at": "2026-11-05T22:21:14.199359+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "kultur-news": {
+    "claim_sha256": "0d9bd3cff20a6b6388955bc17152be7bce1e1814d93e13ff3e853ba3ddb8ae58",
+    "checks": [
+      {
+        "source_id": "news-kultur",
+        "quotes": [
+          "Konak ilçesine bağlı Kültür Mahallesi Şevket Özçelik Sokak’ta bulunan bir kuyumcuda",
+          "Zanlı, havaya ateş açtı"
+        ],
+        "response_sha256": "861fe51e7107daf2a2e3605bd6143f7d842346a9309015bcd63863958c1e647b",
+        "text_sha256": "e0f89aeb6a938384ff261e267959f67a940a631734b00a76fea4c07cdacdf829",
+        "checked_at": "2026-11-05T22:21:12.720702+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "gorukle-news": {
+    "claim_sha256": "1b3495f8035e494917599c2de01000219d5e3c9d40c0a84068a687d806a1726b",
+    "checks": [
+      {
+        "source_id": "news-gorukle",
+        "quotes": [
+          "Nilüfer ilçesi Görükle Mahallesi Kamelya Caddesi üzerinde",
+          "Giriş: 17-04-2026"
+        ],
+        "response_sha256": "85c36acbf08af7954eb94b6e79f9ebbcbf248d1ac0d0b3c6171129f8b28fb142",
+        "text_sha256": "ea40894d6671a51edbef83dc480a8a18aedbba507e8894846e7e8ad28107c3b1",
+        "checked_at": "2026-11-05T22:21:13.559754+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "bahcelievler-accessibility": {
+    "claim_sha256": "e7213d71a2050d6f1fb82380ee5edfa5a6785b4649be44ad72862ffab87c1e28",
+    "checks": [
+      {
+        "source_id": "news-bahcelievler",
+        "quotes": [
+          "Ankara’nın Çankaya ilçesi Bahçelievler Mahallesi’nde",
+          "Yayınlanma: 21/09/2026",
+          "35. Cadde ile 52. Sokak"
+        ],
+        "response_sha256": "76cf4092077241f94012c0e09fb374bfe076f55e819e4ce05f1caaa4bf199151",
+        "text_sha256": "cd717dd0f11f223dfe0d7d1f5de62e9414331dedb56bf07ffe893b0ad6a962d1",
+        "checked_at": "2026-11-05T22:21:12.721136+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-19904867": {
+    "claim_sha256": "2db73d4c31c7579ac6dcab1386c3ed6f68eaf0aa26a13b62049d0a44ab5906ea",
+    "checks": [
+      {
+        "source_id": "emlakjet-19904867",
+        "quotes": [
+          "Kötekli Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 31 Ekim 2026",
+          "29.500 ₺",
+          "2+1"
+        ],
+        "response_sha256": "21b4b0fe465c4ce1d08a3056b614e94ece7967dd370f66ba340ba5d96cfba4ca",
+        "text_sha256": "fae5da00ece231de20d26f2dddd30be0ae441cf8147d9fd3692e6781c3a8cb25",
+        "checked_at": "2026-11-05T22:15:58.209359+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20045866": {
+    "claim_sha256": "bc49e9822255a8cd765048db4cda5b62e1c6b41d588fd07e810cfdcdffe5e0aa",
+    "checks": [
+      {
+        "source_id": "emlakjet-20045866",
+        "quotes": [
+          "Kötekli Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 01 Kasım 2026",
+          "45.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "397640d4b76e5be91903d124af5792557348e4bf2c916ee3d14ecc30adc8a353",
+        "text_sha256": "1c51a37c3bac9b6cb3909719e16606abcafce01f0f76c2dbed354e1136a64252",
+        "checked_at": "2026-11-05T22:15:58.725718+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20030342": {
+    "claim_sha256": "32d64a97a96cb419f914f3f2e2ac0eec0390cb504b753ffed1a3f299864eba4a",
+    "checks": [
+      {
+        "source_id": "emlakjet-20030342",
+        "quotes": [
+          "Kötekli Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 27 Ekim 2026",
+          "22.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "fe21fd7e276177f0df7f096172a1407b6485f042865cad092834f2be09340ef7",
+        "text_sha256": "ef33df5d08a2fa485d02d29444838781dff78fb0ba5928464ab23291cb1a8a24",
+        "checked_at": "2026-11-05T22:15:59.300527+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20045942": {
+    "claim_sha256": "976cdc4a623df7d95b61bc781a06f4b76578b4a768b738e04f5a059e33810d8d",
+    "checks": [
+      {
+        "source_id": "emlakjet-20045942",
+        "quotes": [
+          "Emirbeyazıt Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 01 Kasım 2026",
+          "36.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "686e29d1b42c19e572db4ed1d37769994420cb416f510e29b36929a9b1295d94",
+        "text_sha256": "355443f76be20fab62996b38ece13f8380c013dd3c1831591d93feae87c136a4",
+        "checked_at": "2026-11-05T22:16:00.960216+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-19999225": {
+    "claim_sha256": "188a37a15874376f18c20deb131e5411ab5076c379592cfad8092a5b47c4d358",
+    "checks": [
+      {
+        "source_id": "emlakjet-19999225",
+        "quotes": [
+          "Emirbeyazıt Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 20 Ekim 2026",
+          "35.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "3bca20de2b52c1b73ec41e4f1407a689bd1d36fb28a49ac6d2af00dc24517073",
+        "text_sha256": "be03014d10727a71aea0a3ba2fcb10ce447671afdbc60d54d4aab666a166e381",
+        "checked_at": "2026-11-05T22:16:02.026494+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20024236": {
+    "claim_sha256": "04d880cbe662561064ecb2805a2bf6675417ac7199ec96d2052083971b7d9ea5",
+    "checks": [
+      {
+        "source_id": "emlakjet-20024236",
+        "quotes": [
+          "Muslihittin Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 27 Ekim 2026",
+          "55.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "0bfc50d1dc696f9ef6490b714b2e35ec5515eac823fb730186dae5504bdda41c",
+        "text_sha256": "494f26703fe4e9294d676612a607b967aa2df2ee573439574a356071e895600f",
+        "checked_at": "2026-11-05T22:16:06.903772+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20008478": {
+    "claim_sha256": "323e7263fb93caf0612a9dc33ce03ff808bbc6b20f5ba5f084bbe2235dc7c69a",
+    "checks": [
+      {
+        "source_id": "emlakjet-20008478",
+        "quotes": [
+          "Muslihittin Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 04 Kasım 2026",
+          "20.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "0be6c17b340b78028d1079be7a92d9162cc87a8b9dda37347a18a7dd13aa71d6",
+        "text_sha256": "3e6ebe06368191c4c865faac60c45d654d750f7d357d3f5bda0714b33f171d56",
+        "checked_at": "2026-11-05T22:16:08.077119+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-19820765": {
+    "claim_sha256": "d1ee35a0d275f708f8f2112e62bbfa3cb4177a756e96a5b54f325f5b19a8a816",
+    "checks": [
+      {
+        "source_id": "emlakjet-19820765",
+        "quotes": [
+          "Orhaniye Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 02 Kasım 2026",
+          "36.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "cb88a87380fc7f8ba5c5fd97023d6cd4792a0b4576f7e51ca428931527a66ef0",
+        "text_sha256": "dae109d3a2a8e42defb347fcf0fdd71409564a621d63075ebab7c6f0ee526b35",
+        "checked_at": "2026-11-05T22:16:02.817683+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20036445": {
+    "claim_sha256": "28275de41f469ee9ad5c4d8a4738a458547bc881606d1d5e8e127ca55783d77b",
+    "checks": [
+      {
+        "source_id": "emlakjet-20036445",
+        "quotes": [
+          "Orhaniye Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 29 Ekim 2026",
+          "38.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "da9557be8e5b5c244759eb93ce18cb8cbb3ac86793ac787018bd6cf97b0a9856",
+        "text_sha256": "fea84260cdcf379ddf4ede042697891ef5f7a207166e73172bba0f4f34e4a282",
+        "checked_at": "2026-11-05T22:16:11.887685+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-19529247": {
+    "claim_sha256": "7f59b79871eb18f4185083d39a3976e147bcdba1e9779f25512236bff894fe1c",
+    "checks": [
+      {
+        "source_id": "emlakjet-19529247",
+        "quotes": [
+          "Orhaniye Mahallesi, Menteşe , Muğla",
+          "İlan Güncelleme Tarihi 27 Ekim 2026",
+          "45.000 ₺",
+          "4+1"
+        ],
+        "response_sha256": "47f6494d695a40167546a99de2e961f4b90e251eca18c18b36b246c547f30196",
+        "text_sha256": "7c821d4b4459e4165694387c936e036a80a45b6cce29c715b634a4203e04d347",
+        "checked_at": "2026-11-05T22:16:12.686328+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20056665": {
+    "claim_sha256": "8f46b477c51e779d166f8b204ac6602ad042aed57bc491b01c6bd6e597e1b481",
+    "checks": [
+      {
+        "source_id": "emlakjet-20056665",
+        "quotes": [
+          "Akyaka Mahallesi, Ula , Muğla",
+          "İlan Güncelleme Tarihi 04 Kasım 2026",
+          "40.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "3a89d9544ce57fa07f3929506f93d4eb5394e8134391b89d64d9ad57738ec3fe",
+        "text_sha256": "4b0ba3e615964dcbcb4d1ed9d001616ea6ce5e4f084f26dbdbbbb4922116801e",
+        "checked_at": "2026-11-05T22:16:14.849012+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20002170": {
+    "claim_sha256": "8644609a13e05aa67c03f63cfff9c0bf413ac6d4ff1fed0ff3dbc6cebbb80fab",
+    "checks": [
+      {
+        "source_id": "emlakjet-20002170",
+        "quotes": [
+          "Akyaka Mahallesi, Ula , Muğla",
+          "İlan Güncelleme Tarihi 22 Ekim 2026",
+          "40.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "20947662b4a6de14da8650ad68f74d9edc26c47c90f07da364e0588fa3dd81d9",
+        "text_sha256": "6d17192a3c0d190d984cfadc6fd1d74275ed9b84332467f7f4eaed10b91bd816",
+        "checked_at": "2026-11-05T22:16:15.966376+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-19996826": {
+    "claim_sha256": "9195b1e7a4611f2cd9dfac3c7428a490dd0baf471e9009c93729a28fb18b8694",
+    "checks": [
+      {
+        "source_id": "emlakjet-19996826",
+        "quotes": [
+          "Akyaka Mahallesi, Ula , Muğla",
+          "İlan Güncelleme Tarihi 03 Kasım 2026",
+          "25.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "91d90fd73947286dab1752198b7e98147c10cdfe3882addda33b8463bf63004d",
+        "text_sha256": "239d636e4c42238029b2667efef6062e628e9116b31de50ff939bc7f0f838476",
+        "checked_at": "2026-11-05T22:16:17.073865+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20052836": {
+    "claim_sha256": "0ac8edf680cde289ccb3c959620685ee164092d1bd209ab6a5dc8e6210bf607a",
+    "checks": [
+      {
+        "source_id": "emlakjet-20052836",
+        "quotes": [
+          "Caferağa Mahallesi, Kadıköy , İstanbul",
+          "İlan Güncelleme Tarihi 03 Kasım 2026",
+          "60.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "221978fc44761f183cb8a678375c916fbed3373065f6ff76f64a1a518ffae4ed",
+        "text_sha256": "05a0e739abf9ae34025651346bfc282d16c3697483dbfef09b680725402765e5",
+        "checked_at": "2026-11-05T22:16:19.760795+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20051492": {
+    "claim_sha256": "e20a14397270c83f86780728969b97b544c58dc18fccc68dff48a674a1a3b214",
+    "checks": [
+      {
+        "source_id": "emlakjet-20051492",
+        "quotes": [
+          "Caferağa Mahallesi, Kadıköy , İstanbul",
+          "İlan Güncelleme Tarihi 02 Kasım 2026",
+          "78.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "a7c4a0d6c93cccfc888958c164b6f754b8b8af6c3a6beebf8a43fa3aadd7b733",
+        "text_sha256": "975529d9c6b4c32d67954d5885a96c46fa1fbc5da7cee6cf9c6dea46fdf3156b",
+        "checked_at": "2026-11-05T22:16:20.629033+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20056964": {
+    "claim_sha256": "13bb0332a5023b0d2fb3592c5d2b440ab9bd6c64fd2a3f8a0806a44ca4750d71",
+    "checks": [
+      {
+        "source_id": "emlakjet-20056964",
+        "quotes": [
+          "Caferağa Mahallesi, Kadıköy , İstanbul",
+          "İlan Güncelleme Tarihi 04 Kasım 2026",
+          "60.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "dd6ef1db04545938cd7ce1d739359a613b479bf1959e81ba68ca9a668bbb67fe",
+        "text_sha256": "ab066532249f59fc44ed3c2ae3255a86fdb48714820058dc49ac46ea48f1cd53",
+        "checked_at": "2026-11-05T22:16:21.622626+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20052761": {
+    "claim_sha256": "92b6eebf23ca25304cde1114d7d3961f628161b206505d1966d4cfb91cae04ef",
+    "checks": [
+      {
+        "source_id": "emlakjet-20052761",
+        "quotes": [
+          "Bahçelievler Mahallesi, Çankaya , Ankara",
+          "İlan Güncelleme Tarihi 03 Kasım 2026",
+          "50.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "57221dd3cfee91dea61a073c711736236e4fc7d510b9e71a21bc53d50285406c",
+        "text_sha256": "6097134ffc58f5f970959c798cebaf99c95e83941ae3796464303d2f1a6f3e17",
+        "checked_at": "2026-11-05T22:16:23.965579+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20042418": {
+    "claim_sha256": "eb344c7c38128c173750b9bdccdfc85e40398d88af8cc2d148130eca2f833d7a",
+    "checks": [
+      {
+        "source_id": "emlakjet-20042418",
+        "quotes": [
+          "Bahçelievler Mahallesi, Çankaya , Ankara",
+          "İlan Güncelleme Tarihi 05 Kasım 2026",
+          "50.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "69e2a00794f99a85db53e39b7ddd3118d0f8967378d0e7f572f68befe9854f31",
+        "text_sha256": "cd750687e28c5b08c34a1e53c89a93414324b8fc347928183e0d8912bb6ccad0",
+        "checked_at": "2026-11-05T22:16:24.773767+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20041891": {
+    "claim_sha256": "688f59a8b3844bd0444cfebfccbd758c0a34c7f569df1b911c3514c512c7390c",
+    "checks": [
+      {
+        "source_id": "emlakjet-20041891",
+        "quotes": [
+          "Bahçelievler Mahallesi, Çankaya , Ankara",
+          "İlan Güncelleme Tarihi 01 Kasım 2026",
+          "45.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "b3a2567a54e55e0e7dd74f3c644d89faafb6546a40999174ff49ff351fb0dd47",
+        "text_sha256": "4bea18389c49f05711002407cea7ed374584a33df16004f989151b7c77859d5f",
+        "checked_at": "2026-11-05T22:16:25.771135+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20061818": {
+    "claim_sha256": "d7da1b949304e6686f14e7b0ae50eca436ce086020c9edf1473aab58751424ec",
+    "checks": [
+      {
+        "source_id": "emlakjet-20061818",
+        "quotes": [
+          "Kültür Mahallesi, Konak , İzmir",
+          "İlan Güncelleme Tarihi 05 Kasım 2026",
+          "45.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "b6d78fba8efd4cc0a558e7cbbc666acae2066b631e88433ead8a6b0f916f419b",
+        "text_sha256": "0a0f8198dc909b3b93b28e4aca149d69115ef6be105a53e9aed2ebbb76fc4a1c",
+        "checked_at": "2026-11-05T22:16:27.735969+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20059592": {
+    "claim_sha256": "204365a22912de910889aa9f547571a08b96d85900a0a0fee2a142a458d8c0fe",
+    "checks": [
+      {
+        "source_id": "emlakjet-20059592",
+        "quotes": [
+          "Kültür Mahallesi, Konak , İzmir",
+          "İlan Güncelleme Tarihi 04 Kasım 2026",
+          "90.000 ₺",
+          "5+1"
+        ],
+        "response_sha256": "64e3f33c0d80241aac44b8dc447677fd04b5328fb74a7de6ec9f437bc8dc0143",
+        "text_sha256": "4612681d48fdbc1fc9d40033fe9ebe668d5a3a33b5c3a62b1483fd194fa7a032",
+        "checked_at": "2026-11-05T22:16:28.501548+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20032574": {
+    "claim_sha256": "0d4c7f2c88ca6dc8664d4ad673c518e3e910abd3a6590ba9b627ea7b25f8c9ab",
+    "checks": [
+      {
+        "source_id": "emlakjet-20032574",
+        "quotes": [
+          "Kültür Mahallesi, Konak , İzmir",
+          "İlan Güncelleme Tarihi 28 Ekim 2026",
+          "37.000 ₺",
+          "1+1"
+        ],
+        "response_sha256": "09e70753eb2045d8f228685513d00a047ba21e42c232059ed0a6a4edca9121e4",
+        "text_sha256": "34a806646edfb7916d2c1892fb2fe740891acadce58a13e4687f67bc2f69a836",
+        "checked_at": "2026-11-05T22:16:29.421442+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20057486": {
+    "claim_sha256": "a5272e593247861890abbe7c5de9fced5f7c1b5af65d8d077ba12354405868de",
+    "checks": [
+      {
+        "source_id": "emlakjet-20057486",
+        "quotes": [
+          "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+          "İlan Güncelleme Tarihi 04 Kasım 2026",
+          "14.250 ₺",
+          "1+1"
+        ],
+        "response_sha256": "46422c8c9e7f1ee633d65c0ddfcae744dd4dfd31b33250db7f3876fc19eefc31",
+        "text_sha256": "f02d2efb5f384fffffc388c496b3a981d2c47ca1a724d098aadf6ed52676a377",
+        "checked_at": "2026-11-05T22:16:31.827832+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20033971": {
+    "claim_sha256": "d54e9ab11e911c52425f8cbc32228b4fb5b3283dff1829dd69a9d0f5bf7f81b1",
+    "checks": [
+      {
+        "source_id": "emlakjet-20033971",
+        "quotes": [
+          "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+          "İlan Güncelleme Tarihi 28 Ekim 2026",
+          "21.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "e369d38bd3242e3f9e74daab0f8e3a42adddf68d7691001592b68fbc0bbf7c19",
+        "text_sha256": "0153017fa990a26c0180c8d9f79a7ecf498e662eca3b7d60f6580908ef915559",
+        "checked_at": "2026-11-05T22:16:32.772605+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20030742": {
+    "claim_sha256": "849838e0fa8a59f121db1c9f2a3159d70e571c969f33b59f7118d8d8affd6fb7",
+    "checks": [
+      {
+        "source_id": "emlakjet-20030742",
+        "quotes": [
+          "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+          "İlan Güncelleme Tarihi 27 Ekim 2026",
+          "33.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "07e63a4c78d3c3a77d29c61b996e615d4fc105582b3ab60dc97c0afc669e441b",
+        "text_sha256": "57ef33697303230025052ea7449a7bbce8369c6243e7776236d48bd03890f62e",
+        "checked_at": "2026-11-05T22:16:33.856685+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20063664": {
+    "claim_sha256": "5875bd8bc4e3d6aa883234e4922e618ec69aab4ce8d5d974c1f530b9fda4adf7",
+    "checks": [
+      {
+        "source_id": "emlakjet-20063664",
+        "quotes": [
+          "Görükle Mahallesi, Nilüfer , Bursa",
+          "İlan Güncelleme Tarihi 05 Kasım 2026",
+          "15.000 ₺",
+          "2+1"
+        ],
+        "response_sha256": "dcd1866af96b786fb6d31241808a8af07e97f51302581c99c4a4c3bae697b01a",
+        "text_sha256": "097a3e1316e3833e297066ce71c6c74ffdc631fb966ac28f62d08900c78a27db",
+        "checked_at": "2026-11-05T22:15:04.436624+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20059980": {
+    "claim_sha256": "2ed9d48f171d4eb3e0e915bbe39c445123a67fdb370b1702834971c1d4052cd3",
+    "checks": [
+      {
+        "source_id": "emlakjet-20059980",
+        "quotes": [
+          "Görükle Mahallesi, Nilüfer , Bursa",
+          "İlan Güncelleme Tarihi 04 Kasım 2026",
+          "13.500 ₺",
+          "1+1"
+        ],
+        "response_sha256": "e4a524e166de3ee7c258ba78cc116f4cdfcc73f076886707c1abea7c44f7cbe4",
+        "text_sha256": "407f433c60d3c17fba5e4c1a355e43e8e7a91abdcdcb8c910e6cffd8d61dc85b",
+        "checked_at": "2026-11-05T22:16:35.935083+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emlakjet-20052436": {
+    "claim_sha256": "56b9a1222d7aa4b8846c49385ddaf9cd6b7b7786098f4e266ed17d05f6d11b85",
+    "checks": [
+      {
+        "source_id": "emlakjet-20052436",
+        "quotes": [
+          "Görükle Mahallesi, Nilüfer , Bursa",
+          "İlan Güncelleme Tarihi 03 Kasım 2026",
+          "26.000 ₺",
+          "3+1"
+        ],
+        "response_sha256": "142c91082aff9548ba3f218b52bacdf001b5fbb37b13690d97936ff033de48c2",
+        "text_sha256": "2528f8abd663d6a16ba5064a9c4fc321f12d5fbb57cfd4a7903abf4fff55e8a5",
+        "checked_at": "2026-11-05T22:16:36.898113+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "kotekli-identity": {
+    "claim_sha256": "8890e2390324e1a4aa400d8c3e71fec914324272dd7ac7ca820fbcc0a2d9328d",
+    "checks": [
+      {
+        "source_id": "mentese-identity",
+        "quotes": [
+          "Kötekli Mahallesi"
+        ],
+        "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05",
+        "text_sha256": "755d2318f43d8dfe0827a014a8008f2d97801d96784f52042ff5da2cdb222e86",
+        "checked_at": "2026-11-05T22:13:02.667057+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "emirbeyazit-identity": {
+    "claim_sha256": "ffc24f0e02cf92127476d622b5b22f82f677a4ac7a7d3e2c9e5d6cbb86c04383",
+    "checks": [
+      {
+        "source_id": "mentese-identity",
+        "quotes": [
+          "Emirbeyazıt Mahallesi"
+        ],
+        "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05",
+        "text_sha256": "755d2318f43d8dfe0827a014a8008f2d97801d96784f52042ff5da2cdb222e86",
+        "checked_at": "2026-11-05T22:13:02.667057+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "muslihittin-identity": {
+    "claim_sha256": "00b0b4689087baec24a1e8617ba4270199e6f85253546de3043c29cc0fdc87b7",
+    "checks": [
+      {
+        "source_id": "mentese-identity",
+        "quotes": [
+          "Muslihittin Mahallesi"
+        ],
+        "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05",
+        "text_sha256": "755d2318f43d8dfe0827a014a8008f2d97801d96784f52042ff5da2cdb222e86",
+        "checked_at": "2026-11-05T22:13:02.667057+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "orhaniye-identity": {
+    "claim_sha256": "eb85f28ee64fd4738fc79b5bac72568f84d3addc8b6b32163b143ebbf85dbc77",
+    "checks": [
+      {
+        "source_id": "mentese-identity",
+        "quotes": [
+          "Orhaniye Mahallesi"
+        ],
+        "response_sha256": "da6852aae8d1d5cceeac217da2a4dda23be5c00b98be9e68b245472239fdbf05",
+        "text_sha256": "755d2318f43d8dfe0827a014a8008f2d97801d96784f52042ff5da2cdb222e86",
+        "checked_at": "2026-11-05T22:13:02.667057+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "akyaka-identity": {
+    "claim_sha256": "df33032ff277d0236ac7ea92e136694bffc3d7abc65d57a826985c55f4f45b54",
+    "checks": [
+      {
+        "source_id": "ula-identity",
+        "quotes": [
+          "Akyaka Mahallesi, Atatürk Caddesi"
+        ],
+        "response_sha256": "a516db320e1a71f41118a5a9feadd2a64bbd476a5d4d667aacf47ddde43052c5",
+        "text_sha256": "b6b7160713859ac40b72ebe08ff2893f28564c27906d365eb7700cfff8aa796f",
+        "checked_at": "2026-11-05T22:13:03.606203+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "caferaga-identity": {
+    "claim_sha256": "66fb5dc6d813b392b13f8c759bbb0ab670e26fb96e20c1486fb7ec857e40efa1",
+    "checks": [
+      {
+        "source_id": "kadikoy-tesak",
+        "quotes": [
+          "Caferağa Mahallesi, Rıhtım Caddesi, No: 2/3 (Eski Başkanlık Binası) Kadıköy/İstanbul"
+        ],
+        "response_sha256": "3405ddf49db395c3f2ee3ed195a3adc18fecd3b3272f5f293e4008ffc71e141d",
+        "text_sha256": "b27c578c14042b6e0226dc7e96c903d653669ab7e4437882c66c44e665e4345a",
+        "checked_at": "2026-11-05T22:13:02.666272+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "bahcelievler-identity": {
+    "claim_sha256": "3f939e36d054b03eec639fe4538e04caea00ceb16a64dcc27624e4d0001e5641",
+    "checks": [
+      {
+        "source_id": "ego-448",
+        "quotes": [
+          "BAHÇELİEVLER MH.DÖGOL CD.ÇANKAYA/ANKARA"
+        ],
+        "response_sha256": "a5517948f1b4e606a7a304641e19938b8d71a9a8861c882d616ac1f7b8da1ccf",
+        "text_sha256": "8e0c62be3c47ed75b5999600de4d69648fab361018ea7a481930d6c075f515fb",
+        "checked_at": "2026-11-05T22:13:53.184122+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "kultur-identity": {
+    "claim_sha256": "b1d91c678651a820f68c29177def1957dc2e4bade13ae40f9de4f7a61aee7f32",
+    "checks": [
+      {
+        "source_id": "izmir-identity",
+        "quotes": [
+          "Konak ilçesi, Kültür Mahallesi"
+        ],
+        "response_sha256": "ae24b5d298b35a2ae73f4c5d2596914adf5a5d656fbd3741466022c51476049b",
+        "text_sha256": "ebf7c9becc1e70ed4eeb61ef32e2e8400f10c4a51a97e5a6a912fa58e8454db1",
+        "checked_at": "2026-11-05T22:13:55.221297+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "yenibaglar-identity": {
+    "claim_sha256": "60c9964ed61ca823d0e061fd3c037c73c9f70d74efebe26c628452ccb5aa4120",
+    "checks": [
+      {
+        "source_id": "tepebasi-identity",
+        "quotes": [
+          "YENİBAĞLAR MAHALLESİ"
+        ],
+        "response_sha256": "d867a078fe60a4b695ecf826285b131a229c52bf99c8b0c3d4fc572627e41282",
+        "text_sha256": "b1a154fa79200035ea637882aa39ebdbcefb7a5110a861dd1ec109a9a8781336",
+        "checked_at": "2026-11-05T22:13:02.668992+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  },
+  "gorukle-identity": {
+    "claim_sha256": "18268b49f4051af5dde8d83dd9309a02bcae71b4da03b8f5903e860db5550809",
+    "checks": [
+      {
+        "source_id": "nilufer-sport",
+        "quotes": [
+          "Görükle Mahallesi Üniversite Caddesi No:6 Nilüfer, Bursa"
+        ],
+        "response_sha256": "06c601470531bf40e21454b0e8cbab5ce4d0c2cb4ff1a67ba3ffb67c12ad49d2",
+        "text_sha256": "010fe6ff1aec40f686032a3b0b34143fae132f92a7d5ed88b829a37891690632",
+        "checked_at": "2026-11-05T22:13:55.971217+00:00",
+        "match": "exact_after_unicode_and_whitespace_normalization"
+      }
+    ],
+    "review_method": "Assistant page review of the stated narrow claim; not independent field verification."
+  }
+}

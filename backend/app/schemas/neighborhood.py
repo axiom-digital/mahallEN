@@ -7,8 +7,8 @@ from pydantic import BaseModel, ConfigDict, Field, StringConstraints, field_vali
 class NewsItemSchema(BaseModel):
     title: str
     source: str
-    date: str
-    sentiment: str = Field(description="positive | neutral | negative")
+    date: str | None
+    sentiment: str | None = Field(description="positive | neutral | negative")
     summary: str
 
 
@@ -20,36 +20,37 @@ class CommunityCommentSchema(BaseModel):
 
 
 class CategoryScoresSchema(BaseModel):
-    overall_livability: int = Field(ge=0, le=100)
-    safety: int = Field(ge=0, le=100)
-    transportation: int = Field(ge=0, le=100)
-    cost_affordability: int = Field(ge=0, le=100)
-    disaster_resilience: int = Field(ge=0, le=100)
+    overall_livability: int | None = Field(ge=0, le=100)
+    safety: int | None = Field(ge=0, le=100)
+    transportation: int | None = Field(ge=0, le=100)
+    cost_affordability: int | None = Field(ge=0, le=100)
+    disaster_resilience: int | None = Field(ge=0, le=100)
+    social_life: int | None = Field(default=None, ge=0, le=100)
 
 
 class SuitabilitySchema(BaseModel):
-    students: int = Field(ge=0, le=100)
-    families: int = Field(ge=0, le=100)
-    professionals: int = Field(ge=0, le=100)
+    students: int | None = Field(ge=0, le=100)
+    families: int | None = Field(ge=0, le=100)
+    professionals: int | None = Field(ge=0, le=100)
 
 
 class RentAnalysisSchema(BaseModel):
-    average_rent_tl: int
-    rent_range_tl: str
-    trend_6m: str
+    average_rent_tl: int | None
+    rent_range_tl: str | None
+    trend_6m: str | None
 
 
 class TransportAnalysisSchema(BaseModel):
-    bus_frequency_min: int
-    distance_to_campus_km: float
-    distance_to_center_km: float
+    bus_frequency_min: int | None
+    distance_to_campus_km: float | None
+    distance_to_center_km: float | None
     highlights: List[str]
 
 
 class DisasterRiskSchema(BaseModel):
-    risk_level: str
-    pga_value_g: float
-    soil_class: str
+    risk_level: str | None
+    pga_value_g: float | None
+    soil_class: str | None
 
 
 ReportText = Annotated[
@@ -60,17 +61,17 @@ ReportBullet = Annotated[
 ]
 
 
-class AIReportContentSchema(BaseModel):
+class ReportNarrativeSchema(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     executive_summary: ReportText
     pros: List[ReportBullet] = Field(max_length=6)
     cons: List[ReportBullet] = Field(max_length=6)
-    student_verdict: ReportText
-    family_verdict: ReportText
-    professional_verdict: ReportText
 
-    @field_validator("executive_summary", "pros", "cons", "student_verdict", "family_verdict", "professional_verdict")
+    @field_validator(
+        "executive_summary", "pros", "cons", "student_verdict", "family_verdict",
+        "professional_verdict", check_fields=False,
+    )
     @classmethod
     def plain_text_only(cls, value):
         texts = value if isinstance(value, list) else [value]
@@ -80,6 +81,12 @@ class AIReportContentSchema(BaseModel):
             ):
                 raise ValueError("AI report must contain plain text")
         return value
+
+
+class AIReportContentSchema(ReportNarrativeSchema):
+    student_verdict: ReportText
+    family_verdict: ReportText
+    professional_verdict: ReportText
 
 
 class AIReportSynthesisSchema(AIReportContentSchema):
@@ -94,12 +101,12 @@ class NeighborhoodSummarySchema(BaseModel):
     district: str
     city: str
     tagline: str
-    overall_score: int
-    avg_rent_tl: int
-    earthquake_risk_level: str
-    suitability_student: int
-    suitability_family: int
-    suitability_professional: int
+    overall_score: int | None
+    avg_rent_tl: int | None
+    earthquake_risk_level: str | None
+    suitability_student: int | None
+    suitability_family: int | None
+    suitability_professional: int | None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -120,5 +127,6 @@ class NeighborhoodFullReportSchema(BaseModel):
     news_items: List[NewsItemSchema]
     community_comments: List[CommunityCommentSchema]
     data_sources: List[str]
+    pilot_evidence: dict | None = None
     ai_report: AIReportSynthesisSchema
     scoring_methodology: dict

@@ -1,11 +1,12 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   fetchNeighborhoods,
-  fetchNeighborhoodReport,
+  fetchNeighborhoodSuggestions,
   fetchSystemHealth,
 } from './services/api';
-import ReportDashboard from './components/ReportDashboard';
-import { ScoreBarChart, normalizeScoreValue } from './components/ScoreCard';
+import { normalizeScoreValue } from './components/ScoreCard';
+
+import { openReportPage } from './navigation.mjs';
 
 const NEIGHBORHOOD_VISUALS = {
   kotekli: {
@@ -44,7 +45,7 @@ const PROFILE_CONFIG = {
   '': {
     id: '',
     buttonLabel: 'Genel bakış',
-    rankTitle: 'Genel değerlendirmeyle Muğla',
+    rankTitle: 'Aradığın mahalleler',
     description:
       'Tüm değerlendirme boyutlarının dengeli birleşimi. Profil seçtiğinde sıralama önceliğine göre güncellenir.',
     scoreField: 'overall_score',
@@ -52,7 +53,7 @@ const PROFILE_CONFIG = {
   student: {
     id: 'student',
     buttonLabel: 'Öğrenciyim',
-    rankTitle: 'Öğrenci gözüyle Muğla',
+    rankTitle: 'Öğrenci gözüyle mahalleler',
     description:
       'Önce kampüse ulaşım, günlük maliyet ve sosyal yaşam. Seçiminle birlikte mahalle sıralaması backend verisiyle değişir.',
     scoreField: 'suitability_student',
@@ -60,7 +61,7 @@ const PROFILE_CONFIG = {
   family: {
     id: 'family',
     buttonLabel: 'Ailemle yaşıyorum',
-    rankTitle: 'Aile gözüyle Muğla',
+    rankTitle: 'Aile gözüyle mahalleler',
     description:
       'Günlük ihtiyaçlar, sakin mahalle yaşamı, afet ve güvenlik bilgisi. Seçiminle birlikte sıralama güncellenir.',
     scoreField: 'suitability_family',
@@ -68,39 +69,48 @@ const PROFILE_CONFIG = {
   professional: {
     id: 'professional',
     buttonLabel: 'Çalışıyorum',
-    rankTitle: 'Çalışan gözüyle Muğla',
+    rankTitle: 'Çalışan gözüyle mahalleler',
     description:
       'Ulaşım, günlük yaşamın akışı ve şehir merkezine erişim. Seçiminle birlikte sıralama güncellenir.',
     scoreField: 'suitability_professional',
   },
 };
 
-const QUICK_SUGGESTIONS = ['Kötekli', 'Akyaka', 'Emirbeyazıt', 'Muslihittin', 'Orhaniye'];
+const QUICK_SUGGESTIONS = [];
 
 export default function App() {
   const [neighborhoods, setNeighborhoods] = useState([]);
-  const [selectedSlug, setSelectedSlug] = useState('kotekli');
-  const [report, setReport] = useState(null);
+  const [selectedSlug, setSelectedSlug] = useState(null);
 
-  const [searchInput, setSearchInput] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [districtFilter, setDistrictFilter] = useState('all');
-  const [profileFilter, setProfileFilter] = useState('student');
+  const [searchInput, setSearchInput] = useState(window.history.state?.search?.searchInput || '');
+  const [searchQuery, setSearchQuery] = useState(window.history.state?.search?.searchQuery || '');
+  const [suggestions, setSuggestions] = useState([]);
+  const [suggestionsOpen, setSuggestionsOpen] = useState(false);
+  const [activeSuggestion, setActiveSuggestion] = useState(-1);
+  const [districtFilter, setDistrictFilter] = useState(window.history.state?.search?.districtFilter || 'all');
+  const [profileFilter, setProfileFilter] = useState(window.history.state?.search?.profileFilter || '');
 
-  const [loadingList, setLoadingList] = useState(true);
+  const [loadingList, setLoadingList] = useState(false);
   const [listError, setListError] = useState(null);
   const [listRetryCount, setListRetryCount] = useState(0);
 
-  const [loadingReport, setLoadingReport] = useState(false);
-  const [reportError, setReportError] = useState(null);
-  const [reportRetryCount, setReportRetryCount] = useState(0);
-  const [refreshingAi, setRefreshingAi] = useState(false);
-
   const [health, setHealth] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dialogOpen, setDialogOpen] = useState(false);
 
-  const reportDialogRef = useRef(null);
+  useEffect(() => {
+    if (!suggestionsOpen || searchInput.trim().length < 2) { setSuggestions([]); return; }
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      fetchNeighborhoodSuggestions(searchInput, { signal: controller.signal })
+        .then(items => { if (!controller.signal.aborted) { setSuggestions(items); setActiveSuggestion(-1); } })
+        .catch(() => { if (!controller.signal.aborted) setSuggestions([]); });
+    }, 250);
+    return () => { clearTimeout(timer); controller.abort(); };
+  }, [searchInput, suggestionsOpen]);
+
+  const chooseSuggestion = place => {
+    openReportPage(place, {searchInput, searchQuery: `${place.name} ${place.district} ${place.city}`, districtFilter, profileFilter});
+  };
 
   // System health check
   useEffect(() => {
@@ -115,12 +125,20 @@ export default function App() {
 
   // Load & filter neighborhoods from backend API
   useEffect(() => {
+    if (!searchQuery.trim()) {
+      setNeighborhoods([]);
+      setSelectedSlug(null);
+      setListError(null);
+      setLoadingList(false);
+      return;
+    }
     const controller = new AbortController();
     setLoadingList(true);
     setListError(null);
 
     fetchNeighborhoods(searchQuery, profileFilter, { signal: controller.signal })
       .then((data) => {
+        if (controller.signal.aborted) return;
         const safeList = Array.isArray(data) ? data : [];
         setNeighborhoods(safeList);
       })
@@ -150,54 +168,10 @@ export default function App() {
     if (loadingList) return;
     if (displayedNeighborhoods.length === 0) {
       setSelectedSlug(null);
-      setReport(null);
       return;
     }
-    if (!selectedSlug || !displayedNeighborhoods.some((n) => n.slug === selectedSlug)) {
-      setSelectedSlug(displayedNeighborhoods[0].slug);
-    }
+    // A report opens only after the user explicitly selects a search result.
   }, [displayedNeighborhoods, loadingList, selectedSlug]);
-
-  // Fetch full report whenever selectedSlug changes
-  useEffect(() => {
-    if (!selectedSlug) {
-      setReport(null);
-      setReportError(null);
-      setLoadingReport(false);
-      return;
-    }
-
-    const controller = new AbortController();
-    setLoadingReport(true);
-    setReportError(null);
-
-    fetchNeighborhoodReport(selectedSlug, { signal: controller.signal })
-      .then((data) => {
-        setReport(data);
-      })
-      .catch((err) => {
-        if (err.name === 'AbortError') return;
-        setReportError(`"${selectedSlug}" mahalle raporu yüklenirken bir sorun oluştu.`);
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) {
-          setLoadingReport(false);
-        }
-      });
-
-    return () => controller.abort();
-  }, [selectedSlug, reportRetryCount]);
-
-  // Sync modal <dialog> state
-  useEffect(() => {
-    const dialog = reportDialogRef.current;
-    if (!dialog) return;
-    if (dialogOpen && report) {
-      if (!dialog.open) dialog.showModal();
-    } else if (dialog.open) {
-      dialog.close();
-    }
-  }, [dialogOpen, report]);
 
   const scrollToSection = useCallback((elementId) => {
     const el = document.getElementById(elementId);
@@ -212,6 +186,8 @@ export default function App() {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     const trimmed = searchInput.trim();
+    if (trimmed.length < 2) return;
+    setSuggestionsOpen(false); setSuggestions([]); setSelectedSlug(null);
     setDistrictFilter('all');
     setSearchQuery(trimmed);
     scrollToSection('mahalleler');
@@ -225,6 +201,7 @@ export default function App() {
   };
 
   const handleResetFilters = () => {
+    setSuggestionsOpen(false); setSuggestions([]);
     setSearchInput('');
     setSearchQuery('');
     setDistrictFilter('all');
@@ -234,23 +211,9 @@ export default function App() {
     setDistrictFilter(district);
   };
 
-  const handleSelectNeighborhood = (slug, { scrollToReport = false, openModal = false } = {}) => {
-    setSelectedSlug(slug);
-    setMobileMenuOpen(false);
-    if (openModal) {
-      setDialogOpen(true);
-    } else if (scrollToReport) {
-      scrollToSection('ornek-rapor');
-    }
-  };
-
-  const handleRefreshAi = () => {
-    if (!selectedSlug) return;
-    setRefreshingAi(true);
-    fetchNeighborhoodReport(selectedSlug)
-      .then((data) => setReport(data))
-      .catch((err) => setReportError(err.message || 'Rapor yenilenemedi.'))
-      .finally(() => setRefreshingAi(false));
+  const handleSelectNeighborhood = slug => {
+    const place = neighborhoods.find(item => item.slug === slug || item.id === slug);
+    if (place) openReportPage(place, {searchInput, searchQuery, districtFilter, profileFilter});
   };
 
   const activeProfile = PROFILE_CONFIG[profileFilter] || PROFILE_CONFIG[''];
@@ -260,7 +223,6 @@ export default function App() {
     return [...neighborhoods].sort((a, b) => (Number(b[field]) || 0) - (Number(a[field]) || 0));
   }, [neighborhoods, activeProfile]);
 
-  const dialogOverallScore = normalizeScoreValue(report?.scores?.overall_livability);
 
   return (
     <div className="mahallen-shell">
@@ -290,7 +252,7 @@ export default function App() {
             <a href="#sana-gore" onClick={() => setMobileMenuOpen(false)}>
               Sana göre
             </a>
-            <a href="#ornek-rapor" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#mahalleler" onClick={() => setMobileMenuOpen(false)}>
               Rapor &amp; Grafikler
             </a>
             <a href="#nasil-calisir" onClick={() => setMobileMenuOpen(false)}>
@@ -300,7 +262,7 @@ export default function App() {
               type="button"
               className="nav-report"
               onClick={() =>
-                handleSelectNeighborhood(selectedSlug || 'kotekli', { scrollToReport: true })
+                document.getElementById('neighborhood-search')?.focus()
               }
             >
               <span>Raporu incele</span>
@@ -321,7 +283,7 @@ export default function App() {
 
         <div className="hero-content container">
           <div className="eyebrow light">
-            <span className="live-dot" /> MUĞLA&apos;DAN BAŞLAYAN MAHALLE REHBERİ
+            <span className="live-dot" /> KAYNAKLI MAHALLE REHBERİ
           </div>
           <h1>
             Yaşayacağın yeri
@@ -333,7 +295,8 @@ export default function App() {
             <br className="desktop-break" /> Taşınmadan önce merak ettiklerin, tek raporda.
           </p>
 
-          <form className="search" id="hero-search" role="search" onSubmit={handleSearchSubmit}>
+          <form className="search" id="hero-search" role="search" onSubmit={handleSearchSubmit}
+            onBlur={e => { if (!e.currentTarget.contains(e.relatedTarget)) setSuggestionsOpen(false); }}>
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -355,12 +318,28 @@ export default function App() {
               onChange={(e) => {
                 const val = e.target.value;
                 setSearchInput(val);
+                setSuggestionsOpen(true); setActiveSuggestion(-1);
                 if (val === '') {
                   setSearchQuery('');
                 }
               }}
               placeholder="Hangi mahalleyi merak ediyorsun?"
               autoComplete="off"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded={suggestionsOpen && suggestions.length > 0}
+              aria-controls="neighborhood-suggestions"
+              aria-activedescendant={activeSuggestion >= 0 ? `suggestion-${activeSuggestion}` : undefined}
+              onFocus={() => setSuggestionsOpen(true)}
+              onKeyDown={e => {
+                if (e.key === 'Escape') setSuggestionsOpen(false);
+                if (suggestionsOpen && suggestions.length && ['ArrowDown', 'ArrowUp'].includes(e.key)) {
+                  e.preventDefault(); setActiveSuggestion(i => (i + (e.key === 'ArrowDown' ? 1 : -1) + suggestions.length) % suggestions.length);
+                }
+                if (e.key === 'Enter' && suggestionsOpen && activeSuggestion >= 0 && suggestions[activeSuggestion]) {
+                  e.preventDefault(); chooseSuggestion(suggestions[activeSuggestion]);
+                }
+              }}
             />
             {(searchInput || searchQuery) && (
               <button
@@ -375,10 +354,15 @@ export default function App() {
             <button type="submit">
               Keşfet <span aria-hidden="true">↗</span>
             </button>
+            {suggestionsOpen && suggestions.length > 0 && <ul id="neighborhood-suggestions" className="search-suggestions-list" role="listbox" aria-label="Mahalle önerileri">
+              {suggestions.map((place, i) => <li key={place.id} role="option" id={`suggestion-${i}`} aria-selected={i === activeSuggestion}>
+                <button type="button" onClick={() => chooseSuggestion(place)}><strong>{place.name}</strong><span>{place.district} / {place.city}</span></button>
+              </li>)}
+            </ul>}
           </form>
 
           <div className="hero-suggestions">
-            <span>Bir yerden başla:</span>
+            <span>Mahalle adıyla birlikte ilçe veya şehir yazabilirsin.</span>
             {QUICK_SUGGESTIONS.map((name) => (
               <button key={name} type="button" onClick={() => handleQuickSearch(name)}>
                 {name} ↗
@@ -386,7 +370,7 @@ export default function App() {
             ))}
             {searchQuery && (
               <button type="button" onClick={handleResetFilters}>
-                Tümünü göster ↺
+                Aramayı temizle ↺
               </button>
             )}
           </div>
@@ -395,7 +379,7 @@ export default function App() {
         <div className="hero-bottom container">
           <span>EV ARAMADAN ÖNCE, MAHALLENİ BUL.</span>
           <a href="#mahalleler">
-            Muğla&apos;yı keşfet <span aria-hidden="true">↓</span>
+            Mahalleni ara <span aria-hidden="true">↓</span>
           </a>
           <span className="image-note">Muğla dokusundan esinlenen temsilî görsel.</span>
         </div>
@@ -406,17 +390,16 @@ export default function App() {
         <div className="scope-strip">
           <div className="container scope-inner">
             <p>
-              <span className="live-dot" /> Muğla pilotu{' '}
-              <span className="scope-location">/ Menteşe &amp; Ula</span>
+              <span className="live-dot" /> Kaynaklı mahalle rehberi
             </p>
             <div>
-              <b>{neighborhoods.length || 5}</b> mahalle
+              {searchQuery ? <><b>{neighborhoods.length}</b> arama sonucu</> : 'Mahalleni arayarak başla'}
             </div>
             <div>
               <b>5</b> değerlendirme boyutu
             </div>
             <span className="preview-tag">
-              {health ? `API Aktif · ${health.database_backend}` : 'Muğla Pilot MVP'}
+              Mahalle bilgileri ve kaynakları
             </span>
           </div>
         </div>
@@ -425,6 +408,7 @@ export default function App() {
         <section
           className="neighborhoods section container"
           id="mahalleler"
+          hidden={!searchQuery && !loadingList && !listError}
           aria-labelledby="places-title"
         >
           <div className="section-top">
@@ -434,7 +418,7 @@ export default function App() {
 
           <div className="section-heading">
             <h2 id="places-title">
-              Muğla&apos;ya
+                Mahallene
               <br />
               biraz daha yakından bak.
             </h2>
@@ -444,8 +428,8 @@ export default function App() {
                 <br />
                 Seninkini bulmak için keşfetmeye başla.
               </p>
-              <a className="text-link" href="#ornek-rapor">
-                Seçili mahalle raporuna geç <span aria-hidden="true">↓</span>
+              <a className="text-link" href="#mahalleler">
+                Bir mahalle seçerek raporunu aç <span aria-hidden="true">↓</span>
               </a>
             </div>
           </div>
@@ -454,8 +438,7 @@ export default function App() {
             <div className="filter-group" role="group" aria-label="İlçeye göre filtrele">
               {[
                 { key: 'all', label: 'Tüm mahalleler', count: neighborhoods.length },
-                { key: 'Menteşe', label: 'Menteşe' },
-                { key: 'Ula', label: 'Ula' },
+                ...[...new Set(neighborhoods.map(n => n.district))].map(district => ({ key: district, label: district })),
               ].map((item) => {
                 const isActive = districtFilter === item.key;
                 return (
@@ -507,7 +490,7 @@ export default function App() {
               <div className="loading-spinner" aria-hidden="true" />
               <div>
                 <strong>Mahalle listesi yükleniyor…</strong>
-                <p>Muğla pilot bölgesindeki mahalle verileri getiriliyor.</p>
+                <p>Aramana uygun mahalleler getiriliyor.</p>
               </div>
             </div>
           )}
@@ -530,14 +513,14 @@ export default function App() {
           )}
 
           {/* EMPTY STATE FOR LIST */}
-          {!loadingList && !listError && displayedNeighborhoods.length === 0 && (
+          {searchQuery && !loadingList && !listError && displayedNeighborhoods.length === 0 && (
             <div className="empty-results-card" role="status" aria-live="polite" data-testid="list-empty">
               <h3>Bu aramada mahalle bulunamadı.</h3>
               <p id="search-message" className="search-message">
-                Kötekli, Akyaka, Emirbeyazıt, Muslihittin veya Orhaniye adlarından birini dene ya da arama filtresini temizle.
+                Mahalle adıyla birlikte ilçe veya şehir ekleyerek yeniden ara.
               </p>
               <button type="button" className="button dark" onClick={handleResetFilters}>
-                Tüm mahalleleri listele <span aria-hidden="true">↺</span>
+                Aramayı temizle <span aria-hidden="true">↺</span>
               </button>
             </div>
           )}
@@ -564,7 +547,7 @@ export default function App() {
                     <button
                       type="button"
                       className="card-image-link"
-                      onClick={() => handleSelectNeighborhood(place.slug, { scrollToReport: true })}
+                      onClick={() => handleSelectNeighborhood(place.slug)}
                       aria-label={`${place.name} raporunu incele`}
                     >
                       <div className="card-photo">
@@ -586,7 +569,7 @@ export default function App() {
                       <h3>{place.name.replace(/\s+Mahallesi$/i, '')}</h3>
                       <button
                         type="button"
-                        onClick={() => handleSelectNeighborhood(place.slug, { scrollToReport: true })}
+                        onClick={() => handleSelectNeighborhood(place.slug)}
                         aria-label={`${place.name} raporunu aç`}
                       >
                         ↗
@@ -597,25 +580,25 @@ export default function App() {
 
                     <div className="card-metrics-strip">
                       <span>
-                        Ort. Kira: <b>{Number(place.avg_rent_tl).toLocaleString('tr-TR')} TL</b>
+                        Kira: <b>{place.avg_rent_tl == null ? 'Kaynakları incele' : `${Number(place.avg_rent_tl).toLocaleString('tr-TR')} TL`}</b>
                       </span>
-                      <span>
+                      {activeSuitability !== null && <span>
                         {activeProfile.buttonLabel}:{' '}
-                        <b>{activeSuitability !== null ? `${activeSuitability}/100` : '—'}</b>
-                      </span>
+                        <b>{`${activeSuitability}/100`}</b>
+                      </span>}
                     </div>
 
                     <div className="card-bottom">
                       <span>
-                        Genel puan{' '}
-                        <strong>
-                          {overallVal !== null ? overallVal : '—'}
+                        {overallVal !== null ? (place.score_partial ? 'Genel ön puan' : 'Genel puan') : place.report_available ? 'Kaynaklı rapor hazır' : 'İlk keşfe hazır'}{' '}
+                        {overallVal !== null && <strong>
+                          {overallVal}
                           <small>/100</small>
-                        </strong>
+                        </strong>}
                       </span>
                       <button
                         type="button"
-                        onClick={() => handleSelectNeighborhood(place.slug, { scrollToReport: true })}
+                        onClick={() => handleSelectNeighborhood(place.slug)}
                       >
                         Raporu incele ↗
                       </button>
@@ -628,14 +611,14 @@ export default function App() {
 
           <div className="section-end">
             <span>Bir mahalle, tek bir sayıdan fazlasıdır.</span>
-            <a href="#ornek-rapor">
-              Seçili mahalle raporunda detayları gör <span aria-hidden="true">↓</span>
+            <a href="#mahalleler">
+              Bir mahalle seçerek detaylarını gör <span aria-hidden="true">↓</span>
             </a>
           </div>
         </section>
 
         {/* 02 / SENİN ÖNCELİKLERİN (PROFILE SELECTION & RANKING) */}
-        <section className="personalize" id="sana-gore" aria-labelledby="profile-title">
+        <section className="personalize" id="sana-gore" aria-labelledby="profile-title" hidden={!searchQuery}>
           <div className="container personalize-grid">
             <div className="profile-copy">
               <span className="eyebrow light">02 / SENİN ÖNCELİKLERİN</span>
@@ -687,17 +670,17 @@ export default function App() {
                         key={item.slug}
                         type="button"
                         className={`ranking-row ranking-row-button ${isSelected ? 'is-selected' : ''}`}
-                        onClick={() => handleSelectNeighborhood(item.slug, { scrollToReport: true })}
+                        onClick={() => handleSelectNeighborhood(item.slug)}
                       >
                         <span className="rank-num">0{index + 1}</span>
                         <div className="rank-place">
                           {item.name.replace(/\s+Mahallesi$/i, '')}
                           <small>
-                            {item.district} / {item.city} · Ort.{' '}
-                            {Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL
+                            {item.district} / {item.city} · 1+1 örnek medyanı:{' '}
+                            {item.avg_rent_tl == null ? 'Kira bilgisi raporda' : `${Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL`}
                           </small>
                         </div>
-                        <span className="rank-score">{score !== null ? score : '—'}</span>
+                        <span className="rank-score">{score !== null ? score : '↗'}</span>
                       </button>
                     );
                   })
@@ -713,32 +696,6 @@ export default function App() {
               </p>
             </div>
           </div>
-        </section>
-
-        {/* 03 / RAPOR VE PUAN GRAFİKLERİ */}
-        <section
-          className="report-section section container"
-          id="ornek-rapor"
-          aria-labelledby="report-title"
-        >
-          <div className="section-top">
-            <span className="eyebrow">03 / RAKAMLARIN ARKASINDAKİ HAYAT</span>
-            <span className="section-index">Açık, anlaşılır, gerekçeli.</span>
-          </div>
-
-          <ReportDashboard
-            report={report}
-            neighborhoods={displayedNeighborhoods}
-            selectedSlug={selectedSlug}
-            onSelectNeighborhood={(slug) => handleSelectNeighborhood(slug, { scrollToReport: false })}
-            onOpenDialog={() => setDialogOpen(true)}
-            onRefreshAi={handleRefreshAi}
-            refreshing={refreshingAi}
-            loading={loadingReport}
-            error={reportError}
-            onRetry={() => setReportRetryCount((c) => c + 1)}
-            onResetSearch={handleResetFilters}
-          />
         </section>
 
         {/* 04 / NASIL ÇALIŞIR? */}
@@ -764,7 +721,7 @@ export default function App() {
                 <span className="step-num">01</span>
                 <h3>Mahalleni bul.</h3>
                 <p>
-                  Muğla&apos;daki pilot mahalleleri ara veya ilçeye göre filtrele. Merak ettiğin yerden başla.
+                  Mahalle adını yaz, önerilerden ilçe ve şehriyle birlikte seç. Merak ettiğin yerden başla.
                 </p>
               </article>
               <article>
@@ -856,89 +813,13 @@ export default function App() {
           <a href="#baslangic">Başa dön ↑</a>
         </div>
         <div className="footer-bottom">
-          <span>Muğla pilotu · Menteşe &amp; Ula</span>
+          <span>Mahalle bilgileri ve kaynakları</span>
           <span>Krem, koyu yeşil ve kiremit tasarım dili · Backend API bağlantılı</span>
           <span>Team Axiom / MahallEN</span>
         </div>
       </footer>
 
-      {/* REPORT SUMMARY DIALOG (Template Modal) */}
-      <dialog
-        ref={reportDialogRef}
-        id="report-dialog"
-        className="report-dialog"
-        aria-labelledby="dialog-title"
-        onCancel={(e) => {
-          e.preventDefault();
-          setDialogOpen(false);
-        }}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) {
-            setDialogOpen(false);
-          }
-        }}
-      >
-        {report && (
-          <>
-            <div className="dialog-top">
-              <span className="eyebrow">MAHALLEN / MAHALLE RAPOR ÖZETİ</span>
-              <button
-                type="button"
-                className="close"
-                aria-label="Raporu kapat"
-                onClick={() => setDialogOpen(false)}
-              >
-                ×
-              </button>
-            </div>
 
-            <div className="dialog-title-row">
-              <div>
-                <p className="dialog-location" id="dialog-location">
-                  {report.city} / {report.district}
-                </p>
-                <h2 id="dialog-title">{report.name}</h2>
-              </div>
-              <div className="dialog-score" id="dialog-score">
-                {dialogOverallScore !== null ? dialogOverallScore : '—'}
-                <small> /100</small>
-              </div>
-            </div>
-
-            <p className="demo-notice">
-              Bu özet mevcut backend verilerini gösterir. Eksik kategori verisi sıfır (0) puan olarak değerlendirilmez.
-            </p>
-
-            <ScoreBarChart scores={report.scores} idPrefix="dialog" />
-
-            <div className="dialog-story">
-              <h3>Mahalleye dair genel değerlendirme</h3>
-              <p id="dialog-description">
-                {report.ai_report?.executive_summary || report.tagline}
-              </p>
-            </div>
-
-            <details className="method-details">
-              <summary>Puanlama yöntemi ve veri kapsamı</summary>
-              <p>
-                {report.scoring_methodology?.note ||
-                  'Gösterilen değerler 0–100 ölçeğindeki backend kategori puanlarıdır.'}
-              </p>
-            </details>
-
-            <button
-              type="button"
-              className="button dark dialog-compare"
-              onClick={() => {
-                setDialogOpen(false);
-                scrollToSection('rapor-detay');
-              }}
-            >
-              Tam rapor kırılımına git <span aria-hidden="true">↓</span>
-            </button>
-          </>
-        )}
-      </dialog>
     </div>
   );
 }

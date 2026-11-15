@@ -1,0 +1,15 @@
+**
+!backend/
+!backend/Dockerfile
+!backend/requirements.txt
+!backend/app/
+!backend/app/**
+backend/app/**/__pycache__/
+backend/app/**/*.pyc
+!data/
+!data/pilot_neighborhoods.json
+!data/place_directory/
+!data/place_directory/**
+
+!data/scoring_research/
+!data/scoring_research/**

@@ -1,0 +1,12 @@
+[
+  {"id":"kotekli","name":"Kötekli","district":"Menteşe","city":"Muğla","identity_source_id":"mentese-identity","rental_path":"mugla-mentese-kotekli-mahallesi"},
+  {"id":"emirbeyazit","name":"Emirbeyazıt","district":"Menteşe","city":"Muğla","identity_source_id":"mentese-identity","rental_path":"mugla-mentese-emirbeyazit-mahallesi"},
+  {"id":"muslihittin","name":"Muslihittin","district":"Menteşe","city":"Muğla","identity_source_id":"mentese-identity","rental_path":"mugla-mentese-muslihittin-mahallesi"},
+  {"id":"orhaniye","name":"Orhaniye","district":"Menteşe","city":"Muğla","identity_source_id":"mentese-identity","rental_path":"mugla-mentese-orhaniye-mahallesi"},
+  {"id":"akyaka","name":"Akyaka","district":"Ula","city":"Muğla","identity_source_id":"ula-identity","rental_path":"mugla-ula-akyaka-mahallesi"},
+  {"id":"caferaga","name":"Caferağa","district":"Kadıköy","city":"İstanbul","identity_source_id":"kadikoy-tesak","rental_path":"istanbul-kadikoy-caferaga-mahallesi"},
+  {"id":"bahcelievler","name":"Bahçelievler","district":"Çankaya","city":"Ankara","identity_source_id":"ego-448","rental_path":"ankara-cankaya-bahcelievler-mahallesi"},
+  {"id":"kultur","name":"Kültür","district":"Konak","city":"İzmir","identity_source_id":"izmir-identity","rental_path":"izmir-konak-kultur-mahallesi"},
+  {"id":"yenibaglar","name":"Yenibağlar","district":"Tepebaşı","city":"Eskişehir","identity_source_id":"tepebasi-identity","rental_path":"eskisehir-tepebasi-yenibaglar-mahallesi"},
+  {"id":"gorukle","name":"Görükle","district":"Nilüfer","city":"Bursa","identity_source_id":"nilufer-sport","rental_path":"bursa-nilufer-gorukle-mahallesi"}
+]

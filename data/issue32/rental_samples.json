@@ -1,0 +1,962 @@
+{
+  "reference_date": "2026-11-06",
+  "sampling": "First readable detail for up to three distinct room types from the first result page; at most six detail attempts per neighborhood. Not random or representative.",
+  "sources": [
+    {
+      "id": "emlakjet-search-kotekli",
+      "url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-kotekli-mahallesi"
+    },
+    {
+      "id": "emlakjet-19904867",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867"
+    },
+    {
+      "id": "emlakjet-20045866",
+      "url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866"
+    },
+    {
+      "id": "emlakjet-20030342",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-genis-11-esyali-kiralik-daire-20030342"
+    },
+    {
+      "id": "emlakjet-search-emirbeyazit",
+      "url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-emirbeyazit-mahallesi"
+    },
+    {
+      "id": "emlakjet-20045942",
+      "url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942"
+    },
+    {
+      "id": "emlakjet-19999225",
+      "url": "https://www.emlakjet.com/ilan/mugla-merkez-de-kiralik-11-daire-19999225"
+    },
+    {
+      "id": "emlakjet-19820765",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765"
+    },
+    {
+      "id": "emlakjet-20056549",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniyede-kiralik-31-daire-20056549"
+    },
+    {
+      "id": "emlakjet-20042450",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniye-mah-site-icerisinde-31-kiralik-daire-20042450"
+    },
+    {
+      "id": "emlakjet-20045866",
+      "url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866"
+    },
+    {
+      "id": "emlakjet-search-muslihittin",
+      "url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-muslihittin-mahallesi"
+    },
+    {
+      "id": "emlakjet-20024236",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mah-31-esyasiz-kiralik-daire-20024236"
+    },
+    {
+      "id": "emlakjet-20008478",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-muslihittin-mahallesi-nde-kiralik-11-daire-20008478"
+    },
+    {
+      "id": "emlakjet-19904867",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867"
+    },
+    {
+      "id": "emlakjet-20059568",
+      "url": "https://www.emlakjet.com/ilan/mugla-kotekli-de-universiteye-yakin-bodrum-kat-21-kiralik-daire-20059568"
+    },
+    {
+      "id": "emlakjet-20041991",
+      "url": "https://www.emlakjet.com/ilan/mugla-kotekli-mah-arakatta-21-esyali-kiralik-daire-20041991"
+    },
+    {
+      "id": "emlakjet-20045942",
+      "url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942"
+    },
+    {
+      "id": "emlakjet-search-orhaniye",
+      "url": "https://www.emlakjet.com/kiralik-daire/mugla-mentese-orhaniye-mahallesi"
+    },
+    {
+      "id": "emlakjet-19820765",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765"
+    },
+    {
+      "id": "emlakjet-20036445",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-de-sehrin-kalbinde-kiralik-21-arakat-daire-20036445"
+    },
+    {
+      "id": "emlakjet-19529247",
+      "url": "https://www.emlakjet.com/ilan/merkezi-konumda-mukemmel-daire-19529247"
+    },
+    {
+      "id": "emlakjet-search-akyaka",
+      "url": "https://www.emlakjet.com/kiralik-daire/mugla-ula-akyaka-mahallesi"
+    },
+    {
+      "id": "emlakjet-20056665",
+      "url": "https://www.emlakjet.com/ilan/akyaka-da-kiralik-esyali-31-dubleks-daire-20056665"
+    },
+    {
+      "id": "emlakjet-20002170",
+      "url": "https://www.emlakjet.com/ilan/akyaka-merkezi-konum-esyali-21-dubleks-daire-20002170"
+    },
+    {
+      "id": "emlakjet-19996826",
+      "url": "https://www.emlakjet.com/ilan/akyaka-da-esyali-kis-sezonuna-uygun-kiralik-daire-19996826"
+    },
+    {
+      "id": "emlakjet-search-caferaga",
+      "url": "https://www.emlakjet.com/kiralik-daire/istanbul-kadikoy-caferaga-mahallesi"
+    },
+    {
+      "id": "emlakjet-20052836",
+      "url": "https://www.emlakjet.com/ilan/odak-emlak-tan-moda-burnu-na-yakin-balkonlu-genis-21-20052836"
+    },
+    {
+      "id": "emlakjet-20051492",
+      "url": "https://www.emlakjet.com/ilan/odak-tan-merkezi-konumda-yenilenmis-esyali-bahce-kati-20051492"
+    },
+    {
+      "id": "emlakjet-20056964",
+      "url": "https://www.emlakjet.com/ilan/moda-caddesi-leylek-sk-ta-esyali-kiralik-11-daire-20056964"
+    },
+    {
+      "id": "emlakjet-search-bahcelievler",
+      "url": "https://www.emlakjet.com/kiralik-daire/ankara-cankaya-bahcelievler-mahallesi"
+    },
+    {
+      "id": "emlakjet-20052761",
+      "url": "https://www.emlakjet.com/ilan/sahibinden-beyaz-esyali-20052761"
+    },
+    {
+      "id": "emlakjet-20042418",
+      "url": "https://www.emlakjet.com/ilan/arel-den-yeni-bina-besevler-yakini-bahce-kat-ayri-mutfakli-21-20042418"
+    },
+    {
+      "id": "emlakjet-20041891",
+      "url": "https://www.emlakjet.com/ilan/cars-dan-kiralik-yeni-bina-bahce-kati-11-daire-20041891"
+    },
+    {
+      "id": "emlakjet-search-kultur",
+      "url": "https://www.emlakjet.com/kiralik-daire/izmir-konak-kultur-mahallesi"
+    },
+    {
+      "id": "emlakjet-20061818",
+      "url": "https://www.emlakjet.com/ilan/51-alsancak-talatpasa-bulvari-kiralik-21-daire-20061818"
+    },
+    {
+      "id": "emlakjet-20059592",
+      "url": "https://www.emlakjet.com/ilan/alsancak-sevinc-pastanesi-sokagi-nda-esyali-kiralik-3-51-daire-20059592"
+    },
+    {
+      "id": "emlakjet-20032574",
+      "url": "https://www.emlakjet.com/ilan/alsancak-sair-esref-bulvarinda-11-70m2-temiz-bakimli-esyali-kiralik-daire-20032574"
+    },
+    {
+      "id": "emlakjet-search-yenibaglar",
+      "url": "https://www.emlakjet.com/kiralik-daire/eskisehir-tepebasi-yenibaglar-mahallesi"
+    },
+    {
+      "id": "emlakjet-20057486",
+      "url": "https://www.emlakjet.com/ilan/yeni-baglar-mahallesinde-bakimli-11-kiralik-daire-20057486"
+    },
+    {
+      "id": "emlakjet-20033971",
+      "url": "https://www.emlakjet.com/ilan/akademi-den-aof-yakini-esyali-abonelikleri-acik-kiralik-21-20033971"
+    },
+    {
+      "id": "emlakjet-20030742",
+      "url": "https://www.emlakjet.com/ilan/mukemmel-konumda-full-esyali-31-kiralik-daire-20030742"
+    },
+    {
+      "id": "emlakjet-search-gorukle",
+      "url": "https://www.emlakjet.com/kiralik-daire/bursa-nilufer-gorukle-mahallesi"
+    },
+    {
+      "id": "emlakjet-20063664",
+      "url": "https://www.emlakjet.com/ilan/o-g-osmanli-dan-esyali-daire-20063664"
+    },
+    {
+      "id": "emlakjet-20059980",
+      "url": "https://www.emlakjet.com/ilan/anil-konu-dan-gorukle-abonelikleri-acik-11-esyali-kiralik-daire-20059980"
+    },
+    {
+      "id": "emlakjet-20052436",
+      "url": "https://www.emlakjet.com/ilan/gm-den-gorukle-merkezde-aile-sitesinde-kiralik-31-genis-daire-20052436"
+    }
+  ],
+  "claims": [
+    {
+      "id": "emlakjet-19904867",
+      "target_id": "kotekli",
+      "category": "rent_cost",
+      "source_id": "emlakjet-19904867",
+      "text": "Yayıncıda 2+1 kiralık daire için 29,500 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Kötekli Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 31 Ekim 2026",
+        "29.500 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 29500,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-10-31",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20045866",
+      "target_id": "kotekli",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20045866",
+      "text": "Yayıncıda 3+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Kötekli Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 01 Kasım 2026",
+        "45.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 45000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-01",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20030342",
+      "target_id": "kotekli",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20030342",
+      "text": "Yayıncıda 1+1 kiralık daire için 22,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Kötekli Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 27 Ekim 2026",
+        "22.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 22000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-10-27",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20045942",
+      "target_id": "emirbeyazit",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20045942",
+      "text": "Yayıncıda 2+1 kiralık daire için 36,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Emirbeyazıt Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 01 Kasım 2026",
+        "36.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 36000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-01",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-19999225",
+      "target_id": "emirbeyazit",
+      "category": "rent_cost",
+      "source_id": "emlakjet-19999225",
+      "text": "Yayıncıda 1+1 kiralık daire için 35,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Emirbeyazıt Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 20 Ekim 2026",
+        "35.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 35000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-10-20",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20024236",
+      "target_id": "muslihittin",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20024236",
+      "text": "Yayıncıda 3+1 kiralık daire için 55,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Muslihittin Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 27 Ekim 2026",
+        "55.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 55000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-10-27",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20008478",
+      "target_id": "muslihittin",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20008478",
+      "text": "Yayıncıda 1+1 kiralık daire için 20,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Muslihittin Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 04 Kasım 2026",
+        "20.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 20000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-04",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-19820765",
+      "target_id": "orhaniye",
+      "category": "rent_cost",
+      "source_id": "emlakjet-19820765",
+      "text": "Yayıncıda 3+1 kiralık daire için 36,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Orhaniye Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 02 Kasım 2026",
+        "36.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 36000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-02",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20036445",
+      "target_id": "orhaniye",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20036445",
+      "text": "Yayıncıda 2+1 kiralık daire için 38,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Orhaniye Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 29 Ekim 2026",
+        "38.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 38000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-10-29",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-19529247",
+      "target_id": "orhaniye",
+      "category": "rent_cost",
+      "source_id": "emlakjet-19529247",
+      "text": "Yayıncıda 4+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Orhaniye Mahallesi, Menteşe , Muğla",
+        "İlan Güncelleme Tarihi 27 Ekim 2026",
+        "45.000 ₺",
+        "4+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "4+1",
+      "asking_amount_tl": 45000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-10-27",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20056665",
+      "target_id": "akyaka",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20056665",
+      "text": "Yayıncıda 3+1 kiralık daire için 40,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Akyaka Mahallesi, Ula , Muğla",
+        "İlan Güncelleme Tarihi 04 Kasım 2026",
+        "40.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 40000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-04",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20002170",
+      "target_id": "akyaka",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20002170",
+      "text": "Yayıncıda 2+1 kiralık daire için 40,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Akyaka Mahallesi, Ula , Muğla",
+        "İlan Güncelleme Tarihi 22 Ekim 2026",
+        "40.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 40000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-10-22",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-19996826",
+      "target_id": "akyaka",
+      "category": "rent_cost",
+      "source_id": "emlakjet-19996826",
+      "text": "Yayıncıda 1+1 kiralık daire için 25,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Akyaka Mahallesi, Ula , Muğla",
+        "İlan Güncelleme Tarihi 03 Kasım 2026",
+        "25.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 25000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-03",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20052836",
+      "target_id": "caferaga",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20052836",
+      "text": "Yayıncıda 2+1 kiralık daire için 60,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Caferağa Mahallesi, Kadıköy , İstanbul",
+        "İlan Güncelleme Tarihi 03 Kasım 2026",
+        "60.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 60000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-03",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20051492",
+      "target_id": "caferaga",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20051492",
+      "text": "Yayıncıda 3+1 kiralık daire için 78,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Caferağa Mahallesi, Kadıköy , İstanbul",
+        "İlan Güncelleme Tarihi 02 Kasım 2026",
+        "78.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 78000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-02",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20056964",
+      "target_id": "caferaga",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20056964",
+      "text": "Yayıncıda 1+1 kiralık daire için 60,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Caferağa Mahallesi, Kadıköy , İstanbul",
+        "İlan Güncelleme Tarihi 04 Kasım 2026",
+        "60.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 60000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-04",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20052761",
+      "target_id": "bahcelievler",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20052761",
+      "text": "Yayıncıda 3+1 kiralık daire için 50,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Bahçelievler Mahallesi, Çankaya , Ankara",
+        "İlan Güncelleme Tarihi 03 Kasım 2026",
+        "50.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 50000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-03",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20042418",
+      "target_id": "bahcelievler",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20042418",
+      "text": "Yayıncıda 2+1 kiralık daire için 50,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Bahçelievler Mahallesi, Çankaya , Ankara",
+        "İlan Güncelleme Tarihi 05 Kasım 2026",
+        "50.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 50000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-05",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20041891",
+      "target_id": "bahcelievler",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20041891",
+      "text": "Yayıncıda 1+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Bahçelievler Mahallesi, Çankaya , Ankara",
+        "İlan Güncelleme Tarihi 01 Kasım 2026",
+        "45.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 45000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-01",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20061818",
+      "target_id": "kultur",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20061818",
+      "text": "Yayıncıda 2+1 kiralık daire için 45,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Kültür Mahallesi, Konak , İzmir",
+        "İlan Güncelleme Tarihi 05 Kasım 2026",
+        "45.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 45000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-05",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20059592",
+      "target_id": "kultur",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20059592",
+      "text": "Yayıncıda 5+1 kiralık daire için 90,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Kültür Mahallesi, Konak , İzmir",
+        "İlan Güncelleme Tarihi 04 Kasım 2026",
+        "90.000 ₺",
+        "5+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "5+1",
+      "asking_amount_tl": 90000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-04",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20032574",
+      "target_id": "kultur",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20032574",
+      "text": "Yayıncıda 1+1 kiralık daire için 37,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Kültür Mahallesi, Konak , İzmir",
+        "İlan Güncelleme Tarihi 28 Ekim 2026",
+        "37.000 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 37000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-10-28",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20057486",
+      "target_id": "yenibaglar",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20057486",
+      "text": "Yayıncıda 1+1 kiralık daire için 14,250 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+        "İlan Güncelleme Tarihi 04 Kasım 2026",
+        "14.250 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 14250,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-04",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20033971",
+      "target_id": "yenibaglar",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20033971",
+      "text": "Yayıncıda 2+1 kiralık daire için 21,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+        "İlan Güncelleme Tarihi 28 Ekim 2026",
+        "21.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 21000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-10-28",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20030742",
+      "target_id": "yenibaglar",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20030742",
+      "text": "Yayıncıda 3+1 kiralık daire için 33,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Yenibağlar Mahallesi, Tepebaşı , Eskişehir",
+        "İlan Güncelleme Tarihi 27 Ekim 2026",
+        "33.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 33000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-10-27",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20063664",
+      "target_id": "gorukle",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20063664",
+      "text": "Yayıncıda 2+1 kiralık daire için 15,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Görükle Mahallesi, Nilüfer , Bursa",
+        "İlan Güncelleme Tarihi 05 Kasım 2026",
+        "15.000 ₺",
+        "2+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "2+1",
+      "asking_amount_tl": 15000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-05",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20059980",
+      "target_id": "gorukle",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20059980",
+      "text": "Yayıncıda 1+1 kiralık daire için 13,500 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Görükle Mahallesi, Nilüfer , Bursa",
+        "İlan Güncelleme Tarihi 04 Kasım 2026",
+        "13.500 ₺",
+        "1+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "1+1",
+      "asking_amount_tl": 13500,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": true,
+      "date": "2026-11-04",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    },
+    {
+      "id": "emlakjet-20052436",
+      "target_id": "gorukle",
+      "category": "rent_cost",
+      "source_id": "emlakjet-20052436",
+      "text": "Yayıncıda 3+1 kiralık daire için 26,000 TL isteniyor; tekil ilan örneği.",
+      "evidence_quotes": [
+        "Görükle Mahallesi, Nilüfer , Bursa",
+        "İlan Güncelleme Tarihi 03 Kasım 2026",
+        "26.000 ₺",
+        "3+1"
+      ],
+      "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+      "rooms": "3+1",
+      "asking_amount_tl": 26000,
+      "amount_tl_month": null,
+      "price_period": "not_explicitly_stated",
+      "furnished": null,
+      "date": "2026-11-03",
+      "date_basis": "listing_updated_at",
+      "publication_date": null,
+      "lease_term": "unknown",
+      "eligible_for_current_comparison": false,
+      "eligible_for_dated_asking_sample": true,
+      "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir."
+    }
+  ],
+  "rejected": [
+    {
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/mugla-orhaniye-mahallesinde-31-esyasiz-kiralik-daire-19820765",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniyede-kiralik-31-daire-20056549",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-orhaniye-mah-site-icerisinde-31-kiralik-daire-20042450",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "emirbeyazit",
+      "url": "https://www.emlakjet.com/ilan/kotekli-emlak-tan-toki-de-kiralik-daire-20045866",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-mentese-kotekli-de-kapali-mutfakli-genis-21-kiralik-daire-19904867",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-kotekli-de-universiteye-yakin-bodrum-kat-21-kiralik-daire-20059568",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-kotekli-mah-arakatta-21-esyali-kiralik-daire-20041991",
+      "reason": "detail_address_does_not_match_target"
+    },
+    {
+      "target_id": "muslihittin",
+      "url": "https://www.emlakjet.com/ilan/mugla-emirbeyazit-mah-esyali-kiralik-21-bakimli-daire-20045942",
+      "reason": "detail_address_does_not_match_target"
+    }
+  ]
+}

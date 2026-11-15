@@ -25,6 +25,8 @@ class Settings:
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     # Select a supported model during the planned LLM integration work (#9).
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "")
+    TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY", "")
+    GEMINI_REPORT_MODEL: str = os.getenv("GEMINI_REPORT_MODEL", "gemini-3.5-flash-lite")
     # Server-side operator secret; never put this in a VITE_* variable.
     AI_REFRESH_TOKEN: str = os.getenv("AI_REFRESH_TOKEN", "")
 

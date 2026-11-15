@@ -1,0 +1,4 @@
+# Keep issue #32 evidence hashes identical on Windows and Linux checkouts.
+data/pilot_neighborhoods.json text eol=lf
+data/issue32/*.json text eol=lf
+data/issue32/neighborhoods/*.json text eol=lf

@@ -1,0 +1,380 @@
+{
+  "schema_version": "2.0.0",
+  "id": "caferaga",
+  "geo_key": "tr/istanbul/kadikoy/caferaga",
+  "country": "Türkiye",
+  "name": "Caferağa",
+  "district": "Kadıköy",
+  "city": "İstanbul",
+  "reference_date": "2026-11-06",
+  "dataset_status": "reviewed_evidence_handoff",
+  "factual_review_status": "source_page_review_limited_scope",
+  "identity": {
+    "id": "caferaga-identity",
+    "target_id": "caferaga",
+    "category": "identity",
+    "evidence_quotes": [
+      "Caferağa Mahallesi, Rıhtım Caddesi, No: 2/3 (Eski Başkanlık Binası) Kadıköy/İstanbul"
+    ],
+    "text": "İstanbul / Kadıköy / Caferağa",
+    "location_basis": "Target-specific municipal/operator address or neighborhood inventory, separately checked against OSM administrative locality.",
+    "source_ids": [
+      "kadikoy-tesak"
+    ],
+    "verification": "source_page_read_narrow_claim_checked",
+    "review_receipt_id": "caferaga-identity",
+    "event_date": null,
+    "publication_date": null
+  },
+  "location": {
+    "lat": 40.9850403,
+    "lon": 29.0248102,
+    "label": "Caferağa Mahallesi, Kadıköy, İstanbul, Marmara Bölgesi, 34710, Türkiye",
+    "osm_type": "relation",
+    "osm_id": 9441032,
+    "source_id": "geocode-caferaga",
+    "checked_at": "2026-11-05T22:18:20.410609+00:00",
+    "method": "Unique name + district + city match; OSM representative point, not a boundary or building address.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0"
+  },
+  "location_missing_reason": null,
+  "categories": {
+    "rent_cost": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "emlakjet-20052836",
+          "target_id": "caferaga",
+          "category": "rent_cost",
+          "text": "Yayıncıda 2+1 kiralık daire için 60,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Caferağa Mahallesi, Kadıköy , İstanbul",
+            "İlan Güncelleme Tarihi 03 Kasım 2026",
+            "60.000 ₺",
+            "2+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "2+1",
+          "asking_amount_tl": 60000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": null,
+          "date": "2026-11-03",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20052836"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20052836",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20051492",
+          "target_id": "caferaga",
+          "category": "rent_cost",
+          "text": "Yayıncıda 3+1 kiralık daire için 78,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Caferağa Mahallesi, Kadıköy , İstanbul",
+            "İlan Güncelleme Tarihi 02 Kasım 2026",
+            "78.000 ₺",
+            "3+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "3+1",
+          "asking_amount_tl": 78000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-02",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20051492"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20051492",
+          "event_date": null
+        },
+        {
+          "id": "emlakjet-20056964",
+          "target_id": "caferaga",
+          "category": "rent_cost",
+          "text": "Yayıncıda 1+1 kiralık daire için 60,000 TL isteniyor; tekil ilan örneği.",
+          "evidence_quotes": [
+            "Caferağa Mahallesi, Kadıköy , İstanbul",
+            "İlan Güncelleme Tarihi 04 Kasım 2026",
+            "60.000 ₺",
+            "1+1"
+          ],
+          "location_basis": "Listing detail address explicitly names the neighborhood, district and city; not advertiser/footer location.",
+          "rooms": "1+1",
+          "asking_amount_tl": 60000,
+          "amount_tl_month": null,
+          "price_period": "not_explicitly_stated",
+          "furnished": true,
+          "date": "2026-11-04",
+          "date_basis": "listing_updated_at",
+          "publication_date": null,
+          "lease_term": "unknown",
+          "eligible_for_current_comparison": false,
+          "eligible_for_dated_asking_sample": true,
+          "limitations": "Sözleşme süresi, ödeme dönemi, ilan ilk yayın tarihi ve işlemin gerçekleştiği fiyat bilinmiyor. İstenen bedel aylık bedele dönüştürülmedi; mahalle ortalaması değildir.",
+          "source_ids": [
+            "emlakjet-20056964"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "emlakjet-20056964",
+          "event_date": null
+        }
+      ],
+      "missing_reason": null,
+      "average_rent_tl": null,
+      "median_rent_tl": null,
+      "comparison_missing_reason": "Sınırlı, temsili olmayan ilan örnekleri; kontrat süreleri bilinmiyor. Mahalle ortalaması/medyanı hesaplanmadı."
+    },
+    "safety_news": {
+      "status": "missing",
+      "score": null,
+      "observations": [],
+      "missing_reason": "Bu taramada mahalleye açıkça bağlanan ve gövdesi okunarak denetlenen uygun kayıt elde edilmedi; hizmet/olay yokluğu anlamına gelmez."
+    },
+    "transportation": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "caferaga-t3",
+          "target_id": "caferaga",
+          "category": "transportation",
+          "location_source_id": "metro-t3-address",
+          "location_quote": "Caferağa Mahallesi Mühürdar Caddesi Damga Sokak No.4 Kadıköy/İstanbul",
+          "text": "T3 Kadıköy–Moda ringinin durakları arasında Moda ve Mühürdar bulunuyor. İşletmeci T3 yerleşkesini Caferağa adresinde listeliyor; yürüyüş mesafesi hesaplanmadı.",
+          "evidence_quotes": [
+            "Moda İlkokulu, Moda, Rızapaşa, Mühürdar, Damga Sokak"
+          ],
+          "code": "T3",
+          "frequency_minutes": null,
+          "last_departure": null,
+          "date": null,
+          "date_basis": "undated_operator_page",
+          "limitations": "Yerleşke adresi yolcu durağı değildir; hat sayfasındaki duraklarla birlikte yalnız yerel hat bağlamını destekler. Güncel çalışma kesintileri doğrulanmadı.",
+          "source_ids": [
+            "metro-t3",
+            "metro-t3-address"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "caferaga-t3",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "social_life": {
+      "status": "partial_snapshot",
+      "score": null,
+      "observations": [
+        {
+          "id": "caferaga-library",
+          "target_id": "caferaga",
+          "category": "social_life",
+          "text": "Kadıköy Belediyesi TESAK kütüphanesinin adresini Caferağa, Rıhtım Caddesi No:2/3 olarak yayımlıyor.",
+          "evidence_quotes": [
+            "Tarih, Edebiyat ve Sanat Kütüphanesi"
+          ],
+          "name": "Tarih, Edebiyat ve Sanat Kütüphanesi (TESAK)",
+          "type": "library",
+          "latitude": null,
+          "longitude": null,
+          "open_status": "unknown",
+          "date": null,
+          "date_basis": "undated_facility_directory",
+          "limitations": "Adres kaydı kontrol edildi; bugünkü etkinlik ve çalışma düzeni doğrulanmadı.",
+          "source_ids": [
+            "kadikoy-tesak"
+          ],
+          "verification": "source_page_read_narrow_claim_checked",
+          "review_receipt_id": "caferaga-library",
+          "event_date": null,
+          "publication_date": null
+        }
+      ],
+      "missing_reason": null
+    },
+    "earthquake_hazard": {
+      "status": "research_point_estimate",
+      "score": null,
+      "observations": [],
+      "missing_reason": null,
+      "value": 0.401,
+      "unit": "g",
+      "research": {
+        "status": "research_estimate",
+        "value": 0.401,
+        "unit": "g",
+        "probability": "10% probability of exceedance in 50 years (publisher file/map label)",
+        "method": "nearest published grid point; no interpolation",
+        "nearest_grid_point": {
+          "latitude": 40.97513,
+          "longitude": 29.0194,
+          "pga_g": 0.401
+        },
+        "distance_to_grid_point_km": 1.1919,
+        "maximum_supported_distance_km": 5,
+        "grid_row_count": 201920,
+        "source_url": "https://aperta.ulakbim.gov.tr/records/274290",
+        "metadata_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+        "source_title": "Jeodezik Deprem Tehlike Haritası",
+        "source_version": "v1, 2025-02-16",
+        "authors": [
+          "Aktuğ, Bahadır",
+          "Şentürk, Murat Doruk",
+          "Özsaraç, Vedat",
+          "KILIÇ, Nazan"
+        ],
+        "license": {
+          "id": "cc-by-sa-4.0"
+        },
+        "file_checksum": "md5:62c2c510f923d8cc68b2207fcb62c6da",
+        "file_retrieved_at": "2026-10-27T21:37:10.916980+00:00",
+        "unit_evidence": "Publisher companion image PGA_0.10.png labels its legend PGA (g).",
+        "is_official_afad_tdth": false,
+        "limitations": [
+          "Academic geodetic model, not the official AFAD TDTH hazard grid.",
+          "This is a point estimate with a reported grid distance, not a neighborhood-wide value.",
+          "No soil class, building safety conclusion, risk label or score is derived."
+        ]
+      },
+      "source_ids": [
+        "aperta-metadata",
+        "aperta-record"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aperta-metadata",
+      "url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/api/records/274290",
+      "publisher": "aperta.ulakbim.gov.tr",
+      "checked_at": "2026-11-05T22:18:08.875222+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "543ec5076acc15649855ff2350ad009c3fd2fe05737d3fbafd6a07218035d1a3"
+    },
+    {
+      "id": "aperta-record",
+      "url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "final_url": "https://aperta.ulakbim.gov.tr/records/274290",
+      "publisher": "Jeodezik Deprem Tehlike Haritası",
+      "checked_at": "2026-11-05T22:22:04.241946+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "bfbda26c9af8f6bfe247afac9262db3cd4ed0a60b91fdd9ae0491d2ea7b5d0f9"
+    },
+    {
+      "id": "emlakjet-20051492",
+      "url": "https://www.emlakjet.com/ilan/odak-tan-merkezi-konumda-yenilenmis-esyali-bahce-kati-20051492",
+      "final_url": "https://www.emlakjet.com/ilan/odak-tan-merkezi-konumda-yenilenmis-esyali-bahce-kati-20051492",
+      "publisher": "Odak Emlak Danişmanliği İstanbul Kadıköy Caferağa Mahallesi 3+1 Oda Kiralık Daire 78,000 TL #20051492 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:20.629033+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "a7c4a0d6c93cccfc888958c164b6f754b8b8af6c3a6beebf8a43fa3aadd7b733"
+    },
+    {
+      "id": "emlakjet-20052836",
+      "url": "https://www.emlakjet.com/ilan/odak-emlak-tan-moda-burnu-na-yakin-balkonlu-genis-21-20052836",
+      "final_url": "https://www.emlakjet.com/ilan/odak-emlak-tan-moda-burnu-na-yakin-balkonlu-genis-21-20052836",
+      "publisher": "Odak Emlak Danişmanliği İstanbul Kadıköy Caferağa Mahallesi 2+1 Oda Kiralık Daire 60,000 TL #20052836 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:19.760795+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "221978fc44761f183cb8a678375c916fbed3373065f6ff76f64a1a518ffae4ed"
+    },
+    {
+      "id": "emlakjet-20056964",
+      "url": "https://www.emlakjet.com/ilan/moda-caddesi-leylek-sk-ta-esyali-kiralik-11-daire-20056964",
+      "final_url": "https://www.emlakjet.com/ilan/moda-caddesi-leylek-sk-ta-esyali-kiralik-11-daire-20056964",
+      "publisher": "Pb Türki̇ye Gayri̇menkul Danişmanlik İstanbul Kadıköy Caferağa Mahallesi 1+1 Oda Kiralık Daire 60,000 TL #20056964 | Emlakjet",
+      "checked_at": "2026-11-05T22:16:21.622626+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "dd6ef1db04545938cd7ce1d739359a613b479bf1959e81ba68ca9a668bbb67fe"
+    },
+    {
+      "id": "geocode-caferaga",
+      "url": "https://nominatim.openstreetmap.org/search?q=Cafera%C4%9Fa%2C+Kad%C4%B1k%C3%B6y%2C+%C4%B0stanbul&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Cafera%C4%9Fa%2C+Kad%C4%B1k%C3%B6y%2C+%C4%B0stanbul&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+      "publisher": "nominatim.openstreetmap.org",
+      "checked_at": "2026-11-05T22:18:20.410609+00:00",
+      "http_status": 200,
+      "access_status": "data_read",
+      "response_sha256": "d2745be932da985bc6c5f9aafcd9bd54de41fc913f3d860a11153406ffb571e9"
+    },
+    {
+      "id": "kadikoy-tesak",
+      "url": "https://kultursanat.kadikoy.bel.tr/tr/kultur-merkezleri/tarih-edebiyat-ve-sanat-kutuphanesi",
+      "final_url": "https://kultursanat.kadikoy.bel.tr/tr/kultur-merkezleri/tarih-edebiyat-ve-sanat-kutuphanesi",
+      "publisher": "Kültür Sanat Portalı | Kültür Merkezleri",
+      "checked_at": "2026-11-05T22:13:02.666272+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "3405ddf49db395c3f2ee3ed195a3adc18fecd3b3272f5f293e4008ffc71e141d"
+    },
+    {
+      "id": "metro-t3",
+      "url": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T3",
+      "final_url": "https://www.metro.istanbul/Hatlarimiz/HatDetay?hat=T3",
+      "publisher": "Kadıköy-Moda Tramvay Hattı",
+      "checked_at": "2026-11-05T22:13:55.423835+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "88222ece0d6ac6a05d996d4992ec05d3670a07939299b995fcbac949ef9c3b69"
+    },
+    {
+      "id": "metro-t3-address",
+      "url": "https://www.metro.istanbul/BizeUlasin/",
+      "final_url": "https://www.metro.istanbul/BizeUlasin/",
+      "publisher": "www.metro.istanbul",
+      "checked_at": "2026-11-05T22:13:55.329813+00:00",
+      "http_status": 200,
+      "access_status": "page_read",
+      "response_sha256": "eef2cd912f4af5e9ed45427d47a07e1b4eae37d97f44b99dddf4260898627835"
+    }
+  ],
+  "excluded_observations": [],
+  "missing_values": {
+    "overall_score": null,
+    "soil_class": null,
+    "building_safety": null,
+    "crime_rate": null,
+    "bus_frequency_minutes": null,
+    "campus_commute_minutes": null,
+    "reason": "Bu değişkenler için doğrudan mahalle ölçümü/uygun veri yok; sıfır veya başka mahalle değeriyle doldurulmadı."
+  },
+  "provenance": {
+    "reviewed_claims": "data/issue32/reviewed_claims.json",
+    "rental_samples": "data/issue32/rental_samples.json",
+    "source_audit": "data/issue32/source_audit.json",
+    "review_receipts": "data/issue32/review_receipts.json"
+  },
+  "limitations": [
+    "Açıkça kaynakta bildirilen sınırlı örneklerdir; tüm ilan, işletme veya olayların envanteri değildir.",
+    "Sayfanın açılması iddianın bağımsız doğrulandığı anlamına gelmez; kaynak ve erişim tarihiyle birlikte aktarılmalıdır.",
+    "Tarihsiz haberler güncel sayılmaz; yayın ve olay tarihi ayrıdır. Eksik haberden güvenli mahalle sonucu çıkarılamaz.",
+    "PGA akademik araştırma gridindeki temsil noktasına aittir; resmî AFAD TDTH, bina sağlamlığı veya mahalle geneli risk puanı değildir.",
+    "LLM raporu üretimi ve önbellek hazırlama bu veri tesliminin ayrı entegrasyon adımıdır."
+  ]
+}

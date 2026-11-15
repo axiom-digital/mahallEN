@@ -2,14 +2,17 @@ FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 
-WORKDIR /app
+WORKDIR /app/backend
 
-RUN useradd --create-home --uid 10001 appuser && chown appuser:appuser /app
+RUN useradd --create-home --uid 10001 appuser && chown appuser:appuser /app/backend
 
-COPY requirements.txt .
+COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY --chown=appuser:appuser . .
+COPY --chown=appuser:appuser backend/app ./app
+COPY data/pilot_neighborhoods.json /app/data/
+COPY data/place_directory /app/data/place_directory
+COPY data/scoring_research /app/data/scoring_research
 
 USER appuser
 

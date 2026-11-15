@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowLeft, Search } from 'lucide-react';
+import { ArrowLeft, ArrowRightLeft, Search } from 'lucide-react';
 import ReportDashboard from './ReportDashboard';
 import { fetchNeighborhoodReport } from '../services/api';
 import { getPlace } from '../services/places';
@@ -39,6 +39,7 @@ export default function ReportPage({ id }) {
     <header className="report-page-header"><nav className="container" aria-label="Rapor sayfası">
       <a className="brand" href="/" onClick={goHome} aria-label="MahallEN ana sayfa">Mahall<span>EN</span><i /></a>
       <a className="report-back-link" href="/" onClick={goHome}><ArrowLeft size={16} /> Aramaya dön</a>
+      <a className="report-back-link" href="/karsilastir" onClick={(e) => { e.preventDefault(); navigate('/karsilastir'); }}><ArrowRightLeft size={16} /> Mahalle Karşılaştır</a>
       <a className="report-new-search" href="/" onClick={goHome} aria-label="Başka mahalle ara"><Search size={16} /><span>Başka mahalle ara</span></a>
     </nav></header>
     <main className="container report-page" aria-label="Mahalle raporu">

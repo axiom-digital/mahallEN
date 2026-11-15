@@ -6,7 +6,7 @@ import {
 } from './services/api';
 import { normalizeScoreValue } from './components/ScoreCard';
 
-import { openReportPage } from './navigation.mjs';
+import { openReportPage, navigate } from './navigation.mjs';
 
 const NEIGHBORHOOD_VISUALS = {
   kotekli: {
@@ -254,6 +254,9 @@ export default function App() {
             </a>
             <a href="#mahalleler" onClick={() => setMobileMenuOpen(false)}>
               Rapor &amp; Grafikler
+            </a>
+            <a href="/karsilastir" onClick={(e) => { e.preventDefault(); navigate('/karsilastir'); }}>
+              Karşılaştır
             </a>
             <a href="#nasil-calisir" onClick={() => setMobileMenuOpen(false)}>
               Nasıl çalışır?

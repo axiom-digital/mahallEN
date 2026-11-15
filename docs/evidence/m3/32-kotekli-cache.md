@@ -1,4 +1,8 @@
-# M3 Evidence — Kötekli Report Cache (#32)
+# M3 Evidence — Pilot Report Cache (#32)
+
+**15 November 2026.** Live Gemini preparation and first-request cache delivery passed for all ten pilot neighborhoods on `63d45a5`. The Kötekli refresh tests below record the earlier implementation. See [the ten-neighborhood verification](#ten-neighborhood-demo-verification) for the current result.
+
+## Initial Kötekli test
 
 - **Test date:** 5 November 2026
 - **Tested commit:** `32e60a2` (`32-kotekli-report-cache`)
@@ -129,3 +133,24 @@ Backend mevcut yerel ayarlarla, aynı geçici SQLite veritabanı korunarak yenid
 Güvenli tanılama kaydı sağlayıcı çağrısı aşamasında `DeadlineExceeded` ve SDK sağlayıcı kodu `504` gösterdi. Rapor doğrulamasına geçilmedi. Başarısız yenilemeden hemen önce ve sonra SQLite satırı karşılaştırıldı. Rapor, sürüm, saklama zamanı, son kullanma zamanı ve isabet sayacı aynıydı. Gemini çağrısı tekrarlanmadı.
 
 39 API ve önbellek testi geçti. Sahte sağlayıcıyla başarılı yenileme, tam kaynakların ve ham gözlemlerin korunması, yeni metnin `HIT` ile dönmesi ve hatada son geçerli raporun korunması doğrulandı. Canlı Gemini metniyle `200 → 200 HIT` doğrulaması açık.
+
+## Ten Neighborhood Demo Verification
+
+On 15 November 2026, we prepared reports with `gemini-3.5-flash-lite` on commit `63d45a5`. We kept successful reports in a dedicated SQLite database while retrying unresolved reports. After all ten were ready, we restarted the application against the same database. The first normal `GET /api/v1/places/{id}/report` for each neighborhood returned its prepared Gemini report.
+
+| Neighborhood | First HTTP status | X-Cache |
+| --- | --- | --- |
+| Kötekli | 200 | HIT |
+| Emirbeyazıt | 200 | HIT |
+| Muslihittin | 200 | HIT |
+| Orhaniye | 200 | HIT |
+| Akyaka | 200 | HIT |
+| Caferağa | 200 | HIT |
+| Bahçelievler | 200 | HIT |
+| Kültür | 200 | HIT |
+| Yenibağlar | 200 | HIT |
+| Görükle | 200 | HIT |
+
+Each response had a nonempty summary and the expected Gemini writer model. The demo database and its SQLite backup both passed the integrity check and contained ten prepared reports. The static package has 68 distinct source URLs with successful checks recorded in the [data handoff](../../ISSUE32_DATA_HANDOFF.md).
+
+To refresh the reports, stop the demo backend and use the same `DATABASE_URL` and `GEMINI_REPORT_MODEL` for preparation and serving. Set `REPORT_CACHE_TTL_SECONDS=2592000` for a 30-day demo cache, then run `python scripts/prepare_place_reports.py --workers 1 --rewrite-text` from `backend`. This rewrites report text from the saved evidence. After refreshing, repeat the ten first-read checks and take a fresh backup.

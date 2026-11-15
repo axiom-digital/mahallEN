@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import App from './App';
 import ReportPage from './components/ReportPage';
+import ComparisonView from './components/ComparisonView';
 import { NAVIGATION_EVENT, reportId, navigate } from './navigation.mjs';
 
 export default function AppRouter() {
@@ -15,8 +16,10 @@ export default function AppRouter() {
     };
   }, []);
   useEffect(() => { window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); }, [path]);
+  
   const id = reportId(path);
   if (id) return <ReportPage key={id} id={id} />;
+  if (path === '/karsilastir') return <ComparisonView />;
   if (path === '/') return <App />;
   return <main className="container report-page"><h1>Sayfa bulunamadı</h1><a href="/" onClick={event => { event.preventDefault(); navigate('/'); }}>Mahalle aramaya dön</a></main>;
 }

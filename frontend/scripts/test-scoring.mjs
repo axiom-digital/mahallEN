@@ -10,6 +10,7 @@ import {
   profiles,
   weightedScore,
 } from '../src/scoring.mjs';
+import { adaptPlaceReport } from '../src/services/placeAdapter.mjs';
 
 assert.equal(budgetScore(30000, 30000), 50);
 assert.equal(budgetScore(27000, 30000), 70);
@@ -39,7 +40,7 @@ assert.equal(smallHome.score, 78);
 assert.equal(housingComparison(listings, housingPreferences('2+1', '25000')).score, 10);
 assert.deepEqual(housingComparison(listings, housingPreferences('1+0', '25000')), { listings: [], median: null, score: null });
 
-// Issue #10: Category score normalization & missing data policy (never coerce null/undefined to 0)
+// Issue #10 & #33: Category score normalization & missing data policy (never coerce null/undefined to 0)
 assert.equal(CATEGORY_DEFINITIONS.length, 5);
 assert.deepEqual(
   CATEGORY_DEFINITIONS.map((c) => c.label),
@@ -74,4 +75,64 @@ assert.deepEqual(
   ]
 );
 
-console.log('Scoring checks passed: boundaries, weights, missing data and earthquake contribution.');
+// Issue #33: Verify adaptPlaceReport maps scores, sources, PGA, rent range, and keeps missing values as null
+const samplePlaceReport = {
+  place: { id: 'abc123', name: 'Kötekli', district: 'Menteşe', city: 'Muğla' },
+  reference_date: '2026-11-06',
+  summary: 'Kaynaklı özet',
+  limitations: ['Örnek sınırlılık'],
+  generated_by: 'Google Gemini (gemini-3.5-flash-lite) · kural tabanlı puanlar',
+  categories: [
+    {
+      id: 'rent_cost',
+      label: 'Kira ve maliyet',
+      items: [{ text: '1+1 ilan: 21000 TL', sources: [{ id: 's1', title: 'Emlakjet', url: 'https://www.emlakjet.com/ilan/1' }] }],
+    },
+    { id: 'social_life', label: 'Sosyal yaşam', items: [] },
+    {
+      id: 'safety_news',
+      label: 'Haberler ve güvenlik',
+      items: [],
+      historical_items: [{ text: 'Arşiv haberi', date: '2024-01-10', sources: [{ id: 's2', title: 'Yerel Basın', url: 'https://example.com/haber' }] }],
+    },
+    {
+      id: 'earthquake_hazard',
+      label: 'Deprem verisi',
+      items: [{ text: 'Araştırma gridinde temsil noktasının PGA değeri 0.351 g.', sources: [{ id: 's3', title: 'Aperta', url: 'https://aperta.ulakbim.gov.tr/record/274290' }] }],
+    },
+    { id: 'transportation', label: 'Ulaşım', items: [{ text: '1-48 Yeniköy - Kötekli - Kampüs', sources: [] }] },
+  ],
+  assessment: {
+    overall_score: 26,
+    profile_scores: { students: 26, families: 24, professionals: 27 },
+    categories: [
+      { category: 'rent_cost', score: 18 },
+      { category: 'social_life', score: null },
+      { category: 'safety_news', score: null },
+      { category: 'earthquake_hazard', score: 23 },
+      { category: 'transportation', score: 35 },
+    ],
+    calculation: { monthly_rent: 21500, rent_sample_count: 2 },
+    briefing: {
+      hazard: { value: 0.351 },
+      rent_types: [{ rooms: '1+1', sample_count: 2, median: 21500, min: 21000, max: 22000 }],
+    },
+    executive_summary: 'Kötekli değerlendirme özeti.',
+    pros: ['Kampüse yakın hatlar'],
+    cons: ['Kira düzeyi'],
+    methodology: 'Kural tabanlı proje değerlendirmesi.',
+  },
+};
+
+const adapted = adaptPlaceReport(samplePlaceReport);
+assert.equal(adapted.scores.overall_livability, 26);
+assert.equal(adapted.scores.cost_affordability, 18);
+assert.equal(adapted.scores.transportation, 35);
+assert.equal(adapted.scores.disaster_resilience, 23);
+assert.equal(adapted.scores.social_life, null);
+assert.equal(adapted.scores.safety, null);
+assert.equal(adapted.disaster_risk.pga_value_g, 0.351);
+assert.ok(adapted.rent_analysis.rent_range_tl.includes('21.000'));
+assert.equal(adapted.data_sources.length, 3);
+
+console.log('Scoring and placeAdapter checks passed: boundaries, weights, missing data and earthquake contribution.');

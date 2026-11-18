@@ -11,26 +11,36 @@ export const roomTypes = ['1+0', '1+1', '2+0', '2+1', '3+1'];
 export const CATEGORY_DEFINITIONS = [
   {
     key: 'cost_affordability',
+    scoreKey: 'cost_affordability',
+    evidenceKey: 'rent_cost',
     label: 'Maliyet',
     shortNote: 'Kira düzeyi ve bütçe erişilebilirliği',
   },
   {
     key: 'social_life',
+    scoreKey: 'social_life',
+    evidenceKey: 'social_life',
     label: 'Sosyal yaşam',
     shortNote: 'Mahalle yaşamı, mekânlar ve sakin deneyimleri',
   },
   {
     key: 'safety',
+    scoreKey: 'safety',
+    evidenceKey: 'safety_news',
     label: 'Güvenlik / haberler',
     shortNote: 'Yerel olay haberleri ve çevre güvenliği algısı',
   },
   {
     key: 'disaster_resilience',
+    scoreKey: 'disaster_resilience',
+    evidenceKey: 'earthquake_hazard',
     label: 'Afet',
     shortNote: 'Sismik tehlike (PGA) ve zemin sınıfı bağlamı',
   },
   {
     key: 'transportation',
+    scoreKey: 'transportation',
+    evidenceKey: 'transportation',
     label: 'Ulaşım',
     shortNote: 'Toplu taşıma sıklığı, merkez ve kampüs erişimi',
   },

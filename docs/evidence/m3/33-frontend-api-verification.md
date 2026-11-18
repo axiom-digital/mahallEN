@@ -69,3 +69,30 @@ Kural tabanlı puanlama (`rule_scoring.py` + `place_assessment.with_score_summar
 | **Frontend Puanlama & Adaptör Testi** | `node frontend/scripts/test-scoring.mjs` | **GEÇTİ** |
 | **Frontend Rota & Geçmiş Testi** | `node frontend/scripts/test-navigation.mjs` | **2/2 GEÇTİ** |
 | **Frontend Üretim Derlemesi** | `npm --prefix frontend run build` | **GEÇTİ** (`vite v6.4.5`, `1581 modules transformed`) |
+
+### Canlı HTTP Sunucusu (`http://127.0.0.1:8000/api/v1`) Üzerinde Otomatik Akış Testi (`node frontend/scripts/test-issue33-flow.mjs`)
+
+```text
+=== Issue #33 Kapsamlı API & Frontend Doğrulama Testi Başlıyor ===
+
+[1/6] Sistem sağlık kontrolü (/api/v1/health): 200 OK (35.56 ms)
+[2/6] Arama & Otomatik Tamamlama (/places/suggest & /places/search): Türkçe karakter, ulusal dizin ve boş sorgu korumaları doğrulandı.
+[3/6] Arama sonuç sıralaması ve eksik puan (null vs 0) ayrımı doğrulandı.
+
+[4/6] 10 Pilot Mahalle Rapor Sayfası (/places/{id}/report), Kaynak ve Eksik Veri Kontrolü:
+  ✓ Kötekli       | HTTP 200 HIT (10.89 ms) | Genel:   22 | Maliyet:   18 | Ulaşım:   35 | Afet: 23 | PGA: 0.351g | Kaynak: 119
+  ✓ Emirbeyazıt   | HTTP 200 HIT (13.22 ms) | Genel: null | Maliyet: null | Ulaşım:   60 | Afet: 29 | PGA: 0.334g | Kaynak: 175
+  ✓ Muslihittin   | HTTP 200 HIT (11.25 ms) | Genel:   25 | Maliyet:   11 | Ulaşım:   68 | Afet: 29 | PGA: 0.334g | Kaynak: 127
+  ✓ Orhaniye      | HTTP 200 HIT (12.62 ms) | Genel: null | Maliyet: null | Ulaşım: null | Afet: 29 | PGA: 0.334g | Kaynak: 169
+  ✓ Akyaka        | HTTP 200 HIT (10.96 ms) | Genel:   10 | Maliyet:    0 | Ulaşım:   43 | Afet: 11 | PGA: 0.391g | Kaynak: 117
+  ✓ Caferağa      | HTTP 200 HIT ( 5.78 ms) | Genel: null | Maliyet: null | Ulaşım: null | Afet:  8 | PGA: 0.401g | Kaynak: 8
+  ✓ Bahçelievler  | HTTP 200 HIT ( 7.61 ms) | Genel: null | Maliyet: null | Ulaşım: null | Afet: 41 | PGA: 0.304g | Kaynak: 9
+  ✓ Kültür        | HTTP 200 HIT ( 6.68 ms) | Genel: null | Maliyet: null | Ulaşım: null | Afet: 17 | PGA: 0.368g | Kaynak: 7
+  ✓ Yenibağlar    | HTTP 200 HIT (  6.8 ms) | Genel: null | Maliyet: null | Ulaşım: null | Afet: 56 | PGA: 0.271g | Kaynak: 6
+  ✓ Görükle       | HTTP 200 HIT ( 6.86 ms) | Genel: null | Maliyet: null | Ulaşım: null | Afet: 25 | PGA: 0.344g | Kaynak: 8
+
+[5/6] Gerçek 0 puan (Akyaka Maliyet = 0/100) ile Eksik Veri (null -> "Yeterli veri yok") ayrımı kesin olarak doğrulandı.
+[6/6] Pilot veri uç noktası (/api/v1/neighborhoods/kotekli/report) ve X-Cache: HIT (7.33 ms) doğrulandı.
+
+=== TÜM ISSUE #33 KONTROLLERİ EKSİKSİZ GEÇTİ ===
+```

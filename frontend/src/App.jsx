@@ -220,8 +220,24 @@ export default function App() {
 
   const rankedNeighborhoods = useMemo(() => {
     const field = activeProfile.scoreField;
-    return [...neighborhoods].sort((a, b) => (Number(b[field]) || 0) - (Number(a[field]) || 0));
+    return [...neighborhoods].sort((a, b) => {
+      const scoreA = normalizeScoreValue(a[field]);
+      const scoreB = normalizeScoreValue(b[field]);
+      return (scoreB ?? -1) - (scoreA ?? -1);
+    });
   }, [neighborhoods, activeProfile]);
+
+  const handleNavSectionClick = (e, sectionId) => {
+    setMobileMenuOpen(false);
+    if (!searchQuery && (sectionId === 'mahalleler' || sectionId === 'sana-gore')) {
+      e.preventDefault();
+      const input = document.getElementById('neighborhood-search');
+      if (input) {
+        input.focus();
+        scrollToSection('baslangic');
+      }
+    }
+  };
 
 
   return (
@@ -246,16 +262,16 @@ export default function App() {
           </a>
 
           <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
-            <a href="#mahalleler" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#mahalleler" onClick={(e) => handleNavSectionClick(e, 'mahalleler')}>
               Mahalleler
             </a>
-            <a href="#sana-gore" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#sana-gore" onClick={(e) => handleNavSectionClick(e, 'sana-gore')}>
               Sana göre
             </a>
-            <a href="#mahalleler" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#mahalleler" onClick={(e) => handleNavSectionClick(e, 'mahalleler')}>
               Rapor &amp; Grafikler
             </a>
-            <a href="/karsilastir" onClick={(e) => { e.preventDefault(); navigate('/karsilastir'); }}>
+            <a href="/karsilastir" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); navigate('/karsilastir'); }}>
               Karşılaştır
             </a>
             <a href="#nasil-calisir" onClick={() => setMobileMenuOpen(false)}>
@@ -264,9 +280,10 @@ export default function App() {
             <button
               type="button"
               className="nav-report"
-              onClick={() =>
-                document.getElementById('neighborhood-search')?.focus()
-              }
+              onClick={() => {
+                setMobileMenuOpen(false);
+                document.getElementById('neighborhood-search')?.focus();
+              }}
             >
               <span>Raporu incele</span>
               <span aria-hidden="true">↗</span>
@@ -381,7 +398,7 @@ export default function App() {
 
         <div className="hero-bottom container">
           <span>EV ARAMADAN ÖNCE, MAHALLENİ BUL.</span>
-          <a href="#mahalleler">
+          <a href="#mahalleler" onClick={(e) => handleNavSectionClick(e, 'mahalleler')}>
             Mahalleni ara <span aria-hidden="true">↓</span>
           </a>
           <span className="image-note">Muğla dokusundan esinlenen temsilî görsel.</span>
@@ -795,7 +812,7 @@ export default function App() {
               <br />
               <em>mahallene karar ver.</em>
             </h2>
-            <a className="button cream" href="#mahalleler">
+            <a className="button cream" href="#mahalleler" onClick={(e) => handleNavSectionClick(e, 'mahalleler')}>
               Mahalleleri keşfet <span aria-hidden="true">↗</span>
             </a>
           </div>

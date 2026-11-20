@@ -4,7 +4,7 @@
 - **Owners:** Irmak + Ferdi
 - **Milestone:** `M3 — Integration, Verification, and Presentation`
 - **Branch:** `test_search_report_flow`
-- **Verification Date:** 2026-04-20
+- **Verification Date:** 2026-11-20
 
 ---
 

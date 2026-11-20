@@ -1,0 +1,213 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "orhaniye",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:22:33.949512+00:00",
+  "finished_at": "2026-10-28T18:22:40.061560+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "rent_cost"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Orhaniye Menteşe Muğla kiralık daire 1+0 son 90 gün",
+    "Orhaniye Menteşe Muğla kiralık daire 1+1 son 90 gün",
+    "Orhaniye Menteşe Muğla kiralık daire 2+1 son 90 gün",
+    "Orhaniye Menteşe Muğla kiralık daire 3+1 son 90 gün"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBPWO97JdHvnj2KphuiosS3olE13GC2o9I8k1d5FmXFFGziqQjATOL0eBcGF_t_DgI0gz1vDNceZr80ZiyKRUka00DnaGTJ0IAueaOROkkX4tIec9lKkSi1eUimX9CmSyYT_06cDSCzW-Xl4QnAWCX6W1Kl9qGfio4PWou4OrbdSM=",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMdk-ls-9anZCm6FbKCwCKhL6Xe_WQTg8eJTo6USf3ZC4RFwWB3GCS4wDmHHLuR1ZarkBJ1F2qnwwek1nIuKrf01zCBXoa4iIczh5CzONsQQI8dRR_SIsFPPS1se83RGhcYjj-hyKADjpkowgPMzNUYjzkUS5UAXqrWJ2_BpXBH2qsaOj_tA==",
+      "title": "trovit.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeGHI1zeY_bhoGfMmlKhe2rbLXcdjs6zt0qZNqBdshNhvXrf2Mb7aJE77ELPyxi0PdhwdN1ef_OZMK5mcLmq6aEuoRzePCr3gajRwIav_DgCKD4p_4cXFjf4Td5FMsa63HQAA5_3pT0_xqunsYBur2nl6io1CrRZcOVxr_s0E05arj4VoUUxYxpHImdA==",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh6KtUs0-A25SHtD3joEYzxKflTviyM4xaF2mqeZkBOPJNhqc8Whop7pXa1MUDPQXZp2sbmeLsjkOpB2elllMShdYTZAEe-JSUfor2up69E5pwW8oB0GQHgvZZT6cLbAWDgI8YQsRSf9wAyPfxDbhxFy78D7OSbf2-bI01l64_iDc=",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn_VJ4J8USBW5Wn_BkclOV0iOlOemYjh88aFmoQKfsVoNMYAkabtHEhAqmCU7z5y45kmdD2zBF3n3FxkoZYcsawDcJsiRfugen7dmX_4MsQ0InNl1uda-RqUk5g0bao1903foaAaTPBt7QHQ2uhg==",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkfMKxzhxkifNKxur9kAeslbPjoMrU3pZ-_NBIPV6G7D9kSRebLWBQ2B-wyjOrLtPVG3MPg0A1Ac7HCiX2Rhm44XJipS_EcXYVgLpCg_KRkzw_kM-p09yp0y19d41vV45-qIZSjlExr9ImN1JiBpEHiNNRk5oHoRdUdZkB",
+      "title": "emlakgo.net"
+    }
+  ],
+  "grounding_support_count": 8,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBPWO97JdHvnj2KphuiosS3olE13GC2o9I8k1d5FmXFFGziqQjATOL0eBcGF_t_DgI0gz1vDNceZr80ZiyKRUka00DnaGTJ0IAueaOROkkX4tIec9lKkSi1eUimX9CmSyYT_06cDSCzW-Xl4QnAWCX6W1Kl9qGfio4PWou4OrbdSM="
+        }
+      },
+      {
+        "web": {
+          "title": "trovit.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMdk-ls-9anZCm6FbKCwCKhL6Xe_WQTg8eJTo6USf3ZC4RFwWB3GCS4wDmHHLuR1ZarkBJ1F2qnwwek1nIuKrf01zCBXoa4iIczh5CzONsQQI8dRR_SIsFPPS1se83RGhcYjj-hyKADjpkowgPMzNUYjzkUS5UAXqrWJ2_BpXBH2qsaOj_tA=="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeGHI1zeY_bhoGfMmlKhe2rbLXcdjs6zt0qZNqBdshNhvXrf2Mb7aJE77ELPyxi0PdhwdN1ef_OZMK5mcLmq6aEuoRzePCr3gajRwIav_DgCKD4p_4cXFjf4Td5FMsa63HQAA5_3pT0_xqunsYBur2nl6io1CrRZcOVxr_s0E05arj4VoUUxYxpHImdA=="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh6KtUs0-A25SHtD3joEYzxKflTviyM4xaF2mqeZkBOPJNhqc8Whop7pXa1MUDPQXZp2sbmeLsjkOpB2elllMShdYTZAEe-JSUfor2up69E5pwW8oB0GQHgvZZT6cLbAWDgI8YQsRSf9wAyPfxDbhxFy78D7OSbf2-bI01l64_iDc="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn_VJ4J8USBW5Wn_BkclOV0iOlOemYjh88aFmoQKfsVoNMYAkabtHEhAqmCU7z5y45kmdD2zBF3n3FxkoZYcsawDcJsiRfugen7dmX_4MsQ0InNl1uda-RqUk5g0bao1903foaAaTPBt7QHQ2uhg=="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakgo.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkfMKxzhxkifNKxur9kAeslbPjoMrU3pZ-_NBIPV6G7D9kSRebLWBQ2B-wyjOrLtPVG3MPg0A1Ac7HCiX2Rhm44XJipS_EcXYVgLpCg_KRkzw_kM-p09yp0y19d41vV45-qIZSjlExr9ImN1JiBpEHiNNRk5oHoRdUdZkB"
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "start_index": 284,
+          "end_index": 373,
+          "text": "2026 | bilinmiyor | Orhaniye Mahallesi | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "segment": {
+          "start_index": 435,
+          "end_index": 507,
+          "text": "2026 | bilinmiyor | Orhaniye Mahallesi | Çakır Emlak Danışmanlığı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          2,
+          3
+        ],
+        "segment": {
+          "start_index": 569,
+          "end_index": 635,
+          "text": "2026 | bilinmiyor | Orhaniye Mahallesi | Kötekli EmlakMERT BUYRUK"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          2,
+          1,
+          4
+        ],
+        "segment": {
+          "start_index": 696,
+          "end_index": 769,
+          "text": "2026 | bilinmiyor | Orhaniye Mahallesi | MUĞLA KAMPÜS EMLAKKAMPUS EMLAK"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 855,
+          "end_index": 907,
+          "text": "2026) | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 908,
+          "end_index": 1018,
+          "text": "*   **1+1** | eşyalı | 35.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 1019,
+          "end_index": 1129,
+          "text": "*   **3+1** | eşyalı | 80.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 1130,
+          "end_index": 1240,
+          "text": "*   **3+1** | eşyalı | 52.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERx_G1o-5otYvZQUrZEdv5GFMeIx2sGyKYxEXTVlbq4EiPnvLjYsUyJmm4WRt1DgbQ67Q42qhSXdIV1VClMq9a8gTKzJW6zgliiaBXOUmMbSjqxpkPxFiep0ejYHL28fTJgPCqw4HUDR5Fk4SxWOB2Rli4i-SF3i9rZK-u62exwuCUYgeHOqsmwF-8heYQR2lsV3EE405qfDjZQCMgrPifxQezTuXkSXguNYkdTZFLZFbct4H9qW27DkgVHBc6fyYhL4KQVkA9tCluFCg=\">Orhaniye Menteşe Muğla kiralık daire 3+1 son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLTaFg5l1qm13DkCAejZ60fqJ5nZ98CJGMqnuyk3c1WRFihyPwiepGY1uXVB0Tso3ujnkkZx7--rEFSrUmWsmcrZCEnsWhvnkE2rAi6Ylk6pQxfDrqQNB0_npVcRwHx3AOXWrC352YvI9Bub_DqtV8lbBUydnhIYRJDWPX68kdF1qsay6H90r041INwJlIc5qjaff079_nPCcRhiizHX-bYDVv45LDVqh8iAwup4GIkvMkJNj2Ds5X0mElPvcYVLuajfzWKkjF9c8dleM=\">Orhaniye Menteşe Muğla kiralık daire 2+1 son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHG-9xOo5fO1xiDLFJrU7JZSsHEkPeM0np3cR0kxuHYk6FHSPD9LAxj_xBjcEBh0ilTmTIMhK0jbiBUU1gjEdRx8CkvmG92EIw2AmT3RtGOegAqmuErZKLPnKm1hwa1hGRnYi5DXg2HEvBgxHQm2ERqpgpFeiO-XK3xt2_AsgwYSQ0FXsKnp-onB3sc5q8KoSuR2NoFV68S04mYE-_XtnMpvdYxjmzQdXg1_IuJAw1XPoOpq4WzEu3eXTvYMEfbhj0llZg4PLj0Tz5UBpw=\">Orhaniye Menteşe Muğla kiralık daire 1+0 son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGN5yRwCn_8vrFAs1Sb6_t8iCebLJykmkLhYxA4DLsOvnNO-xsGeASd6i14ffCi95fOxtOYelBsRbTlafyvfaQlWoZBMgRdTGvK5FDMv4mQFAdpl8Yxbs0-nURQ4_vD6bcl34Wj_KfKbXBFylj9lwXRx4kfq74efKuk78McAsY-hlwTWQVIK6FcsQ3YoNUafbsB7p_EsfFz57MwWJ_T0deVbp8OA2xumnTkpMrrsY5dCm2fyrmnbAg1BKlZ3I_1C4AV602szgnT93YifM=\">Orhaniye Menteşe Muğla kiralık daire 1+1 son 90 gün</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Orhaniye Menteşe Muğla kiralık daire 1+0 son 90 gün",
+      "Orhaniye Menteşe Muğla kiralık daire 1+1 son 90 gün",
+      "Orhaniye Menteşe Muğla kiralık daire 2+1 son 90 gün",
+      "Orhaniye Menteşe Muğla kiralık daire 3+1 son 90 gün"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 607,
+    "prompt_token_count": 383,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 383
+      }
+    ],
+    "tool_use_prompt_token_count": 492,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 492
+      }
+    ],
+    "total_token_count": 1482
+  },
+  "text": "Muğla'nın Menteşe ilçesine bağlı Orhaniye Mahallesi'ndeki kiralık konut ilanları aşağıda listelenmiştir. Belirtilen kriterlere uygun olarak son 90 gün içinde yayınlanmış ilanlar derlenmiştir.\n\n**KİRA:**\n\n*   **2+1** | bilinmiyor | 40.000 TL/ay | ilan tarihi: 15.10.2026 | bilinmiyor | Orhaniye Mahallesi | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI\n*   **3+1** | bilinmiyor | 37.000 TL/ay | ilan tarihi: 06.10.2026 | bilinmiyor | Orhaniye Mahallesi | Çakır Emlak Danışmanlığı\n*   **2+1** | bilinmiyor | 40.000 TL/ay | ilan tarihi: 12.09.2026 | bilinmiyor | Orhaniye Mahallesi | Kötekli EmlakMERT BUYRUK\n*   **3+1** | eşyasız | 38.000 TL/ay | ilan tarihi: 08.09.2026 | bilinmiyor | Orhaniye Mahallesi | MUĞLA KAMPÜS EMLAKKAMPUS EMLAK\n*   **2+1** | eşyalı | 56.000 TL/ay | ilan tarihi: 29 gün önce (yaklaşık 29.09.2026) | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor\n*   **1+1** | eşyalı | 35.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor\n*   **3+1** | eşyalı | 80.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor\n*   **3+1** | eşyalı | 52.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | Bilinmiyor"
+}

@@ -1,0 +1,3939 @@
+{
+  "schemaVersion": "2.0",
+  "id": "akyaka",
+  "name": "Akyaka",
+  "district": "Ula",
+  "city": "Muğla",
+  "asOf": "2026-10-28",
+  "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+  "location": {
+    "lat": 37.0580313,
+    "lon": 28.3271055,
+    "label": "Akyaka, Ula, Muğla, Ege Bölgesi, 48650, Türkiye",
+    "osm_type": "node",
+    "osm_id": 8399373700,
+    "source_url": "https://nominatim.openstreetmap.org/search?q=Akyaka%2C+Ula%2C+Mu%C4%9Fla&countrycodes=tr&format=jsonv2&limit=5&addressdetails=1",
+    "retrieved_at": "2026-10-27T22:27:03.663325+00:00",
+    "method": "Nominatim representative point; not a building address or neighborhood-wide measurement"
+  },
+  "rents": [
+    {
+      "id": "63214dbe7e15fa19",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:0",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:1",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **1+0** | eşyalı | 16.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Vizyon Gayrimenkul",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:0",
+            "focused_akyaka_rent_v8_attempt2:1"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "1+0",
+      "amount": 16000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "b7891e62cec04cff",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:1",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:2",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF32SUKYdQEZut8cWwsrCxl_2nEVin2UmIhI7OzgRrHCMwqfVGZnCcKh8A_nValuKJXq6dWE3HdoVZlMZoELIMRpoIg54D9a2pyIv8m15swfJnjnCtQJVE0tDRcxQrOJ5IhTNcX0xOXQDkl9z0=",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:3",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVcvWY79AHtaZby9slFx11cI2IbOA9s46ylHdkF4QOA6oLzyGwI7gLCrhnrS4HflQhbeKJlCTLWQZCSKlbmYHS7LNumF1ub9aHiwUiOTHrgH2GXpYIPgI3MJfCNuV-WEbrLdoNPCXpfg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:4",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5IprWio7l44wG6Fn22j1Yzg3mj8MwhD14E3Q7X7QEloUmROXuMz73WyT5KTEs6C_KwWrm_g-cD97aH8J7e1eJEE8lUpEYqGZm7OjiMkMYVL4hgq7_3rUxJ1rYv1o_9wRJRvGVqFXn",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:5",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Gl-TjU9oKZ1DVgooB5jh8exqEbX--VnepVwTltObYLMPQkdIyRELV1wS_FrwmEmR66ZOEqF2tKixOr22LH5IZK36IWWPfJveHJwyuCymwrXrsMuf6PQ92PmwkqDrvwPR",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **1+1** | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Kdm Gayrimenkul Muğla",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:2",
+            "focused_akyaka_rent_v8_attempt2:3",
+            "focused_akyaka_rent_v8_attempt2:1",
+            "focused_akyaka_rent_v8_attempt2:4",
+            "focused_akyaka_rent_v8_attempt2:5"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "1+1",
+      "amount": 26000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "cfd1df7463b9fdcd",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:1",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:2",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF32SUKYdQEZut8cWwsrCxl_2nEVin2UmIhI7OzgRrHCMwqfVGZnCcKh8A_nValuKJXq6dWE3HdoVZlMZoELIMRpoIg54D9a2pyIv8m15swfJnjnCtQJVE0tDRcxQrOJ5IhTNcX0xOXQDkl9z0=",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:3",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVcvWY79AHtaZby9slFx11cI2IbOA9s46ylHdkF4QOA6oLzyGwI7gLCrhnrS4HflQhbeKJlCTLWQZCSKlbmYHS7LNumF1ub9aHiwUiOTHrgH2GXpYIPgI3MJfCNuV-WEbrLdoNPCXpfg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **1+1** | eşyalı | 27.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Mengenler Gayrimenkul",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:2",
+            "focused_akyaka_rent_v8_attempt2:3",
+            "focused_akyaka_rent_v8_attempt2:1"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "1+1",
+      "amount": 27000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "055e92e7f33a095b",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:0",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:1",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:2",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF32SUKYdQEZut8cWwsrCxl_2nEVin2UmIhI7OzgRrHCMwqfVGZnCcKh8A_nValuKJXq6dWE3HdoVZlMZoELIMRpoIg54D9a2pyIv8m15swfJnjnCtQJVE0tDRcxQrOJ5IhTNcX0xOXQDkl9z0=",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **1+1** | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Thera Emlak İnşaat",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:0",
+            "focused_akyaka_rent_v8_attempt2:2",
+            "focused_akyaka_rent_v8_attempt2:1"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "1+1",
+      "amount": 28000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "87a24dfbbbe83ef1",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:6",
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQf7uAPp9_Y9ZvQp2KIIOc8XvJ1PACoYIblG8IoiANbs8qGuNQYOl8j3GTHOj8h0z-FhGsbVdb6yXceOsNpY54318HzbDCUa1vaI63RrvNWoG4sjI2K_F9rcr9OJB3-Gb5WeYd2SuA9tRbmgnDQcJfbFzAHepNpef56d2Z",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:7",
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoptan2bmuwJPBvsdSA2j3XK-gSy6-IDXGXcSPcuXiwZ9rx9GRJimSR259RJl7IgqjJYcVov-o9CXlhC52s5NotC1T4NKYETDuFAk3BmJF8QfYghdA76-dQu0Mj7Fqh2NbeAnHp6CPz4nyrlzogfCr4Vy-A0ThZieT2cnU",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **1+1** | eşyalı | 35.000 TL/ay | ilan tarihi: 2026-09-14 | bilinmiyor | Akyaka Mahallesi | EmlaksendeAta AKSEN",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:6",
+            "focused_akyaka_rent_v8_attempt2:7"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "1+1",
+      "amount": 35000,
+      "date": "2026-09-14",
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": true,
+      "locationConflict": false
+    },
+    {
+      "id": "3532c2c866b40dca",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:8",
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZVCfate0V7yXDpO-0ufetrBCOB2PcnQ3BHzQaIiS4EgpxGQ0iuEivQOSRVlfsr-Dk4U_n6-AEScQo8D55jUQvWWKe5Vez07Kslu5ncwOcI-pLhZVjz416atLaDhxuL39st55EqJWfY6K7T6VLHUyQzLrYYXz1",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:9",
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKfXGjerFPy3dUXAmVzLZuFLRLC-Iy3YcemRpGZUwIn7hnKrWq6kLBMVDXQa-XKXYObIDY7bZtsEa4kAH0tizh3YfYOg5XgQZvXSA19JoDsEZecFgISc73Vt7p1YT1E4815k43PKOgNdjCMQ==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **1+1** | eşyalı | 20.000 TL/ay | ilan tarihi: 2026-10-19 | kış sezonu | Akyaka Mahallesi | Joker Gayrimenkul",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:8",
+            "focused_akyaka_rent_v8_attempt2:9"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "1+1",
+      "amount": 20000,
+      "date": "2026-10-19",
+      "furnished": true,
+      "lease": "seasonal",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "ff90c0d21dfa627f",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:0",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:1",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:3",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVcvWY79AHtaZby9slFx11cI2IbOA9s46ylHdkF4QOA6oLzyGwI7gLCrhnrS4HflQhbeKJlCTLWQZCSKlbmYHS7LNumF1ub9aHiwUiOTHrgH2GXpYIPgI3MJfCNuV-WEbrLdoNPCXpfg==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **2+1** | eşyalı | 50.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:0",
+            "focused_akyaka_rent_v8_attempt2:3",
+            "focused_akyaka_rent_v8_attempt2:1"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "2+1",
+      "amount": 50000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "b56e3305adfa1010",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:8",
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZVCfate0V7yXDpO-0ufetrBCOB2PcnQ3BHzQaIiS4EgpxGQ0iuEivQOSRVlfsr-Dk4U_n6-AEScQo8D55jUQvWWKe5Vez07Kslu5ncwOcI-pLhZVjz416atLaDhxuL39st55EqJWfY6K7T6VLHUyQzLrYYXz1",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:9",
+          "publisher": "emlakjet.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKfXGjerFPy3dUXAmVzLZuFLRLC-Iy3YcemRpGZUwIn7hnKrWq6kLBMVDXQa-XKXYObIDY7bZtsEa4kAH0tizh3YfYOg5XgQZvXSA19JoDsEZecFgISc73Vt7p1YT1E4815k43PKOgNdjCMQ==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **2+1** | eşyalı | 40.000 TL/ay | ilan tarihi: 2026-10-20 | uzun dönem | Akyaka Mahallesi | Güven Emlak",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:8",
+            "focused_akyaka_rent_v8_attempt2:9"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "2+1",
+      "amount": 40000,
+      "date": "2026-10-20",
+      "furnished": true,
+      "lease": "long_term",
+      "eligible": true,
+      "locationConflict": false
+    },
+    {
+      "id": "98cf16672fe01b97",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:0",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **2+1** | eşyalı | 45.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:0"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "2+1",
+      "amount": 45000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    },
+    {
+      "id": "4d01b27bf56f73d0",
+      "sources": [
+        {
+          "id": "focused_akyaka_rent_v8_attempt2:0",
+          "publisher": "hepsiemlak.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw==",
+          "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   **3+1** | mobilyalı | 59.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Onur Emlak Dikmen",
+          "sourceIds": [
+            "focused_akyaka_rent_v8_attempt2:0"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:22:51.073060+00:00",
+      "verification": "search_supported",
+      "rooms": "3+1",
+      "amount": 59000,
+      "date": null,
+      "furnished": true,
+      "lease": "unknown",
+      "eligible": false,
+      "locationConflict": false
+    }
+  ],
+  "routes": [
+    {
+      "id": "9718fd21c9081bc0",
+      "sources": [
+        {
+          "id": "9718fd21c9081bc0:official",
+          "publisher": "MUTTAŞ · resmî hat sayfası",
+          "url": "https://ulasim.muttas.com.tr/hat/12-5-mentese-akyaka-297",
+          "checkedAt": "2026-10-28T19:12:57.257044+00:00",
+          "method": "official_page_read"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:0",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrlSao1kpwgU1SkWEYRl998VQrd41WBYHsOVPXlHmSzS4g6sD1BJ7qVytBTDVeTE_4L8Z5Ac5NSIUjjd7BsZ-wfwEgIneXDA1xepYKjYykEbzTsDKIY5rAPhHvTdQfd07xGWv-FTP9R-cnqyJ2VxUxMAYc",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:11",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtjxpBMy24ipEG8TXTYE_87dvnk7F8Q8sfz0cAuJC5vLPvhH3HbDCD0x4Tjx6rCBV3oGirHhFG7iaLRNaIo5z_-Od0INKhLNkwZRJIENU185IAVUQ4v9bWp4bstybmPg1Kp484QSyofQMw1_XBeZ43",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:4",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESL-_Ri-ASwOJreIUzbMWQWwE8U5L_kURGlTAy-0h3EExg_IljYL8AGGEvgnqwwZMKWTWaHJJpSPAIFXq9Tcuh-5f6C3k6Zx2sX45qnZxol9t0iPXUwSSLweB5dTJ_DLG474XbPObnbUJxOqoEQ772uM587mwR32HufcA=",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:5",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_rEk6tmOThbBCNBigyFtxOV7xPm9Z8MQsJ2RRGF1qyhTFjpv4aTHPg3JR5CwhHz03RSQEt0cYtQFAKxt8Z7FI3d9kO969-Odl6Py8gBX23v8oyJ4D63vJywsn_rJK4njhB5PAG-95natlYjvobVIRNQ==",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:7",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq0iLnl6XaWRleY98ng7hUfDb6U7Od5XGiLDLvYBwf1E8ap6kVaY__GGLEACn03vEWDchiRSP_7x2PFTGjtefmd3284LacQirZxGvQeXHObjMIlaByNTImQ_VqNlFrcTAE4ymKG4DFPWEIbxHWo6ks8zI-CePfdQpb1Q==",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:4"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:7"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:5"
+          ]
+        },
+        {
+          "text": "AKYAKA:\n* HAT_KODU: 12-5",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:17",
+            "focused_all_transportation_v8_attempt2:18",
+            "focused_all_transportation_v8_attempt2:0",
+            "focused_all_transportation_v8_attempt2:19"
+          ]
+        },
+        {
+          "text": "* başlangıç/bitiş: Menteşe - Akyaka",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:17",
+            "focused_all_transportation_v8_attempt2:0"
+          ]
+        },
+        {
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka Garaj kalkışında Akyaka Meydan ve Akyaka Çıkış durakları bulunmaktadır.",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:0",
+            "focused_all_transportation_v8_attempt2:19"
+          ]
+        },
+        {
+          "text": "İlk kalkış 07:00, son kalkış 23:00'dır.",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:19"
+          ]
+        },
+        {
+          "text": "Kaynak yayın tarihi 26 Eylül 2025 ve 26 Ekim 2026.",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:17",
+            "focused_all_transportation_v8_attempt2:0"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:17",
+            "focused_all_transportation_v8_attempt2:18",
+            "focused_all_transportation_v8_attempt2:0",
+            "focused_all_transportation_v8_attempt2:19"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+      "verification": "search_supported",
+      "code": "12-5",
+      "route": "Menteşe - Akyaka",
+      "localEvidence": "Menteşe Otogar kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka Garaj kalkışında Akyaka Meydan ve Akyaka Çıkış durakları bulunmaktadır",
+      "benefit": "Akyaka Mahallesi'nden Menteşe'ye ulaşım sağlar",
+      "frequency": null,
+      "lastDeparture": null,
+      "serviceStatus": "current_timetable_not_verified",
+      "timetable": [
+        {
+          "direction": "Menteşe Kalkış",
+          "days": {
+            "weekday": {
+              "first": "07:50",
+              "last": "23:30",
+              "count": 20,
+              "times": [
+                "07:50",
+                "08:50",
+                "09:50",
+                "10:50",
+                "11:50",
+                "12:50",
+                "13:50",
+                "14:50",
+                "15:20",
+                "15:50",
+                "16:20",
+                "16:50",
+                "17:20",
+                "17:50",
+                "18:20",
+                "18:50",
+                "19:50",
+                "20:50",
+                "21:50",
+                "23:30"
+              ]
+            },
+            "saturday": {
+              "first": "07:50",
+              "last": "23:30",
+              "count": 19,
+              "times": [
+                "07:50",
+                "08:50",
+                "09:50",
+                "10:50",
+                "11:50",
+                "12:50",
+                "13:50",
+                "14:50",
+                "15:50",
+                "16:20",
+                "16:50",
+                "17:20",
+                "17:50",
+                "18:20",
+                "18:50",
+                "19:50",
+                "20:50",
+                "21:50",
+                "23:30"
+              ]
+            },
+            "sunday": {
+              "first": "07:50",
+              "last": "23:30",
+              "count": 19,
+              "times": [
+                "07:50",
+                "08:50",
+                "09:50",
+                "10:50",
+                "11:50",
+                "12:50",
+                "13:50",
+                "14:50",
+                "15:50",
+                "16:20",
+                "16:50",
+                "17:20",
+                "17:50",
+                "18:20",
+                "18:50",
+                "19:50",
+                "20:50",
+                "21:50",
+                "23:30"
+              ]
+            }
+          }
+        },
+        {
+          "direction": "Akyaka Kalkış",
+          "days": {
+            "weekday": {
+              "first": "07:00",
+              "last": "22:30",
+              "count": 19,
+              "times": [
+                "07:00",
+                "07:30",
+                "08:00",
+                "09:00",
+                "10:00",
+                "11:00",
+                "12:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:00",
+                "18:00",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:30"
+              ]
+            },
+            "saturday": {
+              "first": "07:00",
+              "last": "22:30",
+              "count": 19,
+              "times": [
+                "07:00",
+                "07:30",
+                "08:00",
+                "09:00",
+                "10:00",
+                "11:00",
+                "12:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:00",
+                "18:00",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:30"
+              ]
+            },
+            "sunday": {
+              "first": "07:00",
+              "last": "22:30",
+              "count": 19,
+              "times": [
+                "07:00",
+                "07:30",
+                "08:00",
+                "09:00",
+                "10:00",
+                "11:00",
+                "12:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:00",
+                "18:00",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:30"
+              ]
+            }
+          }
+        }
+      ],
+      "officialHeadingVerified": true,
+      "publisherUpdated": "26-10-2026 10:40",
+      "officialCheckedAt": "2026-10-28T19:12:57.257044+00:00",
+      "officialAlerts": []
+    },
+    {
+      "id": "2dab3f7f906eb436",
+      "sources": [
+        {
+          "id": "2dab3f7f906eb436:official",
+          "publisher": "MUTTAŞ · resmî hat sayfası",
+          "url": "https://ulasim.muttas.com.tr/hat/12-12-ula-akyaka-442",
+          "checkedAt": "2026-10-28T19:12:57.368597+00:00",
+          "method": "official_page_read"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:0",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrlSao1kpwgU1SkWEYRl998VQrd41WBYHsOVPXlHmSzS4g6sD1BJ7qVytBTDVeTE_4L8Z5Ac5NSIUjjd7BsZ-wfwEgIneXDA1xepYKjYykEbzTsDKIY5rAPhHvTdQfd07xGWv-FTP9R-cnqyJ2VxUxMAYc",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:11",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtjxpBMy24ipEG8TXTYE_87dvnk7F8Q8sfz0cAuJC5vLPvhH3HbDCD0x4Tjx6rCBV3oGirHhFG7iaLRNaIo5z_-Od0INKhLNkwZRJIENU185IAVUQ4v9bWp4bstybmPg1Kp484QSyofQMw1_XBeZ43",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:4",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESL-_Ri-ASwOJreIUzbMWQWwE8U5L_kURGlTAy-0h3EExg_IljYL8AGGEvgnqwwZMKWTWaHJJpSPAIFXq9Tcuh-5f6C3k6Zx2sX45qnZxol9t0iPXUwSSLweB5dTJ_DLG474XbPObnbUJxOqoEQ772uM587mwR32HufcA=",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:5",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_rEk6tmOThbBCNBigyFtxOV7xPm9Z8MQsJ2RRGF1qyhTFjpv4aTHPg3JR5CwhHz03RSQEt0cYtQFAKxt8Z7FI3d9kO969-Odl6Py8gBX23v8oyJ4D63vJywsn_rJK4njhB5PAG-95natlYjvobVIRNQ==",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_transportation_v8_attempt2:7",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq0iLnl6XaWRleY98ng7hUfDb6U7Od5XGiLDLvYBwf1E8ap6kVaY__GGLEACn03vEWDchiRSP_7x2PFTGjtefmd3284LacQirZxGvQeXHObjMIlaByNTImQ_VqNlFrcTAE4ymKG4DFPWEIbxHWo6ks8zI-CePfdQpb1Q==",
+          "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:4"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:7"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:5"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:17",
+            "focused_all_transportation_v8_attempt2:18",
+            "focused_all_transportation_v8_attempt2:0",
+            "focused_all_transportation_v8_attempt2:19"
+          ]
+        },
+        {
+          "text": "* HAT_KODU: 12-12",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        },
+        {
+          "text": "* başlangıç/bitiş: Ula - Akyaka",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        },
+        {
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Ula kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka kalkışında Akyaka Garaj, Akyaka Meydan ve Kızılagaç durakları bulunmaktadır.",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        },
+        {
+          "text": "Akyaka kalkış: Hafta İçi ve Hafta Sonu 10:30, 13:45, 17:15.",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        },
+        {
+          "text": "Kaynak yayın tarihi 26 Ekim 2026.",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        },
+        {
+          "text": "* resmî yayıncı: MUTTAŞ",
+          "sourceIds": [
+            "focused_all_transportation_v8_attempt2:11"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:07.844614+00:00",
+      "verification": "search_supported",
+      "code": "12-12",
+      "route": "Ula-Akyaka",
+      "localEvidence": "Ula kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka kalkışında Akyaka Garaj, Akyaka Meydan ve Kızılagaç durakları bulunmaktadır",
+      "benefit": "Akyaka Mahallesi'nden Ula'ya ulaşım sağlar",
+      "frequency": null,
+      "lastDeparture": null,
+      "serviceStatus": "current_timetable_not_verified",
+      "timetable": [
+        {
+          "direction": "Ula Kalkış",
+          "days": {
+            "weekday": {
+              "first": "08:00",
+              "last": "15:00",
+              "count": 3,
+              "times": [
+                "08:00",
+                "11:30",
+                "15:00"
+              ]
+            }
+          }
+        },
+        {
+          "direction": "Akyaka Kalkış",
+          "days": {
+            "weekday": {
+              "first": "10:30",
+              "last": "17:15",
+              "count": 3,
+              "times": [
+                "10:30",
+                "13:45",
+                "17:15"
+              ]
+            }
+          }
+        }
+      ],
+      "officialHeadingVerified": true,
+      "publisherUpdated": null,
+      "officialCheckedAt": "2026-10-28T19:12:57.368597+00:00",
+      "officialAlerts": []
+    },
+    {
+      "id": "c31624fa226232a8",
+      "sources": [
+        {
+          "id": "c31624fa226232a8:official",
+          "publisher": "MUTTAŞ · resmî hat sayfası",
+          "url": "https://ulasim.muttas.com.tr/hat/1-22-mentese-oren-398",
+          "checkedAt": "2026-10-28T19:12:57.404431+00:00",
+          "method": "official_page_read"
+        },
+        {
+          "id": "akyaka_2026-10-28_v5:10",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvkfg9V93Z0SheSEVbqkSFI4y0oskKTqVdn1wNjgLummLfhCoIYqk0cKZqrsJs6PwZwzcJFValnfPyuXg6tIp5PhYGCpif1YaWzxpli4M66rh2CTNAhekD3H566acbEqo-EuRs2D5bMkxPf57SGEcA0jw=",
+          "checkedAt": "2026-10-27T22:25:55.042669+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "akyaka_2026-10-28_v5:11",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZeBtyhM3sTlmBjm3yFSbLJBznCIjSPuChyecY63QMpOsJ7Vsz0ix5LT8fsaMcZlndUAQYXZhZXG6b1-03gw7k2iw8eoYHCQX10_G_AFNPJgBqaqIQptgmcXRSFXAjDXlO1FOPVt863No8y7cUumY=",
+          "checkedAt": "2026-10-27T22:25:55.042669+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "akyaka_2026-10-28_v5:12",
+          "publisher": "muttas.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVKZO_P_SPqs25ozq4qwHSkZAoGkmbyE5qtLgi_1tZQabjYW20vBxbpUW91vGAV_FsI1UPVxiJ7vokY8tbW5j0tVyih3brcXChcn6wsUk2OI3FoDHjhaKAMb1z-jZC2OQS9oKtHNuHuCF4jAdSzB4eNVamUIYdMn4aIKzptBCVOj1jGm4=",
+          "checkedAt": "2026-10-27T22:25:55.042669+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "| MUTTAŞ",
+          "sourceIds": [
+            "akyaka_2026-10-28_v5:8",
+            "akyaka_2026-10-28_v5:9",
+            "akyaka_2026-10-28_v5:10"
+          ]
+        },
+        {
+          "text": "| MUTTAŞ",
+          "sourceIds": [
+            "akyaka_2026-10-28_v5:11"
+          ]
+        },
+        {
+          "text": "| Sıklık ve son sefer: bilinmiyor | MUTTAŞ",
+          "sourceIds": [
+            "akyaka_2026-10-28_v5:12"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-27T22:25:55.042669+00:00",
+      "verification": "search_supported",
+      "code": "1-22",
+      "route": "Menteşe - Ören",
+      "localEvidence": "Menteşe'den Akyaka, Turnalı, Kıran Sahili, Akbük, Kultak, Alatepe ve Ören güzergahlarına toplu taşıma hizmeti sunar",
+      "benefit": "Menteşe'den Akyaka, Turnalı, Kıran Sahili, Akbük, Kultak, Alatepe ve Ören güzergahlarına toplu taşıma hizmeti sunar",
+      "frequency": null,
+      "lastDeparture": null,
+      "serviceStatus": "current_timetable_not_verified",
+      "timetable": [
+        {
+          "direction": "Menteşe Kalkış",
+          "days": {
+            "weekday": {
+              "first": "07:45",
+              "last": "14:00",
+              "count": 2,
+              "times": [
+                "07:45",
+                "14:00"
+              ]
+            },
+            "saturday": {
+              "first": "07:45",
+              "last": "14:00",
+              "count": 2,
+              "times": [
+                "07:45",
+                "14:00"
+              ]
+            },
+            "sunday": {
+              "first": "07:45",
+              "last": "14:00",
+              "count": 2,
+              "times": [
+                "07:45",
+                "14:00"
+              ]
+            }
+          }
+        },
+        {
+          "direction": "Ören Kalkış",
+          "days": {
+            "weekday": {
+              "first": "11:00",
+              "last": "17:00",
+              "count": 2,
+              "times": [
+                "11:00",
+                "17:00"
+              ]
+            },
+            "saturday": {
+              "first": "11:00",
+              "last": "17:00",
+              "count": 2,
+              "times": [
+                "11:00",
+                "17:00"
+              ]
+            },
+            "sunday": {
+              "first": "11:00",
+              "last": "17:00",
+              "count": 2,
+              "times": [
+                "11:00",
+                "17:00"
+              ]
+            }
+          }
+        }
+      ],
+      "officialHeadingVerified": true,
+      "publisherUpdated": "28-08-2025 14:15",
+      "officialCheckedAt": "2026-10-28T19:12:57.404431+00:00",
+      "officialAlerts": []
+    }
+  ],
+  "news": [
+    {
+      "id": "7c1eb6a818194417",
+      "sources": [
+        {
+          "id": "focused_all_safety_news_v13:18",
+          "publisher": "sondakika.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6KeBUXvGf4b8vDYO5nKgVAAGHeGSZ6_afuDXWCgpGY8fKOml0FH9n4AWLBYqSHD1AbiMcD4aEZGj3LZtBHX4iNpjSk4xwMMiXHdmtdqSvTyP7hqe-a1dZdVSw==",
+          "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "AKYAKA:\n* 2026-09-12 | kamu hizmeti | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'ndeki Akçapınar sahilinde 2026 Türk Telekom Formula Kite Avrupa Şampiyonası düzenlendi.",
+          "sourceIds": [
+            "focused_all_safety_news_v13:18"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+      "verification": "search_supported",
+      "date": "2026-09-12",
+      "type": "kamu hizmeti",
+      "summary": "Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'ndeki Akçapınar sahilinde 2026 Türk Telekom Formula Kite Avrupa Şampiyonası düzenlendi."
+    },
+    {
+      "id": "339ea72793feb853",
+      "sources": [
+        {
+          "id": "focused_all_safety_news_v13:18",
+          "publisher": "sondakika.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6KeBUXvGf4b8vDYO5nKgVAAGHeGSZ6_afuDXWCgpGY8fKOml0FH9n4AWLBYqSHD1AbiMcD4aEZGj3LZtBHX4iNpjSk4xwMMiXHdmtdqSvTyP7hqe-a1dZdVSw==",
+          "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* 2026-09-15 | altyapı/duyuru | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'nde evlerin yakınındaki zeytinlik alanda çıkan yangın söndürüldü.",
+          "sourceIds": [
+            "focused_all_safety_news_v13:18"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+      "verification": "search_supported",
+      "date": "2026-09-15",
+      "type": "yangın",
+      "summary": "Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'nde evlerin yakınındaki zeytinlik alanda çıkan yangın söndürüldü."
+    },
+    {
+      "id": "d73238320bed0de0",
+      "sources": [
+        {
+          "id": "focused_all_safety_news_v13:19",
+          "publisher": "odatv.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFveRvBBIzfz52c2wkwxSZjyJ1C2buXX5pvmQ49Gk98nY3DwUn6yKtEqD2p4RqnquQX_uiH9XK8wau-EhFCAsQOz1sq1YZpI8kRn_trsfWYEksY2ygjD4ikNkhylgtuwnMpQ8TH8hPrDGRCEb-9r-UCqhVjIQZ87yR99wIl4hHB7DhygE_KsvwpQGUsbiT8LOc=",
+          "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* 2026-07-29 | kamu hizmeti | Akyaka Mahallesi'nde kıyı alanlarının işletmeler tarafından işgal edildiğini öne süren Gökova Ekolojik Yaşam Derneği, 17 ayrı suç duyurusunda bulundu.",
+          "sourceIds": [
+            "focused_all_safety_news_v13:19"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T20:15:04.424816+00:00",
+      "verification": "search_supported",
+      "date": "2026-07-29",
+      "type": "kamu hizmeti",
+      "summary": "Akyaka Mahallesi'nde kıyı alanlarının işletmeler tarafından işgal edildiğini öne süren Gökova Ekolojik Yaşam Derneği, 17 ayrı suç duyurusunda bulundu."
+    }
+  ],
+  "venues": [
+    {
+      "id": "1990d55246ad7aa6",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:12",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFENhVBYjk-BEI_MyJjrDtjzZeHGTVlkWW5RmaDrs8dRJ94NFN_8d_cR1VE-mjCuTMC-wo_W98OJe1uZ4j7LXsE7CjY6CGZhthC_EKlP_J7Ogh5R7X2Lp9LOsVHtGrMG7Us06xKAd4AdIkdRkld6tqltN40ze-0Xg==",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "SOSYAL YAŞAM:\n*   West Cafe & Bistro | kafe | Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:12"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "West Cafe & Bistro",
+      "type": "cafe",
+      "address": "Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "a5d3c00f8946073f",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:13",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfi-CDMb8Z6U_tMCwlZ4w4Bj0LnhcGU6fzxXJ7GZqk4nu3tVAPq7EdiI5dN-2uZLcU-McdSh9v2wqKYPpXHO5OcjRt7zIFxJZvBWY1Ib29W7xpZWxZteWaKjp-lfhWyGLDCvUDl71c1A9Kn6MIxrOgD6X2",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Devin Akyaka | kafe | Akyaka Mah., Nergiz Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:13"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Devin Akyaka",
+      "type": "cafe",
+      "address": "Akyaka Mah., Nergiz Sok., Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "502d60a110dbd226",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:14",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4TNyIv1-GGqt3lSmb-5U1TeyvMyw3046bvkDPSpjtMRe18xKXWpTzDLbc3NyXLOAx7ZVEwJf4KXyFIuNSbkJ_yK1aNFhsLb_W-AuN6F4tW9fOIpYUGdIe2um9GwJHbYrLBKiELkP61DAgITctJiLHinNIDeJWvbhTCp2rL_19",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Akyaka Sahil Apart Cafe | kafe | Akyaka Mah., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:14"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Sahil Apart Cafe",
+      "type": "cafe",
+      "address": "Akyaka Mah., Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "10450d30b226e2ae",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:15",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxI2e_h_-iCcwMzU1bwsJKoG3udsx55pt-qPisZiZZHghrRJ8OQ4dTSBlI44AZs_04kDG2JgyRPHqEiHAuVypWfUr96Z7ctkAw2McYMSQ0g9_DicQyKXfo3SE0uILj1mW0XW0SAjJVs04PchJn9Ae8qaaI",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Space Akyaka | bar/canlı müzik | Akyaka Mah., İnişdibi Cad., 75, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:15"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Space Akyaka",
+      "type": "live_music",
+      "address": "Akyaka Mah., İnişdibi Cad., 75, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "322e3acf66cccef3",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:16",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEhHKF997aNmzY-F-Y75nxK9ySIi4MYlGmKUDi7wnqgRKIMCBYuLFZFSgWxpGg6CfhBj6DSAoDNTSJgcwJ4m4i7L5cNXrhiP6Z7iC7LekWeQ8sZiiHqxdPNAxdgpXhLEyYuDGE5f0sIl0C7qMCJvkBhROVC98w",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Akyaka Trablem | su parkı | Akyaka Mah., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:16"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Trablem",
+      "type": "water_park",
+      "address": "Akyaka Mah., Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "7907c5ccc12d6c87",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:17",
+          "publisher": "gezinomi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv-4EQnmTU-_M1Z7Yt85LLApcJa20Ghl7EZ0mqL9sHrwpUCrWrkqL5v9pWZ_GmVHtSsfxVVoGb5B9hcy3E83lCy3MLGYlk3PTw3EVWJuwLZYt30jzpGKZGtTBqUxGPOXZV2m9NbPzgVxyEG_UkQckkz48iiZ2QYORz2IXlsVtT",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "No: 22, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 14:00-02:00) | Gezinomi",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:17"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "No 22 Riders' Inn",
+      "type": "live_music",
+      "address": "Akyaka Mah, Sefa Sk. No: 22, 48650 Ula/Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "94f7ee6dda5f9b15",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:17",
+          "publisher": "gezinomi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv-4EQnmTU-_M1Z7Yt85LLApcJa20Ghl7EZ0mqL9sHrwpUCrWrkqL5v9pWZ_GmVHtSsfxVVoGb5B9hcy3E83lCy3MLGYlk3PTw3EVWJuwLZYt30jzpGKZGtTBqUxGPOXZV2m9NbPzgVxyEG_UkQckkz48iiZ2QYORz2IXlsVtT",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   HoTsHot Bar | bar | Akyaka, Ula, Muğla | faaliyet: bilinmiyor | Gezinomi",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:17"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "HoTsHot Bar",
+      "type": "bar",
+      "address": "Akyaka, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "3640faecdf6844e8",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:17",
+          "publisher": "gezinomi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv-4EQnmTU-_M1Z7Yt85LLApcJa20Ghl7EZ0mqL9sHrwpUCrWrkqL5v9pWZ_GmVHtSsfxVVoGb5B9hcy3E83lCy3MLGYlk3PTw3EVWJuwLZYt30jzpGKZGtTBqUxGPOXZV2m9NbPzgVxyEG_UkQckkz48iiZ2QYORz2IXlsVtT",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "No: 17, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 16:00-02:00) | Gezinomi",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:17"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Deli Memet Cocktail Bar & Bistro",
+      "type": "bar",
+      "address": "Akyaka, Karanfil Sk. No: 17, 48650 Ula/Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "72624c9911f7ae28",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:18",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOn0BpP3qpps5y1nspk9EOf4SK7B_Ojrx0ghInG0HFNWcmxTNvVvtLMeKK-2VMuHJBLXyL52tGU3uGxZ8WBxzxPToqlqN4HTvo76nTp-trLKk5kAkdrUxesXhn26Si88LyyEWP2urEJJCdhhe8Uad6Mobh6sg=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "akyaka_2026-10-28_v7:19",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEatl9VJqPwvIQ-9Ocmupq2RGaTO7VeV6MqwS-Z1172Mx5mvHAUGJOg0UKOzaldWHEMSsB61aiyOXoibKJRn4Pn8bQqC6MVOo0TVcK4mplopHd61H6Gk_5Mp1tXspajAChJJKQ4-SS8jW00NlcRXswKOne_7-z-WIEZgDT4UIihegzX4SgAoqFYVEO0Va2H3Q==",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Rahat Meyhane | bar | Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:18",
+            "akyaka_2026-10-28_v7:19"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Rahat Meyhane",
+      "type": "bar",
+      "address": "Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "6532dbfe3eee8be6",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:20",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBxUhEnMuXuXvKs0LBBOjtHlu3fD6OeeOrpt0MXqkG9vPcGn9QIrBiXlnrZ2NdwRQBvHSxzIDrqEe2bwFaLptXsCDZF8BkicLSoLg-AxkO-JcjSWF_xl-VVkGzWiZDiLHTFovad35kaFRYjRsVpSu05ys=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "Sok., 23, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:20"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Cafe Bi'yer",
+      "type": "cafe",
+      "address": "Akyaka Mah., Karanfil 1. Sok., 23, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "d97886332f011dc7",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:21",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKgzra9ZnbpX70hqvowbqq7y1DdtwlEBlJV0lM6FVApA_Q7mv8ChxsRDXjz55Ge9IGj4ycNF4K1paC-2Id1y0up2zvX7k1ic3sS8FJ3w2DqYmIqfOBFwXZfcLlJnv9w93Jb1Q6w5KjJEBGFRJMDwWa6tY=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Half Akyaka | kafe | Akyaka Mah., Nergiz Sok., 2B, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:21"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Half Akyaka",
+      "type": "cafe",
+      "address": "Akyaka Mah., Nergiz Sok., 2B, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "78f00974c92f9697",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:22",
+          "publisher": "muglavakfi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtafXLfpOqvrMZsYOdqPVCNwMBvzQcAaQ3eRv5K0v3yGIlBcf7E0kD2XGwcKFnbz5dGiqlBt92ViU3_-o4DAFQqEg-q7EAyf07QWbBkyWKFpr7R2wfuY2J",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "akyaka_2026-10-28_v7:23",
+          "publisher": "takoz.net",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEudgE3nzdbRSfSc28ozRqPWV67EdLfgCbKQatHAkBgYLdNwdlE6tGbayB2Gl1SEgOHcq14g7IeisJjTwFgKJfQt_YxT3xtIvPBBixO5e6ADzNr1zJAwn5HL4zhvqOpCh4KehoagYNU99KM",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Akyaka Orman Kampı (Gökova Konaklamalı Orman Parkı) | kamp alanı | Akyaka, Ula, Muğla | faaliyet: 7/24 açık | Muğla Vakfı, Takoz",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:22",
+            "akyaka_2026-10-28_v7:23"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Orman Kampı (Gökova Konaklamalı Orman Parkı)",
+      "type": "camp_site",
+      "address": "Akyaka, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "b0c0632a4bae3fbd",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:24",
+          "publisher": "firmaatlas.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqFGJpLuO0AO9x_Tpve09fwgEUIZgaIXWVYOJVsmYHNOFt4xuzwg2K9IClrfxrmqPtmXraUHNFKtSCxv5UREq7LvaykctKL2NOy8ESrH0ZMGyaE6XARBEh7XMo9J5sgHJ1a7brUMQQWudOX7dzbeVVyueY-miW1ZI=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Akyaka Meydanı | park | Akyaka, 48650 Ula/Muğla | faaliyet: bilinmiyor | Firma Atlas",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:24"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Meydanı",
+      "type": "park",
+      "address": "Akyaka, 48650 Ula/Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "37c159ab79be34e3",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:25",
+          "publisher": "com.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTKBqjAfgPD7UeBNJ8aqTB3V7ARa_evaO7dzilPujA9uNDP4ivuPnT15IwcH9aBFI5JZPsSev3PgUUUzN-Ns5quzdZrjWLmJVQwwBMuwu-6RjWsK8Jkfr8xt-svqPmFJsSw-BuNDWkunSEeuQbfh8hDeE=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Akyaka Belediye Parkı | park | Ula, Muğla | faaliyet: bilinmiyor | Akyaka Belediye Parkı",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:25"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Belediye Parkı",
+      "type": "park",
+      "address": "Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "143cdea29667d3a7",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:26",
+          "publisher": "akyakasucaferestaurant.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGh3_Lnlqk9tHEt6gGyXieKg_ImiOLf06S50fOR0Wgsjxvn7dPnsJHaTGH5ypu6pclpkhMX0XPAzjXBPutTB3fHcaDwkRRTnUjS3QOeQ2u9Z6bwc12t3HcjxG_KtuO",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "akyaka_2026-10-28_v7:27",
+          "publisher": "akyakasucaferestaurant.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoJ7zErfsJ3hpr3yt_NLY-UsQPJ8X6C5Usgy0_fnRF-H5eDtBsJqd5H-xbeX0r-XKc5jZUOk9TPHnxSHSMfCPh0mGxVvauVjuqbH_RoSq_Oxm1xGDHUe5jcYisNA36fiEfifw9uFRM_P_iQik=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "No: 19/13 48650 AKYAKA Ula/Muğla | faaliyet: açık (Pzt-Paz 08:00-02:00) | Akyaka Su Cafe & Restaurant",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:26",
+            "akyaka_2026-10-28_v7:27"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Su Cafe & Restaurant",
+      "type": "live_music",
+      "address": "Mustafa Uyanık Sk. No: 19/13 48650 AKYAKA Ula/Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "8bf14ea5b1f6251e",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:28",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZdszLRMbzZNEkq0dDfc5SV2MPlq9q_EG635KslPfYgGoMh-FGT2QhfLLCeFPqoRfz4BZxta3Sg-0o3Kat9x7fJFjGng5oI8IEbJF946oUxLuAm6fDcybCxEBg402EJdSQvKnJD91DPvCYtr8ZrWnToqaTOC0h3KU_GLlK8g==",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Minimal Summer Akyaka | gece kulübü | Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:28"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Minimal Summer Akyaka",
+      "type": "nightclub",
+      "address": "Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "7e33f8ee9b65e666",
+      "sources": [
+        {
+          "id": "akyaka_2026-10-28_v7:29",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOjvE6RMET4opuo-l41PfNajUfn7MfYflnXkFUzcSbIX0RWTvBaiK3A045XEzLuj_0pN7W-o1r1Fnjnyf0inElEs8oZDJDCB5B-mc4yfI-jQ-2-P_z7RG0L29tCuuiq_IibrzjYaJVO5F62SSCPMZfbjvuzbztN4B1iQ79_U8=",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "*   Roots Akyaka | gece kulübü | Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps",
+          "sourceIds": [
+            "akyaka_2026-10-28_v7:29"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+      "verification": "search_supported",
+      "name": "Roots Akyaka",
+      "type": "nightclub",
+      "address": "Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "b5a8892ad692d297",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:34",
+          "publisher": "akyakasucaferestaurant.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBN02jjRGyr5u-fI7-AhJ5pfI4VPE8cA25Tf6Ki8UJD-LAGv1CDqEuXriMiS4txETwaRptr-cRH7uSpUdxHN875aw6lmNr-KKQkOqvHNg8X1YqMhhv0hZFtF_YCcwV",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "No: 19/13 48650 AKYAKA Ula/Muğla | faaliyet: bilinmiyor | yayıncı: Akyaka Su Cafe & Restaurant",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:34"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Su Cafe & Restaurant",
+      "type": "live_music",
+      "address": "Mustafa Uyanık Sk. No: 19/13 48650 AKYAKA Ula/Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "bc1f1db881596e55",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:35",
+          "publisher": "takoz.net",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8-Z_0dDTO1gX1bXjIgrirad6xpWrILzjwQyIOiBaBTyMBDdvxZutrSVJTT6o_VLUWoMUPqSXuwyzPzLvy3lFn6cDbCqB4g6AXt-wIq1pq6POhF2ZRjHg4nLEXbtscElwHN554FIKW8Dn2",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* Akyaka Orman Kampı | kamp alanı/restoran/market | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Takoz",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:35"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Orman Kampı",
+      "type": "camp_site",
+      "address": "Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "275bdc50bd4be6cd",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:36",
+          "publisher": "restoranim.net",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDwciqMa-bJRvos8eH1tFyRq36EYhbS9YKnPyTxHwXAC77wQLTa3nvzcg2FxXojk18QykhlToMIAUXy9pRpfFnCWK5XuMA7naxP5ydNxTrM6a2X_KXezPBvGqfy1Fc5oR0bThwGK3m5qXDx_uvtsDK8rKRGGo=",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* Kahve Deryası Akyaka | kafe | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:36"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Kahve Deryası Akyaka",
+      "type": "cafe",
+      "address": "Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "847560048ff7d850",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:37",
+          "publisher": "wanderlog.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgWbPTMSL7gTz_Jln82KDQz20lyPOjP5MOimp6Jlxupwma5x2R4doY3aCOSpTkA5nJdvHG1HrSVEqEWtbO6snuQ6c4nk_PKDjquHTkhuTI3mrWotFreniWBIADJjtfs3h0zZLekUMojlATLtzsmOR9OeCIJekgPv8ehw==",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* Akyaka Town Market | pazar yeri | Akyaka, 48640 Ula/Muğla, Türkiye | faaliyet: bilinmiyor | yayıncı: Wanderlog",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:37"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Town Market",
+      "type": "marketplace",
+      "address": "Akyaka, 48640 Ula/Muğla, Türkiye",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "1c0e70aba89fee65",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:24",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUx7cVG9qrJFnyBIxvz0rN7hOxpeXKNC3qWLeD6bnAiEyEAvr3p5nqG6l6FLHR0GXHuqVqhuVoNzJ4Q9cZE2y0-slSAyoF2Am8Gf_DRRV4erBzOgTVPHusXYAQQh7PzI9NLinIl5pA6iSlfiyQE9GRSVOMpw==",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:25",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEljJjfSMttMDiamYRkObZfKdheNEcgRB9OVmtjxgppRNmPORlu3orx2yVJTJ4ybesYtZeGaN3l4TndWkmYoBmeh9NJV_SZp9CPy-6YNl9a7vSg_bwVqVUueSXJXO3B0F9VcpfoIgdrun4oNEaC6BcP0uYOdi0=",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:27",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlA6yB4V1lYuO2_T5wfpnZY65TOfc5_IZ8Ui1CuaFtaV9eXP00MSTAtIA5C1APnlZCkIGjXLv4P3TykJTG5m4_35ic9yzsY3VlZjeH4ICHgSWX7QY17ONgGu4WZwwSNSA5vclAjgB19-T34itSPsfbCEZ59ET0qLF9",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:30",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsuJl1Zk548CzK826dGa3dJNxlbbEV8VRFzerjOoI0ghTopWMayCFSiwiCSjFypp1YgMlWHWYbJdbRPODEDjGJLuO66lVE5uTIOLIbjRmRrUjq3dbZHdQ_1AUQ0BQh2Ldh-AfOSmJ2FME0_dln_Lf8fQ==",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:38",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6RipTlm9x44e65roH_tYnLOv134X5qUrQRoH9dSZ2FAOA9BwqvlGAf4szMGscHwxZJQ0LN7u0xIoGFCbFWRyHoJ91CIdvE9fuz6k7ZqzQ250qJSjOIQXKHSfSecEZRePYZsXQRwXH8N0OkMY-nj5mhOjxR883TVEF40gmhf",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:39",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq8Scs12z0zeZXrJbzsrWo4y26RjD67iWYtqA5uc6lvzUXcyl2ieCv2bRSwoeJDFCJzxXbqah8EzFrRaZgbvOe0-VgV2ec741UP8jDj4euxWEjtH-uoLbTaZ99xeGvyvjvQe4JXvXGnttlzwv38rJotc5w56XjHkHgkOugPhI=",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:40",
+          "publisher": "com.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFggc9esE5knBmeEKIyGVy9s5zDPXv2BZuPxqwuUkOG3aBo7RDt8wYoZGx4gmZlUr1hhsSLS_YKNYY3H4fyeZPnLREJ8ebEv1ORikEj_SWvI7_IV9B6Bm2wn9Rg_XswZy_OL_PxPF_pRfKM00_sq95Se8wS_PNDXf1vdK0=",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:44",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi7Xm5zKY2u5qRMcYMzPFrIlBOxahpgJG3JQFYvRZibVpL44r_TYK-6OoZiFsas090qRQfy-R7F19vlR-9_bA4M_NouTL6sOJXxmFIN9bgU2CODItD2UcfqcoVcI8CCYya3-lOFC_YcWhxb7vgK8GzYF6k",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:45",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjDLGale4dvVCGv5nU7Y8jMQql4rePHn5nsHIMXikGNBJrijl9Gf1uhljLOsXdx36IQ_D_16O_1TTR2Jy3D9B39qMTS7zExTYFWpGVXe8RLsoD0rBgaETC1YC0f98-xXCVMnUw1mJWJz58kGZIdUF2LRTO",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:24"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:25"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:27"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:30"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:38"
+          ]
+        },
+        {
+          "text": "* Akyaka Anatolia Market | süpermarket | Muğla, Ula, Akyaka Mah., Liman Sok., 7 | faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:39",
+            "focused_all_social_life_v8_attempt1:40"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:44"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:45"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Anatolia Market",
+      "type": "supermarket",
+      "address": "Muğla, Ula, Akyaka Mah., Liman Sok., 7",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "4f611bed7184a77d",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:41",
+          "publisher": "serviskayitlistesi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjLWmrXyDZnj44T_MwAeHsThrWnY_7wmsGmkk45ljvrE9XZ4mE5zdl0aUh-1C3OQ4iZ1YGKJIpYKNdmTznCR8eWBmhCHhrV2JSPK3cwjFMRLEpjjVfIonReoAWFIv0IBztT9kcWtsq5DwYFka-xdddbGjW-Asp9iJQ8zVxi2mzbLCgc4AHYpeDzA==",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "no: 30, 48650 Ula/Muğla, Türkiye | faaliyet: bilinmiyor | yayıncı: Servis Kayıt",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:41"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Güzel Kahveci Akyaka",
+      "type": "cafe",
+      "address": "Akyaka, Karanfil Sk. no: 30, 48650 Ula/Muğla, Türkiye",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "4c8b06896cee92b5",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:43",
+          "publisher": "muglavakfi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTktiX0hncCpr797XRDiDJuCocdVc3HCSZOUSrV04saZ1fVSBGFJ_CwPZRtlhJLhTlkfIPzFrf6XwPiSv_jq1UPfflfDmDk1GbIBhi7W8gtfk-a_zhXjM_",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "* Akyaka Gökova Konaklama Orman Parkı | kamp alanı/kafeterya | Akyaka, Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Muğla Vakfı",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:43"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka Gökova Konaklama Orman Parkı",
+      "type": "cafe",
+      "address": "Akyaka, Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "715a9db055cf2c0a",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:24",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUx7cVG9qrJFnyBIxvz0rN7hOxpeXKNC3qWLeD6bnAiEyEAvr3p5nqG6l6FLHR0GXHuqVqhuVoNzJ4Q9cZE2y0-slSAyoF2Am8Gf_DRRV4erBzOgTVPHusXYAQQh7PzI9NLinIl5pA6iSlfiyQE9GRSVOMpw==",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:25",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEljJjfSMttMDiamYRkObZfKdheNEcgRB9OVmtjxgppRNmPORlu3orx2yVJTJ4ybesYtZeGaN3l4TndWkmYoBmeh9NJV_SZp9CPy-6YNl9a7vSg_bwVqVUueSXJXO3B0F9VcpfoIgdrun4oNEaC6BcP0uYOdi0=",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:27",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlA6yB4V1lYuO2_T5wfpnZY65TOfc5_IZ8Ui1CuaFtaV9eXP00MSTAtIA5C1APnlZCkIGjXLv4P3TykJTG5m4_35ic9yzsY3VlZjeH4ICHgSWX7QY17ONgGu4WZwwSNSA5vclAjgB19-T34itSPsfbCEZ59ET0qLF9",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:30",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsuJl1Zk548CzK826dGa3dJNxlbbEV8VRFzerjOoI0ghTopWMayCFSiwiCSjFypp1YgMlWHWYbJdbRPODEDjGJLuO66lVE5uTIOLIbjRmRrUjq3dbZHdQ_1AUQ0BQh2Ldh-AfOSmJ2FME0_dln_Lf8fQ==",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:38",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6RipTlm9x44e65roH_tYnLOv134X5qUrQRoH9dSZ2FAOA9BwqvlGAf4szMGscHwxZJQ0LN7u0xIoGFCbFWRyHoJ91CIdvE9fuz6k7ZqzQ250qJSjOIQXKHSfSecEZRePYZsXQRwXH8N0OkMY-nj5mhOjxR883TVEF40gmhf",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:44",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi7Xm5zKY2u5qRMcYMzPFrIlBOxahpgJG3JQFYvRZibVpL44r_TYK-6OoZiFsas090qRQfy-R7F19vlR-9_bA4M_NouTL6sOJXxmFIN9bgU2CODItD2UcfqcoVcI8CCYya3-lOFC_YcWhxb7vgK8GzYF6k",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        },
+        {
+          "id": "focused_all_social_life_v8_attempt1:45",
+          "publisher": "yandex.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjDLGale4dvVCGv5nU7Y8jMQql4rePHn5nsHIMXikGNBJrijl9Gf1uhljLOsXdx36IQ_D_16O_1TTR2Jy3D9B39qMTS7zExTYFWpGVXe8RLsoD0rBgaETC1YC0f98-xXCVMnUw1mJWJz58kGZIdUF2LRTO",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:24"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:25"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:27"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:30"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:38"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:44"
+          ]
+        },
+        {
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:45"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "Akyaka muğla",
+      "type": "supermarket",
+      "address": "Muğla, Ula, Akyaka Mah., Atatürk Cad.",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "0f808ded4b155b40",
+      "sources": [
+        {
+          "id": "focused_all_social_life_v8_attempt1:46",
+          "publisher": "bulurum.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgZS-6cauks8bf1kF9yKrY7NJOyhVj9EnZkr32cJ8s5WYTSKlAy_b4PJwzziftQW1hGjx2SD0MgRzjr3lJaU9bIEjhDIAvBGYLoao0DDetFB_mACv6IEvOizLh8n8v8nogIZxY6IHJWrro-uShAjg=",
+          "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+          "method": "google_search"
+        }
+      ],
+      "supports": [
+        {
+          "text": "14 Dk:12 Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Bulurum.com",
+          "sourceIds": [
+            "focused_all_social_life_v8_attempt1:46"
+          ]
+        }
+      ],
+      "checkedAt": "2026-10-28T18:23:43.778426+00:00",
+      "verification": "search_supported",
+      "name": "ECE MARKET (Osman Top)",
+      "type": "supermarket",
+      "address": "Akyaka-Merkez Mah. Atatürk Cad. 14 Dk:12 Ula, Muğla",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown"
+    },
+    {
+      "id": "osm:node:2482736621",
+      "name": "Migros Jet",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0522203,
+      "lon": 28.3260119,
+      "distance": 653,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:2482736621",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/2482736621",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:2486546923",
+      "name": "Migros",
+      "type": "supermarket",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.057095,
+      "lon": 28.3261442,
+      "distance": 135,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:2486546923",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/2486546923",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:2497603036",
+      "name": "Şok",
+      "type": "supermarket",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0589016,
+      "lon": 28.3278823,
+      "distance": 119,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:2497603036",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/2497603036",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:3164993377",
+      "name": "Akyaka Kafetarya",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0517052,
+      "lon": 28.3207616,
+      "distance": 901,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:3164993377",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/3164993377",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:4397040493",
+      "name": "Köfteci dayım",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0584105,
+      "lon": 28.3273013,
+      "distance": 46,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:4397040493",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/4397040493",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:4397070690",
+      "name": "Gökova Eczanesi",
+      "type": "pharmacy",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0585792,
+      "lon": 28.327453,
+      "distance": 68,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:4397070690",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/4397070690",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:4397071290",
+      "name": "Efe Büfe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0584928,
+      "lon": 28.3273439,
+      "distance": 56,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:4397071290",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/4397071290",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:4986948323",
+      "name": "ayse ana ev yemekleri",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518706,
+      "lon": 28.3244339,
+      "distance": 725,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:4986948323",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/4986948323",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:4986948324",
+      "name": "tarihi akhisar köftecisi kokoreç",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518185,
+      "lon": 28.3244201,
+      "distance": 731,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:4986948324",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/4986948324",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:4987188121",
+      "name": "halilin'yeri",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.055877,
+      "lon": 28.3370544,
+      "distance": 915,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:4987188121",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/4987188121",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:7788623997",
+      "name": "Maydanoz Gökova",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0532905,
+      "lon": 28.3297628,
+      "distance": 577,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:7788623997",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/7788623997",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:8002548585",
+      "name": "Pangea coffee",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518466,
+      "lon": 28.3265997,
+      "distance": 689,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:8002548585",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/8002548585",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:8007259185",
+      "name": "la festa",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0519504,
+      "lon": 28.3264387,
+      "distance": 679,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:8007259185",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/8007259185",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340539",
+      "name": "Kristal Pide ve Kebap",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.056949,
+      "lon": 28.32551,
+      "distance": 186,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340539",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340539",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340540",
+      "name": "Selin Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0567767,
+      "lon": 28.3253841,
+      "distance": 207,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340540",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340540",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340545",
+      "name": "Yıldız Park Cafe Restaurant",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.05357,
+      "lon": 28.3256528,
+      "distance": 513,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340545",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340545",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340548",
+      "name": "İsmail Akkaya Parkı",
+      "type": "park",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0534906,
+      "lon": 28.3255899,
+      "distance": 523,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340548",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340548",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340553",
+      "name": "Ata Eczanesi",
+      "type": "pharmacy",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0526606,
+      "lon": 28.3259551,
+      "distance": 606,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340553",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340553",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340554",
+      "name": "Ateş Döner",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0525548,
+      "lon": 28.3257919,
+      "distance": 620,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340554",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340554",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340555",
+      "name": "Yelken Bar",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0524489,
+      "lon": 28.3258041,
+      "distance": 631,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340555",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340555",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340557",
+      "name": "Sarıyer Börek",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.052045,
+      "lon": 28.3260306,
+      "distance": 672,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340557",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340557",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340558",
+      "name": "Poison Pub",
+      "type": "pub",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518952,
+      "lon": 28.3260592,
+      "distance": 689,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340558",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340558",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        },
+        {
+          "id": "akyaka_2026-10-28_v7:17",
+          "publisher": "gezinomi.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv-4EQnmTU-_M1Z7Yt85LLApcJa20Ghl7EZ0mqL9sHrwpUCrWrkqL5v9pWZ_GmVHtSsfxVVoGb5B9hcy3E83lCy3MLGYlk3PTw3EVWJuwLZYt30jzpGKZGtTBqUxGPOXZV2m9NbPzgVxyEG_UkQckkz48iiZ2QYORz2IXlsVtT",
+          "checkedAt": "2026-10-28T18:13:05.110738+00:00",
+          "method": "google_search"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340559",
+      "name": "Aşkyaka Market",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0519001,
+      "lon": 28.3262122,
+      "distance": 686,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340559",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340559",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340560",
+      "name": "Motto",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0517715,
+      "lon": 28.3260918,
+      "distance": 702,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340560",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340560",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340561",
+      "name": "Kalamari Balık",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0516835,
+      "lon": 28.3260938,
+      "distance": 712,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340561",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340561",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340562",
+      "name": "Cycle Bar",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0515549,
+      "lon": 28.3261571,
+      "distance": 725,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340562",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340562",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340563",
+      "name": "Eren Market",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0511694,
+      "lon": 28.3260763,
+      "distance": 768,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340563",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340563",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340569",
+      "name": "Okaliptus Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.051076,
+      "lon": 28.3269111,
+      "distance": 774,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340569",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340569",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340587",
+      "name": "Çapari Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0503292,
+      "lon": 28.3260868,
+      "distance": 861,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340587",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340587",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340588",
+      "name": "Bitez Dondurma",
+      "type": "ice_cream",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0503121,
+      "lon": 28.3261393,
+      "distance": 863,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340588",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340588",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340589",
+      "name": "Febiha 1921",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0503464,
+      "lon": 28.3258884,
+      "distance": 861,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340589",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340589",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340590",
+      "name": "Müzeyyen Meyhane",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0504284,
+      "lon": 28.3256016,
+      "distance": 856,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340590",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340590",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340592",
+      "name": "Marina Fast Food",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0506878,
+      "lon": 28.3247365,
+      "distance": 843,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340592",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340592",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340593",
+      "name": "Körfez Büfe",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0508652,
+      "lon": 28.324574,
+      "distance": 828,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340593",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340593",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340595",
+      "name": "Yeni Meyhane",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0510063,
+      "lon": 28.3247222,
+      "distance": 809,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340595",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340595",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340596",
+      "name": "Mia Marina",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0511417,
+      "lon": 28.324488,
+      "distance": 801,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340596",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340596",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340597",
+      "name": "Sinemateke Bar",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0512352,
+      "lon": 28.3243374,
+      "distance": 795,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340597",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340597",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340598",
+      "name": "Feron Beach Bar",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0513954,
+      "lon": 28.3240626,
+      "distance": 786,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340598",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340598",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340599",
+      "name": "Waffle Inn Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.051548,
+      "lon": 28.324065,
+      "distance": 770,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340599",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340599",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340600",
+      "name": "Mosso Restaurant",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0515728,
+      "lon": 28.3237878,
+      "distance": 776,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340600",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340600",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340601",
+      "name": "Gordo Bar",
+      "type": "bar",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0516739,
+      "lon": 28.3235894,
+      "distance": 773,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340601",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340601",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340602",
+      "name": "Gülşah Restaurant",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0517902,
+      "lon": 28.3234293,
+      "distance": 767,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340602",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340602",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079340603",
+      "name": "Poyraz Market",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0519123,
+      "lon": 28.3235775,
+      "distance": 749,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079340603",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079340603",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341708",
+      "name": "Müco Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0521068,
+      "lon": 28.3237973,
+      "distance": 721,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341708",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341708",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341709",
+      "name": "Pizza Fellas",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0515461,
+      "lon": 28.3247102,
+      "distance": 752,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341709",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341709",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341710",
+      "name": "Sinekli Bakkal",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0515308,
+      "lon": 28.3248417,
+      "distance": 750,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341710",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341710",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341712",
+      "name": "Azmak Restaurant",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0517521,
+      "lon": 28.3248942,
+      "distance": 725,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341712",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341712",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341713",
+      "name": "Tekin Usta Dondurma",
+      "type": "ice_cream",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518608,
+      "lon": 28.324899,
+      "distance": 714,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341713",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341713",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341714",
+      "name": "Sandal Balık Ekmek",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518379,
+      "lon": 28.3250878,
+      "distance": 712,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341714",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341714",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341715",
+      "name": "Akyaka Sokak Lezzetleri Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518207,
+      "lon": 28.32542,
+      "distance": 707,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341715",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341715",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341716",
+      "name": "Melin Market 2",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0517788,
+      "lon": 28.324758,
+      "distance": 726,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341716",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341716",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341717",
+      "name": "Melin Market",
+      "type": "convenience",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518246,
+      "lon": 28.324586,
+      "distance": 725,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341717",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341717",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341718",
+      "name": "Köşem Kafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0516872,
+      "lon": 28.3258836,
+      "distance": 714,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341718",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341718",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341719",
+      "name": "Sedir Cafe Bistro",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0519161,
+      "lon": 28.3232357,
+      "distance": 762,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341719",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341719",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341725",
+      "name": "Ula Belediyesi Orman Cafe",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0524501,
+      "lon": 28.3222607,
+      "distance": 755,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341725",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341725",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079341726",
+      "name": "Ula Belediyesi Orman Cafe+",
+      "type": "cafe",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518608,
+      "lon": 28.3216799,
+      "distance": 838,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079341726",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079341726",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:11079349294",
+      "name": "Tanrıverdi Döner Kebap",
+      "type": "fast_food",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0510011,
+      "lon": 28.3261355,
+      "distance": 786,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:11079349294",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/11079349294",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:12791682291",
+      "name": "Keyif Hane",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0515018,
+      "lon": 28.3244818,
+      "distance": 762,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:12791682291",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/12791682291",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    },
+    {
+      "id": "osm:node:14235553365",
+      "name": "Febiha 1921",
+      "type": "restaurant",
+      "address": "Referans noktasının 1 km çevresi · açık adres kaynakta",
+      "scope": "reference_radius",
+      "lat": 37.0518964,
+      "lon": 28.326141,
+      "distance": 688,
+      "origin": "osm",
+      "openStatus": "unknown",
+      "sources": [
+        {
+          "id": "osm:node:14235553365",
+          "publisher": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/node/14235553365",
+          "checkedAt": "2026-10-28T19:18:00.786299+00:00",
+          "method": "osm"
+        }
+      ],
+      "checkedAt": "2026-10-28T19:18:00.786299+00:00"
+    }
+  ],
+  "hazard": {
+    "value": 0.391,
+    "score": 11,
+    "gridDistance": 0.7055,
+    "gridRows": 201920,
+    "url": "https://aperta.ulakbim.gov.tr/records/274290",
+    "title": "Jeodezik Deprem Tehlike Haritası",
+    "authors": [
+      "Aktuğ, Bahadır",
+      "Şentürk, Murat Doruk",
+      "Özsaraç, Vedat",
+      "KILIÇ, Nazan"
+    ],
+    "license": "cc-by-sa-4.0",
+    "officialAfad": false,
+    "sourceYear": 2025,
+    "probability": "50 yılda %10 aşılma olasılığı"
+  },
+  "osmStatus": "collected",
+  "osmRadius": 1000,
+  "quarantined": [
+    {
+      "osmId": 2482736779,
+      "reason": "unnamed_or_conflicting_type"
+    }
+  ],
+  "exclusions": [
+    {
+      "category": "rent_cost",
+      "reason": "outside_90_day_window",
+      "id": "46cf8a2628a9ac73"
+    },
+    {
+      "category": "rent_cost",
+      "reason": "outside_90_day_window",
+      "id": "217c02ec3321dba9"
+    },
+    {
+      "category": "safety_news",
+      "reason": "not_daily_service_or_safety_evidence",
+      "id": "dcf1ba576c7a069a"
+    }
+  ],
+  "provenance": [
+    "data\\research\\akyaka_2026-10-28_v7\\result.json",
+    "data\\research\\focused_akyaka_rent_v8_attempt2\\result.json",
+    "data\\research\\focused_all_transportation_v8_attempt2\\result.json",
+    "data\\research\\focused_all_social_life_v8_attempt1\\result.json",
+    "data\\research\\focused_all_safety_news_v13\\result.json"
+  ],
+  "coverage": {
+    "datedRents": 2,
+    "rentCandidates": 10,
+    "routes": 3,
+    "venues": 85,
+    "mappedVenues": 59,
+    "events": 3
+  },
+  "safetyScore": null,
+  "assessments": {
+    "rent_cost": [
+      {
+        "id": "0399d8b22d095926",
+        "neighborhood": "akyaka",
+        "category": "rent_cost",
+        "sentiment": "unknown",
+        "criterion": "Aylık kira",
+        "date": "2026-10-20",
+        "summary": "Akyaka Merkezi Konumda Eşyalı 2+1 Dubleks Daire 40.000 TL olarak listelenmiştir. (yerel haber/dizin)",
+        "status": "listing_price_is_not_affordability",
+        "sources": [
+          {
+            "publisher": "emlakjet.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkUSW44LakB9MQsdaAbjwcruOxAnqvlBv-3gwIzZVtABXWZII81_TtNivtjEpIN2cklML08Adq8037OJ_LWzclMV8qgPk-G2jWL6PDkq465e0QtdWYc-qgZc_pJqYRRPO0bWzdKLgLkd5lXvZpG_CVMmhrfYe_iX2zh1mO",
+            "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+          },
+          {
+            "publisher": "emlakjet.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8pMWmZYZMAwinNqIDDyBcmZbOCHhB5Jr-08BwuLOFjrndQaBlHd8dtu3zi_jjpsyz9gEUxtbuh21Ffmx0hNATANSDVGT5Yx0HdK2kAoCFtRJ0sKiZHtW5IKNVi_TFE0O-Y_m3NzKxmECpVrat6LLnMByVl-TKnaOwKL5J",
+            "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+          },
+          {
+            "publisher": "emlakjet.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEs977PWz1wIC6-S7OoF-ISwxVm6HTAtdrhP9lDUu7Z0BYwFG2G0WEG7Kky9ysy6d6yAEFh-9GCUiMxrE-i6Na0_FhQjpUaTZJtbU2ZndGslt78RR2Iryc8WSwbLRtGc4mhLQQtqeztNeS5wQ==",
+            "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+          }
+        ]
+      }
+    ],
+    "transportation": [
+      {
+        "id": "39cbc9c9064163b8",
+        "neighborhood": "akyaka",
+        "category": "transportation",
+        "sentiment": "positive",
+        "criterion": "yayımlanan sefer sıklığı/son sefer",
+        "date": "2026-04-15",
+        "summary": "Muğla'nın Ula ilçesi ile Akyaka Mahallesi arasında Büyükşehir Belediyesine ait şehir içi toplu taşıma otobüs seferleri başlatıldı.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "gercekfethiye.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl9Vrj2sM4TElczQrsa5UBpOJm-l--IF5VrjKcnAHikPh_Wkr_hTqLaL5gyxj4Fya8W6r4GmQywXy2wBb71ATlH5sq7k5-qsg296MCPWIiVGntydmekZoJmoSSPlfNVhAZVEfEKd4jJm-BVHMWphAIKyq1KikNwPKOhbuRCNjaP5PZsUcwvgzViljUsJqhldu4L8UD1n3KTRFeVwg=",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          },
+          {
+            "publisher": "sondakika.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_9C8I9C4NBB3diBWKXhM5CPCKsilwyIRtxTA-oBFV-L5DdSfBCywnfCN-14RbzHDFyXLZIa0wwWxZMW_2Vo3qfE6BfliKoTSi2zwJidugFqX9Bc6P8rnTQsTEZITUkHnsy-YhMK-cw0lv7zbyE7_cV0t-OUwwPjwOjke2st5LB4_5HWgde1UPfFg01cT8AKgYFUl1VXgZV9dfG5-OOus",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          },
+          {
+            "publisher": "haberler.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0p5KzZYkY_YQOQoDSL3qdeGLoB0O1eq-klZb9K7p7rBUquUZKkixmGmqXG41iveyG7fA9Nnzi25KLuS8dNzqRlm7o4E-P0D4U8Z0u_nUC6jkA6n37E53Bh8pfRyMYV--v-ZrAbalKO2jQ-UsXGOw1vX88Xm-ETByxeVPkk7UkCLtvTRYWJ_z5jCjGELgFcI9cX6biHoW5uJ0MxBjjgax6PQmspLmqSQzLLOm2RQ1_sKvirqQ=",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          },
+          {
+            "publisher": "dha.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ7iKfaWDW4sHaPsOxp9AS5W532MCItG1Riv7WQUKInoyik-s8dHgc9f1aggZl_3iqKXLlS-4aio5iI3iuVWpIxkvE-u5alMoMEFP28SqijpaEQ547ZFM9fYnWHsw1QTSY1nJoSNv_vZTWNeXb2mQbp66WQbcn22Rm5rI0qwksnXefSgzmISwpVU6w",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          },
+          {
+            "publisher": "instagram.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4EAsVV-LFPVHWtghE0JAm1akz2UfVJw5DCxs0QM02f-eEpevMfnm0zDoH8oYZ1TKJdWmZEPyjc5Dg5oNuREWRE_k1yrSAQl7zqr8ryAYs-F2taADB37BIJh-S3yN7phoAjXs=",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          }
+        ]
+      },
+      {
+        "id": "2b238afecd61a748",
+        "neighborhood": "akyaka",
+        "category": "transportation",
+        "sentiment": "positive",
+        "criterion": "yerel bağlantı",
+        "date": "2026-04-15",
+        "summary": "Ula-Akyaka toplu taşıma hattı, Akyaka Kadın Meclisi'nin talebi doğrultusunda hayata geçirilmiştir.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "sondakika.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_9C8I9C4NBB3diBWKXhM5CPCKsilwyIRtxTA-oBFV-L5DdSfBCywnfCN-14RbzHDFyXLZIa0wwWxZMW_2Vo3qfE6BfliKoTSi2zwJidugFqX9Bc6P8rnTQsTEZITUkHnsy-YhMK-cw0lv7zbyE7_cV0t-OUwwPjwOjke2st5LB4_5HWgde1UPfFg01cT8AKgYFUl1VXgZV9dfG5-OOus",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          },
+          {
+            "publisher": "dha.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ7iKfaWDW4sHaPsOxp9AS5W532MCItG1Riv7WQUKInoyik-s8dHgc9f1aggZl_3iqKXLlS-4aio5iI3iuVWpIxkvE-u5alMoMEFP28SqijpaEQ547ZFM9fYnWHsw1QTSY1nJoSNv_vZTWNeXb2mQbp66WQbcn22Rm5rI0qwksnXefSgzmISwpVU6w",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          }
+        ]
+      },
+      {
+        "id": "dabde6a66cca8231",
+        "neighborhood": "akyaka",
+        "category": "transportation",
+        "sentiment": "positive",
+        "criterion": "hat varlığı",
+        "date": "2026-10-13",
+        "summary": "Ula-Akyaka (Hat No: 12-12) güzergahı 20 KM uzunluğundadır.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "48haber.com.tr",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-c7nnxMclC_x_ph85hzf-_F3SK0ut9L5NyrOZ4x3B6poNqJ1a8uGFv9UvSCXgZReCt-s_R-nI0inCi6uExTDAHuJSLHftdKWg3K0oGkrxXkxJDTbYSrJF0bOVc9QumqUNSvP0DGMS76PbqfnCDnb-WJ5p68Kqh_7GAb6r",
+            "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+          }
+        ]
+      },
+      {
+        "id": "82b3d0bf8fc16d96",
+        "neighborhood": "akyaka",
+        "category": "transportation",
+        "sentiment": "unknown",
+        "criterion": "devam eden yol/altyapı çalışması",
+        "date": null,
+        "summary": "Akyaka Mahallesi'nde devam eden yol veya altyapı çalışmalarına dair spesifik bir bulguya rastlanmamıştır.",
+        "status": "current_status_unverified",
+        "sources": []
+      },
+      {
+        "id": "71a12117781eedbd",
+        "neighborhood": "akyaka",
+        "category": "transportation",
+        "sentiment": "unknown",
+        "criterion": "yol çökmesi/kapanma",
+        "date": null,
+        "summary": "Akyaka Mahallesi'nde yol çökmesi veya kapanmasına dair güncel bilgi bulunmamaktadır.",
+        "status": "current_status_unverified",
+        "sources": []
+      }
+    ],
+    "social_life": [
+      {
+        "id": "ca2a4c880aa9331d",
+        "neighborhood": "akyaka",
+        "category": "social_life",
+        "sentiment": "positive",
+        "criterion": "gece hayatı türleri",
+        "date": "2026-09-25",
+        "summary": "Akyaka'da Poison Pub, No 22 Riders'Inn, Liliz Lounge, Kukla Pub Akyaka, Xir Pub & Hotel Akyaka, Venti Food & Cocktail Bar, Cycle Bar gibi çeşitli gece kulüpleri ve barlar bulunmaktadır.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "bujuyollarda.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjr4XA3-QIrS6QMRgJ-j5lmqPXg-dXmBZ1xGSJLM1KUOcm7hpT4LDfNGbxdf9_ON8dV-WUQT4MHC_49VgSR7QI_uRkaPiiNCCf4YEPxhfwLS0D8-Wf-LL0ycCOgel1wcevnAymw7I=",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          },
+          {
+            "publisher": "mudavim.net",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2258NWz65ZoD2O62bfxKvfwk3K80nFz8myKjGSpqayWyS1OziapZYvJpZLZynKXWOIJaf4u0Qxb1JmRPTQ6fh-HJddcx8hGKRNTrUbhdEz6QWHdsB2Fhm4jxC2tXKIdqejyzmxg==",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          },
+          {
+            "publisher": "mekanlar.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ7yqJaLnYSEZIFQ2vYEAuoVd7Nfipv-0TaYuk7az0PI1QwJEoDwvq0DTIuXacdtTsT2N0IfEdBwy2SeA31sMIbU_6qZJl6psGZFBmwAi37IvdXnkMBTvkniGVfdCja6vK0Lrdrchs333BtA==",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          },
+          {
+            "publisher": "gezinomi.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF26kq2U9nibffPY-poksLrwNNxabkIimUxOBnl2bQ-p6BmiA7cTi9Zt2n4N86vttsK3si0Nw2fXsgJXwtFxPS07rB-T884jTxHl-dBicOGh6YzoB0BeTdx-tUEyVmsc7vdCMZB-v2w_tyS5Dist6DqUB6vmdwMGW_3dQJfreQ=",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          }
+        ]
+      },
+      {
+        "id": "a19a53c3b33cb85d",
+        "neighborhood": "akyaka",
+        "category": "social_life",
+        "sentiment": "positive",
+        "criterion": "yemek çeşitliliği",
+        "date": "2026-09-25",
+        "summary": "Venti Food & Cocktail Bar, yemek ve kokteyli bir arada sunan bir seçenektir. Selanik Restoran, meze ve balık çeşitleri sunmaktadır.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "bujuyollarda.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjr4XA3-QIrS6QMRgJ-j5lmqPXg-dXmBZ1xGSJLM1KUOcm7hpT4LDfNGbxdf9_ON8dV-WUQT4MHC_49VgSR7QI_uRkaPiiNCCf4YEPxhfwLS0D8-Wf-LL0ycCOgel1wcevnAymw7I=",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          },
+          {
+            "publisher": "mudavim.net",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2258NWz65ZoD2O62bfxKvfwk3K80nFz8myKjGSpqayWyS1OziapZYvJpZLZynKXWOIJaf4u0Qxb1JmRPTQ6fh-HJddcx8hGKRNTrUbhdEz6QWHdsB2Fhm4jxC2tXKIdqejyzmxg==",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          }
+        ]
+      },
+      {
+        "id": "7b0457e9690ef1e0",
+        "neighborhood": "akyaka",
+        "category": "social_life",
+        "sentiment": "positive",
+        "criterion": "kafe dışındaki aktiviteler",
+        "date": null,
+        "summary": "Akyaka, kitesurf için dünyaca bilinen bir yer haline gelmiştir. Kano ve paddleboard gibi aktiviteler Akçapınar'da mevcuttur.",
+        "status": "current_status_unverified",
+        "sources": [
+          {
+            "publisher": "bizevdeyokuz.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-w4nRDLDZJ-Ng0JToWYvFxT8SP3zgCUSuKD9Z1ELSCiZXIugilOPWBu1m69jhaPCtShUqt8YD6vpyrq31qj_Mi680itNs5eR4p6OrdqJRFU2J0k35GPe1woyjJh_NURAvFzXjuN05jUsPWoKpJF9CX_CdbhcRwvd1whQ86wvN",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          }
+        ]
+      },
+      {
+        "id": "f79772b9b4bfcb85",
+        "neighborhood": "akyaka",
+        "category": "social_life",
+        "sentiment": "negative",
+        "criterion": "gürültü/işletme kapanması/erişim sorunu",
+        "date": null,
+        "summary": "Akyaka'da popüler bar ve gece mekanları Akyaka merkezde konumlanmaktadır, bu durum kalabalık ve gürültü potansiyeli yaratabilir.",
+        "status": "current_status_unverified",
+        "sources": [
+          {
+            "publisher": "bizevdeyokuz.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-w4nRDLDZJ-Ng0JToWYvFxT8SP3zgCUSuKD9Z1ELSCiZXIugilOPWBu1m69jhaPCtShUqt8YD6vpyrq31qj_Mi680itNs5eR4p6OrdqJRFU2J0k35GPe1woyjJh_NURAvFzXjuN05jUsPWoKpJF9CX_CdbhcRwvd1whQ86wvN",
+            "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+          }
+        ]
+      }
+    ],
+    "safety_news": [
+      {
+        "id": "025edb5d0588376c",
+        "neighborhood": "akyaka",
+        "category": "safety_news",
+        "sentiment": "unknown",
+        "criterion": "kamu altyapısı",
+        "date": "2025-07-08",
+        "summary": "Menteşe ve Ula Belediyeleri, Çınar mevkisinde kaçak yapılaşmaya karşı harekete geçti, kaçak yapılar mühürleniyor ve hukuki süreç başlatılıyor.",
+        "status": "historical_evidence",
+        "sources": [
+          {
+            "publisher": "ankahaber.net",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-lOUf4WLR5XyT5bUcHLYYrmJRBqWCPDC9k9K8DpUE7ToSf7GcPr2ynrFF-dx75WJHMhcdjnybe16iJeYdfX_3fAuZKc_f26lwKuztzMzRcGn1LCmwXcIdO18OrCOThi4seUxICWs5HDgdlj1wCxnsbxbJ6uvaT61HcDnh2JoSfjfA-eTYl3o96mS4ZaJ-fybSssquQDa4PRZBnIU6RsYwgkg-PSLal-oqnw4KFyhw",
+            "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+          }
+        ]
+      },
+      {
+        "id": "fa2b1a6b5a68dfc0",
+        "neighborhood": "akyaka",
+        "category": "safety_news",
+        "sentiment": "negative",
+        "criterion": "kamu altyapısı",
+        "date": "2026-08-01",
+        "summary": "İşletmelerin kıyıları işgal etmesine tepki gösteren yurttaşlar, hukuka aykırı yapıların kaldırılmasını talep ediyor.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "evrensel.net",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUSZVDwkF8kGbQywbDa--iILj8sq4IideCn2ydy2YJjkMRseFVGnAAFBCxvv3Q1ZoQGSM-UGauZ818EFI9UFSo94KBpWNT2eDHPoxwHfRAgRoGw0mnV8iPG6AZz9MnDgvU5MtIocFspgpAr0awyI2YpR5PmFSJUq6zf1LzMJOZRT086FQnBcU-3CoZaNszRCObRHNfnddiU2MYWuHtHIf2Y7Rsm7Z8PlX1rHL9gQ==",
+            "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+          },
+          {
+            "publisher": "ankahaber.net",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCcSYF_vhWQL_V78oieTe47IXIEwSv9mTQW8d9XL4pxlJssLD-SoaD-8nHDCKH4HpLBbCeQAYNDYQMVrnk4Y60XZeR_nXBQ2-b9kVR58qNv4ezBZGlHnrtmnfvpUcZymp3c9dX3a3N7v_X9Q9fimJutxHi2EwlVGDbJBeBTxtvLI6Xc5N5zDhWBie5xgO_sAgxqGKCN2aQTrk5dlvJQfvuj9Q6ZiQqB8qG",
+            "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+          }
+        ]
+      },
+      {
+        "id": "e2bca2c076d7d8a5",
+        "neighborhood": "akyaka",
+        "category": "safety_news",
+        "sentiment": "negative",
+        "criterion": "kamu altyapısı",
+        "date": "2026-06-14",
+        "summary": "Eski kırsal yapılar deprem güvenliği açısından yetersiz; koruma alanları yeni yapılaşmayı kısıtlıyor.",
+        "status": "dated_report",
+        "sources": [
+          {
+            "publisher": "kentseldonusumhub.com",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFHx21jbe6QkqzBnQD1UgNWzhSR2wKITgisQthNn18lBz7jG0oC8TT4gRkbYeVeTkbk-e7TVT7DZNeMpMHjLJIDkBVgHCvQ6XLz0Khs4d1R5_fKTXbhWotOqO1udWi0LcJ-qCGLwEpmC7abjmazLoz0SK_Kcxn04PFw4BmLFI=",
+            "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+          }
+        ]
+      },
+      {
+        "id": "03e0039bf8314bf9",
+        "neighborhood": "akyaka",
+        "category": "safety_news",
+        "sentiment": "unknown",
+        "criterion": "suç/şiddet",
+        "date": null,
+        "summary": "Mahalledeki suç/şiddet oranına dair spesifik bir bilgi bulunmamaktadır.",
+        "status": "current_status_unverified",
+        "sources": []
+      },
+      {
+        "id": "18f44701e6165f26",
+        "neighborhood": "akyaka",
+        "category": "safety_news",
+        "sentiment": "unknown",
+        "criterion": "trafik",
+        "date": null,
+        "summary": "Mahalledeki trafik durumuna dair spesifik bir bilgi bulunmamaktadır.",
+        "status": "current_status_unverified",
+        "sources": []
+      }
+    ]
+  },
+  "transportAlerts": [],
+  "priceContext": [
+    {
+      "id": "de93c35682d6ba03",
+      "area": "MUĞLA",
+      "type": "yemek",
+      "item": "Muğla Sıtkı Koçman Üniversitesi öğrenci yemek ücreti (4 çeşit)",
+      "amount": 40.0,
+      "date": "2026-10-05",
+      "conditions": "Muğla Sıtkı Koçman Üniversitesi öğrencileri",
+      "sources": [
+        {
+          "publisher": "mu.edu.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3faDEeg9nyeqabIXC33irDtLZbC_fmIVRLH4vv1dOQLkkUsqDFlvDcmkspep04OmQtQvODyQwRe3mGVIqACXYhPQxG7dJeD2Qf7mT4ZLxJYqEEijoEd8jBYoysa6CHBbPa60rBWPenxQc94hlxpArWcq35AWMXses2sh0CL7Z",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "dated_2026_publication"
+    },
+    {
+      "id": "89ca6dfe7f33a71a",
+      "area": "MUĞLA",
+      "type": "ulaşım",
+      "item": "MUTTAŞ şehir içi (0-10 km) sivil yolcu",
+      "amount": 36.0,
+      "date": "2026-02-16",
+      "conditions": "Herkes",
+      "sources": [
+        {
+          "publisher": "muglagazetesi.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc9dhGYKaPz6G_Wu9xvtYz7H9jwNSQtcgS6d1PrP7dloGGt6pMWk8-FLHQjBHgPsZlAr0-w9NVAeQo-ODoOIaGKvpBKGWUFUJyY-gDtEUfEaBjDfdw5cbxM14Exz0kduCbJOjdg0DWBgYVt-iB5T4YUNH2J36pv9mPzkTq2TT4kaByuv9K4MZqETi8DKmgpL1GseQXCo72FjHGTrszVh-FCYnwCwanFVitL0RbsaVGINYtgs8Vsw==",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        },
+        {
+          "publisher": "milasonder.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9-l6xgpCK7TjxdDZI-1uht6OCyMgrOLH63vAOupj09S-mUKMk1xtaI_bVVu70ZyJr0s4it4Na2sccUKtY3_Lj4BfXPGkiLiGNoXqeJGWGbgBvEwfT4eAFUl6byaDflm2F8gZHKa7WA8ifF4qUmIUqKRvPVQMzWoQSc_kcyZOopP-8HXExIjg=",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "dated_2026_publication"
+    },
+    {
+      "id": "de5fd561fb1a8ac0",
+      "area": "MUĞLA",
+      "type": "ulaşım",
+      "item": "MUTTAŞ şehir içi (0-10 km) öğrenci yolcu",
+      "amount": 20.0,
+      "date": "2026-02-16",
+      "conditions": "Öğrenciler",
+      "sources": [
+        {
+          "publisher": "muglagazetesi.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc9dhGYKaPz6G_Wu9xvtYz7H9jwNSQtcgS6d1PrP7dloGGt6pMWk8-FLHQjBHgPsZlAr0-w9NVAeQo-ODoOIaGKvpBKGWUFUJyY-gDtEUfEaBjDfdw5cbxM14Exz0kduCbJOjdg0DWBgYVt-iB5T4YUNH2J36pv9mPzkTq2TT4kaByuv9K4MZqETi8DKmgpL1GseQXCo72FjHGTrszVh-FCYnwCwanFVitL0RbsaVGINYtgs8Vsw==",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        },
+        {
+          "publisher": "milasonder.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9-l6xgpCK7TjxdDZI-1uht6OCyMgrOLH63vAOupj09S-mUKMk1xtaI_bVVu70ZyJr0s4it4Na2sccUKtY3_Lj4BfXPGkiLiGNoXqeJGWGbgBvEwfT4eAFUl6byaDflm2F8gZHKa7WA8ifF4qUmIUqKRvPVQMzWoQSc_kcyZOopP-8HXExIjg=",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "dated_2026_publication"
+    },
+    {
+      "id": "5efd047df34b2672",
+      "area": "MUĞLA",
+      "type": "ulaşım",
+      "item": "MUTTAŞ kampüs hatları öğrenci",
+      "amount": 1.0,
+      "date": "2026-02-16",
+      "conditions": "Öğrenciler",
+      "sources": [
+        {
+          "publisher": "muglagazetesi.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc9dhGYKaPz6G_Wu9xvtYz7H9jwNSQtcgS6d1PrP7dloGGt6pMWk8-FLHQjBHgPsZlAr0-w9NVAeQo-ODoOIaGKvpBKGWUFUJyY-gDtEUfEaBjDfdw5cbxM14Exz0kduCbJOjdg0DWBgYVt-iB5T4YUNH2J36pv9mPzkTq2TT4kaByuv9K4MZqETi8DKmgpL1GseQXCo72FjHGTrszVh-FCYnwCwanFVitL0RbsaVGINYtgs8Vsw==",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        },
+        {
+          "publisher": "milasonder.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9-l6xgpCK7TjxdDZI-1uht6OCyMgrOLH63vAOupj09S-mUKMk1xtaI_bVVu70ZyJr0s4it4Na2sccUKtY3_Lj4BfXPGkiLiGNoXqeJGWGbgBvEwfT4eAFUl6byaDflm2F8gZHKa7WA8ifF4qUmIUqKRvPVQMzWoQSc_kcyZOopP-8HXExIjg=",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "dated_2026_publication"
+    },
+    {
+      "id": "167ab04bd0882d3f",
+      "area": "AKYAKA",
+      "type": "yemek",
+      "item": "Cennet Restaurant Serpme Kahvaltı",
+      "amount": 900.0,
+      "date": null,
+      "conditions": "Herkes",
+      "sources": [
+        {
+          "publisher": "cennetrestaurant.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsXp_jZA2SJByoNqe4kr4hk02hx5dPdUMOnDesW47DxavBxeSGJNI92tz71unHhNXuvqdtbdN6spt-yyU88-PSq_a8qoluzSK9gMZztaIGaxgnbBg2ae0zYIcv3I9NaAY4LA==",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "undated_menu"
+    },
+    {
+      "id": "f524a5804d32f714",
+      "area": "AKYAKA",
+      "type": "yemek",
+      "item": "Cennet Restaurant Cips",
+      "amount": 500.0,
+      "date": null,
+      "conditions": "Herkes",
+      "sources": [
+        {
+          "publisher": "cennetrestaurant.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsXp_jZA2SJByoNqe4kr4hk02hx5dPdUMOnDesW47DxavBxeSGJNI92tz71unHhNXuvqdtbdN6spt-yyU88-PSq_a8qoluzSK9gMZztaIGaxgnbBg2ae0zYIcv3I9NaAY4LA==",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "undated_menu"
+    },
+    {
+      "id": "7596becb6a2c7e61",
+      "area": "AKYAKA",
+      "type": "yemek",
+      "item": "Cennet Restaurant Kuzu Şiş",
+      "amount": 1100.0,
+      "date": null,
+      "conditions": "Herkes",
+      "sources": [
+        {
+          "publisher": "cennetrestaurant.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsXp_jZA2SJByoNqe4kr4hk02hx5dPdUMOnDesW47DxavBxeSGJNI92tz71unHhNXuvqdtbdN6spt-yyU88-PSq_a8qoluzSK9gMZztaIGaxgnbBg2ae0zYIcv3I9NaAY4LA==",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "undated_menu"
+    },
+    {
+      "id": "e84ffcd043a2fadd",
+      "area": "AKYAKA",
+      "type": "yemek",
+      "item": "Olta Balık Restoran Meyve Suyu",
+      "amount": 100.0,
+      "date": null,
+      "conditions": "Herkes",
+      "sources": [
+        {
+          "publisher": "akyakaoltarestoran.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxtlRWkKSlIfH3hARP9XxSE5oR0O1vAVlciJ9Zj1NERRASijxC8K-Xe-jb1GcNcDGp6mqLGmL-HWDtETtsI4tBiXODnQFK9rZqVUwcjsN7wrrJUwR-G2zT4-yxfp5Q_x4=",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "undated_menu"
+    },
+    {
+      "id": "514c2a9101a347e2",
+      "area": "AKYAKA",
+      "type": "yemek",
+      "item": "Olta Balık Restoran Sıkma Portakal Suyu",
+      "amount": 175.0,
+      "date": null,
+      "conditions": "Herkes",
+      "sources": [
+        {
+          "publisher": "akyakaoltarestoran.com.tr",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxtlRWkKSlIfH3hARP9XxSE5oR0O1vAVlciJ9Zj1NERRASijxC8K-Xe-jb1GcNcDGp6mqLGmL-HWDtETtsI4tBiXODnQFK9rZqVUwcjsN7wrrJUwR-G2zT4-yxfp5Q_x4=",
+          "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+        }
+      ],
+      "status": "undated_menu"
+    }
+  ],
+  "reviewNote": "Kaynak destekli araştırma kayıtları; kaynağın tüm iddiaları bağımsız olarak doğrulanmış değildir."
+}

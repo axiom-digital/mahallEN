@@ -1,0 +1,695 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "akyaka",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "started_at": "2026-10-28T18:12:27.320174+00:00",
+  "finished_at": "2026-10-28T18:13:05.110738+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "rent_cost",
+    "safety_news",
+    "transportation",
+    "social_life"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Akyaka Mahallesi Ula Muğla kiralık konut son 90 gün",
+    "Akyaka Mahallesi Ula Muğla 1+0 kiralık daire",
+    "Akyaka Mahallesi Ula Muğla 1+1 kiralık daire",
+    "Akyaka Mahallesi Ula Muğla 2+1 kiralık daire",
+    "Akyaka Mahallesi Ula Muğla 3+1 kiralık daire",
+    "Akyaka Mahallesi Ula Muğla güvenlik olayları son 12 ay",
+    "Akyaka Mahallesi Ula Muğla suç haberleri",
+    "Akyaka Mahallesi Ula Muğla trafik kazaları",
+    "Akyaka Mahallesi Ula Muğla sağlık duyuruları",
+    "Akyaka Mahallesi Ula Muğla altyapı çalışmaları",
+    "Akyaka Mahallesi Ula Muğla belediye duyuruları",
+    "MUTTAŞ Akyaka Mahallesi otobüs hatları",
+    "Muğla Büyükşehir Belediyesi Akyaka otobüs seferleri",
+    "Akyaka Mahallesi Ula Muğla restoranlar",
+    "Akyaka Mahallesi Ula Muğla kafeler",
+    "Akyaka Mahallesi Ula Muğla marketler",
+    "Akyaka Mahallesi Ula Muğla parklar",
+    "Akyaka Mahallesi Ula Muğla kültür merkezleri",
+    "Akyaka Mahallesi Ula Muğla barlar",
+    "Akyaka Mahallesi Ula Muğla canlı müzik mekanları",
+    "Akyaka Mahallesi Ula Muğla gece kulüpleri",
+    "Akyaka Mahallesi Ula Muğla sosyal yaşam yerleri"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGujguwi2UTtPbAkOxKdooQEIIUr3s8R1VXjfuNxNaWYFwm7jElCSmW8JB3EBQ63G_GjIVodchMMlZQTSXTALEHiQ5VGtEkUFLDcxmjQYKxWTS69_aJSJY6PN8OwV-GapDF4zgsBfcJSHsglumMcPH8bx3hm_YF3UUjY8ZfPAd6ULPDSBJT4tgK25QEQBU8hxQ9TfQKOTdYJYoVTMT2paFqDkgCVvn4xUnnnPClNbR4JSEZ",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-L_0GbQQ4dVYfms2bFknlw7AtygcKreITieb6TQmqwkSEgUXbFWRVtQsM4OF5GpN09xZ390D4GRPzS-61zS-1rUQ8gdNz0-11ax6AtEy5y843max7FQ3E86bbqmos3dBd2R6ZhmjS7wQZLbrnWhqftcDcEEV_nZo3Koq4",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-jt1FGiFwfAjVKtp1s_agb6dyP4FuPbRZPb0K1TWsPo3IP4gHk5KywMQE2ny9sxtcQldu675rD5nlHtOx0SXEmc0-G1UsLudShiPplMoGIEcEWh7LTvWr41jfHs8Q3tX5TzW6yWXsItLrFFnVwxJ1GhZx3UJm5GUYWH_f",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECGEVHoCgtynBijGeff0Iv1iGv9J_c29aVoszamZVjuOXwe63vzqrHuTY1TqwUoQaSG5XHV_OcDPK85kBwFYAqZNS84jOXU8A4EATDz1c8COIkB4UHvSGp7bhgzPr64l1Wd9a_ppu3sQ==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF-mywdCXoqSsAHU56fFL3cpwNMKMd2RG57Qa4-yaJbYnyli1w0VxadOM0Zo1nal0VP24OW1w03AaXYPMgrOg2s-kMvnCCMGh3kxC9CFr3FQapnqv5BrgT3V02CwYZgpPSAmNe7BscbM8_DbAlhA==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVK9cdS8CSBRMyKM2YSlLOhcYoj0cjlgWtKv40q4SgWA4SQqp_4rmDMmwQTdt661pavsRF9B9fty_cP43PM_X3MUhmJlVguO72B1s19imZL6Opp1z5puvXJaZftHRYitxd0yq3g_5f6RRzhmA=",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFiA-IFTQDqhsG1NprfR2bHSw84NeT9qWDdvJkh6Gr6kZI-U_UdXdU-3Z-raUPtL3rtSo1YDqhlkl-nGM5sJef6fsjhCo5u-tE5UoreeFSAWm1KQLgDY-3J6bYhawts1t1IDB2-f847IEJ",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEx_Vuw8SnAMTWixs5HfD0CV2FoxkoAlk2Lh5r7tN6-3HQQt5Z0QNM3ANwJpkkO_TUfcxJq9XX7jmTkT4P58dqQsXF8mqYIaajVaHjMmmYqpDULMO94jueXHiepwVEiGeCF7MY_3xOY5LUyQFJzOkMt7To3VmVU-TJQbM_crKkAW6WaNsToxQ==",
+      "title": "mabollamedya.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqVsnMpsiBsTJsyHp8UujHPB_KRrvbkq-_cKCTh-RPuraOJxAPDftcyOATfyTcfUTKlWhcxIS0nY9XbxS5LEquWtnylaT-joNVj8d76yAi05-ambE_8oKDTb8EjNaNTYqLaqMstJI-4YAbSSpdrSQVxgp1RK2kIFL8731V1tJfOiaCPiRvz1IJXaMRkGCCSwjKAHFSNFPTb2npVOoIzqFbpbxKWs1coeqimk=",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGXMKJrzFrDXF_XUSr2aLhNrmG8JdYEsSj1tzz0D6LA7Fr65mE9Kr8t4Rud3v21huznP6R6wF-bStND4r395wFdfpcy7K1M_ajfDJjUh2kWH9yPnvhyVYrFYSZrlLfIe6moquz-x4QABo7c1AkMKJMFI2_zz5Xs5tXxi8TqhCHKmwLoY9jlhuUs40mQ54_6_8GFn9UzcwfHosW8tRpaajN",
+      "title": "gercekfethiye.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsGWhxrQ05nkhkbLmi4ct0StF0YAimFlB6oonUMiM-jVWPqiGzaAX-mXcUl7bcEdlOM7pMGO5go18UHztye7QqORkm4zYSmcowaIy8N4NsANq9AWBgEv4mwq64mzJdQSQ7lZehtIY5cmUdKQDegwkdyDhT_iuVkzMUnpNV83s=",
+      "title": "kastamonuistiklal.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVmsYW13jc5xXn2HlGlhP37K1mkaLvL37SLOTD_LUA1c-vKZLOdz2OzOnBESmllQ3aOgW6Swm_n2Sd0dBZPtNido6fH91DSwrMKrg_wvWpHseqD2ADgsmxnpre-l61NRrtvf9LYJc6NQqwzJCRgZO60xHtKUruDsz5XSmzQTBU_TdvIdNtxWMy5ggFbaRyzftCMTT8yz_or4J5CC4tJDpd1N5nb_ito5VCfYma6EFTzbZ14aF3h0rUiqzkzr3S",
+      "title": "iha.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFENhVBYjk-BEI_MyJjrDtjzZeHGTVlkWW5RmaDrs8dRJ94NFN_8d_cR1VE-mjCuTMC-wo_W98OJe1uZ4j7LXsE7CjY6CGZhthC_EKlP_J7Ogh5R7X2Lp9LOsVHtGrMG7Us06xKAd4AdIkdRkld6tqltN40ze-0Xg==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfi-CDMb8Z6U_tMCwlZ4w4Bj0LnhcGU6fzxXJ7GZqk4nu3tVAPq7EdiI5dN-2uZLcU-McdSh9v2wqKYPpXHO5OcjRt7zIFxJZvBWY1Ib29W7xpZWxZteWaKjp-lfhWyGLDCvUDl71c1A9Kn6MIxrOgD6X2",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4TNyIv1-GGqt3lSmb-5U1TeyvMyw3046bvkDPSpjtMRe18xKXWpTzDLbc3NyXLOAx7ZVEwJf4KXyFIuNSbkJ_yK1aNFhsLb_W-AuN6F4tW9fOIpYUGdIe2um9GwJHbYrLBKiELkP61DAgITctJiLHinNIDeJWvbhTCp2rL_19",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxI2e_h_-iCcwMzU1bwsJKoG3udsx55pt-qPisZiZZHghrRJ8OQ4dTSBlI44AZs_04kDG2JgyRPHqEiHAuVypWfUr96Z7ctkAw2McYMSQ0g9_DicQyKXfo3SE0uILj1mW0XW0SAjJVs04PchJn9Ae8qaaI",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEhHKF997aNmzY-F-Y75nxK9ySIi4MYlGmKUDi7wnqgRKIMCBYuLFZFSgWxpGg6CfhBj6DSAoDNTSJgcwJ4m4i7L5cNXrhiP6Z7iC7LekWeQ8sZiiHqxdPNAxdgpXhLEyYuDGE5f0sIl0C7qMCJvkBhROVC98w",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv-4EQnmTU-_M1Z7Yt85LLApcJa20Ghl7EZ0mqL9sHrwpUCrWrkqL5v9pWZ_GmVHtSsfxVVoGb5B9hcy3E83lCy3MLGYlk3PTw3EVWJuwLZYt30jzpGKZGtTBqUxGPOXZV2m9NbPzgVxyEG_UkQckkz48iiZ2QYORz2IXlsVtT",
+      "title": "gezinomi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOn0BpP3qpps5y1nspk9EOf4SK7B_Ojrx0ghInG0HFNWcmxTNvVvtLMeKK-2VMuHJBLXyL52tGU3uGxZ8WBxzxPToqlqN4HTvo76nTp-trLKk5kAkdrUxesXhn26Si88LyyEWP2urEJJCdhhe8Uad6Mobh6sg=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEatl9VJqPwvIQ-9Ocmupq2RGaTO7VeV6MqwS-Z1172Mx5mvHAUGJOg0UKOzaldWHEMSsB61aiyOXoibKJRn4Pn8bQqC6MVOo0TVcK4mplopHd61H6Gk_5Mp1tXspajAChJJKQ4-SS8jW00NlcRXswKOne_7-z-WIEZgDT4UIihegzX4SgAoqFYVEO0Va2H3Q==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBxUhEnMuXuXvKs0LBBOjtHlu3fD6OeeOrpt0MXqkG9vPcGn9QIrBiXlnrZ2NdwRQBvHSxzIDrqEe2bwFaLptXsCDZF8BkicLSoLg-AxkO-JcjSWF_xl-VVkGzWiZDiLHTFovad35kaFRYjRsVpSu05ys=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKgzra9ZnbpX70hqvowbqq7y1DdtwlEBlJV0lM6FVApA_Q7mv8ChxsRDXjz55Ge9IGj4ycNF4K1paC-2Id1y0up2zvX7k1ic3sS8FJ3w2DqYmIqfOBFwXZfcLlJnv9w93Jb1Q6w5KjJEBGFRJMDwWa6tY=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtafXLfpOqvrMZsYOdqPVCNwMBvzQcAaQ3eRv5K0v3yGIlBcf7E0kD2XGwcKFnbz5dGiqlBt92ViU3_-o4DAFQqEg-q7EAyf07QWbBkyWKFpr7R2wfuY2J",
+      "title": "muglavakfi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEudgE3nzdbRSfSc28ozRqPWV67EdLfgCbKQatHAkBgYLdNwdlE6tGbayB2Gl1SEgOHcq14g7IeisJjTwFgKJfQt_YxT3xtIvPBBixO5e6ADzNr1zJAwn5HL4zhvqOpCh4KehoagYNU99KM",
+      "title": "takoz.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqFGJpLuO0AO9x_Tpve09fwgEUIZgaIXWVYOJVsmYHNOFt4xuzwg2K9IClrfxrmqPtmXraUHNFKtSCxv5UREq7LvaykctKL2NOy8ESrH0ZMGyaE6XARBEh7XMo9J5sgHJ1a7brUMQQWudOX7dzbeVVyueY-miW1ZI=",
+      "title": "firmaatlas.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTKBqjAfgPD7UeBNJ8aqTB3V7ARa_evaO7dzilPujA9uNDP4ivuPnT15IwcH9aBFI5JZPsSev3PgUUUzN-Ns5quzdZrjWLmJVQwwBMuwu-6RjWsK8Jkfr8xt-svqPmFJsSw-BuNDWkunSEeuQbfh8hDeE=",
+      "title": "com.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGh3_Lnlqk9tHEt6gGyXieKg_ImiOLf06S50fOR0Wgsjxvn7dPnsJHaTGH5ypu6pclpkhMX0XPAzjXBPutTB3fHcaDwkRRTnUjS3QOeQ2u9Z6bwc12t3HcjxG_KtuO",
+      "title": "akyakasucaferestaurant.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoJ7zErfsJ3hpr3yt_NLY-UsQPJ8X6C5Usgy0_fnRF-H5eDtBsJqd5H-xbeX0r-XKc5jZUOk9TPHnxSHSMfCPh0mGxVvauVjuqbH_RoSq_Oxm1xGDHUe5jcYisNA36fiEfifw9uFRM_P_iQik=",
+      "title": "akyakasucaferestaurant.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZdszLRMbzZNEkq0dDfc5SV2MPlq9q_EG635KslPfYgGoMh-FGT2QhfLLCeFPqoRfz4BZxta3Sg-0o3Kat9x7fJFjGng5oI8IEbJF946oUxLuAm6fDcybCxEBg402EJdSQvKnJD91DPvCYtr8ZrWnToqaTOC0h3KU_GLlK8g==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOjvE6RMET4opuo-l41PfNajUfn7MfYflnXkFUzcSbIX0RWTvBaiK3A045XEzLuj_0pN7W-o1r1Fnjnyf0inElEs8oZDJDCB5B-mc4yfI-jQ-2-P_z7RG0L29tCuuiq_IibrzjYaJVO5F62SSCPMZfbjvuzbztN4B1iQ79_U8=",
+      "title": "yandex.com.tr"
+    }
+  ],
+  "grounding_support_count": 28,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGujguwi2UTtPbAkOxKdooQEIIUr3s8R1VXjfuNxNaWYFwm7jElCSmW8JB3EBQ63G_GjIVodchMMlZQTSXTALEHiQ5VGtEkUFLDcxmjQYKxWTS69_aJSJY6PN8OwV-GapDF4zgsBfcJSHsglumMcPH8bx3hm_YF3UUjY8ZfPAd6ULPDSBJT4tgK25QEQBU8hxQ9TfQKOTdYJYoVTMT2paFqDkgCVvn4xUnnnPClNbR4JSEZ"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-L_0GbQQ4dVYfms2bFknlw7AtygcKreITieb6TQmqwkSEgUXbFWRVtQsM4OF5GpN09xZ390D4GRPzS-61zS-1rUQ8gdNz0-11ax6AtEy5y843max7FQ3E86bbqmos3dBd2R6ZhmjS7wQZLbrnWhqftcDcEEV_nZo3Koq4"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-jt1FGiFwfAjVKtp1s_agb6dyP4FuPbRZPb0K1TWsPo3IP4gHk5KywMQE2ny9sxtcQldu675rD5nlHtOx0SXEmc0-G1UsLudShiPplMoGIEcEWh7LTvWr41jfHs8Q3tX5TzW6yWXsItLrFFnVwxJ1GhZx3UJm5GUYWH_f"
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECGEVHoCgtynBijGeff0Iv1iGv9J_c29aVoszamZVjuOXwe63vzqrHuTY1TqwUoQaSG5XHV_OcDPK85kBwFYAqZNS84jOXU8A4EATDz1c8COIkB4UHvSGp7bhgzPr64l1Wd9a_ppu3sQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF-mywdCXoqSsAHU56fFL3cpwNMKMd2RG57Qa4-yaJbYnyli1w0VxadOM0Zo1nal0VP24OW1w03AaXYPMgrOg2s-kMvnCCMGh3kxC9CFr3FQapnqv5BrgT3V02CwYZgpPSAmNe7BscbM8_DbAlhA=="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVK9cdS8CSBRMyKM2YSlLOhcYoj0cjlgWtKv40q4SgWA4SQqp_4rmDMmwQTdt661pavsRF9B9fty_cP43PM_X3MUhmJlVguO72B1s19imZL6Opp1z5puvXJaZftHRYitxd0yq3g_5f6RRzhmA="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFiA-IFTQDqhsG1NprfR2bHSw84NeT9qWDdvJkh6Gr6kZI-U_UdXdU-3Z-raUPtL3rtSo1YDqhlkl-nGM5sJef6fsjhCo5u-tE5UoreeFSAWm1KQLgDY-3J6bYhawts1t1IDB2-f847IEJ"
+        }
+      },
+      {
+        "web": {
+          "title": "mabollamedya.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEx_Vuw8SnAMTWixs5HfD0CV2FoxkoAlk2Lh5r7tN6-3HQQt5Z0QNM3ANwJpkkO_TUfcxJq9XX7jmTkT4P58dqQsXF8mqYIaajVaHjMmmYqpDULMO94jueXHiepwVEiGeCF7MY_3xOY5LUyQFJzOkMt7To3VmVU-TJQbM_crKkAW6WaNsToxQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRqVsnMpsiBsTJsyHp8UujHPB_KRrvbkq-_cKCTh-RPuraOJxAPDftcyOATfyTcfUTKlWhcxIS0nY9XbxS5LEquWtnylaT-joNVj8d76yAi05-ambE_8oKDTb8EjNaNTYqLaqMstJI-4YAbSSpdrSQVxgp1RK2kIFL8731V1tJfOiaCPiRvz1IJXaMRkGCCSwjKAHFSNFPTb2npVOoIzqFbpbxKWs1coeqimk="
+        }
+      },
+      {
+        "web": {
+          "title": "gercekfethiye.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGXMKJrzFrDXF_XUSr2aLhNrmG8JdYEsSj1tzz0D6LA7Fr65mE9Kr8t4Rud3v21huznP6R6wF-bStND4r395wFdfpcy7K1M_ajfDJjUh2kWH9yPnvhyVYrFYSZrlLfIe6moquz-x4QABo7c1AkMKJMFI2_zz5Xs5tXxi8TqhCHKmwLoY9jlhuUs40mQ54_6_8GFn9UzcwfHosW8tRpaajN"
+        }
+      },
+      {
+        "web": {
+          "title": "kastamonuistiklal.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsGWhxrQ05nkhkbLmi4ct0StF0YAimFlB6oonUMiM-jVWPqiGzaAX-mXcUl7bcEdlOM7pMGO5go18UHztye7QqORkm4zYSmcowaIy8N4NsANq9AWBgEv4mwq64mzJdQSQ7lZehtIY5cmUdKQDegwkdyDhT_iuVkzMUnpNV83s="
+        }
+      },
+      {
+        "web": {
+          "title": "iha.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVmsYW13jc5xXn2HlGlhP37K1mkaLvL37SLOTD_LUA1c-vKZLOdz2OzOnBESmllQ3aOgW6Swm_n2Sd0dBZPtNido6fH91DSwrMKrg_wvWpHseqD2ADgsmxnpre-l61NRrtvf9LYJc6NQqwzJCRgZO60xHtKUruDsz5XSmzQTBU_TdvIdNtxWMy5ggFbaRyzftCMTT8yz_or4J5CC4tJDpd1N5nb_ito5VCfYma6EFTzbZ14aF3h0rUiqzkzr3S"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFENhVBYjk-BEI_MyJjrDtjzZeHGTVlkWW5RmaDrs8dRJ94NFN_8d_cR1VE-mjCuTMC-wo_W98OJe1uZ4j7LXsE7CjY6CGZhthC_EKlP_J7Ogh5R7X2Lp9LOsVHtGrMG7Us06xKAd4AdIkdRkld6tqltN40ze-0Xg=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfi-CDMb8Z6U_tMCwlZ4w4Bj0LnhcGU6fzxXJ7GZqk4nu3tVAPq7EdiI5dN-2uZLcU-McdSh9v2wqKYPpXHO5OcjRt7zIFxJZvBWY1Ib29W7xpZWxZteWaKjp-lfhWyGLDCvUDl71c1A9Kn6MIxrOgD6X2"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4TNyIv1-GGqt3lSmb-5U1TeyvMyw3046bvkDPSpjtMRe18xKXWpTzDLbc3NyXLOAx7ZVEwJf4KXyFIuNSbkJ_yK1aNFhsLb_W-AuN6F4tW9fOIpYUGdIe2um9GwJHbYrLBKiELkP61DAgITctJiLHinNIDeJWvbhTCp2rL_19"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxI2e_h_-iCcwMzU1bwsJKoG3udsx55pt-qPisZiZZHghrRJ8OQ4dTSBlI44AZs_04kDG2JgyRPHqEiHAuVypWfUr96Z7ctkAw2McYMSQ0g9_DicQyKXfo3SE0uILj1mW0XW0SAjJVs04PchJn9Ae8qaaI"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEhHKF997aNmzY-F-Y75nxK9ySIi4MYlGmKUDi7wnqgRKIMCBYuLFZFSgWxpGg6CfhBj6DSAoDNTSJgcwJ4m4i7L5cNXrhiP6Z7iC7LekWeQ8sZiiHqxdPNAxdgpXhLEyYuDGE5f0sIl0C7qMCJvkBhROVC98w"
+        }
+      },
+      {
+        "web": {
+          "title": "gezinomi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv-4EQnmTU-_M1Z7Yt85LLApcJa20Ghl7EZ0mqL9sHrwpUCrWrkqL5v9pWZ_GmVHtSsfxVVoGb5B9hcy3E83lCy3MLGYlk3PTw3EVWJuwLZYt30jzpGKZGtTBqUxGPOXZV2m9NbPzgVxyEG_UkQckkz48iiZ2QYORz2IXlsVtT"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOn0BpP3qpps5y1nspk9EOf4SK7B_Ojrx0ghInG0HFNWcmxTNvVvtLMeKK-2VMuHJBLXyL52tGU3uGxZ8WBxzxPToqlqN4HTvo76nTp-trLKk5kAkdrUxesXhn26Si88LyyEWP2urEJJCdhhe8Uad6Mobh6sg="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEatl9VJqPwvIQ-9Ocmupq2RGaTO7VeV6MqwS-Z1172Mx5mvHAUGJOg0UKOzaldWHEMSsB61aiyOXoibKJRn4Pn8bQqC6MVOo0TVcK4mplopHd61H6Gk_5Mp1tXspajAChJJKQ4-SS8jW00NlcRXswKOne_7-z-WIEZgDT4UIihegzX4SgAoqFYVEO0Va2H3Q=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBxUhEnMuXuXvKs0LBBOjtHlu3fD6OeeOrpt0MXqkG9vPcGn9QIrBiXlnrZ2NdwRQBvHSxzIDrqEe2bwFaLptXsCDZF8BkicLSoLg-AxkO-JcjSWF_xl-VVkGzWiZDiLHTFovad35kaFRYjRsVpSu05ys="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKgzra9ZnbpX70hqvowbqq7y1DdtwlEBlJV0lM6FVApA_Q7mv8ChxsRDXjz55Ge9IGj4ycNF4K1paC-2Id1y0up2zvX7k1ic3sS8FJ3w2DqYmIqfOBFwXZfcLlJnv9w93Jb1Q6w5KjJEBGFRJMDwWa6tY="
+        }
+      },
+      {
+        "web": {
+          "title": "muglavakfi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtafXLfpOqvrMZsYOdqPVCNwMBvzQcAaQ3eRv5K0v3yGIlBcf7E0kD2XGwcKFnbz5dGiqlBt92ViU3_-o4DAFQqEg-q7EAyf07QWbBkyWKFpr7R2wfuY2J"
+        }
+      },
+      {
+        "web": {
+          "title": "takoz.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEudgE3nzdbRSfSc28ozRqPWV67EdLfgCbKQatHAkBgYLdNwdlE6tGbayB2Gl1SEgOHcq14g7IeisJjTwFgKJfQt_YxT3xtIvPBBixO5e6ADzNr1zJAwn5HL4zhvqOpCh4KehoagYNU99KM"
+        }
+      },
+      {
+        "web": {
+          "title": "firmaatlas.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqFGJpLuO0AO9x_Tpve09fwgEUIZgaIXWVYOJVsmYHNOFt4xuzwg2K9IClrfxrmqPtmXraUHNFKtSCxv5UREq7LvaykctKL2NOy8ESrH0ZMGyaE6XARBEh7XMo9J5sgHJ1a7brUMQQWudOX7dzbeVVyueY-miW1ZI="
+        }
+      },
+      {
+        "web": {
+          "title": "com.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTKBqjAfgPD7UeBNJ8aqTB3V7ARa_evaO7dzilPujA9uNDP4ivuPnT15IwcH9aBFI5JZPsSev3PgUUUzN-Ns5quzdZrjWLmJVQwwBMuwu-6RjWsK8Jkfr8xt-svqPmFJsSw-BuNDWkunSEeuQbfh8hDeE="
+        }
+      },
+      {
+        "web": {
+          "title": "akyakasucaferestaurant.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGh3_Lnlqk9tHEt6gGyXieKg_ImiOLf06S50fOR0Wgsjxvn7dPnsJHaTGH5ypu6pclpkhMX0XPAzjXBPutTB3fHcaDwkRRTnUjS3QOeQ2u9Z6bwc12t3HcjxG_KtuO"
+        }
+      },
+      {
+        "web": {
+          "title": "akyakasucaferestaurant.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoJ7zErfsJ3hpr3yt_NLY-UsQPJ8X6C5Usgy0_fnRF-H5eDtBsJqd5H-xbeX0r-XKc5jZUOk9TPHnxSHSMfCPh0mGxVvauVjuqbH_RoSq_Oxm1xGDHUe5jcYisNA36fiEfifw9uFRM_P_iQik="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZdszLRMbzZNEkq0dDfc5SV2MPlq9q_EG635KslPfYgGoMh-FGT2QhfLLCeFPqoRfz4BZxta3Sg-0o3Kat9x7fJFjGng5oI8IEbJF946oUxLuAm6fDcybCxEBg402EJdSQvKnJD91DPvCYtr8ZrWnToqaTOC0h3KU_GLlK8g=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOjvE6RMET4opuo-l41PfNajUfn7MfYflnXkFUzcSbIX0RWTvBaiK3A045XEzLuj_0pN7W-o1r1Fnjnyf0inElEs8oZDJDCB5B-mc4yfI-jQ-2-P_z7RG0L29tCuuiq_IibrzjYaJVO5F62SSCPMZfbjvuzbztN4B1iQ79_U8="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 140,
+          "end_index": 250,
+          "text": "KİRA:\n*   3+1 | eşyalı | 50.000 TL/ay | ilan tarihi: 2026-10-27 | uzun dönem | Akyaka Mahallesi | Emlakjet"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 251,
+          "end_index": 357,
+          "text": "*   2+1 | eşyalı | 40.000 TL/ay | ilan tarihi: 2026-10-20 | bilinmiyor | Akyaka Mahallesi | Güven Emlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1,
+          2
+        ],
+        "segment": {
+          "start_index": 358,
+          "end_index": 471,
+          "text": "*   1+1 | eşyalı | 20.000 TL/ay | ilan tarihi: 2026-10-19 | kış sezonu | Akyaka Mahallesi | Joker Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1,
+          2
+        ],
+        "segment": {
+          "start_index": 472,
+          "end_index": 576,
+          "text": "*   1+1 | eşyalı | 35.000 TL/ay | ilan tarihi: 2026-09-14 | bilinmiyor | Akyaka Mahallesi | Emlaksende"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1,
+          2
+        ],
+        "segment": {
+          "start_index": 577,
+          "end_index": 692,
+          "text": "*   2+1 | eşyasız | 35.000 TL/ay | ilan tarihi: 2026-03-11 | bilinmiyor | Akyaka Mahallesi | Gökova-Akyaka Emlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 693,
+          "end_index": 799,
+          "text": "*   3+1 | mobilyalı | 59.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          4
+        ],
+        "segment": {
+          "start_index": 800,
+          "end_index": 912,
+          "text": "*   1+0 | eşyalı | 16.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Vizyon Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          5,
+          6,
+          4
+        ],
+        "segment": {
+          "start_index": 913,
+          "end_index": 1027,
+          "text": "*   1+1 | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Thera Emlak İnşaat"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 1029,
+          "end_index": 1223,
+          "text": "GÜVENLİK:\n*   2025-03-30 | trafik | Akyaka Mahallesi Akbük yolunda kontrolden çıkan bir araç uçuruma yuvarlandı, 2 kişi kendi imkanlarıyla araçtan çıktı ve hastaneye kaldırıldı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "segment": {
+          "start_index": 1224,
+          "end_index": 1371,
+          "text": "*   2024-07-13 | trafik | Akyaka Mahallesi girişinde meydana gelen trafik kazasında 2 kişi hayatını kaybetti, 4'ü ağır 28 kişi yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12
+        ],
+        "segment": {
+          "start_index": 1426,
+          "end_index": 1558,
+          "text": "SOSYAL YAŞAM:\n*   West Cafe & Bistro | kafe | Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 1559,
+          "end_index": 1659,
+          "text": "*   Devin Akyaka | kafe | Akyaka Mah., Nergiz Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 1660,
+          "end_index": 1758,
+          "text": "*   Akyaka Sahil Apart Cafe | kafe | Akyaka Mah., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15
+        ],
+        "segment": {
+          "start_index": 1759,
+          "end_index": 1880,
+          "text": "*   Space Akyaka | bar/canlı müzik | Akyaka Mah., İnişdibi Cad., 75, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          16
+        ],
+        "segment": {
+          "start_index": 1881,
+          "end_index": 1975,
+          "text": "*   Akyaka Trablem | su parkı | Akyaka Mah., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2041,
+          "end_index": 2130,
+          "text": "No: 22, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 14:00-02:00) | Gezinomi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2175,
+          "end_index": 2265,
+          "text": "No: 1/a, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 12:00-02:00) | Gezinomi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2266,
+          "end_index": 2343,
+          "text": "*   HoTsHot Bar | bar | Akyaka, Ula, Muğla | faaliyet: bilinmiyor | Gezinomi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2410,
+          "end_index": 2499,
+          "text": "No: 17, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 16:00-02:00) | Gezinomi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18,
+          19
+        ],
+        "segment": {
+          "start_index": 2500,
+          "end_index": 2609,
+          "text": "*   Rahat Meyhane | bar | Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          20
+        ],
+        "segment": {
+          "start_index": 2660,
+          "end_index": 2718,
+          "text": "Sok., 23, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          21
+        ],
+        "segment": {
+          "start_index": 2719,
+          "end_index": 2822,
+          "text": "*   Half Akyaka | kafe | Akyaka Mah., Nergiz Sok., 2B, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22,
+          23
+        ],
+        "segment": {
+          "start_index": 2823,
+          "end_index": 2965,
+          "text": "*   Akyaka Orman Kampı (Gökova Konaklamalı Orman Parkı) | kamp alanı | Akyaka, Ula, Muğla | faaliyet: 7/24 açık | Muğla Vakfı, Takoz"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          24
+        ],
+        "segment": {
+          "start_index": 2966,
+          "end_index": 3056,
+          "text": "*   Akyaka Meydanı | park | Akyaka, 48650 Ula/Muğla | faaliyet: bilinmiyor | Firma Atlas"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          25
+        ],
+        "segment": {
+          "start_index": 3057,
+          "end_index": 3152,
+          "text": "*   Akyaka Belediye Parkı | park | Ula, Muğla | faaliyet: bilinmiyor | Akyaka Belediye Parkı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          26,
+          27
+        ],
+        "segment": {
+          "start_index": 3225,
+          "end_index": 3329,
+          "text": "No: 19/13 48650 AKYAKA Ula/Muğla | faaliyet: açık (Pzt-Paz 08:00-02:00) | Akyaka Su Cafe & Restaurant"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          28
+        ],
+        "segment": {
+          "start_index": 3330,
+          "end_index": 3460,
+          "text": "*   Minimal Summer Akyaka | gece kulübü | Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          29
+        ],
+        "segment": {
+          "start_index": 3461,
+          "end_index": 3582,
+          "text": "*   Roots Akyaka | gece kulübü | Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCCcqlhwmpReCXIfHocNMvPxOUxDqN4J9Pb1ynb_0KeCKllXORQt4X43D_UUOp3u9VfCsEyvwY7zvAnVv7BX6ZP6z9AaT176re4VmyT62ShAlXkGLSDHjferDOrnV4R7D-ZwJox-RZ6vFx35UM_g3HdVLERfiYQli7TBeu6aPfH34Ji0gJ6xgf2_Q-TqERk84fzqxhbTFYdEhtaQEtvrp2ZlCFy0TFx3RsoxZTxpPFnqyl8A159fSLvwtFqA==\">Akyaka Mahallesi Ula Muğla 1+1 kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEebSKyEskDXA-PDlAK80udaVJpd9sU1U4_c0cQmlQxzMtR7Kf7zah46k-QfvFIzcb0reBip-jgA6b5TtOWZK1rDlTroH6c0y36N-5lsBCTzTEPwyJ3LF5P08qngVGkCTNNMaM5k6wo_rSmPQH33Gj6OObRei6LZIdF9Y29wpJKqHQC5IoCeucDoPmum6mS96wE1mWX3lLIKleEzMplPPydIRmmIzYIyMnXUA==\">Akyaka Mahallesi Ula Muğla kafeler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq0YQ9FwOegS8nruy5VAfkhQmB-QwEqGQ2NeidEYqTTJQz9GMjN4q9GOVdoEhRx2WgaKGqyQ3bn8yvMBOo8tfO_pgv83oTxJ0J7jQioAd_0OB9CGeQCXgNwzdyDJTpLVPKGZ32SQNuHSz7mwdTKY252NCNPfUdTDq1QXbIdHlXWOpngqWKIfV5gRCyWlB2WHMhCM6zn5mhNqbybzp0voPi-_ZKqH2x3dF1IRfaDcZjWG64Olmcsg==\">Akyaka Mahallesi Ula Muğla suç haberleri</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlKnQJdXMXbEVuaqwSNAY4IADmXc6snleYn6-Fu4kIP766uJ2fRaiY6Ex0sPgtdfw8WluVD1f0QvAVxHZEsC0KBT1IPqVYDrLImt6V26oEq-iTJZtsRTZEXbkJ7GSQ0bHSlzp6laSRp0Jn9oeLOVnU4e9D4_Tv4UZHVeHHSqHEMnq_OQqzQfrat_DxrXtWJZ15ErMDu51KGK52xZ3ZAkh6lojX-61d5EBpcLTb7PH8ejf4bP_IDXwPHakr8Q==\">Akyaka Mahallesi Ula Muğla 2+1 kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDamxvU33_FX116pkgIbrC_C5nMLT80Q9d21KHGlbZPSbuLv4KE4FF7qs5qud5bPlYVarStlZ7gbCNJBMnuWUD_EPEq9VK1UbYVucuTmwiuu_hr8qm47xAeTHlK6IM0x0zklp4a58MBUSxABQay7JGvrKRelVUnVxCqc-lpLb_FhsKTgkvUdDXJrqY5EO6fyM3MMKdHYo7kRKB8qC0GnELJeWKmvCckF19QcIO5TGdlEAvjTDAyhxjeWYpF4kngcIpWFA-\">Akyaka Mahallesi Ula Muğla sağlık duyuruları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQoE47NnjmEBMhJsAiAMO2C42AF7MlPIeIEl_XVXOM6wYIWnkEPbiX1vvVcG1kyktCwJFZSAzYXQhHitHxectmP-MGQlY3JsaHPUM9YcN-cDQ9ODtS3FW1lvk7WzTBymxJHim31dl79Eo2xgLV2tbYz6lCS3s2EXYL78kd3rMyYaEUvYy4GwRZuzZxtOfbWfHhSvRIxy4U02yHkeEuR6tlgCrgw4Qcf-Lv__lSZB3gwQM2uJN3vJiCMt1697-xJQweevQ2-BhGww_hSk_5YUmZ\">Muğla Büyükşehir Belediyesi Akyaka otobüs seferleri</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgNsG-wjFqvyaIlgqJLQSWLHteN93-k_d-5fxedzsUsUrYqy-lTqrjedg9BGULrCL17QTELDr6VR1YPaSXkDMSiR4zMICcsKd11huGRbppotCU02NXkPHFOVPRBKCd2ATDXig01swNo1hbayvmdDPaG9681EbOeQAYOGHMWG6kVU-zm6YCyAt9bCXktxadZaUHe1UaM_XUSF8KuZmPYGUnfujcEcuXd1du2_gx7DfrTtiJdbA8FL7Ji4M6gWA4Jzqpu2c6lFeWkye3JYhJ_dqc\">Akyaka Mahallesi Ula Muğla altyapı çalışmaları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMY0YBx4Xb-iidZuyayZa2vs4NYCw2FBIp6dKkduj9uo1yjLeLkvxyKLP6oJp9cCcMRysxftliUuFFC8KSyfMigzyDttCPOlf4fPiMQ7S4huJwQ5tsxEf30oci9wjTRitIJX077Fxvi3jgUFwOROI0ayZX0x2YB3syNFn4OVhVqgHenXAVnwSIKzezYmBKJA_tAb3NoK3CqOyc1bwzIbrW51b5a7Eji2fFUyX-\">Akyaka Mahallesi Ula Muğla marketler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5iYNRUW_29CfTbAAw44lHAJmcbC2J5jLN2qbSMhIgFiVERTOE3eGoOg7J7oDb4dg4vEh_KLTeyd_BRYqfZH_wGaPNEBFdVM-M6KkNjKpGVMe-0YQX9-Rh07OFmRur7Wd9J9cpk8p7W0gzJxZFZAZZnBELKMjgdVlfLcwcvLNdAao_l8JqgoRD6n1rVVG9WAesOtld7CCYV68QziVl5CgTe0-jbqqvJyX0QA==\">Akyaka Mahallesi Ula Muğla parklar</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGfSUq1uGhOR1Vda-GpW_0GRyooIFbF5jKHWxapFLcn6Kcs8-hgTAlAeCpDwc8SjDlZ8hz_yXIN5tnTPbH6h8TieMF3j6qlbIiCvqblHV7c3QyeoSULhPlOFDgUJpHeWg8nhpWoa2HmXhv-SMfN-GhYj7Y4-xlRmLA6cxTMr8jnvZ_fzGZTH39bBWP1TE148iAOmC-_J6O3kwjrJhOq5t5VYRmYC2fc1cb\">Akyaka Mahallesi Ula Muğla barlar</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFDItc2igTVYrK_JnG_Qnbwtpfi9iDzkLgV7mN_WeHDirqziumrx3VEbldrpCn5f-XsYAcPoS_zr51XVjMTJi9Esc1maZ4Dr-i0FkMRKmUp7UB5Z_wnyRmjWqJdwv5SwwVplKnbrPYCkD_SlB22TUrpAikZFbweDH6Ka3bF5DwYraODfhfgQ4kGQe7M8CwbUqzDHHzTbCk7TN4rdh_eE9Uwc_Fjebv5ylB2igWtNnDUdLIwgvtgprg1A==\">MUTTAŞ Akyaka Mahallesi otobüs hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY__1LNSlheOuHyZT9UoAZEtmMjaQRG98ogWSI4wKDJqcCRxHZ4lxbhDt4VfVO9_QXJbAOqkdxXjg3vt21OJMDb_aZvLsIGI3rTmwvgxvnkHd6s6mto5_t2LZ3PvJRVHqbDabzX-FTAsnG9uXBoPZp8yNogyh2AG6kVCojJ6fTIXIatxoYr_9_i1pgx-kNuhBp-njMD9j_dnsFMRyRjaaxzZBOpo3F4sLq9gq_ceNkUBkFMDy0DTNT\">Akyaka Mahallesi Ula Muğla trafik kazaları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUs2tbjz0QBxA1Ls_fKu5co3DUxgD2c9-e_2OgTNx-5AjkMWhpHqFGjxyqnO7Hf89qdFSahyql9BNJr19xkKBEFYO5lRU8qZKa5FrkCbftLf-Vz9SpCZzp1XP2QKPwNmmorJd0pxHtsCE5Z4UrVVirZm0DQaS1GHTdUeNddxwPUo_M5ceYWU1HIYILuv5mZBJsoYC_c8AWRL940RZtXZD1wU0xhzaYEOOxCk5aMMV2kaxWufs3EN_SQplHaw==\">Akyaka Mahallesi Ula Muğla 3+1 kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpnT-AvyOkjIg1TnVxLLT3o-cV-9-WVmnRvdxjxZ8u7xqBpCTeDYOgGuAvdpwiq5hiSlTdSc0byZ_obdv2bXe8gJHKcwZHI8QYbBmooyVWaRwqAFPzZwojww0AwuAkdoCmk96xE0VBsaytZk33qQZe4Oh-34UuMQYSgtVBgaPbK_RL-Ps7e7frgsqbdJMSrMmboP8QaD7ytzhYElkWkY3pHDbGvoAbENR6Ecrcwe9mOJWJ4aG5hRmLq9i8gA==\">Akyaka Mahallesi Ula Muğla 1+0 kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLaK5Ke7TKFTm5Z4N2ZbRZ95fCISOS3YgdNNH0V3cFwLEa_4-5-o3WTf1qKNH0yLsqxUiG01FwSgq9vLTpsXpfmCNosiscZcXg0ffIub7kcxhR9TGtfZlaSTTNA_0gYj5dfhC9fTLYBMIzweSa78mMbaBGvqB5hqSzdp-5D81oqfKJSHeN749UzyZSp5g5QtfYDZFqalfVHm9Fo38-bybCBn9oDcqkO8z_7a8S_ru2oFYsWVjFuw_lgc237AKq3gINPK8zDkQ=\">Akyaka Mahallesi Ula Muğla kiralık konut son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe56lr1S_F16hjgVfoGTbuA54VSat0sGkNLmJmStQR4LaI23l32cZZt7Jv21v7Z6RL1adu614J3gM7YWE2uoUE8mPHrfR-qlR7k2Gn5y4yRouMBQQ5MrkNK87TulbeFTmJkQ8Yla1TfxCnDAr8Q2elWm6yOSszYdWP0k0jDFjD7BsmU3OO2Go1LGSwKeYmWEaZ_rjUU3PbVqAqIraKwUv_amIqOXb-NxLO9IilrHiyTOoZOSILDY-yDVoGcJ61PVxY9VF2w9r1zg==\">Akyaka Mahallesi Ula Muğla canlı müzik mekanları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQhreXLYj7xUtBNTkJ5Ryy8-JZj0ABZQN8dT51oGjwSFNmlOKwBHgnR-TolbILSQZzDeQ6uDPERq1Ihzo_bRHpTygtib8MZ3H1_Jy1HTuHFrktPTMLJt6CDHVqCad_tIZnDQmsgG62hbmyf0IUrY5P195QTgO__nJLlMdF0clYybNQA07w_-DwxxiuocMMbfysO6n_-q-EydO_CvE9EZ11ciGkfTB7OFWsFgxfWkchI5_gM1REgcGpSdI6KWsIX1NTpGjoSdg-KuI=\">Akyaka Mahallesi Ula Muğla güvenlik olayları son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4ycutEy9XzdW0SbXlBbc_1Uhqp73RLIJqEnm3Js0oR_-ePaCYKKEKai-vBocDXGu4eZKgcFpqG7VTBPLEgLK_Ht53VMiki96Q-PxqeociTtdmduvfm5Sl_VltugWSJ1TMvKhL9Ne_Vj5DWfz3BFfIC91_p8oT8b6NUejNOKIYxV3mhh9aCjAxKwhUtZu60y6bWaTaJeeklXQD9t8oD1nmd7EL_2q2qG9SsdSJdBR4GPDsB1khndGPk3CM7nE=\">Akyaka Mahallesi Ula Muğla sosyal yaşam yerleri</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9yZtuCoHhPz9V-q5OkSJ2z_8Kiflkw8hkdaFvqafSpBMCi5HCifF4EtWiKIqEyBBwmfB8yB2y_5PJ_jrdPh7TgHzQIz4CxaxyymOi_YJWMsYpIzNWCFQLO6e99IkuO9MCDMBrMqHGPSuZRGPnm5QTCwsUDAYpwsFfh5fLG8WNqyNmyBc2hA-_MEmxFQcYquoTDhWSb3Dx70-aXJeAa4q3StyNUrQpPxS8y5StInsLtvML2hjdL4kNreTAaLaF-g==\">Akyaka Mahallesi Ula Muğla kültür merkezleri</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgRY04xFKrrebcJ214ZS5qgsTiBDlWTriO2zxg4aTlkWVa6rHwtn75F1LEQPvWL8ODXyuOQ264iGdHhkULPSPBfXTie8ZhlKXGjARu6xqiXxoKdPqNzd5sCIu77giTEE2BcSU6FVvI9oY0Ox7lP5BjRRp-xKSM61nDv2bbtqVkXruxGtzaehdbLbSvheRu2C1wZFTz6pwUbaF58Ggx0t5mChxJ0MbgpvwNqwEXLcw1kgtFfQGML39lBZ8U3g==\">Akyaka Mahallesi Ula Muğla belediye duyuruları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcWsXrxqM3RHUdZmIdNVvday9Q8WvtvVy3r3z1-nDVzHEBdJsmgOC-igh_SLIQygHXAXeZ-Hcqq5XMyE6k7qQljEW7jRJRPxP1mEW-EFc9lES-GOBGclJ1V-yBjbCe_A7Fv5MS_S_wVa0WJm6DkJ6DKlvr6RJA9jJBovjGsJVcBj_n4ob8TV1jhWEKLcz7ItbUO4yjW5j4uemLl6jJBTNLcL_R0vvZkblTz3GSESw=\">Akyaka Mahallesi Ula Muğla restoranlar</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvKPj8pkAIgBWw91M8PqgMXv1xtoXzv-saIaMRLp1xO0PNBy--tDXZ5SdyeEYR9OUBg8FoUqtyiuxpMsvtsVl1ohX1Z4F2O-UoFLbY2UeT3xza52MfbjVN0tkhVfOGXiSZsEHV2P2FWaY-yGtTWTdwSMmm-JiuHAV0xJ14Q5KfGZWapZ8Oj0QCOOWVwk8dAuaawippnFU0av_7plf-de5CNPdv6_UwscfiuYccQqDw5uMANF33kDA=\">Akyaka Mahallesi Ula Muğla gece kulüpleri</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Akyaka Mahallesi Ula Muğla kiralık konut son 90 gün",
+      "Akyaka Mahallesi Ula Muğla 1+0 kiralık daire",
+      "Akyaka Mahallesi Ula Muğla 1+1 kiralık daire",
+      "Akyaka Mahallesi Ula Muğla 2+1 kiralık daire",
+      "Akyaka Mahallesi Ula Muğla 3+1 kiralık daire",
+      "Akyaka Mahallesi Ula Muğla güvenlik olayları son 12 ay",
+      "Akyaka Mahallesi Ula Muğla suç haberleri",
+      "Akyaka Mahallesi Ula Muğla trafik kazaları",
+      "Akyaka Mahallesi Ula Muğla sağlık duyuruları",
+      "Akyaka Mahallesi Ula Muğla altyapı çalışmaları",
+      "Akyaka Mahallesi Ula Muğla belediye duyuruları",
+      "MUTTAŞ Akyaka Mahallesi otobüs hatları",
+      "Muğla Büyükşehir Belediyesi Akyaka otobüs seferleri",
+      "Akyaka Mahallesi Ula Muğla restoranlar",
+      "Akyaka Mahallesi Ula Muğla kafeler",
+      "Akyaka Mahallesi Ula Muğla marketler",
+      "Akyaka Mahallesi Ula Muğla parklar",
+      "Akyaka Mahallesi Ula Muğla kültür merkezleri",
+      "Akyaka Mahallesi Ula Muğla barlar",
+      "Akyaka Mahallesi Ula Muğla canlı müzik mekanları",
+      "Akyaka Mahallesi Ula Muğla gece kulüpleri",
+      "Akyaka Mahallesi Ula Muğla sosyal yaşam yerleri"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1768,
+    "prompt_token_count": 985,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 985
+      }
+    ],
+    "tool_use_prompt_token_count": 1365,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1365
+      }
+    ],
+    "total_token_count": 4118
+  },
+  "text": "Akyaka Mahallesi, Ula, Muğla için 28 Ekim 2026 itibarıyla yapılan araştırmanın sonuçları aşağıda dört bölümde sunulmuştur:\n\nKİRA:\n*   3+1 | eşyalı | 50.000 TL/ay | ilan tarihi: 2026-10-27 | uzun dönem | Akyaka Mahallesi | Emlakjet\n*   2+1 | eşyalı | 40.000 TL/ay | ilan tarihi: 2026-10-20 | bilinmiyor | Akyaka Mahallesi | Güven Emlak\n*   1+1 | eşyalı | 20.000 TL/ay | ilan tarihi: 2026-10-19 | kış sezonu | Akyaka Mahallesi | Joker Gayrimenkul\n*   1+1 | eşyalı | 35.000 TL/ay | ilan tarihi: 2026-09-14 | bilinmiyor | Akyaka Mahallesi | Emlaksende\n*   2+1 | eşyasız | 35.000 TL/ay | ilan tarihi: 2026-03-11 | bilinmiyor | Akyaka Mahallesi | Gökova-Akyaka Emlak\n*   3+1 | mobilyalı | 59.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor\n*   1+0 | eşyalı | 16.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Vizyon Gayrimenkul\n*   1+1 | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Thera Emlak İnşaat\n\nGÜVENLİK:\n*   2025-03-30 | trafik | Akyaka Mahallesi Akbük yolunda kontrolden çıkan bir araç uçuruma yuvarlandı, 2 kişi kendi imkanlarıyla araçtan çıktı ve hastaneye kaldırıldı.\n*   2024-07-13 | trafik | Akyaka Mahallesi girişinde meydana gelen trafik kazasında 2 kişi hayatını kaybetti, 4'ü ağır 28 kişi yaralandı.\n\nULAŞIM:\n*   MUTTAŞ hat bilgisi bulunamamıştır.\n\nSOSYAL YAŞAM:\n*   West Cafe & Bistro | kafe | Akyaka Mah., İnişdibi Cad., No:56, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Devin Akyaka | kafe | Akyaka Mah., Nergiz Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Akyaka Sahil Apart Cafe | kafe | Akyaka Mah., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Space Akyaka | bar/canlı müzik | Akyaka Mah., İnişdibi Cad., 75, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Akyaka Trablem | su parkı | Akyaka Mah., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   No 22 Riders' Inn | bar/canlı müzik | Akyaka Mah, Sefa Sk. No: 22, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 14:00-02:00) | Gezinomi\n*   Poison Pub | bar | Akyaka, Karanfil Sk. No: 1/a, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 12:00-02:00) | Gezinomi\n*   HoTsHot Bar | bar | Akyaka, Ula, Muğla | faaliyet: bilinmiyor | Gezinomi\n*   Deli Memet Cocktail Bar & Bistro | bar | Akyaka, Karanfil Sk. No: 17, 48650 Ula/Muğla | faaliyet: açık (haftanın her günü 16:00-02:00) | Gezinomi\n*   Rahat Meyhane | bar | Akyaka Mah., Karanfil Sok., No:25, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Cafe Bi'yer | kafe | Akyaka Mah., Karanfil 1. Sok., 23, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Half Akyaka | kafe | Akyaka Mah., Nergiz Sok., 2B, Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Akyaka Orman Kampı (Gökova Konaklamalı Orman Parkı) | kamp alanı | Akyaka, Ula, Muğla | faaliyet: 7/24 açık | Muğla Vakfı, Takoz\n*   Akyaka Meydanı | park | Akyaka, 48650 Ula/Muğla | faaliyet: bilinmiyor | Firma Atlas\n*   Akyaka Belediye Parkı | park | Ula, Muğla | faaliyet: bilinmiyor | Akyaka Belediye Parkı\n*   Su Cafe & Restaurant | restoran/canlı müzik | Mustafa Uyanık Sk. No: 19/13 48650 AKYAKA Ula/Muğla | faaliyet: açık (Pzt-Paz 08:00-02:00) | Akyaka Su Cafe & Restaurant\n*   Minimal Summer Akyaka | gece kulübü | Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Roots Akyaka | gece kulübü | Akyaka Mah., Cemalettin Bölgen Sok., Ula, Muğla | faaliyet: bilinmiyor | Yandex Maps"
+}

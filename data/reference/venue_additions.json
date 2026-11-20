@@ -1,0 +1,59 @@
+{
+  "kotekli": [
+    {
+      "id": "directory:kotekli:vetapet",
+      "name": "Vetapet Veteriner Kliniği",
+      "type": "veterinary",
+      "address": "Kötekli Mah., Sıtkı Koçman Cd. No: 149/1",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown",
+      "verification": "directory_listing",
+      "checkedAt": "2026-11-20",
+      "sources": [
+        {
+          "id": "directory:kotekli:vetapet:veterinerveri",
+          "publisher": "VeterinerVeri · klinik kaydı",
+          "url": "https://veterinerveri.com/il/mugla/mentese/vetapet/",
+          "checkedAt": "2026-11-20",
+          "method": "directory_page_read"
+        },
+        {
+          "id": "directory:kotekli:vetapet:turgutreis",
+          "publisher": "Turgutreis Rehberi · adres kaydı",
+          "url": "https://www.turgutreisrehberi.com/detay/vetapet-veteriner-klinigi/100431",
+          "checkedAt": "2026-11-20",
+          "method": "directory_page_read"
+        }
+      ]
+    }
+  ],
+  "muslihittin": [
+    {
+      "id": "website:muslihittin:mugla-hayvan-hastanesi",
+      "name": "Muğla Hayvan Hastanesi",
+      "type": "animal_hospital",
+      "address": "Muslihittin Mah., Cemal Karamuğla Sk. No: 78",
+      "scope": "reported_address",
+      "lat": null,
+      "lon": null,
+      "distance": null,
+      "origin": "web",
+      "openStatus": "unknown",
+      "verification": "official_website",
+      "checkedAt": "2026-11-20",
+      "sources": [
+        {
+          "id": "website:muslihittin:mugla-hayvan-hastanesi:contact",
+          "publisher": "Muğla Hayvan Hastanesi · iletişim",
+          "url": "https://www.muglahayvanhastanesi.com/",
+          "checkedAt": "2026-11-20",
+          "method": "official_page_read"
+        }
+      ]
+    }
+  ]
+}

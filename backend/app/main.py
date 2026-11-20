@@ -1,14 +1,16 @@
+from collections import deque
 from contextlib import asynccontextmanager
-from threading import Lock, BoundedSemaphore
+from threading import BoundedSemaphore, Lock
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes.neighborhoods import router as neighborhoods_router
 from app.api.routes.places import router as places_router
-from app.services.place_service import prewarm_saved
+from app.api.routes.report_chat import router as report_chat_router
 from app.core.config import settings
 from app.core.database import Base, _create_db_engine, create_session_factory
+from app.services.place_service import prewarm_saved
 from app.services.seed_service import seed_initial_data
 
 
@@ -42,16 +44,20 @@ def create_app(database_url: str | None = None) -> FastAPI:
     application.state.place_report_locks = [Lock() for _ in range(32)]
     application.state.place_generation_slots = BoundedSemaphore(2)
     application.state.place_report_progress = {}
+    application.state.report_chat_requests = deque()
+    application.state.report_chat_lock = Lock()
+    application.state.report_chat_not_before = 0.0
     application.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,
         allow_credentials=False,
         allow_methods=["GET", "POST", "DELETE"],
         allow_headers=["Content-Type", "X-AI-Refresh-Token"],
-        expose_headers=["X-Cache", "X-Cache-Hits"],
+        expose_headers=["X-Cache", "X-Cache-Hits", "Retry-After"],
     )
     application.include_router(neighborhoods_router, prefix="/api/v1")
     application.include_router(places_router, prefix="/api/v1")
+    application.include_router(report_chat_router, prefix="/api/v1")
 
     @application.get("/api/v1/health", tags=["System"])
     def health_check(request: Request):

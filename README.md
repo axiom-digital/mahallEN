@@ -1,5 +1,18 @@
 # MahallEN — AI-Powered Neighborhood Livability Report
 
+Local integration (29 October 2026): the template UI from `origin/main` now also accepts
+the five cached source-backed research reports. Set `VITE_REPORT_DATA_SOURCE=research`
+in `frontend/.env.local` for that data source; leave it unset to use the existing backend
+API/cache. Research mode does not make provider calls on page load. The report view
+includes source-linked news with period/category filters and reviewed Gemini 3.1
+Flash-Lite summaries where available. Geography matching includes province, district
+and neighborhood. Student, family and professional scores are explicitly labelled
+project scenarios using the existing profile weights; incomplete category data
+prevents an aggregate. The five category cards open detailed dialogs for typed rents,
+route timetables, source news, hazard context and an OpenStreetMap venue explorer.
+Profile weights and rent comparisons have charts. Research scores remain a
+provisional project rubric. See [research pipeline](docs/RESEARCH_PIPELINE.md).
+
 **Course:** SE3003 – Software Project Management  
 **Team:** Axiom  
 **Pilot Scope:** Muğla (Kötekli, Emirbeyazıt, Muslihittin, Orhaniye, Akyaka)
@@ -80,6 +93,24 @@ docker compose up --build -d
 ```
 
 Compose reads the root `.env`; local Python development reads `backend/.env`. Database and API ports bind to `127.0.0.1`. The image runs as a non-root user without reload, and excludes local secrets and database files. If reusing an existing PostgreSQL volume, its existing password must match; changing an environment variable does not rotate that database user's password.
+
+### Report assistant
+
+Run FastAPI and set `GROQ_API_KEY` in `backend/.env` for local development
+or in the root `.env` for Docker Compose. Restart the backend after editing its
+environment. With `VITE_REPORT_DATA_SOURCE=research`, select a neighborhood
+and open the **Rapor asistanı** bubble at the bottom right. A question sends a request to
+`POST /api/v1/neighborhoods/{slug}/chat`. The backend reads the matching
+record in `data/reports`. It sends messages and up to six previous turns to Groq.
+General conversation uses the chat history. Neighborhood questions can also use
+the selected report records and link to their sources.
+Users can name another pilot neighborhood directly. Venue lookups can surface
+matching records from other pilot neighborhoods and label where they were found.
+Chat history is held in the page and resets when the user switches reports.
+The default model is `openai/gpt-oss-20b` and can be set with `GROQ_CHAT_MODEL`.
+Each API process allows up to 24 Groq chat requests per minute. If the provider
+is unavailable or rate-limited, the assistant can still present relevant saved
+report findings for neighborhood questions.
 
 ### Existing AI endpoint safeguards
 

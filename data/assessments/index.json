@@ -1,0 +1,1507 @@
+{
+  "asOf": "2026-10-28",
+  "neighborhoods": {
+    "muslihittin": {
+      "rent_cost": [
+        {
+          "id": "6991937cceca0664",
+          "neighborhood": "muslihittin",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aylık kira",
+          "date": "2026-10-26",
+          "summary": "Muğla Menteşe Muslihittin Mahallesinde 3+1 eşyasız kiralık daire 55.000 TL olarak listelenmiştir. (yerel haber/dizin)",
+          "status": "listing_price_is_not_affordability",
+          "sources": [
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4mvxze9m2y-WoUPg9s8ugvj0lFwtviOB6cWeAfRaIsb1AA4YxYm9nd3UWfGDXwvqqd4mQF4QH25bUVj2fMlFFmNkNhTEMpMWB7S7drICj8pgwmSW8wFz5VShVim2HvgE-wGkQ3PwUL0Od4SILCK18EMV3EHbEf1JmJ1REszNFzJPy",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            }
+          ]
+        },
+        {
+          "id": "4b810808916f42a7",
+          "neighborhood": "muslihittin",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Sezonluk/yıl boyu ayrımı",
+          "date": null,
+          "summary": "Muslihittin'deki kiralık dairelerin sezonluk veya yıl boyu kiralama koşulları hakkında net bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "31324ba88491e18e",
+          "neighborhood": "muslihittin",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aidat/depozito/ek gider",
+          "date": null,
+          "summary": "Muslihittin'deki kiralık daireler için aidat, depozito ve ek giderler hakkında bilgiye ulaşılamamıştır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "940158d073c9020e",
+          "neighborhood": "muslihittin",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Düşük gelirli ve öğrenci için maliyet baskısı",
+          "date": null,
+          "summary": "Muslihittin'de düşük gelirli ve öğrenciler üzerindeki maliyet baskısı hakkında somut veri bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "84c472bd0c80f7f1",
+          "neighborhood": "muslihittin",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "İlan sayısı",
+          "date": null,
+          "summary": "Muslihittin'deki güncel kiralık ilan sayısı hakkında net bir veri bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "transportation": [
+        {
+          "id": "820fefcd136f7b50",
+          "neighborhood": "muslihittin",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "yayımlanan sefer sıklığı/son sefer",
+          "date": null,
+          "summary": "Muslihittin Mahallesi'ne özgü toplu taşıma sefer sıklığına dair güncel ve spesifik bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "37c7820ed32db616",
+          "neighborhood": "muslihittin",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": null,
+          "summary": "Muslihittin Mahallesi'nde devam eden yol veya altyapı çalışmalarına dair spesifik bir bulguya rastlanmamıştır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "afde86c30fec6c71",
+          "neighborhood": "muslihittin",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "yol çökmesi/kapanma",
+          "date": null,
+          "summary": "Muslihittin Mahallesi'nde yol çökmesi veya kapanmasına dair güncel bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "966fb6f2215439aa",
+          "neighborhood": "muslihittin",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "durak taşınması/iptal",
+          "date": null,
+          "summary": "Muslihittin Mahallesi'nde durak taşınması veya iptali hakkında güncel bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "social_life": [
+        {
+          "id": "7f1787481a5285a5",
+          "neighborhood": "muslihittin",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "kafe dışındaki aktiviteler",
+          "date": "2026-09-23",
+          "summary": "Muğla Menteşe Sosyo Kültürel Alan, konserler, tiyatro gösterileri, sergiler ve atölye çalışmaları gibi çeşitli kültür ve sanat etkinliklerine ev sahipliği yapmaktadır.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "biletinial.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG3my1CdHT7APiAtA5iJoC8RnOvpZdaJHHjd9S39CiFp1dKFnc0J1KuyUwOliPjTnh3hWU0xgTOx08Is7fYtajtrROjl6yyMwjUCOPGIEKKklFjeXGEof6a3t9PHmlRmnzW5KBd-CpYP9yIEh4n962w-i3B-BjQR-EZhJIS6g=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "biletspace.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK3aJ3s5KbxeejznzjkBisEZJvJaVBn0MVHAv-G9ddtFI-upXceqgDhzCO-r3gQtqC6Y4mVgt__wJfNPM0F379ixfG5zsWkXXM9hpjwoh9mmQ31LANVL0ZMsT4QijnF2ktnH3Yb6T0qiv8IEEPJvujEdHPjuVKF_Ho",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "mentese.bel.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0GRODDfAKyoBX6komHk3OT08ttKeTf9LRZhZ4nRr2cWg4PiGuM5uaO6hOdSCaQHdI3E1o6kTXrqwbH_W8CHoaFNz3RvIkpvaq2FTp4t-kbkl1DAo9H4-MeP7n16VCuX2ash1JxQQwbugcYoDq727_kPi6H_7666wZ-2IeR-2nsUjD84xGMidk0RUhJMnEslCVCxc=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "15fc41eb19a77057",
+          "neighborhood": "muslihittin",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "yemek çeşitliliği",
+          "date": null,
+          "summary": "Kahve Diyarı gibi kafeler mahallede bulunmaktadır.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "mekan.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQUVzzf2eFXpkLoczORy6whpkzCxWyIYQt-AZ3I0d9mVXhV5H2GPNbCAPJiESbo6SOmwsEV4cTuMYz4tHxDLPwxKCHRNqfo7yZtVh1dFK_qEE2BiJ5uHLmRUtY3TeSOjTyT_pWpxuAJIXSzVN1",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "6e31c7656ddb0a42",
+          "neighborhood": "muslihittin",
+          "category": "social_life",
+          "sentiment": "unknown",
+          "criterion": "yemek çeşitliliği (döner/dürüm/burger/pizza, ev yemeği/esnaf, farklı mutfaklar)",
+          "date": null,
+          "summary": "Mahalledeki restoran ve kafe çeşitliliği hakkında detaylı bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "e3a211d4c20856e1",
+          "neighborhood": "muslihittin",
+          "category": "social_life",
+          "sentiment": "unknown",
+          "criterion": "gece hayatı türleri",
+          "date": null,
+          "summary": "Mahallede gece hayatı aktivitesi hakkında bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "safety_news": [
+        {
+          "id": "26134946ce209db3",
+          "neighborhood": "muslihittin",
+          "category": "safety_news",
+          "sentiment": "positive",
+          "criterion": "kamu altyapısı",
+          "date": "2026-10-27",
+          "summary": "Son yıllarda yapılan altyapı çalışmaları ve konut projeleri ile bölgenin gelişimi hızlanmış durumda.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExvfuyALW6oF92jxrmLldd6CKagNjdBkc5JlOylfuDIheJqMGAhjZjSzrEVyKpfKVSm3u1zZ5LnNLV6Zg29Bty1kDe8iuJn8_fXcM1DpOtOskGVadqajNLhSmubILVGbvtVc5CTmg3Uiqjzmz9xPKOitNgftB4nGY56blinAqg7GgobQzg",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "8454bad06bf49092",
+          "neighborhood": "muslihittin",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "suç/şiddet",
+          "date": null,
+          "summary": "Mahalledeki suç/şiddet oranına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "cf4cf23c88a4f054",
+          "neighborhood": "muslihittin",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "trafik",
+          "date": null,
+          "summary": "Mahalledeki trafik durumuna dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "31716997c13e53e1",
+          "neighborhood": "muslihittin",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "gece aydınlatması",
+          "date": null,
+          "summary": "Mahalledeki gece aydınlatması durumuna dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "914ae7204d1fe496",
+          "neighborhood": "muslihittin",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "yaya koşulları",
+          "date": null,
+          "summary": "Mahalledeki yaya koşullarına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ]
+    },
+    "akyaka": {
+      "rent_cost": [
+        {
+          "id": "0399d8b22d095926",
+          "neighborhood": "akyaka",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aylık kira",
+          "date": "2026-10-20",
+          "summary": "Akyaka Merkezi Konumda Eşyalı 2+1 Dubleks Daire 40.000 TL olarak listelenmiştir. (yerel haber/dizin)",
+          "status": "listing_price_is_not_affordability",
+          "sources": [
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkUSW44LakB9MQsdaAbjwcruOxAnqvlBv-3gwIzZVtABXWZII81_TtNivtjEpIN2cklML08Adq8037OJ_LWzclMV8qgPk-G2jWL6PDkq465e0QtdWYc-qgZc_pJqYRRPO0bWzdKLgLkd5lXvZpG_CVMmhrfYe_iX2zh1mO",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            },
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8pMWmZYZMAwinNqIDDyBcmZbOCHhB5Jr-08BwuLOFjrndQaBlHd8dtu3zi_jjpsyz9gEUxtbuh21Ffmx0hNATANSDVGT5Yx0HdK2kAoCFtRJ0sKiZHtW5IKNVi_TFE0O-Y_m3NzKxmECpVrat6LLnMByVl-TKnaOwKL5J",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            },
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEs977PWz1wIC6-S7OoF-ISwxVm6HTAtdrhP9lDUu7Z0BYwFG2G0WEG7Kky9ysy6d6yAEFh-9GCUiMxrE-i6Na0_FhQjpUaTZJtbU2ZndGslt78RR2Iryc8WSwbLRtGc4mhLQQtqeztNeS5wQ==",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            }
+          ]
+        }
+      ],
+      "transportation": [
+        {
+          "id": "39cbc9c9064163b8",
+          "neighborhood": "akyaka",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "yayımlanan sefer sıklığı/son sefer",
+          "date": "2026-04-15",
+          "summary": "Muğla'nın Ula ilçesi ile Akyaka Mahallesi arasında Büyükşehir Belediyesine ait şehir içi toplu taşıma otobüs seferleri başlatıldı.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "gercekfethiye.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl9Vrj2sM4TElczQrsa5UBpOJm-l--IF5VrjKcnAHikPh_Wkr_hTqLaL5gyxj4Fya8W6r4GmQywXy2wBb71ATlH5sq7k5-qsg296MCPWIiVGntydmekZoJmoSSPlfNVhAZVEfEKd4jJm-BVHMWphAIKyq1KikNwPKOhbuRCNjaP5PZsUcwvgzViljUsJqhldu4L8UD1n3KTRFeVwg=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "sondakika.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_9C8I9C4NBB3diBWKXhM5CPCKsilwyIRtxTA-oBFV-L5DdSfBCywnfCN-14RbzHDFyXLZIa0wwWxZMW_2Vo3qfE6BfliKoTSi2zwJidugFqX9Bc6P8rnTQsTEZITUkHnsy-YhMK-cw0lv7zbyE7_cV0t-OUwwPjwOjke2st5LB4_5HWgde1UPfFg01cT8AKgYFUl1VXgZV9dfG5-OOus",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "haberler.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0p5KzZYkY_YQOQoDSL3qdeGLoB0O1eq-klZb9K7p7rBUquUZKkixmGmqXG41iveyG7fA9Nnzi25KLuS8dNzqRlm7o4E-P0D4U8Z0u_nUC6jkA6n37E53Bh8pfRyMYV--v-ZrAbalKO2jQ-UsXGOw1vX88Xm-ETByxeVPkk7UkCLtvTRYWJ_z5jCjGELgFcI9cX6biHoW5uJ0MxBjjgax6PQmspLmqSQzLLOm2RQ1_sKvirqQ=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "dha.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ7iKfaWDW4sHaPsOxp9AS5W532MCItG1Riv7WQUKInoyik-s8dHgc9f1aggZl_3iqKXLlS-4aio5iI3iuVWpIxkvE-u5alMoMEFP28SqijpaEQ547ZFM9fYnWHsw1QTSY1nJoSNv_vZTWNeXb2mQbp66WQbcn22Rm5rI0qwksnXefSgzmISwpVU6w",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "instagram.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4EAsVV-LFPVHWtghE0JAm1akz2UfVJw5DCxs0QM02f-eEpevMfnm0zDoH8oYZ1TKJdWmZEPyjc5Dg5oNuREWRE_k1yrSAQl7zqr8ryAYs-F2taADB37BIJh-S3yN7phoAjXs=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "2b238afecd61a748",
+          "neighborhood": "akyaka",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "yerel bağlantı",
+          "date": "2026-04-15",
+          "summary": "Ula-Akyaka toplu taşıma hattı, Akyaka Kadın Meclisi'nin talebi doğrultusunda hayata geçirilmiştir.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "sondakika.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_9C8I9C4NBB3diBWKXhM5CPCKsilwyIRtxTA-oBFV-L5DdSfBCywnfCN-14RbzHDFyXLZIa0wwWxZMW_2Vo3qfE6BfliKoTSi2zwJidugFqX9Bc6P8rnTQsTEZITUkHnsy-YhMK-cw0lv7zbyE7_cV0t-OUwwPjwOjke2st5LB4_5HWgde1UPfFg01cT8AKgYFUl1VXgZV9dfG5-OOus",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "dha.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ7iKfaWDW4sHaPsOxp9AS5W532MCItG1Riv7WQUKInoyik-s8dHgc9f1aggZl_3iqKXLlS-4aio5iI3iuVWpIxkvE-u5alMoMEFP28SqijpaEQ547ZFM9fYnWHsw1QTSY1nJoSNv_vZTWNeXb2mQbp66WQbcn22Rm5rI0qwksnXefSgzmISwpVU6w",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "dabde6a66cca8231",
+          "neighborhood": "akyaka",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "hat varlığı",
+          "date": "2026-10-13",
+          "summary": "Ula-Akyaka (Hat No: 12-12) güzergahı 20 KM uzunluğundadır.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "48haber.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-c7nnxMclC_x_ph85hzf-_F3SK0ut9L5NyrOZ4x3B6poNqJ1a8uGFv9UvSCXgZReCt-s_R-nI0inCi6uExTDAHuJSLHftdKWg3K0oGkrxXkxJDTbYSrJF0bOVc9QumqUNSvP0DGMS76PbqfnCDnb-WJ5p68Kqh_7GAb6r",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "82b3d0bf8fc16d96",
+          "neighborhood": "akyaka",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": null,
+          "summary": "Akyaka Mahallesi'nde devam eden yol veya altyapı çalışmalarına dair spesifik bir bulguya rastlanmamıştır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "71a12117781eedbd",
+          "neighborhood": "akyaka",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "yol çökmesi/kapanma",
+          "date": null,
+          "summary": "Akyaka Mahallesi'nde yol çökmesi veya kapanmasına dair güncel bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "social_life": [
+        {
+          "id": "ca2a4c880aa9331d",
+          "neighborhood": "akyaka",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "gece hayatı türleri",
+          "date": "2026-09-25",
+          "summary": "Akyaka'da Poison Pub, No 22 Riders'Inn, Liliz Lounge, Kukla Pub Akyaka, Xir Pub & Hotel Akyaka, Venti Food & Cocktail Bar, Cycle Bar gibi çeşitli gece kulüpleri ve barlar bulunmaktadır.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "bujuyollarda.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjr4XA3-QIrS6QMRgJ-j5lmqPXg-dXmBZ1xGSJLM1KUOcm7hpT4LDfNGbxdf9_ON8dV-WUQT4MHC_49VgSR7QI_uRkaPiiNCCf4YEPxhfwLS0D8-Wf-LL0ycCOgel1wcevnAymw7I=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "mudavim.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2258NWz65ZoD2O62bfxKvfwk3K80nFz8myKjGSpqayWyS1OziapZYvJpZLZynKXWOIJaf4u0Qxb1JmRPTQ6fh-HJddcx8hGKRNTrUbhdEz6QWHdsB2Fhm4jxC2tXKIdqejyzmxg==",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "mekanlar.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ7yqJaLnYSEZIFQ2vYEAuoVd7Nfipv-0TaYuk7az0PI1QwJEoDwvq0DTIuXacdtTsT2N0IfEdBwy2SeA31sMIbU_6qZJl6psGZFBmwAi37IvdXnkMBTvkniGVfdCja6vK0Lrdrchs333BtA==",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "gezinomi.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF26kq2U9nibffPY-poksLrwNNxabkIimUxOBnl2bQ-p6BmiA7cTi9Zt2n4N86vttsK3si0Nw2fXsgJXwtFxPS07rB-T884jTxHl-dBicOGh6YzoB0BeTdx-tUEyVmsc7vdCMZB-v2w_tyS5Dist6DqUB6vmdwMGW_3dQJfreQ=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "a19a53c3b33cb85d",
+          "neighborhood": "akyaka",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "yemek çeşitliliği",
+          "date": "2026-09-25",
+          "summary": "Venti Food & Cocktail Bar, yemek ve kokteyli bir arada sunan bir seçenektir. Selanik Restoran, meze ve balık çeşitleri sunmaktadır.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "bujuyollarda.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjr4XA3-QIrS6QMRgJ-j5lmqPXg-dXmBZ1xGSJLM1KUOcm7hpT4LDfNGbxdf9_ON8dV-WUQT4MHC_49VgSR7QI_uRkaPiiNCCf4YEPxhfwLS0D8-Wf-LL0ycCOgel1wcevnAymw7I=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "mudavim.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2258NWz65ZoD2O62bfxKvfwk3K80nFz8myKjGSpqayWyS1OziapZYvJpZLZynKXWOIJaf4u0Qxb1JmRPTQ6fh-HJddcx8hGKRNTrUbhdEz6QWHdsB2Fhm4jxC2tXKIdqejyzmxg==",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "7b0457e9690ef1e0",
+          "neighborhood": "akyaka",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "kafe dışındaki aktiviteler",
+          "date": null,
+          "summary": "Akyaka, kitesurf için dünyaca bilinen bir yer haline gelmiştir. Kano ve paddleboard gibi aktiviteler Akçapınar'da mevcuttur.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "bizevdeyokuz.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-w4nRDLDZJ-Ng0JToWYvFxT8SP3zgCUSuKD9Z1ELSCiZXIugilOPWBu1m69jhaPCtShUqt8YD6vpyrq31qj_Mi680itNs5eR4p6OrdqJRFU2J0k35GPe1woyjJh_NURAvFzXjuN05jUsPWoKpJF9CX_CdbhcRwvd1whQ86wvN",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "f79772b9b4bfcb85",
+          "neighborhood": "akyaka",
+          "category": "social_life",
+          "sentiment": "negative",
+          "criterion": "gürültü/işletme kapanması/erişim sorunu",
+          "date": null,
+          "summary": "Akyaka'da popüler bar ve gece mekanları Akyaka merkezde konumlanmaktadır, bu durum kalabalık ve gürültü potansiyeli yaratabilir.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "bizevdeyokuz.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-w4nRDLDZJ-Ng0JToWYvFxT8SP3zgCUSuKD9Z1ELSCiZXIugilOPWBu1m69jhaPCtShUqt8YD6vpyrq31qj_Mi680itNs5eR4p6OrdqJRFU2J0k35GPe1woyjJh_NURAvFzXjuN05jUsPWoKpJF9CX_CdbhcRwvd1whQ86wvN",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        }
+      ],
+      "safety_news": [
+        {
+          "id": "025edb5d0588376c",
+          "neighborhood": "akyaka",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "kamu altyapısı",
+          "date": "2025-07-08",
+          "summary": "Menteşe ve Ula Belediyeleri, Çınar mevkisinde kaçak yapılaşmaya karşı harekete geçti, kaçak yapılar mühürleniyor ve hukuki süreç başlatılıyor.",
+          "status": "historical_evidence",
+          "sources": [
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-lOUf4WLR5XyT5bUcHLYYrmJRBqWCPDC9k9K8DpUE7ToSf7GcPr2ynrFF-dx75WJHMhcdjnybe16iJeYdfX_3fAuZKc_f26lwKuztzMzRcGn1LCmwXcIdO18OrCOThi4seUxICWs5HDgdlj1wCxnsbxbJ6uvaT61HcDnh2JoSfjfA-eTYl3o96mS4ZaJ-fybSssquQDa4PRZBnIU6RsYwgkg-PSLal-oqnw4KFyhw",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "fa2b1a6b5a68dfc0",
+          "neighborhood": "akyaka",
+          "category": "safety_news",
+          "sentiment": "negative",
+          "criterion": "kamu altyapısı",
+          "date": "2026-08-01",
+          "summary": "İşletmelerin kıyıları işgal etmesine tepki gösteren yurttaşlar, hukuka aykırı yapıların kaldırılmasını talep ediyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "evrensel.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUSZVDwkF8kGbQywbDa--iILj8sq4IideCn2ydy2YJjkMRseFVGnAAFBCxvv3Q1ZoQGSM-UGauZ818EFI9UFSo94KBpWNT2eDHPoxwHfRAgRoGw0mnV8iPG6AZz9MnDgvU5MtIocFspgpAr0awyI2YpR5PmFSJUq6zf1LzMJOZRT086FQnBcU-3CoZaNszRCObRHNfnddiU2MYWuHtHIf2Y7Rsm7Z8PlX1rHL9gQ==",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCcSYF_vhWQL_V78oieTe47IXIEwSv9mTQW8d9XL4pxlJssLD-SoaD-8nHDCKH4HpLBbCeQAYNDYQMVrnk4Y60XZeR_nXBQ2-b9kVR58qNv4ezBZGlHnrtmnfvpUcZymp3c9dX3a3N7v_X9Q9fimJutxHi2EwlVGDbJBeBTxtvLI6Xc5N5zDhWBie5xgO_sAgxqGKCN2aQTrk5dlvJQfvuj9Q6ZiQqB8qG",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "e2bca2c076d7d8a5",
+          "neighborhood": "akyaka",
+          "category": "safety_news",
+          "sentiment": "negative",
+          "criterion": "kamu altyapısı",
+          "date": "2026-06-14",
+          "summary": "Eski kırsal yapılar deprem güvenliği açısından yetersiz; koruma alanları yeni yapılaşmayı kısıtlıyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "kentseldonusumhub.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFHx21jbe6QkqzBnQD1UgNWzhSR2wKITgisQthNn18lBz7jG0oC8TT4gRkbYeVeTkbk-e7TVT7DZNeMpMHjLJIDkBVgHCvQ6XLz0Khs4d1R5_fKTXbhWotOqO1udWi0LcJ-qCGLwEpmC7abjmazLoz0SK_Kcxn04PFw4BmLFI=",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "03e0039bf8314bf9",
+          "neighborhood": "akyaka",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "suç/şiddet",
+          "date": null,
+          "summary": "Mahalledeki suç/şiddet oranına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "18f44701e6165f26",
+          "neighborhood": "akyaka",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "trafik",
+          "date": null,
+          "summary": "Mahalledeki trafik durumuna dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ]
+    },
+    "emirbeyazit": {
+      "rent_cost": [
+        {
+          "id": "569291cebf607d26",
+          "neighborhood": "emirbeyazit",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aylık kira",
+          "date": "2026-10-22",
+          "summary": "Muğla Merkez'de eşyalı 2+1 kiralık daire 28.000 TL olarak listelenmiştir. (yerel haber/dizin)",
+          "status": "listing_price_is_not_affordability",
+          "sources": [
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp2cqGigthTzFj-zIb2_YM2tf8BR53BbEadNZ5vintUKRNwZzWAMzIqGy61a3vQbs_oKyHYmPFbbLdIp2ywVdjgoG0hBJsk9dclldy-a7ZD6oJ48Es2ot_7KUIbN18sfQcUHbL2X-dryRzhPW0XTdSbHx74jMfsxMBOmpFmkstbDhHLuSALg_NgB_Y3-0=",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            }
+          ]
+        },
+        {
+          "id": "9b7e07f73c205471",
+          "neighborhood": "emirbeyazit",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Sezonluk/yıl boyu ayrımı",
+          "date": null,
+          "summary": "Emirbeyazıt'taki kiralık dairelerin sezonluk veya yıl boyu kiralama koşulları hakkında net bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "0ac4fd83aa5e6e46",
+          "neighborhood": "emirbeyazit",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aidat/depozito/ek gider",
+          "date": null,
+          "summary": "Emirbeyazıt'taki kiralık daireler için aidat, depozito ve ek giderler hakkında bilgiye ulaşılamamıştır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "a81e5868cfdd733d",
+          "neighborhood": "emirbeyazit",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Düşük gelirli ve öğrenci için maliyet baskısı",
+          "date": null,
+          "summary": "Emirbeyazıt'ta düşük gelirli ve öğrenciler üzerindeki maliyet baskısı hakkında somut veri bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "325c4df7334e5edd",
+          "neighborhood": "emirbeyazit",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "İlan sayısı",
+          "date": null,
+          "summary": "Emirbeyazıt'taki güncel kiralık ilan sayısı hakkında net bir veri bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "transportation": [
+        {
+          "id": "c669968d95684d6d",
+          "neighborhood": "emirbeyazit",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": null,
+          "summary": "Emirbeyazıt Mahallesi Özer Türk Caddesi'nde başlatılan sıcak asfalt çalışması tamamlanarak yol daha güvenli ve konforlu hale getirildi.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhsAS0IEG1kzztzEk1MAcfLlv98e_zQhorMxhLSsMF9JBnYCYE0zHpJZjaO0AW8RyAj1hhCDohS9gWpY3gXnWEzCnvInY7V_m00DI1XQkqtcknNKrQrFRH58fe0UZvzTjn18aHPSppSJJ0XV_LJj0k01hCP6wXRxvPvim5xm3qz7iuzlc2l0ft6b_dZCU=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "5a26a541fe5f43af",
+          "neighborhood": "emirbeyazit",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-01-28",
+          "summary": "Emirbeyazıt Mahallesi'ndeki \"kolejler bölgesi\"nde kanalizasyon ve altyapı çalışmaları tamamlandı, elektrik hatları yer altına alındı ve 1.650 metre yol sıcak asfaltla kaplandı.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_uQjRp0gB2AqwLt7JjbeorigDT8oYS1RHpyi5bnsgQmll82eKYvr1upKsPAgtriOYzu5muRca9ginr-oZ_OjO2hA5wdo-FH3pcbb0bhH7kFD_DuY5L8KhQPRiG6j0fJtwIrgv9Tmn7SLbyfrYL9fvx0ATB5kbXz0ybIq-aZ5M3gXzv0WEm8ZzGnwafwtdMznFLr9c7zkRmw==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "f06d3ba3c9b4f33e",
+          "neighborhood": "emirbeyazit",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "yayımlanan sefer sıklığı/son sefer",
+          "date": null,
+          "summary": "Emirbeyazıt Mahallesi'ne özgü toplu taşıma sefer sıklığına dair güncel ve spesifik bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "03865d5e4ccb31b3",
+          "neighborhood": "emirbeyazit",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "durak taşınması/iptal",
+          "date": null,
+          "summary": "Emirbeyazıt Mahallesi'nde durak taşınması veya iptali hakkında güncel bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "b5ad7d5234c473a7",
+          "neighborhood": "emirbeyazit",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "aktarma ve erişim sorunu",
+          "date": null,
+          "summary": "Emirbeyazıt Mahallesi'nde aktarma ve erişim sorunlarına dair spesifik bir bulguya rastlanmamıştır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "social_life": [
+        {
+          "id": "08397555025e849e",
+          "neighborhood": "emirbeyazit",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "yemek çeşitliliği",
+          "date": null,
+          "summary": "Emirbeyazıt'ta döner, börek, köfte, ev yemekleri gibi çeşitli restoranlar bulunmaktadır.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "mekanlar.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNdmLvTFk-2VRlMLh-ewa_54KVRrXfwMI3bLu1cIyf-SH6jrCqVAg18O8vXmfiJ2f8kMrGEIEThnTkNLGSdp6p2THwhn2LBA4kZohOaCicW_Mj4Z5SCBqm9zZ4DGISFyYU6YlVwdZHKEZ5nffgktBrqkU6h8k-",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "0c61b850211c7ba6",
+          "neighborhood": "emirbeyazit",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "kafe dışındaki aktiviteler",
+          "date": null,
+          "summary": "Emirbeyazıt Mahallesi'nde birden fazla fitness kulübü bulunmaktadır.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "yandex.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkp0_GKwTCVLKmCLtnys726ADMomn60m8L6VWYqbdBUgvf1pHdUhWepc9Yd4_-d2r1UJXRJTbRRVi9V3Fh9NwsLoo-4WmSxFh0tGR-_dPY5-rD-DGBMKl5eadU7u8y5wPNsrIR-sJ_Hmq2k646fRduJ5bKagbpH_uxEqI2HS8WeWvT1Ns=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "95122c1668cd07bb",
+          "neighborhood": "emirbeyazit",
+          "category": "social_life",
+          "sentiment": "negative",
+          "criterion": "gürültü/işletme kapanması/erişim sorunu",
+          "date": null,
+          "summary": "Coffy Kafe'de servis hızının yavaş olduğu ve oturma alanı bulmanın zor olabileceği belirtilmiştir.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "yandex.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkB_tw21uoCWz5uCpXJln1gYKJwGvLFUJrSsVq6M3csiuAj_16H3QVy2j5JeLMxjxVMG_CnlPhvbcFI9xmw8995OcWM2sWOHfsXMRK1O-Tlp1s5cUbknwDeJ4vvpFtiwxES8tnVd1NS8CWuQ==",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "fbf0bd403077d608",
+          "neighborhood": "emirbeyazit",
+          "category": "social_life",
+          "sentiment": "unknown",
+          "criterion": "gece hayatı türleri",
+          "date": null,
+          "summary": "Mahallede kafe ve restoranlar dışında gece hayatı aktivitesi hakkında bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "safety_news": [
+        {
+          "id": "45f2aec960f0ae89",
+          "neighborhood": "emirbeyazit",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "kamu altyapısı",
+          "date": "2024-09-16",
+          "summary": "Havana Sokak'ta çöp konteyneri eksikliği nedeniyle temizlik sorunu yaşanıyor, biriken çöpler kötü koku ve çevre kirliliğine yol açıyor.",
+          "status": "historical_evidence",
+          "sources": [
+            {
+              "publisher": "muglayenigun.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq1jGMFXpyXetDKK4063o_80wMkhX4NeY8txgFS6yuaQp2-IoJf9dJjDSUD6ByCVqS6ONCPHIjUOhFs9ckInoUGPcY4fHzwG6N6ti4qCoUXGBjCPPCLa4inzJq5fncxhpHS6Isud4NDBKqhp1ACgSUAL14Pzmf_7Y7NBVkhF6DFFH5LbLDALno8bmnf1eEPiZS6O9LTQwDb2Fsbmxzg-k=",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "5113cfcc51a642f1",
+          "neighborhood": "emirbeyazit",
+          "category": "safety_news",
+          "sentiment": "negative",
+          "criterion": "kamu altyapısı",
+          "date": "2026-10-28",
+          "summary": "Vodafone ev interneti müşterisi, 25.10.2017'den beri internet bağlantısı sağlayamıyor ve teknik servis gecikmesi yaşanıyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "sikayetvar.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRJn7RPWjJCmqRkdVCdCaiwZZqntOcQPCNpmvpFn6YAOB_ZSmypNivzmcRphWAJ1MyHkPXS7CkLQwV0ifZH53iqmjMYQOmbpFUvHJTvqcnNtHUp2zsh6gVY_CbeU2F3gnpH6jBfzPK9_1tISFN2Z1Ezfa9nprcXtlw6seLP7I6knnHt7-4fB4xf7FgWRUFIdvfDuPGF756zzdkQucjF_cIzcR7eSol",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "ca41c8ae14319fbe",
+          "neighborhood": "emirbeyazit",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "suç/şiddet",
+          "date": null,
+          "summary": "Mahalledeki suç/şiddet oranına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "c20a8dc3a5ae2393",
+          "neighborhood": "emirbeyazit",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "trafik",
+          "date": null,
+          "summary": "Mahalledeki trafik durumuna dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "34df49c373c87431",
+          "neighborhood": "emirbeyazit",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "gece aydınlatması",
+          "date": null,
+          "summary": "Mahalledeki gece aydınlatması durumuna dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ]
+    },
+    "kotekli": {
+      "rent_cost": [
+        {
+          "id": "77adf6a67fa7234c",
+          "neighborhood": "kotekli",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aylık kira",
+          "date": "2026-10-24",
+          "summary": "Muğla Menteşe Kötekli'de 1+1 eşyalı kiralık daire 26.000 TL olarak listelenmiştir. (yerel haber/dizin)",
+          "status": "listing_price_is_not_affordability",
+          "sources": [
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWh7u4Xgze0q0UN8sV1qvhLXN_ThIkBEmlnw5Q7LFixCauUFAgEqAOfLH-RxsEAYFfn93xBZPDmFweWIXRGfmFajIZezuA6ApoJC4UXbHPg1uoQEe_KElEnS5la7rjGPFKTLTJpqleK07a3fs75fhkN_DnbbR5cgNVDsaCBCBSSuU_",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            }
+          ]
+        },
+        {
+          "id": "fbb463a83d002b67",
+          "neighborhood": "kotekli",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Sezonluk/yıl boyu ayrımı",
+          "date": null,
+          "summary": "Kötekli'deki kiralık dairelerin sezonluk veya yıl boyu kiralama koşulları hakkında net bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "5428ca5ca736e8cf",
+          "neighborhood": "kotekli",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aidat/depozito/ek gider",
+          "date": null,
+          "summary": "Kötekli'deki kiralık daireler için aidat, depozito ve ek giderler hakkında bilgiye ulaşılamamıştır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "5bb94871a02d5997",
+          "neighborhood": "kotekli",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Düşük gelirli ve öğrenci için maliyet baskısı",
+          "date": null,
+          "summary": "Kötekli'nin öğrenci yoğunluğu göz önüne alındığında maliyet baskısı olabileceği düşünülse de, somut veri bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "2882a22442e072d9",
+          "neighborhood": "kotekli",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "İlan sayısı",
+          "date": null,
+          "summary": "Kötekli'deki güncel kiralık ilan sayısı hakkında net bir veri bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "transportation": [
+        {
+          "id": "0040c3abd9310d81",
+          "neighborhood": "kotekli",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2025-11-02",
+          "summary": "Muğla Büyükşehir Belediyesi, Kötekli ve Yeniköy mahallelerinde 502 milyon TL'lik yatırımla yol ve altyapı çalışmalarına devam ediyor. Bu çalışmalar kapsamında 3 bin 700 metre sıcak asfalt serimi, 7 bin metre yağmursuyu hattı ve 6 bin metre içme suyu hattı döşeniyor.",
+          "status": "announced_or_ongoing_not_completed",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXzf5iT1GFWGlkm__svMf3ghfo0WLq-lBmHq_bKq84Nhqh9Re81u16dWrwc5bv6b21-JlnN5gN-4UcXrueNPA9NSChZbshW0Ppn4tbJmeAqZXKg-j4asMi-oUnwn6BWFIDoWLoLMkTcSYpz1ISFJHHdeYkBICKEfxuLZj56U8u3PwGqGagGqBWco4x7SO7pkI_aoCD9fGjsd4VfjgYrVq5rQ==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "dha.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEvy7CKoCZgIB4CaFraWKz_SoXUrbr3o4NizFJpH6QG-tIJdrVj3_WYxk7spGYzn6t2iwoY_kH6krJJPpASMgT0FW-EdXzC25Y7Ox0rWNlaH0ySaBxXxb0_tO3tFRUXCdbDC1TwqNg_JuKxDiSeQyFy4l06HaiSbxRmmDLkTeEaD3VAXEZDyJuDo7Et4K2VX1QVq2kGBk=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKDTZTZ5HmAXuKoCJ18ISsiTYBTvgCkbsxWpemqHRLULuiIflpsHJIt0Dz-0L-ly7zmcbTmWAArpRZXp0SHrgYy12RKuKhfmsyYX_YUh8Lpk8R8E4Ze-Vs5uIRRvKUT_p9yrdplOHOmYGdLPw7IBsTXPi3sWcRQgg90Knc8buQaEPXozu54bA2qxpHupZODwogpYt0UPobAy1n041_NzTjHmrPUWWDCNLEiR_483yuLLssfocPEPRIByDdFAqe4oJcuJhd16g=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqzqta04BLS2rfpf73619zZXYG1FHfGlAlSVa2hIWm1oa8BlyyMQiSflEBVMDHIOFAQ__5YtMPn8bP3fRJ_Ek0XwH0MFJqNwNg15jyebdapGCbUvsxz0wGzo0f67UEhd0fe7HPnMVX8RQMQELiz-7HHXJdCOQfb4nkyEbjYdzo54ASHuUvaKxAxBQecg8nQEWjkiWJBYhE0gWNlRswlFI=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc_FZstubJBAFarh2WAYXXjMI_kdkvSaOTWV8mwm2jojyPDc5WMB2_vzegKumFY8o8QtiMX71E1U_Nczrg9D34DKtHjmadbtuh-i2pXkAPl7ZM7kjiNMikcXpAPUyCnbTNMw2HIbBd0dYbRRZSNBEoxABUZ1TZ0cEL4tmtTQdW6OrejvJBlCgtOylMw3OI73MaW5lUWbVm",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "4c641b1cd9fbb042",
+          "neighborhood": "kotekli",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-09-15",
+          "summary": "Kötekli Mahallesi Sıtkı Koçman Caddesi'ndeki yol ve altyapı çalışmalarının tamamlanan bölümü 15 Eylül hedef tarihinden önce ulaşıma açıldı.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "muglayenigun.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3f-e_JfJQP1omv-OhaoAE43IslIhIr9Rwfs9YGjnO4SRn9wPucSlCEp0jzCWAZ0iqX3e0culP8GvwzKYHDue7qSHV7h_XGvSPQFaY4nGxeTDcEERWMSZkIDMt8PTJwZJXyUhpBwikuYG_aaZOLbnJVIBLbd3ExdwqiBR1jazLNZh9qtKIcrmBT7gnSDCAppJ1",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "6c5a27f77f5683f4",
+          "neighborhood": "kotekli",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-08-13",
+          "summary": "Kötekli'de yürütülen yol, altyapı, ulaşım ve kent estetiği projesi kapsamında 3 bin 200 metre sıcak asfalt, 7 bin metre yağmur suyu hattı, 6 bin metre içme suyu hattı, cep otoparkları ve bin 500 metre bisiklet yolu yapılması planlanıyor.",
+          "status": "announced_or_ongoing_not_completed",
+          "sources": [
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHAcUoNuAsEpiwHVyBBm4H0e11dC2l0bPgTjfEqmXPn3_RDrgbUaAWNsmT8HMegQr35YGvYkRzPEOZsZlau4FtR9gAl7l8DdCNExsZLzSrtzayPa5jBZFW1ciKysVA0iP-J2tOVFtgyj2l1aVZiIKNlIFjCEkgiW1wn_3HsP_N9KjYFoBQb9dcXGaTFuXLoKybk92k-uLvH_7UU8HxwMTKq4JXk0YfgNHXVd_qzaIW_UWvKu8F",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "fa2b9aa114b5c8d8",
+          "neighborhood": "kotekli",
+          "category": "transportation",
+          "sentiment": "negative",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-07-29",
+          "summary": "Kötekli ve Yeniköy mahallelerinde yaklaşık 2 senedir devam eden altyapı ve yol çalışmaları nedeniyle mahallelerde yolların her yeri kazılmış durumda, ortalık sürekli toz içinde ve ulaşım kilitleniyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "sikayetvar.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnSLq6-DPU_9pImG5DQcqikZzPJ1UvD3R5e28y5N7UmTgnkxXRfBhKBtmEOTYW2nx8ONm72-_GCUvqlOiGdG74RXRpzX4a-OKokjDcT56UwddA1mXB-GxjDaiIXM0D5c7svEozaJZdT23tFCjy-ajEwxAhKVjxKmnQNSxpD_1_",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "sikayetvar.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaQoX4go08K26xYvxFhadabp-bXedv9V52ZJv8Al5tBZ5PqxCRiFqXCU2zfC-NToWvOmgmBnrIxnZ_kf1ljcMtU96oBpwcqOvnHU-l2tgyMEhlHw60oF5sfskBy_Upn7pWx_I7b4RKtXiiLqY5I6_eu7GJfzOAqeu7Xnbsxiy3C2_npLEOBp5nAGn6ysD6MPibUwfdy6ikCOwXR5Dl6NeWKE77bMj-PwFxVsoh2tznF7Ux2RRY2J1ogBtejtnSjg==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "5774267ad2e51ff9",
+          "neighborhood": "kotekli",
+          "category": "transportation",
+          "sentiment": "negative",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": null,
+          "summary": "Kötekli'de yol çalışmaları sürekli elektrik kesintilerine ve erken saatlerde başlayan inşaat gürültüsüne neden oluyor.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "sikayetvar.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnSLq6-DPU_9pImG5DQcqikZzPJ1UvD3R5e28y5N7UmTgnkxXRfBhKBtmEOTYW2nx8ONm72-_GCUvqlOiGdG74RXRpzX4a-OKokjDcT56UwddA1mXB-GxjDaiIXM0D5c7svEozaJZdT23tFCjy-ajEwxAhKVjxKmnQNSxpD_1_",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        }
+      ],
+      "social_life": [
+        {
+          "id": "084f52e79c2559b9",
+          "neighborhood": "kotekli",
+          "category": "social_life",
+          "sentiment": "unknown",
+          "criterion": "gece hayatı türleri",
+          "date": "2021-01-26",
+          "summary": "Kötekli, üniversite bölgesi olması nedeniyle öğrenciye özel bir eğlence merkezi haline gelmiştir.",
+          "status": "historical_evidence",
+          "sources": [
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0yi4YnKKUlt6xEZ3sqXuzEMgb0Fdx7iB5QBLjNOuG0q-s9dvaafpIi5bmEWNvjHv7CoyYSLEpndT42BmcTKFmZBqBjapjMJxgPpsKklWrooyK1oI6JElXqS61j6OhJsLojCId3YWtqsih4vZ9Hn5zgs8X4nJ8GgcqYyMmbLKZ8W77R5mVkSC4tJxBiAiUr_geGWh0",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "4a406e28b7b30d7d",
+          "neighborhood": "kotekli",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "aktiviteler",
+          "date": null,
+          "summary": "Yoğurtçu Parkı, öğrencilerin gitar çalıp, çekirdek çitleyerek sosyalleştiği bir alandır.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "blogspot.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_ur-lKKOonDnxtsN94LuiMY3sIog_bxM-dPUwpxyicjDVX8swNN0S9cNoNdwXbUs6mC9Sr0fjWJ68yCzmUnfNjr14kXAzrgIpY9VdZNvT1OSQGxo79s8SEDcLEFc_SHLl98bKUZgsiIJLCl_E6OOAupNhOIhNGJfNr6g23_E4qWP1BoCoYoT1",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "9b327af1488a9f35",
+          "neighborhood": "kotekli",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "erişim sorunu",
+          "date": "2026-10-02",
+          "summary": "Yurtlarda kalan yaklaşık 7 bin 500 öğrencinin toplu taşımaya ulaşmak için yürüdüğü 700-800 metrelik mesafe için ulaşım düzenlemesi yapılmıştır.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "marmarismanset.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaDsjYlhRIzqp2WCVk28JemdXu9SDDYOC2yE-ySDWUOKd_Y4zus7MikoR2FczLIfk7FZ9Y7QYnj7LmFoX3bGmUmk4_p0k2zEeqtQWdXgeMziYZRlXFbB2mqHlsb2OMl4XOMMlRlkGhNztIeXpSBW-L6r7SIb_CLENJVvE98UxoHvfkrz8u0nZbHSlplN7kWIyN_76QdxSq5SfH9wVH3rnPUoOCSJ-U9w==",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "19602820dc7580c5",
+          "neighborhood": "kotekli",
+          "category": "social_life",
+          "sentiment": "negative",
+          "criterion": "gürültü/işletme kapanması/erişim sorunu",
+          "date": "2026-02-15",
+          "summary": "Kötekli'de bazı mekanlar aidiyet ve sosyalliği güçlendirirken, bazıları güvensizlik, dışlanma veya kentin bütünüyle kopukluk hislerini tetikleyebilmektedir.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "dergipark.org.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOrgyw-gVl59Xv4MJhScpb4unn-SHiXE-TbKfswhHes8NxcurHxWP0SddnuzgcRaiEUmBOesFhUe_4DmpqKzc9QFZknXk-BzZ6v_aumON9QqB6bl6vweRkV_cApB7ijMqvwIg1mmBq9Td-avaj0i4n-Co=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        }
+      ],
+      "safety_news": [
+        {
+          "id": "5d1518d1d5026e87",
+          "neighborhood": "kotekli",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "kamu altyapısı",
+          "date": "2024-10-09",
+          "summary": "Muğla Büyükşehir Belediyesi MUSKİ, Akçaova içme suyu deposu kapasitesini artırarak ve hat yenileme çalışmaları yaparak mahalledeki içme suyu sorununu kalıcı olarak çözdü.",
+          "status": "historical_evidence",
+          "sources": [
+            {
+              "publisher": "samataplus.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2kJ3LIm0G2mHWogcByh0e22757-iSunzx932iuC9LoivFyHzmtI6zQTOxntMyH61J7U-WB42a6ETOeZnm3d1CvoBbIxKnzu7y-_5thUi2YeStMR1tLvIAs3Q313DrTrDoBZdAq_YbYkTB6B2cu7mkzHdpqHGgrNfIuDUIbvRpWFA5UsuTJZ-Q_njCdx6kjIpZC91IEcPkpUfzkM5rxghDj0zEkA==",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            },
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZklGCtVFguNVxW7axCU_SucQaYYmLO-_eOM-BxRBcWhcerQQnTgA8g87HLwvjJoO-XQ9DYaWgOC-Ov147UO2nrNDunQW87QXH86OmyISQJ__gpk9RvrW6wSDD974wsqY0z6uPtSDMK-n2R4CjFFLgBr3FC98qhuSVHl3PQ3Oaciegi6lpPzhedBa7d4C87LouQOKbH-Ai01NRxj3dQnhUAlkVFAOKT2x4r8Y=",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "5d66c6cb068efa91",
+          "neighborhood": "kotekli",
+          "category": "safety_news",
+          "sentiment": "negative",
+          "criterion": "yaya koşulları",
+          "date": "2026-02-11",
+          "summary": "Sökülen kaldırımlar ve dağılan kilit taşları nedeniyle yayalar risk altında, açıkta bırakılan kablolar tehlike oluşturuyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "marmarismanset.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHh_h2uNalkEYG6-LXXQmWFDG8rs1Qy-LYWOxWw9pueW0A_nmJLg7XPGbWey8uc2_ZL0rrXKv6EfiW-buAoNNltku76bOYGbaeL8pbBsWZF4vdcM05psAYeOl58iUBHVSOhMGycS9PTL65wMCYOTXVKVj7Drq3FQM9Ecv53SdeZ6ewa5ravu8IXTUdzhysTXd3SIb2j1K5rTWTjLsa6wWU1cEn2gw8=",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            },
+            {
+              "publisher": "muglayenigun.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoZZxLDWaq-26PkdXAwXFpv8cpWaPGDfjCn_KNjqUUta3KFY5eGCTJZkcQVM8NdFVTwRg5oxxtX3JI7NdkQNolpPlNYSgRQZfIc3UKOWV6tkvwH0yVjYzIHTyc9MNIh-MMSzT4nzEIcHsX-egQgA8YlpoKO4RdEIEBFwrapKPDrXe9D05Q9mMQf46_6ZHy1nkuFYUMY2YvV2Q-vlnz3KmJ5xdfdbFFCuDveJf_gw==",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "93a6d360b4ccdbb9",
+          "neighborhood": "kotekli",
+          "category": "safety_news",
+          "sentiment": "negative",
+          "criterion": "trafik",
+          "date": "2026-02-11",
+          "summary": "Yollardaki çukurlar araçlarda maddi hasara yol açıyor ve yağışlarla birlikte yollar çamur deryasına dönüyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "marmarismanset.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHh_h2uNalkEYG6-LXXQmWFDG8rs1Qy-LYWOxWw9pueW0A_nmJLg7XPGbWey8uc2_ZL0rrXKv6EfiW-buAoNNltku76bOYGbaeL8pbBsWZF4vdcM05psAYeOl58iUBHVSOhMGycS9PTL65wMCYOTXVKVj7Drq3FQM9Ecv53SdeZ6ewa5ravu8IXTUdzhysTXd3SIb2j1K5rTWTjLsa6wWU1cEn2gw8=",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            },
+            {
+              "publisher": "muglayenigun.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoZZxLDWaq-26PkdXAwXFpv8cpWaPGDfjCn_KNjqUUta3KFY5eGCTJZkcQVM8NdFVTwRg5oxxtX3JI7NdkQNolpPlNYSgRQZfIc3UKOWV6tkvwH0yVjYzIHTyc9MNIh-MMSzT4nzEIcHsX-egQgA8YlpoKO4RdEIEBFwrapKPDrXe9D05Q9mMQf46_6ZHy1nkuFYUMY2YvV2Q-vlnz3KmJ5xdfdbFFCuDveJf_gw==",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "316cfe51451a399a",
+          "neighborhood": "kotekli",
+          "category": "safety_news",
+          "sentiment": "negative",
+          "criterion": "kamu altyapısı",
+          "date": "2026-10-14",
+          "summary": "MHP Menteşe İlçe Başkanlığı, Kötekli'deki yol ve çevre düzenleme çalışmalarına tepki göstererek, temel belediye hizmetlerine erişimde sorunlar yaşandığını belirtti.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVGodLvTubv4qhPv7olz--8zYMcUEafUshvD7i7nop8YsQhGXOkXQhZ01NngiPmzS79Avt8xat1cHk9fCIH0jwk0qhcMLT0TLMbPfgcTq6hWg9i5bN_XIWgr9-zmG2qRWY-AC3uciTUgjJJokS_3ohAorI2s0BInGyxp1EmBT3Myo9E7GoLregwIiKTbY83OP6",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "8322deb86c60c4dd",
+          "neighborhood": "kotekli",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "suç/şiddet",
+          "date": null,
+          "summary": "Mahalledeki suç/şiddet oranına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ]
+    },
+    "orhaniye": {
+      "rent_cost": [
+        {
+          "id": "94cdeaa19cc54471",
+          "neighborhood": "orhaniye",
+          "category": "rent_cost",
+          "sentiment": "unknown",
+          "criterion": "Aylık kira",
+          "date": "2026-10-15",
+          "summary": "Menteşe Orhaniye Mahallesi'nde 2+1 daire/ofis 40.000 TL olarak listelenmiştir. (yerel haber/dizin)",
+          "status": "listing_price_is_not_affordability",
+          "sources": [
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp2cqGigthTzFj-zIb2_YM2tf8BR53BbEadNZ5vintUKRNwZzWAMzIqGy61a3vQbs_oKyHYmPFbbLdIp2ywVdjgoG0hBJsk9dclldy-a7ZD6oJ48Es2ot_7KUIbN18sfQcUHbL2X-dryRzhPW0XTdSbHx74jMfsxMBOmpFmkstbDhHLuSALg_NgB_Y3-0=",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            },
+            {
+              "publisher": "emlakjet.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4mvxze9m2y-WoUPg9s8ugvj0lFwtviOB6cWeAfRaIsb1AA4YxYm9nd3UWfGDXwvqqd4mQF4QH25bUVj2fMlFFmNkNhTEMpMWB7S7drICj8pgwmSW8wFz5VShVim2HvgE-wGkQ3PwUL0Od4SILCK18EMV3EHbEf1JmJ1REszNFzJPy",
+              "checkedAt": "2026-10-28T18:45:44.580892+00:00"
+            }
+          ]
+        }
+      ],
+      "transportation": [
+        {
+          "id": "a1d48d4c52d08183",
+          "neighborhood": "orhaniye",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-10-17",
+          "summary": "Orhaniye Mahallesi Şehit Asteğmen Yıldıray Çeltiklioğlu Caddesi'nde yağmursuyu hattı, kaldırım, bisiklet yolu ve asfalt çalışmaları devam ediyor.",
+          "status": "announced_or_ongoing_not_completed",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKmsVg-jVaO2jmNOdiZM1E_yQzCn3oGRUX9wQF9Y0MQn4AFy5H1BMfb0ayOx5Kb2xvNGV03La6yK-Hq79cl6z1Oz-SJ_RmpcZFTUppuKw3p99zzdHVbg_XSXGVfaWahAlJ2J4UCoQ0XMUUO4T-By_ZXZBgfq-VuOjkPcoM-HVb3P0lKAZXr9nYvQ==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNfKEVSU57rQ-wm887OUfXdE4yMg8S-zjZ84HACbe_tTkIrmhM_73fCkSnN8kxsYDG8IPHRzCMlgzQDFE4gi1BRXS12bWEMozfzdh6ezbK-gA0IlYCw9hGyTTNU2iiJvA0gNN1P2El6n6oooqJiDdCSWAkMBpBFTsNIPUYAg2Aa6HZWEELmGS0VBIPth8puxaXs5-r5LY9fG9X7qkiTARmTPmlTBNPWHvs_lflJOdtW0HBV_Zxrcx6",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMnA-9iAc7B9h-YbOmyjDcjnDOexRrQ8UK2SzqAIyiMHLgcfbqdz61r7KZ73wJzAcX6tz01z_YsujSiLMAaCsLoNoM4PSOjCwukuVmj0_S-fI9Ftlw0tCSaNhsf3Zax1iGXbcxbDahZO_othBod5j-N9Idh-XkNDjj7vi5wucf_COywaP1EAXYywTwCPw=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "mugladevrim.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErUOdHZAThYy4W-q3Ue702BfzDIcdh1biJaHlK77du9U6Xsk3z7UAKqJ_XdAzjsCEkN02udpS3XF1egoHJRHDdRUDusS6rfPmqZ9PIBDMURUZ7q8H1phcerMQS0GFraWTpTyM7A-AAplzPk1NHOi3grSO-xKyDTFOpXjNFHETwEvb_zjn_QcqNpiJoQI-wgWyHyaUuhkuKe7QijbQ9JJesRnV26V4sYSC_",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgmMdkwPdrG1r-l7l8ruh9uGsiDYPEIHjty3nwOGReJuG9pBelDFINTeWhMbT98-IVqzbABODBuuRvV7E_i5bmvMSVzwIws0EEbiuJ0P-tcylJ5FCtMLyTW9oEDRyJ1rVuZjFohrhX6JIo3BfS4vXXiMEDtz8evbuGxK5kDznv154_UiqraNtHUJPucT1xmPLMJoIq4msximhjS7ICtE2v6E5M5pYOAcji_wW7e_71E0Rg",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "mersinhaber.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq9JsOzEHzgXf8MPhjhCwn0EP8ibYZfB9yxTflcgchsCmupPDHSYp-gY_WBmXnhAiv1HoC1mLi79dPH4vFJPE3AtPo-DaBd0UtBMMOvG3-Nm70q5EO5onVKD1JB5UBd_v1SHxXUiKdprTigkeVaAr3s55nGK2On0SEC7M8h4StEbu917PeywlBPD7Q9LnpM1yQ6GA3I2Y-IoPZCAKjg46snFVK6D8dUMw81ubUNfk4rhWkZVkZHmhemV-8Fg==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "6c38affac0e5771e",
+          "neighborhood": "orhaniye",
+          "category": "transportation",
+          "sentiment": "unknown",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-10-17",
+          "summary": "Proje kapsamında 4 bin 730 metre yağmursuyu hattı, 826 metre kanalizasyon hattı, 12 bin metrekare kaldırım ve bin 860 metre bisiklet yolu yapılması planlanmaktadır.",
+          "status": "announced_or_ongoing_not_completed",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKmsVg-jVaO2jmNOdiZM1E_yQzCn3oGRUX9wQF9Y0MQn4AFy5H1BMfb0ayOx5Kb2xvNGV03La6yK-Hq79cl6z1Oz-SJ_RmpcZFTUppuKw3p99zzdHVbg_XSXGVfaWahAlJ2J4UCoQ0XMUUO4T-By_ZXZBgfq-VuOjkPcoM-HVb3P0lKAZXr9nYvQ==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNfKEVSU57rQ-wm887OUfXdE4yMg8S-zjZ84HACbe_tTkIrmhM_73fCkSnN8kxsYDG8IPHRzCMlgzQDFE4gi1BRXS12bWEMozfzdh6ezbK-gA0IlYCw9hGyTTNU2iiJvA0gNN1P2El6n6oooqJiDdCSWAkMBpBFTsNIPUYAg2Aa6HZWEELmGS0VBIPth8puxaXs5-r5LY9fG9X7qkiTARmTPmlTBNPWHvs_lflJOdtW0HBV_Zxrcx6",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMnA-9iAc7B9h-YbOmyjDcjnDOexRrQ8UK2SzqAIyiMHLgcfbqdz61r7KZ73wJzAcX6tz01z_YsujSiLMAaCsLoNoM4PSOjCwukuVmj0_S-fI9Ftlw0tCSaNhsf3Zax1iGXbcxbDahZO_othBod5j-N9Idh-XkNDjj7vi5wucf_COywaP1EAXYywTwCPw=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "mugladevrim.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErUOdHZAThYy4W-q3Ue702BfzDIcdh1biJaHlK77du9U6Xsk3z7UAKqJ_XdAzjsCEkN02udpS3XF1egoHJRHDdRUDusS6rfPmqZ9PIBDMURUZ7q8H1phcerMQS0GFraWTpTyM7A-AAplzPk1NHOi3grSO-xKyDTFOpXjNFHETwEvb_zjn_QcqNpiJoQI-wgWyHyaUuhkuKe7QijbQ9JJesRnV26V4sYSC_",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgmMdkwPdrG1r-l7l8ruh9uGsiDYPEIHjty3nwOGReJuG9pBelDFINTeWhMbT98-IVqzbABODBuuRvV7E_i5bmvMSVzwIws0EEbiuJ0P-tcylJ5FCtMLyTW9oEDRyJ1rVuZjFohrhX6JIo3BfS4vXXiMEDtz8evbuGxK5kDznv154_UiqraNtHUJPucT1xmPLMJoIq4msximhjS7ICtE2v6E5M5pYOAcji_wW7e_71E0Rg",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "d35c4308eb8dbd54",
+          "neighborhood": "orhaniye",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "devam eden yol/altyapı çalışması",
+          "date": "2026-10-17",
+          "summary": "Çalışmaların önemli bir bölümü tamamlanmış olup, 3 bin metre yağmursuyu hattı, 500 metre kanalizasyon hattı, bin 780 metrekare kaldırım, 300 metre bisiklet yolu ve 750 metrelik yol düzenleme ve asfalt imalatı bitirilmiştir.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKmsVg-jVaO2jmNOdiZM1E_yQzCn3oGRUX9wQF9Y0MQn4AFy5H1BMfb0ayOx5Kb2xvNGV03La6yK-Hq79cl6z1Oz-SJ_RmpcZFTUppuKw3p99zzdHVbg_XSXGVfaWahAlJ2J4UCoQ0XMUUO4T-By_ZXZBgfq-VuOjkPcoM-HVb3P0lKAZXr9nYvQ==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNfKEVSU57rQ-wm887OUfXdE4yMg8S-zjZ84HACbe_tTkIrmhM_73fCkSnN8kxsYDG8IPHRzCMlgzQDFE4gi1BRXS12bWEMozfzdh6ezbK-gA0IlYCw9hGyTTNU2iiJvA0gNN1P2El6n6oooqJiDdCSWAkMBpBFTsNIPUYAg2Aa6HZWEELmGS0VBIPth8puxaXs5-r5LY9fG9X7qkiTARmTPmlTBNPWHvs_lflJOdtW0HBV_Zxrcx6",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMnA-9iAc7B9h-YbOmyjDcjnDOexRrQ8UK2SzqAIyiMHLgcfbqdz61r7KZ73wJzAcX6tz01z_YsujSiLMAaCsLoNoM4PSOjCwukuVmj0_S-fI9Ftlw0tCSaNhsf3Zax1iGXbcxbDahZO_othBod5j-N9Idh-XkNDjj7vi5wucf_COywaP1EAXYywTwCPw=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "mugladevrim.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErUOdHZAThYy4W-q3Ue702BfzDIcdh1biJaHlK77du9U6Xsk3z7UAKqJ_XdAzjsCEkN02udpS3XF1egoHJRHDdRUDusS6rfPmqZ9PIBDMURUZ7q8H1phcerMQS0GFraWTpTyM7A-AAplzPk1NHOi3grSO-xKyDTFOpXjNFHETwEvb_zjn_QcqNpiJoQI-wgWyHyaUuhkuKe7QijbQ9JJesRnV26V4sYSC_",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgmMdkwPdrG1r-l7l8ruh9uGsiDYPEIHjty3nwOGReJuG9pBelDFINTeWhMbT98-IVqzbABODBuuRvV7E_i5bmvMSVzwIws0EEbiuJ0P-tcylJ5FCtMLyTW9oEDRyJ1rVuZjFohrhX6JIo3BfS4vXXiMEDtz8evbuGxK5kDznv154_UiqraNtHUJPucT1xmPLMJoIq4msximhjS7ICtE2v6E5M5pYOAcji_wW7e_71E0Rg",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "14a6a748babbd417",
+          "neighborhood": "orhaniye",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "kullanıcıya etkisi",
+          "date": "2026-10-17",
+          "summary": "Mahalle sakinleri, yapılan çalışmalarla yağışlı havalarda yaşanan su birikintisi ve ulaşım sorunlarının giderileceğine inanıyor.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKmsVg-jVaO2jmNOdiZM1E_yQzCn3oGRUX9wQF9Y0MQn4AFy5H1BMfb0ayOx5Kb2xvNGV03La6yK-Hq79cl6z1Oz-SJ_RmpcZFTUppuKw3p99zzdHVbg_XSXGVfaWahAlJ2J4UCoQ0XMUUO4T-By_ZXZBgfq-VuOjkPcoM-HVb3P0lKAZXr9nYvQ==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNfKEVSU57rQ-wm887OUfXdE4yMg8S-zjZ84HACbe_tTkIrmhM_73fCkSnN8kxsYDG8IPHRzCMlgzQDFE4gi1BRXS12bWEMozfzdh6ezbK-gA0IlYCw9hGyTTNU2iiJvA0gNN1P2El6n6oooqJiDdCSWAkMBpBFTsNIPUYAg2Aa6HZWEELmGS0VBIPth8puxaXs5-r5LY9fG9X7qkiTARmTPmlTBNPWHvs_lflJOdtW0HBV_Zxrcx6",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMnA-9iAc7B9h-YbOmyjDcjnDOexRrQ8UK2SzqAIyiMHLgcfbqdz61r7KZ73wJzAcX6tz01z_YsujSiLMAaCsLoNoM4PSOjCwukuVmj0_S-fI9Ftlw0tCSaNhsf3Zax1iGXbcxbDahZO_othBod5j-N9Idh-XkNDjj7vi5wucf_COywaP1EAXYywTwCPw=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgmMdkwPdrG1r-l7l8ruh9uGsiDYPEIHjty3nwOGReJuG9pBelDFINTeWhMbT98-IVqzbABODBuuRvV7E_i5bmvMSVzwIws0EEbiuJ0P-tcylJ5FCtMLyTW9oEDRyJ1rVuZjFohrhX6JIo3BfS4vXXiMEDtz8evbuGxK5kDznv154_UiqraNtHUJPucT1xmPLMJoIq4msximhjS7ICtE2v6E5M5pYOAcji_wW7e_71E0Rg",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        },
+        {
+          "id": "4d100ec1ad3ce5dc",
+          "neighborhood": "orhaniye",
+          "category": "transportation",
+          "sentiment": "positive",
+          "criterion": "kullanıcıya etkisi",
+          "date": "2026-10-17",
+          "summary": "Tekerlekli sandalye kullanan bir mahalle sakini, çalışmalar tamamlandığında mahallesinde daha rahat hareket edebileceğini belirtmiştir.",
+          "status": "dated_report",
+          "sources": [
+            {
+              "publisher": "muttas.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKmsVg-jVaO2jmNOdiZM1E_yQzCn3oGRUX9wQF9Y0MQn4AFy5H1BMfb0ayOx5Kb2xvNGV03La6yK-Hq79cl6z1Oz-SJ_RmpcZFTUppuKw3p99zzdHVbg_XSXGVfaWahAlJ2J4UCoQ0XMUUO4T-By_ZXZBgfq-VuOjkPcoM-HVb3P0lKAZXr9nYvQ==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "muglagazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNfKEVSU57rQ-wm887OUfXdE4yMg8S-zjZ84HACbe_tTkIrmhM_73fCkSnN8kxsYDG8IPHRzCMlgzQDFE4gi1BRXS12bWEMozfzdh6ezbK-gA0IlYCw9hGyTTNU2iiJvA0gNN1P2El6n6oooqJiDdCSWAkMBpBFTsNIPUYAg2Aa6HZWEELmGS0VBIPth8puxaXs5-r5LY9fG9X7qkiTARmTPmlTBNPWHvs_lflJOdtW0HBV_Zxrcx6",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "hamlegazetesi.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMnA-9iAc7B9h-YbOmyjDcjnDOexRrQ8UK2SzqAIyiMHLgcfbqdz61r7KZ73wJzAcX6tz01z_YsujSiLMAaCsLoNoM4PSOjCwukuVmj0_S-fI9Ftlw0tCSaNhsf3Zax1iGXbcxbDahZO_othBod5j-N9Idh-XkNDjj7vi5wucf_COywaP1EAXYywTwCPw=",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "ankahaber.net",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgmMdkwPdrG1r-l7l8ruh9uGsiDYPEIHjty3nwOGReJuG9pBelDFINTeWhMbT98-IVqzbABODBuuRvV7E_i5bmvMSVzwIws0EEbiuJ0P-tcylJ5FCtMLyTW9oEDRyJ1rVuZjFohrhX6JIo3BfS4vXXiMEDtz8evbuGxK5kDznv154_UiqraNtHUJPucT1xmPLMJoIq4msximhjS7ICtE2v6E5M5pYOAcji_wW7e_71E0Rg",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            },
+            {
+              "publisher": "mersinhaber.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq9JsOzEHzgXf8MPhjhCwn0EP8ibYZfB9yxTflcgchsCmupPDHSYp-gY_WBmXnhAiv1HoC1mLi79dPH4vFJPE3AtPo-DaBd0UtBMMOvG3-Nm70q5EO5onVKD1JB5UBd_v1SHxXUiKdprTigkeVaAr3s55nGK2On0SEC7M8h4StEbu917PeywlBPD7Q9LnpM1yQ6GA3I2Y-IoPZCAKjg46snFVK6D8dUMw81ubUNfk4rhWkZVkZHmhemV-8Fg==",
+              "checkedAt": "2026-10-28T18:45:45.152248+00:00"
+            }
+          ]
+        }
+      ],
+      "social_life": [
+        {
+          "id": "556f171d63cff32e",
+          "neighborhood": "orhaniye",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "kafe dışındaki aktiviteler",
+          "date": null,
+          "summary": "Orhaniye Mahallesi'nde Menteşe Spor Salonu ve çeşitli spor alanları bulunmaktadır.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "yandex.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKVvGrfrAaRAv_eQFmYF6EsEsRXmiqEO1bHwqINcTdeYcRkZoHYqlqKFUrG0IJCGB8FZnN--Lj42_qh2MsYdAbEGnrmyj2E3edylV7hM_xBrbt99z_zNlxpnRw8KYZ0GgBDdh5XrbK3C6pqify3klTwcQfOESHljgYjIJbwAVKczs=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "yandex.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc5Ulz3Q1OM2UiauXx2gPTbMSLXQgh0-WL203Dv-UU0PfV5G5FuOzEeVBKgUy6BuCL5RZZP_omHHIUmGH6Qb3vfwAeJb7kdXwlf8IrL4jW2CjnqjrP3l84n-ds37c_hZm_JpvjKazuFtNrNLmoUTfq",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "yandex.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJFQOnw_hmhUA0SqP7HV2vdH4CQAbqK9QZFmAVFcb4Q8Rv8l8Wp92Pfg44zSEW0rGPQ2DuSy0K2MoyKge76tW7ZtbAOEgXipYlhSAqC3cJt-2VSuttIxkBROfb0ug9S1nXAIGVXbVdZgwZzuyJy-HihyWK1-BjtTTSfFNB4JCvx1xyAEZqatQ=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            },
+            {
+              "publisher": "turgutreisrehberi.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSKj4racLJga1wgIVaE48hf0z6TWykGAOM0KtDGjLhRHtJ52FPJPsf6E6GtJfi6s633-VU82uAuotIAlmb3neJR-UNDMJCUR1CJAi9jnjMCfzvkQs78VGBU-35XW6RzQAmX26mZZ8AdESvE0k8R_xi9jNIipuWQiRsJeK3dm0gotPOKP3-r5tenw==",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "8bef5b5950cf6a47",
+          "neighborhood": "orhaniye",
+          "category": "social_life",
+          "sentiment": "positive",
+          "criterion": "kafe dışındaki aktiviteler",
+          "date": null,
+          "summary": "Mahallede birden fazla fitness kulübü bulunmaktadır.",
+          "status": "current_status_unverified",
+          "sources": [
+            {
+              "publisher": "yandex.com.tr",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkp0_GKwTCVLKmCLtnys726ADMomn60m8L6VWYqbdBUgvf1pHdUhWepc9Yd4_-d2r1UJXRJTbRRVi9V3Fh9NwsLoo-4WmSxFh0tGR-_dPY5-rD-DGBMKl5eadU7u8y5wPNsrIR-sJ_Hmq2k646fRduJ5bKagbpH_uxEqI2HS8WeWvT1Ns=",
+              "checkedAt": "2026-10-28T18:45:39.891273+00:00"
+            }
+          ]
+        },
+        {
+          "id": "727a9e63c95ab1e7",
+          "neighborhood": "orhaniye",
+          "category": "social_life",
+          "sentiment": "unknown",
+          "criterion": "yemek çeşitliliği (döner/dürüm/burger/pizza, ev yemeği/esnaf, farklı mutfaklar)",
+          "date": null,
+          "summary": "Mahalledeki yeme-içme mekanlarının çeşitliliği hakkında bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "0d34238680ab4878",
+          "neighborhood": "orhaniye",
+          "category": "social_life",
+          "sentiment": "unknown",
+          "criterion": "gece hayatı türleri",
+          "date": null,
+          "summary": "Mahallede gece hayatı aktivitesi hakkında bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ],
+      "safety_news": [
+        {
+          "id": "fb79db7e3d78bb41",
+          "neighborhood": "orhaniye",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "trafik",
+          "date": "2025-10-04",
+          "summary": "Sanayi esnafı, bozuk yollar nedeniyle yağış sonrası oluşan su birikintilerinden şikayetçi, bu durum hem araç geçişini zorlaştırıyor hem de kötü görüntü oluşturuyor.",
+          "status": "historical_evidence",
+          "sources": [
+            {
+              "publisher": "muglayenigun.com",
+              "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmbm-d_vjpMUq0xlAa9uJ14OOLGFtdgaXyDPU6BbZGAVhL3A9i9AhggoW1Va5nl1eWq-uHJ4A3FGvugJPalaSg1UH2OpqEV3_uexpUbLI1Vu6VYw6NsqsaQeBPai9pThQJ4LjGXNjpzIBpw266ZWfhH4-4g4V3FMlxMUcfRHXUuq_zRT42lM4P5b4rZVsrD93rHg==",
+              "checkedAt": "2026-10-28T18:49:11.171524+00:00"
+            }
+          ]
+        },
+        {
+          "id": "190dd95f588b9eff",
+          "neighborhood": "orhaniye",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "suç/şiddet",
+          "date": null,
+          "summary": "Mahalledeki suç/şiddet oranına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "68617d7082f11e66",
+          "neighborhood": "orhaniye",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "gece aydınlatması",
+          "date": null,
+          "summary": "Mahalledeki gece aydınlatması durumuna dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "070689bbb37353ce",
+          "neighborhood": "orhaniye",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "yaya koşulları",
+          "date": null,
+          "summary": "Mahalledeki yaya koşullarına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        },
+        {
+          "id": "46a9f99aa0fd5bc5",
+          "neighborhood": "orhaniye",
+          "category": "safety_news",
+          "sentiment": "unknown",
+          "criterion": "kamu altyapısı",
+          "date": null,
+          "summary": "Mahalledeki kamu altyapısı sorunlarına dair spesifik bir bilgi bulunmamaktadır.",
+          "status": "current_status_unverified",
+          "sources": []
+        }
+      ]
+    }
+  }
+}

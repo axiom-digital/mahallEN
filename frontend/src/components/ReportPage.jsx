@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRightLeft, Search } from 'lucide-react';
 import ReportDashboard from './ReportDashboard';
+import ReportChat from './ReportChat';
 import { fetchNeighborhoodReport } from '../services/api';
 import { getPlace } from '../services/places';
 import { navigate } from '../navigation.mjs';
@@ -45,6 +46,15 @@ export default function ReportPage({ id }) {
     <main className="container report-page" aria-label="Mahalle raporu">
       <ReportDashboard report={report} selectedSlug={id} loading={loading} loadingPhase={phase} loadingPlace={place}
         error={error} onRetry={() => setRetry(value => value + 1)} onRefreshAi={() => setRetry(value => value + 1)} />
+      {report && ['kotekli', 'emirbeyazit', 'muslihittin', 'orhaniye', 'akyaka'].includes(
+        (report.name || '').toLocaleLowerCase('tr-TR').replace(/\s+mahallesi$/i, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replaceAll('ı', 'i')
+      ) && (
+        <ReportChat
+          key={report.slug}
+          slug={(report.name || '').toLocaleLowerCase('tr-TR').replace(/\s+mahallesi$/i, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replaceAll('ı', 'i')}
+          name={report.name}
+        />
+      )}
     </main>
     <footer className="container report-page-footer">MahallEN · Mahalleni tanı, kararını kendin ver.</footer>
   </div>;

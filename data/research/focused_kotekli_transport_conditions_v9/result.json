@@ -1,0 +1,499 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "kotekli",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:40:58.461457+00:00",
+  "finished_at": "2026-10-28T18:41:11.768938+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "28 Ekim 2026 Kötekli Menteşe Muğla devam eden altyapı yol çalışmaları otobüs güzergahları",
+    "Muğla Büyükşehir Belediyesi Kötekli yol çalışmaları 2026",
+    "MUSKİ Kötekli altyapı çalışmaları 2026",
+    "Menteşe Belediyesi Kötekli yol çalışmaları 2026",
+    "MUTTAŞ Kötekli otobüs güzergah değişiklikleri 2026",
+    "Kötekli 1-62 otobüs güzergahı değişikliği 2026",
+    "Kötekli 1-65 otobüs güzergahı değişikliği 2026",
+    "Kötekli 1-66 otobüs güzergahı değişikliği 2026",
+    "Kötekli Menteşe Muğla güncel yol durumu 2026",
+    "Kötekli otobüs durakları taşınması 2026"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfPFXp-eRhr1Il1GlSgQ4Lg3NOy4v_9M7PHhaMKkdsEGTJChyyCJOeOFfe9mmSyIpO1TEv1WBZipt6nx-OTkv0f7i8XWhJpD3y91yenZMyQvHW6hJ4LiqGSQTGIdwB12BiM6uC4xscH66hIlzz78JDvx6gtU6r4JH93tm_Y5w8-_1Vksk07htzz-L2ieumKiRecgiBsS4A4P77c0Iw",
+      "title": "mersinhaber.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzfwU3ZV5QdfVlzYS3IUJZU3ugezBJ7VWrMd1KYx7zDc8H7kQQVeu4BgpCDeemiwyTTBl9cM4vrHSunsR6AQGdY0oHcs2KLiPv6UyiNRGHTyEdIE9D4YfhZLQQ-7a1HIb6RhaV217V72KGp29sl-qOFcUJAgUVodxrUBXrtPtmPjjXO2YePIvKtcobE6iiNtgzybFpVUC8XiUELxd9q0sKdZ4=",
+      "title": "bodrumgundem.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFO-gpMbadfEL3-eYuxOGmfIIQMQYtBj35f-k04vCh9-2hNDdMNfJoc8BjPGC4sMZqXuQ-ySwFfmb9EfZAtScTLgZ4uc76tlpORqvXHrIZDeCsZ0UxTOHl-ss8vPdaKvXCT4K8XsFUiY7Oyslw2S6ZoHGO0-c0r88uYKLzmUE7A4ms4d_xY-DWBj-TCeiR-O3J9drB7",
+      "title": "egealternatif.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeyd9ZyATy1mEIrVp_eI7C0V03w6G3t_V4CtRtHA4kz1qQNsofYDxgcCmvhT_kluqnXFQgTQch8YghfC3LPRJWqIEIVAibkMIl0qRjhwTOScl-kNsF1FqNs0_hNGM94LDAuNkVwXxqGXPXqZOKOWCCpvTQbO-nSB5zxcRt53bVMIY=",
+      "title": "hurriyet.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiqT7_ismCgigBIf5RJpS6YXjgdXM-ekywXFW-8xaE3qMi5ZXqkCwXI1kydoKXN-M09flERgddaI7BieNhWd98tai5g4p4HRyKzFoDyKDvvvRMEDLbfo-SUNRU95jIsa4E0gorlsDaztCyKwSkcHnL9Q8u5-PhXsQlwJ6Bibw14MFpzFXWg3QY3PMtA1s7SIPVIoQlfnG5O3HQTaRHSNtr",
+      "title": "yozgatmedya.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxQblLd9k5XK0rddD9zySSYSKWW6VMW7XZZj_TH3khgmWypOIqKBiIr5GanFvfyRlJ1rJTsuL_ZLimS2g-AAN1RvoLAymddgO5EPX4ppH60EY9J0EZTJgGrAKmfkhoCp0zap4fhq9N8kGgE9uzNQN3ud03rxL4eCSUsTtLsv8HipZWNTypcWqtLBDac4_Y4B9mOFrxN9fKdnfyQBky2h2l53WHWDInD1DDQHvupdBZ2QcmByQ_",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2Oi3Cf00Z0d0SiZFJK_WK8OxeGTWIlfjaSB_ezI0sTFqbRqIA3FNX3018YhCXZw8eFZ2xg6x0FoWO_twiSaQlqYOeuYZLFKwVZ25_Xrno9k7zfVPOjv_nTLfKq2LxD2QkdMxD1BPZeQsXpS_kVIhI2316rC5jUwXq2UgP3G0j-NODwVfKRtudcw==",
+      "title": "mentese.bel.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMq6AgKcXYJ50Zlu5-te2wNUvTpDyzrzrpYJxEsvo7VPUi8eN0R48lNCQw_QsVxbrcIj79vlQuii6ugGvjJSxCQN-SURnKB3aWazrqIeAF76etSotQs6hSt_Ht6tajueAionaxOHfmSDt5aNelBX4jog0N0fGEjMNUdNufKBB55Yit5fMY8u0r8vDdlvk_DE5Wsw==",
+      "title": "ankahaber.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5wdAoEqN4hNY0Y5V4DOmIA3kWXWeDQqxVdAyoq2wG8zVH7PQRQlCB_CT5vTsejC6wEcDRGNeKHsz942cBoTmF-bXqOQJjxPsEPc2r3jHj351Sgoz5yY8r0VIiew9SMgS4qigBE-UIPHEs0QEoygsHGS2zd8lbkXdwrpQMckvtaid4vQ65bN_qqx732fvTMw==",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbbSmCMTNi_PiC10hH_GN8PFZn5JnrNr_Uf8TRezEW0Xwgme4pKw4pW2AMW7SFpL8yLU118WQxS_MInzJluWHOHxXaXb737V06Ym55KIpRmIAxgD39b_74aaZOkNQsFTkLUtwvkpFJLl9uKDahRVYulyhdrTNjwjX-CHFNGsN3isaEpa-XEPW8Wm1EG4ArNRXEBXzShoEtm9duuPU=",
+      "title": "muglaturk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMgU_HcsffsOdhCM7juPovq7VRayBfeQXYPsY7G6g0CbGF4tIyScG5SLnH_9JR0Orp41PD5VMRemvATIMIJJ5L1LezlOAFgAZ0OOvi5F3PgwZednZnkL_xzNuqJVL0dkAj-JgX5LVFJNNYAMDU0Of6wnwklixU7vqTUXpxsuikebiVr4sBXehxIQaq4pt-cMvNHJDk",
+      "title": "muglaflash.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdjxPWNVgBWHgvUSiZt4pbFctV-JaS3Z8FBqzXgFz2uKYmOrPJBCDFq96NOkjRYPmDq7sVb4XSYY5JHV2eGz6-IJ32ZiKAaQwGQ84_cQsedjcqmqmIgHEdQv_5x33VHHXgEBzZZeWfrSkm4EAwhHSeERCoJWW_elobPhfiF1NxMQj5W_aiwl4VKXEvp83cFHcC1jwBSXCLhJp1q03t3GqeeDC2mWSq6NPUwFy1K47i_q5jSpq9_Cp1sd-ZTmkQc2X0MYWXhlA=",
+      "title": "ankahaber.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGShrkMm80XsQYG6w5wMmkiFJS8ntWCAdC49k8qz-uvVVbE6lNl_g2tKs2QKEwyma-lObSIKw6W-5Vllm4-DjXRgD8ZghdbgI1A5GLzo0jEgfNazwu3SLlTnwiW-kqeiknJRtxPZNI_fyqNJlh6cthuMP1ZQzvH1AlCKQQrE76WMR7YvCtCAetQu5EPGvWd1FGXpK10gwrfw4PPepwu2VTyuQc2rbvgSGUwsprVovj3mYTCvLUezgmFTVnajoq3",
+      "title": "mugladevrim.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5jLw3SfZd6J1kucPA95VMJ1XxFJ1Suj9A3GRlJ5IT0FBw6OVZh93KtimUl0Q3hUD9YtCMZ8nDgGYzLyjKUiuKGE0XE2JkVRFYi6n6z6DDW4TWKitD93xcAyrItAVgRtRF8zQBAs_VA-SDyzvGRPpfIESmcMvoiWxvGVWOzOQvrVqdW4bf9gxvh2o1LjKpaZpMKXLBP4ce-dXdzEQToTCpENIoGGf-rugQMJhsd8TS7NNQpg==",
+      "title": "baskentpostasi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9-zYUj6mMqOPtsJlTlM2O5uW5F-Dq2YAF-3GrTd4Pd5egZbwar4CGl4HRARlkbM3VSqnNfxZW8rYTUabfmhFLrNVzHJTsTbqmKXESHHv7J5F7oyzvLALFJgvza0iGynfO_g45bE4ufyaR4KKpumS_QT9kujUH2MQmoaBKVqhxhlR6Yp5esHzcVbRn0q221aKW-zylpT80wvgYFT-NZokS-A==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMlpHKjPn3J5XpNVsZq49dH98VPaUnYSNa_hRTViVOsNLzi8_hrLcQAKdY_XcyZxaXLBK1aliIibKbBlAiik84kHFvQxdSGFXRfFpFZdjbKeCiL6hG2msgQuzT3yU5jYA4ohELx2halW43CAX8evfrdXeWhMmpeMHUAIaB9yGwxkK8lx6iNjRiusCNbUvQGErnRIZ43Ic=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTlgQl94yCTUbhvFuCOtVuCvpLwWi-k1GH4lsW-RmC6MxHsBE1xCjVR1gjtsg473zwsodTe7DFUjXPQrjwLf2pQKrXu84ZDJWoM6K708H-ZcTfc2JYtdc8jn8QBeRCZtBIYB6Ao-QsMCpJahIZNmsyGQzZOYR2eVbCw-uqvglhhKeqw_iMTyQa9pKPRmSpzQ==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhG-z3tuwS4C9Df5I49epE6YKqKgviSr0nwCmGZ3ZV62on5a5GClKbAiZ0SKTn84s-9v7oPKc01lBNJJwxa00XwvR_tGOvxyNocS_ISQRNjdK6ODKbLXtsjq_QiCvHJ5-1PuAZ38jXzfguiQqGFaw4mTEQVhUewg4ebbgaLY_-llaxzeNR034XWedIJk69Su4DAA03TVnjqNudgG_AhM5C-pVg937t",
+      "title": "gundemfethiye.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFn0zzWhB3BImo0iBdBQe58KBXYJm_yDj8WvS0hstlFLzuWJN35hBxuTSO1iVOolmlftlFIzqVPQKvJwN-jyifU-9KAPy8SXPkTvwG8y0lOws4oRJidId432oyPxV92jnHryB479l4aJO7jnr17II-k9QHOLOegG-IKWDg=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS0Q_l-nRkHxdwqZpjyV55_VFvfMQdH03QuLJTeK40iZpfeX5XtxUJKK6fUABQIGUSztmQSi3PAb9fpZGr1KpUKS_zMD5mJJw19eLmxX1iqMcPvNq-ro7wR9LJAC5w35aAIZf_kwtDxV1C1gcej9wnIKW5f-eqEsSwg2k=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-TKnJOTJj-QuuJEp95xb_MbtOZ7KlSD_tpsWd-atYZDnB4Z15Cv6NfImv9vQsolyaaozkx86GGmJvjVPyS3SVDAnKvbMQ1cwpNu5JkHwdHGeu3JKPJRfOmIEe9_P3P9Yvry_xXfsqofJ-AtpCu5QrLqrc-w==",
+      "title": "mvtdev.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyKZZLIQnNoUeexv4Sh8RW-VJi0MfQJSPtO8zZuLPsX6umF_7DlGQKsTO_UL40ByDUih5mw_kh8MAgHvsM0qJ8_OH2sevNgwmYU2vKebKR2SmH7-h5-lDLHEq1ZxrtDrMNThzZkuvK6epQ",
+      "title": "otobusnerede.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkYQoT5I5eYahvpWjfjA0BRgJ8NBewpGdBnAubWJapXh-3by9mxJJOm00XdPE2j4tG23tlJ5nyGdJ7ffGDvE3Xl2083c_HkRltypKCA1GfQZUvkMaBp3EjThoPnO71BKOVdKuUIZaIM3LF2i5g5_jXibNnQbAFw_QeYHTVDvNBahImkkFRDuSty2HeplY_YDEl1KRtwBB4_8-Lxs3w",
+      "title": "moovitapp.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoB2C7Km_ScIokTplGhHhVoae1ilxGb0W6yDi9LeTTNzdAb6D3c4c3H62obWGMwdMBleM3OQJZyTA9ft35ne-QaKo3dflMTt5oTvQd0WgqAWvMKc-3J0V2VOj0Cm8IWZn7BHoFJkgxqWElQlYMSgDOQNUe-fpN1Qa5saY7tvjQoPgujt2MRXR_UX3ClIas09OQpao0zvEEXXLfgFI=",
+      "title": "moovitapp.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2fQISVFnrki8EsGU7qEDcAhgXfo32pVK_dA22Y_nl-2UfVlBG340iIij42pXXWZKo33FDnQtoiU4H-JEvXdUrV0QfbEHJtL0kv9N6QllOPcqaAmD2HhECgF-T0bwL0Qrg0pX7YixDhKS3JDgh3xtvOG1qQ6FHRiqr4XU=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFowEB7bNsFCAF-SAO3qq-Cy681fUG2klGiNXP7nf0NxBYQZYAgu_QdtIOmq25Qyn20motHne1MSxWgwwxFaLhzFmtMg_df-5i0KbTtS4pNv_DpmokY9wJ7dVt56XiOovIJhsxjWbMvENpJUWC2-7IlWhCnFrHEDdvs7cDCOiYK7SY0h8Mnq9DZZwARcIp0lJ8qnJYVA6YbvvcJCQ==",
+      "title": "otobussaatleri.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZIKD62V9-cxXm-yzBAezRQSBKNBJikwdN6-tZIBzpZnJ4NdSAqgAvMucIyCGbIOIPXsGIdLRjUvBlHGsSxVxQpXOo5KFSWZCtUDiBJpwHTrrodJU-SsiiO__lgXth6Cu6cGTxhqbrzGkXorpKZyaT2U_fHg==",
+      "title": "ulasimburada.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbmtfW3kn4XbOoqFq5O6oyB0pSnQl4vEQGTw4_xF5xLvMswF2f2U5-uDlsPMCu5-bK3vmXKvi5krs19fjJAiCNg_voxRi9o1c6xYwsflRBLbbLdFy5E74xr0HB7EFviIK1AR-igy43Qsw6omMClLNuCjU9RzJ0Ikt96AKLI8WdNsxCwbDg",
+      "title": "muttas.com.tr"
+    }
+  ],
+  "grounding_support_count": 12,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "mersinhaber.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfPFXp-eRhr1Il1GlSgQ4Lg3NOy4v_9M7PHhaMKkdsEGTJChyyCJOeOFfe9mmSyIpO1TEv1WBZipt6nx-OTkv0f7i8XWhJpD3y91yenZMyQvHW6hJ4LiqGSQTGIdwB12BiM6uC4xscH66hIlzz78JDvx6gtU6r4JH93tm_Y5w8-_1Vksk07htzz-L2ieumKiRecgiBsS4A4P77c0Iw"
+        }
+      },
+      {
+        "web": {
+          "title": "bodrumgundem.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzfwU3ZV5QdfVlzYS3IUJZU3ugezBJ7VWrMd1KYx7zDc8H7kQQVeu4BgpCDeemiwyTTBl9cM4vrHSunsR6AQGdY0oHcs2KLiPv6UyiNRGHTyEdIE9D4YfhZLQQ-7a1HIb6RhaV217V72KGp29sl-qOFcUJAgUVodxrUBXrtPtmPjjXO2YePIvKtcobE6iiNtgzybFpVUC8XiUELxd9q0sKdZ4="
+        }
+      },
+      {
+        "web": {
+          "title": "egealternatif.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFO-gpMbadfEL3-eYuxOGmfIIQMQYtBj35f-k04vCh9-2hNDdMNfJoc8BjPGC4sMZqXuQ-ySwFfmb9EfZAtScTLgZ4uc76tlpORqvXHrIZDeCsZ0UxTOHl-ss8vPdaKvXCT4K8XsFUiY7Oyslw2S6ZoHGO0-c0r88uYKLzmUE7A4ms4d_xY-DWBj-TCeiR-O3J9drB7"
+        }
+      },
+      {
+        "web": {
+          "title": "hurriyet.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeyd9ZyATy1mEIrVp_eI7C0V03w6G3t_V4CtRtHA4kz1qQNsofYDxgcCmvhT_kluqnXFQgTQch8YghfC3LPRJWqIEIVAibkMIl0qRjhwTOScl-kNsF1FqNs0_hNGM94LDAuNkVwXxqGXPXqZOKOWCCpvTQbO-nSB5zxcRt53bVMIY="
+        }
+      },
+      {
+        "web": {
+          "title": "yozgatmedya.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiqT7_ismCgigBIf5RJpS6YXjgdXM-ekywXFW-8xaE3qMi5ZXqkCwXI1kydoKXN-M09flERgddaI7BieNhWd98tai5g4p4HRyKzFoDyKDvvvRMEDLbfo-SUNRU95jIsa4E0gorlsDaztCyKwSkcHnL9Q8u5-PhXsQlwJ6Bibw14MFpzFXWg3QY3PMtA1s7SIPVIoQlfnG5O3HQTaRHSNtr"
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxQblLd9k5XK0rddD9zySSYSKWW6VMW7XZZj_TH3khgmWypOIqKBiIr5GanFvfyRlJ1rJTsuL_ZLimS2g-AAN1RvoLAymddgO5EPX4ppH60EY9J0EZTJgGrAKmfkhoCp0zap4fhq9N8kGgE9uzNQN3ud03rxL4eCSUsTtLsv8HipZWNTypcWqtLBDac4_Y4B9mOFrxN9fKdnfyQBky2h2l53WHWDInD1DDQHvupdBZ2QcmByQ_"
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2Oi3Cf00Z0d0SiZFJK_WK8OxeGTWIlfjaSB_ezI0sTFqbRqIA3FNX3018YhCXZw8eFZ2xg6x0FoWO_twiSaQlqYOeuYZLFKwVZ25_Xrno9k7zfVPOjv_nTLfKq2LxD2QkdMxD1BPZeQsXpS_kVIhI2316rC5jUwXq2UgP3G0j-NODwVfKRtudcw=="
+        }
+      },
+      {
+        "web": {
+          "title": "ankahaber.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMq6AgKcXYJ50Zlu5-te2wNUvTpDyzrzrpYJxEsvo7VPUi8eN0R48lNCQw_QsVxbrcIj79vlQuii6ugGvjJSxCQN-SURnKB3aWazrqIeAF76etSotQs6hSt_Ht6tajueAionaxOHfmSDt5aNelBX4jog0N0fGEjMNUdNufKBB55Yit5fMY8u0r8vDdlvk_DE5Wsw=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5wdAoEqN4hNY0Y5V4DOmIA3kWXWeDQqxVdAyoq2wG8zVH7PQRQlCB_CT5vTsejC6wEcDRGNeKHsz942cBoTmF-bXqOQJjxPsEPc2r3jHj351Sgoz5yY8r0VIiew9SMgS4qigBE-UIPHEs0QEoygsHGS2zd8lbkXdwrpQMckvtaid4vQ65bN_qqx732fvTMw=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglaturk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbbSmCMTNi_PiC10hH_GN8PFZn5JnrNr_Uf8TRezEW0Xwgme4pKw4pW2AMW7SFpL8yLU118WQxS_MInzJluWHOHxXaXb737V06Ym55KIpRmIAxgD39b_74aaZOkNQsFTkLUtwvkpFJLl9uKDahRVYulyhdrTNjwjX-CHFNGsN3isaEpa-XEPW8Wm1EG4ArNRXEBXzShoEtm9duuPU="
+        }
+      },
+      {
+        "web": {
+          "title": "muglaflash.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMgU_HcsffsOdhCM7juPovq7VRayBfeQXYPsY7G6g0CbGF4tIyScG5SLnH_9JR0Orp41PD5VMRemvATIMIJJ5L1LezlOAFgAZ0OOvi5F3PgwZednZnkL_xzNuqJVL0dkAj-JgX5LVFJNNYAMDU0Of6wnwklixU7vqTUXpxsuikebiVr4sBXehxIQaq4pt-cMvNHJDk"
+        }
+      },
+      {
+        "web": {
+          "title": "ankahaber.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdjxPWNVgBWHgvUSiZt4pbFctV-JaS3Z8FBqzXgFz2uKYmOrPJBCDFq96NOkjRYPmDq7sVb4XSYY5JHV2eGz6-IJ32ZiKAaQwGQ84_cQsedjcqmqmIgHEdQv_5x33VHHXgEBzZZeWfrSkm4EAwhHSeERCoJWW_elobPhfiF1NxMQj5W_aiwl4VKXEvp83cFHcC1jwBSXCLhJp1q03t3GqeeDC2mWSq6NPUwFy1K47i_q5jSpq9_Cp1sd-ZTmkQc2X0MYWXhlA="
+        }
+      },
+      {
+        "web": {
+          "title": "mugladevrim.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGShrkMm80XsQYG6w5wMmkiFJS8ntWCAdC49k8qz-uvVVbE6lNl_g2tKs2QKEwyma-lObSIKw6W-5Vllm4-DjXRgD8ZghdbgI1A5GLzo0jEgfNazwu3SLlTnwiW-kqeiknJRtxPZNI_fyqNJlh6cthuMP1ZQzvH1AlCKQQrE76WMR7YvCtCAetQu5EPGvWd1FGXpK10gwrfw4PPepwu2VTyuQc2rbvgSGUwsprVovj3mYTCvLUezgmFTVnajoq3"
+        }
+      },
+      {
+        "web": {
+          "title": "baskentpostasi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5jLw3SfZd6J1kucPA95VMJ1XxFJ1Suj9A3GRlJ5IT0FBw6OVZh93KtimUl0Q3hUD9YtCMZ8nDgGYzLyjKUiuKGE0XE2JkVRFYi6n6z6DDW4TWKitD93xcAyrItAVgRtRF8zQBAs_VA-SDyzvGRPpfIESmcMvoiWxvGVWOzOQvrVqdW4bf9gxvh2o1LjKpaZpMKXLBP4ce-dXdzEQToTCpENIoGGf-rugQMJhsd8TS7NNQpg=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9-zYUj6mMqOPtsJlTlM2O5uW5F-Dq2YAF-3GrTd4Pd5egZbwar4CGl4HRARlkbM3VSqnNfxZW8rYTUabfmhFLrNVzHJTsTbqmKXESHHv7J5F7oyzvLALFJgvza0iGynfO_g45bE4ufyaR4KKpumS_QT9kujUH2MQmoaBKVqhxhlR6Yp5esHzcVbRn0q221aKW-zylpT80wvgYFT-NZokS-A=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMlpHKjPn3J5XpNVsZq49dH98VPaUnYSNa_hRTViVOsNLzi8_hrLcQAKdY_XcyZxaXLBK1aliIibKbBlAiik84kHFvQxdSGFXRfFpFZdjbKeCiL6hG2msgQuzT3yU5jYA4ohELx2halW43CAX8evfrdXeWhMmpeMHUAIaB9yGwxkK8lx6iNjRiusCNbUvQGErnRIZ43Ic="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTlgQl94yCTUbhvFuCOtVuCvpLwWi-k1GH4lsW-RmC6MxHsBE1xCjVR1gjtsg473zwsodTe7DFUjXPQrjwLf2pQKrXu84ZDJWoM6K708H-ZcTfc2JYtdc8jn8QBeRCZtBIYB6Ao-QsMCpJahIZNmsyGQzZOYR2eVbCw-uqvglhhKeqw_iMTyQa9pKPRmSpzQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "gundemfethiye.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhG-z3tuwS4C9Df5I49epE6YKqKgviSr0nwCmGZ3ZV62on5a5GClKbAiZ0SKTn84s-9v7oPKc01lBNJJwxa00XwvR_tGOvxyNocS_ISQRNjdK6ODKbLXtsjq_QiCvHJ5-1PuAZ38jXzfguiQqGFaw4mTEQVhUewg4ebbgaLY_-llaxzeNR034XWedIJk69Su4DAA03TVnjqNudgG_AhM5C-pVg937t"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFn0zzWhB3BImo0iBdBQe58KBXYJm_yDj8WvS0hstlFLzuWJN35hBxuTSO1iVOolmlftlFIzqVPQKvJwN-jyifU-9KAPy8SXPkTvwG8y0lOws4oRJidId432oyPxV92jnHryB479l4aJO7jnr17II-k9QHOLOegG-IKWDg="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFS0Q_l-nRkHxdwqZpjyV55_VFvfMQdH03QuLJTeK40iZpfeX5XtxUJKK6fUABQIGUSztmQSi3PAb9fpZGr1KpUKS_zMD5mJJw19eLmxX1iqMcPvNq-ro7wR9LJAC5w35aAIZf_kwtDxV1C1gcej9wnIKW5f-eqEsSwg2k="
+        }
+      },
+      {
+        "web": {
+          "title": "mvtdev.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-TKnJOTJj-QuuJEp95xb_MbtOZ7KlSD_tpsWd-atYZDnB4Z15Cv6NfImv9vQsolyaaozkx86GGmJvjVPyS3SVDAnKvbMQ1cwpNu5JkHwdHGeu3JKPJRfOmIEe9_P3P9Yvry_xXfsqofJ-AtpCu5QrLqrc-w=="
+        }
+      },
+      {
+        "web": {
+          "title": "otobusnerede.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyKZZLIQnNoUeexv4Sh8RW-VJi0MfQJSPtO8zZuLPsX6umF_7DlGQKsTO_UL40ByDUih5mw_kh8MAgHvsM0qJ8_OH2sevNgwmYU2vKebKR2SmH7-h5-lDLHEq1ZxrtDrMNThzZkuvK6epQ"
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkYQoT5I5eYahvpWjfjA0BRgJ8NBewpGdBnAubWJapXh-3by9mxJJOm00XdPE2j4tG23tlJ5nyGdJ7ffGDvE3Xl2083c_HkRltypKCA1GfQZUvkMaBp3EjThoPnO71BKOVdKuUIZaIM3LF2i5g5_jXibNnQbAFw_QeYHTVDvNBahImkkFRDuSty2HeplY_YDEl1KRtwBB4_8-Lxs3w"
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoB2C7Km_ScIokTplGhHhVoae1ilxGb0W6yDi9LeTTNzdAb6D3c4c3H62obWGMwdMBleM3OQJZyTA9ft35ne-QaKo3dflMTt5oTvQd0WgqAWvMKc-3J0V2VOj0Cm8IWZn7BHoFJkgxqWElQlYMSgDOQNUe-fpN1Qa5saY7tvjQoPgujt2MRXR_UX3ClIas09OQpao0zvEEXXLfgFI="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2fQISVFnrki8EsGU7qEDcAhgXfo32pVK_dA22Y_nl-2UfVlBG340iIij42pXXWZKo33FDnQtoiU4H-JEvXdUrV0QfbEHJtL0kv9N6QllOPcqaAmD2HhECgF-T0bwL0Qrg0pX7YixDhKS3JDgh3xtvOG1qQ6FHRiqr4XU="
+        }
+      },
+      {
+        "web": {
+          "title": "otobussaatleri.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFowEB7bNsFCAF-SAO3qq-Cy681fUG2klGiNXP7nf0NxBYQZYAgu_QdtIOmq25Qyn20motHne1MSxWgwwxFaLhzFmtMg_df-5i0KbTtS4pNv_DpmokY9wJ7dVt56XiOovIJhsxjWbMvENpJUWC2-7IlWhCnFrHEDdvs7cDCOiYK7SY0h8Mnq9DZZwARcIp0lJ8qnJYVA6YbvvcJCQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "ulasimburada.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZIKD62V9-cxXm-yzBAezRQSBKNBJikwdN6-tZIBzpZnJ4NdSAqgAvMucIyCGbIOIPXsGIdLRjUvBlHGsSxVxQpXOo5KFSWZCtUDiBJpwHTrrodJU-SsiiO__lgXth6Cu6cGTxhqbrzGkXorpKZyaT2U_fHg=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbmtfW3kn4XbOoqFq5O6oyB0pSnQl4vEQGTw4_xF5xLvMswF2f2U5-uDlsPMCu5-bK3vmXKvi5krs19fjJAiCNg_voxRi9o1c6xYwsflRBLbbLdFy5E74xr0HB7EFviIK1AR-igy43Qsw6omMClLNuCjU9RzJ0Ikt96AKLI8WdNsxCwbDg"
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "segment": {
+          "start_index": 265,
+          "end_index": 445,
+          "text": "*   2026-10-26 | yerel haber | Yağış nedeniyle yol çökmesi | Kötekli Mahallesi 472 Sokak ile 428 Sokak kesişimi | güncel durum: devam ediyor (güvenlik önlemleri alındı)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 446,
+          "end_index": 763,
+          "text": "*   2026-08-13 | yerel haber | Kapsamlı yol, altyapı, ulaşım ve kent estetiği projesi (Sıtkı Koçman Caddesi ve çevresi) | Kötekli Mahallesi Sıtkı Koçman Caddesi ve çevresi (3,5 km'lik güzergah) | güncel durum: devam ediyor (15 Eylül hedefi belirtilmiş ancak tamamlandığına dair güncel bilgi yok)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 764,
+          "end_index": 951,
+          "text": "*   2026-06-11 | resmî duyuru (Menteşe Belediyesi) | Altyapı (yağmur suyu ve sulama hatları) ve yol söküm işleri | Kötekli Mahallesi Gençlik Parkı | güncel durum: devam ediyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          11
+        ],
+        "segment": {
+          "start_index": 1286,
+          "end_index": 1339,
+          "text": "etap dere ıslahı ve altyapı imalatları yapıldı)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12
+        ],
+        "segment": {
+          "start_index": 1340,
+          "end_index": 1622,
+          "text": "*   2025-12-11 | yerel haber | Yol ve altyapı çalışmaları (yağmur suyu, içme suyu, kanalizasyon, dere ıslahı, yeşil alan sulama sistemleri, otopark düzenlemeleri) | Kötekli ve Yeniköy Mahalleleri | güncel durum: devam ediyor (Eylül 2026'da tamamlanması hedefleniyor)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 1623,
+          "end_index": 1880,
+          "text": "*   2025-09-22 | yerel haber | Yol ve altyapı çalışmaları (7000 metre yağmursuyu hattı, 6000 metre içme suyu hattı, dere ıslahı, menfez, kaldırım ve asfalt) | Kötekli Mahallesi Sıtkı Koçman Caddesi (2200 metre) | güncel durum: devam ediyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 1881,
+          "end_index": 2131,
+          "text": "*   2025-11-02 | resmî duyuru (MUTTAŞ) | Yol ve altyapı çalışmaları (3700 metre sıcak asfalt, 7000 metre yağmursuyu hattı, 6000 metre içme suyu hattı, dere ıslahı, menfez) | Kötekli ve Yeniköy Mahalleleri | güncel durum: devam ediyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15,
+          16,
+          17
+        ],
+        "segment": {
+          "start_index": 2173,
+          "end_index": 2441,
+          "text": "*   2026-10-02 | resmî duyuru (MUTTAŞ) | Güzergah düzenlemesi (öğrencilerin yurtlardan toplu taşıma duraklarına ulaşımını kolaylaştırmak için) | Kötekli Mahallesi yurtlar bölgesi | güncel durum: tamamlandı (seferler 08.00-23.00 arası devam ediyor)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 2442,
+          "end_index": 2631,
+          "text": "*   2026-09-18 | resmî duyuru (MUTTAŞ) | Yol çalışması nedeniyle giriş yapılamaması | 1-62 hattı (Kısmet Sitesi olarak belirtilen sefer saatlerinde) | güncel durum: devam ediyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "segment": {
+          "start_index": 2771,
+          "end_index": 2887,
+          "text": "Güzergah üzerinde Kötekli Pazaryeri, Sosyal Park, Kötekli Muhtarlık, Kötekli Migros durakları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "segment": {
+          "start_index": 3009,
+          "end_index": 3146,
+          "text": "Güzergah üzerinde Kötekli Migros, Kötekli Muhtarlık, Sosyal Park, Yoğurtçu Parkı, Gençlik Parkı, KYK durakları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19,
+          24,
+          20,
+          25,
+          21,
+          22,
+          26,
+          23,
+          27
+        ],
+        "segment": {
+          "start_index": 4430,
+          "end_index": 4492,
+          "text": "Mevcut kaynaklarda sadece güzergah bilgileri yer almaktadır."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGi-c7LHM0tZQUrCej69Kd9DB2bDpURH7awob7npTnXhQx7I9dCL9Q28BSZEu3NScqwL7l0qVWNYLktg8Plnaej4dGCENDVPVOWB1rAF3980X6DtrtgxjFmlmyi1zPQacGo0aHmTjIkX2y7-qQWg_enzxwpErMo753RBq6AnXapPBhmJC6UvIvkGJ3PmtU7aZgW2PZb2n9pCqBJw57RBL08Di2Gmflt-PfQqLL4oMXwxtQBnzQQfYFkeoJ5a-P3BEEbmN0S\">Kötekli Menteşe Muğla güncel yol durumu 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNIUxlrgczzyGFUTw8vUR5zcJ6pq3zYKGIS9S8CNi6kwB6Du0ulCH0cc0WYVfj_N_lHDsEpSApsvojt2ToGzTQ0szmUUasznNqFL3DQjcgZdffgteACEoHL3Yxq9hIuQWW_VYN-HothKHp0G8eq3oCE_EdoGkbCmBSknTMZDPMfb5Qh-JmZiZ8QE6Mw0j97-i7G1ov186QuNjzMnXgXDkjw39IMXQUZBvAtV_wPl06yd9s5zIX4IYl7LiyikIqxBqmtQyAH5XKKb4gB7oOGve86VGjLwM=\">Kötekli 1-65 otobüs güzergahı değişikliği 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDl3H13OyqzT3Xqi4w3m62mPplrzY3LLQ6bMkH2V5WoqMTBN7lYnydDfd8ERxcRvUbwO5_XzxniBdhrfhR2PGPjExjaYOg1E7rX0aLOM7Ivdv3lKUbszrxUocWNXIdnxkHaA4S_zJoZOETm3s-cwVu84SsVJNL8M1FKtJRRPiQZ_1QBkGDTfeMooyli-yxubVxIRPP6bpfexCUaXs2scye61-XKY5XXnnDUowEWDiEEGCE5FcpSFl41f8jPUVZXa4XjnuNftYgR_mxZ-Ln\">MUSKİ Kötekli altyapı çalışmaları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp0bIXZ9iqtLVip45hwIMDVj_i21o93qynz-ul4RQin1BvmpfHEPNrX5H4Er3Ug89fWx23_6dkju1gxMKlapoQygPojwvv60qSICRUnYnIWnGRtKcBXX1Di9en1IDXpY7CQY4-QcwLTu08w-HPy9_NrPEeOyH8aJnyK99mRqLkH2fiIUStLNRyUTyujNiQiR2m0_LwQg0c9ds3Ni0-EkvIAsDq-n12CSxY8UQgnSWNdOHrWSsaIG8Ug4jSw3Rna9dFQiHy231-oUA=\">Kötekli otobüs durakları taşınması 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF62ehnwUhsxoXY50NRC7nHhJmxzWI8tf_iKWrRLIpJEkMBrg8L6xgi7Io_FCtv_UTS4Tiuz_ymj5qQWL80BdE3eSIPw6Kpjd1prLJDVxZJ4Oj92qNVeB0tlB-6rMbd595_OFBgwJDPZarbG3VWhQq52W6j1kkXpV06JnLXU_wV8AP0TpT-nmBngOzl_-pFQQKT4SKuKt9_BzrHrqlQMxxBe3cx-BK_wgKiEwCXd90T0GXsvy5s-UTeN64Oxvqa04PXbvP4VYZ8yBZXazd2qTULHw==\">Menteşe Belediyesi Kötekli yol çalışmaları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1braOhozNTlvlEYBsdvKBWtTfQ3h80bu8TlyNrsrLFpV-SAy3SAH9raxA7H3Knd7xuy9lL-eob_3V4XIRE-uGrj7rC8ogCqI8U37jbH2dXWPZ0_pfx7m-b5mL4rG5x7tmdAtFKO_z0SGfh6OYHTQFl58_kjTat32bvswH1bHFvezViOcQE60bQvNf_XIvHuvHd3TVzJGjwQS3JCGi2BMYVbv1dB1tUHmd6jvVI0zYnn9yl3vpt2fqVUpguOID59Gy7LBqVLT5sTGj3zJ4NnMW3LnvuMTtVn7_PTpJBdS5qsGmYtHYw3pMgg==\">Muğla Büyükşehir Belediyesi Kötekli yol çalışmaları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyCEvBtc0FH2tgf6a332jJcXEEV4gXb7Stzz7FkuoE_Mgz4kx3m1yIdZ89ibso8GnqRg3L8Kv1-OOTN1nb2cqtiACTG8UiUMHHdpxFI1S7VQ5vywnDodzmq_UBVLiFEl5NUBLfDQDX3DQ1y0c0OwRPhecYSPPqqTQcKQKPunNcaaR_UdwFX_ZCeJU2hLqWFlxx4c-CNq7DfgboAK51FGRoFPhSn7i58S2gBqjBW0wY9Qd92dECEUOc2LmBNNEkoB39aU-cmJIirbG31JRY5YBZoCxUC2DafyG-PMHAHAikAPxQfHTvxX8zHAFWARKEmyV_YbBYrp2O1Ji4Zq2JKE1bZBpQoVKTJMg05308OVV35NYdMTU=\">28 Ekim 2026 Kötekli Menteşe Muğla devam eden altyapı yol çalışmaları otobüs güzergahları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRhMNk_7rdbbA1FbTkC17KYC8j7Dgap2jz77UsgfaaH5UhBQJULBHHMnyxC0yQ27JaMr7E2sr4oSv3uY2jfgEyQjAcN31hvUOD6JrrR0Mmg8YrL78ODAtARWlE7hB76AVpZFt9xAgIhz2dbp_ggmcX249RPUZNGyvKLkeATBRwdQymAoQgPVw7WWLcK9mO-9CGMO56vE5CA4147svEI83it8bMSMMWuKdAtzTEvSYVpq8PC1yZZoboFcUHPP3eDr4J0mwcWMkzQH59cPbGxxQmJEbO_A==\">MUTTAŞ Kötekli otobüs güzergah değişiklikleri 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4WPtnsyswG_Gz4937oPbKRU_stZlbn0H35zTYTz_fiN1EfLmYn7JvFWeUwZJU33m0VT6b69F-gTyZfk1FTofAIAvl44dIJRaejcSJwjkv48bjXeJZcqgmuXPAUY_3zaYfAYfP4cynChMzMcGmF1WDZZVkfMYPVBzxbzLaS7XNQLmjOg4rDRB81UBwTkYX7zQKDF9YUxevCiilTEKSAGwJSnq8Hd0tpjT_hH64pCj72YB-c72XQOpU3E_9-1Hvxlb_lCAFAHX95Vp5lT_jYKcbuDPITag=\">Kötekli 1-66 otobüs güzergahı değişikliği 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNX3q36S_SJhEe5Fi-DCVjVv6VxweHqKlySq5dJHoL8swqYqSEDAa257MznRqBAdAtyW9_xW-KDTam-7WaKMFAa9B_fvefpRgQo4LhnAadfOcTtxjYwlfKHXvYMhdySgFAYjURd1JfM57mC9WpT_Lfwq24w6Fd4Lfozu-glFPqjQruskQnsY0n3WubgIifaCkRd-ycT5fP-7R5m5z71tees5nAKH2hQBkZ0Ue5pJsVNWwvKx9cQjyv3x_0rKfcOfc_XKYXBqkU840I5BieAe9paKhpoNQ=\">Kötekli 1-62 otobüs güzergahı değişikliği 2026</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "28 Ekim 2026 Kötekli Menteşe Muğla devam eden altyapı yol çalışmaları otobüs güzergahları",
+      "Muğla Büyükşehir Belediyesi Kötekli yol çalışmaları 2026",
+      "MUSKİ Kötekli altyapı çalışmaları 2026",
+      "Menteşe Belediyesi Kötekli yol çalışmaları 2026",
+      "MUTTAŞ Kötekli otobüs güzergah değişiklikleri 2026",
+      "Kötekli 1-62 otobüs güzergahı değişikliği 2026",
+      "Kötekli 1-65 otobüs güzergahı değişikliği 2026",
+      "Kötekli 1-66 otobüs güzergahı değişikliği 2026",
+      "Kötekli Menteşe Muğla güncel yol durumu 2026",
+      "Kötekli otobüs durakları taşınması 2026"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1682,
+    "prompt_token_count": 350,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 350
+      }
+    ],
+    "tool_use_prompt_token_count": 577,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 577
+      }
+    ],
+    "total_token_count": 2609
+  },
+  "text": "Muğla'nın Menteşe ilçesine bağlı Kötekli Mahallesi'nde 28 Ekim 2026 itibarıyla devam eden altyapı ve yol çalışmaları ile bunların otobüs güzergahlarına etkileri aşağıda listelenmiştir:\n\n**Devam Eden Altyapı/Yol Çalışmaları ve Etkileri:**\n\n*   2026-10-26 | yerel haber | Yağış nedeniyle yol çökmesi | Kötekli Mahallesi 472 Sokak ile 428 Sokak kesişimi | güncel durum: devam ediyor (güvenlik önlemleri alındı)\n*   2026-08-13 | yerel haber | Kapsamlı yol, altyapı, ulaşım ve kent estetiği projesi (Sıtkı Koçman Caddesi ve çevresi) | Kötekli Mahallesi Sıtkı Koçman Caddesi ve çevresi (3,5 km'lik güzergah) | güncel durum: devam ediyor (15 Eylül hedefi belirtilmiş ancak tamamlandığına dair güncel bilgi yok)\n*   2026-06-11 | resmî duyuru (Menteşe Belediyesi) | Altyapı (yağmur suyu ve sulama hatları) ve yol söküm işleri | Kötekli Mahallesi Gençlik Parkı | güncel durum: devam ediyor\n*   2026-02-16 | yerel haber | Yol ve altyapı projesi (5 etaplı, 3700 metre sıcak asfalt, 8000 metre içme suyu hattı, 7000 metre yağmursuyu hattı, dere ıslahı) | Kötekli Mahallesi Sıtkı Koçman Caddesi (2200 metre) | güncel durum: devam ediyor (1. etap asfalt çalışmaları başladı, 2. etap su deposu tamamlandı, 5. etap dere ıslahı ve altyapı imalatları yapıldı)\n*   2025-12-11 | yerel haber | Yol ve altyapı çalışmaları (yağmur suyu, içme suyu, kanalizasyon, dere ıslahı, yeşil alan sulama sistemleri, otopark düzenlemeleri) | Kötekli ve Yeniköy Mahalleleri | güncel durum: devam ediyor (Eylül 2026'da tamamlanması hedefleniyor)\n*   2025-09-22 | yerel haber | Yol ve altyapı çalışmaları (7000 metre yağmursuyu hattı, 6000 metre içme suyu hattı, dere ıslahı, menfez, kaldırım ve asfalt) | Kötekli Mahallesi Sıtkı Koçman Caddesi (2200 metre) | güncel durum: devam ediyor\n*   2025-11-02 | resmî duyuru (MUTTAŞ) | Yol ve altyapı çalışmaları (3700 metre sıcak asfalt, 7000 metre yağmursuyu hattı, 6000 metre içme suyu hattı, dere ıslahı, menfez) | Kötekli ve Yeniköy Mahalleleri | güncel durum: devam ediyor\n\n**Otobüs Güzergahlarına Etkileri:**\n\n*   2026-10-02 | resmî duyuru (MUTTAŞ) | Güzergah düzenlemesi (öğrencilerin yurtlardan toplu taşıma duraklarına ulaşımını kolaylaştırmak için) | Kötekli Mahallesi yurtlar bölgesi | güncel durum: tamamlandı (seferler 08.00-23.00 arası devam ediyor)\n*   2026-09-18 | resmî duyuru (MUTTAŞ) | Yol çalışması nedeniyle giriş yapılamaması | 1-62 hattı (Kısmet Sitesi olarak belirtilen sefer saatlerinde) | güncel durum: devam ediyor\n*   Bilinmiyor | resmî duyuru (MUTTAŞ) | 1-65 hattı (Menteşe Otogar - Tıp Fakültesi - Yeniköy) | etkilenen hat/durak/yol: Belirsiz. Güzergah üzerinde Kötekli Pazaryeri, Sosyal Park, Kötekli Muhtarlık, Kötekli Migros durakları bulunmaktadır.\n*   Bilinmiyor | resmî duyuru (MUTTAŞ) | 1-66 hattı (Menteşe Otogar - Yeniköy) | etkilenen hat/durak/yol: Belirsiz. Güzergah üzerinde Kötekli Migros, Kötekli Muhtarlık, Sosyal Park, Yoğurtçu Parkı, Gençlik Parkı, KYK durakları bulunmaktadır.\n\n**Bugünkü Durumu Doğrulanamayan Hususlar:**\n\n*   Kötekli Mahallesi 472 Sokak ile 428 Sokak kesişimindeki yol çökmesinin otobüs güzergahlarına doğrudan bir etkisi olup olmadığı.\n*   Muğla Büyükşehir Belediyesi Fen İşleri Dairesi Başkanlığı tarafından yürütülen kapsamlı yol, altyapı, ulaşım ve kent estetiği projesinin (Sıtkı Koçman Caddesi ve çevresi) 15 Eylül hedefinin gerçekleşip gerçekleşmediği ve otobüs güzergahlarına olan güncel etkileri.\n*   Menteşe Belediyesi'nin Kötekli Mahallesi Gençlik Parkı'ndaki altyapı (yağmur suyu ve sulama hatları) ve yol söküm işlerinin otobüs güzergahlarına olan güncel etkileri.\n*   Muğla Büyükşehir Belediyesi tarafından Kötekli ve Yeniköy mahallelerinde hayata geçirilen 5 etaplı yol ve altyapı projesinin otobüs güzergahlarına olan güncel etkileri.\n*   Muğla Büyükşehir Belediyesi Genel Sekreteri Tayfun Yılmaz'ın bahsettiği Kötekli ve Yeniköy mahallelerindeki yol ve altyapı çalışmalarının Eylül 2026'da tamamlanıp tamamlanmadığı ve otobüs güzergahlarına olan güncel etkileri.\n*   1-65 ve 1-66 numaralı otobüs hatları için Kötekli'deki altyapı/yol çalışmalarından kaynaklanan spesifik sapma, iptal veya taşınan durak bilgileri. Mevcut kaynaklarda sadece güzergah bilgileri yer almaktadır."
+}

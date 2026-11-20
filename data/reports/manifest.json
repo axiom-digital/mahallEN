@@ -1,0 +1,71 @@
+{
+  "version": "2.0",
+  "asOf": "2026-10-28",
+  "reports": [
+    {
+      "id": "kotekli",
+      "file": "kotekli.json",
+      "coverage": {
+        "datedRents": 7,
+        "rentCandidates": 8,
+        "routes": 4,
+        "venues": 44,
+        "mappedVenues": 12,
+        "events": 8
+      },
+      "sha256": "43ef4dbbe61a77e4dd5cea523608dd00faf394cd2608795480f2528f4cae473a"
+    },
+    {
+      "id": "emirbeyazit",
+      "file": "emirbeyazit.json",
+      "coverage": {
+        "datedRents": 0,
+        "rentCandidates": 19,
+        "routes": 7,
+        "venues": 138,
+        "mappedVenues": 117,
+        "events": 5
+      },
+      "sha256": "e129b2e61137a32fa9e4569b5892183d47d5f4f6d2d58aae1d6bedee3de0b4fd"
+    },
+    {
+      "id": "muslihittin",
+      "file": "muslihittin.json",
+      "coverage": {
+        "datedRents": 3,
+        "rentCandidates": 12,
+        "routes": 3,
+        "venues": 106,
+        "mappedVenues": 85,
+        "events": 6
+      },
+      "sha256": "b678f0a639ea671602cdd59c9a01383f86a2981c85c18d0492a471c0994799c8"
+    },
+    {
+      "id": "orhaniye",
+      "file": "orhaniye.json",
+      "coverage": {
+        "datedRents": 4,
+        "rentCandidates": 8,
+        "routes": 1,
+        "venues": 139,
+        "mappedVenues": 126,
+        "events": 3
+      },
+      "sha256": "62e6c5db7b4d0e0b5c78f011d19ab389444d0b23152f2c252973e9b90c748136"
+    },
+    {
+      "id": "akyaka",
+      "file": "akyaka.json",
+      "coverage": {
+        "datedRents": 2,
+        "rentCandidates": 10,
+        "routes": 3,
+        "venues": 85,
+        "mappedVenues": 59,
+        "events": 3
+      },
+      "sha256": "43a9c27ac0b06eaad0c1c3d7812e7b7e641ba84da7ed83234ef1e7f83b34f8b9"
+    }
+  ]
+}

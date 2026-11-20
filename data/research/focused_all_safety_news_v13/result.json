@@ -1,0 +1,546 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "kotekli",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-3",
+  "started_at": "2026-10-28T20:14:52.692396+00:00",
+  "finished_at": "2026-10-28T20:15:04.424816+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Kötekli Mahallesi son 12 ay olayları",
+    "Kötekli Mahallesi güncel gelişmeler",
+    "Emirbeyazıt Mahallesi son 12 ay olayları",
+    "Emirbeyazıt Mahallesi güncel gelişmeler",
+    "Muslihittin Mahallesi son 12 ay olayları",
+    "Muslihittin Mahallesi güncel gelişmeler",
+    "Orhaniye Mahallesi son 12 ay olayları",
+    "Orhaniye Mahallesi güncel gelişmeler",
+    "Akyaka Mahallesi son 12 ay olayları",
+    "Akyaka Mahallesi güncel gelişmeler"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcNDpbiomXTIWjitAsE3ZB8PhVEFNK7fg8gg3VqRyRuYlaVfYeJHLkmhiNDNOtk1kLBAXM-tfwnhrocbGuoZTxvBvb3KYSi_xzW2k7uZRvHsztGU1H7G-s-9a2wxp5ryca00AvraXmUienWQlFxjqu6_HS6e-LC4B-ieMcPMh-w_FNlbkfs77HNMOB01e9zrlEIq5B8dlK_id6VtOlISLM7_m2t5tknSS1ob3mPbD_94aAwJAJZLcZjtZvQggkmumR",
+      "title": "haberturk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4aR7_r-l2bE8TKKVAH4De4t415LRseKNjgpgcuvReNr_nOaBK_PAqJ0vCjl-d43OrJ91uYygiCYkAa20ecBh3mxy0Wdn0j36ILtmaGae4yqwudZXBurJMHhYARkCH5niOfR3cAVB6mJlyjPtv_CEaOzoD83YdRl9iqJxd3VGZarxi-LeeVumFU1Ra9MaOHECnv4DYLw0cmXEu6-s-rnw=",
+      "title": "haberler.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH48U0HDIz24L3WOtUmAhthnw7Kr5RNHSS2-ljMtcHRgP5AC__rjOaNQJLOfkhN3Q0sl7ZWUFgGva2YykRyNc6OQGYVWM96YRkj1YWKxiHkJ8Wydokf2mKDoXzXvh0auehqhtHR8uQByJSG2Hw1bsMOwAEw-MfKn3NnBLh6jND-seqnizpewRLLkwbG2XkQYt13Lh5QH_tfpFWerA==",
+      "title": "sondakika.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqfwUzxn8TNMNvzbntHW8lPe-CFhJL0GxzuqM0R0W1m7h7fBgvhJLAHwgz44OU6RP2L5oFiTQcckRScZ-r9y0XHPZPzRZDOkUYMyf63q-WfxAJbAIXFdEa5lY-1YUeHuephNb9-7j5qAfOkfSYaqc3KVhdbaiqK5KavzCCygIQtQBcHNWvjPj0BBlgnJNUp7GhYYSaagTm_hfoJ8M6zA==",
+      "title": "sondakika.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1rI3eDsJlcY01dk2Dbs_-dbY-sIayrTVssVK5LFDc-Nsg4J1RrC31GXUJmQi2406gp6dv9l8TJaigDOuf5364COX5ZVdEBLAdu5OJ6QH0E8-GLRthA8zG3O0cNcpRrJigh4VJ7Z-aMn0F69h2wg9p4qDawxLKCAlLat2Np8WKxyRaJsLysnhzhdUe1UZFCwdLMBd0dg==",
+      "title": "dha.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5GJKxT1-zOMTfx0VTZQrw-6JQj6J_C-AWoEF90SNN7QmWp7uhiO7umxMNqRNPK_IYN4G_en25v9qv_KKMo9yuSYw84UVjaRFWodPsduu61wNj5UZnD5okAnboUf0WiUdDjIOEKQpTWFIsQFJ6r93EdpJZp-PR05Hb205hc8Ii4VamwcpBzK5PkYmGQVOhSkPaiUKN-xkfBBbKe16Z",
+      "title": "marmarismanset.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH39AI4KFdfv1HuIIPTJGVMvcHKYf4gDkVEE1r4OWdlwWC_lPSWiw32SVZmJmUC1MfI5-t2ShF_QZMKgyNbTg-gJ-ewJvNap8FbZLba3EWVaMqJeU6TLJ-la4z-rjs3o-RCOOUZ1P2kkDzVLgqzbbmT5FOJPRkvv0uOfHywuojYvsOTPQXlcXJsJhUF5Ho2MQ72klAYVlEO4A==",
+      "title": "bodrumgundem.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGrGcJnPhNX9VBbQUh2lB2Xab4DwOm9b-Q-Kp9vc5EIIiGeDU42ua-3PBFU_DSOSCUDzitgTYkvG3msXaBQmXl1EkMFTCZiUduRRQNbJ5VGTnfjhcQJ0HPozAjHu17w_3N-kUGwuCL6x9iKAUEvQUSBCz6IjGMZ559zNmNdYnV5uI9J-KupUdrmKW_bO7L_1pwyZ77iOc2dR-kgXRWCDc=",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHx5aB_oJUGixj61cyar6LJFi7gUmSKZ4_DhfNKXbxe7SCJoCpAZTR2bnOdxCDiuyNxaBDebvuvp3MwLMmOTxM-lAshRzC6EE0lmm6aEgKNFhKUWPonXScWk7nl3MclzMZXLqvqcqfKRj0cbBJx6zz4sf4teycHftacBJCrbYzWcbfLBJ3008x54Xk7UsvMRgjXD1q285_sNfZ2IIOJrw==",
+      "title": "koycegiz-haber.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG87dVY3VVcGKrjt5yXww8vur1KEBFuhHPfKM25bq5VWrmXvjwFqcB8B4xJ8MCx1rkKbzhfzdtAlfFkC_-CQLLyGPv9eDBlDKntiWACDdB6dpYXkIhmqRUdnNGl0jeRg2R2Y-h3CUxym-1vXk-woqsbzyGuYFT8dHUS1podguYzYoeCvIDwsXXs2wadxtGsIp1YB7BqrRH3dRqBnT9b_Mmch58r6vr2C3XM",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmP3J-aVb8jf5bWklwrRbn1OGO1Mhb-U2wrCySxbTcgMgu7G8zuKSAlx-iyffFCxJ_WXj0hT5llf0tQTj9AAmZK2sJuYIGEB66OMb0Xnf4_6gn-TzpLR3QlIkOuvw0wU3RQ_XfcUBxxswYpiQyK9rrKKiCcpClCYUEIwSig6Sd",
+      "title": "nobetcigazete.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG39i4v9lZ2Zm8Gv4wf_GYOIwrCdG01iCczOY5ZD-wzfjiB2inDMcjfGygZWz3mYVWlX1B3urrvVS7G69Z2qR0Xscn5HEFJWTox--cHkLOqLadEjxVZ8XOXrNi1Z0lz-DjDYyHx5v0vXpjClpwJ0aiewps0ZETpq_a-RHpY3BVoPE4W32Le3lZb5Xt3sBJ2IMGE-X0WM0tDV2LBkTpnFoO3beE2GoKDnThQp4CwU8MUZxc_Vjr6JjTs",
+      "title": "haberturk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH218rSbkcnvViE0khYv5lMBncxA64Dg0z77YJNOupzw_-5XyKZI42A72X5Ou2N968Ud-Wh-RZ6BAQ5tQBoSpslREHVOCisM7a_M6B2lgEsNtjdX_V-Ji7Ve9Mvb5R3y90e-jn-u7RvbUzhJDs3b1D4UjTqFG9ezLk4jpg15ePaDa1_uaOdsKoIcHoUVAw_ZeDlZe3qoXCW_g==",
+      "title": "mugladevrim.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUuqm-QFaasGbDXqoR7zNlVbGhq_7SrY_LciB7ZhGt3_MCppQJCSJ60R5t72ZqKizu8PccsGBj8-UvoXbRdn2sMiA8oattL0QOAF0OwHW9yNIklT_wxq5v2h6eWJoHBDhomf4=",
+      "title": "instagram.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv3xIabDorJz1BWFGm7VByinoKX0TUJuAK0rudX7gdqfW_PoT0uBnE_3YQLsGDOnhfKLbVwckkSglgBQtdxiq33OLHb97ZhyJn-j48832JU8w6WHipu1PfgnjRqPj-hqwmkhTJChPTE3nba6MruwElTZLcwbVjN-ej9bZf8ZiRAcaexLj6hyZ6y_uk_Q==",
+      "title": "istekocaeli.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9Z1rh4vjQQDIK4RhcrS7ExRRvEVrT_fr3i4MMWIowBYAx2-YYrpD8JsYFRSEZHRiIqfRy3xt6-RfBWkhInnR6bft5QvxK3id8dyWD7Y59k15Vmj3zJiv55tHWjNGnGWF3M0MnDpKYAEhfHnJEAUlatUFChHFuRb6FhcFF_yVTMzPmJB0tv6lmqacDOyyT0wJ-8biHNpQJMFC-lI4aW3MZ0SmaeeItjA==",
+      "title": "sehirmedya.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBrpHa03idT2R6RzYkA1HXVZvAA9OeVqtYjj8j3CuWayuLIDiKL88JsEmQ0vSS57NNhpu7ib6dy2W9zokj1dIwaV4S-TItycunGyhp6ht7HPXeIopSqps4r6rTJ5IWsJXkPbt-2Xkum40uhiyaphiaDntoP85r6eTSFqv4qnpAUUBJ0PMZTvHAKD1Nwj99oM0m40JeWVH9GruJ",
+      "title": "bizimgazete.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwRP4xk4uqHF98jNbIYn82MVi1qZ9hYck0jXLmKmOTKB9N4BaNGiRKl40VDAEjK8sx0RJtyylkn0bYo5x2FYMR9_XkMH7cVvRKRvpb8eYflfhvpcOeVzvtoMSZQV5o",
+      "title": "sondakika.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6KeBUXvGf4b8vDYO5nKgVAAGHeGSZ6_afuDXWCgpGY8fKOml0FH9n4AWLBYqSHD1AbiMcD4aEZGj3LZtBHX4iNpjSk4xwMMiXHdmtdqSvTyP7hqe-a1dZdVSw==",
+      "title": "sondakika.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFveRvBBIzfz52c2wkwxSZjyJ1C2buXX5pvmQ49Gk98nY3DwUn6yKtEqD2p4RqnquQX_uiH9XK8wau-EhFCAsQOz1sq1YZpI8kRn_trsfWYEksY2ygjD4ikNkhylgtuwnMpQ8TH8hPrDGRCEb-9r-UCqhVjIQZ87yR99wIl4hHB7DhygE_KsvwpQGUsbiT8LOc=",
+      "title": "odatv.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBZJbtgBWbZoYE835Tty6gCSc8F91UDULJCAKEY6YVLoO7pGaalGmpiAsm_QjzIanpoYHXnrbrJF9m4dmRpuV7lqCUE6HmFT_fKbLCaY2_SzWnLVU5yFs0dKIAcQlH68GcvZIb_6I=",
+      "title": "youtube.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp47FJcbvJUdc1ZN5JANFzvUT1FuEqR68J0Ow9usLttLvuu4j920Xj6BaIaVPFzD7eEsrBL8mVLRF7McBWPpcksC7rBLD8melYoO4hbV7z1ytUAwqjwn_GWnmxrrGt2ppGPGXo9Zx0I-ahlHbprtinRQ2EqCOzG-FfS0ik7g==",
+      "title": "ankahaber.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXc1KkKd6ClSpDNaBYVAHpoyg2Z3S8PuHWgOZ3yPHi9VMvX-eStDW1rY4TrKEWaY80g5jqCFEgqacHEDyOR1jxadE5Y95SmWGOC2Xe_LVM1JqnWSqzvqwnO35bqakOlDUF5O8f0JrShzcb_nHUJg==",
+      "title": "egedesonsoz.com"
+    }
+  ],
+  "grounding_support_count": 24,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "haberturk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcNDpbiomXTIWjitAsE3ZB8PhVEFNK7fg8gg3VqRyRuYlaVfYeJHLkmhiNDNOtk1kLBAXM-tfwnhrocbGuoZTxvBvb3KYSi_xzW2k7uZRvHsztGU1H7G-s-9a2wxp5ryca00AvraXmUienWQlFxjqu6_HS6e-LC4B-ieMcPMh-w_FNlbkfs77HNMOB01e9zrlEIq5B8dlK_id6VtOlISLM7_m2t5tknSS1ob3mPbD_94aAwJAJZLcZjtZvQggkmumR"
+        }
+      },
+      {
+        "web": {
+          "title": "haberler.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4aR7_r-l2bE8TKKVAH4De4t415LRseKNjgpgcuvReNr_nOaBK_PAqJ0vCjl-d43OrJ91uYygiCYkAa20ecBh3mxy0Wdn0j36ILtmaGae4yqwudZXBurJMHhYARkCH5niOfR3cAVB6mJlyjPtv_CEaOzoD83YdRl9iqJxd3VGZarxi-LeeVumFU1Ra9MaOHECnv4DYLw0cmXEu6-s-rnw="
+        }
+      },
+      {
+        "web": {
+          "title": "sondakika.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH48U0HDIz24L3WOtUmAhthnw7Kr5RNHSS2-ljMtcHRgP5AC__rjOaNQJLOfkhN3Q0sl7ZWUFgGva2YykRyNc6OQGYVWM96YRkj1YWKxiHkJ8Wydokf2mKDoXzXvh0auehqhtHR8uQByJSG2Hw1bsMOwAEw-MfKn3NnBLh6jND-seqnizpewRLLkwbG2XkQYt13Lh5QH_tfpFWerA=="
+        }
+      },
+      {
+        "web": {
+          "title": "sondakika.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqfwUzxn8TNMNvzbntHW8lPe-CFhJL0GxzuqM0R0W1m7h7fBgvhJLAHwgz44OU6RP2L5oFiTQcckRScZ-r9y0XHPZPzRZDOkUYMyf63q-WfxAJbAIXFdEa5lY-1YUeHuephNb9-7j5qAfOkfSYaqc3KVhdbaiqK5KavzCCygIQtQBcHNWvjPj0BBlgnJNUp7GhYYSaagTm_hfoJ8M6zA=="
+        }
+      },
+      {
+        "web": {
+          "title": "dha.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1rI3eDsJlcY01dk2Dbs_-dbY-sIayrTVssVK5LFDc-Nsg4J1RrC31GXUJmQi2406gp6dv9l8TJaigDOuf5364COX5ZVdEBLAdu5OJ6QH0E8-GLRthA8zG3O0cNcpRrJigh4VJ7Z-aMn0F69h2wg9p4qDawxLKCAlLat2Np8WKxyRaJsLysnhzhdUe1UZFCwdLMBd0dg=="
+        }
+      },
+      {
+        "web": {
+          "title": "marmarismanset.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5GJKxT1-zOMTfx0VTZQrw-6JQj6J_C-AWoEF90SNN7QmWp7uhiO7umxMNqRNPK_IYN4G_en25v9qv_KKMo9yuSYw84UVjaRFWodPsduu61wNj5UZnD5okAnboUf0WiUdDjIOEKQpTWFIsQFJ6r93EdpJZp-PR05Hb205hc8Ii4VamwcpBzK5PkYmGQVOhSkPaiUKN-xkfBBbKe16Z"
+        }
+      },
+      {
+        "web": {
+          "title": "bodrumgundem.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH39AI4KFdfv1HuIIPTJGVMvcHKYf4gDkVEE1r4OWdlwWC_lPSWiw32SVZmJmUC1MfI5-t2ShF_QZMKgyNbTg-gJ-ewJvNap8FbZLba3EWVaMqJeU6TLJ-la4z-rjs3o-RCOOUZ1P2kkDzVLgqzbbmT5FOJPRkvv0uOfHywuojYvsOTPQXlcXJsJhUF5Ho2MQ72klAYVlEO4A=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGrGcJnPhNX9VBbQUh2lB2Xab4DwOm9b-Q-Kp9vc5EIIiGeDU42ua-3PBFU_DSOSCUDzitgTYkvG3msXaBQmXl1EkMFTCZiUduRRQNbJ5VGTnfjhcQJ0HPozAjHu17w_3N-kUGwuCL6x9iKAUEvQUSBCz6IjGMZ559zNmNdYnV5uI9J-KupUdrmKW_bO7L_1pwyZ77iOc2dR-kgXRWCDc="
+        }
+      },
+      {
+        "web": {
+          "title": "koycegiz-haber.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHx5aB_oJUGixj61cyar6LJFi7gUmSKZ4_DhfNKXbxe7SCJoCpAZTR2bnOdxCDiuyNxaBDebvuvp3MwLMmOTxM-lAshRzC6EE0lmm6aEgKNFhKUWPonXScWk7nl3MclzMZXLqvqcqfKRj0cbBJx6zz4sf4teycHftacBJCrbYzWcbfLBJ3008x54Xk7UsvMRgjXD1q285_sNfZ2IIOJrw=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG87dVY3VVcGKrjt5yXww8vur1KEBFuhHPfKM25bq5VWrmXvjwFqcB8B4xJ8MCx1rkKbzhfzdtAlfFkC_-CQLLyGPv9eDBlDKntiWACDdB6dpYXkIhmqRUdnNGl0jeRg2R2Y-h3CUxym-1vXk-woqsbzyGuYFT8dHUS1podguYzYoeCvIDwsXXs2wadxtGsIp1YB7BqrRH3dRqBnT9b_Mmch58r6vr2C3XM"
+        }
+      },
+      {
+        "web": {
+          "title": "nobetcigazete.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmP3J-aVb8jf5bWklwrRbn1OGO1Mhb-U2wrCySxbTcgMgu7G8zuKSAlx-iyffFCxJ_WXj0hT5llf0tQTj9AAmZK2sJuYIGEB66OMb0Xnf4_6gn-TzpLR3QlIkOuvw0wU3RQ_XfcUBxxswYpiQyK9rrKKiCcpClCYUEIwSig6Sd"
+        }
+      },
+      {
+        "web": {
+          "title": "haberturk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG39i4v9lZ2Zm8Gv4wf_GYOIwrCdG01iCczOY5ZD-wzfjiB2inDMcjfGygZWz3mYVWlX1B3urrvVS7G69Z2qR0Xscn5HEFJWTox--cHkLOqLadEjxVZ8XOXrNi1Z0lz-DjDYyHx5v0vXpjClpwJ0aiewps0ZETpq_a-RHpY3BVoPE4W32Le3lZb5Xt3sBJ2IMGE-X0WM0tDV2LBkTpnFoO3beE2GoKDnThQp4CwU8MUZxc_Vjr6JjTs"
+        }
+      },
+      {
+        "web": {
+          "title": "mugladevrim.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH218rSbkcnvViE0khYv5lMBncxA64Dg0z77YJNOupzw_-5XyKZI42A72X5Ou2N968Ud-Wh-RZ6BAQ5tQBoSpslREHVOCisM7a_M6B2lgEsNtjdX_V-Ji7Ve9Mvb5R3y90e-jn-u7RvbUzhJDs3b1D4UjTqFG9ezLk4jpg15ePaDa1_uaOdsKoIcHoUVAw_ZeDlZe3qoXCW_g=="
+        }
+      },
+      {
+        "web": {
+          "title": "instagram.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUuqm-QFaasGbDXqoR7zNlVbGhq_7SrY_LciB7ZhGt3_MCppQJCSJ60R5t72ZqKizu8PccsGBj8-UvoXbRdn2sMiA8oattL0QOAF0OwHW9yNIklT_wxq5v2h6eWJoHBDhomf4="
+        }
+      },
+      {
+        "web": {
+          "title": "istekocaeli.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv3xIabDorJz1BWFGm7VByinoKX0TUJuAK0rudX7gdqfW_PoT0uBnE_3YQLsGDOnhfKLbVwckkSglgBQtdxiq33OLHb97ZhyJn-j48832JU8w6WHipu1PfgnjRqPj-hqwmkhTJChPTE3nba6MruwElTZLcwbVjN-ej9bZf8ZiRAcaexLj6hyZ6y_uk_Q=="
+        }
+      },
+      {
+        "web": {
+          "title": "sehirmedya.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9Z1rh4vjQQDIK4RhcrS7ExRRvEVrT_fr3i4MMWIowBYAx2-YYrpD8JsYFRSEZHRiIqfRy3xt6-RfBWkhInnR6bft5QvxK3id8dyWD7Y59k15Vmj3zJiv55tHWjNGnGWF3M0MnDpKYAEhfHnJEAUlatUFChHFuRb6FhcFF_yVTMzPmJB0tv6lmqacDOyyT0wJ-8biHNpQJMFC-lI4aW3MZ0SmaeeItjA=="
+        }
+      },
+      {
+        "web": {
+          "title": "bizimgazete.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBrpHa03idT2R6RzYkA1HXVZvAA9OeVqtYjj8j3CuWayuLIDiKL88JsEmQ0vSS57NNhpu7ib6dy2W9zokj1dIwaV4S-TItycunGyhp6ht7HPXeIopSqps4r6rTJ5IWsJXkPbt-2Xkum40uhiyaphiaDntoP85r6eTSFqv4qnpAUUBJ0PMZTvHAKD1Nwj99oM0m40JeWVH9GruJ"
+        }
+      },
+      {
+        "web": {
+          "title": "sondakika.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwRP4xk4uqHF98jNbIYn82MVi1qZ9hYck0jXLmKmOTKB9N4BaNGiRKl40VDAEjK8sx0RJtyylkn0bYo5x2FYMR9_XkMH7cVvRKRvpb8eYflfhvpcOeVzvtoMSZQV5o"
+        }
+      },
+      {
+        "web": {
+          "title": "sondakika.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6KeBUXvGf4b8vDYO5nKgVAAGHeGSZ6_afuDXWCgpGY8fKOml0FH9n4AWLBYqSHD1AbiMcD4aEZGj3LZtBHX4iNpjSk4xwMMiXHdmtdqSvTyP7hqe-a1dZdVSw=="
+        }
+      },
+      {
+        "web": {
+          "title": "odatv.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFveRvBBIzfz52c2wkwxSZjyJ1C2buXX5pvmQ49Gk98nY3DwUn6yKtEqD2p4RqnquQX_uiH9XK8wau-EhFCAsQOz1sq1YZpI8kRn_trsfWYEksY2ygjD4ikNkhylgtuwnMpQ8TH8hPrDGRCEb-9r-UCqhVjIQZ87yR99wIl4hHB7DhygE_KsvwpQGUsbiT8LOc="
+        }
+      },
+      {
+        "web": {
+          "title": "youtube.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBZJbtgBWbZoYE835Tty6gCSc8F91UDULJCAKEY6YVLoO7pGaalGmpiAsm_QjzIanpoYHXnrbrJF9m4dmRpuV7lqCUE6HmFT_fKbLCaY2_SzWnLVU5yFs0dKIAcQlH68GcvZIb_6I="
+        }
+      },
+      {
+        "web": {
+          "title": "ankahaber.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp47FJcbvJUdc1ZN5JANFzvUT1FuEqR68J0Ow9usLttLvuu4j920Xj6BaIaVPFzD7eEsrBL8mVLRF7McBWPpcksC7rBLD8melYoO4hbV7z1ytUAwqjwn_GWnmxrrGt2ppGPGXo9Zx0I-ahlHbprtinRQ2EqCOzG-FfS0ik7g=="
+        }
+      },
+      {
+        "web": {
+          "title": "egedesonsoz.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXc1KkKd6ClSpDNaBYVAHpoyg2Z3S8PuHWgOZ3yPHi9VMvX-eStDW1rY4TrKEWaY80g5jqCFEgqacHEDyOR1jxadE5Y95SmWGOC2Xe_LVM1JqnWSqzvqwnO35bqakOlDUF5O8f0JrShzcb_nHUJg=="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "end_index": 186,
+          "text": "KOTEKLI:\n* 2026-10-26 | altyapı/duyuru | Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde yağış nedeniyle yolda çökme meydana geldi ve bir araç çukura düşerek mahsur kaldı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 264,
+          "end_index": 385,
+          "text": "katta bulunan bir dairede ocakta unutulan yağ nedeniyle yangın çıktı ve itfaiye ekipleri tarafından söndürüldü."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 386,
+          "end_index": 545,
+          "text": "* 2026-09-01 | suç/şiddet | Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde bir evde eski sevgililer silahla başlarından vurulmuş halde ölü bulundu."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 546,
+          "end_index": 725,
+          "text": "* 2026-08-15 | kamu hizmeti | Menteşe Kötekli Mahallesi Sıtkı Koçman Caddesi için hazırlanan Kötekli Cephe Sağlıklaştırma Projesi'nin tanıtım toplantısı yapıldı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 726,
+          "end_index": 938,
+          "text": "* 2026-08-07 | altyapı/duyuru | Muğla Büyükşehir Belediyesi'nin Kötekli Mahallesi'nde yürüttüğü altyapı çalışmaları sırasında mezar buluntularına rastlanması üzerine çalışmalar durduruldu."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6
+        ],
+        "segment": {
+          "start_index": 939,
+          "end_index": 1118,
+          "text": "* 2026-04-22 | suç/şiddet | Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde bir vatandaşın içerisinde altınlar bulunan cüzdanı kayboldu ve ekipler tarafından bulundu."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 1297,
+          "end_index": 1309,
+          "text": "tutuklandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8
+        ],
+        "segment": {
+          "start_index": 1310,
+          "end_index": 1525,
+          "text": "* 2026-03-25 | kamu hizmeti | Menteşe Emirbeyazıt Mahallesi'nde hizmet veren 2 No'lu Aile Sağlığı Merkezi'nin taşınma kararı mahalle sakinleri arasında tepkiye yol açtı ve imza kampanyası başlatıldı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          9
+        ],
+        "segment": {
+          "start_index": 1526,
+          "end_index": 1673,
+          "text": "* 2025-11-07 | suç/şiddet | Emirbeyazıt Mahallesi'nde alacak-verecek meselesi yüzünden çıkan bıçaklı kavgada bir kişi ağır yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 1674,
+          "end_index": 1817,
+          "text": "* 2025-08-08 | altyapı/duyuru | Menteşe Emirbeyazıt Mahallesi'nde bulunan ahşap bir direk, park halindeki iki otomobilin üzerine devrildi."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11,
+          12
+        ],
+        "segment": {
+          "start_index": 1819,
+          "end_index": 2005,
+          "text": "MUSLIHITTIN:\n* 2026-04-14 | kamu hizmeti | Menteşe ilçesine bağlı Muslihittin Mahallesi'ndeki Şeyh Muslihittin Camii'ne leylekler yuva kurdu ve mahalle sakinlerinin ilgisini çekti."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2006,
+          "end_index": 2166,
+          "text": "* 2025-08-25 | sağlık | Muğla'nın Menteşe ilçesi Muslihittin Mahallesi Cevizli Sokak'ta yaşanan intihar ihbarı üzerine ekipler olay yerine sevk edildi."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14,
+          15
+        ],
+        "segment": {
+          "start_index": 2243,
+          "end_index": 2367,
+          "text": "Varışlı Sokak'ta kız meselesi yüzünden çıkan bıçaklı kavgada bir kişi hayatını kaybetti, iki kişi yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          16
+        ],
+        "segment": {
+          "start_index": 2368,
+          "end_index": 2606,
+          "text": "* 2026-10-16 | altyapı/duyuru | Muğla Büyükşehir Belediyesi, Menteşe Orhaniye Mahallesi Şehit Asteğmen Yıldıray Çeltiklioğlu Caddesi'nde yağmursuyu hattı, kaldırım, bisiklet yolu ve asfalt çalışmalarını sürdürüyor."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2734,
+          "end_index": 2813,
+          "text": "Nuri Öncüer Huzurevi'nin yeniden inşaat çalışmaları hızla devam ediyor."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2814,
+          "end_index": 3020,
+          "text": "* Bilinmiyor | altyapı/duyuru | MUSKİ Genel Müdürlüğü, Menteşe İlçesi Orhaniye Mahallesi Yıldıray Çeltiklioğlu Caddesi üzerinde ekonomik ömrünü tamamlayan içme suyu hatlarını yeniliyor."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 3021,
+          "end_index": 3226,
+          "text": "* Bilinmiyor | sağlık | Muğla'nın Menteşe ilçesine bağlı Orhaniye Mahallesi Karabağlar Yaylası mevkiinde çıkan ot yangını, itfaiye ekiplerinin hızlı müdahalesiyle kontrol altına alındı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 3228,
+          "end_index": 3410,
+          "text": "AKYAKA:\n* 2026-09-12 | kamu hizmeti | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'ndeki Akçapınar sahilinde 2026 Türk Telekom Formula Kite Avrupa Şampiyonası düzenlendi."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 3411,
+          "end_index": 3569,
+          "text": "* 2026-09-15 | altyapı/duyuru | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'nde evlerin yakınındaki zeytinlik alanda çıkan yangın söndürüldü."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19
+        ],
+        "segment": {
+          "start_index": 3570,
+          "end_index": 3765,
+          "text": "* 2026-07-29 | kamu hizmeti | Akyaka Mahallesi'nde kıyı alanlarının işletmeler tarafından işgal edildiğini öne süren Gökova Ekolojik Yaşam Derneği, 17 ayrı suç duyurusunda bulundu."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          20
+        ],
+        "segment": {
+          "start_index": 3766,
+          "end_index": 3956,
+          "text": "* 2026-05-18 | altyapı/duyuru | Muğla'nın Ula ilçesindeki Akyaka Mahallesi'nde deniz suyu aniden kıyıdan yaklaşık 80 ila 100 metre çekildi ve 2 dakika sonra eski seviyesine döndü."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          21
+        ],
+        "segment": {
+          "start_index": 4129,
+          "end_index": 4161,
+          "text": "'ye verilmesine tepki gösterdi."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4162,
+          "end_index": 4405,
+          "text": "* 2026-01-01 | kamu hizmeti | NASA'nın Dünya Günü'nde Instagram hesabından paylaştığı Kadın Azmağı'nın yer aldığı Akyaka Mahallesi, BM Turizm Örgütü tarafından \"En iyi turizm köyleri\" kapsamında ödüle layık görüldü."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          21
+        ],
+        "segment": {
+          "start_index": 4406,
+          "end_index": 4550,
+          "text": "* Bilinmiyor | altyapı/duyuru | Menteşe ve Ula Belediyeleri, Akyaka Mahallesi Çınar mevkisinde kaçak yapılaşmaya karşı harekete geçti."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiZyFH6yApiQhWjoaZsYLkUB6kijB-oVMLT4td4oPE6l4GJye0ZJXlCbTpTRJ_HAMz31DHqi31tFLI7PGSMoRaNMXrn8Wokk5kmxQMlZ56e4rcWtWHmRsPKloyqd-5TPs8hF6IVg4UVcWX55X5hN-OJ2_6gs3cUrQBW8pbjH_dNlkn8KhW4toZ2mPZxYZCuNpsApEUJo2qiYEpNzufm2tJg5AI3Txxa2H2wZ2hdlqW\">Akyaka Mahallesi güncel gelişmeler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwUgE8ODwpd_0LwGX6t-V4SAPoAXWjFWdSn4buIZd_s3m5M8kIbEMoQA6Dr_GIi3AAiTgFzwcY8sYnh8lc-25I0Nm9MvSd3W7dJJAm2DiKeeNcrcVtMIWSFLoU1MX0sV04gYYRSGJAWbJhxn7TMJrViuWIH6ZTBpXi_zRLIP1dy_9SxWECkNdDxl0HG9fJUfOOyB0mpz8stsQHezHiSDDhQ1WlQwZ4EgcgkdFLHQ==\">Orhaniye Mahallesi son 12 ay olayları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQPCHuvvn8n7_u8EBwSfXDTOMgQSYquWn0AARG_EvaN0R-PQ7U2KM3mYw21BXzbMW2sA1w3ufNGmf_F4E_otzjgdGjyDjepzqZczUkxkGTuLdXPpFj6J-fIyiC1X4DTvlwB9O_2nElyjCign4nTmQQQeyJV2CUg-3tGQAzaG2yqFn1oLc7Ql1u7ESEzu60mYC4S7LaeeQd7uvr0fJ9UDBzaLzcBTVWVeLE5ar5yrKH8OzGp0B_-g==\">Emirbeyazıt Mahallesi son 12 ay olayları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc6DPmoei7d1HX_6lv7rBGA9g5xpOhCHA1v1TJ7awSj31dUIt7Tyh_JE7u_hG02XpPC0_WmdQEVQeG0OMLTSHCw4iU7dYrQgueHmf5ZNx3QVBDt0ieqhY4FQjuEAJEfcF8lDZVfAaQ3xIeCIrdZYgYwRd8vjVkh5Xd0THpvjRuoNZUZ7V5G0dxY5-jKDGqXLCiyC9LRf5XGiedJMB7X9Ppnkdx1XLUOErAqB6qjj_N-7o=\">Kötekli Mahallesi son 12 ay olayları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyc8vqTKTYO_X4Jl4569BP3OFAVaaqjWy8oa3JEDzm14tCL1U-N24rctHXDSfry_t2RaHRdIqj5Tz61rO1AitokP43XSRTDjZho4v0sfuSwQ0aKFOLysiYD8MGNiott9n-pAWoCcmOIKbbAe8YCunvmnAyA7WzS8Fm6sIMgSMfyfGh-YmAyNseL-nBLSN6rl-a4yYaoE0M1Ks3QpDalZrWwFSadAl9Pm5zbotpnofu8ZDknUC1lw==\">Kötekli Mahallesi güncel gelişmeler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnxyzfFIdU1-MLiRjRKl66WEbUCR4s8tKvILo7BHVbY3CzvWPmey0hakKDpLLde69arGQxbvk7U_9AzGOUJi88Rg9_vNNG4Tk5DJAn3CKq4G9ZSmM7ZMVdLAPFqypGclRcAKha5aDf17IPIG7QUGg15XHi242mpj8mEqXj_nWqxupt_NQ86KW0kzlX1rykzZHizrIpPBMEIJRFVo_DFRgnddMmdD67QpYk8fTQCWmXB3DKmVw=\">Muslihittin Mahallesi güncel gelişmeler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZ23jRbRO06jMkx1xPRPhKET19O4sXzD-nwbAZM3JBaW6T1nF_cNewVtBA182fokIxVs5bSDsbfvZuHsDoiZmHQCYzSVqZKChI3U6LBYnzUGX0YEr0Y_dxYX0DmgpuoLyRUPtGRfeZElGx9k14qSonzMy1ffse6epNA00Vgw82m1K1A18HatP6hpr7VO0zsilY6p7m5WwB0kGIwh7wZgpFK4Sz8kMIZpgLoNaJ832Idg==\">Muslihittin Mahallesi son 12 ay olayları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4BUReLdjEHXqFjvWvKfmmoApYF_zU30-zQh-WrvREdtrOLiR8-gzaAhIeYrl1YAtQxwnkft8sOCLQrEUGrXlSGE1mYW2MbglDPjli85V0sofHmO7NJyDqZiMKVp3RwsGXsjqspleIzxFoVg9fLHSZ9GI1j5LPzSctjXcB8tnuE-28E9ITjK-dogV_OYqBt1wgcyb2TG4hL0QR8hccoANP3r0OvhSKFLl-631eNnQGNepCbPaMbkFm_c0=\">Emirbeyazıt Mahallesi güncel gelişmeler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGawYVN_zPB3_62DzztO43sA-5WQtiEb3ghKfg57RAdLHH3RzdQ65vPrsaAhWEmRFenbNObjag2aCYqobb_zWjXLL5LtLvZVwrcFTpjy_8MkyUqChG86sknSVjttmjdJ22TEdP-ZDPT4VSHArh4cgpE4zcAGZWRMmJHH97zBzb0lgfNJGhHPFGtspd4fr9wIqXKK930rtpXrMUmUmcGULP83TQNSTjoViRhucI=\">Akyaka Mahallesi son 12 ay olayları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrfVQHl5QMVXGZaVHYX9dwcAHXOb8VWgsHN1TmvT50uIewaxiGmQVA_2REyDwUZ0A0wf-LrXUQhK7rQxbKxxuTliKHXsyf__6oiz14qduxoFVohvCMAsN9z0sa9pgG_sRCDwwBh-YbN2Msm7G_c2cWwj_ZYeewdDY0KnsYSKjkOmLBv6utdQD2ZR6ZQm72OHDu8BGO_HGJDXEC1ZokkJZC_xSE3wv2c7cUano-gyuZrbA=\">Orhaniye Mahallesi güncel gelişmeler</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Kötekli Mahallesi son 12 ay olayları",
+      "Kötekli Mahallesi güncel gelişmeler",
+      "Emirbeyazıt Mahallesi son 12 ay olayları",
+      "Emirbeyazıt Mahallesi güncel gelişmeler",
+      "Muslihittin Mahallesi son 12 ay olayları",
+      "Muslihittin Mahallesi güncel gelişmeler",
+      "Orhaniye Mahallesi son 12 ay olayları",
+      "Orhaniye Mahallesi güncel gelişmeler",
+      "Akyaka Mahallesi son 12 ay olayları",
+      "Akyaka Mahallesi güncel gelişmeler"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1635,
+    "prompt_token_count": 475,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 475
+      }
+    ],
+    "tool_use_prompt_token_count": 612,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 612
+      }
+    ],
+    "total_token_count": 2722
+  },
+  "text": "KOTEKLI:\n* 2026-10-26 | altyapı/duyuru | Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde yağış nedeniyle yolda çökme meydana geldi ve bir araç çukura düşerek mahsur kaldı.\n* 2026-10-26 | sağlık | Menteşe Kötekli Mahallesi TOKİ konutlarında 4. katta bulunan bir dairede ocakta unutulan yağ nedeniyle yangın çıktı ve itfaiye ekipleri tarafından söndürüldü.\n* 2026-09-01 | suç/şiddet | Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde bir evde eski sevgililer silahla başlarından vurulmuş halde ölü bulundu.\n* 2026-08-15 | kamu hizmeti | Menteşe Kötekli Mahallesi Sıtkı Koçman Caddesi için hazırlanan Kötekli Cephe Sağlıklaştırma Projesi'nin tanıtım toplantısı yapıldı.\n* 2026-08-07 | altyapı/duyuru | Muğla Büyükşehir Belediyesi'nin Kötekli Mahallesi'nde yürüttüğü altyapı çalışmaları sırasında mezar buluntularına rastlanması üzerine çalışmalar durduruldu.\n* 2026-04-22 | suç/şiddet | Muğla'nın Menteşe ilçesi Kötekli Mahallesi'nde bir vatandaşın içerisinde altınlar bulunan cüzdanı kayboldu ve ekipler tarafından bulundu.\n\nEMIRBEYAZIT:\n* 2026-04-25 | suç/şiddet | Emirbeyazıt Mahallesi Üçler Sokak'ta meydana gelen kasten yaralama olayıyla ilgili yürütülen soruşturmada, olayın faili D.S. tutuklandı.\n* 2026-03-25 | kamu hizmeti | Menteşe Emirbeyazıt Mahallesi'nde hizmet veren 2 No'lu Aile Sağlığı Merkezi'nin taşınma kararı mahalle sakinleri arasında tepkiye yol açtı ve imza kampanyası başlatıldı.\n* 2025-11-07 | suç/şiddet | Emirbeyazıt Mahallesi'nde alacak-verecek meselesi yüzünden çıkan bıçaklı kavgada bir kişi ağır yaralandı.\n* 2025-08-08 | altyapı/duyuru | Menteşe Emirbeyazıt Mahallesi'nde bulunan ahşap bir direk, park halindeki iki otomobilin üzerine devrildi.\n\nMUSLIHITTIN:\n* 2026-04-14 | kamu hizmeti | Menteşe ilçesine bağlı Muslihittin Mahallesi'ndeki Şeyh Muslihittin Camii'ne leylekler yuva kurdu ve mahalle sakinlerinin ilgisini çekti.\n* 2025-08-25 | sağlık | Muğla'nın Menteşe ilçesi Muslihittin Mahallesi Cevizli Sokak'ta yaşanan intihar ihbarı üzerine ekipler olay yerine sevk edildi.\n\nORHANIYE:\n* 2026-10-18 | suç/şiddet | İnegöl'ün Orhaniye Mahallesi 2. Varışlı Sokak'ta kız meselesi yüzünden çıkan bıçaklı kavgada bir kişi hayatını kaybetti, iki kişi yaralandı.\n* 2026-10-16 | altyapı/duyuru | Muğla Büyükşehir Belediyesi, Menteşe Orhaniye Mahallesi Şehit Asteğmen Yıldıray Çeltiklioğlu Caddesi'nde yağmursuyu hattı, kaldırım, bisiklet yolu ve asfalt çalışmalarını sürdürüyor.\n* Bilinmiyor | altyapı/duyuru | Menteşe ilçesi Orhaniye Mahallesi'nde depreme dayanıksız olduğu için yıkılan Abide H. Nuri Öncüer Huzurevi'nin yeniden inşaat çalışmaları hızla devam ediyor.\n* Bilinmiyor | altyapı/duyuru | MUSKİ Genel Müdürlüğü, Menteşe İlçesi Orhaniye Mahallesi Yıldıray Çeltiklioğlu Caddesi üzerinde ekonomik ömrünü tamamlayan içme suyu hatlarını yeniliyor.\n* Bilinmiyor | sağlık | Muğla'nın Menteşe ilçesine bağlı Orhaniye Mahallesi Karabağlar Yaylası mevkiinde çıkan ot yangını, itfaiye ekiplerinin hızlı müdahalesiyle kontrol altına alındı.\n\nAKYAKA:\n* 2026-09-12 | kamu hizmeti | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'ndeki Akçapınar sahilinde 2026 Türk Telekom Formula Kite Avrupa Şampiyonası düzenlendi.\n* 2026-09-15 | altyapı/duyuru | Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'nde evlerin yakınındaki zeytinlik alanda çıkan yangın söndürüldü.\n* 2026-07-29 | kamu hizmeti | Akyaka Mahallesi'nde kıyı alanlarının işletmeler tarafından işgal edildiğini öne süren Gökova Ekolojik Yaşam Derneği, 17 ayrı suç duyurusunda bulundu.\n* 2026-05-18 | altyapı/duyuru | Muğla'nın Ula ilçesindeki Akyaka Mahallesi'nde deniz suyu aniden kıyıdan yaklaşık 80 ila 100 metre çekildi ve 2 dakika sonra eski seviyesine döndü.\n* 2026-05-08 | kamu hizmeti | Muğla'nın Ula ilçesinde Kadın Azmağı'nda faaliyet gösteren tekneciler, liman işletme hakkının Kıyı Yönetim ve Çevre Koruma A.Ş.'ye verilmesine tepki gösterdi.\n* 2026-01-01 | kamu hizmeti | NASA'nın Dünya Günü'nde Instagram hesabından paylaştığı Kadın Azmağı'nın yer aldığı Akyaka Mahallesi, BM Turizm Örgütü tarafından \"En iyi turizm köyleri\" kapsamında ödüle layık görüldü.\n* Bilinmiyor | altyapı/duyuru | Menteşe ve Ula Belediyeleri, Akyaka Mahallesi Çınar mevkisinde kaçak yapılaşmaya karşı harekete geçti."
+}

@@ -22,14 +22,22 @@ def load(path):
 
 def save(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n', encoding='utf8')
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n', encoding='utf8', newline='\n')
 
 
 def parse_date(text):
+    if re.search(r'yaklaşık|gün önce|hafta önce|ay önce', text, re.I):
+        return None
     match = re.search(r'\b(20\d\d-\d\d-\d\d)\b', text)
     if match:
         try:
             return date.fromisoformat(match[1])
+        except ValueError:
+            return None
+    match = re.search(r'\b(\d{2})[./](\d{2})[./](20\d\d)\b', text)
+    if match:
+        try:
+            return date(int(match[3]), int(match[2]), int(match[1]))
         except ValueError:
             return None
     match = re.search(r'\b(\d{1,2}) (' + '|'.join(MONTHS) + r') (20\d\d)\b', text)

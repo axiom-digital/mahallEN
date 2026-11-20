@@ -24,8 +24,9 @@ def main():
 
     # Explicitly use backend/.env; do not print credentials or provider tracebacks.
     values = dotenv_values(ROOT / "backend/.env")
-    api_key = values.get("GEMINI_API_KEY")
-    if not api_key:
+    from provider_pool import configured_keys, generate_with_pool
+    api_keys = configured_keys(values)
+    if not api_keys:
         print("Missing GEMINI_API_KEY in backend/.env", file=sys.stderr)
         return 2
     if args.output.exists():
@@ -43,10 +44,9 @@ def main():
     print(json.dumps({"status": "request_started", "model": args.model, "google_search": True}), flush=True)
 
     try:
-        from grounding_client import generate_research
         from google.genai import types
-        response = generate_research(api_key=api_key, model=args.model, prompt=prompt,
-                                     max_output_tokens=args.max_output_tokens)
+        response, credential_alias = generate_with_pool(values, model=args.model, prompt=prompt,
+                                                        max_output_tokens=args.max_output_tokens)
         candidate = response.candidates[0] if response.candidates else None
         grounding = candidate.grounding_metadata if candidate else None
         metadata = grounding.model_dump(mode="json", exclude_none=True) if grounding else {}
@@ -75,6 +75,7 @@ def main():
             "neighborhood": args.neighborhood,
             "model_requested": args.model,
             "model_returned": response.model_version,
+            "credential_alias": credential_alias,
             "started_at": started_at,
             "finished_at": datetime.now(timezone.utc).isoformat(),
             "review_status": "unreviewed_research_candidate",
@@ -117,7 +118,9 @@ def main():
         }, ensure_ascii=False), flush=True)
         return 0 if accepted_for_review else 1
     except Exception as exc:
-        safe_message = str(getattr(exc, "message", "Provider or SDK request failed")).replace(api_key, "[REDACTED]")
+        safe_message = str(getattr(exc, "message", "Provider or SDK request failed"))
+        for secret in api_keys:
+            safe_message = safe_message.replace(secret, "[REDACTED]")
         error = {
             "status": "failed",
             "error_type": type(exc).__name__,

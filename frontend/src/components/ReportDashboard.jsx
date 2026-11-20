@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AssessedReport from './AssessedReport';
 import ReportLoading from './ReportLoading';
 import {
@@ -24,10 +24,12 @@ import ScoreCard, {
   extractCategoryScores,
   normalizeScoreValue,
 } from './ScoreCard';
+import ResearchNews from './ResearchNews';
+import './research-news.css';
+import ResearchDetails, { ProfileCharts } from './ResearchDetails';
 
 function formatCurrency(value) {
-  if (value === null || value === undefined || value === '') return 'Belirtilmedi';
-  if (value == null) return 'Belirtilmedi';
+  if (value == null || value === '') return 'Belirtilmedi';
   const num = Number(value);
   if (!Number.isFinite(num)) return 'Belirtilmedi';
   return `${num.toLocaleString('tr-TR')} TL`;
@@ -42,10 +44,9 @@ function getSentimentLabel(sentiment) {
 function buildDynamicChartSummary(name, scores) {
   const categories = extractCategoryScores(scores);
   const available = categories.filter((c) => c.value !== null);
-  const missing = categories.filter((c) => c.value === null);
 
   if (!available.length) {
-    return `${name} için sayısal kategori puanları henüz mevcut değil.`;
+    return `${name} için kaynaklı bilgileri kategori detaylarından inceleyebilirsin.`;
   }
 
   const sorted = [...available].sort((a, b) => b.value - a.value);
@@ -53,10 +54,6 @@ function buildDynamicChartSummary(name, scores) {
   const lowest = sorted[sorted.length - 1];
 
   let summary = `${name} raporunda ${highest.label.toLocaleLowerCase('tr-TR')} (${highest.value}/100) öne çıkarken, ${lowest.label.toLocaleLowerCase('tr-TR')} (${lowest.value}/100) kendi önceliklerinle birlikte değerlendirilmeli.`;
-  if (missing.length > 0) {
-    const missingNames = missing.map((m) => m.label.toLocaleLowerCase('tr-TR')).join(', ');
-    summary += ` Backend verisinde henüz sayısal puanı bulunmayan başlıklar (${missingNames}) sıfır puan olarak sayılmaz.`;
-  }
   return summary;
 }
 
@@ -75,6 +72,8 @@ export default function ReportDashboard({
   onRetry,
   onResetSearch,
 }) {
+  const [detail, setDetail] = useState(null);
+  useEffect(() => { setDetail(null); }, [report?.slug]);
   if (loading) {
     return <ReportLoading key={selectedSlug} place={loadingPlace} phase={loadingPhase} />;
   }
@@ -222,7 +221,7 @@ export default function ReportDashboard({
           </div>
 
           <p className="small-note">
-            {evidenceOnly ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : assessment ? "Puanlar açıklanmış proje kurallarıyla hesaplanır. Kullanılan girdiler ve hesaplama gerekçeleri kartlarda yer alır." : "Eksik kategori verileri sıfır puan gibi gösterilmez."}
+            {evidenceOnly ? "Kaynaklı bilgi bulunması sayısal bir yaşam kalitesi puanı anlamına gelmez." : assessment ? "Puanlar açıklanmış proje kurallarıyla hesaplanır. Kullanılan girdiler ve hesaplama gerekçeleri kartlarda yer alır." : "Kategori detaylarında kaynak ilanları, ulaşım hatlarını, haberleri ve mahalle haritasını keşfet."}
           </p>
         </div>
 
@@ -233,7 +232,7 @@ export default function ReportDashboard({
                 {(city || 'MUĞLA').toLocaleUpperCase('tr-TR')} / {(district || 'MENTEŞE').toLocaleUpperCase('tr-TR')}
               </span>
               <h3 data-testid="report-neighborhood-name">{name}</h3>
-              <span>{evidenceOnly ? "Kaynaklı mahalle raporu" : assessment ? "Kural tabanlı proje değerlendirmesi · 0–100" : "Mahalle değerlendirmesi · 0–100 ölçeği"}</span>
+              <span>{evidenceOnly ? "Kaynaklı mahalle raporu" : assessment ? "Kural tabanlı proje değerlendirmesi · 0–100" : report.source_mode === 'research' ? 'Kaynaklı araştırma paketi · proje ön puanları' : "Mahalle değerlendirmesi · 0–100 ölçeği"}</span>
             </div>
             <div className="preview-score" data-testid="overall-score" aria-label={evidenceOnly ? `${findingCount} kaynaklı bulgu` : `Genel puan ${overallScore ?? 'mevcut değil'} / 100`}>
               {evidenceOnly ? findingCount : overallScore !== null ? overallScore : '—'}
@@ -256,9 +255,9 @@ export default function ReportDashboard({
           </div>
 
           <div className="report-preview-foot">
-            <span>{evidenceOnly ? "KAYNAK KAPSAMI" : assessment ? "PROJE PUANLAMA KURALLARI" : "MEVCUT BACKEND VERİSİ"}</span>
+            <span>{evidenceOnly ? "KAYNAK KAPSAMI" : assessment ? "PROJE PUANLAMA KURALLARI" : report.source_mode === 'research' ? 'KAYNAKLI ARAŞTIRMA' : "MEVCUT BACKEND VERİSİ"}</span>
             <span>
-              {evidence ? `Referans tarihi: ${evidence.reference_date}` : <>Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}</>}
+              {evidence ? `Referans tarihi: ${evidence.reference_date}` : report.source_mode === 'research' ? <>{rent_analysis?.average_rent_tl != null ? `1+1 ortanca kira: ${formatCurrency(rent_analysis.average_rent_tl)}` : 'Konut tiplerine göre ilanları incele'} · Bölge ve bina bilgilerini birlikte değerlendir</> : <>Ort. Kira: {formatCurrency(rent_analysis?.average_rent_tl)} · Sismik Risk: {disaster_risk?.risk_level || 'Belirtilmedi'}</>}
             </span>
           </div>
         </div>
@@ -266,6 +265,7 @@ export default function ReportDashboard({
 
       {/* Detailed Report Stack in Matching Cream/Green/Terracotta Theme */}
       <div id="rapor-detay" className="report-details-stack">
+        {report.research_detail && <button className="button dark" onClick={() => setDetail('social_life')}><MapPin size={17}/> Mahalle haritası ve mekânlar <span>↗</span></button>}
         {/* Neighborhood Banner & Quick Facts */}
         <div className="report-banner-card">
           <div className="report-banner-main">
@@ -303,16 +303,16 @@ export default function ReportDashboard({
               <div><dt>Değerlendirme:</dt><dd>Kural tabanlı gösterge</dd></div>
             </dl> : <dl className="banner-meta-list">
               <div>
-                <dt>Ortalama Kira:</dt>
-                <dd>{formatCurrency(rent_analysis?.average_rent_tl)}</dd>
+                <dt>{rent_analysis?.average_rent_tl != null ? '1+1 Ortanca Kira:' : 'Konut Bilgileri:'}</dt>
+                <dd>{rent_analysis?.average_rent_tl != null ? formatCurrency(rent_analysis.average_rent_tl) : 'İlanları incele'}</dd>
               </div>
               <div>
-                <dt>Sismik Tehlike:</dt>
-                <dd>{disaster_risk?.risk_level || '—'} ({disaster_risk?.pga_value_g ?? '—'}g)</dd>
+                <dt>Deprem:</dt>
+                <dd>Bölge ve bina birlikte incelenmeli</dd>
               </div>
               <div>
-                <dt>Kampüs Mesafesi:</dt>
-                <dd>{transport_analysis?.distance_to_campus_km ?? '—'} km</dd>
+                <dt>Ulaşım:</dt>
+                <dd>{transport_analysis?.highlights?.length ? `${transport_analysis.highlights.length} kaynaklı hat` : 'Hat bilgilerini incele'}</dd>
               </div>
             </dl>}
           </div>}
@@ -340,9 +340,10 @@ export default function ReportDashboard({
           <ScoreCard
             title="Maliyet"
             score={scores?.cost_affordability}
-            subtitle={rationale('rent_cost') || `Ort. ${formatCurrency(rent_analysis?.average_rent_tl)} · ${rent_analysis?.trend_6m || ''}`}
+            subtitle={rationale('rent_cost') || (rent_analysis?.average_rent_tl != null ? `1+1 ortanca ${formatCurrency(rent_analysis.average_rent_tl)}` : 'Konut tipi ve eşya durumuna göre ilanları incele.')}
             icon={Wallet}
             testId="card-cost_affordability"
+            onOpen={report.research_detail ? () => setDetail('cost_affordability') : undefined}
           />
           <ScoreCard
             title="Sosyal yaşam"
@@ -350,10 +351,11 @@ export default function ReportDashboard({
             subtitle={
               rationale('social_life') || (socialScore !== null
                 ? 'Mahalle yaşamı ve sosyal olanaklar'
-                : `${community_comments.length} mahalle yorumu mevcut · Sayısal puan backend verisinde henüz tanımlı değil`)
+                : 'Mekânları, günlük ihtiyaçları ve haritadaki konumlarını keşfet.')
             }
             icon={Users}
             testId="card-social_life"
+            onOpen={report.research_detail ? () => setDetail('social_life') : undefined}
           />
           <ScoreCard
             title="Güvenlik / haberler"
@@ -361,26 +363,28 @@ export default function ReportDashboard({
             subtitle={rationale('safety_news') || `${news_items.length} yerel haber kaydı ve sokak güvenliği bağlamı`}
             icon={ShieldCheck}
             testId="card-safety"
+            onOpen={report.research_detail ? () => setDetail('safety') : undefined}
           />
           <ScoreCard
             title="Afet"
             score={scores?.disaster_resilience}
-            subtitle={rationale('earthquake_hazard') || `PGA: ${disaster_risk?.pga_value_g ?? '—'}g · ${disaster_risk?.soil_class || ''}`}
+            subtitle={rationale('earthquake_hazard') || (report.source_mode === 'research' ? "Bölgenin sarsıntı bilgilerini ve ev seçerken ne anlama geldiğini oku." : `PGA: ${disaster_risk?.pga_value_g ?? '—'}g · ${disaster_risk?.soil_class || ''}`)}
             icon={Activity}
             testId="card-disaster_resilience"
+            onOpen={report.research_detail ? () => setDetail('disaster_resilience') : undefined}
           />
           <ScoreCard
             title="Ulaşım"
             score={scores?.transportation}
-            subtitle={rationale('transportation') || `${transport_analysis?.bus_frequency_min ?? '—'} dk sefer aralığı · Kampüs ${transport_analysis?.distance_to_campus_km ?? '—'} km`}
+            subtitle={rationale('transportation') || (transport_analysis?.highlights?.length ? `${transport_analysis.highlights.length} kaynaklı hat · kalkış saatleri ve yol bildirimleri` : `${transport_analysis?.bus_frequency_min ?? '—'} dk sefer aralığı · Kampüs ${transport_analysis?.distance_to_campus_km ?? '—'} km`)}
             icon={Bus}
             testId="card-transportation"
+            onOpen={report.research_detail ? () => setDetail('transportation') : undefined}
           />
         </div>}
 
         {/* AI Synthesis & Pros / Cons */}
-
-
+        <ProfileCharts evaluations={report.profile_evaluations} />
         <div className="report-synthesis-card">
           <div className="synthesis-header">
             <div className="synthesis-title-group">
@@ -487,19 +491,16 @@ export default function ReportDashboard({
               <span>Kira ve Konut Piyasası</span>
             </h4>
             <dl className="domain-metrics-list">
-              <div>
-                <dt>Ortalama Aylık Kira</dt>
+              {rent_analysis?.average_rent_tl != null && <div>
+                <dt>{rent_analysis?.dwelling_type ? `${rent_analysis.dwelling_type} Ortanca Kira` : 'Ortalama Aylık Kira'}</dt>
                 <dd>{formatCurrency(rent_analysis?.average_rent_tl)}</dd>
-              </div>
-              <div>
+              </div>}
+              {rent_analysis?.rent_range_tl && <div>
                 <dt>Tipik Kira Aralığı</dt>
-                <dd>{rent_analysis?.rent_range_tl || '—'}</dd>
-              </div>
-              <div>
-                <dt>6 Aylık Eğilim</dt>
-                <dd className="rust-accent">{rent_analysis?.trend_6m || '—'}</dd>
-              </div>
+                <dd>{rent_analysis.rent_range_tl}</dd>
+              </div>}
             </dl>
+            {report.research_detail && <button className="category-open" onClick={() => setDetail('cost_affordability')}>Konut tiplerini ve kaynak ilanları karşılaştır ↗</button>}
           </article>
 
           <article className="domain-card">
@@ -508,16 +509,10 @@ export default function ReportDashboard({
               <span>Ulaşım ve Hareketlilik</span>
             </h4>
             <dl className="domain-metrics-list compact">
-              <div>
+              {transport_analysis?.bus_frequency_min != null && <div>
                 <dt>Otobüs Sefer Sıklığı</dt>
-                <dd>Yaklaşık {transport_analysis?.bus_frequency_min ?? '—'} dk</dd>
-              </div>
-              <div>
-                <dt>Kampüs / Merkez Mesafesi</dt>
-                <dd>
-                  {transport_analysis?.distance_to_campus_km ?? '—'} km / {transport_analysis?.distance_to_center_km ?? '—'} km
-                </dd>
-              </div>
+                <dd>Yaklaşık {transport_analysis.bus_frequency_min} dk</dd>
+              </div>}
             </dl>
             <ul className="domain-highlights-list">
               {(transport_analysis?.highlights || []).map((h, i) => (
@@ -529,28 +524,17 @@ export default function ReportDashboard({
           <article className="domain-card">
             <h4 className="domain-card-title">
               <Activity size={17} aria-hidden="true" />
-              <span>Deprem ve Zemin Göstergeleri</span>
+              <span>Deprem açısından ev seçimi</span>
             </h4>
-            <dl className="domain-metrics-list">
-              <div>
-                <dt>Tehlike Düzeyi</dt>
-                <dd className="rust-accent">{disaster_risk?.risk_level || '—'}</dd>
-              </div>
-              <div>
-                <dt>En Büyük Yer İvmesi (PGA)</dt>
-                <dd>{disaster_risk?.pga_value_g ?? '—'} g</dd>
-              </div>
-              <div>
-                <dt>Zemin Sınıfı</dt>
-                <dd>{disaster_risk?.soil_class || '—'}</dd>
-              </div>
-            </dl>
+            <p className="domain-friendly-copy">Bu rapor bölgeye ait sarsıntı bilgilerini gösteriyor. Seçeceğin evin dayanıklılığı, bina özelinde ayrıca incelenmeli.</p>
+            {report.research_detail && <button className="category-open" onClick={() => setDetail('disaster_resilience')}>Benim için ne anlama geliyor? ↗</button>}
           </article>
         </div>
 
         {/* Local News & Community Reviews */}
+        {report.research_news && <ResearchNews data={report.research_news} />}
         <div className="evidence-cards-grid">
-          <article className="evidence-card">
+          {!report.research_news && (          <article className="evidence-card">
             <h4 className="domain-card-title">
               <Newspaper size={17} aria-hidden="true" />
               <span>Yerel Haberler ve Olay Kayıtları</span>
@@ -576,9 +560,9 @@ export default function ReportDashboard({
                 <p className="empty-subtext">Bu mahalle için kayıtlı yerel haber örneği bulunmuyor.</p>
               )}
             </div>
-          </article>
+          </article>)}
 
-          <article className="evidence-card">
+          {community_comments.length > 0 && <article className="evidence-card">
             <h4 className="domain-card-title">
               <MessageSquareQuote size={17} aria-hidden="true" />
               <span>Mahalle Sakinleri ve Öğrenci Yorumları</span>
@@ -605,7 +589,7 @@ export default function ReportDashboard({
                 <p className="empty-subtext">Bu mahalle için kayıtlı yorum bulunmuyor.</p>
               )}
             </div>
-          </article>
+          </article>}
         </div>
 
         </>}
@@ -652,6 +636,7 @@ export default function ReportDashboard({
           </details>
         </div>
       </div>
+      {detail && report.research_detail && <ResearchDetails key={`${report.slug}-${detail}`} category={detail} report={report} onClose={() => setDetail(null)}/>}
     </div>
   );
 }

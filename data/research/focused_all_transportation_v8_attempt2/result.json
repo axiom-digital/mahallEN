@@ -1,0 +1,801 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "all-pilots",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:22:54.459426+00:00",
+  "finished_at": "2026-10-28T18:23:07.844614+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "transportation"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Muğla Kötekli MUTTAŞ hatları",
+    "Muğla Emirbeyazıt MUTTAŞ hatları",
+    "Muğla Muslihittin MUTTAŞ hatları",
+    "Muğla Orhaniye MUTTAŞ hatları",
+    "Muğla Akyaka MUTTAŞ hatları",
+    "MUTTAŞ güncel tarife"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrlSao1kpwgU1SkWEYRl998VQrd41WBYHsOVPXlHmSzS4g6sD1BJ7qVytBTDVeTE_4L8Z5Ac5NSIUjjd7BsZ-wfwEgIneXDA1xepYKjYykEbzTsDKIY5rAPhHvTdQfd07xGWv-FTP9R-cnqyJ2VxUxMAYc",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9C3vYh87ZpPT-dNfBWU1kQw0gla-64Ru7oJjqpbLir1N5zpClYyJ6b9S9Cx1TGCFiPfJShhujSeirA6RekG7C04uPI1gBasTSc-RVm8savBiu90AErMe67iWLxTx3dL8mjRYHXDFfqMwdjjRdf_JQNY0NbI_ofLWQ98=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8NjwYxmfi2s0gmLwCS0Dj2UDhypx2WiiOJ2lRL3cEj_rhrIrl9Cm38PFHCxgi4XbJsvJd2Qd2JTLPbm7ayKrwWTvA-_1_Zxj9NN1ELFo2ui54PA5msXD4V3ekl5oCs8OOfAZ0ZsP-pWoyeB-nNEEwgL11-Tc=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK13VObOpKxWiIYODr6YaEHEAak2P-5B7baNphy1MCNyOW86BvRZ9hlODCC-EaPwhassXzVa5_BmuZTwXns2Fn42xctAVD4BXemrfE7s4CQfZjvtEe4P5HlDA0Q-SP3RGETC8xxOI_EUQ6NcMVMb_UtP6GL8Q=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESL-_Ri-ASwOJreIUzbMWQWwE8U5L_kURGlTAy-0h3EExg_IljYL8AGGEvgnqwwZMKWTWaHJJpSPAIFXq9Tcuh-5f6C3k6Zx2sX45qnZxol9t0iPXUwSSLweB5dTJ_DLG474XbPObnbUJxOqoEQ772uM587mwR32HufcA=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_rEk6tmOThbBCNBigyFtxOV7xPm9Z8MQsJ2RRGF1qyhTFjpv4aTHPg3JR5CwhHz03RSQEt0cYtQFAKxt8Z7FI3d9kO969-Odl6Py8gBX23v8oyJ4D63vJywsn_rJK4njhB5PAG-95natlYjvobVIRNQ==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAmj4PewyQQNv-MbAUhvF1jE4C1hoobhpL_Nf6KyH_x_dK5CJKELkMIXlUE8HL-rThLYW6aB1DCWqLj7uUoIZL1sSsSmGwBloZRD0QRw4o9sPcZQZxmW1PI5EJfzNoB0QHs6SSXQF8XQ_JpCXJwvWcT33zyMYT",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq0iLnl6XaWRleY98ng7hUfDb6U7Od5XGiLDLvYBwf1E8ap6kVaY__GGLEACn03vEWDchiRSP_7x2PFTGjtefmd3284LacQirZxGvQeXHObjMIlaByNTImQ_VqNlFrcTAE4ymKG4DFPWEIbxHWo6ks8zI-CePfdQpb1Q==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbX_wPvcrj34PmM1Fcp9MeyWK4mJfAYyg4g5u1-JsXyt8EWZ0elv-RtE8k1chMXizl6es0Xuaaf-txGYuA7ud9sBWvC0kXeoHk2nKMg6RAA2Adsn7ZijgCURvYUwaLhKlThus5ozY=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyRR-G3Mx5FwwQHZVzPdCnRAVUyOpRsME07UYnctXC3z04Jsbo7i66TPL5uFIUBwWRKeSbiUTsJLK4buohddJddfp0RGXkWfXeQuJVHBcMMdXll17OA7LeCz__eaHHn2ybsEjugrF6scuJG-dar_nPRK1dR0r7A2ZYRs_oFQfDkgvj5lQV",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZB4gQ2sd0r-sK2FBKUOlA8vdNPgmKmper5SyX36PsGW_rYruhGectFEF1qFXppmN2Sq0WMe35bEI-iNItbrfTeWPui9Q4DU9_wmucfLavgo1sPRN-7XTTxAk-OvVdZy_ZxHIvDVwLIaA5UM4o0_PtPPOCIIoWnSjpXflBFuz5LJQniwqrmFwB_gcRZGlL_YOokUDGW9Q09Aw-7VNhXv1-3EqKjBs5e5EM",
+      "title": "moovitapp.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtjxpBMy24ipEG8TXTYE_87dvnk7F8Q8sfz0cAuJC5vLPvhH3HbDCD0x4Tjx6rCBV3oGirHhFG7iaLRNaIo5z_-Od0INKhLNkwZRJIENU185IAVUQ4v9bWp4bstybmPg1Kp484QSyofQMw1_XBeZ43",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBggynVi4WXN0kIDBg54uqe7jHj26uPbaPnllDP5k803xE2kG4EBnQL_eNwY9aRCno7zCzk0fZJLq1xyc5PgxM8wYWlhtVTBXX61ZelTRuU_fwkMuNtNsd_PJHAVJjgb39ZwwjwQ==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9-R7cjGoZ90RAa7eLOM4BZj-HDTrY5iRpLPg1YLFEWynN9kYzMVv-C2gL2jv_ko3tphKtDtXZZtLA13BrL3ziMusAk-WIcWf3xaQ7xnyeRAp14b10u-un_3L0_3tmAY32HgSz6Esa",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5mxNG2Jg73LcJHRHm_Ns-3VK0uDj-C-ZG2QB8XwraIy5rHtmvu6MahNmPeZk-QXZr2TeD3r6ueIVT2ebRlzaP1OaHBpp8t3JwnB5BItuBz3jZww7tY2gfrXnpeg5rI6xwzW5lUt7mNPyJQg==",
+      "title": "yandex.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSz3uv5QNkfQAbblTD7lmZmb-DcUQDvMqk6o-3r_fT8w6YxWRhkzLMr-7dEAfUNcOwtPoj94V9BHIwU5XzthBlQ2Ar31ebT3vvCll3keZ_c5pzgkb5MqPzu1onGVB2O-_jMok1KYmT1xsUJNQ9N9fnmFbCmCJOlbwiftfB1lJlWylXJg==",
+      "title": "otobussaatleri.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Dz9sdGr8KGGPA2AdSMvSKGkaKaxIIfVSVna-3fvJJHrGIlnj8cVvZdhPQvyK3eBV6LLASM_nq8r86IbZnbENsB06aHOP-AdwH5anHDDhXEaIxVWI8IHpeb-CvVX4Ll6hV1b-lLf-UT1pxMfeOuH47z5eZvUhB0tYT7AZH6xmV6x3aAdHvsQLgHVKnX08gnlJjghLzrMcvrZQ9Yzk9MJURGhh",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtTuIWRpfNOvNSyoZZuoAUnC2The-BVHj_WulWIYO5cIgdtWiWUsrRnTMRdR3rJDEyIVb61YGX1xccexLJCj9fshQtABbXztB4L-i30bukgXL_dyIChsvPpUR-OjyyONNFMrjAVt0Pvb-2UTdiGhqOLLfq3Sj5JztM80y6ZwFunM1sWaJOvZol0o8TCOqjdKCOwv9Xj7LEoLndeP0uDouIXXNb0_bKJJuVArzMGH3p",
+      "title": "gercekfethiye.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbC9vc7J3d4qkkfJN4LJ7vvm6wwhoNnz3pqkJOe6ct8NZOZYYgk1ZRjNnkdm-53ns1oIy5VWUNGcic85T5dLborI1E7Wtgk68dcANWqpc3h9gCrVGqVpL5x4vQDsI4Ei0jiXit3Ff3tDJ4lv39C8WUNXmEbM7SZoaQSUeNEi1XXmFdhFY0q3xYWAJNNBpKfBtXU5J_V80H7b71F3_4",
+      "title": "moovitapp.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8SZx5fNLuy0uY4dFCTSePgIcxnJvtCeI7fmDldCX0NJiKJOqpxmqLaBbl7cEn6HkoVcO8fv-BuF9tjhPfdkRhBqChRbPEprAzfL8CxwFQz4HYmRfhHMfGB_4JX18XcTk0B7jVFmeBuHafAdKjoveEWlKz9QTpfNqx_Q==",
+      "title": "minibussefersaatleri.com"
+    }
+  ],
+  "grounding_support_count": 49,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrlSao1kpwgU1SkWEYRl998VQrd41WBYHsOVPXlHmSzS4g6sD1BJ7qVytBTDVeTE_4L8Z5Ac5NSIUjjd7BsZ-wfwEgIneXDA1xepYKjYykEbzTsDKIY5rAPhHvTdQfd07xGWv-FTP9R-cnqyJ2VxUxMAYc"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn9C3vYh87ZpPT-dNfBWU1kQw0gla-64Ru7oJjqpbLir1N5zpClYyJ6b9S9Cx1TGCFiPfJShhujSeirA6RekG7C04uPI1gBasTSc-RVm8savBiu90AErMe67iWLxTx3dL8mjRYHXDFfqMwdjjRdf_JQNY0NbI_ofLWQ98="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8NjwYxmfi2s0gmLwCS0Dj2UDhypx2WiiOJ2lRL3cEj_rhrIrl9Cm38PFHCxgi4XbJsvJd2Qd2JTLPbm7ayKrwWTvA-_1_Zxj9NN1ELFo2ui54PA5msXD4V3ekl5oCs8OOfAZ0ZsP-pWoyeB-nNEEwgL11-Tc="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK13VObOpKxWiIYODr6YaEHEAak2P-5B7baNphy1MCNyOW86BvRZ9hlODCC-EaPwhassXzVa5_BmuZTwXns2Fn42xctAVD4BXemrfE7s4CQfZjvtEe4P5HlDA0Q-SP3RGETC8xxOI_EUQ6NcMVMb_UtP6GL8Q="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESL-_Ri-ASwOJreIUzbMWQWwE8U5L_kURGlTAy-0h3EExg_IljYL8AGGEvgnqwwZMKWTWaHJJpSPAIFXq9Tcuh-5f6C3k6Zx2sX45qnZxol9t0iPXUwSSLweB5dTJ_DLG474XbPObnbUJxOqoEQ772uM587mwR32HufcA="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_rEk6tmOThbBCNBigyFtxOV7xPm9Z8MQsJ2RRGF1qyhTFjpv4aTHPg3JR5CwhHz03RSQEt0cYtQFAKxt8Z7FI3d9kO969-Odl6Py8gBX23v8oyJ4D63vJywsn_rJK4njhB5PAG-95natlYjvobVIRNQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAmj4PewyQQNv-MbAUhvF1jE4C1hoobhpL_Nf6KyH_x_dK5CJKELkMIXlUE8HL-rThLYW6aB1DCWqLj7uUoIZL1sSsSmGwBloZRD0QRw4o9sPcZQZxmW1PI5EJfzNoB0QHs6SSXQF8XQ_JpCXJwvWcT33zyMYT"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq0iLnl6XaWRleY98ng7hUfDb6U7Od5XGiLDLvYBwf1E8ap6kVaY__GGLEACn03vEWDchiRSP_7x2PFTGjtefmd3284LacQirZxGvQeXHObjMIlaByNTImQ_VqNlFrcTAE4ymKG4DFPWEIbxHWo6ks8zI-CePfdQpb1Q=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbX_wPvcrj34PmM1Fcp9MeyWK4mJfAYyg4g5u1-JsXyt8EWZ0elv-RtE8k1chMXizl6es0Xuaaf-txGYuA7ud9sBWvC0kXeoHk2nKMg6RAA2Adsn7ZijgCURvYUwaLhKlThus5ozY="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyRR-G3Mx5FwwQHZVzPdCnRAVUyOpRsME07UYnctXC3z04Jsbo7i66TPL5uFIUBwWRKeSbiUTsJLK4buohddJddfp0RGXkWfXeQuJVHBcMMdXll17OA7LeCz__eaHHn2ybsEjugrF6scuJG-dar_nPRK1dR0r7A2ZYRs_oFQfDkgvj5lQV"
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZB4gQ2sd0r-sK2FBKUOlA8vdNPgmKmper5SyX36PsGW_rYruhGectFEF1qFXppmN2Sq0WMe35bEI-iNItbrfTeWPui9Q4DU9_wmucfLavgo1sPRN-7XTTxAk-OvVdZy_ZxHIvDVwLIaA5UM4o0_PtPPOCIIoWnSjpXflBFuz5LJQniwqrmFwB_gcRZGlL_YOokUDGW9Q09Aw-7VNhXv1-3EqKjBs5e5EM"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtjxpBMy24ipEG8TXTYE_87dvnk7F8Q8sfz0cAuJC5vLPvhH3HbDCD0x4Tjx6rCBV3oGirHhFG7iaLRNaIo5z_-Od0INKhLNkwZRJIENU185IAVUQ4v9bWp4bstybmPg1Kp484QSyofQMw1_XBeZ43"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBggynVi4WXN0kIDBg54uqe7jHj26uPbaPnllDP5k803xE2kG4EBnQL_eNwY9aRCno7zCzk0fZJLq1xyc5PgxM8wYWlhtVTBXX61ZelTRuU_fwkMuNtNsd_PJHAVJjgb39ZwwjwQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9-R7cjGoZ90RAa7eLOM4BZj-HDTrY5iRpLPg1YLFEWynN9kYzMVv-C2gL2jv_ko3tphKtDtXZZtLA13BrL3ziMusAk-WIcWf3xaQ7xnyeRAp14b10u-un_3L0_3tmAY32HgSz6Esa"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5mxNG2Jg73LcJHRHm_Ns-3VK0uDj-C-ZG2QB8XwraIy5rHtmvu6MahNmPeZk-QXZr2TeD3r6ueIVT2ebRlzaP1OaHBpp8t3JwnB5BItuBz3jZww7tY2gfrXnpeg5rI6xwzW5lUt7mNPyJQg=="
+        }
+      },
+      {
+        "web": {
+          "title": "otobussaatleri.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSz3uv5QNkfQAbblTD7lmZmb-DcUQDvMqk6o-3r_fT8w6YxWRhkzLMr-7dEAfUNcOwtPoj94V9BHIwU5XzthBlQ2Ar31ebT3vvCll3keZ_c5pzgkb5MqPzu1onGVB2O-_jMok1KYmT1xsUJNQ9N9fnmFbCmCJOlbwiftfB1lJlWylXJg=="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Dz9sdGr8KGGPA2AdSMvSKGkaKaxIIfVSVna-3fvJJHrGIlnj8cVvZdhPQvyK3eBV6LLASM_nq8r86IbZnbENsB06aHOP-AdwH5anHDDhXEaIxVWI8IHpeb-CvVX4Ll6hV1b-lLf-UT1pxMfeOuH47z5eZvUhB0tYT7AZH6xmV6x3aAdHvsQLgHVKnX08gnlJjghLzrMcvrZQ9Yzk9MJURGhh"
+        }
+      },
+      {
+        "web": {
+          "title": "gercekfethiye.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtTuIWRpfNOvNSyoZZuoAUnC2The-BVHj_WulWIYO5cIgdtWiWUsrRnTMRdR3rJDEyIVb61YGX1xccexLJCj9fshQtABbXztB4L-i30bukgXL_dyIChsvPpUR-OjyyONNFMrjAVt0Pvb-2UTdiGhqOLLfq3Sj5JztM80y6ZwFunM1sWaJOvZol0o8TCOqjdKCOwv9Xj7LEoLndeP0uDouIXXNb0_bKJJuVArzMGH3p"
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbC9vc7J3d4qkkfJN4LJ7vvm6wwhoNnz3pqkJOe6ct8NZOZYYgk1ZRjNnkdm-53ns1oIy5VWUNGcic85T5dLborI1E7Wtgk68dcANWqpc3h9gCrVGqVpL5x4vQDsI4Ei0jiXit3Ff3tDJ4lv39C8WUNXmEbM7SZoaQSUeNEi1XXmFdhFY0q3xYWAJNNBpKfBtXU5J_V80H7b71F3_4"
+        }
+      },
+      {
+        "web": {
+          "title": "minibussefersaatleri.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8SZx5fNLuy0uY4dFCTSePgIcxnJvtCeI7fmDldCX0NJiKJOqpxmqLaBbl7cEn6HkoVcO8fv-BuF9tjhPfdkRhBqChRbPEprAzfL8CxwFQz4HYmRfhHMfGB_4JX18XcTk0B7jVFmeBuHafAdKjoveEWlKz9QTpfNqx_Q=="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "segment": {
+          "start_index": 216,
+          "end_index": 275,
+          "text": "Tüm araçlarda kredi kartı ile ödeme yapılabilmektedir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          1
+        ],
+        "segment": {
+          "start_index": 277,
+          "end_index": 302,
+          "text": "KOTEKLI:\n* HAT_KODU: 1-62"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          1
+        ],
+        "segment": {
+          "start_index": 307,
+          "end_index": 357,
+          "text": "* başlangıç/bitiş: Menteşe Stadyum - Yeniköy"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          1
+        ],
+        "segment": {
+          "start_index": 362,
+          "end_index": 524,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Muğla (Menteşe Stadyum) - Avm - Kötekli - Yeniköy güzergahında Kötekli durağı bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          1
+        ],
+        "segment": {
+          "start_index": 636,
+          "end_index": 711,
+          "text": "* güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 712,
+          "end_index": 728,
+          "text": "* HAT_KODU: 1-66"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8
+        ],
+        "segment": {
+          "start_index": 733,
+          "end_index": 796,
+          "text": "* başlangıç/bitiş: Menteşe Otogar - Yeniköy (Gece Hattı)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8
+        ],
+        "segment": {
+          "start_index": 801,
+          "end_index": 1009,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar - Stadyum - Tıp Fakültesi - Turgut Reis Yurdu - Kötekli - Yeniköy (Gece Hattı) güzergahında Kötekli durağı bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 1138,
+          "end_index": 1213,
+          "text": "* güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1214,
+          "end_index": 1230,
+          "text": "* HAT_KODU: 1-65"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1235,
+          "end_index": 1284,
+          "text": "* başlangıç/bitiş: Menteşe Otogar - Yeniköy"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1289,
+          "end_index": 1514,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Kötekli Muhtarlık, Kötekli Migros durakları; Yeniköy kalkışında Kötekli Migros, Kötekli Muhtarlık durakları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1784,
+          "end_index": 1829,
+          "text": "Son güncelleme tarihi 01-10-2026 11:14'tür."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1834,
+          "end_index": 1861,
+          "text": "* resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 1863,
+          "end_index": 1892,
+          "text": "EMIRBEYAZIT:\n* HAT_KODU: 1-14"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 1897,
+          "end_index": 2044,
+          "text": "* başlangıç/bitiş: bilinmiyor\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Emirbeyazıt Mahallesi yakınından geçmektedir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 2123,
+          "end_index": 2198,
+          "text": "* güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 2199,
+          "end_index": 2215,
+          "text": "* HAT_KODU: 1-20"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 2220,
+          "end_index": 2367,
+          "text": "* başlangıç/bitiş: bilinmiyor\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Emirbeyazıt Mahallesi yakınından geçmektedir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 2446,
+          "end_index": 2521,
+          "text": "* güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          7
+        ],
+        "segment": {
+          "start_index": 2522,
+          "end_index": 2538,
+          "text": "* HAT_KODU: 1-43"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 2543,
+          "end_index": 2591,
+          "text": "* başlangıç/bitiş: Bayır - Menteşe Stadyum"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          7
+        ],
+        "segment": {
+          "start_index": 2596,
+          "end_index": 2775,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Stadyum kalkışında Yeşil Beyaz Park, Yekap Parkı durakları Emirbeyazıt Mahallesi'ne yakın konumdadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 2934,
+          "end_index": 2970,
+          "text": "Kaynak yayın tarihi 11 Eylül 2026."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 2975,
+          "end_index": 3002,
+          "text": "* resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          5
+        ],
+        "segment": {
+          "start_index": 3003,
+          "end_index": 3018,
+          "text": "* HAT_KODU: 1-7"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 3023,
+          "end_index": 3061,
+          "text": "* başlangıç/bitiş: Menteşe Otogar"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          5
+        ],
+        "segment": {
+          "start_index": 3066,
+          "end_index": 3276,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Zübeyde Hanım Kavşağı, Yeşil Beyaz Park, Atatürk Stadyum durakları Emirbeyazıt Mahallesi'ne yakın konumdadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 3423,
+          "end_index": 3459,
+          "text": "Kaynak yayın tarihi 17 Eylül 2026."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 3464,
+          "end_index": 3491,
+          "text": "* resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          0,
+          11,
+          12,
+          2,
+          3,
+          5,
+          13,
+          6,
+          7
+        ],
+        "segment": {
+          "start_index": 3493,
+          "end_index": 3751,
+          "text": "MUSLIHITTIN:\n* HAT_KODU: Bilinmiyor\n    * başlangıç/bitiş: Bilinmiyor\n    * mahalle veya durak bağlantısının kaynaktaki desteği: MUTTAŞ'ın Muslihittin Mahallesi, Mehmet Zekai Özbek Sokak No:77 Menteşe / MUĞLA adresinde bir ofisi bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 3880,
+          "end_index": 3996,
+          "text": "* kullanıcıya faydası: Bilinmiyor\n    * güncel sıklık ve son sefer: Bilinmiyor\n    * resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15,
+          3,
+          16,
+          13
+        ],
+        "segment": {
+          "start_index": 3998,
+          "end_index": 4024,
+          "text": "ORHANIYE:\n* HAT_KODU: 10-9"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          13
+        ],
+        "segment": {
+          "start_index": 4029,
+          "end_index": 4071,
+          "text": "* başlangıç/bitiş: Marmaris - Orhaniye"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15,
+          3,
+          13
+        ],
+        "segment": {
+          "start_index": 4076,
+          "end_index": 4321,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Marmaris - Değirmenyanı - Hisarönü - Orhaniye Mahalleiçi güzergahında Orhaniye Son Durak, Orhaniye İnci Narin Yerlici Okulu, Kızkumu, Kızkumu Plajı durakları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15,
+          3
+        ],
+        "segment": {
+          "start_index": 4454,
+          "end_index": 4504,
+          "text": "Kaynak yayın tarihi 22 Ekim 2026 ve 26 Ekim 2026."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          16
+        ],
+        "segment": {
+          "start_index": 4509,
+          "end_index": 4545,
+          "text": "* resmî yayıncı: MUTTAŞ ve ÖTTA"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17,
+          18,
+          0,
+          19
+        ],
+        "segment": {
+          "start_index": 4547,
+          "end_index": 4571,
+          "text": "AKYAKA:\n* HAT_KODU: 12-5"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17,
+          0
+        ],
+        "segment": {
+          "start_index": 4576,
+          "end_index": 4616,
+          "text": "* başlangıç/bitiş: Menteşe - Akyaka"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          19
+        ],
+        "segment": {
+          "start_index": 4621,
+          "end_index": 4840,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka Garaj kalkışında Akyaka Meydan ve Akyaka Çıkış durakları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19
+        ],
+        "segment": {
+          "start_index": 5123,
+          "end_index": 5168,
+          "text": "İlk kalkış 07:00, son kalkış 23:00'dır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17,
+          0
+        ],
+        "segment": {
+          "start_index": 5169,
+          "end_index": 5221,
+          "text": "Kaynak yayın tarihi 26 Eylül 2025 ve 26 Ekim 2026."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17,
+          18,
+          0,
+          19
+        ],
+        "segment": {
+          "start_index": 5226,
+          "end_index": 5253,
+          "text": "* resmî yayıncı: MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 5254,
+          "end_index": 5271,
+          "text": "* HAT_KODU: 12-12"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 5276,
+          "end_index": 5311,
+          "text": "* başlangıç/bitiş: Ula - Akyaka"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 5316,
+          "end_index": 5527,
+          "text": "* mahalle veya durak bağlantısının kaynaktaki desteği: Ula kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka kalkışında Akyaka Garaj, Akyaka Meydan ve Kızılagaç durakları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 5703,
+          "end_index": 5766,
+          "text": "Akyaka kalkış: Hafta İçi ve Hafta Sonu 10:30, 13:45, 17:15."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 5767,
+          "end_index": 5801,
+          "text": "Kaynak yayın tarihi 26 Ekim 2026."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 5806,
+          "end_index": 5833,
+          "text": "* resmî yayıncı: MUTTAŞ"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGki3QgvJXcQC3QulyUhfcPyyZirldPbAbZsE_udFmGlkY7aXSgFJ6d0ns-S9muP3nKUmLqAaiggR6y1Z0EXP0drIg9MElNjid__OXAAbr1Dj-OzzACYY7lvMehKdFVEfETfwW1LBJJ5mjoj_uMIrKRI8Jw-NhVksuvsbTlmI5P9XUIYdtdYCcpJPMBaQPaNZA_SIDvzYE5axYRLsfwFRmdRm0cXRP28un-_-ew9A==\">Muğla Akyaka MUTTAŞ hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKuK357wo58getprp7b8zwWB6wiIM-HOtVp2iQPhXe262OAV8_hUTWCdX8jUnAgDvzTPFPwKjyKuiPtygJ-RoVfG4n5K31aAGU8bAphCIXBjY_PZiMNR8m3MxFKXlhVCHRBRS2N99Cu-tB66XRBQPdtJTh1IdLluckJX3nmwcJ3AE6pZGQW3a7WzlfcDu207hqm_bQrFr1zBc0G6m6yyb6-ExzINNnLQY-aV0FlMfHQA-T\">Muğla Muslihittin MUTTAŞ hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMMaRzQEVC-ntF8ccmmoPkyr_-d21eP5O6NINjbHVWnluT09Q-YcpgvXApx6IYwfSxTmyXedWXiAYprxygXQae1upua8dtbqMVucS-4POSC1UU3AgplMb8W7rbIW4cLRVPSeWcuf7TV_40zlSoziCjSL7ahZWM_UqTEXsFL_Z7PTM4BydIZhqaaW6znH_1GUtNW1eUB8oRDedOKCYSZk5sqKxtla8-YiWfAAiOlMsGpWbsWQ==\">Muğla Kötekli MUTTAŞ hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbjiiJlUx8H7IlnXrcEbKgf1sWOOdOu58ISzXcwvhSdTmeJPcN_r5hpH-6jB0WJMmmjoVleKTZbNUCpuDx_OLlRXgZ-DD55CRecABox3lKnzE43RDvXvl63HyNBd15xdBqtE2aCfSqcWBv0tOztVK5nCgQYGXe2cgdjH2VcOAW4xAYBzJIBXOmj_krEmrvtYhrhKRzduu9Nv3sAzcWeNM2UmugYTynKGrn2PRPVUVz_pqGmG9qqOwO\">Muğla Emirbeyazıt MUTTAŞ hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG52w2LGPi0n2RJ3KOibuWXOKZTnLrguqaweKzAsV-Fe-nayWqHzdAwCSYHqXs1eWs2gnG49oHvUdTHcJrH1idqjpho9pISnIkEUb3aHvS8_PGlWQ_deMVkCOcjxbliPxFoOjeFV6DiOktnmSnqqwVg11wvNQKS25z00hGZPW89pJgLfEOE9o6DYMZYjylHUvpRjlyWlhTBBzeKuY8A1TuNwg==\">MUTTAŞ güncel tarife</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKkeA6BV4Uh5YArH4du85yeBDzZ_qM2V3EKDAkSB-oPuBTJsX0YZbsx3UrB8si4mbojwvBSIcC12l8Zp7La-ri_IrUL4WCo7BcmTYBhiIiQ7XgN4-bSOZcd-DMEJDnEvsTJOr-21NmfUq2Va5U2-jSGUwr6uI6c7A5cql2nTqWdEjgVf2cxNsnmF3Byc7Rx6F2tgrBinBHiDL9SFIjU4Dh7ZjwDUaFqqE4MmAQOSCE\">Muğla Orhaniye MUTTAŞ hatları</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Muğla Kötekli MUTTAŞ hatları",
+      "Muğla Emirbeyazıt MUTTAŞ hatları",
+      "Muğla Muslihittin MUTTAŞ hatları",
+      "Muğla Orhaniye MUTTAŞ hatları",
+      "Muğla Akyaka MUTTAŞ hatları",
+      "MUTTAŞ güncel tarife"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 2027,
+    "prompt_token_count": 439,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 439
+      }
+    ],
+    "tool_use_prompt_token_count": 525,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 525
+      }
+    ],
+    "total_token_count": 2991
+  },
+  "text": "Muğla'daki belirtilen mahalleler için MUTTAŞ/belediye resmi sayfalarından alınan yerel hat bilgileri aşağıda sunulmuştur. Güncel tarife belgesi olmadan saat, son sefer veya sıklık bilgisi verilmemiştir. Tüm araçlarda kredi kartı ile ödeme yapılabilmektedir.\n\nKOTEKLI:\n* HAT_KODU: 1-62\n    * başlangıç/bitiş: Menteşe Stadyum - Yeniköy\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Muğla (Menteşe Stadyum) - Avm - Kötekli - Yeniköy güzergahında Kötekli durağı bulunmaktadır.\n    * kullanıcıya faydası: Kötekli Mahallesi'nden Menteşe Stadyumu'na ve Yeniköy'e ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ\n* HAT_KODU: 1-66\n    * başlangıç/bitiş: Menteşe Otogar - Yeniköy (Gece Hattı)\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar - Stadyum - Tıp Fakültesi - Turgut Reis Yurdu - Kötekli - Yeniköy (Gece Hattı) güzergahında Kötekli durağı bulunmaktadır.\n    * kullanıcıya faydası: Kötekli Mahallesi'nden Menteşe Otogarı'na ve Yeniköy'e gece saatlerinde ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ\n* HAT_KODU: 1-65\n    * başlangıç/bitiş: Menteşe Otogar - Yeniköy\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Kötekli Muhtarlık, Kötekli Migros durakları; Yeniköy kalkışında Kötekli Migros, Kötekli Muhtarlık durakları bulunmaktadır.\n    * kullanıcıya faydası: Kötekli Mahallesi'nden Menteşe Otogarı'na ve Yeniköy'e ulaşım sağlar.\n    * güncel sıklık ve son sefer: Menteşe Otogar kalkış: Hafta İçi, Cumartesi, Pazar günleri 06:40'tan itibaren 20 dakikada bir sefer düzenlenmektedir. Son güncelleme tarihi 01-10-2026 11:14'tür.\n    * resmî yayıncı: MUTTAŞ\n\nEMIRBEYAZIT:\n* HAT_KODU: 1-14\n    * başlangıç/bitiş: bilinmiyor\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Emirbeyazıt Mahallesi yakınından geçmektedir.\n    * kullanıcıya faydası: Emirbeyazıt Mahallesi'ne ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ\n* HAT_KODU: 1-20\n    * başlangıç/bitiş: bilinmiyor\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Emirbeyazıt Mahallesi yakınından geçmektedir.\n    * kullanıcıya faydası: Emirbeyazıt Mahallesi'ne ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor\n    * resmî yayıncı: MUTTAŞ\n* HAT_KODU: 1-43\n    * başlangıç/bitiş: Bayır - Menteşe Stadyum\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Stadyum kalkışında Yeşil Beyaz Park, Yekap Parkı durakları Emirbeyazıt Mahallesi'ne yakın konumdadır.\n    * kullanıcıya faydası: Emirbeyazıt Mahallesi'nden Bayır'a ve Menteşe Stadyumu'na ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor. Kaynak yayın tarihi 11 Eylül 2026.\n    * resmî yayıncı: MUTTAŞ\n* HAT_KODU: 1-7\n    * başlangıç/bitiş: Menteşe Otogar\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Zübeyde Hanım Kavşağı, Yeşil Beyaz Park, Atatürk Stadyum durakları Emirbeyazıt Mahallesi'ne yakın konumdadır.\n    * kullanıcıya faydası: Emirbeyazıt Mahallesi'nden Menteşe Otogarı'na ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor. Kaynak yayın tarihi 17 Eylül 2026.\n    * resmî yayıncı: MUTTAŞ\n\nMUSLIHITTIN:\n* HAT_KODU: Bilinmiyor\n    * başlangıç/bitiş: Bilinmiyor\n    * mahalle veya durak bağlantısının kaynaktaki desteği: MUTTAŞ'ın Muslihittin Mahallesi, Mehmet Zekai Özbek Sokak No:77 Menteşe / MUĞLA adresinde bir ofisi bulunmaktadır. Bu durum mahallede toplu taşıma hizmeti verildiğini düşündürmektedir ancak belirli bir hat bilgisi bulunmamaktadır.\n    * kullanıcıya faydası: Bilinmiyor\n    * güncel sıklık ve son sefer: Bilinmiyor\n    * resmî yayıncı: MUTTAŞ\n\nORHANIYE:\n* HAT_KODU: 10-9\n    * başlangıç/bitiş: Marmaris - Orhaniye\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Marmaris - Değirmenyanı - Hisarönü - Orhaniye Mahalleiçi güzergahında Orhaniye Son Durak, Orhaniye İnci Narin Yerlici Okulu, Kızkumu, Kızkumu Plajı durakları bulunmaktadır.\n    * kullanıcıya faydası: Orhaniye Mahallesi'nden Marmaris'e ulaşım sağlar.\n    * güncel sıklık ve son sefer: bilinmiyor. Kaynak yayın tarihi 22 Ekim 2026 ve 26 Ekim 2026.\n    * resmî yayıncı: MUTTAŞ ve ÖTTA\n\nAKYAKA:\n* HAT_KODU: 12-5\n    * başlangıç/bitiş: Menteşe - Akyaka\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Menteşe Otogar kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka Garaj kalkışında Akyaka Meydan ve Akyaka Çıkış durakları bulunmaktadır.\n    * kullanıcıya faydası: Akyaka Mahallesi'nden Menteşe'ye ulaşım sağlar.\n    * güncel sıklık ve son sefer: Menteşe Otogar kalkışları hafta içi 26, hafta sonu 25 seferdir. İlk kalkış 07:50, son kalkış 23:59'dur. Akyaka Garaj kalkışları her gün 25 seferdir. İlk kalkış 07:00, son kalkış 23:00'dır. Kaynak yayın tarihi 26 Eylül 2025 ve 26 Ekim 2026.\n    * resmî yayıncı: MUTTAŞ\n* HAT_KODU: 12-12\n    * başlangıç/bitiş: Ula - Akyaka\n    * mahalle veya durak bağlantısının kaynaktaki desteği: Ula kalkışında Akyaka Meydan ve Akyaka Garaj durakları; Akyaka kalkışında Akyaka Garaj, Akyaka Meydan ve Kızılagaç durakları bulunmaktadır.\n    * kullanıcıya faydası: Akyaka Mahallesi'nden Ula'ya ulaşım sağlar.\n    * güncel sıklık ve son sefer: Ula kalkış: Hafta İçi ve Hafta Sonu 08:00, 11:30, 15:00. Akyaka kalkış: Hafta İçi ve Hafta Sonu 10:30, 13:45, 17:15. Kaynak yayın tarihi 26 Ekim 2026.\n    * resmî yayıncı: MUTTAŞ"
+}

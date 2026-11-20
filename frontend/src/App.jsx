@@ -5,7 +5,7 @@ import {
   fetchSystemHealth,
 } from './services/api';
 import { normalizeScoreValue } from './components/ScoreCard';
-
+import GeminiTestReport from './components/GeminiTestReport';
 import { openReportPage, navigate } from './navigation.mjs';
 
 const NEIGHBORHOOD_VISUALS = {
@@ -78,7 +78,7 @@ const PROFILE_CONFIG = {
 
 const QUICK_SUGGESTIONS = [];
 
-export default function App() {
+function TemplateApp() {
   const [neighborhoods, setNeighborhoods] = useState([]);
   const [selectedSlug, setSelectedSlug] = useState(null);
 
@@ -418,7 +418,7 @@ export default function App() {
               <b>5</b> değerlendirme boyutu
             </div>
             <span className="preview-tag">
-              Mahalle bilgileri ve kaynakları
+              {health?.source_mode === 'research' ? 'Kaynaklı araştırma paketi' : 'Mahalle bilgileri ve kaynakları'}
             </span>
           </div>
         </div>
@@ -668,7 +668,7 @@ export default function App() {
               </div>
 
               <div className="profile-description" id="profile-description" aria-live="polite">
-                {activeProfile.description}
+                {health?.source_mode === 'research' && profileFilter ? 'Profil karşılaştırması proje ağırlıklarıyla oluşturulmuş bir senaryodur. Eksik kategori varsa toplam puan hesaplanmaz; ağırlıkları rapordaki grafikten inceleyebilirsin.' : activeProfile.description}
               </div>
             </div>
 
@@ -711,7 +711,7 @@ export default function App() {
               </div>
 
               <p className="panel-note">
-                Sıralama mevcut backend uygunluk puanlarıyla güncellenir. Bir mahalleye tıklayarak raporunu ve puan grafiklerini açabilirsin.
+                Önceliklerine göre mahalleleri karşılaştır. Bir mahalleye tıklayarak detayları, kaynakları ve puan grafiklerini açabilirsin.
               </p>
             </div>
           </div>
@@ -783,11 +783,11 @@ export default function App() {
             </details>
             <details>
               <summary>
-                Rapor hangi konuları kapsıyor ve eksik veri nasıl gösteriliyor?
+                Rapor hangi konuları kapsıyor?
                 <span aria-hidden="true">+</span>
               </summary>
               <p>
-                Maliyet, sosyal yaşam, güvenlik ve haberler, afet bilgisi ve ulaşım olmak üzere beş başlık yer alır. Backend üzerinde henüz sayısal puanı bulunmayan bir kategori sıfır (0) puan gibi gösterilmez; açıkça &ldquo;Veri bekleniyor&rdquo; olarak işaretlenir.
+                Kira ve konut maliyeti, sosyal yaşam, mahalle haberleri, deprem bilgisi ve ulaşım olmak üzere beş başlık yer alır. Kaynak ilanları, hatları ve mekânları kendi önceliklerine göre değerlendirebilirsin. Araştırmanın kapsamı ve puanlama yöntemi raporun sonunda açıklanır.
               </p>
             </details>
             <details>
@@ -837,8 +837,11 @@ export default function App() {
           <span>Team Axiom / MahallEN</span>
         </div>
       </footer>
-
-
     </div>
   );
+}
+
+export default function App() {
+  return new URLSearchParams(window.location.search).get('view') === 'legacy-gemini-test'
+    ? <GeminiTestReport /> : <TemplateApp />;
 }

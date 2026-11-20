@@ -17,6 +17,7 @@ RECORD_URL = "https://aperta.ulakbim.gov.tr/records/274290"
 METADATA_URL = "https://aperta.ulakbim.gov.tr/api/records/274290"
 PGA_FILENAME = "PGA_0.10_50yrs.csv"
 OVERPASS_ENDPOINTS = (
+    "https://overpass.private.coffee/api/interpreter",
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass-api.de/api/interpreter",
 )
@@ -132,7 +133,7 @@ def collect_social(location, radius=1000, snapshot=None):
         saved = load_json(snapshot)
         raw, endpoint = saved["response"], saved["request_url"]
         attempts = []
-        access_mode = "local_one_off_osm_snapshot"
+        access_mode = "cached_overpass_extract" if saved.get("method") == "overpass" else "local_one_off_osm_snapshot"
         nodes = {e["id"]: e for e in raw.get("elements", []) if e["type"] == "node"}
         for item in raw.get("elements", []):
             if item["type"] == "way":

@@ -94,7 +94,7 @@ export function ScoreBarChart({ scores, idPrefix = 'chart' }) {
   );
 }
 
-export default function ScoreCard({ title, score, subtitle, icon: Icon, testId, children }) {
+export default function ScoreCard({ title, score, subtitle, icon: Icon, testId, onOpen, children }) {
   const validScore = normalizeScoreValue(score);
   const style = getScoreBadgeStyle(validScore);
 
@@ -125,13 +125,14 @@ export default function ScoreCard({ title, score, subtitle, icon: Icon, testId, 
         >
           <div className="score-card-fill" style={{ width: `${validScore}%` }} />
         </div>
-      ) : (
-        <div className="score-card-track is-missing" aria-hidden="true">
-          <span>Sayısal puan hesaplanmadı (0 olarak kabul edilmez)</span>
-        </div>
-      )}
+      ) : null}
 
       {subtitle && <p className="score-card-subtitle">{subtitle}</p>}
+      {onOpen && (
+        <button type="button" className="category-open" onClick={onOpen} aria-label={`${title} detaylarını aç`}>
+          Detayları ve kaynakları incele <span aria-hidden="true">↗</span>
+        </button>
+      )}
       {children}
     </article>
   );

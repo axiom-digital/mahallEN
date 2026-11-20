@@ -1,0 +1,812 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "orhaniye",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "started_at": "2026-10-28T18:14:22.402358+00:00",
+  "finished_at": "2026-10-28T18:14:36.584942+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "rent_cost",
+    "safety_news",
+    "transportation",
+    "social_life"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Orhaniye Mahallesi Menteşe Muğla kiralık konut son 90 gün",
+    "Orhaniye Mahallesi Menteşe Muğla kiralık daire ilanları",
+    "Orhaniye Mahallesi Menteşe Muğla güvenlik olayları son 12 ay",
+    "Orhaniye Mahallesi Menteşe Muğla suç duyuruları",
+    "MUTTAŞ Orhaniye Mahallesi Menteşe Muğla otobüs hatları",
+    "Muğla Büyükşehir Belediyesi Orhaniye Mahallesi ulaşım",
+    "Orhaniye Mahallesi Menteşe Muğla restoranlar",
+    "Orhaniye Mahallesi Menteşe Muğla kafeler",
+    "Orhaniye Mahallesi Menteşe Muğla marketler",
+    "Orhaniye Mahallesi Menteşe Muğla parklar",
+    "Orhaniye Mahallesi Menteşe Muğla sosyal tesisler",
+    "Orhaniye Mahallesi Menteşe Muğla kültür merkezleri"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENHl0LjywOgl746RUMk1OecML-27XPRz-BU7GZwAW-WtygcpPC1Xt1aYs4obzSuIsjzQ9yL1i3E3nO3i_EthipmqvirrUB57hrHEbrLQ0iNrdolB2t8LJcyUEuL_A4ttYQZWbFrnY76mqxYiWFV0s0C82Dl9ShJ8LgqvJYCjyFVE9UoTpl3p_-y5smmRQ=",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhsq84QWHU55YnlXE4joPVi1MV5itMb0IA5nhnorpLMgheKfuHKvR7OPiftUYdpqO12eWUgVGGQgV9NbP_3J9xuOpg-Gch_42OcIUV3IJkvhKi9yJrSu1u5gjXMwhbw5_H0uiwhsmz_YLsVLGCmj-mvWhIJ_JzqYbkSUDccS-jYmtP",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_YVT_cN82E0iHQi_rn3PlKlBOY2kdTbV4DB4pZnLrQKwTUiu0A5ZenP0mOec2Zbsz2WL44rkHcg_sF5eIyHLjlgA8Y15GNTcmSbRzF4ec6S9rMkAvG-nGrwxOtgOhdZB-JLda9Gr4S9q59kuXXR0ql_WPXBNrOvQYBZZOIMVMHYic",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpM5jVzeiM9r4HtRx42BK0SAeOFjoGGXovoACTazz_xdmaha5HUkv1QFk4nOMXvcEC3fWeOhauVahg2agG1pZtIU_xdFEg6U7pJgC3KJx88od1upglluJNqvatXWKLTUTwuQLO0esWI1Jl4SaMzCcuEKE=",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVwiFtDEvWnn0Uvskh1X_lniDam75vu72D3KuOLm--NnuNHh4Uwdq0pLdmw7M3_ipZbOwPJKmqGtW5pZNNk-n-Px-l0h9l5bJuX7GVa-pk5gIqBpxkBBysYQzAkIxn0t6ipiI6jD9zXUtZfFTP2qw8uKMCDA==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWbwYmpCq-ngvwbDROLUS2TB9H-HpjEz4jqF0ceyUxXqgqa1M091IYsqWtgpPLBZmtGyNalSUrXrgfH1_TERBqxXxfKIIaq_F4gJn4-2nmleyo8_FGIiHjITfykjxYI2EqBoH3dDCMPivIEvHYtprwdr9EY2GqJSSP1fR3VD35q6MdNwqqjCJ3QoiFXUfg_EEyzGBYDnud9jThjy1-W_arn1C1Yi3mcXXAhMYtWOtx11cAkBss6RQY",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbJAdQUoZhyoPZ-bVMwQuLdMXo0eSIhduaSLcmaJq2Nq41OcTBtyDhkg4rYyQC7SsPDauhIVGebgCo0-h7qu6FUf0ZgZCAsowewWb_QKCon_PjZjdudFj3IRDGE3u-wKilQGBhqYoLg-WUFZd4YqFh78Y36HLb6iVIScqrhvzVxy0UmM4JnQvGoUge5uHEMJ6NE334AiaoyDtj7gyP3x8EyqGuk8AAd2FD5nlBYeL7GUc=",
+      "title": "yozgatgazetesi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEIGCRAt_xsFhktKM9o5rjPcDa75drrTdU0Qr7BmSKDOHtLsAE1GoyMGC8KVZPVYczrfw6fswTQ4ZsouoAXcJml0_FyqcHR1R5vRKEF3xE5k8QF5P57YB3BRuiiHeFMrqBUoONP1_7QVaQrZ3UIXIaEk3WcEFB63LXqObvS1naI0CkDlKzLXCrDUkriQnhRdtJg0N3nuOYa-_M",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVvkWBSea5jWf-lzu45atcQPoRBljf2NaeX8YqK2b7RsU1pSVhkwC4F1CQmd-pqPTqIb1IWJJx5JosLiN93GRqVWZZYFEkrnrtRm2RU87BB89IoM_vbvChqM6m-KBJMcbITXxVOlLWumivydfPueNaoyYjwWoFo3Qc42pDHBlBbHU9zR8BPME3XqZg_HQ3mcgY6tKIIGW1uA==",
+      "title": "mugladevrim.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwoZPuqY5fQCkws6GxOzpUjFcmgARgCo2Zzu-PMbgVTGvnVHVxw7c8D0rxXtIKzsLxvdppOf5KGRoArcwU-7nigzZShFiioCXqHmQgh4oEEBQgAkh2uCwjKn-Vua_kGfbKXwGAEKWB3lQS-DYPCtxgWH3vsZjMbagPfQYrlt7YAcTAlnLrDjAQAgsjXB1riX2cnnC15cNKVEN4_1RQGvdvG5QWADSMrVK4Q4rzYs3J19bmvBSvg90r",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg6YtFUWo8bmOFWNbzSk5oeDh4YuKmW4kheB3jpnxarZT4djRNeX3dSaaJ_zoYX10q_HersVIa_MNHlaUbr01uaDN6Ck18MypbOjfFTY2sgr63-Djf94294x2imJG9JKY0xKDuy2SyQzlPEBJEwLOQHo2KEdXKrpMCeFdLteiaQwAPFSsM_zwfMISdANB9agHNvw==",
+      "title": "dha.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY1cVBHr2Xi014j93kh9qczonjzpBqtPG0EvjqF2bRl78ddO0vqQiOQb4IGM6nWCGwvDk-NKlKpJTQT-02Nq-UQkQjUWC7AFXfcJzRmB5P3DjoqyvL_4BKCV8glR2LMlTIseSFY1GOdpwf-xBaLDOe34r3DnzU",
+      "title": "mabollamedya.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMncd9u0xqGSIow4suymZ8d8ySGDGwmBYwS9tAwidNUtIQgeBDYSNY9ID9vTd6Ah-VmiCsJoBpxa7RLoExHraV4227lEeYPag6QIjZFcknctfXXaUA_70DdHgMsxkpns0vfN1MmNbu2OrvYOFWz-Xz923mDcYvQznh-n458V7LyHpKtnapztULSpzIgiVY59zLbAl58XF1JNVtFnY5Jizgfo0MEgNVOLvBWsM=",
+      "title": "gercekfethiye.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXCs1pf9NW-urQkuGZ6bgjsUOJFFaNR4etc_HoDsU-UIDUEDZaVwtUBc35-6Ijbyls5Prwk7qQjpfM2xQm2qL6l3dSB0G0RYsGKvqY1Z4111HTp0JBvLa3ZoEnw3x7wCdqerp4YO5P2UjiXsj6FR4HVQP68IBpnmeu9c0ngqp3_6rQjuOmgvrSYiqVxT-hSLZYnnWhhNLKaM77zkpwvqta",
+      "title": "mugladevrim.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSoaSUcLMaFw77lyE3eluudmSUAfDHyoz7jIHqnyrc1BGe1uro-jVkk9Ff5RkPsAtRtKKqcebThBqtTCGrILBk9poj5UvENDFG5JBR74VsXywm8mHY2yj6XR82o82QAmQ2FWefy6luCqujWdIIatapbKdj8UlKiZkOAGii",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4AZSJBajA50C7C3Ju5j3qpoIZiWqwf88ClTi2cWrtXXtf0BLRIld-oRhc-eTRtte8RD6FN8GyckPyBUL1jiFjSRRR1ltoLL2nKytxXWhlXeVA3M5CkWUFbUDhkamblweMWo_6djqkVmbbr735ARM5y9b8Vhr0VkDhK4ls8s8RHmBaEwzoX7FwsORkzwKc9HG-XGrNaxS8CY5JGwS7",
+      "title": "gundemfethiye.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAHqkEd9BnXc53_9pNWOAZPVJXOkElUt9XHE2O3OTo2eZWKhWKZ4Wji-F1KmFzq4GXEPT49HLdVipoh_6sgNqX4k6w5S18xLqlbORX3y_-IdQHnbiJ4aM6EvoyitqPqyO6k7xrSvH96u8pqG_IPRMvZgWrF7UhsA==",
+      "title": "fethiyetv.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0wJrAK5Pe9CtPNB7G8wEvfqOGe_ykB1Ixra5BHWoANfpVamKdhhU8SH7eBuE-GivNyjxafBqiij3yNFNuCeicFMowqoLOZmWaVJZ3BulIUzWXSwyo-zqwSU28cmSZ3QVwL0WAOTPVnf90zEXAjkojKUXGbGDsrZ0QxjK5xV0sswzzl4GduOtbgfSASkJsYV2b9g09wcZs0Dk=",
+      "title": "dha.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyPFpoFZckCLThtXaEQfUYwIhztKx_kKb_H08Oy324RjEceqxmZpTLgLCuNBzfU4i9T3x8wydZe5-Vc4iJYIt_itTZVM4RX2TAQL4fvoCRPLtDjInQW_L5AMv91HXNYFs38VHr8K4U2ODDlXe0tsRx1VmxC0Xw1doWWsiDvwqoFSW74QcO5Ck6POwI05PSwt402vO-V1PXlrcd3Q8hO5qALMYlTW2Tnhw0gI-g",
+      "title": "moovitapp.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4yu1KRNluQrbCpYU2N8js0HcJBmQERsCKiJKimTpn9-bdYIHrv03CuXBOCZIcFtxyirn10xUVRlK6JgQOcIYItd2WpRXsQy5Gm6H8TAD-jA8ChFLT5u_im_jM5g4mj3rINFd4oi0mAmg4f6O3e7aSE6IyHh6cyBVLWPD5",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqbGvjMjv5wRLIEznVGBcaF7GIm9Xb83noKOwewLQT0mZc4QtBqpYFEs5biHfxDv-6cwVJQ0eOX5Et7hadbGoQVqOpagoq8z5kq_EAAqnxMBPbUNPUi_I8YJtjs9VgnIQZwUKZWVb7dSAllWfkCJ5tFz97H_wbVbnHha1XAA==",
+      "title": "universitev.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAbRONh70O28npg0lgPuHjlgTpEMEt-cNbFdy8jVjLUw_ZdpvGXR387WafckaQsb7Mj7vBJdgst6sGH2S63s8HoaaALfIp5U5kp-dl3ueJlBmtu8IzEUAVp98uyyuww59IGTforQly4bYaprt2a8GiX_9ORFblcjIyQKLbRnx0aIRN",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLF6LS4jZyzpDOaySJO6YgOfyRHaJpz_qHQcKInhcGpo-qTfHLm7wzFkGmQCjn4SGBZtV4x6mjzB1igJ27Rv45KOI_wyCBOuOOPVxj0JXCDiwqWjCeZGCV_XWaRTB7UP67rxMpP3Ua8OXBqrKbrSw_GX3LWg==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENrMCty1-X_lWTjIal9p6ffqHDaYNmYT5sUqX0lF5BK64Srp9PRT2Ptnaq1quWesjaczZddhxyhVE0zSHHCsWhi-71fdlQHlDogadojtRz72DeaySMHZtRJOnTH6V96J39txI9C1J_Zf9YtnkyNzN69F6qizVSbaH4iAx4Glz9XOiSEBpdn4zTaQ==",
+      "title": "com.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTjuaAWv6HY6WAJ9rrGEi-uGlNWx-1Ekp3DtDbQemJciFhlX-JKus6DJewzE6EdGBFS3kJk-ZwZuxGu3nAPjVbNJJ-okLfFicSR_w2stAV1uaauSHxhduVH_Dw-Zq3vPwT2mD9h5YqX8OQPXbGUqY2LjD7WepVoRfXh1VfuZ-Lr2sn03M=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbbGN9pz6d9l-mEQclJqSSBXW-0j5EVF33qUlF5YvGw7Jun2UQA3-ih04zRL9mZhAUUXVAo_6k91mP0BJqSsd65i2oQjWHpNS6d8-Nro9gyCGgyQ1zo1G9o7m52BgTHGSkLm5o14ve_BxM",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoBXklvqtygF3FnBD8KdcQqduhMkWH-gY-IZuJRDvuH4FI2TbRwXGwm_NUud8L9WMfh3JKvxsswmpEHKlg2rv3y_g3Xdc2CrTl0PEl4bAgMQtKm9xkyBNQI3XLFRydiZtGjBR6Agobu91SRMakG9QgcA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaH5F9YNHGHINEa5pvNMmGBinmedWbeL28Lw4poYav2JWOz28xu19FDOhCtDe2DpdgaDGrhxocD2Wdl2awxSvY1sbzBMyn0xHAGNcdqhO8ok3qGPPKTmHcX1sg1JxdTgREbdPI_CzGOHgWVxcV-jK1r1w=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEui6OmkNwk8Wm-Jka4HFM74z3v1Xye6Er6RfoH9dmnG7XyKB4YIzlB11yyuytDPqD4DaMA_uxDf5sbDAqoAzJ6qe1gbsJyqfX_2rrEP2ghmpGlDhd9B7cyotpblBHsqRlJCCTQ1TdqLX9yQL8nHE-LknmBD1ktKPQC68pdy7IiPkCn2d8z5Iu-LsAsQg0LCr-J6NElTMQS4zOyYJSwHel0DTLlIjIWS3mMhsNiEWvTZlVCbI5OzTu9ER6WnaiQJgBzXimK3g==",
+      "title": "marmarismanset.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHR1Jiu7Mpd0zgRJ62zjhdJ-LEyY0qaQIDlMI9k889QsJNdarRdBNnw5KULIVN9yuCK2ZtthphXRbLr-UvaFJ_kzphAUnJiz0s36Sa8Q75jEbEoHwxR_zyerX3vQDvpSphYFsQyEY6DqmYxoCVu600=",
+      "title": "wikipedia.org"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0FUUxJKJlUjxjiw-oqKAEErmWlW6X22eJ1zUhx_BlVpinWjjBChkda7vOGV6e47ZjjfZ95VVMXRxv0gO5ePOph_XnsR5qxSWNw2bfZgCFpx5CSBpLE8T0I_rjgHtcBO6IZ9Z1D_RFkWKJQ9o0f9pERKdnrLM=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTDHxOoZS-EmuVyfFaMKN2SRLxyBi8jYuxlAdW2eNikAtw05aAmg-qe4CzjyF8LDTue57uCBzMaPyZbvTloXQ_jQzeEQGvqDu6xs20j0DW4UJxiutKr6OnaKpUGqZ3MNREPmBALyCgf_9zXgTsGKdAZkqKslEir2nZSytxYVmlueNSZtniZoeNf9kNb5n2fA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1Olqg0t42xiTdz-4vqe4gLmlPx-9zRZojPGzEGiR4bjNOdS19232NGuIPNpghBnu32q1MchJ6U7FcsCWbj9HwKCeNY47ZmHKOu7t96N101bgcnJ35MD18epkFiEBPrIt17zd9cFcYbYt6kUcaFRC8KwXG1MJHFt8P7c_xNLf_swjO1oJZ-rm5",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcfZxGENaaUyWG3z_mZKSr95ZDFbs6ZI0ghldTNVq7T5H4Dr0_DRfiSVQLLQYe2BGlBjNBzNZcJgAcwUk4apMXgp_8zbn5rATMCLpnkxCQ8fTtfunz5sWyMRHO_HEhTIh-YgnO9q5v6-tDLxT4j417uFWSPj06CRuJdIhMWsNC52oYmaMzea9jRA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_Vw4XvcXyiVz4vqUQUilJaWKXKxN2PXy8kNGR4marJ20qxtq14NgDIGSro_yIDfA18IjetJgQ67moRtjLoQOGgIucZwMUHJWS4-B2zDgv2jx9HGFp8aIHIHuiUYg30j5Yui6CaW01pE-1JyWhCcecavZo6a-BMGh2qTDfEU1icAqygt818pdifAdTm-tVgszujqlj1R_T",
+      "title": "migros.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlsQLEbDkwikCPQ4bkHMGAHRgXT-i-oVul42VXFhEaWCI0G_GgZtDQl69_wHAhjP1rOylAPM0JWiEcYFsy7cAuuAka6_wgIADwF6EEaySX88bWpQEjFYK7gWZjDoaJPcSKmi6KW60tJhkUZNfJL4EqntIExA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBCCqPK1XsqSo5C_IPWQ477Q7GJ0NnwKF0AbeuiUY_iVaDHNB4f6RyScNTCT--uPyKrIUxbVhcdIdnxDv75UVW_SKy8J14V1KSmJrZVCOQhVk2lXn6P-zt75N-wfhYyZy4M08kmpyIY37NVrpTFBmMEMLNW5Eb13mWnSAtla9gEc3L9g==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzYRhKe-cAb_gl8qmguu48H4fQR4avIkn23GGj9SkrMMQzmS0GocX5mJ_nI2V-nzw3rwWtrTNNQT1k2pHo6vWwXFead2td_hV09Tz-O2FD7IofDSypc7tG35gYqs-jZBaoyqEH8e2PRweYmI28ORggmMMGw0BImakNA7pBsABQdcIlopI=",
+      "title": "yerelesnaf.com"
+    }
+  ],
+  "grounding_support_count": 33,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENHl0LjywOgl746RUMk1OecML-27XPRz-BU7GZwAW-WtygcpPC1Xt1aYs4obzSuIsjzQ9yL1i3E3nO3i_EthipmqvirrUB57hrHEbrLQ0iNrdolB2t8LJcyUEuL_A4ttYQZWbFrnY76mqxYiWFV0s0C82Dl9ShJ8LgqvJYCjyFVE9UoTpl3p_-y5smmRQ="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhsq84QWHU55YnlXE4joPVi1MV5itMb0IA5nhnorpLMgheKfuHKvR7OPiftUYdpqO12eWUgVGGQgV9NbP_3J9xuOpg-Gch_42OcIUV3IJkvhKi9yJrSu1u5gjXMwhbw5_H0uiwhsmz_YLsVLGCmj-mvWhIJ_JzqYbkSUDccS-jYmtP"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_YVT_cN82E0iHQi_rn3PlKlBOY2kdTbV4DB4pZnLrQKwTUiu0A5ZenP0mOec2Zbsz2WL44rkHcg_sF5eIyHLjlgA8Y15GNTcmSbRzF4ec6S9rMkAvG-nGrwxOtgOhdZB-JLda9Gr4S9q59kuXXR0ql_WPXBNrOvQYBZZOIMVMHYic"
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpM5jVzeiM9r4HtRx42BK0SAeOFjoGGXovoACTazz_xdmaha5HUkv1QFk4nOMXvcEC3fWeOhauVahg2agG1pZtIU_xdFEg6U7pJgC3KJx88od1upglluJNqvatXWKLTUTwuQLO0esWI1Jl4SaMzCcuEKE="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVwiFtDEvWnn0Uvskh1X_lniDam75vu72D3KuOLm--NnuNHh4Uwdq0pLdmw7M3_ipZbOwPJKmqGtW5pZNNk-n-Px-l0h9l5bJuX7GVa-pk5gIqBpxkBBysYQzAkIxn0t6ipiI6jD9zXUtZfFTP2qw8uKMCDA=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWbwYmpCq-ngvwbDROLUS2TB9H-HpjEz4jqF0ceyUxXqgqa1M091IYsqWtgpPLBZmtGyNalSUrXrgfH1_TERBqxXxfKIIaq_F4gJn4-2nmleyo8_FGIiHjITfykjxYI2EqBoH3dDCMPivIEvHYtprwdr9EY2GqJSSP1fR3VD35q6MdNwqqjCJ3QoiFXUfg_EEyzGBYDnud9jThjy1-W_arn1C1Yi3mcXXAhMYtWOtx11cAkBss6RQY"
+        }
+      },
+      {
+        "web": {
+          "title": "yozgatgazetesi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbJAdQUoZhyoPZ-bVMwQuLdMXo0eSIhduaSLcmaJq2Nq41OcTBtyDhkg4rYyQC7SsPDauhIVGebgCo0-h7qu6FUf0ZgZCAsowewWb_QKCon_PjZjdudFj3IRDGE3u-wKilQGBhqYoLg-WUFZd4YqFh78Y36HLb6iVIScqrhvzVxy0UmM4JnQvGoUge5uHEMJ6NE334AiaoyDtj7gyP3x8EyqGuk8AAd2FD5nlBYeL7GUc="
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEIGCRAt_xsFhktKM9o5rjPcDa75drrTdU0Qr7BmSKDOHtLsAE1GoyMGC8KVZPVYczrfw6fswTQ4ZsouoAXcJml0_FyqcHR1R5vRKEF3xE5k8QF5P57YB3BRuiiHeFMrqBUoONP1_7QVaQrZ3UIXIaEk3WcEFB63LXqObvS1naI0CkDlKzLXCrDUkriQnhRdtJg0N3nuOYa-_M"
+        }
+      },
+      {
+        "web": {
+          "title": "mugladevrim.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVvkWBSea5jWf-lzu45atcQPoRBljf2NaeX8YqK2b7RsU1pSVhkwC4F1CQmd-pqPTqIb1IWJJx5JosLiN93GRqVWZZYFEkrnrtRm2RU87BB89IoM_vbvChqM6m-KBJMcbITXxVOlLWumivydfPueNaoyYjwWoFo3Qc42pDHBlBbHU9zR8BPME3XqZg_HQ3mcgY6tKIIGW1uA=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwoZPuqY5fQCkws6GxOzpUjFcmgARgCo2Zzu-PMbgVTGvnVHVxw7c8D0rxXtIKzsLxvdppOf5KGRoArcwU-7nigzZShFiioCXqHmQgh4oEEBQgAkh2uCwjKn-Vua_kGfbKXwGAEKWB3lQS-DYPCtxgWH3vsZjMbagPfQYrlt7YAcTAlnLrDjAQAgsjXB1riX2cnnC15cNKVEN4_1RQGvdvG5QWADSMrVK4Q4rzYs3J19bmvBSvg90r"
+        }
+      },
+      {
+        "web": {
+          "title": "dha.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg6YtFUWo8bmOFWNbzSk5oeDh4YuKmW4kheB3jpnxarZT4djRNeX3dSaaJ_zoYX10q_HersVIa_MNHlaUbr01uaDN6Ck18MypbOjfFTY2sgr63-Djf94294x2imJG9JKY0xKDuy2SyQzlPEBJEwLOQHo2KEdXKrpMCeFdLteiaQwAPFSsM_zwfMISdANB9agHNvw=="
+        }
+      },
+      {
+        "web": {
+          "title": "mabollamedya.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY1cVBHr2Xi014j93kh9qczonjzpBqtPG0EvjqF2bRl78ddO0vqQiOQb4IGM6nWCGwvDk-NKlKpJTQT-02Nq-UQkQjUWC7AFXfcJzRmB5P3DjoqyvL_4BKCV8glR2LMlTIseSFY1GOdpwf-xBaLDOe34r3DnzU"
+        }
+      },
+      {
+        "web": {
+          "title": "gercekfethiye.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMncd9u0xqGSIow4suymZ8d8ySGDGwmBYwS9tAwidNUtIQgeBDYSNY9ID9vTd6Ah-VmiCsJoBpxa7RLoExHraV4227lEeYPag6QIjZFcknctfXXaUA_70DdHgMsxkpns0vfN1MmNbu2OrvYOFWz-Xz923mDcYvQznh-n458V7LyHpKtnapztULSpzIgiVY59zLbAl58XF1JNVtFnY5Jizgfo0MEgNVOLvBWsM="
+        }
+      },
+      {
+        "web": {
+          "title": "mugladevrim.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXCs1pf9NW-urQkuGZ6bgjsUOJFFaNR4etc_HoDsU-UIDUEDZaVwtUBc35-6Ijbyls5Prwk7qQjpfM2xQm2qL6l3dSB0G0RYsGKvqY1Z4111HTp0JBvLa3ZoEnw3x7wCdqerp4YO5P2UjiXsj6FR4HVQP68IBpnmeu9c0ngqp3_6rQjuOmgvrSYiqVxT-hSLZYnnWhhNLKaM77zkpwvqta"
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSoaSUcLMaFw77lyE3eluudmSUAfDHyoz7jIHqnyrc1BGe1uro-jVkk9Ff5RkPsAtRtKKqcebThBqtTCGrILBk9poj5UvENDFG5JBR74VsXywm8mHY2yj6XR82o82QAmQ2FWefy6luCqujWdIIatapbKdj8UlKiZkOAGii"
+        }
+      },
+      {
+        "web": {
+          "title": "gundemfethiye.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4AZSJBajA50C7C3Ju5j3qpoIZiWqwf88ClTi2cWrtXXtf0BLRIld-oRhc-eTRtte8RD6FN8GyckPyBUL1jiFjSRRR1ltoLL2nKytxXWhlXeVA3M5CkWUFbUDhkamblweMWo_6djqkVmbbr735ARM5y9b8Vhr0VkDhK4ls8s8RHmBaEwzoX7FwsORkzwKc9HG-XGrNaxS8CY5JGwS7"
+        }
+      },
+      {
+        "web": {
+          "title": "fethiyetv.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAHqkEd9BnXc53_9pNWOAZPVJXOkElUt9XHE2O3OTo2eZWKhWKZ4Wji-F1KmFzq4GXEPT49HLdVipoh_6sgNqX4k6w5S18xLqlbORX3y_-IdQHnbiJ4aM6EvoyitqPqyO6k7xrSvH96u8pqG_IPRMvZgWrF7UhsA=="
+        }
+      },
+      {
+        "web": {
+          "title": "dha.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0wJrAK5Pe9CtPNB7G8wEvfqOGe_ykB1Ixra5BHWoANfpVamKdhhU8SH7eBuE-GivNyjxafBqiij3yNFNuCeicFMowqoLOZmWaVJZ3BulIUzWXSwyo-zqwSU28cmSZ3QVwL0WAOTPVnf90zEXAjkojKUXGbGDsrZ0QxjK5xV0sswzzl4GduOtbgfSASkJsYV2b9g09wcZs0Dk="
+        }
+      },
+      {
+        "web": {
+          "title": "moovitapp.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyPFpoFZckCLThtXaEQfUYwIhztKx_kKb_H08Oy324RjEceqxmZpTLgLCuNBzfU4i9T3x8wydZe5-Vc4iJYIt_itTZVM4RX2TAQL4fvoCRPLtDjInQW_L5AMv91HXNYFs38VHr8K4U2ODDlXe0tsRx1VmxC0Xw1doWWsiDvwqoFSW74QcO5Ck6POwI05PSwt402vO-V1PXlrcd3Q8hO5qALMYlTW2Tnhw0gI-g"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4yu1KRNluQrbCpYU2N8js0HcJBmQERsCKiJKimTpn9-bdYIHrv03CuXBOCZIcFtxyirn10xUVRlK6JgQOcIYItd2WpRXsQy5Gm6H8TAD-jA8ChFLT5u_im_jM5g4mj3rINFd4oi0mAmg4f6O3e7aSE6IyHh6cyBVLWPD5"
+        }
+      },
+      {
+        "web": {
+          "title": "universitev.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqbGvjMjv5wRLIEznVGBcaF7GIm9Xb83noKOwewLQT0mZc4QtBqpYFEs5biHfxDv-6cwVJQ0eOX5Et7hadbGoQVqOpagoq8z5kq_EAAqnxMBPbUNPUi_I8YJtjs9VgnIQZwUKZWVb7dSAllWfkCJ5tFz97H_wbVbnHha1XAA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAbRONh70O28npg0lgPuHjlgTpEMEt-cNbFdy8jVjLUw_ZdpvGXR387WafckaQsb7Mj7vBJdgst6sGH2S63s8HoaaALfIp5U5kp-dl3ueJlBmtu8IzEUAVp98uyyuww59IGTforQly4bYaprt2a8GiX_9ORFblcjIyQKLbRnx0aIRN"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLF6LS4jZyzpDOaySJO6YgOfyRHaJpz_qHQcKInhcGpo-qTfHLm7wzFkGmQCjn4SGBZtV4x6mjzB1igJ27Rv45KOI_wyCBOuOOPVxj0JXCDiwqWjCeZGCV_XWaRTB7UP67rxMpP3Ua8OXBqrKbrSw_GX3LWg=="
+        }
+      },
+      {
+        "web": {
+          "title": "com.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENrMCty1-X_lWTjIal9p6ffqHDaYNmYT5sUqX0lF5BK64Srp9PRT2Ptnaq1quWesjaczZddhxyhVE0zSHHCsWhi-71fdlQHlDogadojtRz72DeaySMHZtRJOnTH6V96J39txI9C1J_Zf9YtnkyNzN69F6qizVSbaH4iAx4Glz9XOiSEBpdn4zTaQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTjuaAWv6HY6WAJ9rrGEi-uGlNWx-1Ekp3DtDbQemJciFhlX-JKus6DJewzE6EdGBFS3kJk-ZwZuxGu3nAPjVbNJJ-okLfFicSR_w2stAV1uaauSHxhduVH_Dw-Zq3vPwT2mD9h5YqX8OQPXbGUqY2LjD7WepVoRfXh1VfuZ-Lr2sn03M="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbbGN9pz6d9l-mEQclJqSSBXW-0j5EVF33qUlF5YvGw7Jun2UQA3-ih04zRL9mZhAUUXVAo_6k91mP0BJqSsd65i2oQjWHpNS6d8-Nro9gyCGgyQ1zo1G9o7m52BgTHGSkLm5o14ve_BxM"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoBXklvqtygF3FnBD8KdcQqduhMkWH-gY-IZuJRDvuH4FI2TbRwXGwm_NUud8L9WMfh3JKvxsswmpEHKlg2rv3y_g3Xdc2CrTl0PEl4bAgMQtKm9xkyBNQI3XLFRydiZtGjBR6Agobu91SRMakG9QgcA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaH5F9YNHGHINEa5pvNMmGBinmedWbeL28Lw4poYav2JWOz28xu19FDOhCtDe2DpdgaDGrhxocD2Wdl2awxSvY1sbzBMyn0xHAGNcdqhO8ok3qGPPKTmHcX1sg1JxdTgREbdPI_CzGOHgWVxcV-jK1r1w="
+        }
+      },
+      {
+        "web": {
+          "title": "marmarismanset.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEui6OmkNwk8Wm-Jka4HFM74z3v1Xye6Er6RfoH9dmnG7XyKB4YIzlB11yyuytDPqD4DaMA_uxDf5sbDAqoAzJ6qe1gbsJyqfX_2rrEP2ghmpGlDhd9B7cyotpblBHsqRlJCCTQ1TdqLX9yQL8nHE-LknmBD1ktKPQC68pdy7IiPkCn2d8z5Iu-LsAsQg0LCr-J6NElTMQS4zOyYJSwHel0DTLlIjIWS3mMhsNiEWvTZlVCbI5OzTu9ER6WnaiQJgBzXimK3g=="
+        }
+      },
+      {
+        "web": {
+          "title": "wikipedia.org",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHR1Jiu7Mpd0zgRJ62zjhdJ-LEyY0qaQIDlMI9k889QsJNdarRdBNnw5KULIVN9yuCK2ZtthphXRbLr-UvaFJ_kzphAUnJiz0s36Sa8Q75jEbEoHwxR_zyerX3vQDvpSphYFsQyEY6DqmYxoCVu600="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0FUUxJKJlUjxjiw-oqKAEErmWlW6X22eJ1zUhx_BlVpinWjjBChkda7vOGV6e47ZjjfZ95VVMXRxv0gO5ePOph_XnsR5qxSWNw2bfZgCFpx5CSBpLE8T0I_rjgHtcBO6IZ9Z1D_RFkWKJQ9o0f9pERKdnrLM="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTDHxOoZS-EmuVyfFaMKN2SRLxyBi8jYuxlAdW2eNikAtw05aAmg-qe4CzjyF8LDTue57uCBzMaPyZbvTloXQ_jQzeEQGvqDu6xs20j0DW4UJxiutKr6OnaKpUGqZ3MNREPmBALyCgf_9zXgTsGKdAZkqKslEir2nZSytxYVmlueNSZtniZoeNf9kNb5n2fA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1Olqg0t42xiTdz-4vqe4gLmlPx-9zRZojPGzEGiR4bjNOdS19232NGuIPNpghBnu32q1MchJ6U7FcsCWbj9HwKCeNY47ZmHKOu7t96N101bgcnJ35MD18epkFiEBPrIt17zd9cFcYbYt6kUcaFRC8KwXG1MJHFt8P7c_xNLf_swjO1oJZ-rm5"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcfZxGENaaUyWG3z_mZKSr95ZDFbs6ZI0ghldTNVq7T5H4Dr0_DRfiSVQLLQYe2BGlBjNBzNZcJgAcwUk4apMXgp_8zbn5rATMCLpnkxCQ8fTtfunz5sWyMRHO_HEhTIh-YgnO9q5v6-tDLxT4j417uFWSPj06CRuJdIhMWsNC52oYmaMzea9jRA=="
+        }
+      },
+      {
+        "web": {
+          "title": "migros.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_Vw4XvcXyiVz4vqUQUilJaWKXKxN2PXy8kNGR4marJ20qxtq14NgDIGSro_yIDfA18IjetJgQ67moRtjLoQOGgIucZwMUHJWS4-B2zDgv2jx9HGFp8aIHIHuiUYg30j5Yui6CaW01pE-1JyWhCcecavZo6a-BMGh2qTDfEU1icAqygt818pdifAdTm-tVgszujqlj1R_T"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlsQLEbDkwikCPQ4bkHMGAHRgXT-i-oVul42VXFhEaWCI0G_GgZtDQl69_wHAhjP1rOylAPM0JWiEcYFsy7cAuuAka6_wgIADwF6EEaySX88bWpQEjFYK7gWZjDoaJPcSKmi6KW60tJhkUZNfJL4EqntIExA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBCCqPK1XsqSo5C_IPWQ477Q7GJ0NnwKF0AbeuiUY_iVaDHNB4f6RyScNTCT--uPyKrIUxbVhcdIdnxDv75UVW_SKy8J14V1KSmJrZVCOQhVk2lXn6P-zt75N-wfhYyZy4M08kmpyIY37NVrpTFBmMEMLNW5Eb13mWnSAtla9gEc3L9g=="
+        }
+      },
+      {
+        "web": {
+          "title": "yerelesnaf.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzYRhKe-cAb_gl8qmguu48H4fQR4avIkn23GGj9SkrMMQzmS0GocX5mJ_nI2V-nzw3rwWtrTNNQT1k2pHo6vWwXFead2td_hV09Tz-O2FD7IofDSypc7tG35gYqs-jZBaoyqEH8e2PRweYmI28ORggmMMGw0BImakNA7pBsABQdcIlopI="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1,
+          2
+        ],
+        "segment": {
+          "start_index": 140,
+          "end_index": 264,
+          "text": "KİRA:\n*   3+1 | eşyasız | 40.000 TL/ay | ilan tarihi: 2026-09-08 | bilinmiyor | Orhaniye Mahallesi | MUĞLA KAMPÜS EMLAK"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          2
+        ],
+        "segment": {
+          "start_index": 265,
+          "end_index": 376,
+          "text": "*   2+1 | eşyasız | 40.000 TL/ay | ilan tarihi: 2026-09-12 | bilinmiyor | Orhaniye Mahallesi | Kötekli Emlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 377,
+          "end_index": 485,
+          "text": "*   2+1 | bilinmiyor | 38.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | hepsiemlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 486,
+          "end_index": 632,
+          "text": "*   2+1 | bilinmiyor | 40.000 TL/ay | ilan tarihi: 2026-10-15 | bilinmiyor | Orhaniye Mahallesi | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 633,
+          "end_index": 762,
+          "text": "*   3+1 | bilinmiyor | 37.000 TL/ay | ilan tarihi: 2026-10-06 | bilinmiyor | Orhaniye Mahallesi | Çakır Emlak Danışmanlığı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 763,
+          "end_index": 876,
+          "text": "*   4+1 | eşyalı | 45.000 TL/ay | ilan tarihi: 2026-06-27 | bilinmiyor | Orhaniye Mahallesi | TUNAM YAPIM EMLAK"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          2
+        ],
+        "segment": {
+          "start_index": 877,
+          "end_index": 1006,
+          "text": "*   4+1 | bilinmiyor | 30.000 TL/ay | ilan tarihi: 2026-01-26 | bilinmiyor | Orhaniye Mahallesi | Çakır Emlak Danışmanlığı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1007,
+          "end_index": 1111,
+          "text": "*   1+1 | eşyalı | bilinmiyor | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | hepsiemlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5,
+          6
+        ],
+        "segment": {
+          "start_index": 1113,
+          "end_index": 1353,
+          "text": "GÜVENLİK:\n*   2026-10-16 | altyapı/duyuru | Muğla Büyükşehir Belediyesi ve Menteşe Belediyesi iş birliğiyle Orhaniye Mahallesi'nde yağmursuyu hattı, kanalizasyon, kaldırım, bisiklet yolu ve asfalt çalışmaları devam ediyor."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "segment": {
+          "start_index": 1354,
+          "end_index": 1544,
+          "text": "*   2026-07-14 | suç/şiddet | Orhaniye Mahallesi Sağlık Sokak'ta meydana gelen olayda, bir kadının darp edilerek öldürülmesiyle ilgili şüpheli adliyeye sevk edildi ve tutuklandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 1545,
+          "end_index": 1688,
+          "text": "*   2025-12-16 | duyuru | Muğla Büyükşehir Belediyesi, Orhaniye Mahallesi'nde bulunan Kışla Parkı'nda yenileme çalışması başlattı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12,
+          13
+        ],
+        "segment": {
+          "start_index": 1689,
+          "end_index": 1875,
+          "text": "*   2024-08-26 | suç/şiddet | Orhaniye Mahallesi Zihniderin Caddesi üzerinde bir otomobil içinde meydana gelen tartışmada, bir kadın eşi tarafından bıçaklanarak öldürüldü."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "segment": {
+          "start_index": 1876,
+          "end_index": 2055,
+          "text": "*   2024-04-29 | suç/şiddet | Orhaniye Mahallesi Pazar Sokak'ta bir iş yerine gece saatlerinde kimliği belirsiz kişi veya kişiler tarafından silahlı saldırı düzenlendi."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 2057,
+          "end_index": 2161,
+          "text": "ULAŞIM:\n*   1-37 | Menteşe - Çamoluk | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 2162,
+          "end_index": 2292,
+          "text": "| bilinmiyor | Moovit\n*   1-51 | Menteşe-Günlüce-Kuzluk-Bozyer | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 2293,
+          "end_index": 2419,
+          "text": "| bilinmiyor | Moovit\n*   1-7 | Menteşe - Toki - Obam Sitesi | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 2420,
+          "end_index": 2561,
+          "text": "| bilinmiyor | Moovit\n*   1-8 | Menteşe Otogar - Menteşe Yapı Kooperatifi | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19,
+          20,
+          21,
+          22
+        ],
+        "segment": {
+          "start_index": 2585,
+          "end_index": 2694,
+          "text": "SOSYAL YAŞAM:\n*   Güzel Köy Fırın Café | kafe | Orhaniye Mah., İsmet Çatak Cad., 2A, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          23
+        ],
+        "segment": {
+          "start_index": 2695,
+          "end_index": 2813,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Yiyin Gari Alacarte Restaurant | restaurant | Orhaniye Mah., Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          24
+        ],
+        "segment": {
+          "start_index": 2814,
+          "end_index": 2953,
+          "text": "| faaliyet: bilinmiyor | Universitev\n*   Şevik Market Orhaniye | supermarket | Orhaniye Mah., Şerafettin Turhan Sok., 2, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          24
+        ],
+        "segment": {
+          "start_index": 2954,
+          "end_index": 3073,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   A101 | supermarket | Orhaniye Mah., Zihni Derin Cad., No:9/A, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          24
+        ],
+        "segment": {
+          "start_index": 3074,
+          "end_index": 3183,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Bim | supermarket | Orhaniye Mah., 8 Nolu Sok., 3B, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          25
+        ],
+        "segment": {
+          "start_index": 3270,
+          "end_index": 3292,
+          "text": "No:6, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          26
+        ],
+        "segment": {
+          "start_index": 3293,
+          "end_index": 3409,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   MM Migros | supermarket | Orhaniye Mah., 103 Nolu Sok., 1, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          27,
+          28,
+          29
+        ],
+        "segment": {
+          "start_index": 3410,
+          "end_index": 3522,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Kışla Parkı | park | Orhaniye Mah., Kışla Parkı, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          30,
+          29
+        ],
+        "segment": {
+          "start_index": 3523,
+          "end_index": 3635,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Botanik Bahçe | park | Orhaniye Mah., Botanik Bahçe, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          31,
+          32
+        ],
+        "segment": {
+          "start_index": 3636,
+          "end_index": 3795,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Gazi Mustafa Kemal Atatürk Kültür Merkezi | community_centre | Orhaniye Mah., Zihniderin Cad., 45, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          33,
+          32
+        ],
+        "segment": {
+          "start_index": 3796,
+          "end_index": 3952,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Türkan Saylan Çağdaş Yaşam Merkezi | community_centre | Orhaniye Mah., Haluk Özsoy Cad., 33, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          34
+        ],
+        "segment": {
+          "start_index": 3953,
+          "end_index": 4073,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Çankaya Lokantası Ev Yemekleri | restaurant | Orhaniye Mah., Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          35
+        ],
+        "segment": {
+          "start_index": 4074,
+          "end_index": 4199,
+          "text": "| faaliyet: bilinmiyor | Migros Yemek\n*   Muğla Mutfağı | restaurant | Orhaniye Mah., Hürriyet Sok., 1B, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          36
+        ],
+        "segment": {
+          "start_index": 4200,
+          "end_index": 4324,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps\n*   Cajun Corner | restaurant | Orhaniye Mah., İsmet Çatak Cad., 2D, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          37
+        ],
+        "segment": {
+          "start_index": 4411,
+          "end_index": 4438,
+          "text": "No:5, 48000 Menteşe/Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          37
+        ],
+        "segment": {
+          "start_index": 4439,
+          "end_index": 4490,
+          "text": "| faaliyet: açık (Pazartesi-Pazar: 07:00 - 01:00)"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFLWJbZNHtLc_9oLEYXIS7hXuMdHwND-D5gok-9bjEMRKfD_5D9h-q07hq5-NCf9A4YSu9jfhRBwIzXuMHGsYANF4dx7h3oqf7oXxbbxSzXP8lluKCpNHu8w5ym7-_XYYrTXR-dUoy1NWf77htNo9gfcrSbmOFEZuYZ5fjicVjMyvM0kQNFtt3wjjKtdZqAGxnSk4j9vlM0xEGaQaGgqWgWXKdz1YBkZuRHs8qWH0yd0BpwxOG9w==\">Orhaniye Mahallesi Menteşe Muğla kafeler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkEM0_MNCzzA8gh8JJVb8C5j9bxiTYu6eSOSY_ow02WSwJB3-gf34ZsLAZ9JAPrkIKHwcQd-ALSyZVx4_zkr2ShFFIzf-4wDHPgHKfJXMyZ7kogQ2FbYXJ0MMbFdCtRCVfhTt7r2NXyhN7uSwzUqSMUBGB9vYTnoNWo3QoWM73jNzFuGHozoBK0mgZbVC0ed23S5HL77OuOCiYv4AkIKj54UwZnlRoCTaGRWaaU4Zplm4nBqoesi_u_sirY2Wa8iIIWonPnTnA\">Orhaniye Mahallesi Menteşe Muğla suç duyuruları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8lVtnj7MaTeAxws3xqB5EjH593StQjZz5FteuiLEisgnFtPqFvYGrGyoLbxV0ropKglOzSEVVHb15T6l5pLWtWEWY4HHLszIprL3voOOxx8hOCk0H8VukiaucjATFfr_cri3i1sGGrYdI8GZtgsB6pVQM0XIR0czyRkjwHPopzSsGYezfI9g_4Xgx4J2JxhnbfTUWkCzyNypiB_KeZvZydZ_fh0mAnr0RfCAgY2PTFrA6LCaGqU96SN27uZdFWPZAQEUByPnetR6egkjkoqg=\">Orhaniye Mahallesi Menteşe Muğla kiralık daire ilanları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGU95MZ_UKsoh02h05wLAQFVjoe5mOz214LRwzuztMj9WzqZn5_hAGqKckPtw4dlvcSVb4pki9KwLvMSXcQzxuqyFR7J0ll3NYu4B_sbnKKU1i84ZDKpYwHfvAxz_caqMsIFY3v1CW-hL2zBKiFyEiDuB2KNz_w3ltQdq-AS3mG5PM4ev0T-aYVNUfHEDGBsBJsDHcKxBcj6iCbE6lVZ5NZAgShTOxvRK7ZZ_g3AVoc_ijjNnOKCOjEAvPuLHIxYIgzqMn_Yodehx4fufnNk3bbvA==\">Orhaniye Mahallesi Menteşe Muğla kiralık konut son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGEasEBUNP7ledlGZaFveXyx73d69MX1U1zPASnlYJ9EclmQtsgiBNr1ehdukqzwmawZ0fOK6lEHEsTjZ4Wni8dIVwJOoATEb7ogjVWvMtpXXTtaf3PGEw0GGOq3pXhsnRUVBmfntRbBnXcPitsmGdkqQBAOWYzKmtLCwVHjbTtz5v1CVXdpm0kAf6frV49vkfPGpIVrcz2GDjvicczvmtFpSZerNWFiYmjui-t_1BnjpNhsBypzZYLaSsfmkKWF2UePwHvoO17BtHQGtsW-r9zKPGTg==\">Orhaniye Mahallesi Menteşe Muğla güvenlik olayları son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJdbdK2Nm4lHjz1Adxy2JPiOz9wfCwxEduTHtRBt7ouJLfZUIzQENSLb3dfrrQQyfbxOnqxtLYU-oJf7PhUJnQCm0mtTxgAt9fc3R7QQGg7velvjseVusbVHH3YEHuFgH8m9l28ol3j0EDPupteKe_YCDyF8wirHJkAG7QTCD0-eHp0PpkZhO1agzPOQEFcdPx3ZTHKxk6mGCTliOLQb-tQ5oPiH3CcT9zPNGPME83GHrbtzVfFQzV8TBJo6grm-fAuuyBukESZDD9IzhHFMiqO7N6\">MUTTAŞ Orhaniye Mahallesi Menteşe Muğla otobüs hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQUKGQS7KPUTbgd48MwD9kZxLuYqirM24PREAJH6bK3OTXLQ0VYd94UDHFw6pwda4bsONrcfzJ-LWhmT_y7eW4akfD0poE1S5N_2E73sYOH8XtTmww8XNlD8Ngnw_sW_rb6ShWjv1-SqzDVEA90uUhNrlpAaQabOorOLQF2vJxz4voxgAPo6haF0YA_dI_E-0_WGd_WNA3J5knpOa1Oeo-eLOFwhPCRSK8qXZXpAtH1bmFfpFHDhGIWTI=\">Orhaniye Mahallesi Menteşe Muğla restoranlar</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQYt3LEmI-YE7WC65LTCk62Rd9uUX9SdDOvd8g_CnuHRol0SizfY37UuLJCRZ19v590-e1iSfxtr739-3XtPKIa1x3ytDPb1K8mG7gECJuulkEd5UPjTEqBX_kmzeiTHKPnuRM_GZihEL6waY215uhcAFpV1Fa8RwyHOk0tpLg_R-fE4_sjxflt5yUoPYTUlJygLuBOrUYiT9us7dJOvvPstjnI1XTPu95dszCKVuKuGAgFsL9R-0k8VlDbQWASogFM2HwR9t_BCMwjAQgXd1TGNNwtuqTdA==\">Muğla Büyükşehir Belediyesi Orhaniye Mahallesi ulaşım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0tSzq0E3F0U5TYf9A4CLXMhklFuA_lcY7d4bPNsJtKrZC77Erc0JY_NKIsX33q5IhwZPH3dc9nd6QRSthOPzL_30mEsBxRm28Dq0rSR_6KY-GTdeS17HQ5VExkRFo9S8HTXoT8VWS58XAF-OySKKPLZniN2-qf18spQAYpv_u8i7wNsc5DQgg-Md0KAtPkNcObMx5F6Nt4jy-KqwinJu4Lael2ayvm5d20EihgoLoF6nJ957kcW6z\">Orhaniye Mahallesi Menteşe Muğla marketler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzJRKb9FSU5pnMAM47hBrP3v7mRnrYQS8aJhNiUO2l0aMJP-aeWXO2Vqafk7mK1zriXiEoFtqlHr_OUCCVn77re0eGkuh7jradOrO5tuODVeRxnuxU8gryIgJ603vDQ-ymr08rWtpwJ_fwhLSfjbOsUMV_46u0Vvl0UWBnS7Zu-KRbAtjGL8mQ75uUxSWXGOSLcDyfSoafQcneXWooujmyVj2P4OcNRlJ58HSrbijkOOczxKCa7w==\">Orhaniye Mahallesi Menteşe Muğla parklar</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJ5Kz7t_eu4qsCiNDl5Rnc2ne51nCfwsh1Zyy7K54_m9eQUpK_7we_08aG4XJ0rvKnrdPpaG89tluhWzP8YI19rK9NWKiWTOaMegxexlotC-chhPd8e71mQLr_jbOCAc6pb1HebGhX17STOIwmpZVw769hGk69Pcvm65seIWh2S7_y6vsyk3vBxPHvUoP72jlLSTXfn_e7yHqYb-snPD31C7KgL_zkt-AjNamFRTe4HEbpY0l6mEcHi8a7Wjyj\">Orhaniye Mahallesi Menteşe Muğla sosyal tesisler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDFzylG3F2t-iMEHmcS5zfEpCze1eFwXc_SVhd0v-iPeEZcQB1RVEST-FcdSQmDPtKrec1832QRYAQVXvvr-ZxImVccN9qKV4MA4f7-32QpL8wUzb7v5xt9TXMGio3y5frhlADWEmh49B6OHvMBiQithSgjr-Pjf7zoaOPPTTLjQiEa5QTX7Fc_apDC8nfsRxB5gXrToxs7sPcvR-PErfWrZBbrvoOsO55elwhwbTluLttnCibM6x4TwF-hTJMA9GPGyZ0FRH5EIsH\">Orhaniye Mahallesi Menteşe Muğla kültür merkezleri</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Orhaniye Mahallesi Menteşe Muğla kiralık konut son 90 gün",
+      "Orhaniye Mahallesi Menteşe Muğla kiralık daire ilanları",
+      "Orhaniye Mahallesi Menteşe Muğla güvenlik olayları son 12 ay",
+      "Orhaniye Mahallesi Menteşe Muğla suç duyuruları",
+      "MUTTAŞ Orhaniye Mahallesi Menteşe Muğla otobüs hatları",
+      "Muğla Büyükşehir Belediyesi Orhaniye Mahallesi ulaşım",
+      "Orhaniye Mahallesi Menteşe Muğla restoranlar",
+      "Orhaniye Mahallesi Menteşe Muğla kafeler",
+      "Orhaniye Mahallesi Menteşe Muğla marketler",
+      "Orhaniye Mahallesi Menteşe Muğla parklar",
+      "Orhaniye Mahallesi Menteşe Muğla sosyal tesisler",
+      "Orhaniye Mahallesi Menteşe Muğla kültür merkezleri"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1802,
+    "prompt_token_count": 986,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 986
+      }
+    ],
+    "tool_use_prompt_token_count": 1204,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1204
+      }
+    ],
+    "total_token_count": 3992
+  },
+  "text": "Orhaniye Mahallesi, Menteşe, Muğla'ya ilişkin 28 Ekim 2026 itibarıyla yapılan araştırmalar aşağıda dört bölümde sunulmuştur:\n\nKİRA:\n*   3+1 | eşyasız | 40.000 TL/ay | ilan tarihi: 2026-09-08 | bilinmiyor | Orhaniye Mahallesi | MUĞLA KAMPÜS EMLAK\n*   2+1 | eşyasız | 40.000 TL/ay | ilan tarihi: 2026-09-12 | bilinmiyor | Orhaniye Mahallesi | Kötekli Emlak\n*   2+1 | bilinmiyor | 38.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | hepsiemlak\n*   2+1 | bilinmiyor | 40.000 TL/ay | ilan tarihi: 2026-10-15 | bilinmiyor | Orhaniye Mahallesi | YILDIZ EMLAK GAYRİMENKUL YATIRIM DANIŞMANLIĞI\n*   3+1 | bilinmiyor | 37.000 TL/ay | ilan tarihi: 2026-10-06 | bilinmiyor | Orhaniye Mahallesi | Çakır Emlak Danışmanlığı\n*   4+1 | eşyalı | 45.000 TL/ay | ilan tarihi: 2026-06-27 | bilinmiyor | Orhaniye Mahallesi | TUNAM YAPIM EMLAK\n*   4+1 | bilinmiyor | 30.000 TL/ay | ilan tarihi: 2026-01-26 | bilinmiyor | Orhaniye Mahallesi | Çakır Emlak Danışmanlığı\n*   1+1 | eşyalı | bilinmiyor | ilan tarihi: bilinmiyor | bilinmiyor | Orhaniye Mahallesi | hepsiemlak\n\nGÜVENLİK:\n*   2026-10-16 | altyapı/duyuru | Muğla Büyükşehir Belediyesi ve Menteşe Belediyesi iş birliğiyle Orhaniye Mahallesi'nde yağmursuyu hattı, kanalizasyon, kaldırım, bisiklet yolu ve asfalt çalışmaları devam ediyor.\n*   2026-07-14 | suç/şiddet | Orhaniye Mahallesi Sağlık Sokak'ta meydana gelen olayda, bir kadının darp edilerek öldürülmesiyle ilgili şüpheli adliyeye sevk edildi ve tutuklandı.\n*   2025-12-16 | duyuru | Muğla Büyükşehir Belediyesi, Orhaniye Mahallesi'nde bulunan Kışla Parkı'nda yenileme çalışması başlattı.\n*   2024-08-26 | suç/şiddet | Orhaniye Mahallesi Zihniderin Caddesi üzerinde bir otomobil içinde meydana gelen tartışmada, bir kadın eşi tarafından bıçaklanarak öldürüldü.\n*   2024-04-29 | suç/şiddet | Orhaniye Mahallesi Pazar Sokak'ta bir iş yerine gece saatlerinde kimliği belirsiz kişi veya kişiler tarafından silahlı saldırı düzenlendi.\n\nULAŞIM:\n*   1-37 | Menteşe - Çamoluk | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri. | bilinmiyor | Moovit\n*   1-51 | Menteşe-Günlüce-Kuzluk-Bozyer | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri. | bilinmiyor | Moovit\n*   1-7 | Menteşe - Toki - Obam Sitesi | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri. | bilinmiyor | Moovit\n*   1-8 | Menteşe Otogar - Menteşe Yapı Kooperatifi | Orhaniye Mahallesi Muğla konumuna en yakın duraklardan biri. | bilinmiyor | Moovit\n\nSOSYAL YAŞAM:\n*   Güzel Köy Fırın Café | kafe | Orhaniye Mah., İsmet Çatak Cad., 2A, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Yiyin Gari Alacarte Restaurant | restaurant | Orhaniye Mah., Menteşe, Muğla | faaliyet: bilinmiyor | Universitev\n*   Şevik Market Orhaniye | supermarket | Orhaniye Mah., Şerafettin Turhan Sok., 2, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   A101 | supermarket | Orhaniye Mah., Zihni Derin Cad., No:9/A, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Bim | supermarket | Orhaniye Mah., 8 Nolu Sok., 3B, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Şok | supermarket | Orhaniye Mah., 119 Sok. No:6, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   MM Migros | supermarket | Orhaniye Mah., 103 Nolu Sok., 1, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Kışla Parkı | park | Orhaniye Mah., Kışla Parkı, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Botanik Bahçe | park | Orhaniye Mah., Botanik Bahçe, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Gazi Mustafa Kemal Atatürk Kültür Merkezi | community_centre | Orhaniye Mah., Zihniderin Cad., 45, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Türkan Saylan Çağdaş Yaşam Merkezi | community_centre | Orhaniye Mah., Haluk Özsoy Cad., 33, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Çankaya Lokantası Ev Yemekleri | restaurant | Orhaniye Mah., Menteşe, Muğla | faaliyet: bilinmiyor | Migros Yemek\n*   Muğla Mutfağı | restaurant | Orhaniye Mah., Hürriyet Sok., 1B, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Cajun Corner | restaurant | Orhaniye Mah., İsmet Çatak Cad., 2D, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n*   Pat Pat Cafe Mugla | cafe | Orhaniye, 3. Sk. No:5, 48000 Menteşe/Muğla | faaliyet: açık (Pazartesi-Pazar: 07:00 - 01:00) | Yerel Esnaf"
+}

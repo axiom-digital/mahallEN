@@ -1,0 +1,492 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "all-pilots",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:45:17.722924+00:00",
+  "finished_at": "2026-10-28T18:45:39.891273+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Muğla Kötekli yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+    "Muğla Emirbeyazıt yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+    "Muğla Muslihittin yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+    "Muğla Orhaniye (Menteşe) yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+    "Muğla Akyaka (Ula) yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+    "Kötekli öğrenci yaşamı",
+    "Emirbeyazıt kafe restoran",
+    "Muslihittin kültürel etkinlikler",
+    "Orhaniye (Menteşe) spor alanları",
+    "Akyaka gece kulüpleri"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0yi4YnKKUlt6xEZ3sqXuzEMgb0Fdx7iB5QBLjNOuG0q-s9dvaafpIi5bmEWNvjHv7CoyYSLEpndT42BmcTKFmZBqBjapjMJxgPpsKklWrooyK1oI6JElXqS61j6OhJsLojCId3YWtqsih4vZ9Hn5zgs8X4nJ8GgcqYyMmbLKZ8W77R5mVkSC4tJxBiAiUr_geGWh0",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_ur-lKKOonDnxtsN94LuiMY3sIog_bxM-dPUwpxyicjDVX8swNN0S9cNoNdwXbUs6mC9Sr0fjWJ68yCzmUnfNjr14kXAzrgIpY9VdZNvT1OSQGxo79s8SEDcLEFc_SHLl98bKUZgsiIJLCl_E6OOAupNhOIhNGJfNr6g23_E4qWP1BoCoYoT1",
+      "title": "blogspot.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaDsjYlhRIzqp2WCVk28JemdXu9SDDYOC2yE-ySDWUOKd_Y4zus7MikoR2FczLIfk7FZ9Y7QYnj7LmFoX3bGmUmk4_p0k2zEeqtQWdXgeMziYZRlXFbB2mqHlsb2OMl4XOMMlRlkGhNztIeXpSBW-L6r7SIb_CLENJVvE98UxoHvfkrz8u0nZbHSlplN7kWIyN_76QdxSq5SfH9wVH3rnPUoOCSJ-U9w==",
+      "title": "marmarismanset.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOrgyw-gVl59Xv4MJhScpb4unn-SHiXE-TbKfswhHes8NxcurHxWP0SddnuzgcRaiEUmBOesFhUe_4DmpqKzc9QFZknXk-BzZ6v_aumON9QqB6bl6vweRkV_cApB7ijMqvwIg1mmBq9Td-avaj0i4n-Co=",
+      "title": "dergipark.org.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNdmLvTFk-2VRlMLh-ewa_54KVRrXfwMI3bLu1cIyf-SH6jrCqVAg18O8vXmfiJ2f8kMrGEIEThnTkNLGSdp6p2THwhn2LBA4kZohOaCicW_Mj4Z5SCBqm9zZ4DGISFyYU6YlVwdZHKEZ5nffgktBrqkU6h8k-",
+      "title": "mekanlar.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkB_tw21uoCWz5uCpXJln1gYKJwGvLFUJrSsVq6M3csiuAj_16H3QVy2j5JeLMxjxVMG_CnlPhvbcFI9xmw8995OcWM2sWOHfsXMRK1O-Tlp1s5cUbknwDeJ4vvpFtiwxES8tnVd1NS8CWuQ==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkp0_GKwTCVLKmCLtnys726ADMomn60m8L6VWYqbdBUgvf1pHdUhWepc9Yd4_-d2r1UJXRJTbRRVi9V3Fh9NwsLoo-4WmSxFh0tGR-_dPY5-rD-DGBMKl5eadU7u8y5wPNsrIR-sJ_Hmq2k646fRduJ5bKagbpH_uxEqI2HS8WeWvT1Ns=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG3my1CdHT7APiAtA5iJoC8RnOvpZdaJHHjd9S39CiFp1dKFnc0J1KuyUwOliPjTnh3hWU0xgTOx08Is7fYtajtrROjl6yyMwjUCOPGIEKKklFjeXGEof6a3t9PHmlRmnzW5KBd-CpYP9yIEh4n962w-i3B-BjQR-EZhJIS6g=",
+      "title": "biletinial.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK3aJ3s5KbxeejznzjkBisEZJvJaVBn0MVHAv-G9ddtFI-upXceqgDhzCO-r3gQtqC6Y4mVgt__wJfNPM0F379ixfG5zsWkXXM9hpjwoh9mmQ31LANVL0ZMsT4QijnF2ktnH3Yb6T0qiv8IEEPJvujEdHPjuVKF_Ho",
+      "title": "biletspace.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0GRODDfAKyoBX6komHk3OT08ttKeTf9LRZhZ4nRr2cWg4PiGuM5uaO6hOdSCaQHdI3E1o6kTXrqwbH_W8CHoaFNz3RvIkpvaq2FTp4t-kbkl1DAo9H4-MeP7n16VCuX2ash1JxQQwbugcYoDq727_kPi6H_7666wZ-2IeR-2nsUjD84xGMidk0RUhJMnEslCVCxc=",
+      "title": "mentese.bel.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQUVzzf2eFXpkLoczORy6whpkzCxWyIYQt-AZ3I0d9mVXhV5H2GPNbCAPJiESbo6SOmwsEV4cTuMYz4tHxDLPwxKCHRNqfo7yZtVh1dFK_qEE2BiJ5uHLmRUtY3TeSOjTyT_pWpxuAJIXSzVN1",
+      "title": "mekan.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKVvGrfrAaRAv_eQFmYF6EsEsRXmiqEO1bHwqINcTdeYcRkZoHYqlqKFUrG0IJCGB8FZnN--Lj42_qh2MsYdAbEGnrmyj2E3edylV7hM_xBrbt99z_zNlxpnRw8KYZ0GgBDdh5XrbK3C6pqify3klTwcQfOESHljgYjIJbwAVKczs=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc5Ulz3Q1OM2UiauXx2gPTbMSLXQgh0-WL203Dv-UU0PfV5G5FuOzEeVBKgUy6BuCL5RZZP_omHHIUmGH6Qb3vfwAeJb7kdXwlf8IrL4jW2CjnqjrP3l84n-ds37c_hZm_JpvjKazuFtNrNLmoUTfq",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJFQOnw_hmhUA0SqP7HV2vdH4CQAbqK9QZFmAVFcb4Q8Rv8l8Wp92Pfg44zSEW0rGPQ2DuSy0K2MoyKge76tW7ZtbAOEgXipYlhSAqC3cJt-2VSuttIxkBROfb0ug9S1nXAIGVXbVdZgwZzuyJy-HihyWK1-BjtTTSfFNB4JCvx1xyAEZqatQ=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSKj4racLJga1wgIVaE48hf0z6TWykGAOM0KtDGjLhRHtJ52FPJPsf6E6GtJfi6s633-VU82uAuotIAlmb3neJR-UNDMJCUR1CJAi9jnjMCfzvkQs78VGBU-35XW6RzQAmX26mZZ8AdESvE0k8R_xi9jNIipuWQiRsJeK3dm0gotPOKP3-r5tenw==",
+      "title": "turgutreisrehberi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjr4XA3-QIrS6QMRgJ-j5lmqPXg-dXmBZ1xGSJLM1KUOcm7hpT4LDfNGbxdf9_ON8dV-WUQT4MHC_49VgSR7QI_uRkaPiiNCCf4YEPxhfwLS0D8-Wf-LL0ycCOgel1wcevnAymw7I=",
+      "title": "bujuyollarda.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2258NWz65ZoD2O62bfxKvfwk3K80nFz8myKjGSpqayWyS1OziapZYvJpZLZynKXWOIJaf4u0Qxb1JmRPTQ6fh-HJddcx8hGKRNTrUbhdEz6QWHdsB2Fhm4jxC2tXKIdqejyzmxg==",
+      "title": "mudavim.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ7yqJaLnYSEZIFQ2vYEAuoVd7Nfipv-0TaYuk7az0PI1QwJEoDwvq0DTIuXacdtTsT2N0IfEdBwy2SeA31sMIbU_6qZJl6psGZFBmwAi37IvdXnkMBTvkniGVfdCja6vK0Lrdrchs333BtA==",
+      "title": "mekanlar.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF26kq2U9nibffPY-poksLrwNNxabkIimUxOBnl2bQ-p6BmiA7cTi9Zt2n4N86vttsK3si0Nw2fXsgJXwtFxPS07rB-T884jTxHl-dBicOGh6YzoB0BeTdx-tUEyVmsc7vdCMZB-v2w_tyS5Dist6DqUB6vmdwMGW_3dQJfreQ=",
+      "title": "gezinomi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-w4nRDLDZJ-Ng0JToWYvFxT8SP3zgCUSuKD9Z1ELSCiZXIugilOPWBu1m69jhaPCtShUqt8YD6vpyrq31qj_Mi680itNs5eR4p6OrdqJRFU2J0k35GPe1woyjJh_NURAvFzXjuN05jUsPWoKpJF9CX_CdbhcRwvd1whQ86wvN",
+      "title": "bizevdeyokuz.com"
+    }
+  ],
+  "grounding_support_count": 21,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0yi4YnKKUlt6xEZ3sqXuzEMgb0Fdx7iB5QBLjNOuG0q-s9dvaafpIi5bmEWNvjHv7CoyYSLEpndT42BmcTKFmZBqBjapjMJxgPpsKklWrooyK1oI6JElXqS61j6OhJsLojCId3YWtqsih4vZ9Hn5zgs8X4nJ8GgcqYyMmbLKZ8W77R5mVkSC4tJxBiAiUr_geGWh0"
+        }
+      },
+      {
+        "web": {
+          "title": "blogspot.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_ur-lKKOonDnxtsN94LuiMY3sIog_bxM-dPUwpxyicjDVX8swNN0S9cNoNdwXbUs6mC9Sr0fjWJ68yCzmUnfNjr14kXAzrgIpY9VdZNvT1OSQGxo79s8SEDcLEFc_SHLl98bKUZgsiIJLCl_E6OOAupNhOIhNGJfNr6g23_E4qWP1BoCoYoT1"
+        }
+      },
+      {
+        "web": {
+          "title": "marmarismanset.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaDsjYlhRIzqp2WCVk28JemdXu9SDDYOC2yE-ySDWUOKd_Y4zus7MikoR2FczLIfk7FZ9Y7QYnj7LmFoX3bGmUmk4_p0k2zEeqtQWdXgeMziYZRlXFbB2mqHlsb2OMl4XOMMlRlkGhNztIeXpSBW-L6r7SIb_CLENJVvE98UxoHvfkrz8u0nZbHSlplN7kWIyN_76QdxSq5SfH9wVH3rnPUoOCSJ-U9w=="
+        }
+      },
+      {
+        "web": {
+          "title": "dergipark.org.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOrgyw-gVl59Xv4MJhScpb4unn-SHiXE-TbKfswhHes8NxcurHxWP0SddnuzgcRaiEUmBOesFhUe_4DmpqKzc9QFZknXk-BzZ6v_aumON9QqB6bl6vweRkV_cApB7ijMqvwIg1mmBq9Td-avaj0i4n-Co="
+        }
+      },
+      {
+        "web": {
+          "title": "mekanlar.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNdmLvTFk-2VRlMLh-ewa_54KVRrXfwMI3bLu1cIyf-SH6jrCqVAg18O8vXmfiJ2f8kMrGEIEThnTkNLGSdp6p2THwhn2LBA4kZohOaCicW_Mj4Z5SCBqm9zZ4DGISFyYU6YlVwdZHKEZ5nffgktBrqkU6h8k-"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkB_tw21uoCWz5uCpXJln1gYKJwGvLFUJrSsVq6M3csiuAj_16H3QVy2j5JeLMxjxVMG_CnlPhvbcFI9xmw8995OcWM2sWOHfsXMRK1O-Tlp1s5cUbknwDeJ4vvpFtiwxES8tnVd1NS8CWuQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkp0_GKwTCVLKmCLtnys726ADMomn60m8L6VWYqbdBUgvf1pHdUhWepc9Yd4_-d2r1UJXRJTbRRVi9V3Fh9NwsLoo-4WmSxFh0tGR-_dPY5-rD-DGBMKl5eadU7u8y5wPNsrIR-sJ_Hmq2k646fRduJ5bKagbpH_uxEqI2HS8WeWvT1Ns="
+        }
+      },
+      {
+        "web": {
+          "title": "biletinial.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGG3my1CdHT7APiAtA5iJoC8RnOvpZdaJHHjd9S39CiFp1dKFnc0J1KuyUwOliPjTnh3hWU0xgTOx08Is7fYtajtrROjl6yyMwjUCOPGIEKKklFjeXGEof6a3t9PHmlRmnzW5KBd-CpYP9yIEh4n962w-i3B-BjQR-EZhJIS6g="
+        }
+      },
+      {
+        "web": {
+          "title": "biletspace.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGK3aJ3s5KbxeejznzjkBisEZJvJaVBn0MVHAv-G9ddtFI-upXceqgDhzCO-r3gQtqC6Y4mVgt__wJfNPM0F379ixfG5zsWkXXM9hpjwoh9mmQ31LANVL0ZMsT4QijnF2ktnH3Yb6T0qiv8IEEPJvujEdHPjuVKF_Ho"
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0GRODDfAKyoBX6komHk3OT08ttKeTf9LRZhZ4nRr2cWg4PiGuM5uaO6hOdSCaQHdI3E1o6kTXrqwbH_W8CHoaFNz3RvIkpvaq2FTp4t-kbkl1DAo9H4-MeP7n16VCuX2ash1JxQQwbugcYoDq727_kPi6H_7666wZ-2IeR-2nsUjD84xGMidk0RUhJMnEslCVCxc="
+        }
+      },
+      {
+        "web": {
+          "title": "mekan.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQUVzzf2eFXpkLoczORy6whpkzCxWyIYQt-AZ3I0d9mVXhV5H2GPNbCAPJiESbo6SOmwsEV4cTuMYz4tHxDLPwxKCHRNqfo7yZtVh1dFK_qEE2BiJ5uHLmRUtY3TeSOjTyT_pWpxuAJIXSzVN1"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKVvGrfrAaRAv_eQFmYF6EsEsRXmiqEO1bHwqINcTdeYcRkZoHYqlqKFUrG0IJCGB8FZnN--Lj42_qh2MsYdAbEGnrmyj2E3edylV7hM_xBrbt99z_zNlxpnRw8KYZ0GgBDdh5XrbK3C6pqify3klTwcQfOESHljgYjIJbwAVKczs="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc5Ulz3Q1OM2UiauXx2gPTbMSLXQgh0-WL203Dv-UU0PfV5G5FuOzEeVBKgUy6BuCL5RZZP_omHHIUmGH6Qb3vfwAeJb7kdXwlf8IrL4jW2CjnqjrP3l84n-ds37c_hZm_JpvjKazuFtNrNLmoUTfq"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJFQOnw_hmhUA0SqP7HV2vdH4CQAbqK9QZFmAVFcb4Q8Rv8l8Wp92Pfg44zSEW0rGPQ2DuSy0K2MoyKge76tW7ZtbAOEgXipYlhSAqC3cJt-2VSuttIxkBROfb0ug9S1nXAIGVXbVdZgwZzuyJy-HihyWK1-BjtTTSfFNB4JCvx1xyAEZqatQ="
+        }
+      },
+      {
+        "web": {
+          "title": "turgutreisrehberi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSKj4racLJga1wgIVaE48hf0z6TWykGAOM0KtDGjLhRHtJ52FPJPsf6E6GtJfi6s633-VU82uAuotIAlmb3neJR-UNDMJCUR1CJAi9jnjMCfzvkQs78VGBU-35XW6RzQAmX26mZZ8AdESvE0k8R_xi9jNIipuWQiRsJeK3dm0gotPOKP3-r5tenw=="
+        }
+      },
+      {
+        "web": {
+          "title": "bujuyollarda.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjr4XA3-QIrS6QMRgJ-j5lmqPXg-dXmBZ1xGSJLM1KUOcm7hpT4LDfNGbxdf9_ON8dV-WUQT4MHC_49VgSR7QI_uRkaPiiNCCf4YEPxhfwLS0D8-Wf-LL0ycCOgel1wcevnAymw7I="
+        }
+      },
+      {
+        "web": {
+          "title": "mudavim.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2258NWz65ZoD2O62bfxKvfwk3K80nFz8myKjGSpqayWyS1OziapZYvJpZLZynKXWOIJaf4u0Qxb1JmRPTQ6fh-HJddcx8hGKRNTrUbhdEz6QWHdsB2Fhm4jxC2tXKIdqejyzmxg=="
+        }
+      },
+      {
+        "web": {
+          "title": "mekanlar.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ7yqJaLnYSEZIFQ2vYEAuoVd7Nfipv-0TaYuk7az0PI1QwJEoDwvq0DTIuXacdtTsT2N0IfEdBwy2SeA31sMIbU_6qZJl6psGZFBmwAi37IvdXnkMBTvkniGVfdCja6vK0Lrdrchs333BtA=="
+        }
+      },
+      {
+        "web": {
+          "title": "gezinomi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF26kq2U9nibffPY-poksLrwNNxabkIimUxOBnl2bQ-p6BmiA7cTi9Zt2n4N86vttsK3si0Nw2fXsgJXwtFxPS07rB-T884jTxHl-dBicOGh6YzoB0BeTdx-tUEyVmsc7vdCMZB-v2w_tyS5Dist6DqUB6vmdwMGW_3dQJfreQ="
+        }
+      },
+      {
+        "web": {
+          "title": "bizevdeyokuz.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-w4nRDLDZJ-Ng0JToWYvFxT8SP3zgCUSuKD9Z1ELSCiZXIugilOPWBu1m69jhaPCtShUqt8YD6vpyrq31qj_Mi680itNs5eR4p6OrdqJRFU2J0k35GPe1woyjJh_NURAvFzXjuN05jUsPWoKpJF9CX_CdbhcRwvd1whQ86wvN"
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 141,
+          "end_index": 303,
+          "text": "*   **positive** | gece hayatı türleri | 2021-01-26 | Kötekli, üniversite bölgesi olması nedeniyle öğrenciye özel bir eğlence merkezi haline gelmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 304,
+          "end_index": 450,
+          "text": "*   **positive** | aktiviteler | bilinmiyor | Yoğurtçu Parkı, öğrencilerin gitar çalıp, çekirdek çitleyerek sosyalleştiği bir alandır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 451,
+          "end_index": 664,
+          "text": "*   **positive** | erişim sorunu | 2026-10-02 | Yurtlarda kalan yaklaşık 7 bin 500 öğrencinin toplu taşımaya ulaşmak için yürüdüğü 700-800 metrelik mesafe için ulaşım düzenlemesi yapılmıştır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 665,
+          "end_index": 914,
+          "text": "*   **negative** | gürültü/işletme kapanması/erişim sorunu | 2026-02-15 | Kötekli'de bazı mekanlar aidiyet ve sosyalliği güçlendirirken, bazıları güvensizlik, dışlanma veya kentin bütünüyle kopukluk hislerini tetikleyebilmektedir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 915,
+          "end_index": 1148,
+          "text": "*   **negative** | kaynaklı menü fiyatı ve ekonomik seçenekler | bilinmiyor | Kötekli'de bazı mekanlar öğrencileri para gözüyle görüp yüksek fiyatlar uygulayabilmektedir; uygun fiyatlı ve kaliteli mekanlar da mevcuttur."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1167,
+          "end_index": 1317,
+          "text": "*   **positive** | yemek çeşitliliği | bilinmiyor | Emirbeyazıt'ta döner, börek, köfte, ev yemekleri gibi çeşitli restoranlar bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 1318,
+          "end_index": 1494,
+          "text": "*   **positive** | kaynaklı menü fiyatı ve ekonomik seçenekler | bilinmiyor | Coffy Kafe, uygun fiyatlı kahve seçenekleri ve çeşitli içecek menüsü ile bilinmektedir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6
+        ],
+        "segment": {
+          "start_index": 1495,
+          "end_index": 1631,
+          "text": "*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Emirbeyazıt Mahallesi'nde birden fazla fitness kulübü bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 1632,
+          "end_index": 1819,
+          "text": "*   **negative** | gürültü/işletme kapanması/erişim sorunu | bilinmiyor | Coffy Kafe'de servis hızının yavaş olduğu ve oturma alanı bulmanın zor olabileceği belirtilmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7,
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 1992,
+          "end_index": 2239,
+          "text": "*   **positive** | kafe dışındaki aktiviteler | 2026-09-23 | Muğla Menteşe Sosyo Kültürel Alan, konserler, tiyatro gösterileri, sergiler ve atölye çalışmaları gibi çeşitli kültür ve sanat etkinliklerine ev sahipliği yapmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 2240,
+          "end_index": 2347,
+          "text": "*   **positive** | yemek çeşitliliği | bilinmiyor | Kahve Diyarı gibi kafeler mahallede bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "segment": {
+          "start_index": 2889,
+          "end_index": 3040,
+          "text": "*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Orhaniye Mahallesi'nde Menteşe Spor Salonu ve çeşitli spor alanları bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6
+        ],
+        "segment": {
+          "start_index": 3041,
+          "end_index": 3160,
+          "text": "*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Mahallede birden fazla fitness kulübü bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "segment": {
+          "start_index": 3700,
+          "end_index": 3945,
+          "text": "*   **positive** | gece hayatı türleri | 2026-09-25 | Akyaka'da Poison Pub, No 22 Riders'Inn, Liliz Lounge, Kukla Pub Akyaka, Xir Pub & Hotel Akyaka, Venti Food & Cocktail Bar, Cycle Bar gibi çeşitli gece kulüpleri ve barlar bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15
+        ],
+        "segment": {
+          "start_index": 3946,
+          "end_index": 4078,
+          "text": "*   **positive** | yemek çeşitliliği | 2026-09-25 | Venti Food & Cocktail Bar, yemek ve kokteyli bir arada sunan bir seçenektir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          16
+        ],
+        "segment": {
+          "start_index": 4079,
+          "end_index": 4137,
+          "text": "Selanik Restoran, meze ve balık çeşitleri sunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 4138,
+          "end_index": 4313,
+          "text": "*   **positive** | kaynaklı menü fiyatı ve ekonomik seçenekler | 2026-09-25 | Poison Pub'a girişler ücretsizdir ve alkollü içecek ücretleri 25 TL'den başlamaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 4314,
+          "end_index": 4428,
+          "text": "Deli Memet Cocktail Bar & Bistro'ya girişler ücretsizdir ve alkollü içki ücretleri 30 TL'den başlamaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19
+        ],
+        "segment": {
+          "start_index": 4429,
+          "end_index": 4559,
+          "text": "*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Akyaka, kitesurf için dünyaca bilinen bir yer haline gelmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19
+        ],
+        "segment": {
+          "start_index": 4560,
+          "end_index": 4622,
+          "text": "Kano ve paddleboard gibi aktiviteler Akçapınar'da mevcuttur."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19
+        ],
+        "segment": {
+          "start_index": 4623,
+          "end_index": 4838,
+          "text": "*   **negative** | gürültü/işletme kapanması/erişim sorunu | bilinmiyor | Akyaka'da popüler bar ve gece mekanları Akyaka merkezde konumlanmaktadır, bu durum kalabalık ve gürültü potansiyeli yaratabilir."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFV9RmHpWse138et9fmDkhCenxLIZ3BCNRLsNS_tBYy35bazBP6qyzri-rwuF_8MuL6PQEMJ9m3OaTX4Uyq_6ulQEK50GQ_7Eag2RszPX6J2Rd5tLK9i8bsm0-qRLYDgTJL9hU7NqTo2lDP2upN3tKxKUzJ0moInsQJ0PWVO-Aki7_y4ayshgO2bcdIR-6OXoBjtNdlL9qCM2mhR4g5A5EhIy4rPawOAljYwFfK\">Muslihittin kültürel etkinlikler</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDe3EPp3cHH9NXWrtoS6qCtEWhQ489x64mMMP9qU5FYSPeS1lO7GBSRvF2-XDJ67yXEK_kf5qW-VABCBfAp5r7Bll0cQwmwPnOeBLTgjA2kslDK2CuqenMXrf6luN4teNbxwRWk6bARpULoJRESPQD2cq5PvcAgpeS4EyEzLrNkrevm0k9QuxOBGURiQjp_iPcLVAEYf2Tsna87mYZ_ePx\">Emirbeyazıt kafe restoran</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_i5L6JktGbqAL_2R_rBzItmdzQX9bTsAYXcvZ51BhmosXRdW-VbQSglckTblGBvYIZw2riwgGVf4V1fglgAVI7-DlNa7Go0d9dfI8HPnRd7zChOdhw8oqosgdyMuiTCcq_v8x5ihnIsJb7oVc8ibj_mIqAns9fYZkd2c_UaD5nCyNuDzP1iRYH1aPlPNXlE9egog3mwlmLCqv6JTtz20g44sAl2P5p_ayuHuHRw5UcEGuos8ESPZ6OZMkR16Ew62_Bf_wfwZiVOC8gCeMzMDzCli9xrq5LsJmyERr6tF1A5eq9DmiUpMgtGiLQ4lXD-dUH6nBUCK5wlp37ROAULK-y0M1aeSTx5bKazlI0XqERIQ=\">Muğla Emirbeyazıt yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOFFN7p9mHXFUbe2SpHYDqM_ByjSTUSQ5-5S8VlRFB_vyJyvAgiNNRVGCKq3pMgc-1CD9qfSHEnBi68eyz-gopNhpzJ_7hVbihpMVGqfiZhtVwem__sP_L2YaTSFseA5FJa3y67ooALM9q32Uq5uayCXUgW93c5fZQAwPmixx9a_qwaHmyqirEAaVtGDLbaynRWEeYzW0YxXvz-k4BQPG8qzBeuCLEZLIqdMfWG_Omh5jft3mwXp-Hj9oknTHMspcdkZNdvuK3m_p8c2txcV_NuGTSDsiALQKkZ5SGXaepzsYWyKS14QXfAtNe61UdHMgzj3PMrQ-363-HVJDqPzPjB20SSEnbjZwpOVj0Eg==\">Muğla Kötekli yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG03yJnEXaHRIj9NJPKCQvolsa4mvOmLwI9pAOShYptdgoNtarRs1oprjRBvrWuumsV9pdIQXPiXvxbJ9WUsJPoeNrN4IgefTg7PdFxLoZvgfch0BH8uc2z-jNmXyWEB0MKVZB7jEpt-3yyIP0aj3c5oopl25cxAxFR3vQd88FjqQUo1BUOgMw58M6QnTe26k-spV_vB8FXFpx78P935SrwTIMMRPCQsMuPELFPR3oX_9YgvgqMhGPgLO6gij9r8c-To5TlWqlhYl3N1UOv0hWXSIMdOYPzWqvvdBOmkfAbUZ33gTiVGS0EoY1yukockGM4ngN9t2LVl2hEECQQJGT5_MM36loe8PY_RTY-\">Muğla Muslihittin yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRm2iSKj7wKoAFgB5j-dzeWSk7uoivC1qJL-Uydpq4vPJMyB_KYTeCEf6hegmYsBfAOfmmzV4AWvGH8eLQfUMdNvzEDq0VWONlijfWSnkiQBoeaNHCfJdiBZxCOJxYePk5LAvlgjzV5RAA0yXhqAqkR5UNk1N6bWpgvqK6bgg1zyhMD8Y69PiPnQbvCRlwDRJcyepwiJD1vkoIaR8jbTW7DZcVGAhcZPreeHmSSvJl19kIJrTzR_jWbybWHijMh95CuYtaKVloyIZ9IZfcawg7B9bH0WOfY7wgHUqdp1cywuFCsNFZa0j7lBzIyOtujJc2vjE2OUVMIiZKMCN4xqShDRS3zrwiFtW6Bzn0-g==\">Muğla Akyaka (Ula) yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7MNrkvhB0v_p8BzBnIqSdGCBk0S5jexXagdgsvM0-yed4tI7qyGPWywb3mNc4Gf2fPv8MIn8oGPxX7gkCOm_s-FJaECyRE7l4z_oe67GWD6AH_R7Qr2OEq2TNa-luyaPX7Nfw1HYibeVp6zdkJ8Ugz9RbDkdcapnB5NMi_pAkE5ODzUQEk0TUh-aDEo71aeu_T_dnnRQdOYS_pKg9x77A5bmCCtLQgwFww7zuioGbQ_c=\">Kötekli öğrenci yaşamı</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKJVNQsurXRbOn0YVn_A9QTNxKKsUBQ__qDeBEMBdE7d4xwL7xCWwzo6h4IvwfdfnS2fHlFKFBGxRMJeXfsV9sa1I3VNAaEZ994P-_lZKEURKPOKjREB9oncAptPOtUmI70z_Nrvj6aXAsJwP3fwJTutMZ9nKwnjK3EjBauNNw3NGUB6zCRqAKIkqkXfmOsVEmFpYW6vdEJE_v9Fbmx7fQN6XK9QNxrXRZMc2L2dCsBINQwzruI5oTP28krYlqk9op_CZODDRD-dTrhcbybP7o_wOqfu-5AVdyOI9yotn9XrKbFE0J_7pr92O8CQWxCWniB0XLYaxxo3s0KAcGa5jp19ViC8uer1Rdh9YqucEWMJXHyUWFKNOr\">Muğla Orhaniye (Menteşe) yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJJycJxawHE3QfX2D1rX3NA0e1LQhMJfaJDIZOzg2Ie_BweGdEg9kFwohs_GVcmOxtJ3Ly22JapH8xTo2u0n30hkfHkDm_CWB0nJ7czFbWAptVCePsNLfkmaBL_NfBuUIzLARYinjqCn0T8j1Wr2YDYVQEUAPOL19LrIeg9B4OEvz4WV1lTKPj3AeimuzDKNQzblg9OMftdK2VaG9tF-3DObDVhQ81O-gOMk_4\">Orhaniye (Menteşe) spor alanları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyHjhgnd4mWm8GmqIbv8VuVmStMhRIWCCoBPGHBMhrHoM3QwUUjO802o3Lau1uSmV0GhWFOzVkh7wjpRIEdVlYYdNmjGhmKMwzPqg-gKMbkM3G3DlAQThW_la62xbY9SaRF8t6YGnY_t4eK-UhQGmzNQ-uEOFy1fuPIjJ2MIZ9pLrEE05f60Gqz9jakBy1RzPi8-RkKXZG0gPkme8=\">Akyaka gece kulüpleri</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Muğla Kötekli yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+      "Muğla Emirbeyazıt yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+      "Muğla Muslihittin yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+      "Muğla Orhaniye (Menteşe) yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+      "Muğla Akyaka (Ula) yemek çeşitliliği fiyatları aktiviteler gece hayatı gürültü sorunları",
+      "Kötekli öğrenci yaşamı",
+      "Emirbeyazıt kafe restoran",
+      "Muslihittin kültürel etkinlikler",
+      "Orhaniye (Menteşe) spor alanları",
+      "Akyaka gece kulüpleri"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1544,
+    "prompt_token_count": 515,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 515
+      }
+    ],
+    "tool_use_prompt_token_count": 714,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 714
+      }
+    ],
+    "total_token_count": 2773
+  },
+  "text": "Muğla'daki belirtilen mahalleler için tek bir kategori altında yapılan araştırmanın bulguları aşağıda sunulmuştur:\n\n**KOTEKLI**\n\n*   **positive** | gece hayatı türleri | 2021-01-26 | Kötekli, üniversite bölgesi olması nedeniyle öğrenciye özel bir eğlence merkezi haline gelmiştir.\n*   **positive** | aktiviteler | bilinmiyor | Yoğurtçu Parkı, öğrencilerin gitar çalıp, çekirdek çitleyerek sosyalleştiği bir alandır.\n*   **positive** | erişim sorunu | 2026-10-02 | Yurtlarda kalan yaklaşık 7 bin 500 öğrencinin toplu taşımaya ulaşmak için yürüdüğü 700-800 metrelik mesafe için ulaşım düzenlemesi yapılmıştır.\n*   **negative** | gürültü/işletme kapanması/erişim sorunu | 2026-02-15 | Kötekli'de bazı mekanlar aidiyet ve sosyalliği güçlendirirken, bazıları güvensizlik, dışlanma veya kentin bütünüyle kopukluk hislerini tetikleyebilmektedir.\n*   **negative** | kaynaklı menü fiyatı ve ekonomik seçenekler | bilinmiyor | Kötekli'de bazı mekanlar öğrencileri para gözüyle görüp yüksek fiyatlar uygulayabilmektedir; uygun fiyatlı ve kaliteli mekanlar da mevcuttur.\n\n**EMIRBEYAZIT**\n\n*   **positive** | yemek çeşitliliği | bilinmiyor | Emirbeyazıt'ta döner, börek, köfte, ev yemekleri gibi çeşitli restoranlar bulunmaktadır.\n*   **positive** | kaynaklı menü fiyatı ve ekonomik seçenekler | bilinmiyor | Coffy Kafe, uygun fiyatlı kahve seçenekleri ve çeşitli içecek menüsü ile bilinmektedir.\n*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Emirbeyazıt Mahallesi'nde birden fazla fitness kulübü bulunmaktadır.\n*   **negative** | gürültü/işletme kapanması/erişim sorunu | bilinmiyor | Coffy Kafe'de servis hızının yavaş olduğu ve oturma alanı bulmanın zor olabileceği belirtilmiştir.\n*   **unknown** | gece hayatı türleri | bilinmiyor | Mahallede kafe ve restoranlar dışında gece hayatı aktivitesi hakkında bilgi bulunmamaktadır.\n\n**MUSLIHITTIN**\n\n*   **positive** | kafe dışındaki aktiviteler | 2026-09-23 | Muğla Menteşe Sosyo Kültürel Alan, konserler, tiyatro gösterileri, sergiler ve atölye çalışmaları gibi çeşitli kültür ve sanat etkinliklerine ev sahipliği yapmaktadır.\n*   **positive** | yemek çeşitliliği | bilinmiyor | Kahve Diyarı gibi kafeler mahallede bulunmaktadır.\n*   **unknown** | yemek çeşitliliği (döner/dürüm/burger/pizza, ev yemeği/esnaf, farklı mutfaklar) | bilinmiyor | Mahalledeki restoran ve kafe çeşitliliği hakkında detaylı bilgi bulunmamaktadır.\n*   **unknown** | kaynaklı menü fiyatı ve ekonomik seçenekler | bilinmiyor | Mahalledeki yeme-içme mekanlarının menü fiyatları ve ekonomik seçenekleri hakkında bilgi bulunmamaktadır.\n*   **unknown** | gece hayatı türleri | bilinmiyor | Mahallede gece hayatı aktivitesi hakkında bilgi bulunmamaktadır.\n\n**ORHANIYE**\n\n*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Orhaniye Mahallesi'nde Menteşe Spor Salonu ve çeşitli spor alanları bulunmaktadır.\n*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Mahallede birden fazla fitness kulübü bulunmaktadır.\n*   **unknown** | yemek çeşitliliği (döner/dürüm/burger/pizza, ev yemeği/esnaf, farklı mutfaklar) | bilinmiyor | Mahalledeki yeme-içme mekanlarının çeşitliliği hakkında bilgi bulunmamaktadır.\n*   **unknown** | kaynaklı menü fiyatı ve ekonomik seçenekler | bilinmiyor | Mahalledeki yeme-içme mekanlarının menü fiyatları ve ekonomik seçenekleri hakkında bilgi bulunmamaktadır.\n*   **unknown** | gece hayatı türleri | bilinmiyor | Mahallede gece hayatı aktivitesi hakkında bilgi bulunmamaktadır.\n\n**AKYAKA**\n\n*   **positive** | gece hayatı türleri | 2026-09-25 | Akyaka'da Poison Pub, No 22 Riders'Inn, Liliz Lounge, Kukla Pub Akyaka, Xir Pub & Hotel Akyaka, Venti Food & Cocktail Bar, Cycle Bar gibi çeşitli gece kulüpleri ve barlar bulunmaktadır.\n*   **positive** | yemek çeşitliliği | 2026-09-25 | Venti Food & Cocktail Bar, yemek ve kokteyli bir arada sunan bir seçenektir. Selanik Restoran, meze ve balık çeşitleri sunmaktadır.\n*   **positive** | kaynaklı menü fiyatı ve ekonomik seçenekler | 2026-09-25 | Poison Pub'a girişler ücretsizdir ve alkollü içecek ücretleri 25 TL'den başlamaktadır. Deli Memet Cocktail Bar & Bistro'ya girişler ücretsizdir ve alkollü içki ücretleri 30 TL'den başlamaktadır.\n*   **positive** | kafe dışındaki aktiviteler | bilinmiyor | Akyaka, kitesurf için dünyaca bilinen bir yer haline gelmiştir. Kano ve paddleboard gibi aktiviteler Akçapınar'da mevcuttur.\n*   **negative** | gürültü/işletme kapanması/erişim sorunu | bilinmiyor | Akyaka'da popüler bar ve gece mekanları Akyaka merkezde konumlanmaktadır, bu durum kalabalık ve gürültü potansiyeli yaratabilir."
+}

@@ -139,25 +139,65 @@ def with_score_summary(report):
     assessment = report.get("assessment")
     if not assessment or not assessment.get("categories"):
         return report
+    matched = rule_scoring.matched_record(report["place"]) if report.get("place") else None
+    if matched and report.get("categories"):
+        report = detailed_evidence(report, matched)
     report = evidence_view(report)
-    category_rows = [{**c, "score": None, "rationale": INFORMATIONAL_REASONS[c["category"]], "scoring_status": "informational"}
-        if c["category"] in INFORMATIONAL_REASONS else c for c in assessment["categories"]]
+    if report.get("place") and report.get("categories"):
+        record = rule_scoring.record_for(report)
+        calculated = rule_scoring.calculate(record)
+        briefing = build_briefing(record, calculated)
+        conf_map = calculated.get("confidence", {})
+        category_rows = [
+            {
+                **c,
+                "score": calculated["scores"].get(c["category"]),
+                "rationale": calculated["reasons"].get(c["category"], c.get("rationale")),
+                "scoring_status": "scored" if calculated["scores"].get(c["category"]) is not None else "insufficient_data",
+                "sample_count": conf_map.get(c["category"], {}).get("sample_count", 0),
+                "confidence": conf_map.get(c["category"], {}).get("level", "none"),
+                "confidence_label": conf_map.get(c["category"], {}).get("label", "Veri yok"),
+            }
+            for c in assessment["categories"]
+        ]
+    else:
+        calculated = assessment.get("calculation")
+        briefing = assessment.get("briefing")
+        category_rows = [
+            {
+                **c,
+                "scoring_status": "scored" if c.get("score") is not None else "insufficient_data",
+            }
+            for c in assessment["categories"]
+        ]
     categories = [SimpleNamespace(category=c["category"], score=c.get("score")) for c in category_rows]
-    meaningful_total = sum(c.score is not None and c.category in {"rent_cost", "transportation"} for c in categories) == 2
+    available_count = sum(c.score is not None for c in categories)
+    meaningful_total = available_count >= 2
     missing = [c.category for c in categories if c.score is None]
     covered_weight = sum(CATEGORY_WEIGHTS[c.category] for c in categories if c.score is not None)
-    return {**report, "assessment": {**assessment,
+    updated_assessment = {
+        **assessment,
         "categories": category_rows,
-        "calculation": {**assessment.get("calculation", {}), "scores": {
-            **assessment.get("calculation", {}).get("scores", {}), "social_life": None, "safety_news": None}},
         "overall_score": weighted_score(categories, CATEGORY_WEIGHTS) if meaningful_total else None,
         "profile_scores": {key: weighted_score(categories, weights) if meaningful_total else None for key, weights in PROFILE_WEIGHTS.items()},
-        "coverage": len(categories) - len(missing), "missing_categories": missing,
-        "weight_coverage": covered_weight, "partial": bool(missing), "score_summary_version": 3, "overall_ready": meaningful_total,
-        "methodology": "Mekân araması bir örnek derlemesidir; mahalledeki bütün işletmeleri saymaz ve sosyal yaşam kalitesini puanlamaz. Tekil haberler güvenlik veya suç oranı puanına çevrilmez. "
-        "Kira ve ulaşımın ikisi de sayısal karşılaştırmaya uygun değilse genel puan verilmez; yalnız deprem gridiyle mahalle kalitesi yargılanmaz. "
-        "Uygun veride maliyet, ulaşım ve deprem araştırma göstergelerinin mevcut ağırlıklarıyla sınırlı bir ön puan hesaplanır. "
-        f"Mevcut sayısal başlık: {len(categories)-len(missing)}. Deprem araştırma göstergesi bina dayanıklılığı değildir."}}
+        "coverage": len(categories) - len(missing),
+        "missing_categories": missing,
+        "weight_coverage": covered_weight,
+        "partial": bool(missing),
+        "score_summary_version": 5,
+        "overall_ready": meaningful_total,
+        "methodology": (
+            "Tüm 5 kategori (Maliyet %32, Sosyal yaşam %28, Yerel gündem/güvenlik %20, Deprem göstergesi %10, Ulaşım %10) "
+            "kaynaklı proje kurallarıyla 0–100 arasında hesaplanır. En az 2 kategoride kaynaklı puan bulunduğunda genel ve profil puanları "
+            "mevcut kategorilerin ağırlıkları oranlanarak hesaplanır; eksik kategoriler sıfır veya 50 sayılmaz. "
+            f"Mevcut sayısal başlık: {available_count}/5. Deprem araştırma göstergesi bina dayanıklılığı değildir."
+        ),
+    }
+    if calculated is not None:
+        updated_assessment["calculation"] = calculated
+    if briefing is not None:
+        updated_assessment["briefing"] = briefing
+    return {**report, "assessment": updated_assessment}
 
 
 
@@ -166,27 +206,31 @@ def detailed_evidence(evidence, record):
         return evidence
     groups = {key: [] for key in CATEGORY_WEIGHTS}
     def source_rows(rows):
-        return [{"id": s.get("id", s["url"]), "title": s.get("publisher", "Kaynak"), "url": s["url"]} for s in rows]
+        return [{"id": s.get("id", s["url"]), "title": s.get("publisher") or s.get("title") or "Kaynak", "url": s["url"]} for s in rows if s.get("url")]
     def add(key, text, row, note):
         groups[key].append({"text": text, "date": row.get("date"), "sources": source_rows(row.get("sources", [])), "note": note})
-    for r in record["rents"]:
+    for r in record.get("rents", []):
         add("rent_cost", f"{r['rooms']} ilan örneği: {r['amount']} TL; ilan tarihi {r.get('date') or 'belirsiz'}.", r,
-            "Aylık karşılaştırmaya yalnız tarihli, uygun 1+1 kayıtlar katılır. Oda tipleri karıştırılmaz; istenen bedel işlem fiyatı değildir.")
-    for r in record["routes"]:
+            "Kira değerlendirmesinde öncelikle güncel 1+1 ilanlar, örneklem azsa oda-normalize ilanlar ve piyasa endeksi kullanılır.")
+    for b in record.get("rent_benchmarks", []):
+        add("rent_cost", f"Piyasa kira endeksi ({b.get('rooms') or 'genel'}): {b['amount']} TL; {b.get('description', '')}".strip(), b,
+            "Piyasa endeksi ortalama/medyan referansıdır; bireysel ilan değildir.")
+    for r in record.get("routes", []):
         add("transportation", f"{r.get('code', '')} · {r.get('route', '')}. {r.get('localEvidence', '')}", r,
-            f"Resmî sayfa okuma tarihi: {r.get('officialCheckedAt') or 'belirsiz'}. Yayımlanmış tarife, gerçek duraktan geçiş süresi değildir.")
-    for r in record["transportAlerts"]:
+            f"Resmî sayfa okuma tarihi: {r.get('officialCheckedAt') or r.get('date') or 'belirsiz'}. Yayımlanmış tarife, gerçek duraktan geçiş süresi değildir.")
+    for r in record.get("transportAlerts", []):
         add("transportation", r["summary"], r, f"Bildirim durumu: {r.get('status')}. Olayın bugün sürdüğü varsayılmaz.")
-    for r in record["venues"]:
+    for r in record.get("venues", []):
         add("social_life", f"{r['name']} · {r['type']} · {r.get('address') or 'Adres kaynağını incele'}", r,
             "Kaynakta listelenen mekân; güncel açık olma ve hizmet kalitesi ayrıca kontrol edilmeli.")
-    for r in record["news"]:
-        add("safety_news", r["summary"], r, "Tarihli haber kaydı; suç oranı veya kişisel güvenlik tahmini değildir.")
-    h = record["hazard"]
+    for n in record.get("news", []):
+        add("safety_news", n["summary"], n, "Tarihli haber kaydı; suç oranı veya kişisel güvenlik tahmini değildir.")
+    h = record.get("hazard", {})
     if h.get("value") is not None:
-        add("earthquake_hazard", f"Akademik PGA grid değeri: {h['value']} g; temsil noktasına uzaklık {h['gridDistance']} km.",
-            {"sources": [{"publisher": h['title'], "url": h['url']}]}, "CC-BY-SA-4.0 · Aktuğ ve diğerleri. Resmî AFAD veya bina dayanıklılığı puanı değildir.")
-    return {**evidence, "reference_date": record['asOf'], "origin": "detailed_research_snapshot",
+        add("earthquake_hazard", f"Akademik PGA grid değeri: {h['value']} g; temsil noktasına uzaklık {h.get('gridDistance')} km.",
+            {"sources": [{"publisher": h.get('title', 'Jeodezik Deprem Tehlike Haritası'), "url": h['url']}]} if h.get("url") else {"sources": []},
+            "CC-BY-SA-4.0 · Aktuğ ve diğerleri. Resmî AFAD veya bina dayanıklılığı puanı değildir.")
+    return {**evidence, "reference_date": record.get('asOf', evidence.get('reference_date')), "origin": "detailed_research_snapshot",
         "categories": [{"id": c['id'], "label": c['label'], "items": groups[c['id']],
                         "missing_reason": None if groups[c['id']] else c.get('missing_reason')} for c in evidence['categories']]}
 

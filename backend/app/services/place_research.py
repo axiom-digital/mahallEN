@@ -82,8 +82,9 @@ REPORT_SCHEMA = provider_schema()
 def research_queries(location):
     place = " ".join(location[k] for k in ("name", "district", "city"))
     topics = [
-        ('kiralık daire 1+1 aylık kira ilan tarihi', None),
-        ('kiralık daire 2+1 3+1 fiyat ilan tarihi', None),
+        ('kiralık daire 1+1 2+1 aylık kira ilan', None),
+        ('kiralık daire 2+1 3+1 fiyat emlakjet hepsiemlak', None),
+        ('ortalama kiralık daire fiyatları kira endeksi endeksa zingat', None),
         ('otobüs hatları durak güzergah belediye resmi', None),
         ('vapur iskele hat sefer tarifesi -iptal', None),
         ('metro tramvay istasyon hat', None),
@@ -92,7 +93,9 @@ def research_queries(location):
         ('market süpermarket fırın adres', ['yandex.com.tr', 'google.com/maps']),
         ('spor salonu halı saha adres', ['yandex.com.tr', 'google.com/maps']),
         ('park kütüphane kültür merkezi belediye', None),
-        ('yerel haber belediye gelişmeler', None),
+        ('yerel haber asayiş polis olay', None),
+        ('belediye haber altyapı ulaşım çalışma', None),
+        ('mahalle haber gündem gelişmeler', None),
         ('deprem zemin jeoloji AFAD belediye rapor', None),
     ]
     return [(f"{place} Mahallesi {topic}", domains) for topic, domains in topics]
@@ -105,13 +108,16 @@ def collect_sources(location):
         def search(query):
             text, domains = query
             social = any(word in text for word in ('kafe kahve', 'restoran lokanta', 'market süpermarket', 'spor salonu', 'park kütüphane'))
-            payload = {"query": text, "search_depth": "basic", "max_results": 10 if social else 5, "country": "turkey",
+            news_query = any(word in text for word in ('yerel haber', 'belediye haber', 'mahalle haber'))
+            rent_query = any(word in text for word in ('kiralık daire', 'kira endeksi'))
+            max_results = 10 if social else 8 if (news_query or rent_query) else 5
+            payload = {"query": text, "search_depth": "basic", "max_results": max_results, "country": "turkey",
                 "include_answer": False, "include_raw_content": "text", "auto_parameters": False}
             if domains:
                 payload["include_domains"] = domains
             else:
                 payload["exclude_domains"] = ["rocketreach.co", "yelp.com", "mapquest.com"]
-            if 'yerel haber' in text:
+            if news_query:
                 payload["time_range"] = "year"
             response = client.post("https://api.tavily.com/search",
                 headers={"Authorization": f"Bearer {settings.TAVILY_API_KEY}"}, json=payload)
@@ -119,7 +125,7 @@ def collect_sources(location):
             return response.json().get("results", [])
         with ThreadPoolExecutor(max_workers=3) as executor:
             results = list(executor.map(search, research_queries(location)))
-    query_categories = ["rent_cost"] * 2 + ["transportation"] * 3 + ["social_life"] * 5 + ["safety_news", "earthquake_hazard"]
+    query_categories = ["rent_cost"] * 3 + ["transportation"] * 3 + ["social_life"] * 5 + ["safety_news"] * 3 + ["earthquake_hazard"]
     for items, category in zip(results, query_categories):
         for item in items:
             url = item.get("url", "")
@@ -183,7 +189,8 @@ def generate_place_report(target, identity):
                     "Bir kira bulgusunun alıntısında tekil fiyat, oda tipi ve konum bağlamı bulunsun. Liste altındaki başka mahalle önerilerini karıştırma. "
                     "Haberin tam yayın tarihi varsa details.published_date içine yayın tarihini koy; details.date olay tarihidir ve yalnız tam tarih doğrulanıyorsa dolsun. Gün/ay tek başınaysa yıl uydurma. "
                     "Resmi kaynaklarda 22B, 40B, 22RE gibi hedef mahalleden geçen farklı hatlar varsa ayrı ayrı bulgu oluştur. "
-                    "Kira kategori sayfasının en ucuz/en pahalı/ortalama aralığını tekil ilan yapma. Her ilan ayrı bulgu olsun. "
+                    "Kira kategori sayfasındaki doğrulanmış mahalle ortalama/medyan kira endeksi (Endeksa, Zingat vb.) verisi varsa ayrıca endeks bulgusu olarak çıkar; her tekil ilan da ayrı bulgu olsun. "
+                    "safety_news kategorisinde kaynaklarda bulunan 4–10 arası farklı güncel/belediye/asayiş haberini ayrı ayrı çıkar. "
                     "İlan okuma tarihi ilan yayın tarihi değildir. Haber tarihinin yılını bugünden tahmin etme. "
                     "Ulaşım bulgusuna resmi hat kodunu ve hedef mahallenin geçtiğini gösteren durak bilgisini ekle. "
                     "Eski iptal sefer duyurusundaki tablo, güncel vapur hattı kanıtı değildir; iptal duyurusunu güncel çalışan hat olarak aktarma. "
@@ -209,7 +216,7 @@ def generate_place_report(target, identity):
         return parsed.model_copy(update={"findings": [f for f in parsed.findings if f.category == category]})
     with ThreadPoolExecutor(max_workers=2) as executor:
         batches = [batch for batch in executor.map(extract, CATEGORY_LABELS) if batch]
-    budgets = {"rent_cost": 10, "safety_news": 8, "transportation": 12, "social_life": 40, "earthquake_hazard": 6}
+    budgets = {"rent_cost": 15, "safety_news": 12, "transportation": 12, "social_life": 40, "earthquake_hazard": 6}
     parsed = Synthesis(summary=" ".join(batch.summary for batch in batches)[:2000],
         findings=[f for batch in batches for f in batch.findings[:budgets[batch.findings[0].category] if batch.findings else 0]],
         limitations=list(dict.fromkeys(note for batch in batches for note in batch.limitations))[:12])
@@ -230,7 +237,7 @@ def generate_place_report(target, identity):
                 continue
         if finding.category != "earthquake_hazard" and normalize(location["name"]) not in normalize(local_context):
             continue
-        if finding.category == "social_life" and not all(normalize(location[key]) in normalize(local_context) for key in ("city", "district")):
+        if finding.category == "social_life" and not any(normalize(location[key]) in normalize(local_context) for key in ("city", "district")):
             continue
         if ids <= sources.keys() and any(quote_matches(finding.evidence_quote, support["text"]) and ids <= set(support["source_ids"]) for support in supports):
             findings.append(finding)

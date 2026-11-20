@@ -16,6 +16,22 @@ function atPlace(name) {
 }
 const currency = value => value == null ? 'Karşılaştırma yok' : `${Number(value).toLocaleString('tr-TR')} TL`;
 
+function formatConfidenceText(key, catMeta, rentMode) {
+  if (!catMeta || !(catMeta.sample_count > 0)) return null;
+  const unit =
+    key === 'rent_cost'
+      ? (rentMode === 'market_index' ? 'endeks' : 'ilan')
+      : key === 'social_life'
+        ? 'mekân'
+        : key === 'transportation'
+          ? 'hat'
+          : key === 'safety_news'
+            ? 'haber'
+            : 'grid';
+  const countText = key === 'earthquake_hazard' ? 'Akademik PGA' : `${catMeta.sample_count} ${unit}`;
+  return catMeta.confidence_label ? `${countText} · ${catMeta.confidence_label}` : countText;
+}
+
 function Sources({ item }) {
   const unique = [...new Map((item.sources || []).map(source => [source.url, source])).values()];
   return <div className="reading-source-links">{unique.slice(0, 2).map(source =>
@@ -82,7 +98,7 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
           <strong data-testid="overall-score">{report.scores.overall_livability ?? '—'}<small>/100</small></strong>
         </div>
         <p className="overall-coverage">{assessment.coverage}/5 kategoriye dayanıyor</p>
-        </> : <p className="overall-coverage">Kira ve ulaşım karşılaştırması tamamlanmadan genel puan hesaplanmaz.</p>}
+        </> : <p className="overall-coverage">Genel puan için en az 2 kategoride kaynaklı puan gerekir.</p>}
         <a href="#report-method" onClick={event => { event.preventDefault(); const method = document.getElementById('report-method'); if (method) { method.open = true; method.scrollIntoView({behavior:'smooth',block:'start'}); } }}>Puan nasıl hesaplandı? <ArrowUpRight size={13}/></a>
       </aside>
     </header>
@@ -91,19 +107,22 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
       <div className="neighborhood-answer-grid">{categories.map(({key, score, title, Icon}) => {
         const items = categoryItems(key);
         const value = report.scores[score];
-        const heading = key === 'rent_cost' ? (roomGroup?.listings?.length ? `${roomGroup.rooms} konut örnekleri` : 'Konut seçenekleri')
+        const catMeta = report.category_meta?.[score];
+        const confText = formatConfidenceText(key, catMeta, assessment?.calculation?.rent_mode);
+        const heading = key === 'rent_cost' ? (roomGroup?.listings?.length ? `${roomGroup.rooms} konut örnekleri` : briefing.rent_benchmarks?.length ? 'Piyasa kira endeksi' : 'Konut seçenekleri')
           : key === 'social_life' ? (briefing.venues?.slice(0, 2).map(v => v.name).join(' · ') || 'Günlük ihtiyaçlar ve mekânlar')
           : key === 'transportation' ? (briefing.routes?.map(r => r.code).filter(Boolean).slice(0, 4).join(' · ') || 'Hatlar ve duraklar')
           : key === 'earthquake_hazard' ? (briefing.hazard?.value != null ? `${briefing.hazard.value} g · PGA` : 'Zemin ve deprem kaynakları')
           : 'Tarihli yerel gelişmeler';
         const text = key === 'transportation' && weekdayService ? `${weekdayService.code} · ${weekdayService.direction}: hafta içi ${weekdayService.days.weekday.first}–${weekdayService.days.weekday.last}. Uç duraktan hareket saatleri.`
-          : key === 'social_life' ? `${briefing.venues?.length || 0} örnek kaydı kaynaklarıyla incele. Bu liste mahalledeki bütün mekânların sayısı değildir.`
-          : key === 'rent_cost' ? (roomGroup?.listings?.length ? `${roomGroup.listings.length} ilanı oda tipi, tarih ve istenen bedeliyle karşılaştır.` : items[0]?.text)
+          : key === 'social_life' ? (briefing.social_diversity?.note || `${briefing.venues?.length || 0} örnek kaydı kaynaklarıyla incele. Bu liste mahalledeki bütün mekânların sayısı değildir.`)
+          : key === 'rent_cost' ? (roomGroup?.listings?.length ? `${roomGroup.listings.length} ilanı oda tipi, tarih ve istenen bedeliyle karşılaştır.` : briefing.rent_benchmarks?.length ? `${briefing.rent_benchmarks.length} piyasa endeksi kaydıyla kira seviyesini incele.` : items[0]?.text)
           : key === 'earthquake_hazard' && briefing.hazard?.value != null ? 'Akademik gridin temsil noktasındaki sarsıntı tehlikesi; binanın dayanıklılığı değildir.'
           : key === 'safety_news' ? (items.length ? `${items.length} tarihli yerel kayıt. Haberler mahalle güvenliği veya suç oranı ölçümü değildir.` : 'Güncel tarihli kayıt bulunamadı. Eski ve tarihi belirsiz kayıtlar arşivde; güvenlik değerlendirmesi olarak kullanılmaz.')
           : items[0]?.text || 'Bu başlık için mahalleye ait yeterli kaynak henüz bulunamadı.';
         return <button key={key} type="button" className={`neighborhood-answer answer-${key}`} onClick={() => openCategory(key)} data-testid={`card-${score}`} aria-haspopup="dialog">
-          <div className="answer-label"><Icon size={18}/><span>{title}</span></div><div className={`answer-score ${value == null ? 'is-unavailable' : ''}`} data-testid={`score-${score}`}>{value != null ? <><strong>{value}</strong><span>/100</span></> : <span>{key === 'social_life' ? 'Mekân rehberi' : key === 'safety_news' ? 'Haber derlemesi' : 'Karşılaştırma bekliyor'}</span>}</div>
+          <div className="answer-label"><Icon size={18}/><span>{title}</span></div><div className={`answer-score ${value == null ? 'is-unavailable' : ''}`} data-testid={`score-${score}`}>{value != null ? <><strong>{value}</strong><span>/100</span></> : <span>Veri bekleniyor</span>}</div>
+          {confText && <div className={`answer-confidence confidence-${catMeta.confidence || 'low'}`} data-testid={`confidence-${score}`}>{confText}</div>}
           <h4>{heading}</h4><p>{text}</p><span className="answer-action">{key === 'rent_cost' ? 'İlanları gör' : key === 'social_life' ? 'Mekânları keşfet' : key === 'transportation' ? 'Hatları incele' : 'Kaynakları incele'}<ArrowUpRight size={14}/></span>
         </button>;
       })}</div>
@@ -112,14 +131,39 @@ export default function AssessedReport({ report, onRefreshAi, refreshing }) {
     {selected && <CategoryDialog title={`${selected.title} · ${report.name}`} onClose={() => setActiveCategory(null)}><section id="category-evidence" className="report-synthesis-card reading-category-panel" aria-label={`${selected.title} ayrıntıları`}>
       <div className="synthesis-header"><div><span className="eyebrow">YAKINDAN BAK</span><h3>{selected.title}</h3></div>
         <button className="reading-close" type="button" aria-label="Kategori ayrıntılarını kapat" onClick={() => setActiveCategory(null)}><X size={20} /></button></div>
-      {activeCategory === 'rent_cost' && roomGroups.length > 0 ? <>
-        <div className="reading-filter-row" role="group" aria-label="Konut tipi">{roomGroups.map(group => <button type="button" key={group.rooms} className={roomGroup?.rooms === group.rooms ? 'active' : ''} onClick={() => setRoom(group.rooms)}>{group.rooms}</button>)}</div>
-        {roomGroup.sample_count > 0 ? <div className="reading-rent-summary"><div><span>İlan medyanı</span><strong>{currency(roomGroup.median)}</strong></div><div><span>Karşılaştırılabilir örnek</span><strong>{roomGroup.sample_count}</strong></div><div><span>İstenen fiyat aralığı</span><strong>{roomGroup.min === roomGroup.max ? currency(roomGroup.min) : `${currency(roomGroup.min)} – ${currency(roomGroup.max)}`}</strong></div></div>
-          : <div className="reading-listing-intro"><h4>{roomGroup.rooms} · {roomGroup.listings.length} kaynaklı ilan</h4><p>İstenen bedelleri ve ilan tarihlerini aşağıda inceleyebilirsin. Aylık karşılaştırma için tarih ve ödeme koşulları yeterince doğrulanmadığından medyan hesaplanmadı.</p></div>}
-        <p className="reading-map-caption">İlanlardaki istenen bedeller; gerçekleşmiş kira veya mahalle ortalaması değildir. Maliyet puanında yalnız karşılaştırmaya uygun 1+1 örnekleri kullanılır.</p>
-        <div className="reading-listings">{roomGroup.listings.map((listing, i) => <article key={i}><div><strong>{currency(listing.amount)}</strong><span>{listing.rooms} · {listing.date || 'Tarih belirsiz'}</span></div><span className="reading-listing-status">{listing.comparable ? 'Tarihli örnek' : 'Karşılaştırma dışında'}</span><Sources item={listing} /></article>)}</div>
+      {activeCategory === 'rent_cost' && (roomGroups.length > 0 || briefing.rent_benchmarks?.length > 0) ? <>
+        {roomGroups.length > 0 && <>
+          <div className="reading-filter-row" role="group" aria-label="Konut tipi">{roomGroups.map(group => <button type="button" key={group.rooms} className={roomGroup?.rooms === group.rooms ? 'active' : ''} onClick={() => setRoom(group.rooms)}>{group.rooms}</button>)}</div>
+          {roomGroup.sample_count > 0 ? <div className="reading-rent-summary"><div><span>İlan medyanı</span><strong>{currency(roomGroup.median)}</strong></div><div><span>Karşılaştırılabilir örnek</span><strong>{roomGroup.sample_count}</strong></div><div><span>İstenen fiyat aralığı</span><strong>{roomGroup.min === roomGroup.max ? currency(roomGroup.min) : `${currency(roomGroup.min)} – ${currency(roomGroup.max)}`}</strong></div></div>
+            : <div className="reading-listing-intro"><h4>{roomGroup.rooms} · {roomGroup.listings.length} kaynaklı ilan</h4><p>İstenen bedelleri ve ilan tarihlerini aşağıda inceleyebilirsin. 1+1 dışında kalan oda tipleri puanlamada standart katsayıyla 1+1 eşdeğerine normalize edilir.</p></div>}
+          <p className="reading-map-caption">{assessment?.calculation?.rent_mode === 'strict_1+1'
+            ? 'İlanlardaki istenen bedeller; gerçekleşmiş kira veya mahalle ortalaması değildir. Maliyet puanında yalnız karşılaştırmaya uygun 1+1 örnekleri kullanılır.'
+            : '1+1 ilanı az olan mahallelerde farklı oda tipleri standart katsayılarla 1+1 eşdeğerine normalize edilir ve varsa piyasa kira endeksiyle birlikte medyan hesaplanır.'}</p>
+          <div className="reading-listings">{roomGroup.listings.map((listing, i) => <article key={i}><div><strong>{currency(listing.amount)}</strong><span>{listing.rooms} · {listing.date || 'Tarih belirsiz'}</span></div><span className="reading-listing-status">{listing.comparable ? 'Tarihli örnek' : 'Oda / endeks havuzunda'}</span><Sources item={listing} /></article>)}</div>
+        </>}
+        {briefing.rent_benchmarks?.length > 0 && <div className="reading-benchmark-section">
+          <h4>Piyasa Kira Endeksi</h4>
+          <div className="reading-benchmark-grid">{briefing.rent_benchmarks.map((b, i) => <article className="reading-benchmark-card" key={i}><div><strong>{b.label || currency(b.amount)}</strong><span>{b.rooms || 'genel'} · {b.date || 'Güncel endeks'}</span></div><p>{b.description}</p><Sources item={b} /></article>)}</div>
+        </div>}
       </> : activeCategory === 'social_life' && briefing.venues?.length > 0 ? <>
-        <p className="reading-map-caption">Adres bağlamı kaynakta eşleşen örneklerdir. Aramanın bulduğu kayıt sayısı, mahalledeki toplam mekân sayısı veya sosyal yaşam puanı değildir.</p>
+        {briefing.social_diversity && <div className="reading-diversity-box">
+          {briefing.social_diversity.monoculture_warning && <p className="reading-diversity-warning">{briefing.social_diversity.monoculture_warning}</p>}
+          <div className="reading-diversity-chips">
+            {[
+              ['yeme_icme', 'Yeme-içme'],
+              ['kafe', 'Kafe'],
+              ['gece', 'Gece'],
+              ['gunluk', 'Günlük'],
+              ['park_spor', 'Park / Spor'],
+              ['kultur_sanat', 'Kültür / Sanat'],
+            ].map(([gkey, glabel]) => {
+              const cnt = briefing.social_diversity.groups?.[gkey] ?? 0;
+              const low = (gkey === 'park_spor' || gkey === 'kultur_sanat') && cnt <= 2;
+              return <span key={gkey} className={`reading-diversity-chip${cnt === 0 ? ' is-empty' : low ? ' is-low' : ''}`}>{glabel}: <strong>{cnt}</strong></span>;
+            })}
+          </div>
+        </div>}
+        <p className="reading-map-caption">Adres bağlamı kaynakta eşleşen örneklerdir. Aramanın bulduğu kayıt sayısı, mahalledeki toplam mekân sayısı veya mutlak yaşam kalitesi değildir.</p>
         <div className="reading-filter-row" role="group" aria-label="Mekân türü">{['Tümü', ...new Set(briefing.venues.map(venue => venue.kind))].map(kind => <button type="button" key={kind} className={venueKind === kind ? 'active' : ''} onClick={() => { setVenueKind(kind); setSelectedVenue(null); setShowAllFindings(false); }}>{kind}</button>)}</div>
         <div className={`reading-social-layout ${venues.some(v => Number.isFinite(v.lat) && Number.isFinite(v.lon)) ? 'has-map' : 'without-map'}`}><div className="reading-venue-list">{(showAllFindings ? venues : venues.slice(0, 6)).map(venue => <article key={venue.id} className={venue.id === selectedVenue ? 'is-selected' : ''}><span className="eyebrow">{venue.kind}</span><h4>{venue.name}</h4><p>{venue.address || 'Açık adres için kaynağı incele.'}</p>{venue.scope === 'reference_radius' && <small>Referans noktasının 1 km çevresinde</small>}<Sources item={venue} />{Number.isFinite(venue.lat) && Number.isFinite(venue.lon) && <button className="reading-detail-button" type="button" onClick={() => setSelectedVenue(venue.id)}>Haritada göster <MapPin size={14} /></button>}</article>)}{venues.length > 6 && <button className="reading-detail-button" type="button" onClick={() => setShowAllFindings(!showAllFindings)}>{showAllFindings ? 'Daha az göster' : `${venues.length} mekânın tamamını göster`}</button>}</div>{venues.some(v => Number.isFinite(v.lat) && Number.isFinite(v.lon)) && <VenueMap venues={venues} selected={selectedVenue} onSelect={setSelectedVenue} />}</div>
       </> : activeCategory === 'transportation' && briefing.routes?.length > 0 ? <>

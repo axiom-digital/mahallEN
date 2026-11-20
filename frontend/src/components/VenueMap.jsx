@@ -11,7 +11,7 @@ export default function VenueMap({ venues, selected, onSelect }) {
   useEffect(() => {
     const points = venues.filter(v => Number.isFinite(v.lat) && Number.isFinite(v.lon));
     if (!element.current || !points.length) return;
-    const instance = L.map(element.current, { scrollWheelZoom: false });
+    const instance = L.map(element.current, { scrollWheelZoom: false, zoomAnimation: false, fadeAnimation: false });
     map.current = instance;
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(instance);
@@ -24,8 +24,8 @@ export default function VenueMap({ venues, selected, onSelect }) {
       markers.current.set(venue.id, marker);
     });
     instance.fitBounds(points.map(v => [v.lat, v.lon]), { padding: [30, 30], maxZoom: 16 });
-    requestAnimationFrame(() => instance.invalidateSize());
-    return () => { markers.current.clear(); instance.remove(); map.current = null; };
+    const rafId = requestAnimationFrame(() => { if (map.current === instance) instance.invalidateSize(); });
+    return () => { cancelAnimationFrame(rafId); instance.stop(); markers.current.clear(); instance.remove(); map.current = null; };
   }, [venues]);
   useEffect(() => {
     const marker = markers.current.get(selected);

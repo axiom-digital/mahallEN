@@ -33,7 +33,24 @@ def test_other_neighborhood_recommendation_and_unquoted_price_are_rejected():
 
 
 def test_category_average_is_not_an_individual_listing():
-    assert not build("rent_cost", "Bebek ortalama kira 163.597 TL", {"amount_tl": 163597})["rents"]
+    r = build("rent_cost", "Bebek ortalama kira 163.597 TL", {"amount_tl": 163597})
+    assert not r["rents"]
+    assert len(r["rent_benchmarks"]) == 1
+    assert r["rent_benchmarks"][0]["amount"] == 163597
+    assert r["rent_benchmarks"][0]["basis"] == "market_index"
+
+
+def test_kira_endeksi_is_captured_as_benchmark_only():
+    r = build(
+        "rent_cost",
+        "Bebek Mahallesi kira endeksi ortalama 42.500 TL düzeyindedir.",
+        {"amount_tl": 42500, "rooms": "2+1", "date": "2026-11-05"},
+        url="https://endeksa.com/bebek",
+    )
+    assert r["rents"] == []
+    assert len(r["rent_benchmarks"]) == 1
+    assert r["rent_benchmarks"][0]["amount"] == 42500
+    assert r["rent_benchmarks"][0]["rooms"] == "2+1"
 
 
 def test_official_route_code_survives_but_third_party_is_not_official():
@@ -54,3 +71,31 @@ def test_typed_record_is_used_directly_without_regex_reinterpreting_it():
     r = build("social_life", "Bebek Test Kahvecisi", {"name": "Test Kahvecisi", "venue_type": "cafe"})
     assert r["venues"][0]["name"] == "Test Kahvecisi"
     assert record_for({"place": TARGET, "research_record": r}) is r
+
+
+def test_deterministic_portal_rent_extractor_collects_multiple_listings_and_rejects_satilik_or_foreign():
+    sources = {
+        "S1": {"id": "S1", "title": "Bebek Kiralık Daire", "url": "https://www.emlakjet.com/kiralik-daire/istanbul-besiktas-bebek-mahallesi"},
+        "S2": {"id": "S2", "title": "Bebek Satılık Daire", "url": "https://www.emlakjet.com/satilik-daire/istanbul-besiktas-bebek-mahallesi"},
+        "S3": {"id": "S3", "title": "Etiler Kiralık Daire", "url": "https://www.emlakjet.com/kiralik-daire/istanbul-besiktas-etiler-mahallesi"},
+    }
+    supports = [
+        {
+            "category": "rent_cost",
+            "source_ids": ["S1"],
+            "text": "2+1 · 95 m² · Bebek 42.000 ₺   1+1 · 60 m² 31.000 TL   3+1 · 130 m² 55.000 TL",
+        },
+        {
+            "category": "rent_cost",
+            "source_ids": ["S2"],
+            "text": "3+1 Satılık 95.000 TL (yanlış kategori URL)",
+        },
+        {
+            "category": "rent_cost",
+            "source_ids": ["S3"],
+            "text": "2+1 Etiler 29.000 TL",
+        },
+    ]
+    r = grounded_record(TARGET, "2026-11-20", [], sources, supports)
+    extracted = sorted((x["rooms"], x["amount"]) for x in r["rents"])
+    assert extracted == [("1+1", 31000), ("2+1", 42000), ("3+1", 55000)]

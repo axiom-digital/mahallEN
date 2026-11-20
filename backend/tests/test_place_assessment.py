@@ -22,22 +22,31 @@ def test_partial_summary_is_visible_and_explains_exactly_what_is_missing():
     scores = {"rent_cost": None, "social_life": 40, "safety_news": 40, "earthquake_hazard": 12, "transportation": 40}
     raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in scores.items()]}}
     result = assessment.with_score_summary(raw)["assessment"]
-    assert result["overall_score"] is None
-    assert result["coverage"] == 2 and result["weight_coverage"] == 20
-    assert result["missing_categories"] == ["rent_cost", "social_life", "safety_news"] and result["partial"]
-    assert all(value is None for value in result["profile_scores"].values())
-    assert result["categories"][1]["scoring_status"] == 'informational'
-    assert result["categories"][0]["score"] is None
+    assert result["overall_ready"] and result["overall_score"] == 36
+    assert result["coverage"] == 4 and result["weight_coverage"] == 68
+    assert result["missing_categories"] == ["rent_cost"] and result["partial"]
+    assert result["categories"][0]["scoring_status"] == "insufficient_data"
+    assert result["categories"][1]["scoring_status"] == "scored"
+    assert result["categories"][1]["score"] == 40
+    assert result["categories"][2]["score"] == 40
+    assert all(isinstance(value, int) for value in result["profile_scores"].values())
     assert "overall_score" not in raw["assessment"]
 
 
-def test_general_summary_requires_both_cost_and_transport_comparisons():
+def test_general_summary_requires_at_least_two_scored_categories():
     scores = {"rent_cost": 60, "social_life": 20, "safety_news": 10, "earthquake_hazard": 56, "transportation": 80}
     raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in scores.items()]}}
     result = assessment.with_score_summary(raw)["assessment"]
-    assert result['overall_ready'] and result['overall_score'] == 63
-    raw['assessment']['categories'][0]['score'] = None
-    assert assessment.with_score_summary(raw)['assessment']['overall_score'] is None
+    assert result["overall_ready"] and result["overall_score"] == 40
+    two_scores = {"rent_cost": 60, "social_life": None, "safety_news": None, "earthquake_hazard": None, "transportation": 80}
+    two_raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in two_scores.items()]}}
+    two_result = assessment.with_score_summary(two_raw)["assessment"]
+    assert two_result["overall_ready"] and two_result["overall_score"] == 65
+    one_score = {"rent_cost": None, "social_life": None, "safety_news": None, "earthquake_hazard": 56, "transportation": None}
+    one_raw = {"assessment": {"categories": [{"category": key, "score": score} for key, score in one_score.items()]}}
+    one_result = assessment.with_score_summary(one_raw)["assessment"]
+    assert not one_result["overall_ready"] and one_result["overall_score"] is None
+    assert all(value is None for value in one_result["profile_scores"].values())
 
 
 def test_writer_cannot_change_a_source_iso_date():

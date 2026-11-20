@@ -40,10 +40,37 @@ def build_briefing(record, calculation):
     alerts = [{"text": a["summary"], "date": a.get("date"), "observed_at": a.get("observedAt"), "status": a.get("status"),
         "sources": [{"url": s["url"], "title": s.get("publisher") or s.get("title") or "Duyuru kaynağı"} for s in a.get("sources", [])[:2]]}
         for a in record.get("transportAlerts", []) if a.get("sources")]
+    benchmarks = [
+        {
+            "amount": b.get("amount"),
+            "label": money(b["amount"]) if b.get("amount") else None,
+            "rooms": b.get("rooms") or "genel",
+            "basis": b.get("basis") or "market_index",
+            "description": b.get("description") or f"{b.get('rooms') or 'Mahalle'} kira endeksi: {money(b['amount'])}",
+            "date": b.get("date"),
+            "sources": [
+                {"title": s.get("publisher") or s.get("title") or "Kaynak", "url": s["url"]}
+                for s in b.get("sources", []) if s.get("url")
+            ],
+        }
+        for b in record.get("rent_benchmarks", [])
+        if b.get("amount", 0) > 0 and b.get("sources")
+    ]
     monthly = calculation.get("monthly_rent")
+    rent_mode = calculation.get("rent_mode")
+    benchmark_count = calculation.get("benchmark_count", 0)
     facts = []
     if monthly is not None:
-        facts.append(f"Tarihli {calculation['rent_sample_count']} adet 1+1 ilanının medyanı {money(monthly)}.")
+        if rent_mode == "market_index":
+            facts.append(f"{benchmark_count} piyasa kira endeksi verisinden 1+1 eşdeğeri {money(monthly)}.")
+        elif rent_mode == "normalized_with_index":
+            facts.append(f"Oda-normalize ilan ve {benchmark_count} piyasa endeksi ({calculation['rent_sample_count']} örnek) 1+1 eşdeğeri {money(monthly)}.")
+        elif rent_mode == "normalized_rooms":
+            facts.append(f"{calculation['rent_sample_count']} farklı oda ilanı 1+1 eşdeğerine normalize edildi ({money(monthly)}).")
+        elif rent_mode == "undated_1+1":
+            facts.append(f"{calculation['rent_sample_count']} adet 1+1 ilanın medyanı {money(monthly)}.")
+        else:
+            facts.append(f"Tarihli {calculation['rent_sample_count']} adet 1+1 ilanının medyanı {money(monthly)}.")
     if routes:
         facts.append(f"Kaynaklarda {len(routes)} resmî hat ve {len(venues)} örnek mekân kaydı derlendi; bu sayı mahalle toplamı değildir.")
     elif venues:
@@ -51,6 +78,7 @@ def build_briefing(record, calculation):
     if alerts:
         facts.append("Ulaşım kararında tarihli yol ve erişim duyurularını da hesaba kat.")
     return {"version": 1, "overview": " ".join(facts) or "Bu mahalleyi kaynaklı bulgular ve kategori ayrıntılarıyla incele.",
-        "rent_types": rents, "routes": routes, "venues": venues, "transport_notices": alerts,
+        "rent_types": rents, "rent_benchmarks": benchmarks, "routes": routes, "venues": venues, "transport_notices": alerts,
         "hazard": record.get("hazard", {}), "source_date": record.get("asOf", calculation.get("as_of")),
+        "confidence": calculation.get("confidence", {}), "social_diversity": calculation.get("social_diversity"),
         "counts": calculation.get("counts", {})}

@@ -43,19 +43,19 @@ def test_search_deduplicates_urls_preserves_excerpts_and_excludes_empty_or_unsaf
         {"url": "http://example.org/unsafe", "content": "Yeterince uzun bir metin"},
         {"url": "https://tavily.com/knowledge/company/x", "content": "Yeterince uzun bir metin"},
         {"url": "https://example.org/empty", "content": ""},
-    ]}) for i in range(12)]
+    ]}) for i in range(15)]
     client = Mock()
     client.post.side_effect = responses
     monkeypatch.setattr(research.httpx, "Client", Mock(return_value=Mock(
         __enter__=Mock(return_value=client), __exit__=Mock(return_value=False))))
     sources, supports = research.collect_sources(TARGET)
-    assert len(sources) == 1 and len(supports) == 12
+    assert len(sources) == 1 and len(supports) == 15
     assert all(s["source_ids"] == ["S1"] for s in supports)
     for call in client.post.call_args_list:
         request = call.kwargs["json"]
         assert all(word in request["query"] for word in TARGET.values())
         assert request["search_depth"] == "basic" and not request["auto_parameters"]
-        assert request["max_results"] in (5, 10)
+        assert request["max_results"] in (5, 8, 10)
         assert request["country"] == "turkey"
         assert "silahlı saldırı" not in request["query"]
     assert sum(call.kwargs["json"]["max_results"] == 10 for call in client.post.call_args_list) == 5
@@ -71,7 +71,7 @@ def test_tavily_failure_stops_research_without_partial_success(monkeypatch):
         __enter__=Mock(return_value=client), __exit__=Mock(return_value=False))))
     with pytest.raises(httpx.HTTPStatusError):
         research.collect_sources(TARGET)
-    assert 1 <= client.post.call_count <= 12
+    assert 1 <= client.post.call_count <= 15
 
 
 def test_missing_tavily_key_is_not_cached(client, monkeypatch):

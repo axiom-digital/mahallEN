@@ -252,7 +252,6 @@ export default function App() {
           className="hero-image"
           src="/assets/mugla-temsili.png"
           alt="Muğla dokusundan esinlenen taş sokak ve kiremit çatılı evlerin temsilî görünümü"
-          fetchPriority="high"
         />
 
         <nav className="nav container" aria-label="Ana menü">

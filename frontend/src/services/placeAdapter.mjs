@@ -28,6 +28,15 @@ export function adaptPlaceReport(raw) {
   const categoriesList = Array.isArray(raw.categories) ? raw.categories : [];
   const score = (key) => assessment?.categories?.find((c) => c.category === key)?.score ?? null;
   const category = (key) => categoriesList.find((c) => c.id === key)?.items || [];
+  const meta = (key) => {
+    const row = assessment?.categories?.find((c) => c.category === key);
+    const conf = assessment?.briefing?.confidence?.[key];
+    const sample_count = row?.sample_count ?? conf?.sample_count ?? null;
+    const confidence = row?.confidence ?? conf?.level ?? null;
+    const confidence_label = row?.confidence_label ?? conf?.label ?? null;
+    if (sample_count == null && confidence == null && confidence_label == null) return null;
+    return { sample_count, confidence, confidence_label };
+  };
 
   const briefingHazardPga = assessment?.briefing?.hazard?.value;
   const pgaValue =
@@ -55,6 +64,13 @@ export function adaptPlaceReport(raw) {
       disaster_resilience: score('earthquake_hazard'),
       social_life: score('social_life'),
     },
+    category_meta: {
+      safety: meta('safety_news'),
+      transportation: meta('transportation'),
+      cost_affordability: meta('rent_cost'),
+      disaster_resilience: meta('earthquake_hazard'),
+      social_life: meta('social_life'),
+    },
     suitability: assessment?.profile_scores || {
       students: null,
       families: null,
@@ -64,7 +80,11 @@ export function adaptPlaceReport(raw) {
       average_rent_tl: assessment?.calculation?.monthly_rent ?? null,
       rent_range_tl: formatRentRange(assessment?.briefing),
       trend_6m: assessment?.calculation?.rent_sample_count
-        ? `1+1 tarihli ilan medyanı · ${assessment.calculation.rent_sample_count} örnek`
+        ? assessment?.calculation?.benchmark_count
+          ? `1+1 eşdeğer medyan (ilan + endeks) · ${assessment.calculation.rent_sample_count} örnek`
+          : assessment?.calculation?.rent_mode === 'normalized_rooms'
+            ? `1+1 eşdeğer oda-normalize medyan · ${assessment.calculation.rent_sample_count} örnek`
+            : `1+1 tarihli ilan medyanı · ${assessment.calculation.rent_sample_count} örnek`
         : null,
     },
     transport_analysis: {

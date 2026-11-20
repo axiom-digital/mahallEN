@@ -1,10 +1,7 @@
 """Keep collection coverage separate from neighborhood quality judgments."""
 from datetime import date
 
-INFORMATIONAL_REASONS = {
-    "social_life": "Aramada bulunan mekânlar örnektir; eksik bir liste mahallenin sosyal yaşam kalitesine sayısal puan vermez.",
-    "safety_news": "Tekil haberler karşılaştırılabilir suç oranı veya mahalle güvenliği ölçümü değildir; güvenlik puanına dönüştürülmez.",
-}
+INFORMATIONAL_REASONS = {}
 
 
 def evidence_view(report):

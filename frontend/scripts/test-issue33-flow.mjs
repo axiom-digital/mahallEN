@@ -11,16 +11,16 @@ import { openReportPage, reportId, reportPath } from '../src/navigation.mjs';
 const API_BASE = process.env.API_BASE_URL || 'http://127.0.0.1:8000/api/v1';
 
 const PILOT_TARGETS = [
-  { slug: 'kotekli', name: 'Kötekli', district: 'Menteşe', city: 'Muğla', expectedOverall: 22, expectedCost: 18, expectedTransport: 35, expectedHazard: 23, pga: 0.351 },
-  { slug: 'emirbeyazit', name: 'Emirbeyazıt', district: 'Menteşe', city: 'Muğla', expectedOverall: null, expectedCost: null, expectedTransport: 60, expectedHazard: 29, pga: 0.334 },
-  { slug: 'muslihittin', name: 'Muslihittin', district: 'Menteşe', city: 'Muğla', expectedOverall: 25, expectedCost: 11, expectedTransport: 68, expectedHazard: 29, pga: 0.334 },
-  { slug: 'orhaniye', name: 'Orhaniye', district: 'Menteşe', city: 'Muğla', expectedOverall: null, expectedCost: null, expectedTransport: null, expectedHazard: 29, pga: 0.334 },
-  { slug: 'akyaka', name: 'Akyaka', district: 'Ula', city: 'Muğla', expectedOverall: 10, expectedCost: 0, expectedTransport: 43, expectedHazard: 11, pga: 0.391 },
-  { slug: 'caferaga', name: 'Caferağa', district: 'Kadıköy', city: 'İstanbul', expectedOverall: null, expectedCost: null, expectedTransport: null, expectedHazard: 8, pga: 0.401 },
-  { slug: 'bahcelievler', name: 'Bahçelievler', district: 'Çankaya', city: 'Ankara', expectedOverall: null, expectedCost: null, expectedTransport: null, expectedHazard: 41, pga: 0.304 },
-  { slug: 'kultur', name: 'Kültür', district: 'Konak', city: 'İzmir', expectedOverall: null, expectedCost: null, expectedTransport: null, expectedHazard: 17, pga: 0.368 },
-  { slug: 'yenibaglar', name: 'Yenibağlar', district: 'Tepebaşı', city: 'Eskişehir', expectedOverall: null, expectedCost: null, expectedTransport: null, expectedHazard: 56, pga: 0.271 },
-  { slug: 'gorukle', name: 'Görükle', district: 'Nilüfer', city: 'Bursa', expectedOverall: null, expectedCost: null, expectedTransport: null, expectedHazard: 25, pga: 0.344 },
+  { slug: 'kotekli', name: 'Kötekli', district: 'Menteşe', city: 'Muğla', expectedOverall: 35, expectedCost: 18, expectedSocial: 53, expectedSafety: 44, expectedTransport: 35, expectedHazard: 23, pga: 0.351 },
+  { slug: 'emirbeyazit', name: 'Emirbeyazıt', district: 'Menteşe', city: 'Muğla', expectedOverall: 43, expectedCost: 0, expectedSocial: 83, expectedSafety: 53, expectedTransport: 60, expectedHazard: 29, pga: 0.334 },
+  { slug: 'muslihittin', name: 'Muslihittin', district: 'Menteşe', city: 'Muğla', expectedOverall: 48, expectedCost: 5, expectedSocial: 87, expectedSafety: 61, expectedTransport: 68, expectedHazard: 29, pga: 0.334 },
+  { slug: 'orhaniye', name: 'Orhaniye', district: 'Menteşe', city: 'Muğla', expectedOverall: 40, expectedCost: 0, expectedSocial: 84, expectedSafety: 50, expectedTransport: null, expectedHazard: 29, pga: 0.334 },
+  { slug: 'akyaka', name: 'Akyaka', district: 'Ula', city: 'Muğla', expectedOverall: 39, expectedCost: 0, expectedSocial: 71, expectedSafety: 70, expectedTransport: 43, expectedHazard: 11, pga: 0.391 },
+  { slug: 'caferaga', name: 'Caferağa', district: 'Kadıköy', city: 'İstanbul', expectedOverall: 50, expectedCost: 0, expectedSocial: 96, expectedSafety: 75, expectedTransport: 78, expectedHazard: 8, pga: 0.401 },
+  { slug: 'bahcelievler', name: 'Bahçelievler', district: 'Çankaya', city: 'Ankara', expectedOverall: 46, expectedCost: 0, expectedSocial: 75, expectedSafety: 75, expectedTransport: 62, expectedHazard: 41, pga: 0.304 },
+  { slug: 'kultur', name: 'Kültür', district: 'Konak', city: 'İzmir', expectedOverall: 40, expectedCost: 0, expectedSocial: 58, expectedSafety: 75, expectedTransport: 75, expectedHazard: 17, pga: 0.368 },
+  { slug: 'yenibaglar', name: 'Yenibağlar', district: 'Tepebaşı', city: 'Eskişehir', expectedOverall: 58, expectedCost: 41, expectedSocial: 70, expectedSafety: 68, expectedTransport: 65, expectedHazard: 56, pga: 0.271 },
+  { slug: 'gorukle', name: 'Görükle', district: 'Nilüfer', city: 'Bursa', expectedOverall: 56, expectedCost: 54, expectedSocial: 71, expectedSafety: 46, expectedTransport: 72, expectedHazard: 25, pga: 0.344 },
 ];
 
 async function fetchJson(url) {
@@ -72,18 +72,22 @@ async function runComprehensiveIssue33Checks() {
     return (scoreB ?? -1) - (scoreA ?? -1);
   });
   assert.deepEqual(
-    sortedByOverall.slice(0, 3).map((x) => [x.name, x.overall_score]),
+    sortedByOverall.map((x) => [x.name, x.overall_score]),
     [
-      ['Muslihittin', 25],
-      ['Kötekli', 22],
-      ['Akyaka', 10],
+      ['Muslihittin', 48],
+      ['Emirbeyazıt', 43],
+      ['Orhaniye', 40],
+      ['Akyaka', 39],
+      ['Kötekli', 35],
     ],
-    'Genel puanı hesaplanan mahalleler büyükten küçüğe sıralanmalı'
+    'Genel puanı hesaplanan Muğla pilotları büyükten küçüğe sıralanmalı'
   );
-  assert.ok(
-    sortedByOverall.slice(3).every((x) => x.overall_score === null),
-    'Eksik (null) genel puanlı mahalleler 0 sayılmadan listenin sonunda yer almalı'
-  );
+  // Verify frontend ranking preserves real 0 ahead of null
+  const mixedZeroAndNull = [
+    { name: 'Eksik', overall_score: null },
+    { name: 'Sıfır', overall_score: 0 },
+  ].sort((a, b) => (normalizeScoreValue(b.overall_score) ?? -1) - (normalizeScoreValue(a.overall_score) ?? -1));
+  assert.deepEqual(mixedZeroAndNull.map((x) => x.name), ['Sıfır', 'Eksik'], 'Gerçek 0 puan null değerin önünde yer almalı');
   console.log('[3/6] Arama sonuç sıralaması ve eksik puan (null vs 0) ayrımı doğrulandı.');
 
   // 4. 10 Pilot Mahalle İçin Seçim, Rapor Sayfası (200 HIT), Kaynaklar ve Eksik Veri Kontrolü
@@ -121,12 +125,10 @@ async function runComprehensiveIssue33Checks() {
     assert.equal(adapted.name, target.name);
     assert.equal(adapted.scores.overall_livability, target.expectedOverall);
     assert.equal(adapted.scores.cost_affordability, target.expectedCost);
+    assert.equal(adapted.scores.social_life, target.expectedSocial);
+    assert.equal(adapted.scores.safety, target.expectedSafety);
     assert.equal(adapted.scores.transportation, target.expectedTransport);
     assert.equal(adapted.scores.disaster_resilience, target.expectedHazard);
-
-    // Social life and safety news must remain null (informational, never 0 or 50)
-    assert.equal(adapted.scores.social_life, null, `${target.name} social_life null olmalı`);
-    assert.equal(adapted.scores.safety, null, `${target.name} safety null olmalı`);
 
     // Check extractCategoryScores consistency with ScoreCard & ComparisonView
     const chartBars = extractCategoryScores(adapted.scores);
@@ -134,6 +136,16 @@ async function runComprehensiveIssue33Checks() {
     for (const def of CATEGORY_DEFINITIONS) {
       const bar = chartBars.find((b) => b.key === def.key);
       assert.equal(bar.value, adapted.scores[def.key], `${target.name} ${def.key} grafik ve kart değeri tutarlı olmalı`);
+      const metaInfo = adapted.category_meta?.[def.key];
+      assert.ok(metaInfo, `${target.name} ${def.key} category_meta alanı dönmeli`);
+      if (adapted.scores[def.key] === null) {
+        assert.equal(metaInfo.confidence, 'none');
+        assert.equal(metaInfo.sample_count, 0);
+      } else {
+        assert.ok(metaInfo.sample_count > 0, `${target.name} ${def.key} sample_count > 0 olmalı`);
+        assert.ok(['high', 'medium', 'low'].includes(metaInfo.confidence));
+        assert.ok(typeof metaInfo.confidence_label === 'string' && metaInfo.confidence_label.length > 0);
+      }
     }
 
     // Check PGA and sources
@@ -160,15 +172,21 @@ async function runComprehensiveIssue33Checks() {
     );
   }
 
-  // 5. Real 0 vs Missing (null) Edge-Case Verification (Akyaka vs Emirbeyazıt)
+  // 5. Real 0 vs Missing (null) Edge-Case Verification (Akyaka Cost = 0 vs Orhaniye Transport = null)
   const akyakaSug = await fetchJson(`${API_BASE}/places/suggest?q=Akyaka%20Ula`);
   const akyakaRep = await fetchJson(`${API_BASE}/places/${akyakaSug.body.results[0].id}/report`);
   const akyakaAdapted = adaptPlaceReport(akyakaRep.body);
   assert.strictEqual(akyakaAdapted.scores.cost_affordability, 0, 'Akyaka maliyet puanı gerçek 0 (number) olmalı');
   assert.strictEqual(normalizeScoreValue(akyakaAdapted.scores.cost_affordability), 0, 'normalizeScoreValue(0) === 0 korunmalı');
-  assert.strictEqual(akyakaAdapted.scores.social_life, null, 'Akyaka sosyal yaşam puanı null olmalı');
-  assert.strictEqual(normalizeScoreValue(akyakaAdapted.scores.social_life), null, 'normalizeScoreValue(null) === null korunmalı');
-  console.log('\n[5/6] Gerçek 0 puan (Akyaka Maliyet = 0/100) ile Eksik Veri (null -> "Yeterli veri yok") ayrımı kesin olarak doğrulandı.');
+  assert.ok(Number.isInteger(akyakaAdapted.scores.social_life), 'Akyaka sosyal yaşam puanı sayısal olmalı');
+  assert.ok(Number.isInteger(akyakaAdapted.scores.safety), 'Akyaka güvenlik puanı sayısal olmalı');
+
+  const orhaniyeSug = await fetchJson(`${API_BASE}/places/suggest?q=Orhaniye%20Mente%C5%9Fe`);
+  const orhaniyeRep = await fetchJson(`${API_BASE}/places/${orhaniyeSug.body.results[0].id}/report`);
+  const orhaniyeAdapted = adaptPlaceReport(orhaniyeRep.body);
+  assert.strictEqual(orhaniyeAdapted.scores.transportation, null, 'Orhaniye doğrulanmamış ulaşım puanı null kalmalı');
+  assert.strictEqual(normalizeScoreValue(orhaniyeAdapted.scores.transportation), null, 'normalizeScoreValue(null) === null korunmalı');
+  console.log('\n[5/6] Gerçek 0 puan (Akyaka Maliyet = 0/100) ile Eksik Veri (Orhaniye Ulaşım = null -> "Veri bekleniyor") ayrımı kesin olarak doğrulandı.');
 
   // 6. Pilot Endpoint (/api/v1/neighborhoods/{slug}/report) Fallback & Cache Check
   const pilotRep1 = await fetchJson(`${API_BASE}/neighborhoods/kotekli/report`);

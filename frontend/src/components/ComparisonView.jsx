@@ -203,14 +203,37 @@ export default function ComparisonView({ initialSlug1 = 'kotekli', initialSlug2 
           <div className="comp-section">
             <h4>Kategori Boyutları (0-100)</h4>
             <div className="comp-categories-list">
-              {CATEGORY_DEFINITIONS.map((cat) => (
-                <div key={cat.key} className="comp-cat-row" data-testid={`comp-${testPrefix}-cat-${cat.key}`}>
-                  <span className="comp-cat-name">{cat.label}</span>
-                  <div className="comp-cat-val">
-                    {renderScoreValue(data.scores?.[cat.key])}
+              {CATEGORY_DEFINITIONS.map((cat) => {
+                const catMeta = data.category_meta?.[cat.key];
+                const sampleCount = catMeta?.sample_count;
+                const unit = ({
+                  cost_affordability: 'ilan',
+                  social_life: 'mekân',
+                  transportation: 'hat',
+                  safety: 'haber',
+                  disaster_resilience: 'PGA',
+                })[cat.key] || 'kayıt';
+                const sampleText = sampleCount > 0
+                  ? (cat.key === 'disaster_resilience'
+                    ? 'PGA gridi'
+                    : `${sampleCount} ${unit}${catMeta?.confidence === 'low' ? ' · Sınırlı' : ''}`)
+                  : null;
+                return (
+                  <div key={cat.key} className="comp-cat-row" data-testid={`comp-${testPrefix}-cat-${cat.key}`}>
+                    <div className="comp-cat-info">
+                      <span className="comp-cat-name">{cat.label}</span>
+                      {sampleText && (
+                        <span className={`comp-cat-sample confidence-${catMeta?.confidence || 'low'}`}>
+                          {sampleText}
+                        </span>
+                      )}
+                    </div>
+                    <div className="comp-cat-val">
+                      {renderScoreValue(data.scores?.[cat.key])}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 

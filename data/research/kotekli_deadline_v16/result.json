@@ -1,0 +1,246 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "kotekli",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-3",
+  "started_at": "2026-10-28T20:31:35.774551+00:00",
+  "finished_at": "2026-10-28T20:31:51.419609+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Kötekli Sıtkı Koçman Caddesi yol çalışması bitiş tarihi 3 Kasım 2026",
+    "Kötekli Yeniköy yol çalışması bitiş tarihi 3 Kasım 2026",
+    "Muğla Sıtkı Koçman Caddesi yol çalışması uzatma 3 Kasım",
+    "Kötekli Yeniköy yol çalışması uzatma 3 Kasım",
+    "Muğla Büyükşehir Belediyesi Kötekli yol çalışması 3 Kasım",
+    "MUSKİ Kötekli yol çalışması 3 Kasım",
+    "Menteşe Belediyesi Kötekli yol çalışması 3 Kasım",
+    "MUTTAŞ Kötekli yol çalışması 3 Kasım",
+    "Kötekli Sıtkı Koçman Caddesi yol çalışması güncel bitiş tarihi",
+    "Kötekli Yeniköy yol çalışması güncel bitiş tarihi"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmUimuQfEO_jznxC5aFf0yvnmkcsqM-_SaKoIMftDCBksdBk0GYLf1Sil0g4xyYQ6uM3_vimx0aivEhPE7h_O0_ydW8p-44i2OisQDh6ItI86_erQFjjK2bomsPay_lOEIc4CBiwHt3OePXWSYAvN9RH_LGAgh4WaOoYmGkmHslLdbfB9-LLGbtv_rk5yXB8FtmnofSrObRHvJ6SgloG0at2tHuqBR1oUWjOq7aVzWW2QtkPtY",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXUmWxs8IvqFbsxK1SSYCEwvzS8rKLOZXS81Xvkz8ulW4Jc02OyGMCKyX9plwGd9PYgMTlrTFniRqoHFpZPy3JaeLXxrDkJLInrkk-3uWf3VwT4izq_utTDqkqpnRO_H2KmTYNArYekUMa8PxVoNJ60ldmFbiUeXghWSTr7zucmzEWmIbvlfvUkTlyXphgBhziPdg=",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsbvAKvEyyQjYACvsILLryYe2CyqmeNwXlsQUhWeLR7orRe-E_0N-HSw4Q4cySThTUgQyhZr1IXO9eL3cFKfqniWPfQOXcXPSbNQTlxgDSAtpZQXrWzhSArzKmePyIdEMWFbWZ2Vzbuj0oev5O6GKvnwGEFGHiihUrAMi50-0BdcU=",
+      "title": "mabollamedya.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHt0Up8Qrk6rNko7ROBtPB3r7peIUM2KPIgO4YQvqH5brmwy2plQc052xPd8uUOdn6mYsCKuND_kGpA1dHmPOtJvv6wVIldVX_1W_wS_ZS6i6VxQm2W0UuAJ0Hlne4fM6RSgaoCYmrZMn50wpE6DrcmSNEysvjwLrXuGtcUgYrZgY2CgHirrsuh-oL9_XZtiav5",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKNmHj5HPK6eiOU7Po0datUbMFauGIQSvz78jvyy6i1SCj6FLEdfVNTcbrQRhS9BPUxWfM3lD6ezkSM6DUABKi6WAro1fYiJI5EoVbWKy5_oVTC9i1M7ezfkQbgMXFOYwK4j2kXEI=",
+      "title": "instagram.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEORyMsqkcs50EqadvrWyD6zlEd7vaWDtnEPiVB65E7kSGmi7XjEiPwen1mDzWsimptKyLmyati8oScJs5QAwHzvkNdM4Z5ZpIf0O9aS0oFb2qpq75y3XCPZQJfQQ_o1QrjY7_Jz1dzk4887YaTq9td5XWmxA4ntsClad0-EpC8NkJuHV0PlUmpmV2YDiae8MBJCK7Gd6QG_1OHyOdvU6CM2HNG7f2Jq-PTWbBSOgC3-85TNcY7pPdfSnoXtYvytjs=",
+      "title": "mu.edu.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeMVbxsC09X-IaU6ARctISD-tmg0nOVbbAF_Q-2KRT-IX6uCYsp3ZniMclDD4o8WmoM41hOscuW7zkBk3ZqNcIhhlT-evYPeRcxOBvkZkFvhkLiht5exxtFeSe4PTfv_7dduEXspnpgTtNS0O4e9E0ZJeqJV9PhZioUzOscIy2V_zRObVFzZxj3iWlPLWt802LETC621DoI85GoFvSQY2wnSrgcQk5puETunm5WA==",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRnMhtgNBU5mrnNnHHERxEPiy38NbtgClSsJ5p7vCEv1fOQqiGtPf3Xzx9EuKM687WIroaAIQwk8S0gxdfUAlcJnlHY2GrhnHBNCNpxCipVUxVoNMjZIisMgVpjzvJT0wltds5k6vEx7X9OMk8TvOTO_yF8nMw1H_02P8lHvhmm6f5iaAR3WNGDzLb4n2dZ7N7iLLIEnOddJb7XAQ6INc=",
+      "title": "muglayenigun.com"
+    }
+  ],
+  "grounding_support_count": 9,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmUimuQfEO_jznxC5aFf0yvnmkcsqM-_SaKoIMftDCBksdBk0GYLf1Sil0g4xyYQ6uM3_vimx0aivEhPE7h_O0_ydW8p-44i2OisQDh6ItI86_erQFjjK2bomsPay_lOEIc4CBiwHt3OePXWSYAvN9RH_LGAgh4WaOoYmGkmHslLdbfB9-LLGbtv_rk5yXB8FtmnofSrObRHvJ6SgloG0at2tHuqBR1oUWjOq7aVzWW2QtkPtY"
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXUmWxs8IvqFbsxK1SSYCEwvzS8rKLOZXS81Xvkz8ulW4Jc02OyGMCKyX9plwGd9PYgMTlrTFniRqoHFpZPy3JaeLXxrDkJLInrkk-3uWf3VwT4izq_utTDqkqpnRO_H2KmTYNArYekUMa8PxVoNJ60ldmFbiUeXghWSTr7zucmzEWmIbvlfvUkTlyXphgBhziPdg="
+        }
+      },
+      {
+        "web": {
+          "title": "mabollamedya.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsbvAKvEyyQjYACvsILLryYe2CyqmeNwXlsQUhWeLR7orRe-E_0N-HSw4Q4cySThTUgQyhZr1IXO9eL3cFKfqniWPfQOXcXPSbNQTlxgDSAtpZQXrWzhSArzKmePyIdEMWFbWZ2Vzbuj0oev5O6GKvnwGEFGHiihUrAMi50-0BdcU="
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHt0Up8Qrk6rNko7ROBtPB3r7peIUM2KPIgO4YQvqH5brmwy2plQc052xPd8uUOdn6mYsCKuND_kGpA1dHmPOtJvv6wVIldVX_1W_wS_ZS6i6VxQm2W0UuAJ0Hlne4fM6RSgaoCYmrZMn50wpE6DrcmSNEysvjwLrXuGtcUgYrZgY2CgHirrsuh-oL9_XZtiav5"
+        }
+      },
+      {
+        "web": {
+          "title": "instagram.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKNmHj5HPK6eiOU7Po0datUbMFauGIQSvz78jvyy6i1SCj6FLEdfVNTcbrQRhS9BPUxWfM3lD6ezkSM6DUABKi6WAro1fYiJI5EoVbWKy5_oVTC9i1M7ezfkQbgMXFOYwK4j2kXEI="
+        }
+      },
+      {
+        "web": {
+          "title": "mu.edu.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEORyMsqkcs50EqadvrWyD6zlEd7vaWDtnEPiVB65E7kSGmi7XjEiPwen1mDzWsimptKyLmyati8oScJs5QAwHzvkNdM4Z5ZpIf0O9aS0oFb2qpq75y3XCPZQJfQQ_o1QrjY7_Jz1dzk4887YaTq9td5XWmxA4ntsClad0-EpC8NkJuHV0PlUmpmV2YDiae8MBJCK7Gd6QG_1OHyOdvU6CM2HNG7f2Jq-PTWbBSOgC3-85TNcY7pPdfSnoXtYvytjs="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeMVbxsC09X-IaU6ARctISD-tmg0nOVbbAF_Q-2KRT-IX6uCYsp3ZniMclDD4o8WmoM41hOscuW7zkBk3ZqNcIhhlT-evYPeRcxOBvkZkFvhkLiht5exxtFeSe4PTfv_7dduEXspnpgTtNS0O4e9E0ZJeqJV9PhZioUzOscIy2V_zRObVFzZxj3iWlPLWt802LETC621DoI85GoFvSQY2wnSrgcQk5puETunm5WA=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRnMhtgNBU5mrnNnHHERxEPiy38NbtgClSsJ5p7vCEv1fOQqiGtPf3Xzx9EuKM687WIroaAIQwk8S0gxdfUAlcJnlHY2GrhnHBNCNpxCipVUxVoNMjZIisMgVpjzvJT0wltds5k6vEx7X9OMk8TvOTO_yF8nMw1H_02P8lHvhmm6f5iaAR3WNGDzLb4n2dZ7N7iLLIEnOddJb7XAQ6INc="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 381,
+          "end_index": 565,
+          "text": "** Muğla Büyükşehir Belediyesi Fen İşleri Dairesi Başkanı Süleyman Soydemir, yol ve kaldırım çalışmalarının 15 Eylül'de tamamlanmasının hedeflendiğini belirtmişti."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1,
+          2
+        ],
+        "segment": {
+          "start_index": 995,
+          "end_index": 1206,
+          "text": "Muğla Büyükşehir Belediyesi, arkeolojik inceleme sürecinin çalışma takvimini etkileyebileceğini belirtmekle birlikte, yolun 15 Eylül'de yeniden ulaşıma açılmasını hedeflediğini açıklamıştı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 1340,
+          "end_index": 1550,
+          "text": "** Muğla Yenigün Gazetesi'nin 15 Eylül 2026 tarihli haberine göre, Sıtkı Koçman Caddesi'nin çalışmaların tamamlanan bölümü, belirtilen 15 Eylül tarihinden önce yeniden ulaşıma açılmıştır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 1803,
+          "end_index": 2102,
+          "text": "** Muğla Gazetesi'nin 16 Eylül 2026 tarihli haberinde, Muğla Büyükşehir Belediyesi'nin 15 Eylül'de eğitim-öğretim yılına yetiştirmeyi hedeflediği projenin bazı bölümlerinin tamamlandığı, ancak projenin resmi bitiş tarihinin 3 Kasım 2026 olarak açıklandığı belirtilmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 2510,
+          "end_index": 2670,
+          "text": "Sokak Yol, Altyapı, Cadde, Bulvar ve Meydan Yenileme ve Düzenleme Yapılması\" işinin teslim tarihinin 3 Kasım 2026 olarak göründüğü ifade edilmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 2789,
+          "end_index": 3074,
+          "text": "** Muğla Sıtkı Koçman Üniversitesi Yapı İşleri ve Teknik Daire Başkanlığı'nın 19 Ekim 2026 tarihli duyurusuna göre, Kötekli Mahallesi'nde yürütülen çalışmalar nedeniyle Üniversite C Kapısı çalışmalar tamamlanıncaya kadar araç trafiğine kapalı olacaktır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6
+        ],
+        "segment": {
+          "start_index": 3297,
+          "end_index": 3602,
+          "text": "** MHP Menteşe İlçe Başkanlığı, 14 Ekim 2026 tarihli açıklamasında, Kötekli, Yeniköy ve Ortaköy mahallelerinde devam eden yol ve çevre düzenleme çalışmalarının tamamlanmamasına tepki göstererek, çalışmaların tamamlanması için somut bir takvim açıklanmasını talep etmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 3779,
+          "end_index": 3956,
+          "text": "** Muğla Yenigün Gazetesi'nin 27 Ekim 2026 tarihli haberine göre, Kötekli Mahallesi'nde yağış nedeniyle yol çökmüş ve bir araç çukura düşerek mahsur kalmıştır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          4
+        ],
+        "segment": {
+          "start_index": 4214,
+          "end_index": 4349,
+          "text": "Sokak Yol, Altyapı, Cadde, Bulvar ve Meydan Yenileme ve Düzenleme Yapılması\" işinin resmi teslim tarihi olarak doğrulanmıştır."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwB_2XPy_Fs8w_5upUDXh7lbwHr3KDee-JUo-E4Sd_5FCZrty4YRMuVYgJQkbakU2eycqFZmHjGFyhzWtRL5ofdCBdieuqf46-PmsaRJj0NHHpRSvL7v1tjGRp6TAT9RKsgC1ql3apNj-aGjYaAtRj32K-D1b7NlD7zZEOwP3XyYAMzXz2YR_5KViYocwrj_ifqM1BaAbF2ou1E-w9kKI7Os1NzOCjaJ0Lt7b1fSy77xY_k6G-eXwPlsbocQFt55HhIVQPE3FP3izecQfdkkYTtXMl\">Kötekli Yeniköy yol çalışması uzatma 3 Kasım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZ3q512ylp9zWS0ms1itWmzaIEntyKj-HzPCv8ASvGuYZBonEUCWkkVNRttVwYTIFLykusoHIfJwg7pAeri0sZEG4AndXFQ1jWG5-7NXjkRubA4kPcDda2dza7z7IupVWKKR3rWcaV3czBHF9Mfi3w1dWSMTxKJr3wPtO33qh5I97VasS-WJ_2VBzjSud9J7F6RYsicx_FVrMK6lJuXTS4E1DGumF9vAsRoZ0X0XF46MHX5eav-pF6ErJMT_SHsBG3N2ZgqkWVPIQBhdBaR_CLJYy2xsgfT3EhaquU7P_Mxt-reZkt8iIL\">Muğla Sıtkı Koçman Caddesi yol çalışması uzatma 3 Kasım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmUxpGiHvKX1T8wp5mxbwjQgJNcvG6YyPTJofRcwkOb1n8j2R8B59nlnn_zxiMT8gFnMTCma8QgwQUU-8bZKpdl0g9W2XSdeZgWnjekRwQ4Jb7bxpusigN7xv9hgK0GVFNuAUTGnyqdi_AM-hEGQ5J3emfRk9dJ0LSq3BGLFql17Ar2G1DIppKMIljT5c9QVYrhR7uDsMuMEhctDyYWnXo0LrK9ImRPPZRTUlphWJwyQXl3vofWnmmDfZZYHO4S7pJlOa2zU38N3Xr-Uq4fcc0ibXRtqO1PZ7YaZ2RoIi5Y-ARhIntYuAkuWb_tXDufELOFo062djQZNGu\">Kötekli Sıtkı Koçman Caddesi yol çalışması bitiş tarihi 3 Kasım 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOzZQkF_elNVcDUI9IyPAIegm_lyQ_OJKELDrhx_DIhMSxVrSYyUNlQu1Ey-duoAU5rT3ioS0VcmnKy30Xy9zxpqz2kRebc89rOXGHH51g5JKZJKdUwaMsqszsrR7RIyCp87mEuQJUs_uBPz5lgTcTVQ7svEDdi1VLSnJsM7Ldzow1bGZmlanka_NQqbdfvkr0Tg1YwWJDO8H19AesfBOlFBRQVLQ--8GTXng5VR-VnKHOcQQ7-316eUiTolewyKRPOufvaEuJDkf-qvw_HcHTk6KGOA-ofbLbuyDmH_mVdM26AQ==\">Kötekli Yeniköy yol çalışması bitiş tarihi 3 Kasım 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRUIx9DT5Lbfyn_qeOPzsjzPvgwwEskXBR6s4rkNlI4QHBi43oHkFFlFBGvkcLZHY7uvmncDw9rTyqlQpY891jOUDgikzsc7OUXXcGOm4fSGzMCmaK7YJEETRPfhRzt5W-VkltEdp_cbX_rxIRW-SQ17xpKojoCuvPX0B4EXQQwag33GncnYBs0n7UpuCId7YVKcdEvKmmhAwepsfbGgnHxRAqjT3azkxmbwM5reDHp90yRmwVLkFDew4pyebceQRlpeHV9nN1KKrc\">MUSKİ Kötekli yol çalışması 3 Kasım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7u7-SHxRteKApk4UlxjuNOi6IboC7P2qjsFX5DTq6WYn-EM8D77VX9iqVkelWZyRe51xQ4Q2VERuf6_GfdZ_RRm5Md2GPopSmTL1mKFLk3BnrKHZqVrhM7Sprd1wSrlbs976xjBEhPSB6OiwEb9ZNB90bfER6H7WfJk_BGT43vh2BPl_YDBJJHP0-xDwcd5xw54hosznFa3T_zbyPLVeT8dS3yKur4-rMvlVPImNFRK2PzWm6evYnC4Xf0OBdezmxsfIXT9u6RSIuV-6P8sfUZpHYO5c9Vw==\">Menteşe Belediyesi Kötekli yol çalışması 3 Kasım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6MvBAlz7mSW6vFb-_WGnK7KJFN8HOKr-F4J2ulAg9Nx7Zca4z0YJzhpsgadx_EQC8H8_8hRMFcoXfA4dzcSLYCE4BQ_5N7DgtadgXkLxTlMgj-5g4gEzdsRtLQ7zUOdMSIX15Pnq-8aoqVyXmf3TDwmdQzHGBedXuvNWOeXqxazskPbNjEWioDaIrK7fFoMiDALLuYI-6mNIGiEo_mmQhwqUA8LWIVilu7X98yCDSHxfybJMF3V_XMuFoGMP3NTSJO6bH2J8gFnKudXOkhHJNipvEGMghM-xT7pYMx6s8kunSlcmP0ECkrzjdLBQ1bw==\">Muğla Büyükşehir Belediyesi Kötekli yol çalışması 3 Kasım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUs-0My2FqUIg-PS7MNk5MpFMPvDu7GdCKXMVNaHE4XaXZAKkrtYtTjPMbxII8qCo5-qBCCj7vWCLDlT5WB8FykGK9fH26pfL2cx0cw2em8UrIjDbr-cYzP-K5xFQ2oqDBLaty-CX0vAWvmXvhtLTSlt2TD8JdyOKA7E_NQQ0MVWsJgibpyjsga1lOUKZA5Lh1ORpbPblEetBkxb-ih4jyfIwXay_qPWEQc6UnOmA07CGFPPrWSxYbDwXD1Wfmim9XiYAhB6txz7nqsalgdp1JmCuM5L_9mdcoOIfEwQbA9_Yv08wMEfnyYiKFGzY4my6OrdHx\">Kötekli Sıtkı Koçman Caddesi yol çalışması güncel bitiş tarihi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELz35ZyOFp0uOycdzcF_gaDKhXvfRvLjTehGmjKLQODSkHIsbtHzFr_ImxCA6Ld0tCHPI7BZpaxKF9Fv8wQmSXAXLnNNLxTNPYoZmrfrpHUOWk3f5Tx15ztCA5nnXdA7nRL0ZwUWxIm71uumcuK3tke_3AovtMl4IR7g4jJtx0ZEZyLz2RbdfLOHxUp2NfoCPClpy0rY12BA3DIfnOqXlw5_FeolJK4s8Bwhn-bJ1X4IYEQVlnD6gvNCDQbZe9hC_7K0300Zsp0IL9TUw1QW678yviTUx2bISIQ_1q7w==\">Kötekli Yeniköy yol çalışması güncel bitiş tarihi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0lvHeWAaiboJ4prtTR0rMFuaBpbPXwQUOy8kvRVolse6eDRN3nz1zLcTNvs7e_FEDyqKrIFhym3LM2IntFDgrLSqfoBW0Jg6cFnG-B6bdKXVmQVAIayQu8D-wRdDGk2kYDQyvoKZJ5NCh-BHfjYJbmA3e3sKgtb5amYGPbuRCHt5wShf11IMi-7wsBsWv0soz4HpKtuG9yW8nxFj16spEneUbd21uzn2EiPLItj-P9pseZ9fEMJFSrk_Bn1zpyeu6kNd-6ueWkiVdNg==\">MUTTAŞ Kötekli yol çalışması 3 Kasım</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Kötekli Sıtkı Koçman Caddesi yol çalışması bitiş tarihi 3 Kasım 2026",
+      "Kötekli Yeniköy yol çalışması bitiş tarihi 3 Kasım 2026",
+      "Muğla Sıtkı Koçman Caddesi yol çalışması uzatma 3 Kasım",
+      "Kötekli Yeniköy yol çalışması uzatma 3 Kasım",
+      "Muğla Büyükşehir Belediyesi Kötekli yol çalışması 3 Kasım",
+      "MUSKİ Kötekli yol çalışması 3 Kasım",
+      "Menteşe Belediyesi Kötekli yol çalışması 3 Kasım",
+      "MUTTAŞ Kötekli yol çalışması 3 Kasım",
+      "Kötekli Sıtkı Koçman Caddesi yol çalışması güncel bitiş tarihi",
+      "Kötekli Yeniköy yol çalışması güncel bitiş tarihi"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1443,
+    "prompt_token_count": 353,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 353
+      }
+    ],
+    "tool_use_prompt_token_count": 545,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 545
+      }
+    ],
+    "total_token_count": 2341
+  },
+  "text": "Muğla'nın Menteşe ilçesindeki Kötekli Mahallesi Sıtkı Koçman Caddesi ve Kötekli/Yeniköy yol-altyapı çalışmasının güncel bitiş hedefiyle ilgili araştırmalar sonucunda elde edilen bilgiler aşağıdadır:\n\n*   **15 Eylül 2026 | Kötekli'deki Kapsamlı Yol ve Kent Estetiği Projesi (yol ve kaldırım çalışmaları) | 15 Eylül'de tamamlanması hedefleniyordu.** Muğla Büyükşehir Belediyesi Fen İşleri Dairesi Başkanı Süleyman Soydemir, yol ve kaldırım çalışmalarının 15 Eylül'de tamamlanmasının hedeflendiğini belirtmişti. Bu hedef, projenin genel kapsamındaki yol ve kaldırım işleri için geçerliydi.\n*   **7 Ağustos 2026 | Sıtkı Koçman Caddesi altyapı çalışmaları (mezar buluntuları sonrası yolun ulaşıma açılması) | Yolun 15 Eylül'de yeniden ulaşıma açılması hedefleniyordu.** Sıtkı Koçman Caddesi'nde altyapı çalışmaları sırasında mezar buluntularının ortaya çıkması üzerine çalışmalar durdurulmuştu. Muğla Büyükşehir Belediyesi, arkeolojik inceleme sürecinin çalışma takvimini etkileyebileceğini belirtmekle birlikte, yolun 15 Eylül'de yeniden ulaşıma açılmasını hedeflediğini açıklamıştı.\n*   **15 Eylül 2026 | Sıtkı Koçman Caddesi'nin bir bölümü | Belirtilen 15 Eylül tarihinden önce yeniden ulaşıma açıldı.** Muğla Yenigün Gazetesi'nin 15 Eylül 2026 tarihli haberine göre, Sıtkı Koçman Caddesi'nin çalışmaların tamamlanan bölümü, belirtilen 15 Eylül tarihinden önce yeniden ulaşıma açılmıştır. Bu durum, projenin tamamının değil, bir kısmının erken tamamlandığını göstermektedir.\n*   **15 Eylül 2026 | Kötekli ve Yeniköy yol ve altyapı projesi (resmi bitiş tarihi) | Projenin resmi bitiş tarihi 3 Kasım 2026 olarak açıklandı.** Muğla Gazetesi'nin 16 Eylül 2026 tarihli haberinde, Muğla Büyükşehir Belediyesi'nin 15 Eylül'de eğitim-öğretim yılına yetiştirmeyi hedeflediği projenin bazı bölümlerinin tamamlandığı, ancak projenin resmi bitiş tarihinin 3 Kasım 2026 olarak açıklandığı belirtilmiştir.\n*   **15 Eylül 2026 | \"Menteşe İlçesi, Kötekli Mahallesi, Sıtkı Koçman Caddesi ve Yeniköy Mahallesi 404. Sokak Yol, Altyapı, Cadde, Bulvar ve Meydan Yenileme ve Düzenleme Yapılması\" işi | Teslim tarihi 3 Kasım 2026 olarak görünüyor.** Muğla Yenigün Gazetesi'nin 15 Eylül 2026 tarihli haberinde, \"Menteşe İlçesi, Kötekli Mahallesi, Sıtkı Koçman Caddesi ve Yeniköy Mahallesi 404. Sokak Yol, Altyapı, Cadde, Bulvar ve Meydan Yenileme ve Düzenleme Yapılması\" işinin teslim tarihinin 3 Kasım 2026 olarak göründüğü ifade edilmiştir.\n*   **19 Ekim 2026 | Üniversite C Kapısı | Çalışmalar tamamlanıncaya kadar araç trafiğine kapalı olacaktır.** Muğla Sıtkı Koçman Üniversitesi Yapı İşleri ve Teknik Daire Başkanlığı'nın 19 Ekim 2026 tarihli duyurusuna göre, Kötekli Mahallesi'nde yürütülen çalışmalar nedeniyle Üniversite C Kapısı çalışmalar tamamlanıncaya kadar araç trafiğine kapalı olacaktır. Bu durum, çalışmaların hala devam ettiğini göstermektedir.\n*   **14 Ekim 2026 | Kötekli, Yeniköy ve Ortaköy mahallelerinde devam eden yol ve çevre düzenleme çalışmaları | Tamamlanmamasına tepki gösterildi.** MHP Menteşe İlçe Başkanlığı, 14 Ekim 2026 tarihli açıklamasında, Kötekli, Yeniköy ve Ortaköy mahallelerinde devam eden yol ve çevre düzenleme çalışmalarının tamamlanmamasına tepki göstererek, çalışmaların tamamlanması için somut bir takvim açıklanmasını talep etmiştir. Bu, projenin genel olarak henüz bitmediğini desteklemektedir.\n*   **27 Ekim 2026 | Kötekli Mahallesi 472 Sokak ile 428 Sokak'ın kesişimi | Yağış nedeniyle yol çöktü.** Muğla Yenigün Gazetesi'nin 27 Ekim 2026 tarihli haberine göre, Kötekli Mahallesi'nde yağış nedeniyle yol çökmüş ve bir araç çukura düşerek mahsur kalmıştır. Bu olay, bölgedeki altyapı çalışmalarının henüz tamamlanmadığını ve mevcut durumun olumsuz etkilere açık olduğunu göstermektedir.\n\n3 Kasım iddiası, \"Menteşe İlçesi, Kötekli Mahallesi, Sıtkı Koçman Caddesi ve Yeniköy Mahallesi 404. Sokak Yol, Altyapı, Cadde, Bulvar ve Meydan Yenileme ve Düzenleme Yapılması\" işinin resmi teslim tarihi olarak doğrulanmıştır. Bu tarih, projenin genel kapsamı için geçerli olan güncel bitiş hedefidir."
+}

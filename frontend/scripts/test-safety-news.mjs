@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { validDate, newsPeriod, reviewEvents } from '../src/safetyNews.mjs';
+assert.equal(validDate('2026-02-30'), null);
+assert.equal(newsPeriod({ event_date: '2026-07-01', publication_date: '2026-10-20' }), 'history');
+assert.equal(newsPeriod({ event_date: null, publication_date: '2026-10-20' }), 'recent');
+assert.equal(newsPeriod({ event_date: null, publication_date: null }), 'undated');
+assert.equal(newsPeriod({ event_date: '2026-11-01' }), 'outside');
+assert.equal(newsPeriod({ event_date: '2026-08-01' }), 'recent');
+const base = { title: 'Test', summary: 'Test summary', publication_date: '2026-09-01' };
+assert.equal(reviewEvents([{ ...base, source_ids: ['S1'] }, { ...base, source_ids: ['S9'] }], [{ id: 'S1' }]).length, 1);
+console.log('Safety date boundaries, publication fallback and source ID checks passed.');

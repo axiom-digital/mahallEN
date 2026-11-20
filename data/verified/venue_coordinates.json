@@ -1,0 +1,21 @@
+{
+  "emirbeyazit:mabollamore": {
+    "status": "matched",
+    "boundedAttempt": true,
+    "queryUrl": "https://nominatim.openstreetmap.org/search?q=Mabolla+More&viewbox=28.332938%2C37.2414311%2C28.392938%2C37.1914311&bounded=1&format=jsonv2&countrycodes=tr&limit=5",
+    "checkedAt": "2026-10-28T19:00:00.137610+00:00",
+    "lat": 37.2069671,
+    "lon": 28.3591775,
+    "distance": 1104,
+    "url": "https://www.openstreetmap.org/node/14287789688"
+  },
+  "akyaka:poisonpub": {
+    "status": "matched",
+    "queryUrl": "https://nominatim.openstreetmap.org/search?q=Poison+Pub%2C+Akyaka%2C+Ula%2C+Mu%C4%9Fla&format=jsonv2&countrycodes=tr&limit=5",
+    "checkedAt": "2026-10-28T18:28:24.451108+00:00",
+    "lat": 37.0518952,
+    "lon": 28.3260592,
+    "distance": 689,
+    "url": "https://www.openstreetmap.org/node/11079340558"
+  }
+}

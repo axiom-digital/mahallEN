@@ -35,3 +35,7 @@ Son komut canlı model/arama kotası kullanır. Statik dosyaları okumak, fronte
 50 backend testi geçti. İstemci testleri gerçek sağlayıcıya gitmeden Search aracını, timeout'u, tek denemeyi ve girdi sınırlarını kontrol eder. Beş mahalle kaydının bütünlüğü, kaynak referansları, tarih pencereleri ve eksik değer davranışı test edilir. Frontend üretim derlemesi ve puanlama testleri geçti. Canlı çağrı kanıtı yukarıdaki arşivdedir.
 
 #7 statik veri ve #9 prompt/API bağlantısı ayrı teslimlerdir. Kaynak incelemesi/güncellemeler, tamamlanmış kullanıcı arayüzü (#10), canlı rapor/cache (#11), ölçüt normalizasyonu ve doğrulama (#24) bu iki görevin bittiği ifadesiyle tamamlanmış sayılmaz.
+
+## Aktif rapor v2
+
+Bu belge #9 ilk tesliminin kaydıdır. Aktif görünümde artık kişisel kira bütçesi sorulmaz; kaynaklı genel fiyatlar resmî gelir referanslarıyla kıyaslanır. Mekân/bağlantı sayısından kalite puanı üretilmez ve birleşik puan tutulur. Olumlu, olumsuz ve bilinmeyen kanıtlar aynı kuralla beş mahalleye uygulanır. [Rapor kalitesi](REPORT_QUALITY.md).

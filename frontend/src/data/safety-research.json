@@ -1,0 +1,109 @@
+{
+  "specification": {
+    "target": {
+      "province": "muğla",
+      "district": "menteşe",
+      "neighborhood": "kötekli",
+      "country": "türkiye"
+    },
+    "topic": "safety",
+    "as_of": "2026-10-29",
+    "period_start": "2025-10-29",
+    "recent_start": "2026-08-01",
+    "prompt_version": "neighborhood-research-v1",
+    "search_model": "gemini-2.5-flash",
+    "report_model": "gemini-3.1-flash-lite"
+  },
+  "summary": "Kaynak sayfaları okunarak incelenen haber kayıtları. Haber sayısı suç oranını göstermez.",
+  "records": [
+    {
+      "id": "E01",
+      "title": "Kötekli Mahallesi'nde genel asayiş ve trafik denetimleri",
+      "category": "denetim",
+      "summary": "Kötekli Mahallesi merkezli yapılan geniş çaplı güvenlik uygulamalarında araç ve kimlik kontrolleri gerçekleştirilmiştir.",
+      "source_ids": [
+        "S1"
+      ],
+      "publication_date": "2025-11-09",
+      "event_date": null,
+      "uncertainty": "Olayın kesin tarihi ayrıca doğrulanmadı; sıralama kaynak yayın tarihine göre.",
+      "period": "history",
+      "date_basis": "publication_date"
+    },
+    {
+      "id": "E02",
+      "title": "Mahallede havaya ateş açılması",
+      "category": "diğer asayiş",
+      "summary": "Kimliği belirsiz kişilerce havaya ateş açılması sonucu polis ekipleri inceleme başlatmıştır.",
+      "source_ids": [
+        "S2"
+      ],
+      "publication_date": "2026-03-31",
+      "event_date": null,
+      "uncertainty": "Olayın kesin tarihi ayrıca doğrulanmadı; sıralama kaynak yayın tarihine göre.",
+      "period": "history",
+      "date_basis": "publication_date"
+    },
+    {
+      "id": "E03",
+      "title": "İkamette şüpheli ölüm",
+      "category": "belirsiz olay",
+      "summary": "Bir dairede iki kişi silahla vurulmuş halde ölü bulunmuş, olayla ilgili soruşturma başlatılmıştır.",
+      "source_ids": [
+        "S3"
+      ],
+      "publication_date": "2026-09-01",
+      "event_date": null,
+      "uncertainty": "Olayın kesin tarihi ayrıca doğrulanmadı; sıralama kaynak yayın tarihine göre.",
+      "period": "recent",
+      "date_basis": "publication_date"
+    },
+    {
+      "id": "E04",
+      "title": "Yılbaşı öncesi asayiş uygulaması",
+      "category": "denetim",
+      "summary": "Yılbaşı öncesi yapılan asayiş ve trafik denetimlerinde aranan şahıslar yakalanmış ve uyuşturucu madde ele geçirilmiştir.",
+      "source_ids": [
+        "S4"
+      ],
+      "publication_date": "2025-12-28",
+      "event_date": null,
+      "uncertainty": "Olayın kesin tarihi ayrıca doğrulanmadı; sıralama kaynak yayın tarihine göre.",
+      "period": "history",
+      "date_basis": "publication_date"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.egealternatif.com/haber/mugla-da-nefes-kesen-guvenlik-operasyonu-es-zamanli-uygulama-sonuc-verdi_46560/",
+      "title": "Muğla'da nefes kesen güvenlik operasyonu: Eş zamanlı uygulama sonuç verdi!",
+      "published": "2025-11-09",
+      "publisher": "egealternatif.com"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.hamlegazetesi.com.tr/mentesede-silah-sesleri-mahalleyi-ayaga-kaldirdi",
+      "title": "Menteşe'de silah sesleri mahalleyi ayağa kaldırdı",
+      "published": "2026-03-31",
+      "publisher": "hamlegazetesi.com.tr"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.24saatgazetesi.com/son-dakika-mugla-mentesede-cinayet-iki-kisi-silahla-vurulmus-halde-olu-bulundu",
+      "title": "SON DAKİKA: Muğla Menteşe'de cinayet... İki kişi silahla vurulmuş halde ölü bulundu",
+      "published": "2026-09-01",
+      "publisher": "24saatgazetesi.com"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.muglagazetesi.com.tr/mugla-haberleri/mentesede-yilbasi-oncesi-asayis-ve-trafik-denetimleri-artirildi-204758h",
+      "title": "Menteşe’de Yılbaşı Öncesi Asayiş ve Trafik Denetimleri Artırıldı",
+      "published": "2025-12-28",
+      "publisher": "muglagazetesi.com.tr"
+    }
+  ],
+  "gaps": [],
+  "excluded_count": 21,
+  "status": "source_reviewed_research_candidate"
+}

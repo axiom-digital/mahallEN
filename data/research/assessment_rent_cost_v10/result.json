@@ -1,0 +1,401 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "all-pilots",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:45:17.845152+00:00",
+  "finished_at": "2026-10-28T18:45:44.580892+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Muğla Menteşe Kötekli kiralık daire fiyatları 2026",
+    "Muğla Menteşe Emirbeyazıt kiralık daire fiyatları 2026",
+    "Muğla Menteşe Muslihittin kiralık daire fiyatları 2026",
+    "Muğla Menteşe Orhaniye kiralık daire fiyatları 2026",
+    "Muğla Ula Akyaka kiralık daire fiyatları 2026",
+    "Muğla Kötekli öğrenci kiralık daire",
+    "Muğla Emirbeyazıt öğrenci kiralık daire",
+    "Muğla Muslihittin öğrenci kiralık daire",
+    "Muğla Orhaniye öğrenci kiralık daire",
+    "Muğla Akyaka öğrenci kiralık daire",
+    "Muğla Kötekli düşük gelirli kiralık daire",
+    "Muğla Emirbeyazıt düşük gelirli kiralık daire",
+    "Muğla Muslihittin düşük gelirli kiralık daire",
+    "Muğla Orhaniye düşük gelirli kiralık daire",
+    "Muğla Akyaka düşük gelirli kiralık daire",
+    "Muğla Kötekli kira artış oranları 2026",
+    "Muğla Emirbeyazıt kira artış oranları 2026",
+    "Muğla Muslihittin kira artış oranları 2026",
+    "Muğla Orhaniye kira artış oranları 2026",
+    "Muğla Akyaka kira artış oranları 2026",
+    "Muğla Kötekli emlak piyasası 2026",
+    "Muğla Emirbeyazıt emlak piyasası 2026",
+    "Muğla Muslihittin emlak piyasası 2026",
+    "Muğla Orhaniye emlak piyasası 2026",
+    "Muğla Akyaka emlak piyasası 2026"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW2Me1oc53Hk7nIyfd_r1F2A3OUsOW2q-0oY8v9w9kpPmUeHGu0yWdRDF9_jsssI_mLdA5zl2JhkRk36K8rdzzOo3ZbXJvr7dEi4GN9pCqLmSc-ztFg6cjortsyxF-5zBJnWebXH3zWaYVnVaV0Q355h5IWg==",
+      "title": "cbhukuk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH03LwSHSky4ThB3fmHfxnnYXxDgPMNOEv98NJx77KmoO37n8OkT2hSSVBBmtVjGHB7Vub0pnbbeR7beEfvI3lvA0AlD_3TAcbMEmxJUh55TLey02IflptQQCabeuqg7D4nwrl5CDwAdUH8wgQbSQU8Bp4G4vRfWxAWmsU=",
+      "title": "hesapkurdu.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpdGW64sclOaFWRtwYt8cbyXh_23UiIYGykn3Z4yFbWwo-rehOlWgpDI1OXddLx6frT-ujhSaHZ8YFW_lgmUsi_Exa66K4UoHNPgrMAoiDSQk9DbRz9uhJb1M-wE2JKiZqD76duEjDVA==",
+      "title": "kaymaz.av.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_7z0CC0qYJXOvdn9ERTpCiLYgGk9ct_61_aLJWsgl1Qt1_b-KOM3g7VJN7EzQvq10kt1mjJHBsLYe8KQXlW77aRiXSpkRHF16gyUdsPYew9MVRrNonP16KGzE-M3JXUFM2FDLQnK6QH-YVMYetg-MWyzzv_RCauyx3mQcTx0",
+      "title": "hangikredi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKrhxZIFMLmRkwSGBBzC4Oi_phLHqxOjMcqsBGQ3i-CMSh14IqSKdbIqH4C6ECiYrlVyDywsrYjjmX2GIKmzZchTBnjKp4Af2zuJHUrkwXiYNIajtPXb_xKINCNus6E64ZMA==",
+      "title": "hesaplama.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPNu08jbuE0wSR7h3IGQfvrxrrAdJxPY2amwxlMkZb-TTVgtTM2KpWNgkXGbgc_AvSfWgMz0Y3rAbn3Dcpgk2_3k20Ne-mQXhVCo0qr6HF1EiJP7J5cw217TAeav2-ENSkmmaurK1Zow==",
+      "title": "esercelik.av.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGceVafZHDjs7qSmp_ngSDMN0mCnqx904wBOC-nYIZOlXTRvEJRVZ23aEp4z_Ynp9P2GGO35gTDaDDgaYYINazRpgVJEWp6Wto89B7WJVwnbwSUYOytzKVejSLfRLHKvlrpVBCfpHoyxJdVpxZT1x4BaEE7r7obAbh_alXulrRXvh8en9tUVCFcgcWmoAC-mTr4FgPi_nJHctlgDnrMUgbidlq9PcjfZjtdDi6IxcMTNK2Q4cByJrHIin5Uw4A2mAvsaoLKTCQoznBKsh6Zy2YezRzBrFtrRrj-iP5pkw==",
+      "title": "milliyet.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHNtOZuC4gEdq8LG_1AyGodQFVhPX3J1pM2orJStksax5i1MSdgId6TgBDAL5BMFEgCJlYuMKYTtrAJ4kwcOR7PHlsXV-_3xcdfJFpGlWyEHL67H1tZrzOReFaWssfAauJiED3lIrzVCR2GZlndxNBInTAY1GzWogLHgEuHdOIK4CeyFoClWn61lp8Dbjne1Nn2rtZKbpwdPvyEK27qqZtjBLDCs3Z8mcC2zp50SZ8ECiEXkosZ3nYfqajJfTcvWWg-CK-321rUg==",
+      "title": "cnnturk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWh7u4Xgze0q0UN8sV1qvhLXN_ThIkBEmlnw5Q7LFixCauUFAgEqAOfLH-RxsEAYFfn93xBZPDmFweWIXRGfmFajIZezuA6ApoJC4UXbHPg1uoQEe_KElEnS5la7rjGPFKTLTJpqleK07a3fs75fhkN_DnbbR5cgNVDsaCBCBSSuU_",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp2cqGigthTzFj-zIb2_YM2tf8BR53BbEadNZ5vintUKRNwZzWAMzIqGy61a3vQbs_oKyHYmPFbbLdIp2ywVdjgoG0hBJsk9dclldy-a7ZD6oJ48Es2ot_7KUIbN18sfQcUHbL2X-dryRzhPW0XTdSbHx74jMfsxMBOmpFmkstbDhHLuSALg_NgB_Y3-0=",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4mvxze9m2y-WoUPg9s8ugvj0lFwtviOB6cWeAfRaIsb1AA4YxYm9nd3UWfGDXwvqqd4mQF4QH25bUVj2fMlFFmNkNhTEMpMWB7S7drICj8pgwmSW8wFz5VShVim2HvgE-wGkQ3PwUL0Od4SILCK18EMV3EHbEf1JmJ1REszNFzJPy",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkUSW44LakB9MQsdaAbjwcruOxAnqvlBv-3gwIzZVtABXWZII81_TtNivtjEpIN2cklML08Adq8037OJ_LWzclMV8qgPk-G2jWL6PDkq465e0QtdWYc-qgZc_pJqYRRPO0bWzdKLgLkd5lXvZpG_CVMmhrfYe_iX2zh1mO",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8pMWmZYZMAwinNqIDDyBcmZbOCHhB5Jr-08BwuLOFjrndQaBlHd8dtu3zi_jjpsyz9gEUxtbuh21Ffmx0hNATANSDVGT5Yx0HdK2kAoCFtRJ0sKiZHtW5IKNVi_TFE0O-Y_m3NzKxmECpVrat6LLnMByVl-TKnaOwKL5J",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEs977PWz1wIC6-S7OoF-ISwxVm6HTAtdrhP9lDUu7Z0BYwFG2G0WEG7Kky9ysy6d6yAEFh-9GCUiMxrE-i6Na0_FhQjpUaTZJtbU2ZndGslt78RR2Iryc8WSwbLRtGc4mhLQQtqeztNeS5wQ==",
+      "title": "emlakjet.com"
+    }
+  ],
+  "grounding_support_count": 14,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "cbhukuk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW2Me1oc53Hk7nIyfd_r1F2A3OUsOW2q-0oY8v9w9kpPmUeHGu0yWdRDF9_jsssI_mLdA5zl2JhkRk36K8rdzzOo3ZbXJvr7dEi4GN9pCqLmSc-ztFg6cjortsyxF-5zBJnWebXH3zWaYVnVaV0Q355h5IWg=="
+        }
+      },
+      {
+        "web": {
+          "title": "hesapkurdu.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH03LwSHSky4ThB3fmHfxnnYXxDgPMNOEv98NJx77KmoO37n8OkT2hSSVBBmtVjGHB7Vub0pnbbeR7beEfvI3lvA0AlD_3TAcbMEmxJUh55TLey02IflptQQCabeuqg7D4nwrl5CDwAdUH8wgQbSQU8Bp4G4vRfWxAWmsU="
+        }
+      },
+      {
+        "web": {
+          "title": "kaymaz.av.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpdGW64sclOaFWRtwYt8cbyXh_23UiIYGykn3Z4yFbWwo-rehOlWgpDI1OXddLx6frT-ujhSaHZ8YFW_lgmUsi_Exa66K4UoHNPgrMAoiDSQk9DbRz9uhJb1M-wE2JKiZqD76duEjDVA=="
+        }
+      },
+      {
+        "web": {
+          "title": "hangikredi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG_7z0CC0qYJXOvdn9ERTpCiLYgGk9ct_61_aLJWsgl1Qt1_b-KOM3g7VJN7EzQvq10kt1mjJHBsLYe8KQXlW77aRiXSpkRHF16gyUdsPYew9MVRrNonP16KGzE-M3JXUFM2FDLQnK6QH-YVMYetg-MWyzzv_RCauyx3mQcTx0"
+        }
+      },
+      {
+        "web": {
+          "title": "hesaplama.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKrhxZIFMLmRkwSGBBzC4Oi_phLHqxOjMcqsBGQ3i-CMSh14IqSKdbIqH4C6ECiYrlVyDywsrYjjmX2GIKmzZchTBnjKp4Af2zuJHUrkwXiYNIajtPXb_xKINCNus6E64ZMA=="
+        }
+      },
+      {
+        "web": {
+          "title": "esercelik.av.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPNu08jbuE0wSR7h3IGQfvrxrrAdJxPY2amwxlMkZb-TTVgtTM2KpWNgkXGbgc_AvSfWgMz0Y3rAbn3Dcpgk2_3k20Ne-mQXhVCo0qr6HF1EiJP7J5cw217TAeav2-ENSkmmaurK1Zow=="
+        }
+      },
+      {
+        "web": {
+          "title": "milliyet.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGceVafZHDjs7qSmp_ngSDMN0mCnqx904wBOC-nYIZOlXTRvEJRVZ23aEp4z_Ynp9P2GGO35gTDaDDgaYYINazRpgVJEWp6Wto89B7WJVwnbwSUYOytzKVejSLfRLHKvlrpVBCfpHoyxJdVpxZT1x4BaEE7r7obAbh_alXulrRXvh8en9tUVCFcgcWmoAC-mTr4FgPi_nJHctlgDnrMUgbidlq9PcjfZjtdDi6IxcMTNK2Q4cByJrHIin5Uw4A2mAvsaoLKTCQoznBKsh6Zy2YezRzBrFtrRrj-iP5pkw=="
+        }
+      },
+      {
+        "web": {
+          "title": "cnnturk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHNtOZuC4gEdq8LG_1AyGodQFVhPX3J1pM2orJStksax5i1MSdgId6TgBDAL5BMFEgCJlYuMKYTtrAJ4kwcOR7PHlsXV-_3xcdfJFpGlWyEHL67H1tZrzOReFaWssfAauJiED3lIrzVCR2GZlndxNBInTAY1GzWogLHgEuHdOIK4CeyFoClWn61lp8Dbjne1Nn2rtZKbpwdPvyEK27qqZtjBLDCs3Z8mcC2zp50SZ8ECiEXkosZ3nYfqajJfTcvWWg-CK-321rUg=="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWh7u4Xgze0q0UN8sV1qvhLXN_ThIkBEmlnw5Q7LFixCauUFAgEqAOfLH-RxsEAYFfn93xBZPDmFweWIXRGfmFajIZezuA6ApoJC4UXbHPg1uoQEe_KElEnS5la7rjGPFKTLTJpqleK07a3fs75fhkN_DnbbR5cgNVDsaCBCBSSuU_"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp2cqGigthTzFj-zIb2_YM2tf8BR53BbEadNZ5vintUKRNwZzWAMzIqGy61a3vQbs_oKyHYmPFbbLdIp2ywVdjgoG0hBJsk9dclldy-a7ZD6oJ48Es2ot_7KUIbN18sfQcUHbL2X-dryRzhPW0XTdSbHx74jMfsxMBOmpFmkstbDhHLuSALg_NgB_Y3-0="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4mvxze9m2y-WoUPg9s8ugvj0lFwtviOB6cWeAfRaIsb1AA4YxYm9nd3UWfGDXwvqqd4mQF4QH25bUVj2fMlFFmNkNhTEMpMWB7S7drICj8pgwmSW8wFz5VShVim2HvgE-wGkQ3PwUL0Od4SILCK18EMV3EHbEf1JmJ1REszNFzJPy"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkUSW44LakB9MQsdaAbjwcruOxAnqvlBv-3gwIzZVtABXWZII81_TtNivtjEpIN2cklML08Adq8037OJ_LWzclMV8qgPk-G2jWL6PDkq465e0QtdWYc-qgZc_pJqYRRPO0bWzdKLgLkd5lXvZpG_CVMmhrfYe_iX2zh1mO"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8pMWmZYZMAwinNqIDDyBcmZbOCHhB5Jr-08BwuLOFjrndQaBlHd8dtu3zi_jjpsyz9gEUxtbuh21Ffmx0hNATANSDVGT5Yx0HdK2kAoCFtRJ0sKiZHtW5IKNVi_TFE0O-Y_m3NzKxmECpVrat6LLnMByVl-TKnaOwKL5J"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEs977PWz1wIC6-S7OoF-ISwxVm6HTAtdrhP9lDUu7Z0BYwFG2G0WEG7Kky9ysy6d6yAEFh-9GCUiMxrE-i6Na0_FhQjpUaTZJtbU2ZndGslt78RR2Iryc8WSwbLRtGc4mhLQQtqeztNeS5wQ=="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "segment": {
+          "start_index": 297,
+          "end_index": 354,
+          "text": "Ekim 2026 için bu oran %31,49 olarak açıklanmıştır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8
+        ],
+        "segment": {
+          "start_index": 390,
+          "end_index": 531,
+          "text": "*   KOTEKLI | positive | Aylık kira | 2026-10-24 | Muğla Menteşe Kötekli'de 1+1 eşyalı kiralık daire 26.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          9
+        ],
+        "segment": {
+          "start_index": 1326,
+          "end_index": 1460,
+          "text": "*   EMIRBEYAZIT | positive | Aylık kira | 2026-10-22 | Muğla Merkez'de eşyalı 2+1 kiralık daire 28.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 2258,
+          "end_index": 2417,
+          "text": "*   MUSLIHITTIN | positive | Aylık kira | 2026-10-26 | Muğla Menteşe Muslihittin Mahallesinde 3+1 eşyasız kiralık daire 55.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          9
+        ],
+        "segment": {
+          "start_index": 3205,
+          "end_index": 3338,
+          "text": "*   ORHANIYE | positive | Aylık kira | 2026-10-15 | Menteşe Orhaniye Mahallesi'nde 2+1 daire/ofis 40.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          9
+        ],
+        "segment": {
+          "start_index": 3339,
+          "end_index": 3526,
+          "text": "(yerel haber/dizin)\n*   ORHANIYE | positive | Aylık kira | 2026-10-06 | Menteşe Orhaniye Mahallesi'nde 3+1 doğalgazlı, kaloriferli, asansörlü daire 37.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10,
+          9
+        ],
+        "segment": {
+          "start_index": 3527,
+          "end_index": 3670,
+          "text": "(yerel haber/dizin)\n*   ORHANIYE | positive | Aylık kira | 2026-09-12 | Elitkent Sitesi'nde 2+1 geniş daire 40.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 3671,
+          "end_index": 3843,
+          "text": "(yerel haber/dizin)\n*   ORHANIYE | positive | Ulaşım kolaylığı | bilinmiyor | Orhaniye Mahallesi, Muğla merkezine yakın konumuyla ulaşım avantajları sunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 3844,
+          "end_index": 4044,
+          "text": "(yerel haber/dizin)\n*   ORHANIYE | positive | Eğitim ve sağlık olanakları | bilinmiyor | Orhaniye Mahallesi, anaokulundan liseye kadar eğitim kurumları ve özel eğitim olanakları sunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11,
+          12,
+          13
+        ],
+        "segment": {
+          "start_index": 4092,
+          "end_index": 4226,
+          "text": "*   AKYAKA | positive | Aylık kira | 2026-10-20 | Akyaka Merkezi Konumda Eşyalı 2+1 Dubleks Daire 40.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11,
+          12,
+          13
+        ],
+        "segment": {
+          "start_index": 4227,
+          "end_index": 4382,
+          "text": "(yerel haber/dizin)\n*   AKYAKA | positive | Aylık kira | 2026-10-19 | Akyaka'da Eşyalı, Kış Sezonuna Uygun 1+1 Daire 20.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11,
+          12
+        ],
+        "segment": {
+          "start_index": 4383,
+          "end_index": 4540,
+          "text": "(yerel haber/dizin)\n*   AKYAKA | positive | Aylık kira | 2026-09-14 | Ula Akyaka Kiralık 1+1 Eşyalı Daire Ortak Havuzlu 35.000 TL olarak listelenmiştir."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11,
+          12,
+          13
+        ],
+        "segment": {
+          "start_index": 4541,
+          "end_index": 4702,
+          "text": "(yerel haber/dizin)\n*   AKYAKA | positive | Sezonluk/yıl boyu ayrımı | 2026-10-19 | Akyaka'da kış sezonuna uygun eşyalı daire seçenekleri bulunmaktadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 4703,
+          "end_index": 4934,
+          "text": "(yerel haber/dizin)\n*   AKYAKA | negative | Maliyet baskısı | 2026-10-28 | Akyaka'da kiralık daire fiyatları ortalama 38.032 TL olup, geçtiğimiz aya göre %6 artış göstermiştir, bu da maliyet baskısına işaret edebilir."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdiaoRDHsWJ3ct7vqwwHYf4OiyNm4tV8sOjCjXa-FXsmaTPBO7Vw1j3-17cZwwKFRJyh2vkOfPQuYL_HzBIND4E-NVt7j6NaCcdh2cViz4j5MqO7DXqTv6jWV2IFFJRUsfou_Gw1F7dsHIQmWCNnkolev0ulDaQ9SsTUIXVnP8VmiuJafACMJDcLVtjvi0exSsOrzfJ7-voGexLU_ad4IqSYOEcw9IE8YiqQrtT5wIobk3Ia5mMXEvCj4=\">Muğla Akyaka öğrenci kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSfJ0Eq0NSE4ztiNAkkyj0N2PsdVN8G638y_iytgZZdTzukYYVs0yvPAhtqRkMiBVTvNJdgqcrO6mmL_HYsNq4XmZ5UiT7M0N_mzZuDf-WAAzbGG956crNgriVRgfgKiBlgy7BJLrJjhjYWUGLlyp-uyF6KNoKOlWdk0tawGUajFiyByWJynH_tKkQGpUT67xZtpWxtNY2v9gwrnZ6vkBBDo2PoOG9wt5hsbjAYR0Dsa9Y3Ah_ZsU3L7STBA-LvOTFQKd3iSVjgC75_g==\">Muğla Menteşe Orhaniye kiralık daire fiyatları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQynBqgj-ybsSDnV1h3-1hKXCKp2cD8rWO0E4pGCwuiOkcUoiMmk83VBzItkkXM7pE-jlPjt_Fx7cizMMKzcP0uGShaK9RYR024x-2a_zQZQi8hGNxY5WRAVtFCUUjjkOFcW42SpSECt6HqIWAE-G00o_q3wGvAoaUPOrL_aPqgPERrMfpD4jNs37FJrXUfQ3UzwYyFaU1Vd_GFgFqiAO3kxfb0pkBP-VzGGpJF4su2OkUa_DtzOr2yJzqKQK1eJpiYTirS-kKi8XhkhrppuRNw5yb\">Muğla Menteşe Emirbeyazıt kiralık daire fiyatları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0ZAn7xJ9Ij0G8HNCqXXSggA67CSeEq-bMwTCloxK2xwSKk5TtfZSGbL19ipugroYLpHPdkzCyNb5rzdBBfBeiyMLZh0jUYQNHUDAh01uhpW-Na193PSUMfFX6GqoTFYHKekBXPZvi_Ic3Mpmk_Wu024p1F1M7HWiIHc8BiT9LI6ol0bDYyMsxMw6a9vFlqmrdVjemxyAM37_ALBVlgcI4nLAT2jr01w608uq_Ec40SR_QBudoGKPSTSHsZl6tqmzF2vfWm7PW8-lA6aiH9Qk=\">Muğla Menteşe Kötekli kiralık daire fiyatları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxTeq4C_d_nD-BxC0CN7FUsPvUYaDyidGqpGtrBWcULlNQStxBYV5u86aI1Sx9DC4lVLQdSVoUJOOFF9NcX_fb7La2Nz7jjOWt2DbcNmni3hBCGIbB291w4PPGnt2AuVcUB4WAIH4thzMYM9FQ0NlstVyXOlQdmLENTjeUEpXUITV26dyZX4hAuhzgXlm5NnOkCcSbUCRg1jbq8RWg-Te_0EG-d7u6LZvjU74CjLlrW4mbpJWDxOF7LZxm8I8wPAyMCiXkBPsF\">Muğla Emirbeyazıt kira artış oranları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZxca2J1uDUxDp1bpMsdGMJVQeXGrV27mUySIYBHPUXtxsH2aO_e9iksJT9MSx2DFm7SXPFUB2sM9e6UlatyPfIWzOdWGsENlK_2BO9vY57l-WmI6onOH5nJ7VCeETvW7x1NiKqpAdpwvyzT1YSKfBnMS1g4KQtZWusUyJkqdKi3T_o3YFtCZcvtGMCC5A5ypuN9NJiXysnFV0zGhBvoEs_kiR2A-cUnxK2CjlVRuW8z_-0Q-eVRqH6qVlA_k9sPG6qA==\">Muğla Muslihittin kira artış oranları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEA76L6atXGr2GJAjg8mt1Ux6Fy-MJz0DqW688nKIKoSQTWLesiAleQngyNKLT8n873C7KgYKsDkJIOnSHO0lItJOc9CFYjtKKsXRO3oM8rvNvifQhOIJzfztVz7tvzKmWU-eJi-XWYXgsrpVTrfzAxlraK5UNSI7eH4DvylVMhTyakViy--e3JTvQs7hdK3uxYeGPyXntI_XesR82gTZgL8wvr--wAUVsLiVxTFPCl2Pi0j0TteSUNWAKFTso=\">Muğla Akyaka kira artış oranları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsYTpvztcjMzLSyHOlbipVn0-1BmK4Jb_IY861wCFnFJh_7PKnJwRHs0lBSInxT6t3siA8zvY-BMIh4k2F5WFarfzkTAOhctD6GReUKa2lozfEGsS7N4JYK5mBpoz7F5Ls4TuKeIFvNK06ouzFF_A6Q1gJSMyerKf9dWL4Fz4tMBnYnJ6KlWXc-lYoawMLpwdO9yWAyvT3azOQvf6mN6DlcVvMsi9uya8Wn69zcTPM734YgsfIfWeU\">Muğla Emirbeyazıt emlak piyasası 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF395Isz8HezRd30XEhaGnrEHI1dYLMWceZshsjt2YMQW6OATGtkmgU3fqFgYNKezzXp55wHp16pP1iNSIhFLxO8CBn12MvX8hwhjl1m6SRuk5S0h-RKtn-Kzdrm5dyt4hLhH-j1dEnOvt6Cu54CppacCgb7oHQQjSEYDXVMbRGSBplSd0BQ7766bNHpy-MeiSZe_Xw_vwd3u7PJyeMhua5SEzSSZXJ6wskn5eFoTn7\">Muğla Orhaniye emlak piyasası 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELpHXukK1S7FW-EdJuG-XIp7JWOUayqtZsOZaO3eB7w9PNbNq3QAKkWFBt_rNFJfHuXjbgPeR8UUKtAM9IX-gwijkXcea-h1NsOckk24eOBlwq4opk_Qabl1h16xSxdu4TcAI_d3SWuSk7jBi3cOnBKl-bFJrGDkTBYxtPX7TDn0LGUsP1iiGozkSK465XUnYetk8KOWxkmpDg5fBJtTM1ajvYdq4luBnnMLZZQNNf-LQzVqz-F6rZYRTmJk4fSYiqWJE4GTO3\">Muğla Orhaniye düşük gelirli kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3ORqOllApg8qB4o7VMm3obqPnxCzsOO0rBPnHD7IXebjQ00T4kwUk4Urcevpo2RxMNEbrEn-HkKZXkUYJCYjdSG639loEepp3RKK1Yh4_wrlq3xgSHOvHoZ_xKEp28ArYrfXbuPYOX8mGaWxnv211DpEap6S8c9ABrj7No3ilnnyBfnOa8SFS3b86HuAewQMjo5ecnY9bbYoBmlputjfuLBUGWBmMl95nKzGsqT_Sv-T_6AKNbr8keQQdso35Xw==\">Muğla Orhaniye kira artış oranları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbbI-GdYDnLOhl27bTvDQdgAUxnkdCasWm_p4P1nHEuRPrCRwhhoSD_hwViTB2PBlqUbE9Om2-hPBICOAMlyHGK0W74JDNkQOH4un-CQwp9_sqYnanmO8m1RpB4ffHuqJo5VREo8ilusGC5NGuDsa4qMQjHhjBJD5lbFZ1tnolWPUtM8SxaygH_YnUby6xdfneGiRcGg_H6Fn_6I3LK3ZHa0qvlUjWYSzbnrrljRyq8AtfJdkSwKSNc4Ml23lF2i3yl_0=\">Muğla Kötekli kira artış oranları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiXiI6B8iTZgF5MCSixR1m3FpEY_88D01yl20ol6X_s-cgquBJLiSqBKI78Afsib46M1aiUAYrjOXomparJw_acMN_33Uftp_P1_5aomsA7eFTmNRgNTbLzZbrkgo_NeaPnolEqIwTAlSpRpwHO4GYnZWZZUM8b2-wXTC88xz9co-2RYVazPCyzQ4HsxX6Pfnu7LFNFr17oTeq8x-mv1REC3t0-X82WEtv2kwDZYlLX-8uXxR1IdB5s97eTGmQdTe8lvGzlA==\">Muğla Akyaka düşük gelirli kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKddMUlCbBgmQICsFwxZg0SVqACr7hZsLmtLktFI53TYAUYj8ImqwccFoX3t6BIdvapuusi_XW4b5mmtw03k8oLyQaxNuQ4r4G2Y0EMfSOs0w9Z7qdFUA3_b1EW0FObmRkg3f83gHksB5TANsjszi1iCsCAkyHoh2p6NPa2B81tGtJK9UhDVbGGMGg9tVaL25Zgui_FIOLylfspjDG5qlf51tLgCAqiR_AVqS_lKjsg1W7yQ==\">Muğla Kötekli emlak piyasası 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg-SRpWiYbYxKyKaiplnpXoCLyTc-_-56is0Ul2yZPqormYUhspBGxUUKUHTA5juUPqjFbisODv0WCdayPHvjzs-5XfPsZ1d42l9EpM81rClOEhk1YF3TdBSEpBLl-MwvSEwir3JxMfQftn2529DYSo2bUej6xZPoXGU9eSHcvwYSktTqisfU-cwAQsZza1jESwCIrf-RWPqP6cgtZalGx3w4JXG-MJJthlkzufsWcL8B8R1SEN9HNttG90bqH5SF_wmCSn5xteq82Z5EF1A==\">Muğla Menteşe Muslihittin kiralık daire fiyatları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-94Isai1Pv2CWzx3j_GW02U0FO2qZr2BjbCp7g9Rk07cLTYyLOOuRjvnAcNRbTHaNb6cUvtmxurgaWz7-V3foulGLzL1rb8MXWLVepbA4OvAWW_20IxDadVyNnqI1vXmB_nJUmk4-if8-L1990F-Hu6IIA5B-GqRRTXo9ofWef8GVcEx7Md_P5L6b_wX7rhn_7u5zK7Vq8pDHhSkc36r0YLibFF7ujyc5-WDjq-tIheAquAGiviu1kx6VpvZx2rI=\">Muğla Ula Akyaka kiralık daire fiyatları 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEeC_VCD-JxERdaaoKAf1ndP6v-a8oRHTNNKXlJu-4CcmdDTv6XchifmLoirgnqfwlqUqkHxIwtAvN1IK35RcRJYcqbPdRKYIf2gahCH8DhRTH6WK2ewe6tegAxpCsi11oj3hX4m_Uy2oRN1LHR9Xa-PosXGncbQIO5C6CHERHZcEqAsLA_N8prp_KZdknihsdvCnoD0iZh1EcLXJZAJkV5xnS01xXYD-UGaU395BhnJbaQhAP0IW1hIh1IXixUqU=\">Muğla Kötekli öğrenci kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcCVtHdmjdeVDNxs_U0wDbbVYTwL6vi5U9ZllPS4UBvUV7muIsfLjQ2MUotC7Z4EY2T062igvH6SiXVStEP4sAH7lt0Hl3Ib7RA460NI_7EK3WeDX6mFANhPUqKEpKK3VgK3ZquIUdbl0V8BgXjjSy94NeKfDWGKCprbgAXFoFd_1c0Ct8X5xUYIp6FFHlgJmoeO9QOBMm5I31NZOCi3HRUaIS_eb5Fm_BBeH75iuYCXgZys3lMA9QuxZDFN55XZlW3bn7\">Muğla Emirbeyazıt öğrenci kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-BIY-B0ceAv72ndjZerssOE7L_j2fecIk-CamImE5qzh7lh1z-7tPvOxKES5lMjU1NWGL0lQBOkEbU_JIl7XPpv5ynFKIp1BFsuXyktMr7S63UsP2K2lGyvJgHWM60rfV83dVixUnW0VEntGA0IfLFg6WD3cepzkqSjDRjQ9roMs_AsmzAhQlBx_unv1a2ErqyIgWcNR70CQhTw8aGV9F5id0gpoP5IHDqlLJ1ujOMvo5u_4dyqALsTl5mxJezuAmffKADz9Y4UBObQ==\">Muğla Kötekli düşük gelirli kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFySfORKtS_Yjgajtgy2-412XtWx-QVwsYYZYLSN9POSp3JSuMWC7j3OxAKaJ6pGjRFXUuf2EeNeDKfidYoal_rqZPU_KB8E_pkP8tmlqorEL2gSlYgjTLgiGPuQnvielbdD0YFfQB_laAq2_i1_GG8gRZbtouG_ryBtPw5GhfZ1oFLIgPGsnkyuTxzsC9DTVMYdJ5UNjclo-b9cc7J3fNWbRzPJRDTaRAxxm4R2YOZQHL4\">Muğla Muslihittin emlak piyasası 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgl_90gaP8QGnixnXVaoDCegmtj8J7KmcDkfzOk169ymVhmUUveU-5xTgzESjx0z3Jd_GcRB_zTAipV-qjkGQ4Ypm43urXteUh-H6DBa9ai5gr4cLkw4drNqS1duUNv3YKn7whiiYKkfatswt1ZURYJ2rQp8R5-cCoNxiQATv2vrX1zsXIk2ZTLS4HJZgxx5kcHnoC_VKfv9m0eOkmL4aM9W3UOYxjtPT1XGvGHbLo9T0EFH9Q-bTJ7S3b5BaU41Q6R0ANpqX1xOvsrQSqom8=\">Muğla Emirbeyazıt düşük gelirli kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl3q73TfTJ8idOuSXWBW2hQPEog5kOSN8PyFHAjTy68v82Tvzy22wgA6Bb8gqic4sD1-actcd207O1oI49zjFRpfYCu4sh4dmd217OCe3Pvp17eqzxXet2ORxYc4NXibcG8i5-bjBst6FhBELfQuDgGGlBqoQoFcs9gHNr1vfVMDrZ9LjhzgSBDqnrEFVkKDOsz9GScMsC6vuFEh06h44Siu3ApjJsDcbw7TPLgg==\">Muğla Akyaka emlak piyasası 2026</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiVTkHiiQPu_nZBiYFuThDMmwffJ8OPcKSswryDbdupP5D63XPGSf98Ka1YOeDXB9n9IwUIsERIZMK-HiZunZy75Nri_BlAYkj20bD5rPqHzquF353UJzPisQrDBa8Y43fTUu9k782joAkupiRZyQMKsMNFRWOXhbDMfF6hxmI0gUeUvansyx4eeUcbDmwEBAAxrgtTMAf8ZqNXTCFWaDqjYYSLCFfEP5wOAZ1hlZeQRzx6NJhyMyvzZSUVA==\">Muğla Orhaniye öğrenci kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqkKCJIg7TcyCwJ-BnvGoa_fSj4sG7sW1jCcJXpLyfmPH0c79r_PARSsZiKGWMReaOY9D2VdZBnoLbQM7Vx69cm7k76IHxBCi_80JHEngoPq1sBzB6BHdNYfkQ8oWhZJXa12iro-eBQXt0jLtWzhDCaV6-_ZQUmAaTc_hCz6lXvBiBZBpUmDQUgQN2hs8SCip8pGPDM3P9uz4fceKyPTPxI9ylAw3fAsRVRLDGTbAR0H0sMpUi3bzJh_z5WjKYjgiqnq0fhzp0kPTt\">Muğla Muslihittin düşük gelirli kiralık daire</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqshsDDhJgCk4PHo1Qx0XTtNRalh_9L9jXQhBvBr2Mut8Hid3PTfzbSJn3X6VFUachtKx17zQuNGnPHvFt9Faocb9rpW6kgVlcMb3lBEjm4ysW8zv4c12ONX3PrEgPmUqFuZv6ugvUcjiiL44FJG2c0dvMC82mAkxiB7lQWAlsHljag6901XGWV_JGhTg6ckrJf9GZ4NHjsDH4FlLNHfm9leU6Cw1LDzIyQ5FXQWVfUVDOkeaLDQf3g_Nk9wYOvw==\">Muğla Muslihittin öğrenci kiralık daire</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Muğla Menteşe Kötekli kiralık daire fiyatları 2026",
+      "Muğla Menteşe Emirbeyazıt kiralık daire fiyatları 2026",
+      "Muğla Menteşe Muslihittin kiralık daire fiyatları 2026",
+      "Muğla Menteşe Orhaniye kiralık daire fiyatları 2026",
+      "Muğla Ula Akyaka kiralık daire fiyatları 2026",
+      "Muğla Kötekli öğrenci kiralık daire",
+      "Muğla Emirbeyazıt öğrenci kiralık daire",
+      "Muğla Muslihittin öğrenci kiralık daire",
+      "Muğla Orhaniye öğrenci kiralık daire",
+      "Muğla Akyaka öğrenci kiralık daire",
+      "Muğla Kötekli düşük gelirli kiralık daire",
+      "Muğla Emirbeyazıt düşük gelirli kiralık daire",
+      "Muğla Muslihittin düşük gelirli kiralık daire",
+      "Muğla Orhaniye düşük gelirli kiralık daire",
+      "Muğla Akyaka düşük gelirli kiralık daire",
+      "Muğla Kötekli kira artış oranları 2026",
+      "Muğla Emirbeyazıt kira artış oranları 2026",
+      "Muğla Muslihittin kira artış oranları 2026",
+      "Muğla Orhaniye kira artış oranları 2026",
+      "Muğla Akyaka kira artış oranları 2026",
+      "Muğla Kötekli emlak piyasası 2026",
+      "Muğla Emirbeyazıt emlak piyasası 2026",
+      "Muğla Muslihittin emlak piyasası 2026",
+      "Muğla Orhaniye emlak piyasası 2026",
+      "Muğla Akyaka emlak piyasası 2026"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 2127,
+    "prompt_token_count": 474,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 474
+      }
+    ],
+    "tool_use_prompt_token_count": 947,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 947
+      }
+    ],
+    "total_token_count": 3548
+  },
+  "text": "Muğla'daki belirtilen mahalleler için 28 Ekim 2026 itibarıyla kiralık konut piyasasına ilişkin bilgiler aşağıda sunulmuştur. Kira artış oranları, Türk Borçlar Kanunu uyarınca TÜİK tarafından açıklanan on iki aylık ortalama TÜFE değişim oranlarına göre belirlenmektedir. Ekim 2026 için bu oran %31,49 olarak açıklanmıştır.\n\n**KOTEKLI (Kötekli, Menteşe)**\n\n*   KOTEKLI | positive | Aylık kira | 2026-10-24 | Muğla Menteşe Kötekli'de 1+1 eşyalı kiralık daire 26.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   KOTEKLI | unknown | Sezonluk/yıl boyu ayrımı | bilinmiyor | Kötekli'deki kiralık dairelerin sezonluk veya yıl boyu kiralama koşulları hakkında net bilgi bulunmamaktadır.\n*   KOTEKLI | unknown | Aidat/depozito/ek gider | bilinmiyor | Kötekli'deki kiralık daireler için aidat, depozito ve ek giderler hakkında bilgiye ulaşılamamıştır.\n*   KOTEKLI | unknown | Düşük gelirli ve öğrenci için maliyet baskısı | bilinmiyor | Kötekli'nin öğrenci yoğunluğu göz önüne alındığında maliyet baskısı olabileceği düşünülse de, somut veri bulunmamaktadır.\n*   KOTEKLI | unknown | İlan sayısı | bilinmiyor | Kötekli'deki güncel kiralık ilan sayısı hakkında net bir veri bulunmamaktadır.\n\n**EMIRBEYAZIT (Emirbeyazıt, Menteşe)**\n\n*   EMIRBEYAZIT | positive | Aylık kira | 2026-10-22 | Muğla Merkez'de eşyalı 2+1 kiralık daire 28.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   EMIRBEYAZIT | unknown | Sezonluk/yıl boyu ayrımı | bilinmiyor | Emirbeyazıt'taki kiralık dairelerin sezonluk veya yıl boyu kiralama koşulları hakkında net bilgi bulunmamaktadır.\n*   EMIRBEYAZIT | unknown | Aidat/depozito/ek gider | bilinmiyor | Emirbeyazıt'taki kiralık daireler için aidat, depozito ve ek giderler hakkında bilgiye ulaşılamamıştır.\n*   EMIRBEYAZIT | unknown | Düşük gelirli ve öğrenci için maliyet baskısı | bilinmiyor | Emirbeyazıt'ta düşük gelirli ve öğrenciler üzerindeki maliyet baskısı hakkında somut veri bulunmamaktadır.\n*   EMIRBEYAZIT | unknown | İlan sayısı | bilinmiyor | Emirbeyazıt'taki güncel kiralık ilan sayısı hakkında net bir veri bulunmamaktadır.\n\n**MUSLIHITTIN (Muslihittin, Menteşe)**\n\n*   MUSLIHITTIN | positive | Aylık kira | 2026-10-26 | Muğla Menteşe Muslihittin Mahallesinde 3+1 eşyasız kiralık daire 55.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   MUSLIHITTIN | unknown | Sezonluk/yıl boyu ayrımı | bilinmiyor | Muslihittin'deki kiralık dairelerin sezonluk veya yıl boyu kiralama koşulları hakkında net bilgi bulunmamaktadır.\n*   MUSLIHITTIN | unknown | Aidat/depozito/ek gider | bilinmiyor | Muslihittin'deki kiralık daireler için aidat, depozito ve ek giderler hakkında bilgiye ulaşılamamıştır.\n*   MUSLIHITTIN | unknown | Düşük gelirli ve öğrenci için maliyet baskısı | bilinmiyor | Muslihittin'de düşük gelirli ve öğrenciler üzerindeki maliyet baskısı hakkında somut veri bulunmamaktadır.\n*   MUSLIHITTIN | unknown | İlan sayısı | bilinmiyor | Muslihittin'deki güncel kiralık ilan sayısı hakkında net bir veri bulunmamaktadır.\n\n**ORHANIYE (Orhaniye, Menteşe)**\n\n*   ORHANIYE | positive | Aylık kira | 2026-10-15 | Menteşe Orhaniye Mahallesi'nde 2+1 daire/ofis 40.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   ORHANIYE | positive | Aylık kira | 2026-10-06 | Menteşe Orhaniye Mahallesi'nde 3+1 doğalgazlı, kaloriferli, asansörlü daire 37.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   ORHANIYE | positive | Aylık kira | 2026-09-12 | Elitkent Sitesi'nde 2+1 geniş daire 40.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   ORHANIYE | positive | Ulaşım kolaylığı | bilinmiyor | Orhaniye Mahallesi, Muğla merkezine yakın konumuyla ulaşım avantajları sunmaktadır. (yerel haber/dizin)\n*   ORHANIYE | positive | Eğitim ve sağlık olanakları | bilinmiyor | Orhaniye Mahallesi, anaokulundan liseye kadar eğitim kurumları ve özel eğitim olanakları sunmaktadır. (yerel haber/dizin)\n\n**AKYAKA (Akyaka, Ula)**\n\n*   AKYAKA | positive | Aylık kira | 2026-10-20 | Akyaka Merkezi Konumda Eşyalı 2+1 Dubleks Daire 40.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   AKYAKA | positive | Aylık kira | 2026-10-19 | Akyaka'da Eşyalı, Kış Sezonuna Uygun 1+1 Daire 20.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   AKYAKA | positive | Aylık kira | 2026-09-14 | Ula Akyaka Kiralık 1+1 Eşyalı Daire Ortak Havuzlu 35.000 TL olarak listelenmiştir. (yerel haber/dizin)\n*   AKYAKA | positive | Sezonluk/yıl boyu ayrımı | 2026-10-19 | Akyaka'da kış sezonuna uygun eşyalı daire seçenekleri bulunmaktadır. (yerel haber/dizin)\n*   AKYAKA | negative | Maliyet baskısı | 2026-10-28 | Akyaka'da kiralık daire fiyatları ortalama 38.032 TL olup, geçtiğimiz aya göre %6 artış göstermiştir, bu da maliyet baskısına işaret edebilir. (yerel haber/dizin)"
+}

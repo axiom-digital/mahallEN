@@ -5,7 +5,9 @@ import {
   fetchSystemHealth,
 } from './services/api';
 import ReportDashboard from './components/ReportDashboard';
+import ReportChat from './components/ReportChat';
 import { ScoreBarChart, normalizeScoreValue } from './components/ScoreCard';
+import GeminiTestReport from './components/GeminiTestReport';
 
 const NEIGHBORHOOD_VISUALS = {
   kotekli: {
@@ -77,7 +79,7 @@ const PROFILE_CONFIG = {
 
 const QUICK_SUGGESTIONS = ['Kötekli', 'Akyaka', 'Emirbeyazıt', 'Muslihittin', 'Orhaniye'];
 
-export default function App() {
+function TemplateApp() {
   const [neighborhoods, setNeighborhoods] = useState([]);
   const [selectedSlug, setSelectedSlug] = useState('kotekli');
   const [report, setReport] = useState(null);
@@ -85,7 +87,7 @@ export default function App() {
   const [searchInput, setSearchInput] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [districtFilter, setDistrictFilter] = useState('all');
-  const [profileFilter, setProfileFilter] = useState('student');
+  const [profileFilter, setProfileFilter] = useState('');
 
   const [loadingList, setLoadingList] = useState(true);
   const [listError, setListError] = useState(null);
@@ -416,7 +418,7 @@ export default function App() {
               <b>5</b> değerlendirme boyutu
             </div>
             <span className="preview-tag">
-              {health ? `API Aktif · ${health.database_backend}` : 'Muğla Pilot MVP'}
+              {health?.source_mode === 'research' ? 'Kaynaklı araştırma paketi' : health ? `API Aktif · ${health.database_backend}` : 'Muğla Pilot MVP'}
             </span>
           </div>
         </div>
@@ -597,7 +599,7 @@ export default function App() {
 
                     <div className="card-metrics-strip">
                       <span>
-                        Ort. Kira: <b>{Number(place.avg_rent_tl).toLocaleString('tr-TR')} TL</b>
+                        1+1 Kira: <b>{place.avg_rent_tl == null ? 'İlanları incele' : `${Number(place.avg_rent_tl).toLocaleString('tr-TR')} TL`}</b>
                       </span>
                       <span>
                         {activeProfile.buttonLabel}:{' '}
@@ -666,7 +668,7 @@ export default function App() {
               </div>
 
               <div className="profile-description" id="profile-description" aria-live="polite">
-                {activeProfile.description}
+                {health?.source_mode === 'research' && profileFilter ? 'Profil karşılaştırması proje ağırlıklarıyla oluşturulmuş bir senaryodur. Eksik kategori varsa toplam puan hesaplanmaz; ağırlıkları rapordaki grafikten inceleyebilirsin.' : activeProfile.description}
               </div>
             </div>
 
@@ -694,7 +696,7 @@ export default function App() {
                           {item.name.replace(/\s+Mahallesi$/i, '')}
                           <small>
                             {item.district} / {item.city} · Ort.{' '}
-                            {Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL
+                            {item.avg_rent_tl == null ? 'İlanları incele' : `${Number(item.avg_rent_tl).toLocaleString('tr-TR')} TL`}
                           </small>
                         </div>
                         <span className="rank-score">{score !== null ? score : '—'}</span>
@@ -709,7 +711,7 @@ export default function App() {
               </div>
 
               <p className="panel-note">
-                Sıralama mevcut backend uygunluk puanlarıyla güncellenir. Bir mahalleye tıklayarak raporunu ve puan grafiklerini açabilirsin.
+                Önceliklerine göre mahalleleri karşılaştır. Bir mahalleye tıklayarak detayları, kaynakları ve puan grafiklerini açabilirsin.
               </p>
             </div>
           </div>
@@ -807,11 +809,11 @@ export default function App() {
             </details>
             <details>
               <summary>
-                Rapor hangi konuları kapsıyor ve eksik veri nasıl gösteriliyor?
+                Rapor hangi konuları kapsıyor?
                 <span aria-hidden="true">+</span>
               </summary>
               <p>
-                Maliyet, sosyal yaşam, güvenlik ve haberler, afet bilgisi ve ulaşım olmak üzere beş başlık yer alır. Backend üzerinde henüz sayısal puanı bulunmayan bir kategori sıfır (0) puan gibi gösterilmez; açıkça &ldquo;Veri bekleniyor&rdquo; olarak işaretlenir.
+                Kira ve konut maliyeti, sosyal yaşam, mahalle haberleri, deprem bilgisi ve ulaşım olmak üzere beş başlık yer alır. Kaynak ilanları, hatları ve mekânları kendi önceliklerine göre değerlendirebilirsin. Araştırmanın kapsamı ve puanlama yöntemi raporun sonunda açıklanır.
               </p>
             </details>
             <details>
@@ -857,10 +859,14 @@ export default function App() {
         </div>
         <div className="footer-bottom">
           <span>Muğla pilotu · Menteşe &amp; Ula</span>
-          <span>Krem, koyu yeşil ve kiremit tasarım dili · Backend API bağlantılı</span>
+          <span>Kaynaklı mahalle bilgileri · Muğla pilot bölgesi</span>
           <span>Team Axiom / MahallEN</span>
         </div>
       </footer>
+
+      {report?.source_mode === 'research' && report.slug === selectedSlug && (
+        <ReportChat key={report.slug} slug={report.slug} name={report.name} />
+      )}
 
       {/* REPORT SUMMARY DIALOG (Template Modal) */}
       <dialog
@@ -906,7 +912,7 @@ export default function App() {
             </div>
 
             <p className="demo-notice">
-              Bu özet mevcut backend verilerini gösterir. Eksik kategori verisi sıfır (0) puan olarak değerlendirilmez.
+              Bu özet seçilen mahallenin kayıtlı verilerini gösterir. Eksik kategori verisi sıfır (0) puan olarak değerlendirilmez.
             </p>
 
             <ScoreBarChart scores={report.scores} idPrefix="dialog" />
@@ -941,4 +947,9 @@ export default function App() {
       </dialog>
     </div>
   );
+}
+
+export default function App() {
+  return new URLSearchParams(window.location.search).get('view') === 'legacy-gemini-test'
+    ? <GeminiTestReport /> : <TemplateApp />;
 }

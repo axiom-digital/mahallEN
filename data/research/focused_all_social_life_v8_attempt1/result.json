@@ -1,0 +1,1068 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "all-pilots",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:23:11.175797+00:00",
+  "finished_at": "2026-10-28T18:23:43.778426+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "social_life"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Kötekli Menteşe Muğla restoran",
+    "Kötekli Menteşe Muğla fast food",
+    "Kötekli Menteşe Muğla kafe",
+    "Kötekli Menteşe Muğla bar pub canlı müzik gece kulübü",
+    "Kötekli Menteşe Muğla market",
+    "Kötekli Menteşe Muğla park",
+    "Kötekli Menteşe Muğla kültür merkezi",
+    "Emirbeyazıt Menteşe Muğla restoran",
+    "Emirbeyazıt Menteşe Muğla fast food",
+    "Emirbeyazıt Menteşe Muğla kafe",
+    "Emirbeyazıt Menteşe Muğla bar pub canlı müzik gece kulübü",
+    "Emirbeyazıt Menteşe Muğla market",
+    "Emirbeyazıt Menteşe Muğla park",
+    "Emirbeyazıt Menteşe Muğla kültür merkezi",
+    "Muslihittin Menteşe Muğla restoran",
+    "Muslihittin Menteşe Muğla fast food",
+    "Muslihittin Menteşe Muğla kafe",
+    "Muslihittin Menteşe Muğla bar pub canlı müzik gece kulübü",
+    "Muslihittin Menteşe Muğla market",
+    "Muslihittin Menteşe Muğla park",
+    "Muslihittin Menteşe Muğla kültür merkezi",
+    "Orhaniye Menteşe Muğla restoran",
+    "Orhaniye Menteşe Muğla fast food",
+    "Orhaniye Menteşe Muğla kafe",
+    "Orhaniye Menteşe Muğla bar pub canlı müzik gece kulübü",
+    "Orhaniye Menteşe Muğla market",
+    "Orhaniye Menteşe Muğla park",
+    "Orhaniye Menteşe Muğla kültür merkezi",
+    "Akyaka Ula Muğla restoran",
+    "Akyaka Ula Muğla fast food",
+    "Akyaka Ula Muğla kafe",
+    "Akyaka Ula Muğla bar pub canlı müzik gece kulübü",
+    "Akyaka Ula Muğla market",
+    "Akyaka Ula Muğla park",
+    "Akyaka Ula Muğla kültür merkezi"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzrWys8TVgE1Ch2rSeMogha3sZb3p0EExi67Ti2SV-JU_8lDAFHSL5SkSTi09i2ns_NkEGtWsKC9f4aQqdPPxHXNX8ye1D70iwxCI8PbDGftqL2OS5R0Qw5MUfzEsjc_Zf09SGube9hUjU3-kpLtLmOBqS",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBq1qwjcoceVLpHmGXZ8CXIVk7cLcnEfaIKMnuVmIMkFSbHlJAMYl7Q54yLL1MM1sLZIFHDY-yp5-86HcMMTwYDVLViKQKHCxZDXmLVSer33teJeiT4vSIsOOS97JnvMubhD09zaMyNQULZnaXf6H458F0YPeRQz9v1Z5OrDZWES6OcwhdAQ==",
+      "title": "restoranim.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcnMs2dBp1RGo6zeaTZoeXgY9fR7JqSKCn5HTUznBoguXIaqVlx2D1kZRg4EgeHRxPi1wUVnBRPYbR7CKV-V1rltIJjj-aOD1x-lHFpRJyGBrKYNr6AJNtVsARnXmHbLTiepeovExLy8E1i3OR1XHZoOKC2Q==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4tlDKEoNsVQ4Wks6ZigkXK3w1SE-DpJLXdydwT_LsivzVHNJT6aCGputZg9Ls13tMyZb8bwaovNkdSqYgACHIRpH9XcYZ6Ys9BmnLTxIcLJwXt8moDjOciLaRtVLNsZS6NHh3gNLErEVH0yNMTA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNotQYMEwtAWVeaecRNtYYMW-TOb8-P1ZK71RFw9318gj44vQHqER24NZSV9EsAiVOm2B098isAYhtrFaID2fZo4SB1ep06GbTMy0jlR8v_fOo6IkbS_VkANOaryPxqZJqVy7HtXCbRXPLLw==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpUwpP9hJZPQXGQdCAY2Y6t-zzW8NWC3Ti_sm-4oANEfL-fugOy6xcan9vBuKvn9GCsMA1Kxkj3KspS5L1C5mYYA-SjQMUWD18hB55NK7zyIdeW-UdIxu2yPo7OC-kFVh5iLIJTUg353FjHYxtekvxLzf01xeBEkii9R_nahqHFHTAZ3-LFMABMg==",
+      "title": "migros.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu1hqRALP1Tffh0f12_U0gbfwJmc2NU2H7XrBBklBU5rqdaytHxS5NN8OEoXIAVxi9w__MoV7x7GpH1gvVf_lrYWEJClh5dL5zamqxTXqs6prTXV9R0VFw5-A6AwOzgmI2YVkYw5IOPsS9HGRIyt0hnGHzZ2HWnSyS9MQhVs9GxaRduNLK--ONCNLW",
+      "title": "restoranim.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnKxUTOU5T8-CeU4W-mhrHSCyPbmdFVBt4IYBYAtXPzVcwdxAmKVtmZuiXP3uwEIWFVeUklWzeV5kVmNSoKzitK67GEYeaU3f0iqmBuLl6vqIwIH6q7aLpZ5BhZ4DmiYFbt0IVPtVWjVaYCXQ09elJ4c3mGXTOeV20DQtqmdLH2PSi-lL1qxmDQCoxs6QAKiM=",
+      "title": "nelerimeshur.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQmU5tllUpFWZrdf1LBuUB87syGflpI1IBKBdZuGt0QrMUaPLaKEKiWjQeNSOYqddNkyiMu7VFVnFw1TJ7VDfsAfMuTWxUOh5ZsMv_bhoC6pvIKZOHa7FEfpMxlKw75RrZqpW90c_7AGW5KCzOOarHu8utsC4=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1MrKC0D6tIKTVcXb4AGlwNfYt5PyhswHBM4qYoUPO1EWqs7_6nEt4hEwyFur9JYq3D1DbegQKEgft7MyvIwHgx9wUPgLdpR_mA9f1wBxMcSMg3CTtDXC5u3tbKRZ17luC1gUukH8ve73M8vzgEqdr9lHMCbAf7_m95MFWzcw1nTCg",
+      "title": "endeksa.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDzJUgD5IhA72BoEMJWxruu4KItD5RqLhFgtRBzMAV9Ic_M5Erb-4Fz6MZOhrOw8zark1wOxjNLeMzVRvKwDliidBzNjb34nOfEliKPTojNOvdwYL7gPmDO2OzzhiUhmiuK2CcIGk3DPRlPGu1AXcKNho=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8qIWYjwMn4MD6e1DzKSPqjs0RZGKfNhWthAXmG62L7sJb5LiquOw92NMlDw4i_zeq20WIimnK_rOEin9HO9lMvqsjRbHWtWmstvk80bhAMlwSns883WAjJ1pc6TVz5-tY3-KdXVV4RKR75hEt-kk=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRQB3HYwC0QYAm04_PEWAX60dy4tLK64pFDeYrtjnHCd8550sCbVibPGRsmmPAb0cbgT7_dBbU-JFR-GAU7DUgAOtkkzHwM6LL5xXqas8BRj90tFu0xVBVzmNJlzNMVgPI6eGVSoEOaZZuxNRSjHqrPwKK4xBMOg==",
+      "title": "universitev.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKh10G6vr9tyuepvK7XfEG619edVkrjbu-Poxwkf2fEBzPDkk_GEaXnCr5DXEO73Ja9N4bSEGWYjJkn3u14-51OFY40yrXKXAjmRaIYFt6oTWZsuEhQN1IajXOd8vYJxS4i2ccqKkyPwKpbKUIbQ==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJPkulYVeBEJ_jUXqf6CNOKaTk-kQVsnAL0hazkuPtU4eh1n4IcNWg8MjsKdzXxYUH1XPe_ZwKNH_nuShMqZZ6EgzdD0ZZ4CbEmXuGeoPxpXHPI8Fyu9kpC_6N9H7PX9OHJ8G0HF1WGgjrpEgU_3tClKHvHJxv9A==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4WtjguJ3-4tG-d2-7QWg01VjHDPKlEmGhB-ex_85rxGB9yb8z340rwlCHJN494A3dhHJ0jc6uKZO3mKPQ3083eZd0UPrTPl9234EqxaY_Q_ZmsEaFYCDxKNys",
+      "title": "dijital.link"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxNmWz27fEzsPH_1_6yMvYblYXpIce6oz4VNvyXAjR4nRSXa9teoaGMVmYOYjDlcQIIJ0ReK3BEQV2UV3hqS9MF1B2YhuZfOyEMlA7WMdJN19lbshS5b7zeJo3iq-b0MA=",
+      "title": "dijital.link"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENYcrxpcgTOug9egdHy11a7tPghwiiR71szRpf0OfFJVcw2i5RABWqNvqD7m3ilyH8eCqdKMg91XKYH8HKgwNHX5awlx7n5JFoMR9VPD8YGqC2KmQ8O5xyTHNeFiPCqItqLfaTPTIltXoUdQ==",
+      "title": "bulurum.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWgbQKWzaupWyCx7CU_KYh7wwwt7HlJXSSrwzIx8jDbIkjEOKUrXmx3BAZg2T7R6tiVRIdjsF67TVDMNv5RXEBAB7BHCw3rrS2BZQBPdAYqAdaoRG5ucRsgsJZB_rIcQ8Ubn0WrEsXhNeCofM=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGt8_R0TBYW1HZx19XYQeYDYEnCGLujg_gyE6wEGKbMSApXU2n7ZT9WjmvMz0CuqUZxlnxNN-qo7ZyySA91PPXXt1bQj7v9FUll-47xL_TqMKY07XWBhOOHYmrI9EGI-zTPpRKbD4F-kiFIfFmEgTfvd1FNzA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjquW1G8iFbsK0D1u_pLDQ0zncsJYugqs8VqapBG8Btbi-oAwJT69gfNv1DF8ZEuztrZFTM8zUx-kMEPUPKR-yUCw6MKClsvc6q3kHO4Oakassagvbo3iFda3yasJHQ2xiTgT3WSi_cPpcyKw1MGL70KxJvXS_syPrwhtgqAe29aEuy4OxpQ==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVydin1SQ0J04o-EeoMQkaV2aTayJfyU2sEZ11-v_7JZxN22j1qWiJTdQxT6E7KUJmZUvymGSfuNJu5S3e-tOKAb-Bp9smZAyAmrez70MTGKKDC7Hpd5P3lnAA3kVT-mxVVUC0_sx2VC9d5pf_QuyOPHWRYv3DmSQM3Xr6o-RwZ24LkA==",
+      "title": "turgutreisrehberi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEprRSegFBZxyUbk_MK7t2XLCJiqd51D-MW4OcAF3tBcoWozMFIgFFkNDZ2fM4c6qtQcBzkdsASXJIhp0jnSruprGYGGF7aswZndV4qK9mvF90qKssXVuKnB6ukFSTjInT3iRZqzQ8mNKHOiQ==",
+      "title": "mekan.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZvNW-jKJxXe3nOVp879jD7u_bOlbIka6hlk0nL8vo7E32GE9cxbyHTk-444sQ-TsqiYtP6f3KKuTyvg-aYVVAAgDhBRi12Wq9MyvPwL7gEFjNsbKUhYadrZsCCwhvdty7mW6Z6e7iMF_Sio0xreaUnPmj-3siHwYpxg4H2SP32tE0",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUx7cVG9qrJFnyBIxvz0rN7hOxpeXKNC3qWLeD6bnAiEyEAvr3p5nqG6l6FLHR0GXHuqVqhuVoNzJ4Q9cZE2y0-slSAyoF2Am8Gf_DRRV4erBzOgTVPHusXYAQQh7PzI9NLinIl5pA6iSlfiyQE9GRSVOMpw==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEljJjfSMttMDiamYRkObZfKdheNEcgRB9OVmtjxgppRNmPORlu3orx2yVJTJ4ybesYtZeGaN3l4TndWkmYoBmeh9NJV_SZp9CPy-6YNl9a7vSg_bwVqVUueSXJXO3B0F9VcpfoIgdrun4oNEaC6BcP0uYOdi0=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFoCyvb5txPbM1xWCYLApZB7xUh6tnhqho-BfnA7OeOcgydWrO9708C1RX8JeKIc7XXE0xgfH_TuOYkLlMEnqkjc015QC35PeyzREi5ohBEWnHfRFzP8nAH-zQ5SfhoWSCpgbYWWZwJcwnwmhRQw_Bhdc0Av9bqGJeFfGGyzGa0lxPPI80RGm6Msm9pA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlA6yB4V1lYuO2_T5wfpnZY65TOfc5_IZ8Ui1CuaFtaV9eXP00MSTAtIA5C1APnlZCkIGjXLv4P3TykJTG5m4_35ic9yzsY3VlZjeH4ICHgSWX7QY17ONgGu4WZwwSNSA5vclAjgB19-T34itSPsfbCEZ59ET0qLF9",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJkx7aFYpKXpAn_oRMFQjITi7au0GVAZoPRPiq5H2biOuNJYAeqctIOPbyHSE4A7MVbXzmvjXL7Ugfjl5K5biSmJ8_RCUehvmrlcbCS9DrUWIRyb_y0PC0Slycl0aYeyiHt2G2NZPTPHRj3pA=",
+      "title": "com.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEK5n4aWmm8LK-jVOv4w29s0lxOVNI1Wo35zPxn0wKK38nF1zc9Ry46Gwxut2eZfr0KcSslwn8_vAVQWCq-lAUs0LrSbkcLfVXF2LdM1cZMgMZDx6j5nYT6Ix-2s5rXu7wLsqL77sOQoDDJvoD_kCwF8OYo0FLk",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsuJl1Zk548CzK826dGa3dJNxlbbEV8VRFzerjOoI0ghTopWMayCFSiwiCSjFypp1YgMlWHWYbJdbRPODEDjGJLuO66lVE5uTIOLIbjRmRrUjq3dbZHdQ_1AUQ0BQh2Ldh-AfOSmJ2FME0_dln_Lf8fQ==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBZBsZI3VTSP4c2axGFwjhwGlIXAOcFarg8_3HyfaYhcpH18DkyJFE6ecRcnQeVPfnnbobmADHlUD9BIPm5wOt_EMrlrbJX5Nx5jr16PFC7uVsY2jaxo7T3qpv-ni9cegQhXB2qr84MDkM_ciN3uBnRbdCDBxE",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzoj11bmHUsoDECWaolg5Z7wPO4hEsPbri0MdNg52-7tqV5_0RLarbRp7tUdRNSwdcgUtvaxVZijvdNY0CH1ooufvEnGp0lpIH41bS4kn-JUN8BbknfkzXvAe00LuYqtcHnjrbmu_mRXG7GGj5gJP9Bgs1o5Gw8-Aj_Q==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyaT1BTQQLqVT3qyFXuJxFY8-OlgMPzTLISE5JKR2vxmDn7VoaOhWJxLMXePpObq7nn3p8NCPvNHmBXflUHN-YvzPR2dcFpKQMzq4yGjidKqLtnrk7_7IxzJ0HubJessMe6l11T2K5wTuLFoooNSfO-A==",
+      "title": "menuburada.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBN02jjRGyr5u-fI7-AhJ5pfI4VPE8cA25Tf6Ki8UJD-LAGv1CDqEuXriMiS4txETwaRptr-cRH7uSpUdxHN875aw6lmNr-KKQkOqvHNg8X1YqMhhv0hZFtF_YCcwV",
+      "title": "akyakasucaferestaurant.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8-Z_0dDTO1gX1bXjIgrirad6xpWrILzjwQyIOiBaBTyMBDdvxZutrSVJTT6o_VLUWoMUPqSXuwyzPzLvy3lFn6cDbCqB4g6AXt-wIq1pq6POhF2ZRjHg4nLEXbtscElwHN554FIKW8Dn2",
+      "title": "takoz.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDwciqMa-bJRvos8eH1tFyRq36EYhbS9YKnPyTxHwXAC77wQLTa3nvzcg2FxXojk18QykhlToMIAUXy9pRpfFnCWK5XuMA7naxP5ydNxTrM6a2X_KXezPBvGqfy1Fc5oR0bThwGK3m5qXDx_uvtsDK8rKRGGo=",
+      "title": "restoranim.net"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgWbPTMSL7gTz_Jln82KDQz20lyPOjP5MOimp6Jlxupwma5x2R4doY3aCOSpTkA5nJdvHG1HrSVEqEWtbO6snuQ6c4nk_PKDjquHTkhuTI3mrWotFreniWBIADJjtfs3h0zZLekUMojlATLtzsmOR9OeCIJekgPv8ehw==",
+      "title": "wanderlog.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6RipTlm9x44e65roH_tYnLOv134X5qUrQRoH9dSZ2FAOA9BwqvlGAf4szMGscHwxZJQ0LN7u0xIoGFCbFWRyHoJ91CIdvE9fuz6k7ZqzQ250qJSjOIQXKHSfSecEZRePYZsXQRwXH8N0OkMY-nj5mhOjxR883TVEF40gmhf",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq8Scs12z0zeZXrJbzsrWo4y26RjD67iWYtqA5uc6lvzUXcyl2ieCv2bRSwoeJDFCJzxXbqah8EzFrRaZgbvOe0-VgV2ec741UP8jDj4euxWEjtH-uoLbTaZ99xeGvyvjvQe4JXvXGnttlzwv38rJotc5w56XjHkHgkOugPhI=",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFggc9esE5knBmeEKIyGVy9s5zDPXv2BZuPxqwuUkOG3aBo7RDt8wYoZGx4gmZlUr1hhsSLS_YKNYY3H4fyeZPnLREJ8ebEv1ORikEj_SWvI7_IV9B6Bm2wn9Rg_XswZy_OL_PxPF_pRfKM00_sq95Se8wS_PNDXf1vdK0=",
+      "title": "com.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjLWmrXyDZnj44T_MwAeHsThrWnY_7wmsGmkk45ljvrE9XZ4mE5zdl0aUh-1C3OQ4iZ1YGKJIpYKNdmTznCR8eWBmhCHhrV2JSPK3cwjFMRLEpjjVfIonReoAWFIv0IBztT9kcWtsq5DwYFka-xdddbGjW-Asp9iJQ8zVxi2mzbLCgc4AHYpeDzA==",
+      "title": "serviskayitlistesi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYov21vmn_SGoIV-mxPeOrJR8UU2YIe_wp3DcWR-j11GOcfEHq48WnsMxTwLo9s3SZvQ-PqpcMuI0aZeLO90mH2gQemFmCNw-RTVBtjbOVXn0WWjfLSLUUXc8pMNE7AqoJaI1Law1hZmTuADZ5_dzwS1c=",
+      "title": "com.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTktiX0hncCpr797XRDiDJuCocdVc3HCSZOUSrV04saZ1fVSBGFJ_CwPZRtlhJLhTlkfIPzFrf6XwPiSv_jq1UPfflfDmDk1GbIBhi7W8gtfk-a_zhXjM_",
+      "title": "muglavakfi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi7Xm5zKY2u5qRMcYMzPFrIlBOxahpgJG3JQFYvRZibVpL44r_TYK-6OoZiFsas090qRQfy-R7F19vlR-9_bA4M_NouTL6sOJXxmFIN9bgU2CODItD2UcfqcoVcI8CCYya3-lOFC_YcWhxb7vgK8GzYF6k",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjDLGale4dvVCGv5nU7Y8jMQql4rePHn5nsHIMXikGNBJrijl9Gf1uhljLOsXdx36IQ_D_16O_1TTR2Jy3D9B39qMTS7zExTYFWpGVXe8RLsoD0rBgaETC1YC0f98-xXCVMnUw1mJWJz58kGZIdUF2LRTO",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgZS-6cauks8bf1kF9yKrY7NJOyhVj9EnZkr32cJ8s5WYTSKlAy_b4PJwzziftQW1hGjx2SD0MgRzjr3lJaU9bIEjhDIAvBGYLoao0DDetFB_mACv6IEvOizLh8n8v8nogIZxY6IHJWrro-uShAjg=",
+      "title": "bulurum.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3DtYPbjR_K6wL4qnNh3A-Xs29_olJj6FVFIBT_XueaQdg4mXjfpU7vXYnqPg6K2hQx2DKo3p6jEY6C8vU28Rha0Uf1iZ5XMUHaq8r3pjh9dMxz-cK0BnEzoDADm0rDWzIuvVmwA6mhhW38U07elY5sqWQBi8A__M=",
+      "title": "firmaatlas.com"
+    }
+  ],
+  "grounding_support_count": 46,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzrWys8TVgE1Ch2rSeMogha3sZb3p0EExi67Ti2SV-JU_8lDAFHSL5SkSTi09i2ns_NkEGtWsKC9f4aQqdPPxHXNX8ye1D70iwxCI8PbDGftqL2OS5R0Qw5MUfzEsjc_Zf09SGube9hUjU3-kpLtLmOBqS"
+        }
+      },
+      {
+        "web": {
+          "title": "restoranim.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBq1qwjcoceVLpHmGXZ8CXIVk7cLcnEfaIKMnuVmIMkFSbHlJAMYl7Q54yLL1MM1sLZIFHDY-yp5-86HcMMTwYDVLViKQKHCxZDXmLVSer33teJeiT4vSIsOOS97JnvMubhD09zaMyNQULZnaXf6H458F0YPeRQz9v1Z5OrDZWES6OcwhdAQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcnMs2dBp1RGo6zeaTZoeXgY9fR7JqSKCn5HTUznBoguXIaqVlx2D1kZRg4EgeHRxPi1wUVnBRPYbR7CKV-V1rltIJjj-aOD1x-lHFpRJyGBrKYNr6AJNtVsARnXmHbLTiepeovExLy8E1i3OR1XHZoOKC2Q=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4tlDKEoNsVQ4Wks6ZigkXK3w1SE-DpJLXdydwT_LsivzVHNJT6aCGputZg9Ls13tMyZb8bwaovNkdSqYgACHIRpH9XcYZ6Ys9BmnLTxIcLJwXt8moDjOciLaRtVLNsZS6NHh3gNLErEVH0yNMTA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNotQYMEwtAWVeaecRNtYYMW-TOb8-P1ZK71RFw9318gj44vQHqER24NZSV9EsAiVOm2B098isAYhtrFaID2fZo4SB1ep06GbTMy0jlR8v_fOo6IkbS_VkANOaryPxqZJqVy7HtXCbRXPLLw=="
+        }
+      },
+      {
+        "web": {
+          "title": "migros.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpUwpP9hJZPQXGQdCAY2Y6t-zzW8NWC3Ti_sm-4oANEfL-fugOy6xcan9vBuKvn9GCsMA1Kxkj3KspS5L1C5mYYA-SjQMUWD18hB55NK7zyIdeW-UdIxu2yPo7OC-kFVh5iLIJTUg353FjHYxtekvxLzf01xeBEkii9R_nahqHFHTAZ3-LFMABMg=="
+        }
+      },
+      {
+        "web": {
+          "title": "restoranim.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu1hqRALP1Tffh0f12_U0gbfwJmc2NU2H7XrBBklBU5rqdaytHxS5NN8OEoXIAVxi9w__MoV7x7GpH1gvVf_lrYWEJClh5dL5zamqxTXqs6prTXV9R0VFw5-A6AwOzgmI2YVkYw5IOPsS9HGRIyt0hnGHzZ2HWnSyS9MQhVs9GxaRduNLK--ONCNLW"
+        }
+      },
+      {
+        "web": {
+          "title": "nelerimeshur.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnKxUTOU5T8-CeU4W-mhrHSCyPbmdFVBt4IYBYAtXPzVcwdxAmKVtmZuiXP3uwEIWFVeUklWzeV5kVmNSoKzitK67GEYeaU3f0iqmBuLl6vqIwIH6q7aLpZ5BhZ4DmiYFbt0IVPtVWjVaYCXQ09elJ4c3mGXTOeV20DQtqmdLH2PSi-lL1qxmDQCoxs6QAKiM="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQmU5tllUpFWZrdf1LBuUB87syGflpI1IBKBdZuGt0QrMUaPLaKEKiWjQeNSOYqddNkyiMu7VFVnFw1TJ7VDfsAfMuTWxUOh5ZsMv_bhoC6pvIKZOHa7FEfpMxlKw75RrZqpW90c_7AGW5KCzOOarHu8utsC4="
+        }
+      },
+      {
+        "web": {
+          "title": "endeksa.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1MrKC0D6tIKTVcXb4AGlwNfYt5PyhswHBM4qYoUPO1EWqs7_6nEt4hEwyFur9JYq3D1DbegQKEgft7MyvIwHgx9wUPgLdpR_mA9f1wBxMcSMg3CTtDXC5u3tbKRZ17luC1gUukH8ve73M8vzgEqdr9lHMCbAf7_m95MFWzcw1nTCg"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDzJUgD5IhA72BoEMJWxruu4KItD5RqLhFgtRBzMAV9Ic_M5Erb-4Fz6MZOhrOw8zark1wOxjNLeMzVRvKwDliidBzNjb34nOfEliKPTojNOvdwYL7gPmDO2OzzhiUhmiuK2CcIGk3DPRlPGu1AXcKNho="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8qIWYjwMn4MD6e1DzKSPqjs0RZGKfNhWthAXmG62L7sJb5LiquOw92NMlDw4i_zeq20WIimnK_rOEin9HO9lMvqsjRbHWtWmstvk80bhAMlwSns883WAjJ1pc6TVz5-tY3-KdXVV4RKR75hEt-kk="
+        }
+      },
+      {
+        "web": {
+          "title": "universitev.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRQB3HYwC0QYAm04_PEWAX60dy4tLK64pFDeYrtjnHCd8550sCbVibPGRsmmPAb0cbgT7_dBbU-JFR-GAU7DUgAOtkkzHwM6LL5xXqas8BRj90tFu0xVBVzmNJlzNMVgPI6eGVSoEOaZZuxNRSjHqrPwKK4xBMOg=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKh10G6vr9tyuepvK7XfEG619edVkrjbu-Poxwkf2fEBzPDkk_GEaXnCr5DXEO73Ja9N4bSEGWYjJkn3u14-51OFY40yrXKXAjmRaIYFt6oTWZsuEhQN1IajXOd8vYJxS4i2ccqKkyPwKpbKUIbQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJPkulYVeBEJ_jUXqf6CNOKaTk-kQVsnAL0hazkuPtU4eh1n4IcNWg8MjsKdzXxYUH1XPe_ZwKNH_nuShMqZZ6EgzdD0ZZ4CbEmXuGeoPxpXHPI8Fyu9kpC_6N9H7PX9OHJ8G0HF1WGgjrpEgU_3tClKHvHJxv9A=="
+        }
+      },
+      {
+        "web": {
+          "title": "dijital.link",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4WtjguJ3-4tG-d2-7QWg01VjHDPKlEmGhB-ex_85rxGB9yb8z340rwlCHJN494A3dhHJ0jc6uKZO3mKPQ3083eZd0UPrTPl9234EqxaY_Q_ZmsEaFYCDxKNys"
+        }
+      },
+      {
+        "web": {
+          "title": "dijital.link",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxNmWz27fEzsPH_1_6yMvYblYXpIce6oz4VNvyXAjR4nRSXa9teoaGMVmYOYjDlcQIIJ0ReK3BEQV2UV3hqS9MF1B2YhuZfOyEMlA7WMdJN19lbshS5b7zeJo3iq-b0MA="
+        }
+      },
+      {
+        "web": {
+          "title": "bulurum.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENYcrxpcgTOug9egdHy11a7tPghwiiR71szRpf0OfFJVcw2i5RABWqNvqD7m3ilyH8eCqdKMg91XKYH8HKgwNHX5awlx7n5JFoMR9VPD8YGqC2KmQ8O5xyTHNeFiPCqItqLfaTPTIltXoUdQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWgbQKWzaupWyCx7CU_KYh7wwwt7HlJXSSrwzIx8jDbIkjEOKUrXmx3BAZg2T7R6tiVRIdjsF67TVDMNv5RXEBAB7BHCw3rrS2BZQBPdAYqAdaoRG5ucRsgsJZB_rIcQ8Ubn0WrEsXhNeCofM="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGt8_R0TBYW1HZx19XYQeYDYEnCGLujg_gyE6wEGKbMSApXU2n7ZT9WjmvMz0CuqUZxlnxNN-qo7ZyySA91PPXXt1bQj7v9FUll-47xL_TqMKY07XWBhOOHYmrI9EGI-zTPpRKbD4F-kiFIfFmEgTfvd1FNzA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjquW1G8iFbsK0D1u_pLDQ0zncsJYugqs8VqapBG8Btbi-oAwJT69gfNv1DF8ZEuztrZFTM8zUx-kMEPUPKR-yUCw6MKClsvc6q3kHO4Oakassagvbo3iFda3yasJHQ2xiTgT3WSi_cPpcyKw1MGL70KxJvXS_syPrwhtgqAe29aEuy4OxpQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "turgutreisrehberi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVydin1SQ0J04o-EeoMQkaV2aTayJfyU2sEZ11-v_7JZxN22j1qWiJTdQxT6E7KUJmZUvymGSfuNJu5S3e-tOKAb-Bp9smZAyAmrez70MTGKKDC7Hpd5P3lnAA3kVT-mxVVUC0_sx2VC9d5pf_QuyOPHWRYv3DmSQM3Xr6o-RwZ24LkA=="
+        }
+      },
+      {
+        "web": {
+          "title": "mekan.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEprRSegFBZxyUbk_MK7t2XLCJiqd51D-MW4OcAF3tBcoWozMFIgFFkNDZ2fM4c6qtQcBzkdsASXJIhp0jnSruprGYGGF7aswZndV4qK9mvF90qKssXVuKnB6ukFSTjInT3iRZqzQ8mNKHOiQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZvNW-jKJxXe3nOVp879jD7u_bOlbIka6hlk0nL8vo7E32GE9cxbyHTk-444sQ-TsqiYtP6f3KKuTyvg-aYVVAAgDhBRi12Wq9MyvPwL7gEFjNsbKUhYadrZsCCwhvdty7mW6Z6e7iMF_Sio0xreaUnPmj-3siHwYpxg4H2SP32tE0"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUx7cVG9qrJFnyBIxvz0rN7hOxpeXKNC3qWLeD6bnAiEyEAvr3p5nqG6l6FLHR0GXHuqVqhuVoNzJ4Q9cZE2y0-slSAyoF2Am8Gf_DRRV4erBzOgTVPHusXYAQQh7PzI9NLinIl5pA6iSlfiyQE9GRSVOMpw=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEljJjfSMttMDiamYRkObZfKdheNEcgRB9OVmtjxgppRNmPORlu3orx2yVJTJ4ybesYtZeGaN3l4TndWkmYoBmeh9NJV_SZp9CPy-6YNl9a7vSg_bwVqVUueSXJXO3B0F9VcpfoIgdrun4oNEaC6BcP0uYOdi0="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFoCyvb5txPbM1xWCYLApZB7xUh6tnhqho-BfnA7OeOcgydWrO9708C1RX8JeKIc7XXE0xgfH_TuOYkLlMEnqkjc015QC35PeyzREi5ohBEWnHfRFzP8nAH-zQ5SfhoWSCpgbYWWZwJcwnwmhRQw_Bhdc0Av9bqGJeFfGGyzGa0lxPPI80RGm6Msm9pA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlA6yB4V1lYuO2_T5wfpnZY65TOfc5_IZ8Ui1CuaFtaV9eXP00MSTAtIA5C1APnlZCkIGjXLv4P3TykJTG5m4_35ic9yzsY3VlZjeH4ICHgSWX7QY17ONgGu4WZwwSNSA5vclAjgB19-T34itSPsfbCEZ59ET0qLF9"
+        }
+      },
+      {
+        "web": {
+          "title": "com.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJkx7aFYpKXpAn_oRMFQjITi7au0GVAZoPRPiq5H2biOuNJYAeqctIOPbyHSE4A7MVbXzmvjXL7Ugfjl5K5biSmJ8_RCUehvmrlcbCS9DrUWIRyb_y0PC0Slycl0aYeyiHt2G2NZPTPHRj3pA="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEK5n4aWmm8LK-jVOv4w29s0lxOVNI1Wo35zPxn0wKK38nF1zc9Ry46Gwxut2eZfr0KcSslwn8_vAVQWCq-lAUs0LrSbkcLfVXF2LdM1cZMgMZDx6j5nYT6Ix-2s5rXu7wLsqL77sOQoDDJvoD_kCwF8OYo0FLk"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsuJl1Zk548CzK826dGa3dJNxlbbEV8VRFzerjOoI0ghTopWMayCFSiwiCSjFypp1YgMlWHWYbJdbRPODEDjGJLuO66lVE5uTIOLIbjRmRrUjq3dbZHdQ_1AUQ0BQh2Ldh-AfOSmJ2FME0_dln_Lf8fQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBZBsZI3VTSP4c2axGFwjhwGlIXAOcFarg8_3HyfaYhcpH18DkyJFE6ecRcnQeVPfnnbobmADHlUD9BIPm5wOt_EMrlrbJX5Nx5jr16PFC7uVsY2jaxo7T3qpv-ni9cegQhXB2qr84MDkM_ciN3uBnRbdCDBxE"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzoj11bmHUsoDECWaolg5Z7wPO4hEsPbri0MdNg52-7tqV5_0RLarbRp7tUdRNSwdcgUtvaxVZijvdNY0CH1ooufvEnGp0lpIH41bS4kn-JUN8BbknfkzXvAe00LuYqtcHnjrbmu_mRXG7GGj5gJP9Bgs1o5Gw8-Aj_Q=="
+        }
+      },
+      {
+        "web": {
+          "title": "menuburada.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyaT1BTQQLqVT3qyFXuJxFY8-OlgMPzTLISE5JKR2vxmDn7VoaOhWJxLMXePpObq7nn3p8NCPvNHmBXflUHN-YvzPR2dcFpKQMzq4yGjidKqLtnrk7_7IxzJ0HubJessMe6l11T2K5wTuLFoooNSfO-A=="
+        }
+      },
+      {
+        "web": {
+          "title": "akyakasucaferestaurant.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBN02jjRGyr5u-fI7-AhJ5pfI4VPE8cA25Tf6Ki8UJD-LAGv1CDqEuXriMiS4txETwaRptr-cRH7uSpUdxHN875aw6lmNr-KKQkOqvHNg8X1YqMhhv0hZFtF_YCcwV"
+        }
+      },
+      {
+        "web": {
+          "title": "takoz.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8-Z_0dDTO1gX1bXjIgrirad6xpWrILzjwQyIOiBaBTyMBDdvxZutrSVJTT6o_VLUWoMUPqSXuwyzPzLvy3lFn6cDbCqB4g6AXt-wIq1pq6POhF2ZRjHg4nLEXbtscElwHN554FIKW8Dn2"
+        }
+      },
+      {
+        "web": {
+          "title": "restoranim.net",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDwciqMa-bJRvos8eH1tFyRq36EYhbS9YKnPyTxHwXAC77wQLTa3nvzcg2FxXojk18QykhlToMIAUXy9pRpfFnCWK5XuMA7naxP5ydNxTrM6a2X_KXezPBvGqfy1Fc5oR0bThwGK3m5qXDx_uvtsDK8rKRGGo="
+        }
+      },
+      {
+        "web": {
+          "title": "wanderlog.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgWbPTMSL7gTz_Jln82KDQz20lyPOjP5MOimp6Jlxupwma5x2R4doY3aCOSpTkA5nJdvHG1HrSVEqEWtbO6snuQ6c4nk_PKDjquHTkhuTI3mrWotFreniWBIADJjtfs3h0zZLekUMojlATLtzsmOR9OeCIJekgPv8ehw=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG-6RipTlm9x44e65roH_tYnLOv134X5qUrQRoH9dSZ2FAOA9BwqvlGAf4szMGscHwxZJQ0LN7u0xIoGFCbFWRyHoJ91CIdvE9fuz6k7ZqzQ250qJSjOIQXKHSfSecEZRePYZsXQRwXH8N0OkMY-nj5mhOjxR883TVEF40gmhf"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq8Scs12z0zeZXrJbzsrWo4y26RjD67iWYtqA5uc6lvzUXcyl2ieCv2bRSwoeJDFCJzxXbqah8EzFrRaZgbvOe0-VgV2ec741UP8jDj4euxWEjtH-uoLbTaZ99xeGvyvjvQe4JXvXGnttlzwv38rJotc5w56XjHkHgkOugPhI="
+        }
+      },
+      {
+        "web": {
+          "title": "com.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFggc9esE5knBmeEKIyGVy9s5zDPXv2BZuPxqwuUkOG3aBo7RDt8wYoZGx4gmZlUr1hhsSLS_YKNYY3H4fyeZPnLREJ8ebEv1ORikEj_SWvI7_IV9B6Bm2wn9Rg_XswZy_OL_PxPF_pRfKM00_sq95Se8wS_PNDXf1vdK0="
+        }
+      },
+      {
+        "web": {
+          "title": "serviskayitlistesi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjLWmrXyDZnj44T_MwAeHsThrWnY_7wmsGmkk45ljvrE9XZ4mE5zdl0aUh-1C3OQ4iZ1YGKJIpYKNdmTznCR8eWBmhCHhrV2JSPK3cwjFMRLEpjjVfIonReoAWFIv0IBztT9kcWtsq5DwYFka-xdddbGjW-Asp9iJQ8zVxi2mzbLCgc4AHYpeDzA=="
+        }
+      },
+      {
+        "web": {
+          "title": "com.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYov21vmn_SGoIV-mxPeOrJR8UU2YIe_wp3DcWR-j11GOcfEHq48WnsMxTwLo9s3SZvQ-PqpcMuI0aZeLO90mH2gQemFmCNw-RTVBtjbOVXn0WWjfLSLUUXc8pMNE7AqoJaI1Law1hZmTuADZ5_dzwS1c="
+        }
+      },
+      {
+        "web": {
+          "title": "muglavakfi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTktiX0hncCpr797XRDiDJuCocdVc3HCSZOUSrV04saZ1fVSBGFJ_CwPZRtlhJLhTlkfIPzFrf6XwPiSv_jq1UPfflfDmDk1GbIBhi7W8gtfk-a_zhXjM_"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi7Xm5zKY2u5qRMcYMzPFrIlBOxahpgJG3JQFYvRZibVpL44r_TYK-6OoZiFsas090qRQfy-R7F19vlR-9_bA4M_NouTL6sOJXxmFIN9bgU2CODItD2UcfqcoVcI8CCYya3-lOFC_YcWhxb7vgK8GzYF6k"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjDLGale4dvVCGv5nU7Y8jMQql4rePHn5nsHIMXikGNBJrijl9Gf1uhljLOsXdx36IQ_D_16O_1TTR2Jy3D9B39qMTS7zExTYFWpGVXe8RLsoD0rBgaETC1YC0f98-xXCVMnUw1mJWJz58kGZIdUF2LRTO"
+        }
+      },
+      {
+        "web": {
+          "title": "bulurum.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgZS-6cauks8bf1kF9yKrY7NJOyhVj9EnZkr32cJ8s5WYTSKlAy_b4PJwzziftQW1hGjx2SD0MgRzjr3lJaU9bIEjhDIAvBGYLoao0DDetFB_mACv6IEvOizLh8n8v8nogIZxY6IHJWrro-uShAjg="
+        }
+      },
+      {
+        "web": {
+          "title": "firmaatlas.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3DtYPbjR_K6wL4qnNh3A-Xs29_olJj6FVFIBT_XueaQdg4mXjfpU7vXYnqPg6K2hQx2DKo3p6jEY6C8vU28Rha0Uf1iZ5XMUHaq8r3pjh9dMxz-cK0BnEzoDADm0rDWzIuvVmwA6mhhW38U07elY5sqWQBi8A__M="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 56,
+          "end_index": 133,
+          "text": "Sok., No:14, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 134,
+          "end_index": 248,
+          "text": "* Kötekli Çorba Ve Ev Yemekleri | restoran | Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 249,
+          "end_index": 389,
+          "text": "* Taksim Sandviç | fast food | Kötekli Mah., Sıtkı Koçman Cad., No:54, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 454,
+          "end_index": 510,
+          "text": "Sok., 8A | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4
+        ],
+        "segment": {
+          "start_index": 569,
+          "end_index": 626,
+          "text": "Sok., 10A | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 687,
+          "end_index": 742,
+          "text": "Muğla | faaliyet: bilinmiyor | yayıncı: Migros Yemek"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6
+        ],
+        "segment": {
+          "start_index": 743,
+          "end_index": 864,
+          "text": "* Little Caesars Muğla Kötekli Şubesi | pizzacı | Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 865,
+          "end_index": 1043,
+          "text": "* Kebapçı Ökkeş Restoranı Kötekli Şubesi | kafe & tatlıcılar | Sıtkı Koçman Caddesi No:33, Kötekli, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Nelerimeshur"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8
+        ],
+        "segment": {
+          "start_index": 1044,
+          "end_index": 1182,
+          "text": "* Pilove Kötekli | restoran | Muğla, Menteşe, Yeniköy Mah., Sıtkı Koçman Cad., 25-1 | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          9
+        ],
+        "segment": {
+          "start_index": 1183,
+          "end_index": 1351,
+          "text": "* Ali Koçman Kültür Ve Sanat Merkezi | kültür/kongre merkezi | Kötekli, Menteşe, Muğla (yaklaşık 494 m uzaklıkta) | faaliyet: bilinmiyor | yayıncı: Endeksa"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          10
+        ],
+        "segment": {
+          "start_index": 1353,
+          "end_index": 1499,
+          "text": "EMIRBEYAZIT:\n* Muğla Cafe | kafe | Emirbeyazıt Mah., Hasan Ali Yücel Cad., 10, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          11
+        ],
+        "segment": {
+          "start_index": 1560,
+          "end_index": 1633,
+          "text": "No:39/C, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12
+        ],
+        "segment": {
+          "start_index": 1634,
+          "end_index": 1743,
+          "text": "* Müco Kahvaltı | restoran | Emirbeyazıt, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Universitev"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 1744,
+          "end_index": 1876,
+          "text": "* TosTosT | fast food | Emirbeyazıt Mah., Çakırlar Sok., No:3/C, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 1877,
+          "end_index": 2013,
+          "text": "* Muğla Restaurant | restoran | Emirbeyazıt Mah., Çakırlar Sok., 4, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15
+        ],
+        "segment": {
+          "start_index": 2082,
+          "end_index": 2160,
+          "text": "No:5/B, 48000 Menteşe/Muğla | faaliyet: bilinmiyor | yayıncı: Dijital Link"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          16
+        ],
+        "segment": {
+          "start_index": 2240,
+          "end_index": 2317,
+          "text": "No:10, 48000 Menteşe/Muğla | faaliyet: bilinmiyor | yayıncı: Dijital Link"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 2452,
+          "end_index": 2542,
+          "text": "3 Festiva Outlet AVM Dk:4 Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Bulurum.com"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18,
+          19
+        ],
+        "segment": {
+          "start_index": 2543,
+          "end_index": 2666,
+          "text": "* Coffy | kafe | Muğla, Menteşe, Emirbeyazıt Mah., Kürkütçü Sok., 10 | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          20
+        ],
+        "segment": {
+          "start_index": 2667,
+          "end_index": 2812,
+          "text": "* Bayramefendi Osmanlı Kahvecisi | kafe | Muğla, Menteşe, Emirbeyazıt Mah., Çamlık Sok., 3A | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          21
+        ],
+        "segment": {
+          "start_index": 2888,
+          "end_index": 2975,
+          "text": "No:3, 48000 Muğla Merkez/Muğla | faaliyet: bilinmiyor | yayıncı: Turgutreis Rehberi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 3054,
+          "end_index": 3122,
+          "text": "No:6 Menteşe / Muğla | faaliyet: bilinmiyor | yayıncı: mekan.com"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          23
+        ],
+        "segment": {
+          "start_index": 3123,
+          "end_index": 3262,
+          "text": "* Arasta Smash Burger | fast food | Muğla, Menteşe, Emirbeyazıt Mah., Kurşunlu Cad., 48 | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          24
+        ],
+        "segment": {
+          "start_index": 3355,
+          "end_index": 3402,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          25
+        ],
+        "segment": {
+          "start_index": 3481,
+          "end_index": 3528,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          26
+        ],
+        "segment": {
+          "start_index": 3529,
+          "end_index": 3685,
+          "text": "* Menteşe Belediyesi Nazım Hikmet Parkı | park | Muğla, Menteşe, Muslihittin Mah., Nazım Hikmet Parkı | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          27
+        ],
+        "segment": {
+          "start_index": 3764,
+          "end_index": 3811,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          28
+        ],
+        "segment": {
+          "start_index": 3812,
+          "end_index": 3916,
+          "text": "* Basın Parkı | park | Muslihittin, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Basın Parkı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          29
+        ],
+        "segment": {
+          "start_index": 3917,
+          "end_index": 4059,
+          "text": "* Alyans Ocakbaşı | restoran | Muslihittin Mah., Muhsin Özbay Cad., No:49, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          30
+        ],
+        "segment": {
+          "start_index": 4150,
+          "end_index": 4197,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          31
+        ],
+        "segment": {
+          "start_index": 4198,
+          "end_index": 4344,
+          "text": "* Bizim Restaurant | restoran | Muğla, Menteşe, Muslihittin Mah., Ahmet Sadettin Özsan Sok., 2B | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          32
+        ],
+        "segment": {
+          "start_index": 4345,
+          "end_index": 4481,
+          "text": "* Köşem cafe restorant | restoran | Muğla, Menteşe, Muslihittin Mah., Nergis Sok., 3 | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          33
+        ],
+        "segment": {
+          "start_index": 4482,
+          "end_index": 4614,
+          "text": "* Begonvil Bar | bar | Ethem Necmi Yener Caddesi, 56, Muslihittin, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Menü Burada"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          34
+        ],
+        "segment": {
+          "start_index": 4730,
+          "end_index": 4827,
+          "text": "No: 19/13 48650 AKYAKA Ula/Muğla | faaliyet: bilinmiyor | yayıncı: Akyaka Su Cafe & Restaurant"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          35
+        ],
+        "segment": {
+          "start_index": 4828,
+          "end_index": 4935,
+          "text": "* Akyaka Orman Kampı | kamp alanı/restoran/market | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Takoz"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          36
+        ],
+        "segment": {
+          "start_index": 4936,
+          "end_index": 5031,
+          "text": "* Kahve Deryası Akyaka | kafe | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          37
+        ],
+        "segment": {
+          "start_index": 5032,
+          "end_index": 5148,
+          "text": "* Akyaka Town Market | pazar yeri | Akyaka, 48640 Ula/Muğla, Türkiye | faaliyet: bilinmiyor | yayıncı: Wanderlog"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          38
+        ],
+        "segment": {
+          "start_index": 5209,
+          "end_index": 5256,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          39,
+          40
+        ],
+        "segment": {
+          "start_index": 5257,
+          "end_index": 5386,
+          "text": "* Akyaka Anatolia Market | süpermarket | Muğla, Ula, Akyaka Mah., Liman Sok., 7 | faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          41
+        ],
+        "segment": {
+          "start_index": 5441,
+          "end_index": 5525,
+          "text": "no: 30, 48650 Ula/Muğla, Türkiye | faaliyet: bilinmiyor | yayıncı: Servis Kayıt"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          42
+        ],
+        "segment": {
+          "start_index": 5526,
+          "end_index": 5630,
+          "text": "* Akyaka Belediye Parkı | park | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Akyaka Belediye Parkı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          43
+        ],
+        "segment": {
+          "start_index": 5631,
+          "end_index": 5766,
+          "text": "* Akyaka Gökova Konaklama Orman Parkı | kamp alanı/kafeterya | Akyaka, Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Muğla Vakfı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          44
+        ],
+        "segment": {
+          "start_index": 5829,
+          "end_index": 5876,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          45
+        ],
+        "segment": {
+          "start_index": 5950,
+          "end_index": 5997,
+          "text": "| faaliyet: bilinmiyor | yayıncı: Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          46
+        ],
+        "segment": {
+          "start_index": 6067,
+          "end_index": 6135,
+          "text": "14 Dk:12 Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Bulurum.com"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          47
+        ],
+        "segment": {
+          "start_index": 6136,
+          "end_index": 6235,
+          "text": "* Akyaka Meydanı | park | Akyaka, 48650 Ula/Muğla | faaliyet: bilinmiyor | yayıncı: Firma Atlas"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk9zP8E-WbzuGis03wIs_AfUaZE1Uic3_r-Ki3PQTMjVBtP1XSCP246RVdyiVBVe_2E7rmuZ01M4puURnR-Fyb3ksCPvZPDdeHlRj5KZaeBBDXlVyP0u7XaZudvEHmlk8TLJG3CmFHe4NrenCZPaOuqB8feRQh0UdeKi6VrrBjfNYgHZAv5vI1BvLPMt413zsLRklbeMwDtvze2ee6W6YUYznq9j4T-a0=\">Orhaniye Menteşe Muğla park</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrKNxCAKYzbobTQvIpCmF2B2En9XUMmKhSAh1ShcuFeFfIOsuz9v6-c1nsLHTjDzq1KCX94y6NXC7OknnNRvSTndFiGaOmEv18O8XwsUJDcH9P9npNchHrvJsdQ8gtexyzOx3yGeyfT7ZNqng50ip7mGmzn95krUIko8XBDlMVV2XKS4R52DHMHgnEqZ4dg7-S-v9i1VHu1Os6MVKbGthqo98sGJtM3hHYMpTBiJs=\">Kötekli Menteşe Muğla market</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErsXCxegi-uO8KoVTQI2cxYMyUS1-oS8D6JpYW2xoPgwMDH_RU_XPEJGN1oUWONG5zMk5wzvzjAz3VvkRyc5Sojs_AUJcPZLUXOyU-VWa2DRW5EaehtUMVqUkftBQ_PzUq8nim0pVsLkC6JhNt9LODFL_n1DayMWG0HBU9ieTd2Ik4Awhx98YVmCkGVZwlIIhPHJLW4m8ePJHYID9Iix72uTXabltWG7Rz9wc=\">Muslihittin Menteşe Muğla park</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6q147KqJPAntZ4fwQhDxfWMvcQVHnpoP0dStwje5T7IHeyrLmQsC0b5bWvj9_x1xJ4lQtaVsaY39g5TUpEn5p3Q5x7GYd3PtACVaWMClUkBICK_af2C9xluTEWGYgAPs8mOUBeRHiV04HyErVnfiWBfcQBqIrcuTewanAvvZsbT3wbfRqd6iO5fbGp5PpobK4yN4A-XZ9D33YSup2WF8nBcba6LXUJDymmrAlT2wWNxPPA49m-kcUZSYwkoVOYoaQxWO4fc6U79KkhaKSToSEoeiXAx8NN19DUxpU\">Kötekli Menteşe Muğla bar pub canlı müzik gece kulübü</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgv_At-fFzdT-mw6ISFlhZlQO7eM51RqUN_fPv9b9fCmjEC9GbZkc7YKed7OpmZrfqzirRZeUxiX1XcoqKfOMpgUPSnLlPW_lKO8unnUkF29oBpX2xyLy_71US3okSnZ7S7xYyJt2mHyx4AX32xe1T36nWlBKDVm8KJK_kRcLzMSb_mZtnaz19FSBVXr5GjclVrORV0siWuSxUl3s3\">Akyaka Ula Muğla kafe</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkv61nlxjWohnw4iZADSTc_DKU87w1rTamOGXEpfgmM1c_jzZKYLFlFRILE4tD9AxbpGCsEFqebyZnaBEM1l_X2id6x2fJ_5PRxOJH7HpwG6wogwim5WBqFZPUonMdqiBC8hR58eiFZtusSzmCGD5scEkOustDivFf0D6ZYbKQ0QX_Tkz70V4tTu9uDjlGtL2mqlIxmqN_0296sQ7k35L3TdcPgZ0eVeM=\">Orhaniye Menteşe Muğla kafe</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsPfoSDC89l852-y1OLUXdIZLP2OCyl24G7WEwE1rpAZvpGwrMdpUhOwZGTgccfjevpa4qfV2UpjefbssjTZ73YwUnvnMBzDHpx5dyuGj9Fei97yaBmBiuWZ2FZJDY2SlZsXbm7uV_XPbh22cRi8B_U1JY_tV7blIVjnLFUC5YXlgp0bJIVmaDXlfBNT8C6CeFp2KCtrpa6S20BjhrcoKi0ww=\">Akyaka Ula Muğla fast food</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv0rTw5eYj2p303d6gGUpM_UyWQpLY7G3JDlYYzGt9cmqYAm4QNZBV2W103zETi13W8Fdg5fUBhVT3TIW5FYpAziI6o8KH5Qhavl_wcf0M6TFOSvtrt4_3QEPTotCHOfONNIeAyyEJdbfHKbZgYAxixYqju8FqMCftHRbDmBqhcNsJSkGkGbq7ETK5H_4Llm7r3hd6l506wr3ND2Ol7q5fwNgBayBdQHnv0XpXydl4S768ulkUkpYqGeavzLJvHR3ajJsk7UhCV0srjXuEr4bgjbGFadN_BMs=\">Orhaniye Menteşe Muğla bar pub canlı müzik gece kulübü</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESRcS9kqayU2JFMJWAl6kkCxlERDX9MpfDs1qTSJZG6meks_SZDb4dQrK_QsTbNIbH9gGBpH_FIoC3ijrSUfGZnpI_dJ4je1bfa5_a9EopfDqpAEf81XB1Ok5kxwGL5PD5TfFlHpqZew4_bNGizHL-dfwKpKnhx7qw2v2EKbUvneetqP_s25mAQ7vTt1ul8oRr_scFYTqhWofhZrQzkP-HZilzJetXBdX-qHtq6IMGwyz4CahTBKUV-6WFqvL-NchE4PhhrGEfXfmJhhRLK60HGFVakUcW5nPtYFw11qdeeQ==\">Emirbeyazıt Menteşe Muğla bar pub canlı müzik gece kulübü</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcH9gd-aoGtSzqfejtyEZQeTnEmAYilHyiXCa84fCthMkFxR8oH06Nh3nZpdY6wTKMdyQJpICrnwGqwLsrMrcZfm0LHUbEl70w06tZBZZNgJz8PrKNX381fQTKICg1jHPJJXM5mR5vKbB3fF8S6x_I3aIe034UScTln5Xc2Gv1s5k8BcnUFE9S0vEHIV7oOGQazU5hgYUkkVN1htKaUb2SIkRoGUbusZX328M4TKXMjoE=\">Kötekli Menteşe Muğla fast food</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUReKA6ahb3RIk2mrNipvs2tVKXO9uzwyjc5_nWWBDXnDfTyctCmbIHxrC2gDMfcS-1M6o50sTr0NzN1SqJjoTwCEGlr7DGVZ_1MWS8f_yhrgfAl_YDdtDrO5u27dx_kNtqtQQj5F25AJyImUXxpkf-ArwJw1KO8EbFtj8ak3kN9A85wmG_txs6KyYg0woUGjdPn14DSm9f-m1pfUb4Kl1cnEorI61Ea_d1imT\">Kötekli Menteşe Muğla kafe</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXwrufz6sLtDFzycYuGbaUKvTx4TcLrcXPmWDUMwyn-5pbOi2gEYkHA6zFTy2rRfNo5aXqmRJ65HRGt_jrqqI_LifrVMf9dGIkTkPvnxMS0xFwsLDhSes4vcFk7BOXJ2Ui8CPU0sGdzN_EGIxf0slveSSi30LdkfRZZOZ4A0ShWc3Pef_vkS5aHNxKjymN841rUdtpNv2pHpN0cWHh9c8OdZIGoxoFX0vsoVcqOamvPlUgK-qQ4tScfwZKuzOxyLk3bsvAauncDDHOZC7mnEB0haWnLxTE3RaJ1f0=\">Muslihittin Menteşe Muğla bar pub canlı müzik gece kulübü</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPkdB15d55mvE_mGLOsbkip6H_W3IXJsMdg9NwYRPM1KJdO_2nNbilD8XLB1lnrIYHE5wLfa72Qh-kXZU3qzdkAB9wnteJk1n3QHR8LcSwC7OqZjjxVurFGb-thlGcC-rtAen9JJJWMO_X2MLnM63SUpoeen_RCJlFtrCLlM-etJc9DUZB51oAdChYDSkd10iatehhPEYLJV0quBlkmCb0_vcI4ISarOQ6J2caJnXF8P4OCxRkKgGB_i7ljh5Ij5U=\">Muslihittin Menteşe Muğla kültür merkezi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwkhG8CyE-e_Cy-F30g6Q6Hu-Ci3x1F71V3tJ4M5CX6J6rOGHwQXJbJi6iYOJ09gCQWm7hlWFQvu03UIGz4cy3UEOuKGiwlsMOZMsUMA2yvZZDr5LoNcqPe-7pwF7SbJ1IUCTMRZuq8vp-jk1TpwOJTILoNuEgodweMTHlSqV_bu6m7oAJlYpRH7Zur8G9r-isFa9iCpXiNzYW0MOzpmw5s9f9mlo_jSkY5TK21V6BoA==\">Emirbeyazıt Menteşe Muğla park</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHG8glvOCdUUeOHZ9PbdNKFR3ff6X-uwpHmhnQqNktANN_NUJN8M1ZRu0rYfd92RzWSjjdnZtg9tWOTeLGMM_1biL6-yPn48oG2Btok_Vyu76eZ2srvEPwnDdRFV2CvnipKOASfYJWNr7ARAgDY32NM2yzvio6CSOZT8UDLKTiWvMX6TqWMszGRScVqScF0ZVIvy6ga2TKZ7VaVEzFGL8xm_g==\">Akyaka Ula Muğla restoran</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkyx-wK7mPfFcLfNfi9hveTtVcFC7aIsPLyl1GikIxocjYbkeHzEv6XOYXCvKzzkG2Qyfw821eBwTfSTX3ByJtdkRq4YsibUr76vMHfY3VTf34GmxEoSp2ZVgUqYemiu5UL6u1mmvZnIOuscDMpaN4UaXpErSOlxJuyQQ4Ar5t8pTkHER0D9K_JkX5fWYKZrkxhu0ssRdqNQO29c85ke6OlajjBxXSbba_ECQhSZRmvA==\">Emirbeyazıt Menteşe Muğla kafe</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqPKHKggSQZJgWJ8DabJNx0wnTXceM55h1_h5ukX88lsciA0LpVl5TXVrChkY9_R_an5jFJuUbi7joWrKwDrPdxQJqYpi3sKjcVSnzA3ZDRZtoQzMQXyv8ZP3CecAapZEH8Y7_TqGcDVLnRVc3eC1r_qFv1z_lEdvGjN-5AjDOHZPM1Fra4h_gm_vK06U8GN_6kIlzKzmu43bMuk9gZN_-Gl8uiZfTUdWXcBcxFsJd\">Muslihittin Menteşe Muğla restoran</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq88Dk_9AJS0fwhvm6uEXC9k4QbpDEQjDBs2ZWCslLqstAEyLDUbvUVYBBF3EyWUMND_t3h03B7YhLYv54xsqVs6rjqBdA0gOSBL86GQ-OkVqJtkd_FLtCY1F39cCyBZHLbvmsvE3258B86K3GAwBoqG6frdyXfICBrcgCenUGKw_YI9-7Zgzv0NvcZp0jV3gLkp-2ZI9z_sec1Q-OK4acy5KM2J2YHPK1sw==\">Orhaniye Menteşe Muğla market</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwijdZrEqGL3Gjp7dF6KWzgw-NxPwi85jbalik4kgqvk4FogoJfLiug8IAcpH0oJSSC3xgtMvPcnuizCwAF1kUBa5SPCv1Tdy3lzXmrQC6kUgnHWHK5j2gTa2ODmt4HmpC3nO7uvBrmOqekIAC-wY0BiZuUmQ30Jpd7aPIBZ_NoZbgxWgHs9KiDWRzsBQ9TuBt-k2IcyJA-ptQSJVhO8MQAV67j4m1JxP--oJDxHSsFQ==\">Muslihittin Menteşe Muğla fast food</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH07tRVa4tn7Vz0M8XNqd1lzjgMhcvm9TnHPS3WOj-nX91v2D5qmiFD3fgdyU6kYqevu__8jBRjQYh9ThEhHoux6rmhd8rZhNfSj2iI11i9HwLXymrRTZjNdfKKLNNm7Tjbg2nawywmBp98nQrqL1un-WS7SxGnSF56faZMuylF-0cHyXxz5GMsdZTKFSpSLdPuEpdGofGnuGeYvlfiMet8_g9XG90xKZp00PqDLw==\">Muslihittin Menteşe Muğla market</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdm2mu3JMXNBFXhlqqxEvSfUQRfEvMpnFBjiul6C__fQltySqQ9VPvtmqazUX6hqdX2w627ZdiE5LvzjQBQqWbOmn73VZrVNpzuiXEN3RaJfzDFN6OacPHzcnCXYSjiSjQyzOkuhsUqDcggdZYy5I52Jlk4LQU_Lh4FvWGerrNFSvWp_0dX3rDk689SDvl589fMHxVkuzxBtcxYoDuOi6f58PHfS_HgbB5Dtk=\">Muslihittin Menteşe Muğla kafe</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFxX4iXRY78BFpNG5LG4Gb3TTOEF6KDKZSsZxgJ414g_qZzkcC5BArvoDYxTEoYTtTk905Ru-4cxicfpAd9qbN6uVJZeSTOc2X7TNMCvNmomzvqcCpZ_eqqKIitWFxRUFRuVLPsRCptg3DvXTF8gn4zn4ulEi4Vh4KWPfyXD7Vtd0AAY0jU1DBLA5jsjwowWmfKh6FuBwZrwBkXLRQy2fJdc4k74oSPjF0H70lcOCgWAA=\">Akyaka Ula Muğla kültür merkezi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFI11XhDi7U9aKsynFLhCzK51e7netmUDsNmBPu8s-9SFREMWiVGRrjNv3H452Ptr6uD2rMhx0Moq2tPBKwPAVO5oTpm_NU6QO2GZFU6v9MUUZL3UKrHF4oS3ZUFdjPXhkQxRIV-LOi9dbTDwWFQ45XsMfaWtyMh_5eP4d5q4yMTkodbiEylvFNBYyC9sQZFRCRyZmM1-2y5pCU6OMFwZ2UXFfBgX3-pUNXvOzEKWLM4GRQ\">Emirbeyazıt Menteşe Muğla market</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpdzb-wk4s1vDY3MtPR8gdQMJxcx7MCusxNqWGklvJNuuZmV2YOZ_B7uV8Pc9vKkYPb2SprborPdJLrHdgvWt36WB-ih3W-cRPraMjcTP80C_B4VpfL8nLMLWOss360puMMwmojz5CZUcqXXZS8m7YFVGtjXAapP5soS5hoGYMAaxa4MrO2DgcJ_gaK2-XEVVUelFPMe9rHoppeMhwNJEqV_eb7UlPu0lJTZbq5dlvgtFqL4tRSjGR4eIjH_U=\">Orhaniye Menteşe Muğla kültür merkezi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsFZ_3nYq6s8DPkObdlGw51iQg2BUkpAnByZA2YU-ktqqM6O-yB63ZmLbLP31sjqMAicorKxABJ6FZVQoXT7fbeSOmkCRHI-p6PR0p_VMhAp_k3ckdlrd2k8yc0eAqXGb4Q4ZeJ15ZMDfeUIhhB-j8jOP1gDV8WGMu-XJ6V3sQ2BiuohCgt6KlemqLwjYXu3MoTbjtznUImM5jzCoY_Yw5FVYEhgwYZO_HqyVwXQ==\">Orhaniye Menteşe Muğla fast food</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFC6q1obk8vbSkstJXxoZ3X-eaHL8wfLnJzb_ro_PU1q9fAqQJvKUwHycIuuYzASyjRdZNMIr2nSsWVih8fhF70rJ-l_IOeV1cmhTpMtTQ21oI8XKWkLbHkHF0a2jnXkeSambnfWsA0-ELV85DcyW-uhTqhN9HrJ3gpTvNjR-M7qKnGKjs1D0QNQ58OJb4qv1XB5BeXOaIEIl3b_pNLlnw5eOBBool5lga07KbUxC4pn1YSkt7OzQL1x26--1yEJnHx7p2KqxCAFauDuioe\">Akyaka Ula Muğla bar pub canlı müzik gece kulübü</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAVm7mDGUv1iu-RGvaxFy3fDgxzVTNFflHT2SnxsxMIQbY1wN5LxMlcHOPD_jia2mOejShT5eHhhzxxffCAL3bsy0JQk6Y8LkSv1VhT7xG2QP39lM802GOUAT-hFpmiUhHE-hqYqTwXsvO42p8pT4hH4jbe2Jd-0XypWo9O9PWPAiJBWsfAKbR6EpA57W1FpzdQO-2_HPDybdGeJF3\">Akyaka Ula Muğla park</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFIGivdR304R9rOkUofaLkJBHq3jKcmotZg0ihePQ2q3k_R-siWcnNWfnW-bDEMNIe3Tn7pW0DitkA5NfOipvo9N1Fxq39-4e1RkTbTZZvMmjOkDUtLifZyYQZOciB7E1HJoM6RsmztPT6Nm-hZPwfKOvXy1_ikasF0rxLm8YCXUb7YAYTl39qQXi4a-TUfAIw3bu4OdbuKi6t85LVvjgvaKCekjY1oPknC6vI7_rhPRx3ST8nnMsTYLVOcbrb9FZr\">Kötekli Menteşe Muğla kültür merkezi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgal3DsHDMCuLDIeu6QnX5rW9TYRrGWPWrRliwmePslQDr4sZa-RUjJXNG_w2zY3WC0VsRApyI9mmaV6hVqVPm9HW08Jab2ooqN9OyuiwvSZIbVbpV7SM6ZuzEL6nP4z0xIn2hp7oBCJUTUJ5z-XINT6ZRrW3S_1BgbgxDJjI4UARj8r_6W4OQPHqeCCSr7dCobpun735sROmej7ksWUX6uTMf94YBhwl0-4j-Fj5gfA==\">Kötekli Menteşe Muğla restoran</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUb05Y-Ot_ROFCZ-kSZDPxtnbmh3KvD4vzr3QOWQq5sWkRQw4cplcyZq5M1Ywe_vDRXvhUMn0AfpQeF8drAyQAswVNhFOPNiRzIqB9HeeNFux0pF9-xTxDGAe7VjKXZ6pLpkHtY47L8WWDaiTS3PV_jCDCHak6bqffCFhe-VbXTdOFvX3u2k3al5cjMQdF4TQI6QGUILeAmEWGYHk299bOYbC3v7REwntypCI2\">Kötekli Menteşe Muğla park</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvSIGe0F2XC24HHaOjQQS1nQ957wp49Rhr-my3xBPFrNYDRh7Q8j6lJmPa5d79CT0vGmKsixPHHYZ4QTdyvOUi74uOsAb_cW2ZCgn4BtFfg55xbqNPSnw4uN7dKsPow4e2AQLsJUum0Z75XsvAnaH9gILQUMur38IsON2zPHgtj0SYkgPnutP3eaTxf0q66BI-zF2R7vopLmDnWbXgHSVoIe0xAxMQ5a6_-dqc\">Orhaniye Menteşe Muğla restoran</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF37O__F5QeIKwaexX3at30OLDshL2s7923H-U_Dr-3oCRhq1NtHAXJuMrMeEOEmMgHjswJSkXMgkCggmP9F7m1_3Xm_jWErvw9SMaH2991UAI5m2FT4IAdPyfffEol7IeS6BLhxXZ0jAOs9-tMNxTugL2F-QPXByuIOjNNzza2M40ejaPSirxYO6utnoRW8d2aw1eLvGfkgUX6owQMD0c=\">Akyaka Ula Muğla market</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF42V5G05p61CqSJLnMq6Odkw_6XWl8QwWU4jcNtrptjxdzQ88-HDLfPCAoTjA54LgOsr7irTMPUVnPcZOoOp1sD_jbAJQ4-V3ATau_8hNK_hRugvqA0gsuUKIVv2OJkf4gT5Zlx1wJMQnB0v5NgBFbHJlFqZbR0HsvmxMRq9ui-CEh3DBkHy0Xdpi6lKvi8pK3-nORyxUHSiAyQ5yVs6W2x__8wmSEAau58iIdbEZ7KW-t2OXrQQ==\">Emirbeyazıt Menteşe Muğla fast food</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs2dku35gH0dgMJn2DDqAqyu-5noe9YpURN_BGORggYqKZEOrxrGfXyJ2b2XEMh2L0Duew8imlif1FA8ZXdTFhUeP0WMPfh2sUEcBUkEiOre6X8PVAGSGH09rUXGazziCB2aDGK6_DiVwKGda0gGmxR8_v9OD4hngKNWlBbzR1emzy1B6l3zQVtsxWXgzBgyKyiUs2dgHKqdScjTBg-xQIMWPTEqSPsCxTqIIX303QtApUom2Hy5n3ntUaRQN483cMt_zF0w==\">Emirbeyazıt Menteşe Muğla kültür merkezi</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMi_d9SK3N0jAsaz0cVAdQqCUHxiZBB-Y7KJOg2X8uwRY8wSITciaQTZmTj4cBsRQFK91BTsvxOAVZCTt8wP_X8ncmLfkuKCNjc-8kGO345I0LbdkVZ59p5U0FzRNcOzw4OUDxNYPFLpo_1ipJ-AnNKA0mOontI7DlVVRmRUH9T_iaDeGK7_lhCR0HLVezd4C3WoaHH7b4LTJEikTv6jbLOsaQp6iO2WBQZObLxqb8f3t-qoU=\">Emirbeyazıt Menteşe Muğla restoran</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Kötekli Menteşe Muğla restoran",
+      "Kötekli Menteşe Muğla fast food",
+      "Kötekli Menteşe Muğla kafe",
+      "Kötekli Menteşe Muğla bar pub canlı müzik gece kulübü",
+      "Kötekli Menteşe Muğla market",
+      "Kötekli Menteşe Muğla park",
+      "Kötekli Menteşe Muğla kültür merkezi",
+      "Emirbeyazıt Menteşe Muğla restoran",
+      "Emirbeyazıt Menteşe Muğla fast food",
+      "Emirbeyazıt Menteşe Muğla kafe",
+      "Emirbeyazıt Menteşe Muğla bar pub canlı müzik gece kulübü",
+      "Emirbeyazıt Menteşe Muğla market",
+      "Emirbeyazıt Menteşe Muğla park",
+      "Emirbeyazıt Menteşe Muğla kültür merkezi",
+      "Muslihittin Menteşe Muğla restoran",
+      "Muslihittin Menteşe Muğla fast food",
+      "Muslihittin Menteşe Muğla kafe",
+      "Muslihittin Menteşe Muğla bar pub canlı müzik gece kulübü",
+      "Muslihittin Menteşe Muğla market",
+      "Muslihittin Menteşe Muğla park",
+      "Muslihittin Menteşe Muğla kültür merkezi",
+      "Orhaniye Menteşe Muğla restoran",
+      "Orhaniye Menteşe Muğla fast food",
+      "Orhaniye Menteşe Muğla kafe",
+      "Orhaniye Menteşe Muğla bar pub canlı müzik gece kulübü",
+      "Orhaniye Menteşe Muğla market",
+      "Orhaniye Menteşe Muğla park",
+      "Orhaniye Menteşe Muğla kültür merkezi",
+      "Akyaka Ula Muğla restoran",
+      "Akyaka Ula Muğla fast food",
+      "Akyaka Ula Muğla kafe",
+      "Akyaka Ula Muğla bar pub canlı müzik gece kulübü",
+      "Akyaka Ula Muğla market",
+      "Akyaka Ula Muğla park",
+      "Akyaka Ula Muğla kültür merkezi"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 2645,
+    "prompt_token_count": 502,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 502
+      }
+    ],
+    "tool_use_prompt_token_count": 1007,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1007
+      }
+    ],
+    "total_token_count": 4154
+  },
+  "text": "KOTEKLI:\n* Burger King | fast food | Kötekli Mah., 28. Sok., No:14, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Kötekli Çorba Ve Ev Yemekleri | restoran | Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net\n* Taksim Sandviç | fast food | Kötekli Mah., Sıtkı Koçman Cad., No:54, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Dürümle | fast food | Muğla, Menteşe, Kötekli Mah., 263. Sok., 8A | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Time | restoran | Muğla, Menteşe, Kötekli Mah., 263. Sok., 10A | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Şatafat Fast Food | fast food | Menteşe (Kötekli Mah.) Muğla | faaliyet: bilinmiyor | yayıncı: Migros Yemek\n* Little Caesars Muğla Kötekli Şubesi | pizzacı | Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net\n* Kebapçı Ökkeş Restoranı Kötekli Şubesi | kafe & tatlıcılar | Sıtkı Koçman Caddesi No:33, Kötekli, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Nelerimeshur\n* Pilove Kötekli | restoran | Muğla, Menteşe, Yeniköy Mah., Sıtkı Koçman Cad., 25-1 | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Ali Koçman Kültür Ve Sanat Merkezi | kültür/kongre merkezi | Kötekli, Menteşe, Muğla (yaklaşık 494 m uzaklıkta) | faaliyet: bilinmiyor | yayıncı: Endeksa\n\nEMIRBEYAZIT:\n* Muğla Cafe | kafe | Emirbeyazıt Mah., Hasan Ali Yücel Cad., 10, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Komagene | fast food | Emirbeyazıt Mh. Recai Güreli Cd. No:39/C, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Müco Kahvaltı | restoran | Emirbeyazıt, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Universitev\n* TosTosT | fast food | Emirbeyazıt Mah., Çakırlar Sok., No:3/C, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Muğla Restaurant | restoran | Emirbeyazıt Mah., Çakırlar Sok., 4, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Crudo Muğla | fast food lokantası | Emirbeyazıt, Atatürk Blv. No:5/B, 48000 Menteşe/Muğla | faaliyet: bilinmiyor | yayıncı: Dijital Link\n* Muğla Restaurant | restoran | Emirbeyazıt, Muğla Marmaris Karayolu 1. Km. No:10, 48000 Menteşe/Muğla | faaliyet: bilinmiyor | yayıncı: Dijital Link\n* ALABİ RESTAURANT - AKBAY RESTAURANT İŞLETMECİLİĞİ TURİZM VE TİC.LTD.ŞTİ. | restoran | Emirbeyazıt Mah. Uğur Mumcu Blv. 3 Festiva Outlet AVM Dk:4 Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Bulurum.com\n* Coffy | kafe | Muğla, Menteşe, Emirbeyazıt Mah., Kürkütçü Sok., 10 | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Bayramefendi Osmanlı Kahvecisi | kafe | Muğla, Menteşe, Emirbeyazıt Mah., Çamlık Sok., 3A | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Yeşil Beyaz Muğla Menteşe | kafe | Emirbeyazıt, Hasan Ali Yücel Cd. No:3, 48000 Muğla Merkez/Muğla | faaliyet: bilinmiyor | yayıncı: Turgutreis Rehberi\n* Paradise Trendy Fastfood | fast food | Emirbeyazıt Mah. Recai Güreli Cad. No:6 Menteşe / Muğla | faaliyet: bilinmiyor | yayıncı: mekan.com\n* Arasta Smash Burger | fast food | Muğla, Menteşe, Emirbeyazıt Mah., Kurşunlu Cad., 48 | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n\nMUSLIHITTIN:\n* 100. Yıl Parkı | park | Muğla, Menteşe, Muslihittin Mah., Dönence Sok. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Tatli Mi Tatli | restoran | Muğla, Menteşe, Muslihittin Mah., Nergis Sok. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Menteşe Belediyesi Nazım Hikmet Parkı | park | Muğla, Menteşe, Muslihittin Mah., Nazım Hikmet Parkı | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Emin Arslan Parkı | park | Muğla, Menteşe, Muslihittin Mah., Efeler Sok. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Basın Parkı | park | Muslihittin, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Basın Parkı\n* Alyans Ocakbaşı | restoran | Muslihittin Mah., Muhsin Özbay Cad., No:49, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Çınar Altı | park | Muğla, Menteşe, Muslihittin Mah., Şehit Özden Aşınmaz Cad. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Bizim Restaurant | restoran | Muğla, Menteşe, Muslihittin Mah., Ahmet Sadettin Özsan Sok., 2B | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Köşem cafe restorant | restoran | Muğla, Menteşe, Muslihittin Mah., Nergis Sok., 3 | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Begonvil Bar | bar | Ethem Necmi Yener Caddesi, 56, Muslihittin, Menteşe, Muğla | faaliyet: bilinmiyor | yayıncı: Menü Burada\n\nORHANIYE:\n* Bilinmiyor\n\nAKYAKA:\n* Akyaka Su Cafe & Restaurant | kafe/restoran/canlı müzik | Mustafa Uyanık Sk. No: 19/13 48650 AKYAKA Ula/Muğla | faaliyet: bilinmiyor | yayıncı: Akyaka Su Cafe & Restaurant\n* Akyaka Orman Kampı | kamp alanı/restoran/market | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Takoz\n* Kahve Deryası Akyaka | kafe | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Restoranim.net\n* Akyaka Town Market | pazar yeri | Akyaka, 48640 Ula/Muğla, Türkiye | faaliyet: bilinmiyor | yayıncı: Wanderlog\n* Akyaka Sahil Apart Cafe | kafe | Muğla, Ula, Akyaka Mah. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Akyaka Anatolia Market | süpermarket | Muğla, Ula, Akyaka Mah., Liman Sok., 7 | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Güzel Kahveci Akyaka | kafe | Akyaka, Karanfil Sk. no: 30, 48650 Ula/Muğla, Türkiye | faaliyet: bilinmiyor | yayıncı: Servis Kayıt\n* Akyaka Belediye Parkı | park | Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Akyaka Belediye Parkı\n* Akyaka Gökova Konaklama Orman Parkı | kamp alanı/kafeterya | Akyaka, Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Muğla Vakfı\n* Devin Akyaka | kafe | Muğla, Ula, Akyaka Mah., Nergiz Sok. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* Akyaka muğla | süpermarket | Muğla, Ula, Akyaka Mah., Atatürk Cad. | faaliyet: bilinmiyor | yayıncı: Yandex Maps\n* ECE MARKET (Osman Top) | market | Akyaka-Merkez Mah. Atatürk Cad. 14 Dk:12 Ula, Muğla | faaliyet: bilinmiyor | yayıncı: Bulurum.com\n* Akyaka Meydanı | park | Akyaka, 48650 Ula/Muğla | faaliyet: bilinmiyor | yayıncı: Firma Atlas"
+}

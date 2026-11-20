@@ -1,0 +1,198 @@
+{
+  "report": "**Kısa Sonuç**\nKötekli Mahallesi'nde Menteşe merkez, otogar ve kampüs bağlantısını sağlayan MUTTAŞ otobüs hatları ile gece hatları aktiftir [S1, S5, S7]. Bölgede sürdürülen kapsamlı altyapı ve yol yenileme çalışmaları kapsamında [S18] bazı güzergah kısıtları yaşanmaktadır [S2]. \n\n**Otobüs Bağlantıları**\n*   **1-62 Menteşe Stadyum - Yeniköy:** Menteşe Stadyum, AVM, Kötekli ve Yeniköy güzergahında 9 km uzunlukla hizmet verir [S1].\n*   **1-65 Menteşe Otogar - Yeniköy:** Menteşe Otogar, Tıp Fakültesi, Turgut Reis Yurdu, Kötekli ve Yeniköy güzergahını 10 km mesafe ile bağlar [S3].\n*   **1-66 Menteşe Otogar - Yeniköy (Gece Hattı):** Otogar, stadyum, Tıp Fakültesi, yurtlar bölgesi ve Kötekli üzerinden gece seferleri düzenler [S5].\n*   **1-40 Menteşe Otogar - Yeniköy - Tıp Fakültesi (Gece Hattı):** Otogara gece bağlantısı sağlayan hatlar arasındadır [S7].\n*   **Kampüs İçi Ring:** Yeniköy, Kötekli, Yurt Kapı ve merkez yerleşke arasında ring servisi sağlanmaktadır [S10].\n*   **Ödeme ve Tarifeler:** MUTTAŞ araçlarında kredi kartı kullanılabilmektedir [S1, S3]. 2 dolumluk Muğla Kart sivil tarifesi 59,00 TL olarak belirtilmiştir [S11].\n\n**Yol ve Kampüs Erişimi**\n*   Muğla Büyükşehir Belediyesi tarafından Kötekli ve Yeniköy'de sıcak asfalt, içme suyu, yağmur suyu ve dere ıslahını içeren yol ve altyapı projesi sürdürülmektedir [S18].\n*   16 Şubat 2026 tarihli rapora göre 1. etapta asfalt serimi, 2. etapta ise su deposu inşaatı tamamlanmıştır [S19].\n*   Yol çalışmaları nedeniyle 1-62 numaralı hattın güzergahındaki Kısmet Yapı Kooperatifi'ne 29 Ekim 2026 itibarıyla giriş yapılamamaktadır [S2].\n*   Üniversite kampüsü merkezden 6 km uzaklıkta olup toplu taşıma araçları kampüs içine girmektedir [S14].\n\n**Akşam ve Yaya Erişimi**\n*   Akşam ve gece ulaşımı 1-66 ile 1-40 numaralı gece hatları ile sağlanmaktadır [S5, S7].\n*   Kötekli'de 7/24 taksi hizmeti mevcuttur; kampüs ve yurt bölgelerindeki nöbetçi taksilerin varış süresi 2-3 dakika olarak ifade edilmektedir [S26].\n*   Devam eden altyapı çalışmaları kapsamında kaldırımlar yenilenmektedir [S25].\n*   2 Ekim 2026 tarihinde yapılan düzenlemeyle öğrencilerin duraklara ulaşmak için yürüdüğü 700-800 metrelik mesafe azaltılmıştır [S13].\n\n**Bilinmeyenler**\n*   MUTTAŞ hatlarının güncel hafta içi ve hafta sonu ilk-son kalkış saatleri resmi kaynaklarda net olarak yer almamaktadır.\n*   59,00 TL'lik kart ücret tarifesinin güncelliği teyit edilmemiştir [S11].\n*   1-1 numaralı hattın 29 Ekim Cumhuriyet Bayramı'nda çalışıp çalışmadığına dair veri bulunmamaktadır [S12].",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHojHjzYgCqJlI_q4FFbt4CcZJ2IQvyxL_mRrez0tY7aRF1w_F9YhbWPbiYnKkuMikCbR3-cu1YdbzVn44rgTEuTasGMJSIXiAtSAkyPDcwHqlJXIS2hdevSic42KaNn1eHE77miA==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "id": "S2",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErahYzMru3pIt5-5eyU-IBT4NzzyFZr_0gTshwmzMUn929IO03vEOu10hjAyi0hzOUFIl08D7sM5B8RlQ1BIWyUXqBqxoLwmOzZ7iPpwCJDzB1CY8O6YWqEkJQj5rSZf0-8Lab0ABhB4iOeWeV2T3BCN4gHu01COopqtHV-DhHTyvusx3jKtbml8az4FAKFbSfIpf_",
+      "title": "otobussaatleri.net"
+    },
+    {
+      "id": "S3",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0Ff4H9gK3sDpNHPHEr7iyw3b76-So4MUnzFl25jcR37GGszeKfvAkpKpIhaXPBwSxRxxNZoVMmCPN4f7Ligc0E2tOXVunv2sOdi0gVysjlf_24a5DQ8uTUt9reOWEeyrgaKFgrF9_F1tvDFcy3pdu484siEAgR8P0VA==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "id": "S4",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5rE85zCQHPKMM0pyhQo-Sj09lFdhJ4G7-hlqf1cpoxSCign6t6DBwmJX4512rztcoOfTVQ0Enzh2AIwMnpuZF0LKDO4ofU8m_szcvhPvehgN8wzA1zg7-jgEVaI9mbkcuS2YNeJnwxZcckv3075GBI6A-tguUjFdYtQ==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "id": "S5",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo9tG1ZhKvR2buXYK8UGK7egBNyjezVpZ5PVVe87fPcROGutflwif4J7PYktBKoiWAafn9mtO0Rs2HCbl7WOOoEx7DI1vyDWX_93ayIoqFVUsap_h59voXaAmiSwZF5g8TXsnvBd2W9FPAlcWI4o6nyAxSPQhnIuwkjSuLRHeEl4q3YMr8sOrZanAaT7C456X_1MwPx9XXl5PK",
+      "title": "otobussaatleri.net"
+    },
+    {
+      "id": "S6",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFqFGHC-Ni6q9k1I0eyT2G-hIIc0UT7cgjHdzy3HQ09KGQcQt6xEiYWxQ9lDdj3uU2eU8RLeQNxI-xKpfpU9DmxD7rRAX5zmILNmpnvbTE5zBANjwhDZYDa8_KG5butSEwtWsBwxrcEioifDT5GahqJjxqac37DdFDmqM7a7uFAw==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "id": "S7",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeM7VuJ74qccQ9CMM3cO2B8xbiNDuEd4cgFk9gQ4JxLEApFWn4t7M_qq3zj5WmhXkIfNTtsELV9DGRTIWVy541tyyBfW0fCHlwrk1bcMIbGYRkQfBOFM4WC7WR7GPrpfj6HxOQdEKHY_mYavQg4FD8yll1-Ncb-Q3gbei6hYgHCDiebE_NJbhcJ72bJJ7IM_eOcVob5drGzeGcOUacF0M8pCmMD1N3bjTkYx7NTbwSX2qYAw==",
+      "title": "moovitapp.com"
+    },
+    {
+      "id": "S8",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGRsUHiJMYyB0F5ld_0sRcYCKjniqfpQi_gFDhmvs4HczNWJ-UDMjX0YPujhDqWRi09nACc8HS11s6tYSezgcVwIGkGPP3Rwc460bMpQtEWjuUn264e-iSB7UpC7SP8dHSX_fAIOK4deM7eGSN5nQXBRmxl1OdKNjQOWFZIIelXtxYEBFtV1avxl6P9Cd57ZACenWo5KH1qH1yvzbOvu5IPqprJOU=",
+      "title": "moovitapp.com"
+    },
+    {
+      "id": "S9",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuY1w-Nedp7e8TIdu_u8MI7BF9H8TS7RwTZnsdgnV4fZUsL52LTEVCmJaH3vlj7jf4VLz1I1lXKTtOaZq3IxpKW1k_B8LbEOMxACgZs9aZIPt792sw-rnskWNQVgbzidHStDDqV38bA475_VrILVN7IbHxE9b8evLF1T2HHd1EThni_IEeS639EDe-sH9ant9-N0zQHAw6qU4YktXtumJk2asWX18=",
+      "title": "moovitapp.com"
+    },
+    {
+      "id": "S10",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9b0oCJ2VNCxOBuG0use1jFw2zUGWHtW9pkkjMpVZWwQFgDnf7FagGddG4ensyzHDH2NOvhgIJqWAAkg1ki8V3PcxBztz0FOOnID2-iYJZ2cSkf26ewEtliZ_jhXfpbcg4d9oUgqnaBxiMgK-4_sOFXvYrxhry47PVze-zEuKsmfW6hg==",
+      "title": "mu.edu.tr"
+    },
+    {
+      "id": "S11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEPYbfsG4vBQaMRoS3LXyK2n9S0z_u81JAWxrShDRMuFlsc1Qz5ZlAWMF-XvQ4wmRfL6DFvot-uPYdl5w1jyB7Hojk-7mblJxA50Nb1oJlGsF_PgUFtnB1TfdAJakNP7D7GPjnyh8ik7zpUW-HMXTaIhBkViGgczoak2Df4YIybIesBR4=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "id": "S12",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSw2LYX3-ZJlMdOpXTh5tqPhNOP-_q_tGGpxlLCk2MyC28Pvx2IAlhLSpmZ-aCxnOi8_F2RDLYwSdK7wh_OHL2rtj7xoI6T69eJqh7N3dnhiqhETv5mGKfSrVKo0O5VNM7PS6SI3jzpBkk8kHUruccTbHTFKkVUeZBXx2KSTsjKK4Hk5oFtukmDfZczRwVPykRWbIE9R5HeVTw0g==",
+      "title": "moovitapp.com"
+    },
+    {
+      "id": "S13",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG1jT6dCkvPJ9VE3Y4goluEvG3ssS6lY22f_4-zRlli9jipezd7uGd0RGPY60ls77CJ3o0AG9nnOWWyP_geX5lad3WwcSJYQqrk8bcKwmYjPkCJtggABxaBm0i01AU8-Mynue3DGfLSl5c5QnPoq0FRpvoHA_25qZQaVeSiBe1SzUcHmBSNEhMUe4FNg1nwHvYfsQry2IkPmA_ud9aYZZjO1I_Kh0=",
+      "title": "gundemfethiye.com.tr"
+    },
+    {
+      "id": "S14",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFTYZtO3t8BCQVIozBdyiHwdYQGCrfvoz17yu2j8cbl4OmgNbyOWHHll3rrfrf2_oGgC8_mDXrjBQTx3VWpQhaKYUeYyZISp4QUCQvy3W_AkFrGDz_4Xmk1c2Og5XcFhMUDXZUbdJghU9beN7CPkcyzLw0Au9tdwOMtld3VVDFbu3VfovJsSDqb9G91L96zFhA6TBWOe24wYdU5yILCWKkp9LHTAIDYoJ6P_zWaU7C",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "id": "S15",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9i-bXl6S_9CEQXS1eEtOtM66MKnCJ89L8By0W2YmxCjAsuMTBLewnQT0xV_PIovoCHRKju6IEHVTIwsIUy0URRbBynxvucuQpxMV74ukPy7ZSu5Uh9W-5U1dkPXv6K_LNultc83zhlOHGzkIv6ltJDA7_zooccuXkQJimfd04lwp0S_dk3HJxbIqDj530fn4=",
+      "title": "mu.edu.tr"
+    },
+    {
+      "id": "S16",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1FvpQQfFLWcMLByHGkJ_bb6vwhhsvafgi0v2Ug1lenqVxsLKKROTu7GRTX4Hk-P9w7sKT6yp9a3WYE7wAk8bPdgrHXJ7DoHoHmSVcD5EQTRBDRneBNMgG6KMq5nl9vsQnyB6Z0b3V6HILv5n0QMv744w=",
+      "title": "obilet.com"
+    },
+    {
+      "id": "S17",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoPyEQDqngRmJWkGIPtog1QorzYM6MP2S5dsb_TF8b87Pjkl0udadYBEZbOkH2Xke9-GWUcN9MH3wce6BlRRugxx4Q4rCxKoJSUWAtK7MQIfFA0QnFnTq75bz-bXja3F_HDxS16COta85GHjHigxKKc6OcJawK",
+      "title": "yandex.com.tr"
+    },
+    {
+      "id": "S18",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBa9ySqKRa1sZ3bgaOQcr3daioR2VKBFb6ruhlnYGY4b-phLGkGJiFgWRIihi4c9niVUok8iIWPXJE0Q3hYF9tYySuaMYWY8QBijZfcS-6lTyYMEvubck3n3WPyew0uIHY07LGjfGlR0jOKN8WBuP_VZuUZVezVmyep_BJ3qy2CLqLfv5XiMPuaW7Tqgn1Vs3W2RGhheM=",
+      "title": "sondakika.com"
+    },
+    {
+      "id": "S19",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDW2JxudGSr-TMhOx9vSD1UwB9vA7pKfdz8rBKPR-lFEvkBPJAZqHQrA5VKGh7FQlwN9QSEgFz5-y2ZSML5HUWvlsPy5F4_G5p250HQFXEz8SQ3z34y9yx6pETu_AZShY90CVFcoawr_s6MeyqPDE7GkSNId99-tDtAa0qIzG3aVSq_ofQz3eYzqPs5ba2n-EPdssH9ARM8mTgWvwoeVXOL5NG-wY4ePV_0ml1rFrwqQu4Sgrc3X1jbHkiGNKer-hmnjAFcQ==",
+      "title": "ankahaber.net"
+    },
+    {
+      "id": "S20",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX-obu2MwtNT6_5FYNj_zlHdhSKvtW0bECDghAOQITjxO9lGRiYdqb13x2FsKeKhfNGz2LkznqN2Cq0UCuehJoL1KxTpHVqJuKwmJ6o6g_Cv6xAnj-jGgUn0kvI8EsDZCgQX2vWU-YQP0KMvhaG4fvgTIVAv_fCJdpKxklb8QgP-ol6a7PhCLQUa9aMmwPz2VW95mPYMzDqqd3-I_g3Q==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "id": "S21",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLccjNhAOqMCc_Gyf9TSc_zbAWQRD40MdwWGutvYTbATkcg3dW5jXCmx1EobpdDJTSZSP8DZnortHcjvZDr2sXcfJiws6kxlt42LpoooT_HxQWRfxw6AqDqzuQeyVruoDjclnN4GK4dNrn1VZfzSOFypMCgWWu6eQNn94V-8U6RaHoEqNA6zjCFJ_C7Q==",
+      "title": "muglaflash.com"
+    },
+    {
+      "id": "S22",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLrF7_UKmjKVWrzakQ95a3ZFp_XdLWSUMg6OoJb0ESGyscRYPhDUsXsXasccxXmqNp5278Ft6PuunnbmcffqCGvoAa1rqIbj1YlJZuMJH7bYszUb_3v5c18sqBu59RxBOIK33G3VNld5-LrhXr5yLnkHGSaGROdTZ73xqRo0qkJ2MaWzsEN0iInJBMHxolm2iG_mrbktLjR9xqUNvtLxgEQ3tWde4sSK9moElF6Wm7Eg80OqdaRKwqxpWXQqA0qr0=",
+      "title": "evrensel.net"
+    },
+    {
+      "id": "S23",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGefEIorepyonxeMseluQwnC38sxg8Jsizjt-4L9ZCjOgWLkwFWMHmBcr6st921yXqxQVWpCMAd4j-hEu44rPDksmRHF2gaPWdu9bPUtlLqG4SoT6b993Nq0unINpwkA2xlLtioQZdUpCk77K5Zm1scI8Dof5mye9inCPbJSHs0YPqzLEtETXyerSZ5GMhaOwpXdECtpoqrykvFgB8=",
+      "title": "muglayenigun.com"
+    },
+    {
+      "id": "S24",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0J53x58NNn8QLbB0lFexZatcrB9jFPb75nDZHvGdyW87IR5QGHbA6v4ur9MyELp1goEsFKyWfRX0ZV5lFQ4sxikQJniM0MMBBOHtqQeiFq5SeRSrAJkBoeiwiAIWF67Vu4NWZt1-K6IrvMoLe_kDynImBK2Fn30Vk1b4LE2Wx9u4d",
+      "title": "habereguven.com"
+    },
+    {
+      "id": "S25",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExIxv9ipCbChVAGhk4WH7nBqF7KcgeRYLFTYudYoD96fBvzNrDeFEGgNLx-NLi4uHoqtlE1InxkOmJDJru97HUUEGXtVZsziz-TSqM3z2ADUsl8HjMs2b34imLS085r-SdpPFM_mTKjJLISnHjtUPTH9boaVT8nYFUJjj_02y-JL7nZI_R4DxCEOLDOgYbTFNRVKba1lCj7nfPghQ3Sq1Y1TuH",
+      "title": "marmarishaber.net"
+    },
+    {
+      "id": "S26",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXLE-HKxn1Dire589YRlvWDDPoK19mqCX12NFtTPrBCXggWw5E_fY9Bvea8FB-8Kq6fcP8jgMoFUDP5OpVJzV1aH6N0j_en9t0JFdUGEO5i14QdTlrEqvHxs4XrDB-tnhxDMEBURaBzsAi7QWwvKe10xMtVJVJg84e3fUPbvnV86Ics0KFpUGZ0Txc2AQYiBMJrb2MaCx7kIVezliuDZuqVbdg4Jtkk69KZsgZGa51et-mq9U=",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "id": "S27",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8Pl4yZNdnB15RgUSUeQFKjurD8Y0fk0H_q7PtmoWeLkwzmcyVqAecXv5Oqx6ulbjwp0jdD0hOk6RDpabzG3NsNSxIQm9yWrPf-o9BFzwCs41OlhPaKsY=",
+      "title": "koteklitaksi.com"
+    },
+    {
+      "id": "S28",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHqDXwPyIcSuO_NsqYVh6GxgQHkhuBhtX5oQbXpiPcyVAkIKXmAIntHMAS6CTaYZ4bAVOnJJ1iVjFbARpJ1NDiR1hPN30Nvo_QmgfJZEcSeuQezCbTNZFiTXA8DSdFb87uxplUm4K2SyuA-_UHJpyxKQVU5tKFDS15Unqzck8RJIvOvQYIpyyYEeOfBySO",
+      "title": "koteklitaksi.com.tr"
+    },
+    {
+      "id": "S29",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUHTb7HATlhXpGhjzbdmkV4ZrXwnoyUVuE0Jr3wAKbFLoCmuoM5TR5_KrUdT9sazUHHAaB6S3BMDCwCo8ZAERB060crTA4dEMJlo87QqS5BeAF8rY_W1-h1M6yz_XuxZJPgVfDMGiIT6IZqxndplc33XmKPpvGMzUqngFBeg==",
+      "title": "koteklitaksi.com.tr"
+    }
+  ],
+  "run": {
+    "research_model": "gemini-2.5-flash",
+    "report_model": "gemini-3.5-flash-lite",
+    "complete": true,
+    "unknown_source_ids": [],
+    "review_status": "unreviewed_research_candidate",
+    "usage_research": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 2800,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 407,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 407
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": 587,
+      "tool_use_prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 587
+        }
+      ],
+      "total_token_count": 3794,
+      "traffic_type": null
+    },
+    "usage_report": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 1509,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 23339,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 23339
+        }
+      ],
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 24848,
+      "traffic_type": null
+    }
+  }
+}

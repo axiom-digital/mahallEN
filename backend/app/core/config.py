@@ -27,6 +27,8 @@ class Settings:
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "")
     # Server-side operator secret; never put this in a VITE_* variable.
     AI_REFRESH_TOKEN: str = os.getenv("AI_REFRESH_TOKEN", "")
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "").strip()
+    GROQ_CHAT_MODEL: str = os.getenv("GROQ_CHAT_MODEL", "").strip() or "openai/gpt-oss-20b"
 
     # Persistent report cache settings (#11)
     REPORT_CACHE_ENABLED: bool = os.getenv("REPORT_CACHE_ENABLED", "True").lower() in (

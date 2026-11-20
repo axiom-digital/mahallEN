@@ -32,6 +32,10 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-}
       AI_REFRESH_TOKEN: ${AI_REFRESH_TOKEN:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_CHAT_MODEL: ${GROQ_CHAT_MODEL:-openai/gpt-oss-20b}
+    volumes:
+      - ./data/reports:/data/reports:ro
     ports:
       - "127.0.0.1:8000:8000"
     depends_on:

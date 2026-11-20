@@ -1,10 +1,12 @@
 from contextlib import asynccontextmanager
+from collections import deque
 from threading import Lock
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes.neighborhoods import router as neighborhoods_router
+from app.api.routes.report_chat import router as report_chat_router
 from app.core.config import settings
 from app.core.database import Base, _create_db_engine, create_session_factory
 from app.services.seed_service import seed_initial_data
@@ -36,15 +38,19 @@ def create_app(database_url: str | None = None) -> FastAPI:
     )
     application.state.ai_refresh_lock = Lock()
     application.state.ai_refresh_not_before = 0.0
+    application.state.report_chat_requests = deque()
+    application.state.report_chat_lock = Lock()
+    application.state.report_chat_not_before = 0.0
     application.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,
         allow_credentials=False,
-        allow_methods=["GET", "DELETE"],
+        allow_methods=["GET", "POST", "DELETE"],
         allow_headers=["Content-Type", "X-AI-Refresh-Token"],
-        expose_headers=["X-Cache", "X-Cache-Hits"],
+        expose_headers=["X-Cache", "X-Cache-Hits", "Retry-After"],
     )
     application.include_router(neighborhoods_router, prefix="/api/v1")
+    application.include_router(report_chat_router, prefix="/api/v1")
 
     @application.get("/api/v1/health", tags=["System"])
     def health_check(request: Request):

@@ -12,7 +12,7 @@ export function getScoreBadgeStyle(score) {
   if (validScore === null) {
     return {
       tone: 'missing',
-      label: 'Veri bekleniyor',
+      label: 'Kaynakları incele',
     };
   }
   if (validScore >= 80) {
@@ -72,7 +72,7 @@ export function ScoreBarChart({ scores, idPrefix = 'chart' }) {
                 className="bar-track is-missing"
                 aria-label={`${item.label}: sayısal puan verisi henüz mevcut değil`}
               >
-                <span className="bar-missing-tag">Veri bekleniyor</span>
+                <span className="bar-missing-tag">Kaynakları incele</span>
               </div>
             )}
 
@@ -94,7 +94,7 @@ export function ScoreBarChart({ scores, idPrefix = 'chart' }) {
   );
 }
 
-export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }) {
+export default function ScoreCard({ title, score, subtitle, icon: Icon, testId, onOpen }) {
   const validScore = normalizeScoreValue(score);
   const style = getScoreBadgeStyle(validScore);
 
@@ -110,7 +110,7 @@ export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }
           <h4 className="score-card-title">{title}</h4>
         </div>
         <span className={`score-card-badge tone-${style.tone}`}>
-          {validScore !== null ? `${validScore}/100` : 'Veri bekleniyor'}
+          {validScore !== null ? `${validScore}/100` : 'Kaynaklar' }
         </span>
       </div>
 
@@ -125,13 +125,10 @@ export default function ScoreCard({ title, score, subtitle, icon: Icon, testId }
         >
           <div className="score-card-fill" style={{ width: `${validScore}%` }} />
         </div>
-      ) : (
-        <div className="score-card-track is-missing" aria-hidden="true">
-          <span>Sayısal puan hesaplanmadı (0 olarak kabul edilmez)</span>
-        </div>
-      )}
+      ) : null}
 
       {subtitle && <p className="score-card-subtitle">{subtitle}</p>}
+      {onOpen && <button type="button" className="category-open" onClick={onOpen} aria-label={`${title} detaylarını aç`}>Detayları ve kaynakları incele <span aria-hidden="true">↗</span></button>}
     </article>
   );
 }

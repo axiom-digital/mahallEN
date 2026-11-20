@@ -1,0 +1,846 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "emirbeyazit",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "started_at": "2026-10-28T18:13:14.351574+00:00",
+  "finished_at": "2026-10-28T18:13:33.538771+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "rent_cost",
+    "safety_news",
+    "transportation",
+    "social_life"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Emirbeyazıt Mahallesi Menteşe Muğla kiralık konut son 90 gün",
+    "Emirbeyazıt Mahallesi Menteşe Muğla kiralık daire 1+0 1+1 2+1 3+1",
+    "Emirbeyazıt Mahallesi Menteşe Muğla güvenlik olayları son 12 ay",
+    "Emirbeyazıt Mahallesi Menteşe Muğla suç trafik sağlık altyapı belediye duyurusu",
+    "MUTTAŞ Emirbeyazıt Mahallesi Menteşe Muğla otobüs hatları",
+    "Muğla Büyükşehir Belediyesi Emirbeyazıt Mahallesi ulaşım",
+    "Emirbeyazıt Mahallesi Menteşe Muğla restoran kafe market park kültür bar pub canlı müzik gece kulübü",
+    "Emirbeyazıt Mahallesi Menteşe Muğla sosyal yaşam mekanları"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGvGkiA6SYv2kz9_ehG7lf1Pv0CG7d6UOoK1wCg4DwAjPwIjhm6Sx9Q1Kx3bUre7bhYshnaQOenG0a2I7HUniCrWay5tvzeoyY4NnBTG8wxrflO28BobBW0Sv158vis5lieLihGdu6y0M=",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6sAsIEz8lgO4eTb3wfAB_kFd2vQ6lR5c6il6esZXJnuJZ9fw4R4CKCZIO6991_KUyk-iVXaukwWYAiHazRwqS7UzdGlEDxnqCDtXxBY9oVtM4C3XvngjDovIWLU9VLGyHGwrk99gYuLICOcMrw2U=",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoOvrip0li-oFlsfV0BT3dcXTIhkVyVjJJ33blyXWP4mvuK18dpOkKSYiXfcnVwJJW-rEsV8f381q1sxiFPVphrIHRM4t7kjCU_dPKA1Isa3Fo4kd7ANYa6wEj2HjI-03t6CgIPaNXk3Hhb_M9vY9OXpLzmmYEBR8WLpNFZE_tBtDlKa7A",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXO0aymjKGDipIlhGeRu0J-R-rMfTuPxvNl-4iTZ-CgP0MdyeaqCQGSvMliuW1p4MBL12UGTcKGHRWcx-EaD9oN9XsEB8azO380rIjwwV93UKiA0SfeHKKgv4rTNpiI53u705VmAt0mRN-aZCk41Nh4NXzO4lO-ejK5cjP1DCSKh-BgxWE9hEz2ZmtM0phPgBA3HHODNICIqkSUfNemkEcMlgGf2k=",
+      "title": "mentese.bel.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjcXdfB5JOva5vXtkuXyJc2RGOEpGDaefQo6mhnLgSEsbbyklDZGc_4ZBBvpS9yleywNGgUlk-NKo9akW4ISY2YtN_wURfDR2_BYAZ8pVrb2rhTe0UHV_k222LXu85dI9ECg==",
+      "title": "mentese.bel.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlpCwpywD5XOcOtkvEHiBpeXvMO39ehcIE8QbazgZy-oiVq3arkZrh8FmNHqiVYaHIGCFezDlFR41b7kC9dzsClao4xrjwb4-u7m7sR8jWZ8ma8KeTaJ5sS-vKCg==",
+      "title": "mentese.bel.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_MNuXmPhlzO811Fp25sgSL_iVAnf9IPfTv9ZZRdY4WQHXgcFqmBm-TmwkbsBbu8gbSLWa7Jr3EJdugLM4BnexV_s6EgKO91f_R9eFAsbwsGqK",
+      "title": "mentese.bel.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELso89dUPZA-cZHvSzSnGCpukRrjZfK8mqgkKhHIKHBNK84HlNkG8ixeL-pwXvqS-pf7ryuGINHEwwg8w328-LclZ4nFVF5pbb_dNLK45z8NRnHMS4PoBR8kxXr_2d0NZjtqTXGEKlKLgvYzQEDHFphvPQto3IOzJvZKdWYIfbhUW21rcBVMTAu9x7BymIZeeAqscaMr7kh2ZZEJOlBlKw7_OQ4e1t84ql",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGT5kp8pqZjoxI-lF6TEx5JmHHGqq4ruQa10oRM938rcPsMRBcRwB_Hi2jN0eIcy1d4h8SojPTEIXaCDHtWpjCJpX4LuZdH_LObgmibvBJSjwRDudrq60IAicv4rIO1SGpcri2CYh6s8l3HIQIGcj1HbpoPGv7YUAAX_pozRzFX4UqcdSwpKH_Tmo5ayHSQIArfeBGc0hVWYaIrRtzUuQ==",
+      "title": "sabah.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx9retVTWp6S9cySS4BGVYaP1cct0bXSmC2fKuz26xnH8EjwmIquhJMYZoKjPfayuLorTIh2LQJvT_0zuOWbr1tRd72vygzHW9x4WIEARxJSEAaeoghQXGSwrzGnZjFp1hCxD2uOCu29MVxVH4dYcNxLesG_we-n0Sp6oj2v8swa_19W_lochKXBg4R1--yGUC50FAk0S7ag==",
+      "title": "egeyonhaber.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjkqFoXwkJtIY6GFC1vyEo4av-ogHz88SsjT9G5Y_tt_0I62RniviDAcTkc9ABh2zyUZ2ZiCtV9LNHkg00YtdJs5SZVp4yCRoulKVT6DrxqwZag23IBGouknn_bvroCNdNK3Y5NxOM2rmOpJTleDSJU7OFsTw9dUDrEzdHef4VgqPy77yZcfx_eTwX6-l_yrXG9w7g0v1v5LrTq2J-PPA=",
+      "title": "sabah.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAC7CmaA7BI69vNcFtYVswQYlFbgKP_rFyyUKcHh6M1y5UBu1oQwTAxbbznrJDPJCMhmuKPzgyD6sOpTzRs-j2mV3S_L43LS3HFi-BdazbmF_t5qPLLddj9qnGNwuSvfxf346tr5sXGVudIz-EQZN5ciKBSp9OracJamYmZK34NFU5ULFs6jb7b3u0V1fpuJL5",
+      "title": "adanamasasi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4B6fg0tNNbtCPMT-gCapbSP6ERd0GTIwphhIovmlLsj24bHuNKslYvMe7mumDdUfgs18e4BfENv0JT1XVvjg6A0LBS3gVVJ7pqwSOqVbkCOig-zQFEMVp6S7slhy9Ck9bmODGaSNn6UWYFglQB44nnv4njUiNubabCfPStzEcwiIceom9MB2J8WA=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRASXstxWk25tkzdbOCaT-zpxvElEY-ErfEfRk28l2amWW6d0ykhk9TwJ19wn9eIHhkai-6fLNHVsURUn9tfX-eW-TBpCteV-x9OQ_k2k8SMT8YVc4wp2gLmU86ElF_Bpqn_QN5sE=",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF12XdbwRNnCcygk8Ee7Uol2MsD1QpkPxOGSWv7HFLlsSbYNDJ4-r_0hZ0DiDW7WdvOuqi-gm6keS4VBCelkB8yKJD90nFZd-TOn624T5PPqhTkysE47UEDdd9aXFxGpoODyCEyr4IbvY16qABYKGQcXogXTX9ACr-stQ==",
+      "title": "muttas.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGUuLTUP54SKhAD-RfnB6Iy69hCVNcwoqQBDzzOtCXeEmP-vl8_FTdjH6HKQ7VGNgnWRpq6Ey4fccTgRHkPL3QKq1sHvuoCiWd1bC5hIR2apYCSTi8AEFtJCGK4FKJpzxgYcRsL01jsMoDge8oy4IeuOsQPep3l18pK2aVq-cUaFRVkw==",
+      "title": "gezinomi.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvSIoUEOPBCHN7VhwHk9hOV1y3jkKoEQuOL5XZlHZDc8iOZ9R730OOYqExyFN5q8tw-2LR_0CcdyrLZzPMhI0kFRUvy1TMrTRaUDukVhMx--elQaf0e-kZa_sz40vF_qn5A7EMzOiEucmX8-CGTvi17dvg",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs0n01vW3OwtInQlclCKt_GJlohGwqyiDhAERjAHQaEz76ntoVYMLTxXgBNlsfQdQQkMdjD1QPSXtf3gPzX8iC6EVGEbc96asA2INKv2jAhLQ1IkHX0x2KVWUMSRdFL_-ce7gdIeqQs-09wPYo5xk1DmUhZIvag7bBxgzcGvZ9",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsnDujIJxVG0SsaB02ZvYBCx1TQuTCAssb7H0lx7JSu49mI-oTPWAh6zlH_GLCfmDX0T6kuh-LVvQnp-8JT4oRIIhiI-QaoV4hax8onMIT6OGzs-CSi_yhavGO68nbriUHwvxNversYlLyatvnyWk0dHIsixi10LvMNA==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiXnQ_nBSucl0JDaL_8o6mpNagGbmTGttQ25U64iDrwIAClyj5Q13qdjaRcqGLlMReSNetummMYG3z2GnQqvJK4NgPKqx0VWxrtrfjjJLD6vTa6rAOVKzfXxDkXGuOBEAFH7z-0WPJId-NHQAGl580TFaPi40CEw==",
+      "title": "yandex.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUICD7E3oKc3aghkWTls5aCvhk8kc5l1B5hS7DYrf1o1qAAKzjOCK_q8ewCtMxYowU2nGIZSVq1En3rOLfUr2TvkEPdE16SlS4NwDFTf2HkF9aowCGeNVINWeJWSHbUWfEgGEOF2-8VMwN1p7aWpp50M0=",
+      "title": "mekanlar.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZVBxyfUa1mD4roU5OHQs1ofbPKIUM3wWIX5dIWZa4s0dCtTlvCT6vQSiiAsuEEFxBMCoy4BXAcheZ3tdRYVEF9OaEWSEt43Hp-M5cooxY8s9-R7SrJ1B6o0zCk1GFdp2AVFpZ0CFzQO9qZ3by0tWbbq85MA==",
+      "title": "mekanlar.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOxUBv9iMMZnI1Snj1VloIBVPTEcCLSWEKN1PWUoKLaVtBYp-_bt_4a5f7HpTjfVPFkXYGDjixiLkUN4W-eJcPO0DcnYOXPii-xJDoJO9u025f4mlaNtkSxnHWhVxuqZK32jV51Iv-iMFsXhxQ2UaqT2QeFC-_x-7r4emyTd3aj_qcaQ60EQ==",
+      "title": "endeksa.com"
+    }
+  ],
+  "grounding_support_count": 53,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGvGkiA6SYv2kz9_ehG7lf1Pv0CG7d6UOoK1wCg4DwAjPwIjhm6Sx9Q1Kx3bUre7bhYshnaQOenG0a2I7HUniCrWay5tvzeoyY4NnBTG8wxrflO28BobBW0Sv158vis5lieLihGdu6y0M="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6sAsIEz8lgO4eTb3wfAB_kFd2vQ6lR5c6il6esZXJnuJZ9fw4R4CKCZIO6991_KUyk-iVXaukwWYAiHazRwqS7UzdGlEDxnqCDtXxBY9oVtM4C3XvngjDovIWLU9VLGyHGwrk99gYuLICOcMrw2U="
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoOvrip0li-oFlsfV0BT3dcXTIhkVyVjJJ33blyXWP4mvuK18dpOkKSYiXfcnVwJJW-rEsV8f381q1sxiFPVphrIHRM4t7kjCU_dPKA1Isa3Fo4kd7ANYa6wEj2HjI-03t6CgIPaNXk3Hhb_M9vY9OXpLzmmYEBR8WLpNFZE_tBtDlKa7A"
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXO0aymjKGDipIlhGeRu0J-R-rMfTuPxvNl-4iTZ-CgP0MdyeaqCQGSvMliuW1p4MBL12UGTcKGHRWcx-EaD9oN9XsEB8azO380rIjwwV93UKiA0SfeHKKgv4rTNpiI53u705VmAt0mRN-aZCk41Nh4NXzO4lO-ejK5cjP1DCSKh-BgxWE9hEz2ZmtM0phPgBA3HHODNICIqkSUfNemkEcMlgGf2k="
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjcXdfB5JOva5vXtkuXyJc2RGOEpGDaefQo6mhnLgSEsbbyklDZGc_4ZBBvpS9yleywNGgUlk-NKo9akW4ISY2YtN_wURfDR2_BYAZ8pVrb2rhTe0UHV_k222LXu85dI9ECg=="
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlpCwpywD5XOcOtkvEHiBpeXvMO39ehcIE8QbazgZy-oiVq3arkZrh8FmNHqiVYaHIGCFezDlFR41b7kC9dzsClao4xrjwb4-u7m7sR8jWZ8ma8KeTaJ5sS-vKCg=="
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_MNuXmPhlzO811Fp25sgSL_iVAnf9IPfTv9ZZRdY4WQHXgcFqmBm-TmwkbsBbu8gbSLWa7Jr3EJdugLM4BnexV_s6EgKO91f_R9eFAsbwsGqK"
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELso89dUPZA-cZHvSzSnGCpukRrjZfK8mqgkKhHIKHBNK84HlNkG8ixeL-pwXvqS-pf7ryuGINHEwwg8w328-LclZ4nFVF5pbb_dNLK45z8NRnHMS4PoBR8kxXr_2d0NZjtqTXGEKlKLgvYzQEDHFphvPQto3IOzJvZKdWYIfbhUW21rcBVMTAu9x7BymIZeeAqscaMr7kh2ZZEJOlBlKw7_OQ4e1t84ql"
+        }
+      },
+      {
+        "web": {
+          "title": "sabah.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGT5kp8pqZjoxI-lF6TEx5JmHHGqq4ruQa10oRM938rcPsMRBcRwB_Hi2jN0eIcy1d4h8SojPTEIXaCDHtWpjCJpX4LuZdH_LObgmibvBJSjwRDudrq60IAicv4rIO1SGpcri2CYh6s8l3HIQIGcj1HbpoPGv7YUAAX_pozRzFX4UqcdSwpKH_Tmo5ayHSQIArfeBGc0hVWYaIrRtzUuQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "egeyonhaber.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx9retVTWp6S9cySS4BGVYaP1cct0bXSmC2fKuz26xnH8EjwmIquhJMYZoKjPfayuLorTIh2LQJvT_0zuOWbr1tRd72vygzHW9x4WIEARxJSEAaeoghQXGSwrzGnZjFp1hCxD2uOCu29MVxVH4dYcNxLesG_we-n0Sp6oj2v8swa_19W_lochKXBg4R1--yGUC50FAk0S7ag=="
+        }
+      },
+      {
+        "web": {
+          "title": "sabah.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjkqFoXwkJtIY6GFC1vyEo4av-ogHz88SsjT9G5Y_tt_0I62RniviDAcTkc9ABh2zyUZ2ZiCtV9LNHkg00YtdJs5SZVp4yCRoulKVT6DrxqwZag23IBGouknn_bvroCNdNK3Y5NxOM2rmOpJTleDSJU7OFsTw9dUDrEzdHef4VgqPy77yZcfx_eTwX6-l_yrXG9w7g0v1v5LrTq2J-PPA="
+        }
+      },
+      {
+        "web": {
+          "title": "adanamasasi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAC7CmaA7BI69vNcFtYVswQYlFbgKP_rFyyUKcHh6M1y5UBu1oQwTAxbbznrJDPJCMhmuKPzgyD6sOpTzRs-j2mV3S_L43LS3HFi-BdazbmF_t5qPLLddj9qnGNwuSvfxf346tr5sXGVudIz-EQZN5ciKBSp9OracJamYmZK34NFU5ULFs6jb7b3u0V1fpuJL5"
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4B6fg0tNNbtCPMT-gCapbSP6ERd0GTIwphhIovmlLsj24bHuNKslYvMe7mumDdUfgs18e4BfENv0JT1XVvjg6A0LBS3gVVJ7pqwSOqVbkCOig-zQFEMVp6S7slhy9Ck9bmODGaSNn6UWYFglQB44nnv4njUiNubabCfPStzEcwiIceom9MB2J8WA="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRASXstxWk25tkzdbOCaT-zpxvElEY-ErfEfRk28l2amWW6d0ykhk9TwJ19wn9eIHhkai-6fLNHVsURUn9tfX-eW-TBpCteV-x9OQ_k2k8SMT8YVc4wp2gLmU86ElF_Bpqn_QN5sE="
+        }
+      },
+      {
+        "web": {
+          "title": "muttas.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF12XdbwRNnCcygk8Ee7Uol2MsD1QpkPxOGSWv7HFLlsSbYNDJ4-r_0hZ0DiDW7WdvOuqi-gm6keS4VBCelkB8yKJD90nFZd-TOn624T5PPqhTkysE47UEDdd9aXFxGpoODyCEyr4IbvY16qABYKGQcXogXTX9ACr-stQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "gezinomi.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGUuLTUP54SKhAD-RfnB6Iy69hCVNcwoqQBDzzOtCXeEmP-vl8_FTdjH6HKQ7VGNgnWRpq6Ey4fccTgRHkPL3QKq1sHvuoCiWd1bC5hIR2apYCSTi8AEFtJCGK4FKJpzxgYcRsL01jsMoDge8oy4IeuOsQPep3l18pK2aVq-cUaFRVkw=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvSIoUEOPBCHN7VhwHk9hOV1y3jkKoEQuOL5XZlHZDc8iOZ9R730OOYqExyFN5q8tw-2LR_0CcdyrLZzPMhI0kFRUvy1TMrTRaUDukVhMx--elQaf0e-kZa_sz40vF_qn5A7EMzOiEucmX8-CGTvi17dvg"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs0n01vW3OwtInQlclCKt_GJlohGwqyiDhAERjAHQaEz76ntoVYMLTxXgBNlsfQdQQkMdjD1QPSXtf3gPzX8iC6EVGEbc96asA2INKv2jAhLQ1IkHX0x2KVWUMSRdFL_-ce7gdIeqQs-09wPYo5xk1DmUhZIvag7bBxgzcGvZ9"
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsnDujIJxVG0SsaB02ZvYBCx1TQuTCAssb7H0lx7JSu49mI-oTPWAh6zlH_GLCfmDX0T6kuh-LVvQnp-8JT4oRIIhiI-QaoV4hax8onMIT6OGzs-CSi_yhavGO68nbriUHwvxNversYlLyatvnyWk0dHIsixi10LvMNA=="
+        }
+      },
+      {
+        "web": {
+          "title": "yandex.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiXnQ_nBSucl0JDaL_8o6mpNagGbmTGttQ25U64iDrwIAClyj5Q13qdjaRcqGLlMReSNetummMYG3z2GnQqvJK4NgPKqx0VWxrtrfjjJLD6vTa6rAOVKzfXxDkXGuOBEAFH7z-0WPJId-NHQAGl580TFaPi40CEw=="
+        }
+      },
+      {
+        "web": {
+          "title": "mekanlar.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUICD7E3oKc3aghkWTls5aCvhk8kc5l1B5hS7DYrf1o1qAAKzjOCK_q8ewCtMxYowU2nGIZSVq1En3rOLfUr2TvkEPdE16SlS4NwDFTf2HkF9aowCGeNVINWeJWSHbUWfEgGEOF2-8VMwN1p7aWpp50M0="
+        }
+      },
+      {
+        "web": {
+          "title": "mekanlar.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZVBxyfUa1mD4roU5OHQs1ofbPKIUM3wWIX5dIWZa4s0dCtTlvCT6vQSiiAsuEEFxBMCoy4BXAcheZ3tdRYVEF9OaEWSEt43Hp-M5cooxY8s9-R7SrJ1B6o0zCk1GFdp2AVFpZ0CFzQO9qZ3by0tWbbq85MA=="
+        }
+      },
+      {
+        "web": {
+          "title": "endeksa.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOxUBv9iMMZnI1Snj1VloIBVPTEcCLSWEKN1PWUoKLaVtBYp-_bt_4a5f7HpTjfVPFkXYGDjixiLkUN4W-eJcPO0DcnYOXPii-xJDoJO9u025f4mlaNtkSxnHWhVxuqZK32jV51Iv-iMFsXhxQ2UaqT2QeFC-_x-7r4emyTd3aj_qcaQ60EQ=="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "start_index": 138,
+          "end_index": 265,
+          "text": "KİRA:\n* 1+1 | eşyalı | 35.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Muğla Ata Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 266,
+          "end_index": 384,
+          "text": "* 2+1 | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Muğla Kampüs Emlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "start_index": 385,
+          "end_index": 495,
+          "text": "* 3+1 | eşyasız | 40.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Tunç Emlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "start_index": 496,
+          "end_index": 611,
+          "text": "* 3+1 | eşyasız | 40.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Epok Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "start_index": 612,
+          "end_index": 726,
+          "text": "* 2+1 | eşyalı | 39.900 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Epok Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 727,
+          "end_index": 857,
+          "text": "* 3+1 | eşyasız | 25.000 TL/ay | ilan tarihi: 2026-06-28 | bilinmiyor | Emirbeyazıt Mahallesi | Çakır Emlak Danışmanlığı"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 858,
+          "end_index": 977,
+          "text": "* 2+1 | eşyasız | 42.500 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Thera Emlak İnşaat"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          1
+        ],
+        "segment": {
+          "start_index": 978,
+          "end_index": 1074,
+          "text": "* 1+1 | eşyasız | 18.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3
+        ],
+        "segment": {
+          "start_index": 1244,
+          "end_index": 1319,
+          "text": "Şüpheli, belediye güvenlik görevlilerinin dikkati sayesinde yakalandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          4,
+          5,
+          6
+        ],
+        "segment": {
+          "start_index": 1320,
+          "end_index": 1534,
+          "text": "* 2026-07-10 | duyuru | Menteşe Belediyesi tarafından Emirbeyazıt Mahallesi, 1152 ada 5 parseldeki metruk yapıların genel güvenlik ve asayiş bakımından tehlike arz etmesi nedeniyle bilgilendirme yapıldı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 1535,
+          "end_index": 1695,
+          "text": "* 2025-11-07 | suç/şiddet | Emirbeyazıt Mahallesi'nde alacak-verecek meselesi yüzünden çıkan bıçaklı kavgada bir kişi karın bölgesinden yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "segment": {
+          "start_index": 1696,
+          "end_index": 1931,
+          "text": "* 2025-08-20 | suç/şiddet | Emirbeyazıt Mahallesi'nde bir bankada güvenlik görevlisi olarak çalışan bir kişi, kendisine zimmetli silahıyla başından vurulmuş halde bulundu ve kaldırıldığı hastanede hayatını kaybetti."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12
+        ],
+        "segment": {
+          "start_index": 1933,
+          "end_index": 2138,
+          "text": "ULAŞIM:\n* 1-8 | Menteşe Otogar - Menteşe Yapı Kooperatifi | Güzergahında \"Zübeyde Hanım Kavşağı\", \"Yeşil Beyaz Park\", \"Atatürk Stadyum\" durakları Emirbeyazıt Mahallesi'ne yakın konumdadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12
+        ],
+        "segment": {
+          "start_index": 2196,
+          "end_index": 2236,
+          "text": "| Güncel sıklık/son sefer: bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          12
+        ],
+        "segment": {
+          "start_index": 2237,
+          "end_index": 2246,
+          "text": "| MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2247,
+          "end_index": 2365,
+          "text": "* 1-9 | Besko (Adliye) - Şehir İçi | Güzergahında \"Adliye\" durağı Emirbeyazıt Mahallesi'ne yakın konumdadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2440,
+          "end_index": 2494,
+          "text": "Yıl Okulu, Dumlupınar İlkokulu'na ulaşım sağlar."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2495,
+          "end_index": 2535,
+          "text": "| Güncel sıklık/son sefer: bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2536,
+          "end_index": 2545,
+          "text": "| MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2546,
+          "end_index": 2661,
+          "text": "* 1-11 | Stadyum - Vakıf Ayvalı | Güzergahında \"Stadyum\" durağı Emirbeyazıt Mahallesi'ne yakın konumdadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2662,
+          "end_index": 2699,
+          "text": "| Vakıf Ayvalı'ya ulaşım sağlar."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2700,
+          "end_index": 2740,
+          "text": "| Güncel sıklık/son sefer: bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          13
+        ],
+        "segment": {
+          "start_index": 2741,
+          "end_index": 2750,
+          "text": "| MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 2751,
+          "end_index": 2895,
+          "text": "* 1-43 | Bayır - Menteşe Stadyum | Güzergahında \"Yeşil Beyaz Park\", \"Yekap Parkı\" durakları Emirbeyazıt Mahallesi'ne yakın konumdadır."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 2896,
+          "end_index": 2959,
+          "text": "| Stadyum, Devlet Hastanesi, Kent Meydanı'na ulaşım sağlar."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 2960,
+          "end_index": 3000,
+          "text": "| Güncel sıklık/son sefer: bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          14
+        ],
+        "segment": {
+          "start_index": 3001,
+          "end_index": 3010,
+          "text": "| MUTTAŞ"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15
+        ],
+        "segment": {
+          "start_index": 3012,
+          "end_index": 3115,
+          "text": "SOSYAL YAŞAM:\n* Mabolla Life & Art | bar/restoran | Emirbeyazıt, Mola City AVM, 48000 Menteşe/Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15
+        ],
+        "segment": {
+          "start_index": 3116,
+          "end_index": 3169,
+          "text": "| faaliyet: açık (haftanın her günü 12:00-02:00)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          15
+        ],
+        "segment": {
+          "start_index": 3170,
+          "end_index": 3180,
+          "text": "| Gezinomi"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          16,
+          17
+        ],
+        "segment": {
+          "start_index": 3227,
+          "end_index": 3252,
+          "text": "Cad., 1, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          16
+        ],
+        "segment": {
+          "start_index": 3253,
+          "end_index": 3289,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 3290,
+          "end_index": 3378,
+          "text": "* Arasta Çay Bahçesi | kafe | Emirbeyazıt Mah., Semerciler Sok., 18, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 3379,
+          "end_index": 3415,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19,
+          17
+        ],
+        "segment": {
+          "start_index": 3416,
+          "end_index": 3502,
+          "text": "* Matizz Cafe Pub | bar/pub | Emirbeyazıt Mah., Saatlikule Cad., 10, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          19
+        ],
+        "segment": {
+          "start_index": 3503,
+          "end_index": 3539,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 3540,
+          "end_index": 3618,
+          "text": "* Cüce | bar/restoran | Emirbeyazıt Mah., Çamlık Sok., 3, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 3619,
+          "end_index": 3655,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 3656,
+          "end_index": 3738,
+          "text": "* Çakarkeyf | bar/kafe | Emirbeyazıt Mah., Saatlikule Cad., 4C, Menteşe, Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          17
+        ],
+        "segment": {
+          "start_index": 3739,
+          "end_index": 3775,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          20,
+          21
+        ],
+        "segment": {
+          "start_index": 3860,
+          "end_index": 3877,
+          "text": "8 Menteşe Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          21
+        ],
+        "segment": {
+          "start_index": 3878,
+          "end_index": 3931,
+          "text": "| faaliyet: açık (haftanın her günü 08:00-01:00)"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          21
+        ],
+        "segment": {
+          "start_index": 3932,
+          "end_index": 3946,
+          "text": "| Mekanlar.com"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 3947,
+          "end_index": 4022,
+          "text": "* Köşe Restaurant | restoran | Emirbeyazıt Mahallesi'ne 517 m uzaklıkta"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4023,
+          "end_index": 4055,
+          "text": "| faaliyet: bilinmiyor | Endeksa"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4056,
+          "end_index": 4141,
+          "text": "* İbos Ocakbaşı | kebap/lahmacun/pide | Emirbeyazıt Mahallesi'ne 942 m uzaklıkta"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4142,
+          "end_index": 4174,
+          "text": "| faaliyet: bilinmiyor | Endeksa"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4175,
+          "end_index": 4336,
+          "text": "* Muğla Rüyapark AVM | alışveriş merkezi (içinde Mado, Burger King, Pidem, Köfteci Ramiz gibi yerler bulunur) | Emirbeyazıt Mahallesi'ne 960 m uzaklıkta"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4337,
+          "end_index": 4369,
+          "text": "| faaliyet: bilinmiyor | Endeksa"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4370,
+          "end_index": 4487,
+          "text": "* Festiva AVM | alışveriş merkezi (içinde Robert's Coffee bulunur) | Emirbeyazıt Mahallesi'ne 1.081 m uzaklıkta"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          22
+        ],
+        "segment": {
+          "start_index": 4488,
+          "end_index": 4520,
+          "text": "| faaliyet: bilinmiyor | Endeksa"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 4521,
+          "end_index": 4597,
+          "text": "* 2000 Derneği Parkı | park | Emirbeyazıt Mahallesi'ne 1.26 km uzaklıkta"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          18
+        ],
+        "segment": {
+          "start_index": 4598,
+          "end_index": 4634,
+          "text": "| faaliyet: bilinmiyor | Yandex Maps"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZ8EntmfKHPXM9j7LbtvAs4dtiJb5jUml9p1v2EoAXUN1zdfsIoYxsXZQc9-eemdkUuUkevO4nNkvZn-AaK7ZYVZWg3f19MGDGriGCAGQNiZ18hBdUY4wOMwHI7SDhDW0RgphMjB0DxNv1rF-paMqXrCmaMsIDbixaTSq1zgtEmpprrf9pw1HZ3H6v8CKcvhtO7-X8etxOBiS8EQc5pajgBnjEFK16lJNL2FYP0YdFJGUhmhJ9jA8Mccwaa2S1g0xa5XeChk2mbfs3WubQv9Uu0iCdca5kiw==\">Emirbeyazıt Mahallesi Menteşe Muğla sosyal yaşam mekanları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiaTm1-ClfHOa-4ZAnBklYmtx2Iug6Hp-8YUXbKQFUEdTREGq_D8abq0e4TcwE38jpcwyALV3BfcGpY8W6GAJmb9cmK1tZyvF69vu8lQf8a-ueRXpUKTR61fe8bvNu6Zf8QTSYNNUXZAkAuW6-m2Bvt4IhYO5p3ZRS6sZYZZ-Gr5b6Rvc6RRlOzmaSAzS8DxvzvgiHlLwph-3qNFn1n7JjKArf1xMSrd7IYTyu_R35csoltXBbCTeh0nXbdJFNGxBSu9y3Yjvzrr1yMa2w9iNbGgDietTMgF8lDQI=\">MUTTAŞ Emirbeyazıt Mahallesi Menteşe Muğla otobüs hatları</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5ablfRc67y2kzYyvKGOLGEaknvDSwtTBgl3GekQTNNHQrABT0Y9zhrRQaiOrddqnCSsS56agCtabJXVR9razAdLfSmnZrBqdZI_Cf2PRW_72u78TMnZhNNw_cfmcpW41lbeJ4Sp-rBEgNanM6wrEUFU0Mvx73WWWJtoo8JM3kIDkSQWMBnv12M0VU2i6zGf5ADB45Wy9NbES04MFE1M39Cggv0S7zRAaP_hOy5XTgFGnhHRyDLN_x-U1LXTUduv3TXnyHvN37Nlq2PjMZT-vEXqbfDm2YUYcm3HTO\">Emirbeyazıt Mahallesi Menteşe Muğla güvenlik olayları son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLIkYqleFsDM8kgrfIgiq2mkoP2n8irCpXsJVuXQZskyonQ3OLsRXGHFfni5mA2gEY-gvvLb7dqYHjIDiXsDH_q_kUjAPiTdtCZrzMzYcO4LEUochCaQzDeqE1up_4YREnTzEwUnQt0MfgFgGvVz5yjAqIFTBbaCiV8124axMJigIde5qsUOC0ew9spIVGmWmZlEvzFfo1TnnS2kL_OGyckQy_VxYx2N1CF9KEG8KqCq7ZRrw4s5RkPY6_6FXGdBVjWGruWRPw0dBii-TGEFY8TTGHAmX3oYDX\">Emirbeyazıt Mahallesi Menteşe Muğla kiralık konut son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3_0sS9opKrrm7XXZ9TMqCDXv9IpRe_kMK5UPc2ZQvtvTw0-Mtpnm9gE3m4HXrnNDTVRuaEnBuAermL3B7Ei1aOQ_S8y_ddKJy_N7pju7mqLYOP89ON3401Lphr7BSjTr9JvYQ5F0rEErvlZ74Rj-ZQEOosy1DDZPxr-Ki39lQ-k696-4kUhG1g_eJFLuK3SnR-8GHD7HImv1cDSDjTjzZsEcrXE44s6lo5OsA0ZgS5t72vxXh2tXD9CRGtZXy_KPRRLaT9qOeLOQBcGKJ8YYnrr9AKLUXRF40BahzuAGvWCo=\">Emirbeyazıt Mahallesi Menteşe Muğla kiralık daire 1+0 1+1 2+1 3+1</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpa9llsrjOrziYjM-cJCnZJcYjaD7fO-2yUoAjRM9JzMpWG15s4H26gPDOVVLhUkUjCEyMRWsnYrAl64Y7WjNuXQz1GXBkpnoG3Q2s9qLUFt9dw0r9TeUT4fXVVjWGlw9Q0Ws8Huhc7A_BZYHe63W0-jrLRSiR6hchTUueEhVOcRFUu55jTODj2kRh1L7G0xueoyjNfS1-GmHb4OXwZf5Lcs-GkA9msJVRYTCm4xCXCZqHL0fIT-uJuAyp7Q5fGApfLu366VN7lTK9jRnpOg81c1uB_4CGuXuBbnO9ATo_\">Muğla Büyükşehir Belediyesi Emirbeyazıt Mahallesi ulaşım</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4NSIvnec_NAxE3U_1LdOniUG6N4sIIO3HpH202HFQg_bomKyUmoZqCDp1kRFgrF-x1haWk9Grrt_wwNxjdruZIp3rgws3uLYUpap8b2h7XxxjdkEVv47gjFuKJA_mGS0giOV8AMCV2JhFN7Xdyul9VEnMCQVv8s1wSPclJYGgkX2jGNLHeIz_QRF5edj2z_rTiwjzEo6AJVjgOOc6GOol54eNFSvu-mGGzBnhPSZ14GJzmf-BF5dmcwjaoW_uFyq9pwLqpwL4O0TM6XRH6klRROePHiRHSa3TTw6WfgZt1llGkEgxaZsuu5QzKKYCKg46OXpxTuSWZ87-w4PSxgennvcPGkgelUsYi_Ffs4v4b9hbBCJK\">Emirbeyazıt Mahallesi Menteşe Muğla restoran kafe market park kültür bar pub canlı müzik gece kulübü</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEinXq7lR-iB8Q_G9tJboYKYhuIR0k6f3U9COkX_g9Y1k8XlEGGUqRm-zsEWKkMrBqN7BYstPwHAdDXoeiNpdjKeT3B04jCZpcIIlFrbMfSbby5sEUZSIjfUaO02ab-6csvQii9jjz-OLs_477OjpqMPV8sTCObXbpAce5lq_ZqjGiGXDCm4LRxjbWPOF54Ynaw6AvHEny-3vnpNi22MOVj7D8YZyRkctIv-1h8MOBdXwOMhAKuRNuA9d755o1YUkvDECx7ZWes4uFfn-uEjjUWXvRiUh91INSnc0AprRj_5AXKIpjpuaepyJKGkD78Z2hKfRDo92Q=\">Emirbeyazıt Mahallesi Menteşe Muğla suç trafik sağlık altyapı belediye duyurusu</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Emirbeyazıt Mahallesi Menteşe Muğla kiralık konut son 90 gün",
+      "Emirbeyazıt Mahallesi Menteşe Muğla kiralık daire 1+0 1+1 2+1 3+1",
+      "Emirbeyazıt Mahallesi Menteşe Muğla güvenlik olayları son 12 ay",
+      "Emirbeyazıt Mahallesi Menteşe Muğla suç trafik sağlık altyapı belediye duyurusu",
+      "MUTTAŞ Emirbeyazıt Mahallesi Menteşe Muğla otobüs hatları",
+      "Muğla Büyükşehir Belediyesi Emirbeyazıt Mahallesi ulaşım",
+      "Emirbeyazıt Mahallesi Menteşe Muğla restoran kafe market park kültür bar pub canlı müzik gece kulübü",
+      "Emirbeyazıt Mahallesi Menteşe Muğla sosyal yaşam mekanları"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 1823,
+    "prompt_token_count": 992,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 992
+      }
+    ],
+    "tool_use_prompt_token_count": 1199,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1199
+      }
+    ],
+    "total_token_count": 4014
+  },
+  "text": "Emirbeyazıt Mahallesi, Menteşe, Muğla için 28 Ekim 2026 itibarıyla araştırma sonuçları aşağıda dört bölümde sunulmuştur:\n\nKİRA:\n* 1+1 | eşyalı | 35.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Muğla Ata Gayrimenkul\n* 2+1 | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Muğla Kampüs Emlak\n* 3+1 | eşyasız | 40.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Tunç Emlak\n* 3+1 | eşyasız | 40.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Epok Gayrimenkul\n* 2+1 | eşyalı | 39.900 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Epok Gayrimenkul\n* 3+1 | eşyasız | 25.000 TL/ay | ilan tarihi: 2026-06-28 | bilinmiyor | Emirbeyazıt Mahallesi | Çakır Emlak Danışmanlığı\n* 2+1 | eşyasız | 42.500 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi | Thera Emlak İnşaat\n* 1+1 | eşyasız | 18.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Emirbeyazıt Mahallesi\n\nGÜVENLİK:\n* 2026-08-13 | suç/şiddet | Emirbeyazıt Mahallesi Kurşunlu Meydanı çevresinde bir iş yerinin önündeki Türk bayrağının ateşe verilmesi olayı. Şüpheli, belediye güvenlik görevlilerinin dikkati sayesinde yakalandı.\n* 2026-07-10 | duyuru | Menteşe Belediyesi tarafından Emirbeyazıt Mahallesi, 1152 ada 5 parseldeki metruk yapıların genel güvenlik ve asayiş bakımından tehlike arz etmesi nedeniyle bilgilendirme yapıldı.\n* 2025-11-07 | suç/şiddet | Emirbeyazıt Mahallesi'nde alacak-verecek meselesi yüzünden çıkan bıçaklı kavgada bir kişi karın bölgesinden yaralandı.\n* 2025-08-20 | suç/şiddet | Emirbeyazıt Mahallesi'nde bir bankada güvenlik görevlisi olarak çalışan bir kişi, kendisine zimmetli silahıyla başından vurulmuş halde bulundu ve kaldırıldığı hastanede hayatını kaybetti.\n\nULAŞIM:\n* 1-8 | Menteşe Otogar - Menteşe Yapı Kooperatifi | Güzergahında \"Zübeyde Hanım Kavşağı\", \"Yeşil Beyaz Park\", \"Atatürk Stadyum\" durakları Emirbeyazıt Mahallesi'ne yakın konumdadır. | Otogar, Stadyum, Devlet Hastanesi'ne ulaşım sağlar. | Güncel sıklık/son sefer: bilinmiyor | MUTTAŞ\n* 1-9 | Besko (Adliye) - Şehir İçi | Güzergahında \"Adliye\" durağı Emirbeyazıt Mahallesi'ne yakın konumdadır. | Adliye, Anadolu Lisesi, Türdü İlkokulu, Sabri Acarsoy İlkokulu, 75. Yıl Okulu, Dumlupınar İlkokulu'na ulaşım sağlar. | Güncel sıklık/son sefer: bilinmiyor | MUTTAŞ\n* 1-11 | Stadyum - Vakıf Ayvalı | Güzergahında \"Stadyum\" durağı Emirbeyazıt Mahallesi'ne yakın konumdadır. | Vakıf Ayvalı'ya ulaşım sağlar. | Güncel sıklık/son sefer: bilinmiyor | MUTTAŞ\n* 1-43 | Bayır - Menteşe Stadyum | Güzergahında \"Yeşil Beyaz Park\", \"Yekap Parkı\" durakları Emirbeyazıt Mahallesi'ne yakın konumdadır. | Stadyum, Devlet Hastanesi, Kent Meydanı'na ulaşım sağlar. | Güncel sıklık/son sefer: bilinmiyor | MUTTAŞ\n\nSOSYAL YAŞAM:\n* Mabolla Life & Art | bar/restoran | Emirbeyazıt, Mola City AVM, 48000 Menteşe/Muğla | faaliyet: açık (haftanın her günü 12:00-02:00) | Gezinomi\n* Mabolla More | bar | Emirbeyazıt Mah., 10. Cad., 1, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n* Arasta Çay Bahçesi | kafe | Emirbeyazıt Mah., Semerciler Sok., 18, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n* Matizz Cafe Pub | bar/pub | Emirbeyazıt Mah., Saatlikule Cad., 10, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n* Cüce | bar/restoran | Emirbeyazıt Mah., Çamlık Sok., 3, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n* Çakarkeyf | bar/kafe | Emirbeyazıt Mah., Saatlikule Cad., 4C, Menteşe, Muğla | faaliyet: bilinmiyor | Yandex Maps\n* Leman Kültür / Muğla | kafe/restoran/bar | Emirbeyazıt Mh. Özer Türk Cd. No.8 Menteşe Muğla | faaliyet: açık (haftanın her günü 08:00-01:00) | Mekanlar.com\n* Köşe Restaurant | restoran | Emirbeyazıt Mahallesi'ne 517 m uzaklıkta | faaliyet: bilinmiyor | Endeksa\n* İbos Ocakbaşı | kebap/lahmacun/pide | Emirbeyazıt Mahallesi'ne 942 m uzaklıkta | faaliyet: bilinmiyor | Endeksa\n* Muğla Rüyapark AVM | alışveriş merkezi (içinde Mado, Burger King, Pidem, Köfteci Ramiz gibi yerler bulunur) | Emirbeyazıt Mahallesi'ne 960 m uzaklıkta | faaliyet: bilinmiyor | Endeksa\n* Festiva AVM | alışveriş merkezi (içinde Robert's Coffee bulunur) | Emirbeyazıt Mahallesi'ne 1.081 m uzaklıkta | faaliyet: bilinmiyor | Endeksa\n* 2000 Derneği Parkı | park | Emirbeyazıt Mahallesi'ne 1.26 km uzaklıkta | faaliyet: bilinmiyor | Yandex Maps"
+}

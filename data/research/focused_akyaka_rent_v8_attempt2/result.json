@@ -1,0 +1,303 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "akyaka",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-1",
+  "started_at": "2026-10-28T18:22:43.515150+00:00",
+  "finished_at": "2026-10-28T18:22:51.073060+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [
+    "rent_cost"
+  ],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Akyaka Ula Muğla kiralık daire 1+0 son 90 gün",
+    "Akyaka Ula Muğla kiralık daire 1+1 son 90 gün",
+    "Akyaka Ula Muğla kiralık daire 2+1 son 90 gün",
+    "Akyaka Ula Muğla kiralık daire 3+1 son 90 gün",
+    "Akyaka Ula Muğla kiralık ev son 90 gün"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF32SUKYdQEZut8cWwsrCxl_2nEVin2UmIhI7OzgRrHCMwqfVGZnCcKh8A_nValuKJXq6dWE3HdoVZlMZoELIMRpoIg54D9a2pyIv8m15swfJnjnCtQJVE0tDRcxQrOJ5IhTNcX0xOXQDkl9z0=",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVcvWY79AHtaZby9slFx11cI2IbOA9s46ylHdkF4QOA6oLzyGwI7gLCrhnrS4HflQhbeKJlCTLWQZCSKlbmYHS7LNumF1ub9aHiwUiOTHrgH2GXpYIPgI3MJfCNuV-WEbrLdoNPCXpfg==",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5IprWio7l44wG6Fn22j1Yzg3mj8MwhD14E3Q7X7QEloUmROXuMz73WyT5KTEs6C_KwWrm_g-cD97aH8J7e1eJEE8lUpEYqGZm7OjiMkMYVL4hgq7_3rUxJ1rYv1o_9wRJRvGVqFXn",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Gl-TjU9oKZ1DVgooB5jh8exqEbX--VnepVwTltObYLMPQkdIyRELV1wS_FrwmEmR66ZOEqF2tKixOr22LH5IZK36IWWPfJveHJwyuCymwrXrsMuf6PQ92PmwkqDrvwPR",
+      "title": "hepsiemlak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQf7uAPp9_Y9ZvQp2KIIOc8XvJ1PACoYIblG8IoiANbs8qGuNQYOl8j3GTHOj8h0z-FhGsbVdb6yXceOsNpY54318HzbDCUa1vaI63RrvNWoG4sjI2K_F9rcr9OJB3-Gb5WeYd2SuA9tRbmgnDQcJfbFzAHepNpef56d2Z",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoptan2bmuwJPBvsdSA2j3XK-gSy6-IDXGXcSPcuXiwZ9rx9GRJimSR259RJl7IgqjJYcVov-o9CXlhC52s5NotC1T4NKYETDuFAk3BmJF8QfYghdA76-dQu0Mj7Fqh2NbeAnHp6CPz4nyrlzogfCr4Vy-A0ThZieT2cnU",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZVCfate0V7yXDpO-0ufetrBCOB2PcnQ3BHzQaIiS4EgpxGQ0iuEivQOSRVlfsr-Dk4U_n6-AEScQo8D55jUQvWWKe5Vez07Kslu5ncwOcI-pLhZVjz416atLaDhxuL39st55EqJWfY6K7T6VLHUyQzLrYYXz1",
+      "title": "emlakjet.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKfXGjerFPy3dUXAmVzLZuFLRLC-Iy3YcemRpGZUwIn7hnKrWq6kLBMVDXQa-XKXYObIDY7bZtsEa4kAH0tizh3YfYOg5XgQZvXSA19JoDsEZecFgISc73Vt7p1YT1E4815k43PKOgNdjCMQ==",
+      "title": "emlakjet.com"
+    }
+  ],
+  "grounding_support_count": 12,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEqFVArbiKRLEbAmohE1RbzIbQfpBsUcSI-xfSVKlusD0gTlfgeOJvwlcUJ9ZlS7gHq76qKOT7ZAfuwI8g92m9jOQU_eNjo3qkk-Eawo4C9fBqZr3e7Z45dgB7M7lUMfGwFf-7BZPsrw=="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTZ47IDG1PxyLI67WIyN3RK4XS2VBdYdd9QoHUTKKmgoR7rBZWVDvosVH3f24as7Mj_jJInrl-ozwW-ds3URHDuH-FeEyo-qpM8dvxgN7ilcgukBwbSh-2SkqcnhiLFiEmCWWqnTQjQTitFoO3Gg=="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF32SUKYdQEZut8cWwsrCxl_2nEVin2UmIhI7OzgRrHCMwqfVGZnCcKh8A_nValuKJXq6dWE3HdoVZlMZoELIMRpoIg54D9a2pyIv8m15swfJnjnCtQJVE0tDRcxQrOJ5IhTNcX0xOXQDkl9z0="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVcvWY79AHtaZby9slFx11cI2IbOA9s46ylHdkF4QOA6oLzyGwI7gLCrhnrS4HflQhbeKJlCTLWQZCSKlbmYHS7LNumF1ub9aHiwUiOTHrgH2GXpYIPgI3MJfCNuV-WEbrLdoNPCXpfg=="
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5IprWio7l44wG6Fn22j1Yzg3mj8MwhD14E3Q7X7QEloUmROXuMz73WyT5KTEs6C_KwWrm_g-cD97aH8J7e1eJEE8lUpEYqGZm7OjiMkMYVL4hgq7_3rUxJ1rYv1o_9wRJRvGVqFXn"
+        }
+      },
+      {
+        "web": {
+          "title": "hepsiemlak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Gl-TjU9oKZ1DVgooB5jh8exqEbX--VnepVwTltObYLMPQkdIyRELV1wS_FrwmEmR66ZOEqF2tKixOr22LH5IZK36IWWPfJveHJwyuCymwrXrsMuf6PQ92PmwkqDrvwPR"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQf7uAPp9_Y9ZvQp2KIIOc8XvJ1PACoYIblG8IoiANbs8qGuNQYOl8j3GTHOj8h0z-FhGsbVdb6yXceOsNpY54318HzbDCUa1vaI63RrvNWoG4sjI2K_F9rcr9OJB3-Gb5WeYd2SuA9tRbmgnDQcJfbFzAHepNpef56d2Z"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoptan2bmuwJPBvsdSA2j3XK-gSy6-IDXGXcSPcuXiwZ9rx9GRJimSR259RJl7IgqjJYcVov-o9CXlhC52s5NotC1T4NKYETDuFAk3BmJF8QfYghdA76-dQu0Mj7Fqh2NbeAnHp6CPz4nyrlzogfCr4Vy-A0ThZieT2cnU"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZVCfate0V7yXDpO-0ufetrBCOB2PcnQ3BHzQaIiS4EgpxGQ0iuEivQOSRVlfsr-Dk4U_n6-AEScQo8D55jUQvWWKe5Vez07Kslu5ncwOcI-pLhZVjz416atLaDhxuL39st55EqJWfY6K7T6VLHUyQzLrYYXz1"
+        }
+      },
+      {
+        "web": {
+          "title": "emlakjet.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKfXGjerFPy3dUXAmVzLZuFLRLC-Iy3YcemRpGZUwIn7hnKrWq6kLBMVDXQa-XKXYObIDY7bZtsEa4kAH0tizh3YfYOg5XgQZvXSA19JoDsEZecFgISc73Vt7p1YT1E4815k43PKOgNdjCMQ=="
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "start_index": 140,
+          "end_index": 256,
+          "text": "*   **1+0** | eşyalı | 16.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Vizyon Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2,
+          3,
+          1,
+          4,
+          5
+        ],
+        "segment": {
+          "start_index": 257,
+          "end_index": 377,
+          "text": "*   **1+1** | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Kdm Gayrimenkul Muğla"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2,
+          3,
+          1
+        ],
+        "segment": {
+          "start_index": 378,
+          "end_index": 497,
+          "text": "*   **1+1** | eşyalı | 27.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Mengenler Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          2,
+          1
+        ],
+        "segment": {
+          "start_index": 498,
+          "end_index": 616,
+          "text": "*   **1+1** | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Thera Emlak İnşaat"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6,
+          7
+        ],
+        "segment": {
+          "start_index": 617,
+          "end_index": 734,
+          "text": "*   **1+1** | eşyalı | 35.000 TL/ay | ilan tarihi: 2026-09-14 | bilinmiyor | Akyaka Mahallesi | EmlaksendeAta AKSEN"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 735,
+          "end_index": 852,
+          "text": "*   **1+1** | eşyalı | 20.000 TL/ay | ilan tarihi: 2026-10-19 | kış sezonu | Akyaka Mahallesi | Joker Gayrimenkul"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          3,
+          1
+        ],
+        "segment": {
+          "start_index": 853,
+          "end_index": 961,
+          "text": "*   **2+1** | eşyalı | 50.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8,
+          9
+        ],
+        "segment": {
+          "start_index": 962,
+          "end_index": 1073,
+          "text": "*   **2+1** | eşyalı | 40.000 TL/ay | ilan tarihi: 2026-10-20 | uzun dönem | Akyaka Mahallesi | Güven Emlak"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 1074,
+          "end_index": 1182,
+          "text": "*   **2+1** | eşyalı | 45.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6,
+          7
+        ],
+        "segment": {
+          "start_index": 1183,
+          "end_index": 1302,
+          "text": "*   **2+1** | eşyasız | 35.000 TL/ay | ilan tarihi: 2026-03-11 | bilinmiyor | Akyaka Mahallesi | GÖKOVA-AKYAKA EMLAK"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0
+        ],
+        "segment": {
+          "start_index": 1303,
+          "end_index": 1420,
+          "text": "*   **3+1** | mobilyalı | 59.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Onur Emlak Dikmen"
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          0,
+          7,
+          9
+        ],
+        "segment": {
+          "start_index": 1421,
+          "end_index": 1540,
+          "text": "*   **3+2** | eşyalı | 115.000 TL/ay | ilan tarihi: 2026-05-02 | bilinmiyor | Akyaka Mahallesi | MUĞLA KAMPÜS EMLAK"
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXlw93v3XBmMsMZSb3uCbwA60Ww6ezKYZTc0VUn6Psj_fUqWaMx_qrDZPV1XxwoRW8DID0RIVUXJAKEVBcKo1qYbYTCaYMMsuPVInx4-ILurPu8lk7kEsydLmjZj1fZwZU39fEb6rQAJekL-g0DXnneq91hXNZ3S256_fLY9ejipFWTr8WDNwYu4ue4-pdrNhiWrCaCp5x68kBT2Ee0Qw03gzZrxWbmWJItRCfIDYILYLvnAR62jb0joAUVdWIIbqu2A==\">Akyaka Ula Muğla kiralık daire 1+1 son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIilkOTasPvXbwjByfl4xD46SoGsWS_vFJXTzWRv-pTmQR1sU8947tQRfszLRG9tC_WJxtYZNalcD9t62cQx9xSGbD2l5itb0lSqxOS9UACwQgthqjsoUF6s3YmFhS0PwAfm9Ewi0BHh-pEOAxwkzjtGb257PzsK01l6SCeeiYKeIjziKyX_IwkT6wdf0hzoRxwlWIs5xGgeovS-SkssbARiQL1AAZV-KpScps3dFkQ27xD-91l0wXlVMwiVFg4Dwbtw==\">Akyaka Ula Muğla kiralık daire 1+0 son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9NN-6Fq6qdflYmN6p3sFGZyJj0cZgGISDxh1UVP9WjaCx-ZlYMMCGfPRQGKgY0HG8N6ZHNq7tyL6MJA3guXfdwMk7untqzwKN11BPMth7-p2UxSSA6TquWuxkz89JdUmKN_Oa2Mxz4Iox69Skbl-KOifWAtDyQH0a3gfsxtQYih2U6ORAoGWuwagpwbdbzyC3_CMSLb6CT9M7Ag4S6BaC2dcKgMBmZPdXJEEVUi5DEjdeTo2LcEyu8AVX95J4ThOeiw==\">Akyaka Ula Muğla kiralık daire 2+1 son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvkrJqigjo2no-DFARBsG-1ulcJhLUcPVkLCM1fudw4awLHR2stNBaw9zhQ--4p3vZ0phQGdfjh_DXs02FgCjO-mV6zGP1AD0JFTUZXwaOSR4AHeWiLfVwMn-vJ8EJyOlBETEi35JUCflBC4O1KmsqSS2jj6sg-9DjpsMJ6fVUnfCPDJ4vBoFMpywcGryP2w3xp4B33WMJ-b_p4Ee6FfQv4PFb_s6l_zbN79fl7q-OLlRWx3y2w0zxxw==\">Akyaka Ula Muğla kiralık ev son 90 gün</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtIZpI3vIwUuCxR-EEysIcBSdmSTgyllpzAQO2frfRZRJr3VAEBBCmM4_sJnhNG4O16-4c1qTIcfWiQfxbXgU7drIhKfizdyrepMKxgsNKpnHQwO2P2a2DVkg8UwrO7Az_Nw7feO10Ek9EHIn0GYIARlI4puXK3XqlffOncwrgfzq8zIGGuHWPUPF9zSrUZWaxAbTlPGnysI0Gdhm_BYFpB7vTgLuWy9LAtag_nkbdNcY8LvVTEzZLINBXprj7VnboWA==\">Akyaka Ula Muğla kiralık daire 3+1 son 90 gün</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Akyaka Ula Muğla kiralık daire 1+0 son 90 gün",
+      "Akyaka Ula Muğla kiralık daire 1+1 son 90 gün",
+      "Akyaka Ula Muğla kiralık daire 2+1 son 90 gün",
+      "Akyaka Ula Muğla kiralık daire 3+1 son 90 gün",
+      "Akyaka Ula Muğla kiralık ev son 90 gün"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 763,
+    "prompt_token_count": 382,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 382
+      }
+    ],
+    "tool_use_prompt_token_count": 506,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 506
+      }
+    ],
+    "total_token_count": 1651
+  },
+  "text": "Muğla'nın Ula ilçesine bağlı Akyaka Mahallesi'ndeki son 90 güne ait kiralık konut ilanları aşağıda listelenmiştir:\n\n**KİRA:**\n\n*   **1+0** | eşyalı | 16.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Vizyon Gayrimenkul\n*   **1+1** | eşyalı | 26.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Kdm Gayrimenkul Muğla\n*   **1+1** | eşyalı | 27.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Mengenler Gayrimenkul\n*   **1+1** | eşyalı | 28.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Thera Emlak İnşaat\n*   **1+1** | eşyalı | 35.000 TL/ay | ilan tarihi: 2026-09-14 | bilinmiyor | Akyaka Mahallesi | EmlaksendeAta AKSEN\n*   **1+1** | eşyalı | 20.000 TL/ay | ilan tarihi: 2026-10-19 | kış sezonu | Akyaka Mahallesi | Joker Gayrimenkul\n*   **2+1** | eşyalı | 50.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor\n*   **2+1** | eşyalı | 40.000 TL/ay | ilan tarihi: 2026-10-20 | uzun dönem | Akyaka Mahallesi | Güven Emlak\n*   **2+1** | eşyalı | 45.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | bilinmiyor\n*   **2+1** | eşyasız | 35.000 TL/ay | ilan tarihi: 2026-03-11 | bilinmiyor | Akyaka Mahallesi | GÖKOVA-AKYAKA EMLAK\n*   **3+1** | mobilyalı | 59.000 TL/ay | ilan tarihi: bilinmiyor | bilinmiyor | Akyaka Mahallesi | Onur Emlak Dikmen\n*   **3+2** | eşyalı | 115.000 TL/ay | ilan tarihi: 2026-05-02 | bilinmiyor | Akyaka Mahallesi | MUĞLA KAMPÜS EMLAK"
+}

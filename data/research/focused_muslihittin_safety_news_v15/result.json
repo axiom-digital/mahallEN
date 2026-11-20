@@ -1,0 +1,237 @@
+{
+  "experiment": "issue-9-google-search-grounding",
+  "neighborhood": "muslihittin",
+  "model_requested": "gemini-2.5-flash",
+  "model_returned": "gemini-2.5-flash",
+  "credential_alias": "credential-3",
+  "started_at": "2026-10-28T20:17:50.308384+00:00",
+  "finished_at": "2026-10-28T20:17:57.755571+00:00",
+  "review_status": "unreviewed_research_candidate",
+  "not_a_verified_dataset": true,
+  "category_scope": [],
+  "complete": true,
+  "accepted_for_review": true,
+  "validation_errors": [],
+  "structured_candidate": null,
+  "google_search_requested": true,
+  "google_search_confirmed": true,
+  "finish_reason": "FinishReason.STOP",
+  "queries": [
+    "Muslihittin Mahallesi yangın son 12 ay",
+    "Muslihittin Mahallesi asayiş olayları son 12 ay",
+    "Muslihittin Mahallesi trafik kazası son 12 ay",
+    "Muslihittin Mahallesi yol altyapı çalışmaları son 12 ay",
+    "Muslihittin Mahallesi elektrik su kesintisi son 12 ay",
+    "Muslihittin Mahallesi sağlık merkezi kamu hizmeti duyuruları son 12 ay",
+    "Menteşe Belediyesi Muslihittin Mahallesi duyurular son 12 ay",
+    "Muğla Büyükşehir Belediyesi Muslihittin Mahallesi duyurular son 12 ay",
+    "MUSKİ Muslihittin Mahallesi duyurular son 12 ay",
+    "MUTTAŞ Muslihittin Mahallesi duyurular son 12 ay",
+    "Muğla Postası Muslihittin Mahallesi haberleri son 12 ay"
+  ],
+  "sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf9Fk8xfTsQOYZ56t1QLKq-fvIuTLYT8YdgULLyJN_djSi_J59CS1irQpeuzy7_CWvkMNJFlh_84JgCw0bHSHwT8ArVFqAq2z-aMAj2tyRltXjCOywt28ff5s2LhcOuIJ3JcfRF_STFuLoEfczfgGIAO_Gx5qGR5lRDu8xC2Ra9LdL5V0FoWI-JNW736jyBbbTBoCMYmeOycyHKEAEmjqz7pRtzXylCVJ10pDOJQ==",
+      "title": "haberturk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDjxua9zqOpKfSf7tazC2FH2AdimuT8WsW7e2iGtRAWbim9H2GBFVKEqv8iqZAYSOrcgFWmtuOyigdTjFXR6zyDhmfLU1PFOy9_ULmj-biKa8k7kuDn9aX2FTrUcN-pmaewvxon4F112S5fumSNxro8SkcZWqwbFi6G0gf7ELj17i6YItY250Swb_WavO9VnAUPLYOs7GU6yT0ckAJ8axcNBnNxfJzbN59",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Ith4fsQVSvFpU8-tQFJiioPcfIf3IUPM9XP7XjLlhoabNpHtdewrc0O7qs4XSq6T7KDYXlw8yp9ET6ZcA6IFVLJ6gtg6Cc0QncsvcDbi_2gDGcdzTfKlXh9R2nTQR5CoWg0Q4BhmcgmFXCDFjK0=",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgnP-VPw_wVsaRL7NSa-OZRGRePkKw9l-p-DerkXnsDr6kXhm7b2lkmE20Z0EL2b2qhnebU8Pn0Gu4haZM_2EoEwIFTs2cIZsEwfnhs5Y1SGFH4fRegLyVUKCmw3Lk2uwN3WcMs2ZtcQDsgAYIfwdZPtdLI4Dejbdk_yMV0ZQJJ1_RejG7",
+      "title": "muglayenigun.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHE5Bz1EEaAEjnYvB69n4-EstIz3MMQjCqaHQ1rTW0byV-F6g9B8nH2mQW54Ve0Tslh4aIPOabckxOePVAAkfNiyh6ezdfLlF21xciMy_I0_1KtO-MuOqCskwD4i3-qQLU978N0l7hQfvbzlYEaAcPwIQR5X8-_s1Q9vJKeVz0RdSpxihupT9POVEbpSNalmDfm6var1Wz4vz6umBby5A==",
+      "title": "haberturk.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEucYR3TX1moMjntutfq3MAfnSnUK7hd6hgkZF5ju57NiBFdgT_RZejRMg7GsJMZ4yQBdxMQQjBHRnqGhpcr32NBiMhDUzFu-f4ONwJehb84qY3TuMbhla8vWGiDs2lYApzlpfzb5QS7JHJCh2sQgQO7nXOimMBW2IjuqVBk4y01luChIMvKXu9_D_2qcHFXf-tAQ==",
+      "title": "muglagazetesi.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiDt3rJeYo2VJxrF-SZt4bPbO8lk6zoTVKkv2W_Jmr4sSZAs1ONDGrMpmgrElYCREpiSb4ZmyrSDm-FMZWeJuu5rIlZtSWA_HwGvBbZzp3eNWYZS3aZQ9-pBywVePvCQwTb-R27arIs7LqW_tr55pWkb65BgLKE-Q861TTwubHaE5Ke9iB2uRqlhL5ulJLARghdpgypxjPR8QhmvoQQB_LbGWWg133bmntLoq7CI6QU62-JsgBhhq7zHBuEWc=",
+      "title": "yenisafak.com"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaR8dl8cwIAtCmHlb20RGmpMmZqKM_yTLGyzNfDYyoHE48bQmlxias6OX6WCYPqAIByDUvUzitaowkQy6CT71qgd_rjI11Yy8m2IR5vEHEj6VzAN3iuyzEmcQU5izLxde9QaQ-sZ1J5ntsidqG58W7skPJZWyCrruLAnJUwg==",
+      "title": "kesinti.com.tr"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWschRwi3LYXSHYrTAOLnFqE6orcRzSwp1OTZ2qJbEHAy4dtI592ixNKR3EzB1bkQO4mJ4ILV5TaCfxbwwyuh9bNJKwh0dSZ3sKuQd8ZnZWjG2WqjR6OYxOO5xqR9ntbwmJR9H9nd2iE9ZoUt2F99-IjCmSj8HmbtVYcmWLdaoVMvYsE6wKcqcV3I2srkTglE5yLBe",
+      "title": "mentese.bel.tr"
+    }
+  ],
+  "grounding_support_count": 7,
+  "grounding_metadata": {
+    "grounding_chunks": [
+      {
+        "web": {
+          "title": "haberturk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf9Fk8xfTsQOYZ56t1QLKq-fvIuTLYT8YdgULLyJN_djSi_J59CS1irQpeuzy7_CWvkMNJFlh_84JgCw0bHSHwT8ArVFqAq2z-aMAj2tyRltXjCOywt28ff5s2LhcOuIJ3JcfRF_STFuLoEfczfgGIAO_Gx5qGR5lRDu8xC2Ra9LdL5V0FoWI-JNW736jyBbbTBoCMYmeOycyHKEAEmjqz7pRtzXylCVJ10pDOJQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDjxua9zqOpKfSf7tazC2FH2AdimuT8WsW7e2iGtRAWbim9H2GBFVKEqv8iqZAYSOrcgFWmtuOyigdTjFXR6zyDhmfLU1PFOy9_ULmj-biKa8k7kuDn9aX2FTrUcN-pmaewvxon4F112S5fumSNxro8SkcZWqwbFi6G0gf7ELj17i6YItY250Swb_WavO9VnAUPLYOs7GU6yT0ckAJ8axcNBnNxfJzbN59"
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Ith4fsQVSvFpU8-tQFJiioPcfIf3IUPM9XP7XjLlhoabNpHtdewrc0O7qs4XSq6T7KDYXlw8yp9ET6ZcA6IFVLJ6gtg6Cc0QncsvcDbi_2gDGcdzTfKlXh9R2nTQR5CoWg0Q4BhmcgmFXCDFjK0="
+        }
+      },
+      {
+        "web": {
+          "title": "muglayenigun.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgnP-VPw_wVsaRL7NSa-OZRGRePkKw9l-p-DerkXnsDr6kXhm7b2lkmE20Z0EL2b2qhnebU8Pn0Gu4haZM_2EoEwIFTs2cIZsEwfnhs5Y1SGFH4fRegLyVUKCmw3Lk2uwN3WcMs2ZtcQDsgAYIfwdZPtdLI4Dejbdk_yMV0ZQJJ1_RejG7"
+        }
+      },
+      {
+        "web": {
+          "title": "haberturk.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHE5Bz1EEaAEjnYvB69n4-EstIz3MMQjCqaHQ1rTW0byV-F6g9B8nH2mQW54Ve0Tslh4aIPOabckxOePVAAkfNiyh6ezdfLlF21xciMy_I0_1KtO-MuOqCskwD4i3-qQLU978N0l7hQfvbzlYEaAcPwIQR5X8-_s1Q9vJKeVz0RdSpxihupT9POVEbpSNalmDfm6var1Wz4vz6umBby5A=="
+        }
+      },
+      {
+        "web": {
+          "title": "muglagazetesi.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEucYR3TX1moMjntutfq3MAfnSnUK7hd6hgkZF5ju57NiBFdgT_RZejRMg7GsJMZ4yQBdxMQQjBHRnqGhpcr32NBiMhDUzFu-f4ONwJehb84qY3TuMbhla8vWGiDs2lYApzlpfzb5QS7JHJCh2sQgQO7nXOimMBW2IjuqVBk4y01luChIMvKXu9_D_2qcHFXf-tAQ=="
+        }
+      },
+      {
+        "web": {
+          "title": "yenisafak.com",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiDt3rJeYo2VJxrF-SZt4bPbO8lk6zoTVKkv2W_Jmr4sSZAs1ONDGrMpmgrElYCREpiSb4ZmyrSDm-FMZWeJuu5rIlZtSWA_HwGvBbZzp3eNWYZS3aZQ9-pBywVePvCQwTb-R27arIs7LqW_tr55pWkb65BgLKE-Q861TTwubHaE5Ke9iB2uRqlhL5ulJLARghdpgypxjPR8QhmvoQQB_LbGWWg133bmntLoq7CI6QU62-JsgBhhq7zHBuEWc="
+        }
+      },
+      {
+        "web": {
+          "title": "kesinti.com.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaR8dl8cwIAtCmHlb20RGmpMmZqKM_yTLGyzNfDYyoHE48bQmlxias6OX6WCYPqAIByDUvUzitaowkQy6CT71qgd_rjI11Yy8m2IR5vEHEj6VzAN3iuyzEmcQU5izLxde9QaQ-sZ1J5ntsidqG58W7skPJZWyCrruLAnJUwg=="
+        }
+      },
+      {
+        "web": {
+          "title": "mentese.bel.tr",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWschRwi3LYXSHYrTAOLnFqE6orcRzSwp1OTZ2qJbEHAy4dtI592ixNKR3EzB1bkQO4mJ4ILV5TaCfxbwwyuh9bNJKwh0dSZ3sKuQd8ZnZWjG2WqjR6OYxOO5xqR9ntbwmJR9H9nd2iE9ZoUt2F99-IjCmSj8HmbtVYcmWLdaoVMvYsE6wKcqcV3I2srkTglE5yLBe"
+        }
+      }
+    ],
+    "grounding_supports": [
+      {
+        "grounding_chunk_indices": [
+          0,
+          1
+        ],
+        "segment": {
+          "end_index": 180,
+          "text": "MUSLIHITTIN:\n* 2025-12-09 | trafik | Muslihittin Mahallesi Geçit Sokak'tan çıkan otomobil ile Camcı Sokak üzerinde seyir halindeki motosiklet çarpıştı, 2 kişi yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          2
+        ],
+        "segment": {
+          "start_index": 181,
+          "end_index": 348,
+          "text": "| İhlas Haber Ajansı, Muğla Gazetesi\n* 2025-12-11 | yangın | Muslihittin Mahallesi Nergis Sokak'ta müstakil bir evde yangın çıktı, ev sahibi hafif yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          3,
+          4
+        ],
+        "segment": {
+          "start_index": 349,
+          "end_index": 521,
+          "text": "| Muğla Yenigün Gazetesi\n* 2026-04-11 | trafik | Muslihittin Mahallesi Şehit Özden Aşınmaz Caddesi üzerinde otomobil ile motosiklet çarpıştı, 1 kişi yaralandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          5
+        ],
+        "segment": {
+          "start_index": 522,
+          "end_index": 659,
+          "text": "| Muğla Yenigün Gazetesi, Muğla Haberleri\n* 2025-07-23 | yangın | Muslihittin Mahallesi'nde 3 adet boş konteynerde yangın çıktı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          6
+        ],
+        "segment": {
+          "start_index": 660,
+          "end_index": 935,
+          "text": "| Muğla Gazetesi\n* 2025-09-27 | altyapı/duyuru | Muğla Büyükşehir Belediyesi tarafından Muslihittin Mahallesi'nde yeşil alanların sulanması için yapılan su deposu çalışmalarında tarihi eserler bulundu, çalışmalar durduruldu ve alan koruma altına alındı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          7
+        ],
+        "segment": {
+          "start_index": 936,
+          "end_index": 1115,
+          "text": "| Yeni Şafak\n* 2026-10-18 | kesinti | Muslihittin Mahallesi'nde bulunan Muğla Katı Atık Tesisi ve Menteşe Katı Atık Biyokütle ÖTM'de planlı elektrik kesintisi yaşandı."
+        }
+      },
+      {
+        "grounding_chunk_indices": [
+          8
+        ],
+        "segment": {
+          "start_index": 1116,
+          "end_index": 1318,
+          "text": "| Aydem\n* 2024-12-03 | altyapı/duyuru | Menteşe Belediye Meclisi kararıyla Muslihittin Mahallesi altında, 15 metrelik imar yoluna \"852 Cadde\" ve 12 metrelik imar yoluna \"854 Sokak\" isimleri verildi."
+        }
+      }
+    ],
+    "search_entry_point": {
+      "rendered_content": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHv2LKd7_mk_FvjwNh__MsW-obep60newGX1yuMKYzQ8SjYoUMd_Gy34XuSlIhbMAdrtbtrkRnLs9gvsyTGrzpge70bGL86o8hzYcgCa0Z2MFMaXE0_Q1y2nMnGvT6lfR3l4RoqoSFfXOvIHGArv4LxPye7iNNwZs3EYTd1mOoyUR6yyjcV0dboHiaiNouu95G6wT1JAeYFg7m_tFoFzJkirW_qWxpj1JflBADPP1WWmZOuY9LjDpD8PxbLt1bIc0tnnmE4ltel9G0Qty-ZO31NWzVXQJdWcWMUa3Kumw==\">Muğla Büyükşehir Belediyesi Muslihittin Mahallesi duyurular son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE11jRe2YEqOfnMoht9V6FS1aDrrqCbHZmik3FD3FTAwn9AdzFMVk9beUhgf0a3DzcuoA0z631zVICIZfv3kHnz5lDs-9Lxfi_OmRMkTmVFMrNJFohGrv6jAXvCxcqRtw6w0FAxPvIBNURcMKOMtqaWdIPN5bPyEs-82vPWxCtWXauhYVpYqfTQApA2q1GOT1S1vaL3CBXrZI82_ffSKwd_9LwD0z-uNdTQY6fGjsXEGDSMTPUT7_0KnQ==\">Muslihittin Mahallesi elektrik su kesintisi son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcaIwhJq7hRmsmhJHfI1oj7Lj_M0Jsfw2PAu9WxPvLmrnk6TVz7ifhApe3Up8Fffi8wrcpOBycIpDtAKUafo6VeyrkPZxygHT15VMHyrFPHkWnQSFsp289XyIcR0_stAcX9R0yUPj609yLIkO3G-LZsGb_7xeeD7G-JZ3Uf4ckvDA99qd2k_-XDCl9oj9U8JtIw0cRc2gvkpWf2GMLSLNC7yPcXktiEXXs5ASaMBLbrMd6BzHM9UBwYaaErhQ=\">Muslihittin Mahallesi asayiş olayları son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcGHDa948YINgkLscME7f2msnL-9w3gbsMxRwDk6pU7vMHA4NGmCIK_fWrC3ofoX8zXNHFGltaT4_Fnzr4kHSkWi9_ekIp4yPr0f-tKzn1a5qLBYJdt46sXnOGRcsiIUc9r_C4BnpPpI2Rh7GRvwjM8L__11uEF1bXshHbiltXCIhGLd8_8ULx4BrMBYqgEtuy9wDYT1OUKx_qEkxJ7yZDQzpMn6AD1SwXtsDn-NY=\">Muslihittin Mahallesi yangın son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFstZCa4UAdX2oUda6v8vI9eD3spwdjM4ASBKAYp2lan3LgL5uBvdBFnaRynJ5zyWkQUrzQsM6ywkdPqz-4Rj7kfNn8oj3CXREhsKvljdqr3D1yPXkyvh-3heoeRbTNRir7KzojK9hicwA0UiafggHUqjMBI3ib22UR1rYUB7K88o869JnT-VzEajs_w6Fz_zFSFVvqwkb4lZ7yDHW5yuIOD1cfILyrh-fsHaS1gH0chYj9mXkozA==\">Muslihittin Mahallesi trafik kazası son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELsCQh2Wft6iUGWtch2uGNMli46amU3dQUgM7H01qeRNFcde_IJ2uA4qpUTGkaF8bFbaxl8bbhjmjCJavFEQvPW-gRmt4u2v7zCWXif5xLBixjrYgcq5qdB66agSAWsUbw1Dj32YUP0N0VvskviPVqFQSKyHdNyG9fcHUGU9oNzUj3r_ZyrGpOe7NYkZyz_NckiBAFtbBRevIYVY24t4dYtenKlBQHWdsLJEgoGDnUf3RJYvaeQaJ2YDpRuButbJ-E3SA8qgsLLG8oxggFfoew4TukYsXZFAsX\">Muslihittin Mahallesi sağlık merkezi kamu hizmeti duyuruları son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtfh9eNkElUaPGZ06e_7lfJKhtOisIbfv_-1OGyH9f0NwHMCy_vLBmUFiAOAP8r57JXKTdYhxcHlp6lHi3mXTGoj9MD1Fx4Q9u-Fae-pkpgRdPXSCSzCPzY0iwvg-a2gpfSgttzLp598gSpfsgmSvOCU5_rdMl-XNkGpAxTWo9JiRdNurPI3A8OaAWten0wEp9qTOKjk9KT5He_9doCId4_A3ZBYic8a_MsAz8s_gdEk2f24bjEFM_RvgXL3sZi0Jw3LTe1w==\">Menteşe Belediyesi Muslihittin Mahallesi duyurular son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAmDjqSoqOEVUqveXOTEQXqTP6YOZKtn9a15Ge_p5bDCiDtuJRdF5izN-jROr4WyWF_wo7PZdxHQy6WM44veKXpuK0zpRl13pIW4cxapAe7tzAIQfu0mA0wBqJkyKTnqn3XW2r7-pqDbSc3wLcmSgY-9n1UANjOwy-SyFFURUAvjgtj0-CU_N9-hBBty3iayIGAqKdMI0U_NaCZzJQFCxFsg9F71fg2F4l1vdTWLVtUg6PKohV5F989SqUQqN9M2gTawSBanwOKy7NC4f4ZnFMfWzx6w==\">Muslihittin Mahallesi yol altyapı çalışmaları son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmwJ6w019tbZZyaxrzFlDtunvgD6_9vo9-u2fwNLRWfT-IMD2jJa9O5b6IUqZxgrda514vTOHeUgQDtJEx--tzXiBZeYGgW-TZpZIdlzc2_gfPYsbBXzg_wqpH0U8qVCwFG3uNYnfm7ERniifdE1bOabJaFmoLoNw1qhPXSfEPIUbhCT5kZYFE1Mfn4CaCgr80T2Z1Vp4LndcnF1D5i7kdNRRSZGXMmt2QsfajYkPg3uxi6OhIL2S-yQ==\">MUTTAŞ Muslihittin Mahallesi duyurular son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGekMfdo6zLn1abHRaQ6otEkXj0z_7IAWHfGj433Qa3JUNgXOgSfrouTMx694EYsz0M9kXHQk0jXg3HHamxFLwiIn5GfmJQrSi1dIXdRhqMaMefo8uCaJveV6Mkr4Vi9yNcqH3zvMQVKeci_HI_HcnCqBf-hIO3TxJ9dbU7UGZ9CT-dY8rUxxq34PHZnapm1juCHxWPkazVoZE6Xc0IFcVpCPj8UrHmGtzhQ0NYvfcIF_UCEJ93QqvE\">MUSKİ Muslihittin Mahallesi duyurular son 12 ay</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERDU-Sr40_dyu7--A-AeCWYPoC276vq1mYVqmyUCWjLceI2I1g7hNAuJxk2SONWH59MrDIibCRICLQQC1WdM9gcIGbtm1ZYA36oXEMxgcoKrz1WvRo1uuJmJ9-4oZrDQpNuP0ZfujXlMVS_W3w4HJujos5Bq6RmRZD_lVnebpvqdiznT0dwpb1cULgaRB6TTFAM4FAY4uqFekq_GrcH5yvqBhK4vep7S7yDe4TOGEY3ZiZ_O0MT1oYaO8gYfptZenLey_NkA==\">Muğla Postası Muslihittin Mahallesi haberleri son 12 ay</a>\n  </div>\n</div>\n"
+    },
+    "web_search_queries": [
+      "Muslihittin Mahallesi yangın son 12 ay",
+      "Muslihittin Mahallesi asayiş olayları son 12 ay",
+      "Muslihittin Mahallesi trafik kazası son 12 ay",
+      "Muslihittin Mahallesi yol altyapı çalışmaları son 12 ay",
+      "Muslihittin Mahallesi elektrik su kesintisi son 12 ay",
+      "Muslihittin Mahallesi sağlık merkezi kamu hizmeti duyuruları son 12 ay",
+      "Menteşe Belediyesi Muslihittin Mahallesi duyurular son 12 ay",
+      "Muğla Büyükşehir Belediyesi Muslihittin Mahallesi duyurular son 12 ay",
+      "MUSKİ Muslihittin Mahallesi duyurular son 12 ay",
+      "MUTTAŞ Muslihittin Mahallesi duyurular son 12 ay",
+      "Muğla Postası Muslihittin Mahallesi haberleri son 12 ay"
+    ]
+  },
+  "usage": {
+    "candidates_token_count": 695,
+    "prompt_token_count": 365,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 365
+      }
+    ],
+    "tool_use_prompt_token_count": 592,
+    "tool_use_prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 592
+      }
+    ],
+    "total_token_count": 1652
+  },
+  "text": "MUSLIHITTIN:\n* 2025-12-09 | trafik | Muslihittin Mahallesi Geçit Sokak'tan çıkan otomobil ile Camcı Sokak üzerinde seyir halindeki motosiklet çarpıştı, 2 kişi yaralandı. | İhlas Haber Ajansı, Muğla Gazetesi\n* 2025-12-11 | yangın | Muslihittin Mahallesi Nergis Sokak'ta müstakil bir evde yangın çıktı, ev sahibi hafif yaralandı. | Muğla Yenigün Gazetesi\n* 2026-04-11 | trafik | Muslihittin Mahallesi Şehit Özden Aşınmaz Caddesi üzerinde otomobil ile motosiklet çarpıştı, 1 kişi yaralandı. | Muğla Yenigün Gazetesi, Muğla Haberleri\n* 2025-07-23 | yangın | Muslihittin Mahallesi'nde 3 adet boş konteynerde yangın çıktı. | Muğla Gazetesi\n* 2025-09-27 | altyapı/duyuru | Muğla Büyükşehir Belediyesi tarafından Muslihittin Mahallesi'nde yeşil alanların sulanması için yapılan su deposu çalışmalarında tarihi eserler bulundu, çalışmalar durduruldu ve alan koruma altına alındı. | Yeni Şafak\n* 2026-10-18 | kesinti | Muslihittin Mahallesi'nde bulunan Muğla Katı Atık Tesisi ve Menteşe Katı Atık Biyokütle ÖTM'de planlı elektrik kesintisi yaşandı. | Aydem\n* 2024-12-03 | altyapı/duyuru | Menteşe Belediye Meclisi kararıyla Muslihittin Mahallesi altında, 15 metrelik imar yoluna \"852 Cadde\" ve 12 metrelik imar yoluna \"854 Sokak\" isimleri verildi. | Menteşe Belediyesi"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kotekli_rent_v8",
+    "neighborhood": "kotekli",
+    "category": "rent_cost",
+    "prompt": "docs/prompts/focused/kotekli_rent_v8.md"
+  },
+  {
+    "id": "emirbeyazit_rent_v8",
+    "neighborhood": "emirbeyazit",
+    "category": "rent_cost",
+    "prompt": "docs/prompts/focused/emirbeyazit_rent_v8.md"
+  },
+  {
+    "id": "muslihittin_rent_v8",
+    "neighborhood": "muslihittin",
+    "category": "rent_cost",
+    "prompt": "docs/prompts/focused/muslihittin_rent_v8.md"
+  },
+  {
+    "id": "orhaniye_rent_v8",
+    "neighborhood": "orhaniye",
+    "category": "rent_cost",
+    "prompt": "docs/prompts/focused/orhaniye_rent_v8.md"
+  },
+  {
+    "id": "akyaka_rent_v8",
+    "neighborhood": "akyaka",
+    "category": "rent_cost",
+    "prompt": "docs/prompts/focused/akyaka_rent_v8.md"
+  },
+  {
+    "id": "all_transportation_v8",
+    "neighborhood": "all-pilots",
+    "category": "transportation",
+    "prompt": "docs/prompts/focused/all_transportation_v8.md"
+  },
+  {
+    "id": "all_social_life_v8",
+    "neighborhood": "all-pilots",
+    "category": "social_life",
+    "prompt": "docs/prompts/focused/all_social_life_v8.md"
+  },
+  {
+    "id": "all_safety_news_v8",
+    "neighborhood": "all-pilots",
+    "category": "safety_news",
+    "prompt": "docs/prompts/focused/all_safety_news_v8.md"
+  }
+]

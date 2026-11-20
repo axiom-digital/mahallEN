@@ -1,0 +1,25 @@
+{
+  "kotekli": [
+    {
+      "id": "kotekli-project-deadline-2026",
+      "date": "2026-09-15",
+      "observedAt": "2026-10-28",
+      "status": "reviewed_project_schedule",
+      "kind": "project",
+      "summary": "Kötekli–Yeniköy yol ve altyapı işinde teslim hedefi 3 Kasım 2026. Bir bölümün trafiğe açılması bütün projenin bittiği anlamına gelmiyor.",
+      "affected": "Sıtkı Koçman Caddesi ve Yeniköy 404. Sokak",
+      "deadline": "2026-11-03",
+      "sources": [{"publisher": "Muğla Yenigün · haber metni doğrudan okundu", "url": "https://www.muglayenigun.com/teslim-tarihine-15-ay-kala-koteklide-calismalar-hizlandi/", "checkedAt": "2026-10-28", "method": "publisher_page_read"}]
+    },
+    {
+      "id": "kotekli-campus-gate-2026",
+      "date": "2026-10-19",
+      "observedAt": "2026-10-28",
+      "status": "official_access_restriction",
+      "kind": "major_access",
+      "summary": "Üniversitenin C kapısı çalışmalar tamamlanıncaya kadar araç trafiğine kapalı. Üniversite, öğrenciler ve personelin diğer kapıları kullanmasını istiyor.",
+      "affected": "MSKÜ C kapısı · araç erişimi",
+      "sources": [{"publisher": "MSKÜ Yapı İşleri · resmî duyuru doğrudan okundu", "url": "https://yapiisleri.mu.edu.tr/tr/duyuru/universitemiz-c-kapisi-calismalar-tamamlanincaya-kadar-arac-trafigine-kapali-olacaktir_-77142", "checkedAt": "2026-10-28", "method": "official_page_read"}]
+    }
+  ]
+}

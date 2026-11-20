@@ -1,0 +1,197 @@
+[
+  {
+    "id": "59e60f8f6bbc5013",
+    "area": "MENTEŞE",
+    "type": "yemek",
+    "item": "4 çeşit yemek",
+    "amount": 120.0,
+    "date": "2025-08-21",
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "mugladevrim.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFX3KiWDKZ2inKx-Fzpm8N83_NiMh0ugw6wE4iczi1dRjrSrMVdfSoJBDHScE6SIyBgaK6m75JkxQCYzfM8hNTCAkLjWt9QNkzpMWCOYJ-3QTo1EODspuKpHUCqpaoVLngfqkB29B2oQUbUqZDwNF_M-iB2ZV8DF9ZCNfQAOxSHD_54HAYNEMdsEsRsCo03Jmip7cukeKGnEHLoNFN6mWeWu73Ez4XS",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      },
+      {
+        "publisher": "mugladevrim.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHix3j-bglNSSpFnWp8cvdyIGZOg0k91XdhkLY4bLapfasDipnyVe5GHaNsfod4jdWmBX1Ywhu5lF-FdBPUlFoBOhjUD6P52wsEH2_AMst-nDTNKV5xV2Tg89beQBPw01JUWmpGyOwxruUY9kD1-hEaZFlSGha9nbwF0NpzLTIb0Krs2FgBhy0niPi8PAbliCFQJy2Mn16Of3MJ07mdvnLZxSeeXU=",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      },
+      {
+        "publisher": "marmarismanset.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGO0S_5m0giLWbM6vDblZ3QmaNzroBtyQNlI3K53unzEyXVYq2kRRwTjJXQ8RnS5g4R0UqHH8hHKoizzDdibXf-zUp3vz0znUVUS8nhhqNxFsPL6jKFLQkBnOmZp8QFnZOhubev0ETJtaFDrJIyL-GgfhP4YpzIUlYFQxiU_jRV6SRc8JQdsu3vKUNHG0fNKxdX7LdaC626Vw==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "historical"
+  },
+  {
+    "id": "de93c35682d6ba03",
+    "area": "MUĞLA",
+    "type": "yemek",
+    "item": "Muğla Sıtkı Koçman Üniversitesi öğrenci yemek ücreti (4 çeşit)",
+    "amount": 40.0,
+    "date": "2026-10-05",
+    "conditions": "Muğla Sıtkı Koçman Üniversitesi öğrencileri",
+    "sources": [
+      {
+        "publisher": "mu.edu.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3faDEeg9nyeqabIXC33irDtLZbC_fmIVRLH4vv1dOQLkkUsqDFlvDcmkspep04OmQtQvODyQwRe3mGVIqACXYhPQxG7dJeD2Qf7mT4ZLxJYqEEijoEd8jBYoysa6CHBbPa60rBWPenxQc94hlxpArWcq35AWMXses2sh0CL7Z",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "dated_2026_publication"
+  },
+  {
+    "id": "89ca6dfe7f33a71a",
+    "area": "MUĞLA",
+    "type": "ulaşım",
+    "item": "MUTTAŞ şehir içi (0-10 km) sivil yolcu",
+    "amount": 36.0,
+    "date": "2026-02-16",
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "muglagazetesi.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc9dhGYKaPz6G_Wu9xvtYz7H9jwNSQtcgS6d1PrP7dloGGt6pMWk8-FLHQjBHgPsZlAr0-w9NVAeQo-ODoOIaGKvpBKGWUFUJyY-gDtEUfEaBjDfdw5cbxM14Exz0kduCbJOjdg0DWBgYVt-iB5T4YUNH2J36pv9mPzkTq2TT4kaByuv9K4MZqETi8DKmgpL1GseQXCo72FjHGTrszVh-FCYnwCwanFVitL0RbsaVGINYtgs8Vsw==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      },
+      {
+        "publisher": "milasonder.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9-l6xgpCK7TjxdDZI-1uht6OCyMgrOLH63vAOupj09S-mUKMk1xtaI_bVVu70ZyJr0s4it4Na2sccUKtY3_Lj4BfXPGkiLiGNoXqeJGWGbgBvEwfT4eAFUl6byaDflm2F8gZHKa7WA8ifF4qUmIUqKRvPVQMzWoQSc_kcyZOopP-8HXExIjg=",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "dated_2026_publication"
+  },
+  {
+    "id": "de5fd561fb1a8ac0",
+    "area": "MUĞLA",
+    "type": "ulaşım",
+    "item": "MUTTAŞ şehir içi (0-10 km) öğrenci yolcu",
+    "amount": 20.0,
+    "date": "2026-02-16",
+    "conditions": "Öğrenciler",
+    "sources": [
+      {
+        "publisher": "muglagazetesi.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc9dhGYKaPz6G_Wu9xvtYz7H9jwNSQtcgS6d1PrP7dloGGt6pMWk8-FLHQjBHgPsZlAr0-w9NVAeQo-ODoOIaGKvpBKGWUFUJyY-gDtEUfEaBjDfdw5cbxM14Exz0kduCbJOjdg0DWBgYVt-iB5T4YUNH2J36pv9mPzkTq2TT4kaByuv9K4MZqETi8DKmgpL1GseQXCo72FjHGTrszVh-FCYnwCwanFVitL0RbsaVGINYtgs8Vsw==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      },
+      {
+        "publisher": "milasonder.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9-l6xgpCK7TjxdDZI-1uht6OCyMgrOLH63vAOupj09S-mUKMk1xtaI_bVVu70ZyJr0s4it4Na2sccUKtY3_Lj4BfXPGkiLiGNoXqeJGWGbgBvEwfT4eAFUl6byaDflm2F8gZHKa7WA8ifF4qUmIUqKRvPVQMzWoQSc_kcyZOopP-8HXExIjg=",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "dated_2026_publication"
+  },
+  {
+    "id": "5efd047df34b2672",
+    "area": "MUĞLA",
+    "type": "ulaşım",
+    "item": "MUTTAŞ kampüs hatları öğrenci",
+    "amount": 1.0,
+    "date": "2026-02-16",
+    "conditions": "Öğrenciler",
+    "sources": [
+      {
+        "publisher": "muglagazetesi.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHc9dhGYKaPz6G_Wu9xvtYz7H9jwNSQtcgS6d1PrP7dloGGt6pMWk8-FLHQjBHgPsZlAr0-w9NVAeQo-ODoOIaGKvpBKGWUFUJyY-gDtEUfEaBjDfdw5cbxM14Exz0kduCbJOjdg0DWBgYVt-iB5T4YUNH2J36pv9mPzkTq2TT4kaByuv9K4MZqETi8DKmgpL1GseQXCo72FjHGTrszVh-FCYnwCwanFVitL0RbsaVGINYtgs8Vsw==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      },
+      {
+        "publisher": "milasonder.com",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9-l6xgpCK7TjxdDZI-1uht6OCyMgrOLH63vAOupj09S-mUKMk1xtaI_bVVu70ZyJr0s4it4Na2sccUKtY3_Lj4BfXPGkiLiGNoXqeJGWGbgBvEwfT4eAFUl6byaDflm2F8gZHKa7WA8ifF4qUmIUqKRvPVQMzWoQSc_kcyZOopP-8HXExIjg=",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "dated_2026_publication"
+  },
+  {
+    "id": "167ab04bd0882d3f",
+    "area": "AKYAKA",
+    "type": "yemek",
+    "item": "Cennet Restaurant Serpme Kahvaltı",
+    "amount": 900.0,
+    "date": null,
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "cennetrestaurant.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsXp_jZA2SJByoNqe4kr4hk02hx5dPdUMOnDesW47DxavBxeSGJNI92tz71unHhNXuvqdtbdN6spt-yyU88-PSq_a8qoluzSK9gMZztaIGaxgnbBg2ae0zYIcv3I9NaAY4LA==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "undated_menu"
+  },
+  {
+    "id": "f524a5804d32f714",
+    "area": "AKYAKA",
+    "type": "yemek",
+    "item": "Cennet Restaurant Cips",
+    "amount": 500.0,
+    "date": null,
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "cennetrestaurant.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsXp_jZA2SJByoNqe4kr4hk02hx5dPdUMOnDesW47DxavBxeSGJNI92tz71unHhNXuvqdtbdN6spt-yyU88-PSq_a8qoluzSK9gMZztaIGaxgnbBg2ae0zYIcv3I9NaAY4LA==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "undated_menu"
+  },
+  {
+    "id": "7596becb6a2c7e61",
+    "area": "AKYAKA",
+    "type": "yemek",
+    "item": "Cennet Restaurant Kuzu Şiş",
+    "amount": 1100.0,
+    "date": null,
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "cennetrestaurant.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsXp_jZA2SJByoNqe4kr4hk02hx5dPdUMOnDesW47DxavBxeSGJNI92tz71unHhNXuvqdtbdN6spt-yyU88-PSq_a8qoluzSK9gMZztaIGaxgnbBg2ae0zYIcv3I9NaAY4LA==",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "undated_menu"
+  },
+  {
+    "id": "e84ffcd043a2fadd",
+    "area": "AKYAKA",
+    "type": "yemek",
+    "item": "Olta Balık Restoran Meyve Suyu",
+    "amount": 100.0,
+    "date": null,
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "akyakaoltarestoran.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxtlRWkKSlIfH3hARP9XxSE5oR0O1vAVlciJ9Zj1NERRASijxC8K-Xe-jb1GcNcDGp6mqLGmL-HWDtETtsI4tBiXODnQFK9rZqVUwcjsN7wrrJUwR-G2zT4-yxfp5Q_x4=",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "undated_menu"
+  },
+  {
+    "id": "514c2a9101a347e2",
+    "area": "AKYAKA",
+    "type": "yemek",
+    "item": "Olta Balık Restoran Sıkma Portakal Suyu",
+    "amount": 175.0,
+    "date": null,
+    "conditions": "Herkes",
+    "sources": [
+      {
+        "publisher": "akyakaoltarestoran.com.tr",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxtlRWkKSlIfH3hARP9XxSE5oR0O1vAVlciJ9Zj1NERRASijxC8K-Xe-jb1GcNcDGp6mqLGmL-HWDtETtsI4tBiXODnQFK9rZqVUwcjsN7wrrJUwR-G2zT4-yxfp5Q_x4=",
+        "checkedAt": "2026-10-28T18:57:00.995134+00:00"
+      }
+    ],
+    "status": "undated_menu"
+  }
+]

@@ -111,7 +111,7 @@ export function RadialScoreRing({ score, size = 136, strokeWidth = 10, testId = 
   );
 }
 
-export function ConfidencePill({ meta, categoryKey, rentMode, testId, compact = false }) {
+export function ConfidencePill({ meta, categoryKey, rentMode, testId, compact = false, plain = false }) {
   if (!meta || !(meta.sample_count > 0)) return null;
 
   const unitMap = {
@@ -137,6 +137,8 @@ export function ConfidencePill({ meta, categoryKey, rentMode, testId, compact = 
     : meta.confidence_label
       ? `${countText} · ${meta.confidence_label}`
       : countText;
+
+  if (plain) return <small title={meta.confidence_label || undefined}>{label}</small>;
 
   const level = meta.confidence || 'low';
   const toneClass =

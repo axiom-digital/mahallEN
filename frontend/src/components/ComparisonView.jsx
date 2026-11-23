@@ -1,10 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, ArrowRightLeft, ArrowUpRight, Info, MapPin, RefreshCw, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRightLeft, Info, RefreshCw, Sparkles } from 'lucide-react';
 import './comparison/comparison.css';
+import ScoreChannel from './comparison/ScoreChannel';
 import AppShell from './AppShell';
-import { RadialScoreRing } from './AnalyticsCharts';
-import { normalizeScoreValue } from './ScoreCard';
-import { navigate, reportPath } from '../navigation.mjs';
+import { navigate } from '../navigation.mjs';
 import CompareOverview from './comparison/CompareOverview';
 import CategoryComparison from './comparison/CategoryComparison';
 import CompareMeasurements from './comparison/CompareMeasurements';
@@ -143,59 +142,7 @@ export default function ComparisonView({
       );
     }
 
-    const d = slotState.data;
-    return (
-      <article
-        className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card"
-        data-testid={`comp-card-${testPrefix}`}
-      >
-        <div className={`h-1 w-full ${accentBar}`} aria-hidden="true" />
-        <div className="flex flex-1 flex-col justify-between p-6">
-          <div className="flex items-start justify-between gap-4">
-            <div className="min-w-0">
-              <span className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 font-mono text-[11px] font-medium text-slate-600">
-                <MapPin size={11} className={isEmerald ? 'text-emerald-600' : 'text-blue-600'} />
-                {d.district} / {d.city}
-              </span>
-              <h3 className="mt-2.5 truncate text-2xl font-semibold tracking-tight text-slate-900">
-                {d.name}
-              </h3>
-              <p className="mt-1 text-xs text-slate-500">{d.tagline}</p>
-            </div>
-
-            <RadialScoreRing score={d.scores?.overall_livability} size={86} strokeWidth={7} testId={`comp-${testPrefix}-overall`} />
-          </div>
-
-          <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-slate-100 pt-3.5 text-xs">
-            <span className="text-slate-500">
-              Genel Skor:{' '}
-              <strong className="font-mono text-slate-900">
-                {normalizeScoreValue(d.scores?.overall_livability) !== null
-                  ? `${normalizeScoreValue(d.scores?.overall_livability)}/100`
-                  : 'Veri yetersiz'}
-              </strong>
-            </span>
-
-            {d.placeId && (
-              <a
-                href={reportPath(d.placeId)}
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate(reportPath(d.placeId), {
-                    place: { id: d.placeId, name: d.name, district: d.district, city: d.city },
-                    returnTo: '/karsilastir',
-                  });
-                }}
-                className="inline-flex items-center gap-1 font-medium text-blue-600 hover:text-blue-700"
-              >
-                <span>Tam raporu ve kaynakları aç</span>
-                <ArrowUpRight size={14} />
-              </a>
-            )}
-          </div>
-        </div>
-      </article>
-    );
+    return <ScoreChannel report={slotState.data} side={testPrefix} />;
   };
 
   const bothReady = Boolean(data1 && data2);
@@ -203,13 +150,14 @@ export default function ComparisonView({
   return (
     <AppShell activeRoute="compare">
       <main className="comparison-station">
+        <div className="comparison-deck">
         <header className="comparison-heading">
           <a href="/" onClick={(event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
             event.preventDefault();
             navigate('/');
           }}><ArrowLeft size={15} /> Aramaya dön</a>
-          <h1>Yan yana<span>.</span></h1>
+          <h1>Yan <br />yana<span>.</span></h1>
           <p>İki mahalleyi seç, puanlarını ve bu puanların dayandığı kaynakları karşılaştır.</p>
         </header>
         <section aria-label="Karşılaştırılacak mahalle seçimi" className="comparison-console">
@@ -246,20 +194,18 @@ export default function ComparisonView({
           />
         </section>
 
-        <div className="comparison-panels">
-        <section className="grid gap-5 md:grid-cols-2">
+        <section className="channel-pair" aria-label="Mahalle puanları">
           {renderSlotHeaderCard(slot1, sel1, prepareSlot1, 'emerald', 'left')}
           {renderSlotHeaderCard(slot2, sel2, prepareSlot2, 'blue', 'right')}
         </section>
 
-        {/* Visual Radar + Profile Suitability Overview */}
+        </div>
+        <div className="comparison-panels">
         {(data1 || data2) && (
-          <CompareOverview data1={data1} data2={data2} />
-        )}
-
-        {/* Synchronized 5-Category Matrix */}
-        {(data1 || data2) && (
-          <CategoryComparison data1={data1} data2={data2} />
+          <>
+            <CategoryComparison data1={data1} data2={data2} />
+            <CompareOverview data1={data1} data2={data2} />
+          </>
         )}
 
         {/* Hard Data Points & Transport Matrix */}

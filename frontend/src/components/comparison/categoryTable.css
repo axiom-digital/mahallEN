@@ -1,0 +1,48 @@
+.category-ledger {
+  padding-block: clamp(20px, 4vw, 52px);
+  scroll-margin-top: 64px;
+}
+.category-ledger header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.comparison-panels .category-ledger h2 {
+  font-size: clamp(32px, 3.4vw, 60px);
+  font-weight: 650;
+  letter-spacing: -.065em;
+}
+.category-ledger header span, .category-ledger thead, .category-ledger small {
+  color: #53584d;
+  font: 12px/1.45 var(--mono);
+}
+.category-ledger table { width: 100%; table-layout: fixed; text-align: left; }
+.category-ledger thead { border-block: 1px solid #95998b; }
+.category-ledger th, .category-ledger td { padding: 13px 10px 13px 0; overflow-wrap: anywhere; }
+.category-ledger th:first-child { width: 25%; }
+.category-ledger .scale-column { width: 36%; padding-inline: 14px; }
+.category-ledger tbody tr { border-bottom: 1px solid #c3c5b8; }
+.category-ledger tbody th { font-size: clamp(15px, 1.5vw, 23px); font-weight: 550; letter-spacing: -.035em; }
+.category-ledger td strong { display: block; font: 500 clamp(20px, 2vw, 30px)/1.15 var(--mono); }
+.category-ledger small { display: block; margin-top: 4px; }
+.first-mark, .second-mark { display: inline-block; width: 9px; height: 9px; margin-right: 7px; }
+.first-mark { background: var(--first-channel); border-radius: 50%; }
+.second-mark { background: var(--second-channel); transform: rotate(45deg); }
+.ruler-labels { display: flex; justify-content: space-between; }
+.score-ruler {
+  position: relative;
+  height: 24px;
+  background: linear-gradient(#a6aa9b, #a6aa9b) center / 100% 1px no-repeat,
+    repeating-linear-gradient(90deg, #a6aa9b 0 1px, transparent 1px 10%) center / 100% 5px no-repeat;
+}
+.score-ruler i, .score-distance { position: absolute; top: 50%; }
+.score-distance { height: 2px; background: #686f60; transform: translateY(-50%); }
+.score-ruler .first-mark { transform: translate(-50%, -80%); }
+.score-ruler .second-mark { transform: translate(-50%, -20%) rotate(45deg); }
+@media (max-width: 660px) {
+  .category-ledger .scale-column { display: none; }
+  .category-ledger th:first-child { width: 34%; }
+  .category-ledger thead, .category-ledger small { font-size: 11px; }
+}

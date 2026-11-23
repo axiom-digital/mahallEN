@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRightLeft, ArrowUpRight, Info, MapPin, RefreshCw, Sparkles } from 'lucide-react';
+import './comparison/comparison.css';
 import AppShell from './AppShell';
 import { RadialScoreRing } from './AnalyticsCharts';
 import { normalizeScoreValue } from './ScoreCard';
@@ -201,33 +202,17 @@ export default function ComparisonView({
 
   return (
     <AppShell activeRoute="compare">
-      <main className="station-workspace mx-auto max-w-7xl space-y-6 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        {/* Header */}
-        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <div>
-            <button
-              type="button"
-              onClick={() => navigate('/')}
-              className="mb-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700 shadow-card transition hover:bg-slate-50"
-            >
-              <ArrowLeft size={14} />
-              <span>Aramaya dön</span>
-            </button>
-            <h1 className="text-3xl font-semibold tracking-tight text-slate-900">
-              Mahalle Karşılaştırması
-            </h1>
-            <p className="mt-1 text-sm text-slate-600">
-              Hazır pilot raporları veya Türkiye genelindeki mahalleleri kaynaklı veriler ve
-              kategoriler bazında yan yana kıyasla.
-            </p>
-          </div>
-        </div>
-
-        {/* Smart Combobox Selectors + Swap */}
-        <section
-          aria-label="Karşılaştırılacak mahalle seçimi"
-          className="flex flex-col items-stretch gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-card md:flex-row md:items-end"
-        >
+      <main className="comparison-station">
+        <header className="comparison-heading">
+          <a href="/" onClick={(event) => {
+            if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            event.preventDefault();
+            navigate('/');
+          }}><ArrowLeft size={15} /> Aramaya dön</a>
+          <h1>Yan yana<span>.</span></h1>
+          <p>İki mahalleyi seç, puanlarını ve bu puanların dayandığı kaynakları karşılaştır.</p>
+        </header>
+        <section aria-label="Karşılaştırılacak mahalle seçimi" className="comparison-console">
           <PlaceCombobox
             id="select-m1"
             label="1. Mahalle"
@@ -238,13 +223,13 @@ export default function ComparisonView({
             onChange={setSel1}
           />
 
-          <div className="flex justify-center pb-0.5">
+          <div className="comparison-swap">
             <button
               type="button"
               onClick={swapNeighborhoods}
               title="Mahallelerin yerini değiştir"
               aria-label="Mahallelerin yerini değiştir"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-slate-300 hover:bg-slate-100 hover:text-slate-900"
+              className="swap-control"
             >
               <ArrowRightLeft size={16} />
             </button>
@@ -261,7 +246,7 @@ export default function ComparisonView({
           />
         </section>
 
-        {/* Top Summary Cards */}
+        <div className="comparison-panels">
         <section className="grid gap-5 md:grid-cols-2">
           {renderSlotHeaderCard(slot1, sel1, prepareSlot1, 'emerald', 'left')}
           {renderSlotHeaderCard(slot2, sel2, prepareSlot2, 'blue', 'right')}
@@ -305,6 +290,7 @@ export default function ComparisonView({
             ))}
           </section>
         )}
+        </div>
       </main>
     </AppShell>
   );

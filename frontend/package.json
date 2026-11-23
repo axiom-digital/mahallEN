@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "preview:data": "node scripts/sync-preview-data.mjs",
-    "predev": "npm run preview:data",
-    "prebuild": "npm run preview:data",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

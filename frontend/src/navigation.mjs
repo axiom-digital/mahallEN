@@ -8,6 +8,14 @@ export function reportId(pathname) {
   return pathname.match(/^\/mahalle\/([a-f0-9]{32})\/?$/i)?.[1] || null;
 }
 
+export function comparePath(a = '', b = '') {
+  const params = new URLSearchParams();
+  if (a) params.set('a', a);
+  if (b) params.set('b', b);
+  const query = params.toString();
+  return query ? `/karsilastir?${query}` : '/karsilastir';
+}
+
 export function navigate(path, state = {}) {
   window.history.pushState(state, '', path);
   window.dispatchEvent(new Event(NAVIGATION_EVENT));

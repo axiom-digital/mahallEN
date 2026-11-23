@@ -1,204 +1,247 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Activity, ArrowUpRight, Bus, MapPin, RefreshCw, ShieldCheck, Users, Wallet, X } from 'lucide-react';
-import VenueMap from './VenueMap';
+import React, { useMemo, useState } from 'react';
+import { budgetScore, normalizeScoreValue } from '../scoring.mjs';
+import ReportHeading from './report/ReportHeading';
+import ScoreOverview from './report/ScoreOverview';
+import CategoryCards from './report/CategoryCards';
+import ReportNarrative from './report/ReportNarrative';
+import ReportMethod from './report/ReportMethod';
+import CategoryEvidence from './report/CategoryEvidence';
+import { CATEGORIES, currency } from './report/reportDetails';
 
-const categories = [
-  { key: 'rent_cost', score: 'cost_affordability', title: 'Maliyet', Icon: Wallet },
-  { key: 'social_life', score: 'social_life', title: 'Sosyal yaşam', Icon: Users },
-  { key: 'safety_news', score: 'safety', title: 'Yerel gündem', Icon: ShieldCheck },
-  { key: 'earthquake_hazard', score: 'disaster_resilience', title: 'Deprem verisi', Icon: Activity },
-  { key: 'transportation', score: 'transportation', title: 'Ulaşım', Icon: Bus },
-];
-function atPlace(name) {
-  const vowels = name.toLocaleLowerCase('tr-TR').match(/[aeıioöuü]/g) || ['e'];
-  const suffix = `${/[fstkçşhp]$/i.test(name) ? 't' : 'd'}${/[aıou]/.test(vowels.at(-1)) ? 'a' : 'e'}`;
-  return `${name}’${suffix}`;
-}
-const currency = value => value == null ? 'Karşılaştırma yok' : `${Number(value).toLocaleString('tr-TR')} TL`;
-
-function formatConfidenceText(key, catMeta, rentMode) {
-  if (!catMeta || !(catMeta.sample_count > 0)) return null;
-  const unit =
-    key === 'rent_cost'
-      ? (rentMode === 'market_index' ? 'endeks' : 'ilan')
-      : key === 'social_life'
-        ? 'mekân'
-        : key === 'transportation'
-          ? 'hat'
-          : key === 'safety_news'
-            ? 'haber'
-            : 'grid';
-  const countText = key === 'earthquake_hazard' ? 'Akademik PGA' : `${catMeta.sample_count} ${unit}`;
-  return catMeta.confidence_label ? `${countText} · ${catMeta.confidence_label}` : countText;
-}
-
-function Sources({ item }) {
-  const unique = [...new Map((item.sources || []).map(source => [source.url, source])).values()];
-  return <div className="reading-source-links">{unique.slice(0, 2).map(source =>
-    <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title && !source.title.startsWith('http') ? source.title : new URL(source.url).hostname} <ArrowUpRight size={12} /></a>)}
-    {unique.length > 2 && <details><summary>{unique.length - 2} kaynak daha</summary>{unique.slice(2).map(source =>
-      <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title || new URL(source.url).hostname} ↗</a>)}</details>}
-  </div>;
-}
-
-function CategoryDialog({ children, onClose, title }) {
-  const dialog = useRef(null);
-  useEffect(() => {
-    const element = dialog.current;
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    element.showModal();
-    return () => { element.close(); document.body.style.overflow = previous; };
-  }, []);
-  return <dialog ref={dialog} className="neighborhood-category-dialog" aria-label={title}
-    onCancel={event => { event.preventDefault(); onClose(); }}
-    onClick={event => { if (event.target === event.currentTarget) onClose(); }}>{children}</dialog>;
-}
-
-export default function AssessedReport({ report, onRefreshAi, refreshing }) {
+export default function AssessedReport({ report, onReloadReport, refreshing }) {
   const [activeCategory, setActiveCategory] = useState(null);
+  const [chartMode, setChartMode] = useState('bars');
   const [room, setRoom] = useState('1+1');
+  const [personalBudgetInput, setPersonalBudgetInput] = useState('');
   const [venueKind, setVenueKind] = useState('Tümü');
   const [selectedVenue, setSelectedVenue] = useState(null);
   const [showAllFindings, setShowAllFindings] = useState(false);
   const [profile, setProfile] = useState('students');
+  const [copiedLink, setCopiedLink] = useState(false);
+
   const assessment = report.assessment;
   const calculation = assessment.calculation || {};
   const briefing = assessment.briefing || {};
   const roomGroups = briefing.rent_types || [];
-  const roomGroup = roomGroups.find(group => group.rooms === room) || roomGroups[0];
-  const venues = useMemo(() => (briefing.venues || []).filter(venue => venueKind === 'Tümü' || venue.kind === venueKind), [briefing.venues, venueKind]);
+  const roomGroup = roomGroups.find((group) => group.rooms === room) || roomGroups[0];
+  const venues = useMemo(
+    () => (briefing.venues || []).filter((venue) => venueKind === 'Tümü' || venue.kind === venueKind),
+    [briefing.venues, venueKind]
+  );
   const counts = calculation.counts || {};
-  const weekdayService = (briefing.routes || []).flatMap(route => (route.timetable || []).filter(schedule => schedule.days?.weekday).map(schedule => ({code:route.code,...schedule}))).sort((a,b) => b.days.weekday.count - a.days.weekday.count)[0];
+  const weekdayService = (briefing.routes || [])
+    .flatMap((route) =>
+      (route.timetable || [])
+        .filter((schedule) => schedule.days?.weekday)
+        .map((schedule) => ({ code: route.code, ...schedule }))
+    )
+    .sort((a, b) => b.days.weekday.count - a.days.weekday.count)[0];
+
   const evidence = report.evidence_report;
   const narrative = report.ai_report || {};
   const paragraphs = (narrative.executive_summary || '').split(/\n+/).filter(Boolean);
-  const selected = categories.find(category => category.key === activeCategory);
-  const categoryItems = key => evidence.categories.find(category => category.id === key)?.items || [];
-  const findings = evidence.categories.find(category => category.id === activeCategory)?.items || [];
-  const archivedNews = evidence.categories.find(category => category.id === 'safety_news')?.historical_items || [];
-  const rationale = key => assessment.categories.find(category => category.category === key)?.rationale;
-  const date = new Date(`${evidence.reference_date}T12:00:00`).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+  const selectedCategoryDef = CATEGORIES.find((c) => c.key === activeCategory);
+  const categoryItems = (key) => evidence.categories.find((c) => c.id === key)?.items || [];
+  const findings = evidence.categories.find((c) => c.id === activeCategory)?.items || [];
+  const archivedNews =
+    evidence.categories.find((c) => c.id === 'safety_news')?.historical_items || [];
+  const rationale = (key) => assessment.categories.find((c) => c.category === key)?.rationale;
+  const date = new Date(`${evidence.reference_date}T12:00:00`).toLocaleDateString('tr-TR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+
+  // Personal budget check (client-side helper using scoring.mjs without altering backend scores)
+  const parsedBudget = Number(personalBudgetInput);
+  const validBudget =
+    personalBudgetInput.trim() !== '' &&
+    Number.isFinite(parsedBudget) &&
+    parsedBudget >= 1000 &&
+    parsedBudget <= 1000000
+      ? parsedBudget
+      : null;
+
+  const activeRoomMedian = useMemo(() => {
+    if (!roomGroup) return null;
+    if (Number.isFinite(roomGroup.median) && roomGroup.median > 0) return roomGroup.median;
+    const amounts = (roomGroup.listings || [])
+      .map((l) => l.amount)
+      .filter((a) => Number.isFinite(a) && a > 0)
+      .sort((a, b) => a - b);
+    if (!amounts.length) return null;
+    const mid = Math.floor(amounts.length / 2);
+    return amounts.length % 2 ? amounts[mid] : (amounts[mid - 1] + amounts[mid]) / 2;
+  }, [roomGroup]);
+
+  const personalFitScore =
+    validBudget && activeRoomMedian ? budgetScore(activeRoomMedian, validBudget) : null;
+
+  const roomPriceExtents = useMemo(() => {
+    const amounts = (roomGroup?.listings || [])
+      .map((item) => item.amount)
+      .filter((a) => Number.isFinite(a) && a > 0);
+    if (!amounts.length) return null;
+    return {
+      min: roomGroup.min ?? Math.min(...amounts),
+      median: activeRoomMedian,
+      max: roomGroup.max ?? Math.max(...amounts),
+    };
+  }, [roomGroup, activeRoomMedian]);
 
   function openCategory(key) {
     setActiveCategory(key);
     setShowAllFindings(false);
-
   }
-  return <div className="report-dashboard-wrapper reading-report" data-testid="report-dashboard">
-    <header id="rapor-detay" className="neighborhood-intro">
-      <div><span className="neighborhood-breadcrumb"><MapPin size={13} />{report.city} / {report.district}</span>
-        <h1 id="report-title">{atPlace(report.name)} yaşam</h1>
-        {roomGroup?.listings?.length > 0 && <button className="report-housing-fact" type="button" onClick={() => openCategory('rent_cost')}><Wallet size={16}/><span><b>{roomGroup.rooms} ilan örnekleri</b> · {currency(Math.min(...roomGroup.listings.map(item => item.amount)))} – {currency(Math.max(...roomGroup.listings.map(item => item.amount)))}</span><ArrowUpRight size={14}/></button>}
-        <div className="neighborhood-meta"><span>{date} · kaynak kontrolü</span>{briefing.venues?.length > 0 && <span>{briefing.venues.length} örnek mekân kaydı</span>}{counts.routes > 0 && <span>{counts.routes} resmî hat kaydı</span>}</div>
-      </div>
-      <aside className="report-overall-panel" aria-label="Genel değerlendirme">
-        <span className="eyebrow">GENEL DEĞERLENDİRME</span>
-        {report.scores.overall_livability != null ? <><div className="overall-score-ring" style={{'--score-angle': `${report.scores.overall_livability * 3.6}deg`}}>
-          <strong data-testid="overall-score">{report.scores.overall_livability ?? '—'}<small>/100</small></strong>
-        </div>
-        <p className="overall-coverage">{assessment.coverage}/5 kategoriye dayanıyor</p>
-        </> : <p className="overall-coverage">Genel puan için en az 2 kategoride kaynaklı puan gerekir.</p>}
-        <a href="#report-method" onClick={event => { event.preventDefault(); const method = document.getElementById('report-method'); if (method) { method.open = true; method.scrollIntoView({behavior:'smooth',block:'start'}); } }}>Puan nasıl hesaplandı? <ArrowUpRight size={13}/></a>
-      </aside>
-    </header>
 
-    <section className="neighborhood-overview" aria-label="Mahalle kategori puanları"><div className="neighborhood-section-title"><div><span className="eyebrow">BEŞ SORUDA MAHALLE</span><h3>Günlük hayatın nasıl olur?</h3></div><span>Ayrıntılar için bir başlık seç.</span></div>
-      <div className="neighborhood-answer-grid">{categories.map(({key, score, title, Icon}) => {
-        const items = categoryItems(key);
-        const value = report.scores[score];
-        const catMeta = report.category_meta?.[score];
-        const confText = formatConfidenceText(key, catMeta, assessment?.calculation?.rent_mode);
-        const heading = key === 'rent_cost' ? (roomGroup?.listings?.length ? `${roomGroup.rooms} konut örnekleri` : briefing.rent_benchmarks?.length ? 'Piyasa kira endeksi' : 'Konut seçenekleri')
-          : key === 'social_life' ? (briefing.venues?.slice(0, 2).map(v => v.name).join(' · ') || 'Günlük ihtiyaçlar ve mekânlar')
-          : key === 'transportation' ? (briefing.routes?.map(r => r.code).filter(Boolean).slice(0, 4).join(' · ') || 'Hatlar ve duraklar')
-          : key === 'earthquake_hazard' ? (briefing.hazard?.value != null ? `${briefing.hazard.value} g · PGA` : 'Zemin ve deprem kaynakları')
-          : 'Tarihli yerel gelişmeler';
-        const text = key === 'transportation' && weekdayService ? `${weekdayService.code} · ${weekdayService.direction}: hafta içi ${weekdayService.days.weekday.first}–${weekdayService.days.weekday.last}. Uç duraktan hareket saatleri.`
-          : key === 'social_life' ? (briefing.social_diversity?.note || `${briefing.venues?.length || 0} örnek kaydı kaynaklarıyla incele. Bu liste mahalledeki bütün mekânların sayısı değildir.`)
-          : key === 'rent_cost' ? (roomGroup?.listings?.length ? `${roomGroup.listings.length} ilanı oda tipi, tarih ve istenen bedeliyle karşılaştır.` : briefing.rent_benchmarks?.length ? `${briefing.rent_benchmarks.length} piyasa endeksi kaydıyla kira seviyesini incele.` : items[0]?.text)
-          : key === 'earthquake_hazard' && briefing.hazard?.value != null ? 'Akademik gridin temsil noktasındaki sarsıntı tehlikesi; binanın dayanıklılığı değildir.'
-          : key === 'safety_news' ? (items.length ? `${items.length} tarihli yerel kayıt. Haberler mahalle güvenliği veya suç oranı ölçümü değildir.` : 'Güncel tarihli kayıt bulunamadı. Eski ve tarihi belirsiz kayıtlar arşivde; güvenlik değerlendirmesi olarak kullanılmaz.')
-          : items[0]?.text || 'Bu başlık için mahalleye ait yeterli kaynak henüz bulunamadı.';
-        return <button key={key} type="button" className={`neighborhood-answer answer-${key}`} onClick={() => openCategory(key)} data-testid={`card-${score}`} aria-haspopup="dialog">
-          <div className="answer-label"><Icon size={18}/><span>{title}</span></div><div className={`answer-score ${value == null ? 'is-unavailable' : ''}`} data-testid={`score-${score}`}>{value != null ? <><strong>{value}</strong><span>/100</span></> : <span>Veri bekleniyor</span>}</div>
-          {confText && <div className={`answer-confidence confidence-${catMeta.confidence || 'low'}`} data-testid={`confidence-${score}`}>{confText}</div>}
-          <h4>{heading}</h4><p>{text}</p><span className="answer-action">{key === 'rent_cost' ? 'İlanları gör' : key === 'social_life' ? 'Mekânları keşfet' : key === 'transportation' ? 'Hatları incele' : 'Kaynakları incele'}<ArrowUpRight size={14}/></span>
-        </button>;
-      })}</div>
-    </section>
+  async function handleShareLink() {
+    const shareUrl = window.location.href;
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        const input = document.createElement('input');
+        input.value = shareUrl;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+      }
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2500);
+    } catch {
+      setCopiedLink(false);
+    }
+  }
 
-    {selected && <CategoryDialog title={`${selected.title} · ${report.name}`} onClose={() => setActiveCategory(null)}><section id="category-evidence" className="report-synthesis-card reading-category-panel" aria-label={`${selected.title} ayrıntıları`}>
-      <div className="synthesis-header"><div><span className="eyebrow">YAKINDAN BAK</span><h3>{selected.title}</h3></div>
-        <button className="reading-close" type="button" aria-label="Kategori ayrıntılarını kapat" onClick={() => setActiveCategory(null)}><X size={20} /></button></div>
-      {activeCategory === 'rent_cost' && (roomGroups.length > 0 || briefing.rent_benchmarks?.length > 0) ? <>
-        {roomGroups.length > 0 && <>
-          <div className="reading-filter-row" role="group" aria-label="Konut tipi">{roomGroups.map(group => <button type="button" key={group.rooms} className={roomGroup?.rooms === group.rooms ? 'active' : ''} onClick={() => setRoom(group.rooms)}>{group.rooms}</button>)}</div>
-          {roomGroup.sample_count > 0 ? <div className="reading-rent-summary"><div><span>İlan medyanı</span><strong>{currency(roomGroup.median)}</strong></div><div><span>Karşılaştırılabilir örnek</span><strong>{roomGroup.sample_count}</strong></div><div><span>İstenen fiyat aralığı</span><strong>{roomGroup.min === roomGroup.max ? currency(roomGroup.min) : `${currency(roomGroup.min)} – ${currency(roomGroup.max)}`}</strong></div></div>
-            : <div className="reading-listing-intro"><h4>{roomGroup.rooms} · {roomGroup.listings.length} kaynaklı ilan</h4><p>İstenen bedelleri ve ilan tarihlerini aşağıda inceleyebilirsin. 1+1 dışında kalan oda tipleri puanlamada standart katsayıyla 1+1 eşdeğerine normalize edilir.</p></div>}
-          <p className="reading-map-caption">{assessment?.calculation?.rent_mode === 'strict_1+1'
-            ? 'İlanlardaki istenen bedeller; gerçekleşmiş kira veya mahalle ortalaması değildir. Maliyet puanında yalnız karşılaştırmaya uygun 1+1 örnekleri kullanılır.'
-            : '1+1 ilanı az olan mahallelerde farklı oda tipleri standart katsayılarla 1+1 eşdeğerine normalize edilir ve varsa piyasa kira endeksiyle birlikte medyan hesaplanır.'}</p>
-          <div className="reading-listings">{roomGroup.listings.map((listing, i) => <article key={i}><div><strong>{currency(listing.amount)}</strong><span>{listing.rooms} · {listing.date || 'Tarih belirsiz'}</span></div><span className="reading-listing-status">{listing.comparable ? 'Tarihli örnek' : 'Oda / endeks havuzunda'}</span><Sources item={listing} /></article>)}</div>
-        </>}
-        {briefing.rent_benchmarks?.length > 0 && <div className="reading-benchmark-section">
-          <h4>Piyasa Kira Endeksi</h4>
-          <div className="reading-benchmark-grid">{briefing.rent_benchmarks.map((b, i) => <article className="reading-benchmark-card" key={i}><div><strong>{b.label || currency(b.amount)}</strong><span>{b.rooms || 'genel'} · {b.date || 'Güncel endeks'}</span></div><p>{b.description}</p><Sources item={b} /></article>)}</div>
-        </div>}
-      </> : activeCategory === 'social_life' && briefing.venues?.length > 0 ? <>
-        {briefing.social_diversity && <div className="reading-diversity-box">
-          {briefing.social_diversity.monoculture_warning && <p className="reading-diversity-warning">{briefing.social_diversity.monoculture_warning}</p>}
-          <div className="reading-diversity-chips">
-            {[
-              ['yeme_icme', 'Yeme-içme'],
-              ['kafe', 'Kafe'],
-              ['gece', 'Gece'],
-              ['gunluk', 'Günlük'],
-              ['park_spor', 'Park / Spor'],
-              ['kultur_sanat', 'Kültür / Sanat'],
-            ].map(([gkey, glabel]) => {
-              const cnt = briefing.social_diversity.groups?.[gkey] ?? 0;
-              const low = (gkey === 'park_spor' || gkey === 'kultur_sanat') && cnt <= 2;
-              return <span key={gkey} className={`reading-diversity-chip${cnt === 0 ? ' is-empty' : low ? ' is-low' : ''}`}>{glabel}: <strong>{cnt}</strong></span>;
-            })}
+  const profileOptions = [
+    { key: 'students', label: 'Öğrenci', verdictKey: 'student_verdict' },
+    { key: 'families', label: 'Aile', verdictKey: 'family_verdict' },
+    { key: 'professionals', label: 'Çalışan', verdictKey: 'professional_verdict' },
+  ];
+
+  const activeCategoryScore = selectedCategoryDef
+    ? normalizeScoreValue(report.scores?.[selectedCategoryDef.score])
+    : null;
+  const activeCategoryMeta = selectedCategoryDef
+    ? report.category_meta?.[selectedCategoryDef.score]
+    : null;
+
+  return (
+    <div className="space-y-6" data-testid="report-dashboard">
+      {/* TOP REPORT HEADER & ACTION BAR */}
+      <ReportHeading
+        report={report}
+        roomGroup={roomGroup}
+        openCategory={openCategory}
+        date={date}
+        briefing={briefing}
+        counts={counts}
+        handleShareLink={handleShareLink}
+        copiedLink={copiedLink}
+        onReloadReport={onReloadReport}
+        refreshing={refreshing}
+      />
+
+      {/* BENTO ROW 1: EXECUTIVE SUMMARY (OVERALL RING + 5-AXIS ANALYTICS) */}
+      <ScoreOverview
+        report={report}
+        assessment={assessment}
+        chartMode={chartMode}
+        setChartMode={setChartMode}
+        openCategory={openCategory}
+      />
+
+      {/* BENTO ROW 2: 5 INTERACTIVE CATEGORY CARDS */}
+      <CategoryCards
+        categoryItems={categoryItems}
+        report={report}
+        roomGroup={roomGroup}
+        briefing={briefing}
+        weekdayService={weekdayService}
+        openCategory={openCategory}
+        assessment={assessment}
+      />
+
+      {/* BENTO ROW 3: NARRATIVE SYNTHESIS & PROFILE SUITABILITY */}
+      <ReportNarrative
+        report={report}
+        paragraphs={paragraphs}
+        narrative={narrative}
+        profileOptions={profileOptions}
+        profile={profile}
+        setProfile={setProfile}
+      />
+
+      {/* PRINT-ONLY EXECUTIVE APPENDIX (for clean PDF exports without interactive drawer) */}
+      <section className="print-only rounded-xl border border-slate-300 p-4">
+        <h3 className="text-sm font-semibold text-slate-900">Özet Ölçüm ve Kayıt Notları</h3>
+        <div className="mt-2 grid grid-cols-2 gap-3 text-xs text-slate-700">
+          <div>
+            <strong>Kira Özeti:</strong> {report.rent_analysis?.rent_range_tl || 'İlan kaydı sınırlı'}{' '}
+            {report.rent_analysis?.average_rent_tl != null
+              ? `· Medyan: ${currency(report.rent_analysis.average_rent_tl)}`
+              : ''}
           </div>
-        </div>}
-        <p className="reading-map-caption">Adres bağlamı kaynakta eşleşen örneklerdir. Aramanın bulduğu kayıt sayısı, mahalledeki toplam mekân sayısı veya mutlak yaşam kalitesi değildir.</p>
-        <div className="reading-filter-row" role="group" aria-label="Mekân türü">{['Tümü', ...new Set(briefing.venues.map(venue => venue.kind))].map(kind => <button type="button" key={kind} className={venueKind === kind ? 'active' : ''} onClick={() => { setVenueKind(kind); setSelectedVenue(null); setShowAllFindings(false); }}>{kind}</button>)}</div>
-        <div className={`reading-social-layout ${venues.some(v => Number.isFinite(v.lat) && Number.isFinite(v.lon)) ? 'has-map' : 'without-map'}`}><div className="reading-venue-list">{(showAllFindings ? venues : venues.slice(0, 6)).map(venue => <article key={venue.id} className={venue.id === selectedVenue ? 'is-selected' : ''}><span className="eyebrow">{venue.kind}</span><h4>{venue.name}</h4><p>{venue.address || 'Açık adres için kaynağı incele.'}</p>{venue.scope === 'reference_radius' && <small>Referans noktasının 1 km çevresinde</small>}<Sources item={venue} />{Number.isFinite(venue.lat) && Number.isFinite(venue.lon) && <button className="reading-detail-button" type="button" onClick={() => setSelectedVenue(venue.id)}>Haritada göster <MapPin size={14} /></button>}</article>)}{venues.length > 6 && <button className="reading-detail-button" type="button" onClick={() => setShowAllFindings(!showAllFindings)}>{showAllFindings ? 'Daha az göster' : `${venues.length} mekânın tamamını göster`}</button>}</div>{venues.some(v => Number.isFinite(v.lat) && Number.isFinite(v.lon)) && <VenueMap venues={venues} selected={selectedVenue} onSelect={setSelectedVenue} />}</div>
-      </> : activeCategory === 'transportation' && briefing.routes?.length > 0 ? <>
-        <div className="reading-route-list">{briefing.routes.map((route, i) => <article key={i}><span className="reading-route-code">{route.code || 'Hat'}</span><div><h4>{route.route}</h4><p>{route.local_evidence}</p>{route.timetable?.map((schedule, j) => <details className="published-timetable" key={j}><summary>{schedule.direction} · yayımlanmış saatler</summary><p>Uç duraktan hareket saatleri; mahalleden geçiş veya canlı bekleme süresi değildir.</p><div className="timetable-day-grid">{Object.entries(schedule.days).map(([day, service]) => <div key={day}><h5>{({weekday:'Hafta içi',saturday:'Cumartesi',sunday:'Pazar'})[day] || day}</h5><strong>{service.first} – {service.last}</strong><span>{service.count} yayımlanmış hareket</span><div className="timetable-times">{service.times.map((time, k) => <span key={k}>{time}</span>)}</div></div>)}</div></details>)}<Sources item={route} /></div></article>)}</div>
-        {briefing.transport_notices?.length > 0 && <details className="reading-notices"><summary>Tarihli yol ve erişim duyuruları · {briefing.transport_notices.length}</summary><p>Bu kayıtlar yayınlandıkları tarihteki durumu anlatır; çalışmaların bugün sürdüğü varsayılmaz.</p>{briefing.transport_notices.map((notice, i) => <article className="reading-finding" key={i}><time>{notice.date || (notice.observed_at ? `${notice.observed_at} tarihinde sayfada görüldü` : 'Yayın tarihi belirtilmemiş')}</time><p>{notice.text}</p><Sources item={notice} /></article>)}</details>}
-      </> : <>
-        {findings.length ? (showAllFindings ? findings : findings.slice(0, 4)).map((item, index) => <article className="reading-finding" key={index}><p>{item.text}</p>{item.date && <time dateTime={item.date}>{item.date}</time>}<Sources item={item} />{item.note && <details className="reading-item-note"><summary>Bu kaydın kapsamı</summary><p>{item.note}</p></details>}</article>) : <p>Bu başlık için yeterli kaynaklı bilgi bulunmuyor.</p>}
-        {findings.length > 4 && <button type="button" className="reading-detail-button" onClick={() => setShowAllFindings(!showAllFindings)}>{showAllFindings ? 'Daha az göster' : `${findings.length} bulgunun tamamını göster`}</button>}
-      </>}
-      {activeCategory === 'safety_news' && archivedNews.length > 0 && <details className="reading-notices"><summary>Eski veya tarihi doğrulanmamış kayıtlar · {archivedNews.length}</summary>{archivedNews.map((item, i) => <article className="reading-finding" key={i}><time>{item.date || 'Yayın tarihi doğrulanmadı'}</time><p>{item.text}</p><Sources item={item}/></article>)}</details>}
-      <details className="method-details"><summary>Değerlendirmenin dayanağı</summary><p>{rationale(activeCategory)}</p></details>
-    </section></CategoryDialog>}
+          <div>
+            <strong>Deprem (PGA):</strong>{' '}
+            {briefing.hazard?.value != null ? `${briefing.hazard.value} g` : 'Grid kaydı yok'}
+          </div>
+          <div>
+            <strong>Ulaşım Hatları:</strong>{' '}
+            {briefing.routes?.map((r) => r.code || r.route).join(', ') || 'Hat kaydı yok'}
+          </div>
+          <div>
+            <strong>Örnek Mekân Sayısı:</strong> {briefing.venues?.length || 0}
+          </div>
+        </div>
+      </section>
 
-    <section className="report-synthesis-card reading-narrative" aria-label="Mahalle değerlendirmesi">
-      <div className="synthesis-header"><div><span className="eyebrow">MAHALLEYE BİR BAKIŞ</span><h3>{atPlace(report.name)} yaşam</h3></div>
-        {onRefreshAi && <button type="button" className="refresh-report-btn" disabled={refreshing} onClick={onRefreshAi}>
-          <RefreshCw size={14} className={refreshing ? 'spin-icon' : ''} /><span>{refreshing ? 'Yükleniyor…' : 'Yeniden yükle'}</span></button>}
-      </div>
-      <div className="synthesis-summary">{paragraphs.slice(0, 1).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
-      {paragraphs.length > 1 && <details className="reading-full-report"><summary>Raporun tamamını oku</summary><div className="synthesis-summary">{paragraphs.slice(1).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div></details>}
-      <div className="pros-cons-grid">
-        {narrative.pros?.length > 0 && <div className="pros-box"><h4>Öne çıkanlar</h4><ul>{narrative.pros.slice(0, 2).map((text, i) => <li key={i}>{text}</li>)}</ul></div>}
-        {narrative.cons?.length > 0 && <div className="cons-box"><h4>Dikkat etmen gerekenler</h4><ul>{narrative.cons.slice(0, 2).map((text, i) => <li key={i}>{text}</li>)}</ul></div>}
-      </div>
-    </section>
+      {/* BENTO ROW 4: TRANSPARENCY, METHODOLOGY & SOURCES */}
+      <ReportMethod
+        assessment={assessment}
+        date={date}
+        openCategory={openCategory}
+        rationale={rationale}
+        report={report}
+        evidence={evidence}
+      />
 
-    <section className="neighborhood-profile" aria-label="Yaşam profiline göre değerlendirme"><div><span className="eyebrow">SENİN ÖNCELİĞİN</span><h3>Hayatına nasıl uyar?</h3></div><div className="profile-answer"><div className="reading-filter-row" role="group" aria-label="Rapor yaşam profili">{[['students','Öğrenci'],['families','Aile'],['professionals','Çalışan']].map(([key,label]) => <button key={key} type="button" aria-pressed={profile === key} className={profile === key ? 'active' : ''} onClick={() => setProfile(key)}>{label}</button>)}</div><p>{narrative[({students:'student_verdict',families:'family_verdict',professionals:'professional_verdict'})[profile]]}</p>{report.suitability[profile] != null && <small>Profil ön puanı · {report.suitability[profile]}/100</small>}</div></section>
+      <p className="text-center text-xs text-slate-500">
+        Puanlar kaynaklı proje göstergeleridir. Ev seçerken kaynağın tarihini ve evin kendi koşullarını birlikte değerlendir.
+      </p>
 
-    <details id="report-method" className="methodology-footer-card reading-methodology"><summary>Kaynaklar, kapsam ve puanlama</summary>
-      <p>{assessment.methodology}</p>
-      <p>Kaynak dönemi: {date}. Haber göstergesi suç oranı, PGA göstergesi bina dayanıklılığı değildir. Eksik kategoriler sıfır sayılmaz.</p>
-      {categories.map(category => <details className="method-details" key={category.key}><summary>{category.title}</summary>
-        <p>{rationale(category.key)}</p><button className="reading-detail-button" type="button" onClick={() => openCategory(category.key)}>Bulguları ve kaynakları incele <ArrowUpRight size={14} /></button></details>)}
-      {evidence.limitations?.map((limitation, i) => <p key={i}>{limitation}</p>)}
-    </details>
-    <p className="reading-disclaimer">Puanlar kaynaklı proje göstergeleridir. Ev seçerken kaynağın tarihini ve evin kendi koşullarını birlikte değerlendir.</p>
-  </div>;
+      {/* RIGHT SLIDE-OVER CATEGORY DRAWER */}
+      <CategoryEvidence
+        selectedCategoryDef={selectedCategoryDef}
+        report={report}
+        setActiveCategory={setActiveCategory}
+        activeCategoryScore={activeCategoryScore}
+        activeCategoryMeta={activeCategoryMeta}
+        assessment={assessment}
+        activeCategory={activeCategory}
+        openCategory={openCategory}
+        roomGroups={roomGroups}
+        briefing={briefing}
+        setRoom={setRoom}
+        roomGroup={roomGroup}
+        roomPriceExtents={roomPriceExtents}
+        validBudget={validBudget}
+        activeRoomMedian={activeRoomMedian}
+        personalBudgetInput={personalBudgetInput}
+        setPersonalBudgetInput={setPersonalBudgetInput}
+        personalFitScore={personalFitScore}
+        setVenueKind={setVenueKind}
+        setSelectedVenue={setSelectedVenue}
+        setShowAllFindings={setShowAllFindings}
+        venueKind={venueKind}
+        venues={venues}
+        selectedVenue={selectedVenue}
+        showAllFindings={showAllFindings}
+        findings={findings}
+        archivedNews={archivedNews}
+        rationale={rationale}
+      />
+    </div>
+  );
 }

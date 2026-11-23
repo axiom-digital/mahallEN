@@ -1,352 +1,311 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRightLeft, ArrowUpRight, Info, Sparkles } from 'lucide-react';
-import { CATEGORY_DEFINITIONS, getScoreBadgeStyle, normalizeScoreValue } from './ScoreCard';
-import { adaptPlaceReport } from '../services/placeAdapter.mjs';
-import { suggestPlaces } from '../services/places';
+import React, { useEffect, useMemo, useState } from 'react';
+import { ArrowLeft, ArrowRightLeft, ArrowUpRight, Info, MapPin, RefreshCw, Sparkles } from 'lucide-react';
+import AppShell from './AppShell';
+import { RadialScoreRing } from './AnalyticsCharts';
+import { normalizeScoreValue } from './ScoreCard';
 import { navigate, reportPath } from '../navigation.mjs';
+import CompareOverview from './comparison/CompareOverview';
+import CategoryComparison from './comparison/CategoryComparison';
+import CompareMeasurements from './comparison/CompareMeasurements';
+import PlaceCombobox from './comparison/PlaceCombobox';
+import { PHASE_LABELS, selectionFromParam, useComparisonSlot } from './comparison/comparisonData';
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api/v1';
+export default function ComparisonView({
+  initialSlug1 = 'kotekli',
+  initialSlug2 = 'emirbeyazit',
+  searchParams = '',
+}) {
+  const initialSelections = useMemo(() => {
+    const params = new URLSearchParams(searchParams || window.location.search);
+    const paramA = params.get('a');
+    const paramB = params.get('b');
+    const sel1 = selectionFromParam(paramA, initialSlug1);
+    const fallbackB =
+      sel1.kind === 'pilot' && sel1.slug === initialSlug2 ? 'kotekli' : initialSlug2;
+    const sel2 = selectionFromParam(paramB, fallbackB);
+    return [sel1, sel2];
+  }, [searchParams, initialSlug1, initialSlug2]);
 
-const AVAILABLE_NEIGHBORHOODS = [
-  { slug: 'kotekli', name: 'Kötekli', district: 'Menteşe', city: 'Muğla' },
-  { slug: 'emirbeyazit', name: 'Emirbeyazıt', district: 'Menteşe', city: 'Muğla' },
-  { slug: 'muslihittin', name: 'Muslihittin', district: 'Menteşe', city: 'Muğla' },
-  { slug: 'orhaniye', name: 'Orhaniye', district: 'Menteşe', city: 'Muğla' },
-  { slug: 'akyaka', name: 'Akyaka', district: 'Ula', city: 'Muğla' },
-  { slug: 'caferaga', name: 'Caferağa', district: 'Kadıköy', city: 'İstanbul' },
-  { slug: 'bahcelievler', name: 'Bahçelievler', district: 'Çankaya', city: 'Ankara' },
-  { slug: 'kultur', name: 'Kültür', district: 'Konak', city: 'İzmir' },
-  { slug: 'yenibaglar', name: 'Yenibağlar', district: 'Tepebaşı', city: 'Eskişehir' },
-  { slug: 'gorukle', name: 'Görükle', district: 'Nilüfer', city: 'Bursa' },
-];
-
-async function fetchComparisonReport(slug, signal) {
-  const target = AVAILABLE_NEIGHBORHOODS.find((n) => n.slug === slug);
-  let placeId = null;
-
-  if (target) {
-    try {
-      const suggestionRes = await suggestPlaces(
-        `${target.name} ${target.district} ${target.city}`,
-        signal
-      );
-      const matched = (suggestionRes?.results || []).find(
-        (p) =>
-          p.name.toLocaleLowerCase('tr-TR') === target.name.toLocaleLowerCase('tr-TR') &&
-          p.district.toLocaleLowerCase('tr-TR') === target.district.toLocaleLowerCase('tr-TR')
-      );
-      if (matched?.id) {
-        placeId = matched.id;
-        const placeReportRes = await fetch(
-          `${API_BASE}/places/${encodeURIComponent(placeId)}/report`,
-          { signal }
-        );
-        if (placeReportRes.ok) {
-          const rawPlaceReport = await placeReportRes.json();
-          const adapted = adaptPlaceReport(rawPlaceReport);
-          return { ...adapted, placeId };
-        }
-      }
-    } catch (err) {
-      if (err?.name === 'AbortError') throw err;
-    }
-  }
-
-  const pilotRes = await fetch(
-    `${API_BASE}/neighborhoods/${encodeURIComponent(slug)}/report`,
-    { signal }
-  );
-  if (!pilotRes.ok) {
-    throw new Error('Mahalle verisi alınamadı.');
-  }
-  const pilotJson = await pilotRes.json();
-  return { ...pilotJson, placeId };
-}
-
-export default function ComparisonView({ initialSlug1 = 'kotekli', initialSlug2 = 'emirbeyazit' }) {
-  const [slug1, setSlug1] = useState(initialSlug1);
-  const [slug2, setSlug2] = useState(initialSlug2);
-
-  const [data1, setData1] = useState(null);
-  const [data2, setData2] = useState(null);
-  const [loading1, setLoading1] = useState(false);
-  const [loading2, setLoading2] = useState(false);
+  const [sel1, setSel1] = useState(initialSelections[0]);
+  const [sel2, setSel2] = useState(initialSelections[1]);
 
   useEffect(() => {
-    if (!slug1) return;
-    const controller = new AbortController();
-    setLoading1(true);
-    fetchComparisonReport(slug1, controller.signal)
-      .then((json) => {
-        if (!controller.signal.aborted) setData1(json);
-      })
-      .catch((err) => {
-        if (err?.name !== 'AbortError') setData1(null);
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) setLoading1(false);
-      });
-    return () => controller.abort();
-  }, [slug1]);
+    setSel1(initialSelections[0]);
+    setSel2(initialSelections[1]);
+  }, [initialSelections]);
 
-  useEffect(() => {
-    if (!slug2) return;
-    const controller = new AbortController();
-    setLoading2(true);
-    fetchComparisonReport(slug2, controller.signal)
-      .then((json) => {
-        if (!controller.signal.aborted) setData2(json);
-      })
-      .catch((err) => {
-        if (err?.name !== 'AbortError') setData2(null);
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) setLoading2(false);
-      });
-    return () => controller.abort();
-  }, [slug2]);
+  const { state: slot1, startLivePrepare: prepareSlot1 } = useComparisonSlot(sel1);
+  const { state: slot2, startLivePrepare: prepareSlot2 } = useComparisonSlot(sel2);
+
+  const data1 = slot1.data;
+  const data2 = slot2.data;
 
   const swapNeighborhoods = () => {
-    const temp = slug1;
-    setSlug1(slug2);
-    setSlug2(temp);
-  };
-
-  const renderScoreValue = (val) => {
-    const normalized = normalizeScoreValue(val);
-    if (normalized === null) {
-      return (
-        <span className="comp-score-missing" title="Bu kategori için karşılaştırmalı sayısal puan üretilmedi (0 olarak sayılmaz).">
-          Veri yetersiz
-        </span>
-      );
-    }
-    const badge = getScoreBadgeStyle(normalized);
-    return (
-      <div className="comp-score-badge">
-        <span className="comp-score-num">{normalized}</span>
-        <span className={`comp-score-tag ${badge.tone}`}>{badge.label}</span>
-      </div>
-    );
-  };
-
-  const renderPersonaScore = (suitability, key, label) => {
-    const val = normalizeScoreValue(suitability?.[key]);
-    if (val === null) {
-      return (
-        <div className="comp-persona-item">
-          <span className="comp-persona-label">{label}</span>
-          <span className="comp-persona-missing">Puan hesaplanmadı</span>
-        </div>
-      );
-    }
-    return (
-      <div className="comp-persona-item">
-        <span className="comp-persona-label">{label}</span>
-        <span className="comp-persona-val">{val} / 100</span>
-      </div>
-    );
+    setSel1(sel2);
+    setSel2(sel1);
   };
 
   const getEvidenceCount = (data, categoryKey) => {
-    const fromEvidenceReport = data?.evidence_report?.categories?.find((c) => c.id === categoryKey)?.items?.length;
+    const fromEvidenceReport = data?.evidence_report?.categories?.find(
+      (c) => c.id === categoryKey
+    )?.items?.length;
     if (typeof fromEvidenceReport === 'number') {
       return fromEvidenceReport;
     }
     return data?.pilot_evidence?.categories?.[categoryKey]?.observations?.length || 0;
   };
 
-  const renderColumn = (data, loading, testPrefix) => (
-    <div className={`comp-card ${loading ? 'comp-loading' : ''}`} data-testid={`comp-card-${testPrefix}`}>
-      {loading ? (
-        <div className="comp-spinner-box" role="status">Yükleniyor...</div>
-      ) : data ? (
-        <div className="comp-card-inner">
-          <div className="comp-card-head">
-            <h3>{data.name}</h3>
-            <span className="comp-location-badge">{data.district} / {data.city}</span>
-            <p className="comp-tagline">{data.tagline}</p>
-            {data.placeId && (
+  const renderSlotHeaderCard = (slotState, selection, onPrepare, accent, testPrefix) => {
+    const isEmerald = accent === 'emerald';
+    const accentBar = isEmerald ? 'bg-emerald-600' : 'bg-blue-600';
+
+    if (slotState.loading) {
+      return (
+        <div
+          className="flex min-h-[200px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card"
+          data-testid={`comp-card-${testPrefix}`}
+        >
+          <div className={`h-1 w-full ${accentBar}`} aria-hidden="true" />
+          <div className="flex flex-1 items-center justify-center p-6">
+            <div className="flex items-center gap-2.5 text-sm text-slate-500" role="status">
+              <RefreshCw size={16} className="animate-spin text-blue-600" />
+              <span>Mahalle verileri yükleniyor…</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (slotState.status === 'needs-prepare') {
+      const placeInfo = slotState.place || selection;
+      return (
+        <div
+          className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card"
+          data-testid={`comp-card-${testPrefix}`}
+        >
+          <div className={`h-1 w-full ${accentBar}`} aria-hidden="true" />
+          <div className="flex flex-1 flex-col justify-between p-6">
+            <div>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-[11px] font-medium text-amber-800">
+                Önbellekte hazır rapor yok
+              </span>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">{placeInfo.name}</h3>
+              <p className="text-xs text-slate-500">
+                {[placeInfo.district, placeInfo.city].filter(Boolean).join(' / ')}
+              </p>
+              <p className="mt-3 text-xs leading-relaxed text-slate-600">
+                Bu mahallenin raporu henüz önbellekte bulunmuyor. Canlı kaynak araştırması ve rapor
+                üretimi yaklaşık 15–40 saniye sürebilir.
+              </p>
+              {slotState.error && (
+                <p className="mt-2 text-xs font-medium text-rose-600" role="alert">
+                  {slotState.error}
+                </p>
+              )}
+            </div>
+
+            <div className="mt-5">
+              <button
+                type="button"
+                disabled={slotState.preparing}
+                onClick={onPrepare}
+                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-xs font-medium text-white shadow-sm transition hover:bg-slate-800 disabled:opacity-60"
+              >
+                {slotState.preparing ? (
+                  <>
+                    <RefreshCw size={13} className="animate-spin" />
+                    <span>{PHASE_LABELS[slotState.phase] || 'Hazırlanıyor…'}</span>
+                  </>
+                ) : (
+                  <>
+                    <Sparkles size={13} />
+                    <span>Raporu şimdi hazırla</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (!slotState.data) {
+      return (
+        <div
+          className="overflow-hidden rounded-2xl border border-rose-200 bg-white shadow-card"
+          data-testid={`comp-card-${testPrefix}`}
+          role="alert"
+        >
+          <div className={`h-1 w-full ${accentBar}`} aria-hidden="true" />
+          <div className="p-6 text-sm text-rose-700">Mahalle verisi alınamadı.</div>
+        </div>
+      );
+    }
+
+    const d = slotState.data;
+    return (
+      <article
+        className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card"
+        data-testid={`comp-card-${testPrefix}`}
+      >
+        <div className={`h-1 w-full ${accentBar}`} aria-hidden="true" />
+        <div className="flex flex-1 flex-col justify-between p-6">
+          <div className="flex items-start justify-between gap-4">
+            <div className="min-w-0">
+              <span className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 font-mono text-[11px] font-medium text-slate-600">
+                <MapPin size={11} className={isEmerald ? 'text-emerald-600' : 'text-blue-600'} />
+                {d.district} / {d.city}
+              </span>
+              <h3 className="mt-2.5 truncate text-2xl font-semibold tracking-tight text-slate-900">
+                {d.name}
+              </h3>
+              <p className="mt-1 text-xs text-slate-500">{d.tagline}</p>
+            </div>
+
+            <RadialScoreRing score={d.scores?.overall_livability} size={86} strokeWidth={7} testId={`comp-${testPrefix}-overall`} />
+          </div>
+
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-slate-100 pt-3.5 text-xs">
+            <span className="text-slate-500">
+              Genel Skor:{' '}
+              <strong className="font-mono text-slate-900">
+                {normalizeScoreValue(d.scores?.overall_livability) !== null
+                  ? `${normalizeScoreValue(d.scores?.overall_livability)}/100`
+                  : 'Veri yetersiz'}
+              </strong>
+            </span>
+
+            {d.placeId && (
               <a
-                href={reportPath(data.placeId)}
-                className="text-link"
+                href={reportPath(d.placeId)}
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate(reportPath(data.placeId), {
-                    place: { id: data.placeId, name: data.name, district: data.district, city: data.city },
+                  navigate(reportPath(d.placeId), {
+                    place: { id: d.placeId, name: d.name, district: d.district, city: d.city },
                     returnTo: '/karsilastir',
                   });
                 }}
+                className="inline-flex items-center gap-1 font-medium text-blue-600 hover:text-blue-700"
               >
-                Tam raporu ve kaynakları aç <ArrowUpRight size={15} />
+                <span>Tam raporu ve kaynakları aç</span>
+                <ArrowUpRight size={14} />
               </a>
             )}
           </div>
-
-          {/* Overall Score */}
-          <div className="comp-section">
-            <h4>Genel Yaşanabilirlik Skoru</h4>
-            {renderScoreValue(data.scores?.overall_livability)}
-          </div>
-
-          {/* Profiles */}
-          <div className="comp-section">
-            <h4>Profil Uygunlukları</h4>
-            <div className="comp-personas-list">
-              {renderPersonaScore(data.suitability, 'students', 'Öğrenci')}
-              {renderPersonaScore(data.suitability, 'families', 'Aile')}
-              {renderPersonaScore(data.suitability, 'professionals', 'Çalışan')}
-            </div>
-          </div>
-
-          {/* Category Scores & Evidence */}
-          <div className="comp-section">
-            <h4>Kategori Boyutları (0-100)</h4>
-            <div className="comp-categories-list">
-              {CATEGORY_DEFINITIONS.map((cat) => {
-                const catMeta = data.category_meta?.[cat.key];
-                const sampleCount = catMeta?.sample_count;
-                const unit = ({
-                  cost_affordability: 'ilan',
-                  social_life: 'mekân',
-                  transportation: 'hat',
-                  safety: 'haber',
-                  disaster_resilience: 'PGA',
-                })[cat.key] || 'kayıt';
-                const sampleText = sampleCount > 0
-                  ? (cat.key === 'disaster_resilience'
-                    ? 'PGA gridi'
-                    : `${sampleCount} ${unit}${catMeta?.confidence === 'low' ? ' · Sınırlı' : ''}`)
-                  : null;
-                return (
-                  <div key={cat.key} className="comp-cat-row" data-testid={`comp-${testPrefix}-cat-${cat.key}`}>
-                    <div className="comp-cat-info">
-                      <span className="comp-cat-name">{cat.label}</span>
-                      {sampleText && (
-                        <span className={`comp-cat-sample confidence-${catMeta?.confidence || 'low'}`}>
-                          {sampleText}
-                        </span>
-                      )}
-                    </div>
-                    <div className="comp-cat-val">
-                      {renderScoreValue(data.scores?.[cat.key])}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Hard Data Points */}
-          <div className="comp-section">
-            <h4>Somut Ölçüm ve Kayıtlar</h4>
-            <div className="comp-datapoints">
-              <div className="comp-dp-row">
-                <span>Deprem Tehlikesi (PGA):</span>
-                <strong>{data.disaster_risk?.pga_value_g != null ? `${data.disaster_risk.pga_value_g} g` : 'Ölçüm yok'}</strong>
-              </div>
-              <div className="comp-dp-row">
-                <span>Kira İlan Örnekleri:</span>
-                <strong>{getEvidenceCount(data, 'rent_cost')} doğrulanmış kayıt</strong>
-              </div>
-              <div className="comp-dp-row">
-                <span>Ulaşım Kayıtları:</span>
-                <strong>{getEvidenceCount(data, 'transportation')} hat / durak kaydı</strong>
-              </div>
-              <div className="comp-dp-row">
-                <span>Sosyal Yaşam Kayıtları:</span>
-                <strong>{getEvidenceCount(data, 'social_life')} mekan / alan</strong>
-              </div>
-            </div>
-          </div>
-
-          {/* Transport Highlights */}
-          <div className="comp-section">
-            <h4>Ulaşım Vurguları</h4>
-            {data.transport_analysis?.highlights?.length > 0 ? (
-              <ul className="comp-bullets">
-                {data.transport_analysis.highlights.map((h, i) => (
-                  <li key={i}>{h}</li>
-                ))}
-              </ul>
-            ) : (
-              <p className="comp-empty-hint">Kayıtlı ulaşım hattı bulunamadı.</p>
-            )}
-          </div>
-
-          {/* AI Sentez Notu */}
-          <div className="comp-section comp-ai-note">
-            <div className="comp-ai-note-head">
-              <Sparkles size={16} /> <span>Sentez Özeti</span>
-            </div>
-            <p>{data.ai_report?.executive_summary || 'Özet bulunmuyor.'}</p>
-            <div className="comp-disclaimer">
-              <Info size={13} /> {data.ai_report?.disclaimer || data.scoring_methodology?.note}
-            </div>
-          </div>
         </div>
-      ) : (
-        <div className="comp-error-box" role="alert">Mahalle verisi alınamadı.</div>
-      )}
-    </div>
-  );
+      </article>
+    );
+  };
+
+  const bothReady = Boolean(data1 && data2);
 
   return (
-    <div className="comparison-container">
-      <header className="comp-header">
-        <button className="comp-back-btn" onClick={() => navigate('/')}>
-          <ArrowLeft size={16} /> Aramaya dön
-        </button>
-        <div className="comp-title-wrap">
-          <h2>Mahalle Karşılaştırması</h2>
-          <p>İki referans mahalleyi nesnel veriler, ulaşım olanakları ve risk göstergeleriyle yan yana inceleyin.</p>
+    <AppShell activeRoute="compare">
+      <main className="station-workspace mx-auto max-w-7xl space-y-6 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+        {/* Header */}
+        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+          <div>
+            <button
+              type="button"
+              onClick={() => navigate('/')}
+              className="mb-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700 shadow-card transition hover:bg-slate-50"
+            >
+              <ArrowLeft size={14} />
+              <span>Aramaya dön</span>
+            </button>
+            <h1 className="text-3xl font-semibold tracking-tight text-slate-900">
+              Mahalle Karşılaştırması
+            </h1>
+            <p className="mt-1 text-sm text-slate-600">
+              Hazır pilot raporları veya Türkiye genelindeki mahalleleri kaynaklı veriler ve
+              kategoriler bazında yan yana kıyasla.
+            </p>
+          </div>
         </div>
-      </header>
 
-      {/* Selectors Bar */}
-      <div className="comp-selectors-bar">
-        <div className="comp-select-col">
-          <label htmlFor="select-m1">1. Mahalle</label>
-          <select
+        {/* Smart Combobox Selectors + Swap */}
+        <section
+          aria-label="Karşılaştırılacak mahalle seçimi"
+          className="flex flex-col items-stretch gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-card md:flex-row md:items-end"
+        >
+          <PlaceCombobox
             id="select-m1"
-            value={slug1}
-            onChange={(e) => setSlug1(e.target.value)}
-            className="comp-select"
-          >
-            {AVAILABLE_NEIGHBORHOODS.map((n) => (
-              <option key={n.slug} value={n.slug} disabled={n.slug === slug2}>
-                {n.name} ({n.district} / {n.city})
-              </option>
-            ))}
-          </select>
-        </div>
+            label="1. Mahalle"
+            accent="emerald"
+            value={sel1}
+            oppositeValue={sel2}
+            resolvedData={data1 || slot1.place}
+            onChange={setSel1}
+          />
 
-        <button className="comp-swap-btn" onClick={swapNeighborhoods} title="Mahallelerin yerini değiştir">
-          <ArrowRightLeft size={18} />
-        </button>
+          <div className="flex justify-center pb-0.5">
+            <button
+              type="button"
+              onClick={swapNeighborhoods}
+              title="Mahallelerin yerini değiştir"
+              aria-label="Mahallelerin yerini değiştir"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-slate-300 hover:bg-slate-100 hover:text-slate-900"
+            >
+              <ArrowRightLeft size={16} />
+            </button>
+          </div>
 
-        <div className="comp-select-col">
-          <label htmlFor="select-m2">2. Mahalle</label>
-          <select
+          <PlaceCombobox
             id="select-m2"
-            value={slug2}
-            onChange={(e) => setSlug2(e.target.value)}
-            className="comp-select"
-          >
-            {AVAILABLE_NEIGHBORHOODS.map((n) => (
-              <option key={n.slug} value={n.slug} disabled={n.slug === slug1}>
-                {n.name} ({n.district} / {n.city})
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
+            label="2. Mahalle"
+            accent="blue"
+            value={sel2}
+            oppositeValue={sel1}
+            resolvedData={data2 || slot2.place}
+            onChange={setSel2}
+          />
+        </section>
 
-      {/* Side-by-Side Comparison Grid */}
-      <div className="comp-grid">
-        {renderColumn(data1, loading1, 'left')}
-        {renderColumn(data2, loading2, 'right')}
-      </div>
-    </div>
+        {/* Top Summary Cards */}
+        <section className="grid gap-5 md:grid-cols-2">
+          {renderSlotHeaderCard(slot1, sel1, prepareSlot1, 'emerald', 'left')}
+          {renderSlotHeaderCard(slot2, sel2, prepareSlot2, 'blue', 'right')}
+        </section>
+
+        {/* Visual Radar + Profile Suitability Overview */}
+        {(data1 || data2) && (
+          <CompareOverview data1={data1} data2={data2} />
+        )}
+
+        {/* Synchronized 5-Category Matrix */}
+        {(data1 || data2) && (
+          <CategoryComparison data1={data1} data2={data2} />
+        )}
+
+        {/* Hard Data Points & Transport Matrix */}
+        {bothReady && (
+          <CompareMeasurements data1={data1} data2={data2} getEvidenceCount={getEvidenceCount} />
+        )}
+
+        {/* Side-by-Side AI Synthesis */}
+        {bothReady && (
+          <section className="grid gap-5 md:grid-cols-2">
+            {[data1, data2].map((d, idx) => (
+              <article
+                key={idx}
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card"
+              >
+                <div className="flex items-center gap-2 text-xs font-semibold text-slate-900">
+                  <Sparkles size={15} className="text-slate-500" />
+                  <span>{d.name} · Sentez Özeti</span>
+                </div>
+                <p className="mt-3 text-xs leading-relaxed text-slate-700">
+                  {d.ai_report?.executive_summary || 'Özet bulunmuyor.'}
+                </p>
+                <div className="mt-4 flex items-start gap-2 rounded-xl border border-slate-100 bg-slate-50 p-3 text-[11px] leading-relaxed text-slate-500">
+                  <Info size={13} className="mt-0.5 shrink-0" />
+                  <span>{d.ai_report?.disclaimer || d.scoring_methodology?.note}</span>
+                </div>
+              </article>
+            ))}
+          </section>
+        )}
+      </main>
+    </AppShell>
   );
 }

@@ -25,6 +25,8 @@ class Settings:
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     # Select a supported model during the planned LLM integration work (#9).
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "")
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "").strip()
+    GROQ_CHAT_MODEL: str = os.getenv("GROQ_CHAT_MODEL", "").strip() or "openai/gpt-oss-20b"
     TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY", "")
     GEMINI_REPORT_MODEL: str = os.getenv("GEMINI_REPORT_MODEL", "gemini-3.5-flash-lite")
     # Server-side operator secret; never put this in a VITE_* variable.

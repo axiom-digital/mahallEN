@@ -93,8 +93,10 @@ def cached_available(db, identity):
 def public_place(db, row):
     available = cached_available(db, row.id)
     cached = db.query(ReportCache).filter_by(slug="place:" + row.id).first() if available else None
-    from app.services.place_assessment import with_score_summary
-    assessment = with_score_summary(cached.report_data).get("assessment", {}) if cached else {}
+    from app.services.place_assessment import SCORE_SUMMARY_VERSION, with_score_summary
+    assessment = cached.report_data.get("assessment", {}) if cached else {}
+    if cached and assessment.get("score_summary_version") != SCORE_SUMMARY_VERSION:
+        assessment = with_score_summary(cached.report_data).get("assessment", {})
     profiles = assessment.get("profile_scores", {})
     return {"id": row.id, **{k: row.target[k] for k in ("name", "district", "city")},
             "label": f"{row.target['name']} / {row.target['district']} / {row.target['city']}",

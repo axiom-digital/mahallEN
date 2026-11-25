@@ -5,6 +5,8 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes.neighborhoods import router as neighborhoods_router
+from collections import deque
+from app.api.routes.report_chat import router as chat_router
 from app.api.routes.places import router as places_router
 from app.services.place_service import prewarm_saved
 from app.core.config import settings
@@ -37,6 +39,9 @@ def create_app(database_url: str | None = None) -> FastAPI:
         debug=settings.DEBUG,
         lifespan=lifespan,
     )
+    application.state.report_chat_requests = deque()
+    application.state.report_chat_not_before = 0.0
+    application.state.report_chat_lock = Lock()
     application.state.ai_refresh_lock = Lock()
     application.state.ai_refresh_not_before = 0.0
     application.state.place_report_locks = [Lock() for _ in range(32)]
@@ -51,6 +56,7 @@ def create_app(database_url: str | None = None) -> FastAPI:
         expose_headers=["X-Cache", "X-Cache-Hits"],
     )
     application.include_router(neighborhoods_router, prefix="/api/v1")
+    application.include_router(chat_router, prefix="/api/v1")
     application.include_router(places_router, prefix="/api/v1")
 
     @application.get("/api/v1/health", tags=["System"])

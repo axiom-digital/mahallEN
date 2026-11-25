@@ -26,6 +26,9 @@ function formatRentRange(briefing) {
 export function adaptPlaceReport(raw) {
   const assessment = raw.assessment;
   const categoriesList = Array.isArray(raw.categories) ? raw.categories : [];
+  const profileFallback = raw.assessment_mode === 'source_summary'
+    ? 'Bu kaynak özetinde profil yorumu bulunmuyor.'
+    : 'Uygunluk puanı hesaplanmadı.';
   const score = (key) => assessment?.categories?.find((c) => c.category === key)?.score ?? null;
   const category = (key) => categoriesList.find((c) => c.id === key)?.items || [];
   const meta = (key) => {
@@ -117,9 +120,9 @@ export function adaptPlaceReport(raw) {
       cons: assessment?.cons || (raw.limitations || []).slice(0, 3),
       generated_by: raw.generated_by,
       disclaimer: [assessment?.methodology, ...(raw.limitations || [])].filter(Boolean).join(' '),
-      student_verdict: assessment?.student_verdict || 'Uygunluk puanı hesaplanmadı.',
-      family_verdict: assessment?.family_verdict || 'Uygunluk puanı hesaplanmadı.',
-      professional_verdict: assessment?.professional_verdict || 'Uygunluk puanı hesaplanmadı.',
+      student_verdict: assessment?.student_verdict || profileFallback,
+      family_verdict: assessment?.family_verdict || profileFallback,
+      professional_verdict: assessment?.professional_verdict || profileFallback,
     },
     scoring_methodology: {
       note:

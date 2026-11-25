@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from pydantic import BaseModel, ConfigDict, Field
 from app.services.place_service import normalize
 
-RESEARCH_VERSION = 4
+RESEARCH_VERSION = 5
 OFFICIAL_TRANSPORT = {"ulasim.muttas.com.tr", "eshot.gov.tr", "iett.istanbul", "iett.istanbul.tr",
     "ego.gov.tr", "metro.istanbul", "izmir.bel.tr", "izdeniz.com.tr", "sehirhatlari.istanbul",
     "ulasim.istanbul", "burulas.com.tr", "estram.com.tr", "ulasim.mersin.bel.tr"}
@@ -50,7 +50,9 @@ def _extract_portal_rents(location, sources, supports, existing_pairs):
             if not any(host == dom or host.endswith("." + dom) for dom in PORTAL_RENT_HOSTS):
                 continue
             scope_text = normalize(url + " " + str(ref.get("title") or ""))
-            if norm_name in scope_text or slug_name in scope_text or compact_name in scope_text:
+            if (normalize(location["district"]) in scope_text
+                    and any(re.search(r"(?<!\w)" + re.escape(name) + r"(?!\w)", scope_text)
+                            for name in (norm_name, slug_name, compact_name))):
                 scoped_refs.append(ref)
         if not scoped_refs:
             continue
@@ -58,26 +60,13 @@ def _extract_portal_rents(location, sources, supports, existing_pairs):
         text = str(sup.get("text") or "")
         if not text:
             continue
-        posted = next(
-            (iso_date(str(r.get("published_date", ""))[:10]) for r in scoped_refs if iso_date(str(r.get("published_date", ""))[:10])),
-            None,
-        )
-        if not posted:
-            iso_m = re.search(r"\b(202[4-6]-\d{2}-\d{2})\b", text)
-            if iso_m:
-                posted = iso_date(iso_m.group(1))
-            else:
-                dmy_m = re.search(r"\b(0?[1-9]|[12]\d|3[01])[./](0?[1-9]|1[0-2])[./](202[4-6])\b", text)
-                if dmy_m:
-                    posted = iso_date(f"{int(dmy_m.group(3)):04d}-{int(dmy_m.group(2)):02d}-{int(dmy_m.group(1)):02d}")
-
         candidates = []
         price_pat = r"(?:\d{1,3}(?:[.,]\d{3})+\s*(?:TL\b|₺|TRY\b))"
         for m in re.finditer(r"\b([1-4]\+[01]|3[.,]5\+1|stüdyo)\b(.{0,180}?)(\d{1,3}(?:[.,]\d{3})+)\s*(?:TL\b|₺|TRY\b)", text, re.I | re.S):
             between = m.group(2)
             if re.search(r"\b(?:[1-4]\+[01]|3[.,]5\+1|stüdyo)\b", between, re.I) or re.search(price_pat, between, re.I):
                 continue
-            candidates.append((m.group(1), m.group(3), m.start(3), m.end()))
+            candidates.append((m.group(1), m.group(3), m.start(3), m.end(), m.group()))
         matched_price_starts = {c[2] for c in candidates}
         for m in re.finditer(r"(\d{1,3}(?:[.,]\d{3})+)\s*(?:TL\b|₺|TRY\b)(.{0,120}?)\b([1-4]\+[01]|3[.,]5\+1|stüdyo)\b", text, re.I | re.S):
             if m.start(1) in matched_price_starts:
@@ -85,9 +74,18 @@ def _extract_portal_rents(location, sources, supports, existing_pairs):
             between = m.group(2)
             if re.search(price_pat, between, re.I):
                 continue
-            candidates.append((m.group(3), m.group(1), m.start(1), m.start(2)))
+            candidates.append((m.group(3), m.group(1), m.start(1), m.start(2), m.group()))
 
-        for raw_room, raw_price, p_start, p_end in candidates:
+        for raw_room, raw_price, p_start, p_end, listing in candidates:
+            # A date elsewhere on a portal results page can belong to a different home.
+            posted = None
+            dates = re.findall(r"\b(20\d\d-\d{2}-\d{2}|\d{1,2}[./]\d{1,2}[./]20\d\d)\b", listing)
+            if len(dates) == 1:
+                raw = dates[0]
+                if "-" not in raw:
+                    d, m, y = map(int, re.split(r"[./]", raw))
+                    raw = f"{y:04}-{m:02}-{d:02}"
+                posted = iso_date(raw)
             if len(seen_pairs) >= 20:
                 break
             after = text[p_end:min(len(text), p_end + 20)].lower()
@@ -95,7 +93,7 @@ def _extract_portal_rents(location, sources, supports, existing_pairs):
             window = normalize(text[max(0, p_start - 60):min(len(text), p_end + 60)])
             if re.search(r"^\s*(?:/\s*m|m2|metrekare|satılık)", after) or re.search(r"(?:depozito|aidat)\s*[:=-]?\s*$", before):
                 continue
-            if re.search(r"ortalama|medyan|endeks", window):
+            if re.search(r"ortalama|medyan|endeks|gunluk|haftalik|sezonluk|gecelik|satilik", window):
                 continue
             room = _norm_portal_room(raw_room)
             amount = int(re.sub(r"[.,]", "", raw_price))
@@ -154,6 +152,16 @@ def source_date(value, support, sources):
     return parsed if any(re.search(p, text) for p in patterns) else None
 
 
+def finding_date(finding, support, refs):
+    if finding.category != "safety_news":
+        return source_date(finding.details.date, support, refs)
+    posted = source_date(finding.details.published_date, support, refs)
+    if posted:
+        return posted
+    dates = {iso_date((ref.get("published_date") or "")[:10]) for ref in refs}
+    return dates.pop() if len(dates) == 1 else None
+
+
 def grounded_record(location, reference_date, findings, sources, supports):
     record = {**location, "asOf": reference_date, "rents": [], "rent_benchmarks": [], "routes": [], "venues": [],
               "news": [], "hazard": {}, "transportAlerts": []}
@@ -170,7 +178,7 @@ def grounded_record(location, reference_date, findings, sources, supports):
             local = f.evidence_quote
         if normalize(location["name"]) not in normalize(local):
             continue
-        posted = source_date(details.published_date if f.category == "safety_news" else details.date, support, refs)
+        posted = finding_date(f, support, refs)
         text = normalize(support)
         base = {"id": f"fact:{index+1}", "sources": refs, "date": posted}
         if f.category == "rent_cost" and details.amount_tl:

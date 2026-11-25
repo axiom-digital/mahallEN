@@ -122,8 +122,22 @@ def needs_research(report):
     return report.get("origin") == "grounded_research_candidate" and report.get("research_version", 0) < RESEARCH_VERSION
 
 
+def source_summary(report):
+    from app.services.place_research import ResearchUnavailable
+    rows = [{"category": key} for key in CATEGORY_WEIGHTS]
+    result = with_score_summary({**report, "assessment": {"categories": rows},
+        "assessment_mode": "source_summary", "report_version": rule_scoring.REPORT_VERSION,
+        "generated_by": "MahallEN · kaynak kayıtları ve kural tabanlı puanlar"})
+    assessment = result["assessment"]
+    if not assessment["coverage"] and not any(c["items"] for c in report["categories"]):
+        raise ResearchUnavailable("Rapor servisi geçici olarak yanıt vermiyor ve doğrulanmış kaynak özeti henüz yetersiz.")
+    assessment.setdefault("executive_summary", assessment["briefing"]["overview"])
+    result["summary"] = assessment["executive_summary"]
+    return result
+
+
 def is_current_report(report):
-    return not needs_research(report) and report.get("report_version") == rule_scoring.REPORT_VERSION and report.get("writer_model") == settings.GEMINI_REPORT_MODEL
+    return not needs_research(report) and report.get("report_version") == rule_scoring.REPORT_VERSION and (report.get("writer_model") == settings.GEMINI_REPORT_MODEL or report.get("assessment_mode") == "source_summary")
 
 
 def weighted_score(categories, weights):
@@ -132,6 +146,9 @@ def weighted_score(categories, weights):
     available = [c for c in categories if c.score is not None]
     denominator = sum(weights[c.category] for c in available)
     return rule_scoring.rounded(sum(c.score * weights[c.category] for c in available) / denominator) if denominator else None
+
+
+SCORE_SUMMARY_VERSION = 6
 
 
 def with_score_summary(report):
@@ -184,7 +201,7 @@ def with_score_summary(report):
         "missing_categories": missing,
         "weight_coverage": covered_weight,
         "partial": bool(missing),
-        "score_summary_version": 5,
+        "score_summary_version": SCORE_SUMMARY_VERSION,
         "overall_ready": meaningful_total,
         "methodology": (
             "Tüm 5 kategori (Maliyet %32, Sosyal yaşam %28, Yerel gündem/güvenlik %20, Deprem göstergesi %10, Ulaşım %10) "
@@ -193,10 +210,32 @@ def with_score_summary(report):
             f"Mevcut sayısal başlık: {available_count}/5. Deprem araştırma göstergesi bina dayanıklılığı değildir."
         ),
     }
+    scored = [c for c in categories if c.score is not None]
+    if scored:
+        from app.services.place_service import CATEGORY_LABELS
+        lowest = min(scored, key=lambda c: c.score)
+        highest = max(scored, key=lambda c: c.score)
+        if available_count == 1:
+            explanation = f"Şimdilik yalnız {CATEGORY_LABELS[lowest.category].lower()} için puan hesaplanabildi ({lowest.score}/100). Genel puan için ikinci bir başlıkta da kaynak gerekiyor."
+        elif highest.score == lowest.score:
+            explanation = f"Verisi bulunan {available_count} başlığın her biri {highest.score}/100 aldı."
+        else:
+            explanation = (f"{CATEGORY_LABELS[highest.category]} {highest.score}/100 ile genel puanı yukarı çekiyor. "
+                f"{CATEGORY_LABELS[lowest.category]} ise {lowest.score}/100 ile aşağı çekiyor.")
+        updated_assessment["score_explanation"] = explanation
     if calculated is not None:
         updated_assessment["calculation"] = calculated
     if briefing is not None:
         updated_assessment["briefing"] = briefing
+        notes = briefing.get("daily_life", {})
+        if notes and report.get("assessment_mode") == "source_summary":
+            updated_assessment["executive_summary"] = "\n\n".join(notes.values())
+            profiles = {"student_verdict": ("rent_cost", "transportation"),
+                "family_verdict": ("social_life", "earthquake_hazard"),
+                "professional_verdict": ("transportation", "rent_cost")}
+            for field, priorities in profiles.items():
+                updated_assessment[field] = next((notes[k] for k in priorities if k in notes),
+                    "Bu profil için günlük gider veya ulaşım koşulunu açıklayacak yeterli kayıt bulunamadı.")
     return {**report, "assessment": updated_assessment}
 
 

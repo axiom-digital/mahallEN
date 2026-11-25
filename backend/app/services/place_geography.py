@@ -247,7 +247,7 @@ def _osm_map_data(point):
                 "code": code[:16],
                 "route": title[:140],
                 "localEvidence": f"{operator + ' ' if operator else ''}{mode_tr} hattı ({from_to or title}); OpenStreetMap rota kaydı mahalle çevresinde doğrulandı.",
-                "officialHeadingVerified": True,
+                "mapRouteVerified": True,
                 "sources": [{"id": f"osm:rel:{rel_id}", "publisher": f"OpenStreetMap · {operator}" if operator else "OpenStreetMap · ODbL-1.0", "url": f"https://www.openstreetmap.org/relation/{rel_id}"}],
             }))
         route_candidates.sort(key=lambda item: (item[0], item[1]))

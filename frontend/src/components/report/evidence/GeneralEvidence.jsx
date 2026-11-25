@@ -1,5 +1,5 @@
 import React from 'react';
-import { Info } from 'lucide-react';
+import { safetyStories } from '../reportReading.mjs';
 import { PgaHazardGauge } from '../../AnalyticsCharts';
 import { Sources } from '../reportDetails';
 
@@ -10,29 +10,32 @@ export default function GeneralEvidence({
   showAllFindings,
   setShowAllFindings,
 }) {
+  const stories = activeCategory === 'safety_news' ? safetyStories(findings) : [];
+  const ordered = [...stories, ...findings.filter(item => !stories.includes(item))];
   return (
     <>
-      {activeCategory === 'earthquake_hazard' && briefing.hazard?.value != null && (
-        <PgaHazardGauge pgaValue={briefing.hazard.value} />
+      {activeCategory === 'earthquake_hazard' && (
+        <section className="guide-explainer">
+          <h4>🏘️ Bu bilgi ev seçerken ne işe yarar?</h4>
+          <p>{briefing.hazard?.value != null
+            ? 'Haritada bu bölgenin kuvvetli bir depremde ne kadar sarsılabileceği tahmin edilmiş. Puan düştükçe modelde beklenen sarsıntı artar. Puan bir deprem olasılığı yüzdesi değildir.'
+            : 'Bu konum için karşılaştırılabilir bir sarsıntı tahmini bulunamadı.'} Bir binanın nasıl dayanacağını öğrenmek için o binanın mühendislik incelemesine bak.</p>
+          {briefing.hazard?.value != null && <details className="mt-3"><summary>📐 Teknik ölçümü göster</summary><PgaHazardGauge pgaValue={briefing.hazard.value} /></details>}
+        </section>
       )}
-
       {activeCategory === 'safety_news' && (
-        <div className="flex items-start gap-2.5 rounded-xl border border-slate-200 bg-slate-50 p-3.5 text-xs text-slate-600">
-          <Info size={15} className="mt-0.5 shrink-0 text-slate-400" />
-          <span>
-            Yerel haberler güvenlik değerlendirmesinin yalnızca kaynaklarından biridir;
-            resmî suç oranı veya kişisel güvenlik ölçümü değildir.
-          </span>
-        </div>
+        <section className="guide-explainer"><h4>🛡️ Güvenlik konusunda ne biliyoruz?</h4>
+          <p>{stories.length ? 'Önce güvenlikle ilgili olayları, ardından diğer yerel gelişmeleri görebilirsin.' : 'Bu raporda tarihli haberlerden güvenlikle doğrudan ilişkili bir olay ayırt edilemedi.'} Bu kaynaklar mahallede bildirilen olayları anlatır. Sokak bazında suç oranı için yeterli bilgi sağlamaz.</p>
+        </section>
       )}
-
       <div className="space-y-2.5">
         {findings.length ? (
-          (showAllFindings ? findings : findings.slice(0, 4)).map((item, index) => (
+          (showAllFindings ? ordered : ordered.slice(0, 4)).map((item, index) => (
             <article
               key={index}
               className="rounded-xl border border-slate-200 bg-white p-4 shadow-card"
             >
+              {activeCategory === 'safety_news' && <strong className="text-xs">{stories.includes(item) ? '🛡️ Güvenlikle ilgili haber' : '📰 Diğer yerel gelişme'}</strong>}
               {item.date && (
                 <time
                   dateTime={item.date}

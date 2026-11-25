@@ -35,6 +35,9 @@ export default function ScoreOverview({
               ? `${assessment.coverage}/5 kategoriye dayanıyor`
               : 'Genel puan için en az 2 kategoride kaynaklı puan gerekir.'}
           </p>
+          {assessment.score_explanation && (
+            <p className="text-sm leading-relaxed text-slate-600">{assessment.score_explanation}</p>
+          )}
           <a
             href="#report-method"
             onClick={(event) => {

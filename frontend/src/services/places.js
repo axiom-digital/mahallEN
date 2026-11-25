@@ -49,3 +49,11 @@ export async function openPlaceReport(id, signal, onPrepare = () => {}, onProgre
     }
   }
 }
+
+export async function askReport(id, question, history, { signal } = {}) {
+  const result = await request(`/${encodeURIComponent(id)}/chat`, {
+    method: 'POST', signal, headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question, history }),
+  });
+  return result.data;
+}

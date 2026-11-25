@@ -41,7 +41,7 @@ export default function RentEvidence({
           </div>
 
           {roomGroup.sample_count > 0 ? (
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid gap-3 sm:grid-cols-3">
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
                 <span className="text-[11px] text-slate-500">İlan medyanı</span>
                 <strong className="mt-1 block font-mono text-sm font-semibold tabular-nums text-slate-900">

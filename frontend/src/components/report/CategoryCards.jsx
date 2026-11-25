@@ -126,8 +126,8 @@ export default function CategoryCards({
 
                 <div>
                   <h3 className="text-sm font-semibold text-slate-900 line-clamp-2">{heading}</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-slate-600 line-clamp-3">
-                    {text}
+                  <p className="mt-1.5 text-xs leading-relaxed text-slate-600">
+                    {briefing.daily_life?.[key] || text}
                   </p>
                 </div>
               </div>

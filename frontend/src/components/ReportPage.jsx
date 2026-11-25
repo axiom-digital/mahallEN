@@ -63,7 +63,7 @@ export default function ReportPage({ id }) {
   return (
     <AppShell activeRoute="home">
       <main
-        className="station-workspace mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8"
+        className="station-workspace [overflow-wrap:anywhere] mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8"
         aria-label="Mahalle raporu"
       >
         <div className="no-print mb-5">

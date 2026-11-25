@@ -31,21 +31,7 @@ export default function ReportNarrative({
         </div>
 
         <div className="mt-4 space-y-3 text-sm leading-relaxed text-slate-700">
-          {paragraphs.slice(0, 1).map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-          {paragraphs.length > 1 && (
-            <details className="group">
-              <summary className="no-print cursor-pointer text-xs font-medium text-blue-600 hover:text-blue-700">
-                Raporun tamamını oku ({paragraphs.length - 1} paragraf daha)
-              </summary>
-              <div className="mt-3 space-y-3 border-t border-slate-100 pt-3">
-                {paragraphs.slice(1).map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
-            </details>
-          )}
+          {paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         </div>
 
         {(narrative.pros?.length > 0 || narrative.cons?.length > 0) && (

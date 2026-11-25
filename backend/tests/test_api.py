@@ -26,7 +26,7 @@ def test_list_pilot_neighborhoods(client):
     assert res.status_code == 200
     items = res.json()
     dataset = json.loads(
-        (Path(__file__).resolve().parents[2] / "data/pilot_neighborhoods.json").read_text()
+        (Path(__file__).resolve().parents[2] / "data/pilot_neighborhoods.json").read_text(encoding="utf-8")
     )
     assert len(items) == 10
     assert {item["slug"] for item in items} == {item["id"] for item in dataset["neighborhoods"]}
@@ -41,7 +41,7 @@ def test_pilot_reports_use_the_new_dataset(client, slug):
     report = first.json()
     assert report["slug"] == slug
     dataset = json.loads(
-        (Path(__file__).resolve().parents[2] / "data/pilot_neighborhoods.json").read_text()
+        (Path(__file__).resolve().parents[2] / "data/pilot_neighborhoods.json").read_text(encoding="utf-8")
     )
     pilot = next(record for record in dataset["neighborhoods"] if record["id"] == slug)
     evidence = report["pilot_evidence"]

@@ -17,6 +17,7 @@ TARGET = {"name": "Erzene", "district": "Bornova", "city": "İzmir"}
 @pytest.fixture(autouse=True)
 def no_live_geography(monkeypatch):
     monkeypatch.setattr(research, "collect_geography", lambda target: {})
+    monkeypatch.setattr(research, "local_news_feed", lambda target: [])
 
 
 def test_quote_normalization_accepts_formatting_but_not_different_numbers():
@@ -54,8 +55,9 @@ def test_search_deduplicates_urls_preserves_excerpts_and_excludes_empty_or_unsaf
     for call in client.post.call_args_list:
         request = call.kwargs["json"]
         assert all(word in request["query"] for word in TARGET.values())
-        assert request["search_depth"] == "basic" and not request["auto_parameters"]
+        assert request["search_depth"] in {"basic", "advanced"} and not request["auto_parameters"]
         assert request["max_results"] in (5, 8, 10)
+        assert f"{TARGET['name']} Mahallesi" in request["query"]
         assert request["country"] == "turkey"
         assert "silahlı saldırı" not in request["query"]
     assert sum(call.kwargs["json"]["max_results"] == 10 for call in client.post.call_args_list) == 5
@@ -132,3 +134,36 @@ def test_gemini_uses_tavily_evidence_and_rejects_unmatched_or_truncated_output(m
     else:
         with pytest.raises(research.ResearchUnavailable):
             research.generate_place_report(TARGET, "identity")
+
+def test_busy_extraction_serves_source_scores_and_can_be_read_from_cache(client, monkeypatch):
+    monkeypatch.setattr(settings, "GEMINI_API_KEY", "test")
+    monkeypatch.setattr(settings, "TAVILY_API_KEY", "test")
+    title = "Erzene Mahallesi için Bornova Belediyesi park açtı"
+    source = {"id": "S1", "url": "https://example.org/park", "title": title, "published_date": research.datetime.now(research.timezone.utc).date().isoformat()}
+    supports = [{"category": "safety_news", "source_ids": ["S1"], "text": title}]
+    monkeypatch.setattr(research, "collect_sources", lambda target: ({"S1": source}, supports * 2))
+    monkeypatch.setattr(research, "extract_report", Mock(side_effect=research.ProviderBusy()))
+    identity = client.get("/api/v1/places/search?q=Erzene").json()["results"][0]["id"]
+    path = f"/api/v1/places/{identity}/report"
+    response = client.post(path)
+    assert response.status_code == 201
+    result = response.json()
+    assert result["assessment_mode"] == "source_summary"
+    assert len(result["research_record"]["news"]) == 1
+    assert "writer_model" not in result
+    assert client.get(path).headers["x-cache"] == "HIT"
+
+def test_new_place_can_use_dated_news_when_web_search_is_down(client, monkeypatch):
+    monkeypatch.setattr(settings, "GEMINI_API_KEY", "test")
+    monkeypatch.setattr(settings, "TAVILY_API_KEY", "test")
+    monkeypatch.setattr(research, "collect_sources", Mock(side_effect=httpx.ConnectError("offline")))
+    today = research.datetime.now(research.timezone.utc).date().isoformat()
+    monkeypatch.setattr(research, "local_news_feed", lambda _: [{"id": "N1",
+        "title": "Bornova Erzene Mahallesi park çalışması", "published_date": today,
+        "publisher": "Test", "url": "https://example.org/local-news"}])
+    identity = client.get("/api/v1/places/search?q=Erzene").json()["results"][0]["id"]
+    response = client.post(f"/api/v1/places/{identity}/report")
+    assert response.status_code == 201
+    assert response.json()["assessment_mode"] == "source_summary"
+    assert response.json()["assessment"]["coverage"] == 1
+    assert response.json()["research_record"]["news"][0]["date"] == today

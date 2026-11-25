@@ -1,4 +1,5 @@
 import React from 'react';
+import { DestinationList } from '../NeighborhoodGuide';
 import { Sources, RouteTimetableTabs } from '../reportDetails';
 
 export default function TransportEvidence({
@@ -6,6 +7,11 @@ export default function TransportEvidence({
 }) {
   return (
     <>
+      <section className="guide-explainer">
+        <h4>🚌 Hangi hat hangi yere gidiyor?</h4>
+        <DestinationList routes={briefing.routes}/>
+        <p className="mt-3 text-sm">Burada kayıtlı hatların geçtiği yerleri görüyorsun. Yolculuktan önce yönü, bineceğin durağı ve saatini aşağıdan kontrol et.</p>
+      </section>
       <div className="space-y-3">
         {briefing.routes.map((route, i) => (
           <article

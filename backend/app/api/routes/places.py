@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 
 from app.core.config import settings
 from app.core.database import get_db
+from app.models.report_cache import ReportCache
 from app.models.place import Place
 from app.services import place_service, place_research, place_assessment
 from app.services.cache_service import get_cached_report, set_cached_report
@@ -79,6 +80,19 @@ def read_report(identity: str, response: Response, db: Session = Depends(get_db)
     return place_assessment.with_score_summary(cached[0])
 
 
+def previous_report(db, identity, response):
+    entry = db.query(ReportCache).filter_by(slug="place:" + identity).first()
+    if entry is None:
+        return None
+    report = entry.report_data
+    if (report.get("place", {}).get("id") != identity or not report.get("reference_date")
+            or not report.get("assessment", {}).get("categories")
+            or not place_assessment.is_current_report(report)):
+        return None
+    response.headers["X-Cache"] = "STALE"
+    return {**place_assessment.with_score_summary(report), "refresh_status": "previous_report"}
+
+
 @router.post("/{identity}/report")
 def prepare_report(identity: str, request: Request, response: Response, db: Session = Depends(get_db)):
     place = require_place(db, identity)
@@ -93,22 +107,45 @@ def prepare_report(identity: str, request: Request, response: Response, db: Sess
         if not settings.REPORT_CACHE_ENABLED:
             raise HTTPException(503, "Rapor hazırlamak için sunucu önbelleği etkin olmalı.")
         if not request.app.state.place_generation_slots.acquire(blocking=False):
+            previous = previous_report(db, identity, response)
+            if previous:
+                return previous
             raise HTTPException(429, "Şu anda başka raporlar hazırlanıyor. Biraz sonra tekrar dene.", headers={"Retry-After": "30"})
         try:
             progress = request.app.state.place_report_progress
             progress[identity] = "research" if cached is None or place_assessment.needs_research(cached[0]) else "writing"
             with track(lambda value: progress.__setitem__(identity, value)):
-                report = (place_assessment.assess_place_report(cached[0]) if cached is not None and not place_assessment.needs_research(cached[0])
-                          else place_research.generate_place_report(place.target, identity))
+                if cached is not None and not place_assessment.needs_research(cached[0]):
+                    try:
+                        report = place_assessment.assess_place_report(cached[0])
+                    except place_research.ProviderBusy:
+                        report = place_assessment.source_summary(cached[0])
+                else:
+                    report = place_research.generate_place_report(place.target, identity)
         except place_research.ResearchUnavailable as error:
+            previous = previous_report(db, identity, response)
+            if previous:
+                return previous
             raise HTTPException(503, str(error)) from None
         except Exception as error:
             logger.warning("Place research failed: %s", type(error).__name__)
+            previous = previous_report(db, identity, response)
+            if previous:
+                return previous
             raise HTTPException(502, "Kaynak araştırması veya rapor servisi yanıt veremedi. Rapor kaydedilmedi; tekrar deneyebilirsin.") from None
         finally:
             request.app.state.place_report_progress.pop(identity, None)
             request.app.state.place_generation_slots.release()
-        set_cached_report(db, "place:" + identity, report, settings.REPORT_CACHE_TTL_SECONDS, "places-v3:rules")
+        ttl = settings.REPORT_CACHE_TTL_SECONDS
+        if report.get("assessment_mode") == "source_summary":
+            previous = previous_report(db, identity, response)
+            if previous:
+                def scored_categories(candidate):
+                    return {row["category"] for row in candidate["assessment"]["categories"] if row.get("score") is not None}
+                if scored_categories(previous) - scored_categories(report):
+                    return previous
+            ttl = min(ttl, 300)
+        set_cached_report(db, "place:" + identity, report, ttl, "places-v3:rules")
         response.headers["X-Cache"] = "MISS"
         response.status_code = 201
         return report

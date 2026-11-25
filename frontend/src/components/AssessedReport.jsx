@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { budgetScore, normalizeScoreValue } from '../scoring.mjs';
-import ReportHeading from './report/ReportHeading';
+import ReportChat from './ReportChat';
+import NeighborhoodGuide from './report/NeighborhoodGuide';
 import ScoreOverview from './report/ScoreOverview';
-import CategoryCards from './report/CategoryCards';
 import ReportNarrative from './report/ReportNarrative';
 import ReportMethod from './report/ReportMethod';
 import CategoryEvidence from './report/CategoryEvidence';
@@ -29,19 +29,10 @@ export default function AssessedReport({ report, onReloadReport, refreshing }) {
     [briefing.venues, venueKind]
   );
   const counts = calculation.counts || {};
-  const weekdayService = (briefing.routes || [])
-    .flatMap((route) =>
-      (route.timetable || [])
-        .filter((schedule) => schedule.days?.weekday)
-        .map((schedule) => ({ code: route.code, ...schedule }))
-    )
-    .sort((a, b) => b.days.weekday.count - a.days.weekday.count)[0];
-
   const evidence = report.evidence_report;
   const narrative = report.ai_report || {};
   const paragraphs = (narrative.executive_summary || '').split(/\n+/).filter(Boolean);
   const selectedCategoryDef = CATEGORIES.find((c) => c.key === activeCategory);
-  const categoryItems = (key) => evidence.categories.find((c) => c.id === key)?.items || [];
   const findings = evidence.categories.find((c) => c.id === activeCategory)?.items || [];
   const archivedNews =
     evidence.categories.find((c) => c.id === 'safety_news')?.historical_items || [];
@@ -130,40 +121,18 @@ export default function AssessedReport({ report, onReloadReport, refreshing }) {
   return (
     <div className="space-y-6" data-testid="report-dashboard">
       {/* TOP REPORT HEADER & ACTION BAR */}
-      <ReportHeading
-        report={report}
-        roomGroup={roomGroup}
-        openCategory={openCategory}
-        date={date}
-        briefing={briefing}
-        counts={counts}
-        handleShareLink={handleShareLink}
-        copiedLink={copiedLink}
-        onReloadReport={onReloadReport}
-        refreshing={refreshing}
-      />
-
-      {/* BENTO ROW 1: EXECUTIVE SUMMARY (OVERALL RING + 5-AXIS ANALYTICS) */}
-      <ScoreOverview
-        report={report}
-        assessment={assessment}
-        chartMode={chartMode}
-        setChartMode={setChartMode}
-        openCategory={openCategory}
-      />
-
-      {/* BENTO ROW 2: 5 INTERACTIVE CATEGORY CARDS */}
-      <CategoryCards
-        categoryItems={categoryItems}
-        report={report}
-        roomGroup={roomGroup}
-        briefing={briefing}
-        weekdayService={weekdayService}
-        openCategory={openCategory}
-        assessment={assessment}
-      />
-
-      {/* BENTO ROW 3: NARRATIVE SYNTHESIS & PROFILE SUITABILITY */}
+      {report.evidence_report?.refresh_status === 'previous_report' ? (
+        <p role="status" className="rounded-xl bg-amber-50 p-3 text-sm text-amber-900">
+          Güncelleme tamamlanamadı. {date} tarihli kayıtlı raporu görüyorsun. Puanlar ve kaynaklar o tarihe ait.
+        </p>
+      ) : report.evidence_report?.assessment_mode === 'source_summary' && (
+        <p role="status" className="rounded-xl bg-amber-50 p-3 text-sm text-amber-900">
+          Araştırmanın bazı adımları geçici olarak tamamlanamadı. Burada kaynaklardan hesaplanan puanlar ve eldeki bulgular gösteriliyor. Beş dakika sonra tam raporu yeniden açabilirsin.
+        </p>
+      )}
+      <NeighborhoodGuide report={report} date={date} openCategory={openCategory}
+        handleShareLink={handleShareLink} copiedLink={copiedLink} onReloadReport={onReloadReport} refreshing={refreshing} />
+      <details className="guide-fold"><summary>🧭 Mahalle yorumu ve yaşam profilleri</summary><div>
       <ReportNarrative
         report={report}
         paragraphs={paragraphs}
@@ -172,6 +141,18 @@ export default function AssessedReport({ report, onReloadReport, refreshing }) {
         profile={profile}
         setProfile={setProfile}
       />
+
+      </div></details>
+      <details className="guide-fold"><summary>📊 Puanların ayrıntısı</summary><div>
+      <ScoreOverview
+        report={report}
+        assessment={assessment}
+        chartMode={chartMode}
+        setChartMode={setChartMode}
+        openCategory={openCategory}
+      />
+
+      </div></details>
 
       {/* PRINT-ONLY EXECUTIVE APPENDIX (for clean PDF exports without interactive drawer) */}
       <section className="print-only rounded-xl border border-slate-300 p-4">
@@ -210,6 +191,8 @@ export default function AssessedReport({ report, onReloadReport, refreshing }) {
       <p className="text-center text-xs text-slate-500">
         Puanlar kaynaklı proje göstergeleridir. Ev seçerken kaynağın tarihini ve evin kendi koşullarını birlikte değerlendir.
       </p>
+
+      <ReportChat key={report.slug} slug={report.slug} name={report.name} />
 
       {/* RIGHT SLIDE-OVER CATEGORY DRAWER */}
       <CategoryEvidence

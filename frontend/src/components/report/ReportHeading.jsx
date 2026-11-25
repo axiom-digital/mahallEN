@@ -66,7 +66,7 @@ export default function ReportHeading({
                 <strong className="font-mono font-medium text-slate-700">
                   {counts.routes}
                 </strong>{' '}
-                resmî hat kaydı
+                kaynaklı hat kaydı
               </span>
             )}
             {report.data_sources?.length > 0 && (

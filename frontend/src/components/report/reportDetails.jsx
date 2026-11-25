@@ -5,8 +5,8 @@ export const CATEGORIES = [
   { key: 'rent_cost', score: 'cost_affordability', title: 'Maliyet', shortTitle: 'Maliyet', Icon: Wallet },
   { key: 'social_life', score: 'social_life', title: 'Sosyal yaşam', shortTitle: 'Sosyal', Icon: Users },
   { key: 'transportation', score: 'transportation', title: 'Ulaşım', shortTitle: 'Ulaşım', Icon: Bus },
-  { key: 'earthquake_hazard', score: 'disaster_resilience', title: 'Deprem verisi', shortTitle: 'Deprem', Icon: Activity },
-  { key: 'safety_news', score: 'safety', title: 'Yerel gündem', shortTitle: 'Gündem', Icon: ShieldCheck },
+  { key: 'earthquake_hazard', score: 'disaster_resilience', title: '🌍 Deprem ve ev seçimi', shortTitle: 'Deprem', Icon: Activity },
+  { key: 'safety_news', score: 'safety', title: '🛡️ Güvenlik ve yerel haberler', shortTitle: 'Güvenlik', Icon: ShieldCheck },
 ];
 
 const DAY_LABELS = {
@@ -196,7 +196,7 @@ export function SlideOverDrawer({ open, title, onClose, children }) {
       <aside
         ref={panelRef}
         tabIndex={-1}
-        className="flex h-full w-full max-w-2xl flex-col border-l border-slate-200 bg-white shadow-drawer outline-none animate-slide-in-right"
+        className="guide-drawer flex h-full w-full max-w-2xl flex-col border-l border-slate-200 bg-white shadow-drawer outline-none animate-slide-in-right"
       >
         {children}
       </aside>

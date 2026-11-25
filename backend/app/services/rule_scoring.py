@@ -197,7 +197,7 @@ def calculate(record, as_of=None):
     income = json.loads((ROOT / "income_2026.json").read_text(encoding="utf-8"))["netMinimumWage"]
     rent = affordability(monthly / income["amount"]) if monthly is not None and income["validFrom"] <= today <= income["validTo"] else None
 
-    routes = [r for r in record.get("routes", []) if r.get("officialHeadingVerified") and r.get("sources")
+    routes = [r for r in record.get("routes", []) if (r.get("officialHeadingVerified") or r.get("mapRouteVerified")) and r.get("sources")
               and not re.search("kontrol edilmeli|bilinmiyor", r.get("localEvidence", ""), re.I)]
     route_text = " ".join(r.get("route", "") + " " + r.get("localEvidence", "") for r in routes)
     connections = sum(bool(re.search(pattern, route_text, re.I)) for pattern in [
@@ -296,7 +296,7 @@ def calculate(record, as_of=None):
         social = None
         social_diversity = None
 
-    valid_news = [n for n in record.get("news", []) if n.get("sources") and (n.get("date") is None or 0 <= age(n.get("date"), today) <= 365)]
+    valid_news = [n for n in record.get("news", []) if n.get("sources") and 0 <= age(n.get("date"), today) <= 365]
     if valid_news:
         incidents = {}
         for n in valid_news:
@@ -339,9 +339,9 @@ def calculate(record, as_of=None):
         "Kiralık konut ilanı veya piyasa endeksi örneği bulunamadı; nötr 50 verilmedi."
     )
     transport_reason = (
-        f"Resmî hat kaydı: {len(routes)}. Hedef bağlantıları {connections*7.5}/30; hizmet yayılımı {service}/15; tarife aralığı {frequency}/15; gece {night}/10; hafta sonu {weekend}/10; yol/güzergâh bildirimi etkisi -{penalty}; erişim sınırı {cap}."
+        f"Kaynaklı hat kaydı: {len(routes)}. Hedef bağlantıları {connections*7.5}/30; hizmet yayılımı {service}/15; tarife aralığı {frequency}/15; gece {night}/10; hafta sonu {weekend}/10; yol/güzergâh bildirimi etkisi -{penalty}; erişim sınırı {cap}."
         if transport_mode == "timetable" else
-        f"Resmî hat kaydı ({len(routes)} hat) doğrulandı; hareket saati tablosu ayrıştırılamadığı için hat ve raylı sistem kapsamı üzerinden ön gösterge hesaplandı ({transport}/100)."
+        f"Kaynaklı hat kaydı ({len(routes)} hat) doğrulandı; hareket saati tablosu ayrıştırılamadığı için hat ve raylı sistem kapsamı üzerinden ön gösterge hesaplandı ({transport}/100)."
         if transport_mode == "route_indicator" else
         "Resmî ulaşım hattı kaydı doğrulanamadığı için ulaşım puanı üretilmedi."
     )

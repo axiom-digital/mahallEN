@@ -21,7 +21,7 @@ def discovered(client, monkeypatch):
 def fixture_report(identity):
     return {"place": {"id": identity, **{k: TARGET[k] for k in ("name", "district", "city")}},
         "summary": "Kaynaklı rapor", "reference_date": "2026-11-06", "categories": [],
-        "origin": "grounded_research_candidate", "research_version": 4, "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
+        "origin": "grounded_research_candidate", "research_version": place_research.RESEARCH_VERSION, "limitations": [], "generated_by": "test", "report_version": 3, "writer_model": settings.GEMINI_REPORT_MODEL}
 
 
 def test_empty_search_does_not_return_a_pilot_catalog(client, monkeypatch):
@@ -220,3 +220,48 @@ def test_status_tracks_real_phase_and_does_not_increment_report_hits(client, mon
     with client.app.state.session_factory() as db:
         assert db.query(ReportCache).filter_by(slug="place:" + path.split("/")[-2]).one().hit_count == 0
     assert not client.app.state.place_report_progress
+
+def test_refresh_outage_returns_dated_previous_report_without_extending_ttl(client, monkeypatch):
+    path = discovered(client, monkeypatch)
+    identity = path.split("/")[-2]
+    report = fixture_report(identity)
+    report["assessment"] = {"categories": [{"category": key, "score": 40}
+        for key in place_assessment.CATEGORY_WEIGHTS]}
+    expired = datetime.now(timezone.utc) - timedelta(hours=1)
+    with client.app.state.session_factory() as db:
+        db.add(ReportCache(slug="place:" + identity, report_data=report, model_version="places-v3:rules",
+            cached_at=expired - timedelta(days=1), expires_at=expired, hit_count=0))
+        db.commit()
+    monkeypatch.setattr(place_research, "generate_place_report", Mock(side_effect=place_research.ProviderBusy()))
+    result = client.post(path)
+    assert result.status_code == 200 and result.headers["x-cache"] == "STALE"
+    assert result.json()["reference_date"] == report["reference_date"]
+    assert result.json()["refresh_status"] == "previous_report"
+    assert result.json()["assessment"]["overall_score"] == 40
+    assert client.get(path).status_code == 404  # The next open can retry the refresh.
+
+def test_new_report_explains_rent_and_chat_remembers_room_type(client, monkeypatch):
+    from app.services.cache_service import set_cached_report
+    path = discovered(client, monkeypatch)
+    identity = path.split("/")[-2]
+    evidence = fixture_report(identity)
+    evidence["categories"] = [{"id": key, "label": label, "items": []}
+        for key, label in place_service.CATEGORY_LABELS.items()]
+    ref = [{"url": "https://example.org/ilan", "title": "Kiralık ilanı"}]
+    evidence["research_record"] = {**TARGET, "asOf": evidence["reference_date"],
+        "rents": [{"id": "r1", "rooms": "1+1", "amount": 22000, "lease": "monthly",
+                   "date": evidence["reference_date"], "eligible": True, "sources": ref}],
+        "routes": [], "news": [], "venues": [], "hazard": {}}
+    report = place_assessment.source_summary(evidence)
+    assert "22.000 TL" in report["assessment"]["executive_summary"]
+    assert "aidat" in report["assessment"]["executive_summary"]
+    with client.app.state.session_factory() as db:
+        set_cached_report(db, "place:" + identity, report, 300)
+    monkeypatch.setattr(settings, "GROQ_API_KEY", "")
+    chat = path.removesuffix("/report") + "/chat"
+    history = [{"question": "1+1 ev bakıyorum", "answer": "Kira için bütçen ne kadar?"}]
+    response = client.post(chat, json={"question": "25 bin TL", "history": history})
+    assert response.status_code == 200
+    body = response.json()
+    assert all(term in body["answer"] for term in ("1+1", "25.000 TL", "22.000 TL"))
+    assert body["sources"][0]["url"] == ref[0]["url"]
